@@ -78,6 +78,7 @@ python scripts/validate_contracts.py data/artifacts  # real pipeline output
 cd api && pip install -r requirements.txt
 uvicorn app.main:app --reload --port 8000
 DATA_DIR=data/artifacts uvicorn app.main:app --reload --port 8000   # real data
+pytest && ruff check .
 
 # web (port 3000)
 cd web && npm install && npm run dev

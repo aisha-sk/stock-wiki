@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+/* Design tokens from design/Main.dc.html. Blue and orange stand in for green
+   and red so the spectrum reads for colour-blind viewers. */
+@theme {
+  --color-page: #f5f6f8;
+  --color-card: #ffffff;
+  --color-ink: #11151b;
+  --color-ink-soft: #c5cbd6;
+  --color-muted: #5b6472;
+  --color-line: #e3e6eb;
+  --color-control: #98a1b0;
+  --color-bull: #1d4ed8;
+  --color-bear: #c2410c;
+}
+
+@theme inline {
+  --font-sans: var(--font-plex-sans), system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+}
+
+body {
+  background: var(--color-page);
+  color: var(--color-ink);
+}
