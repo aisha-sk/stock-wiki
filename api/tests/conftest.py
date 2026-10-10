@@ -15,8 +15,9 @@ def example(relative: str) -> dict:
 
 
 @pytest.fixture
-def client(monkeypatch) -> TestClient:
+def client(monkeypatch, tmp_path) -> TestClient:
     monkeypatch.setenv("DATA_DIR", "contracts/examples")
+    monkeypatch.setenv("ALERTS_DB", str(tmp_path / "alerts.db"))
     return TestClient(app, raise_server_exceptions=False)
 
 

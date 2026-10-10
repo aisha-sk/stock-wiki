@@ -8,9 +8,19 @@ from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from . import errors, store
+from . import alerts, errors, store
 from .errors import DataUnavailable
-from .schemas import ErrorBody, Forecasts, Health, Model, Stock, Tickers
+from .schemas import (
+    AlertPreview,
+    AlertRequest,
+    AlertResponse,
+    ErrorBody,
+    Forecasts,
+    Health,
+    Model,
+    Stock,
+    Tickers,
+)
 
 load_dotenv(store.REPO_ROOT / ".env")
 
@@ -69,3 +79,21 @@ def get_forecasts(
     limit: Annotated[int, Query(ge=1, le=200)] = 50,
 ) -> JSONResponse:
     return JSONResponse(store.forecasts(symbol, limit))
+
+
+@app.post(
+    "/api/alerts",
+    response_model=AlertResponse,
+    status_code=201,
+    responses={200: {"model": AlertResponse}} | NOT_FOUND | INVALID,
+)
+def create_alert(body: AlertRequest) -> JSONResponse:
+    symbol = store.known_symbol(body.symbol)
+    alert, created = alerts.create(body.email, symbol, body.trigger)
+    # The same email, symbol and trigger again returns the existing sign-up.
+    return JSONResponse(alert, status_code=201 if created else 200)
+
+
+@app.get("/api/alerts/preview", response_model=AlertPreview, responses=NOT_FOUND | INVALID | UNAVAILABLE)
+def get_alert_preview(symbol: str) -> JSONResponse:
+    return JSONResponse(alerts.preview(store.stock(symbol)))

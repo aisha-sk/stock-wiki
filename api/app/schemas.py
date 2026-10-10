@@ -7,7 +7,7 @@ The JSON Schemas are the source of truth: change them first, then this file.
 from datetime import date
 from typing import Annotated, Literal
 
-from pydantic import AwareDatetime, BaseModel, ConfigDict, Field
+from pydantic import AwareDatetime, BaseModel, ConfigDict, EmailStr, Field
 
 Symbol = Annotated[str, Field(pattern=r"^[A-Z][A-Z.]{0,5}$")]
 Score = Annotated[int, Field(ge=-100, le=100)]
@@ -239,3 +239,32 @@ class Forecasts(Contract):
     is_demo_data: bool
     summary: ForecastSummary
     forecasts: list[ForecastRow]
+
+
+# --- alerts ---------------------------------------------------------------
+
+AlertTrigger = Literal["sharp_shift", "any_flip", "weekly_digest"]
+
+
+class AlertRequest(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    email: EmailStr
+    symbol: str = Field(min_length=1, max_length=6)
+    trigger: AlertTrigger
+
+
+class AlertResponse(Contract):
+    id: str
+    email: str
+    symbol: str
+    trigger: AlertTrigger
+    created_at: AwareDatetime
+    delivery: Literal["mock", "email"]
+
+
+class AlertPreview(Contract):
+    symbol: str
+    subject: str
+    body_lines: list[str]
+    is_demo_data: bool
