@@ -11,6 +11,7 @@ import pandas as pd
 from ml.config import load_config
 from ml.evaluate import strategy_backtest
 from ml.features import FEATURE_COLUMNS, NEWS_LAG_COLUMN
+from ml.gate import passes_gate
 from ml.ingest.analysts import fetch_analysts
 from ml.ingest.news import (
     dedupe_headlines,
@@ -22,6 +23,7 @@ from ml.ingest.news import (
 from ml.ingest.prices import load_prices
 from ml.ingest.reddit import fetch_reddit
 from ml.publish import median_latency_ms, write_artifacts
+from ml.registry import append_version, register_mlflow_model
 from ml.sentiment.aggregate import aggregate_news, aggregate_posts
 from ml.sentiment.run import apply_scores
 from ml.tracking import log_candidate
@@ -107,48 +109,34 @@ def run_pipeline(symbols: list[str], out_dir: Path) -> int:
     else:
         serving = candidates[-1]
     algorithm, trained, run_id = serving
-    accuracy = float(trained.metrics["directional_accuracy"])
-    if accuracy >= threshold:
+    accuracy = round(float(trained.metrics["directional_accuracy"]), 4)
+    if passes_gate({"directional_accuracy": accuracy}, threshold):
         print(
-            f"Gate passed: {algorithm} directional_accuracy {accuracy:.3f} >= {threshold:.2f}.",
+            f"Gate passed: {algorithm} directional_accuracy {accuracy:.4f} >= {threshold:.2f}.",
             flush=True,
         )
     else:
+        print("REJECTED", flush=True)
         print(
-            f"Gate failed: {algorithm} directional_accuracy {accuracy:.3f} is below {threshold:.2f}. "
+            f"Gate failed: {algorithm} directional_accuracy {accuracy:.4f} is below {threshold:.2f}. "
             "production is null and each stock forecast is null.",
             flush=True,
         )
 
-    prior = _prior_versions(out_dir)
-    next_version = 1 + max((int(item["version"]) for item in prior), default=0)
-    recorded = []
-    for offset, (name, result, candidate_run) in enumerate(candidates):
-        candidate_accuracy = round(float(result.metrics["directional_accuracy"]), 4)
-        is_serving = result is trained
-        gate_passed = candidate_accuracy >= threshold
-        if is_serving and gate_passed:
-            status = "production"
-        elif gate_passed:
-            status = "archived"
-        else:
-            status = "rejected"
-        recorded.append(
-            {
-                "version": str(next_version + offset),
-                "model_name": "direction-xgb",
-                "algorithm": name,
-                "trained_at": generated_at,
-                "directional_accuracy": candidate_accuracy,
-                "gate_passed": gate_passed,
-                "status": status,
-                "mlflow_run_id": candidate_run,
-            }
+    history = _prior_versions(out_dir)
+    for name, result, candidate_run in candidates:
+        history = append_version(
+            history,
+            accuracy=float(result.metrics["directional_accuracy"]),
+            threshold=threshold,
+            algorithm=name,
+            model_name="direction-xgb",
+            trained_at=generated_at,
+            mlflow_run_id=candidate_run,
         )
-    recorded.reverse()
-    serving_version = next(
-        item["version"] for item in recorded if item["algorithm"] == algorithm and item["trained_at"] == generated_at
-    )
+        register_mlflow_model(candidate_run)
+    fresh = [item for item in history if item["trained_at"] == generated_at]
+    serving_version = fresh[0]["version"] if fresh else history[0]["version"]
     sample = trained.latest_features[ordered[0]]
     latency_ms = median_latency_ms(lambda row=sample, model=trained.model: model.predict_proba(row))
     backtest = strategy_backtest(trained.predictions)
@@ -174,7 +162,7 @@ def run_pipeline(symbols: list[str], out_dir: Path) -> int:
         model_version=serving_version,
         algorithm=algorithm,
         mlflow_run_id=run_id,
-        versions=[*recorded, *prior],
+        versions=history,
     )
     script = Path(__file__).resolve().parents[1] / "scripts" / "validate_contracts.py"
     completed = subprocess.run([sys.executable, str(script), str(out_dir)], check=False)
