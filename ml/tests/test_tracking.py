@@ -1,5 +1,6 @@
 """MLflow logging. Uses a temporary file store, not the repo mlruns directory."""
 
+import pytest
 import pandas as pd
 from xgboost import XGBClassifier
 
@@ -7,6 +8,7 @@ from ml.tracking import EXPERIMENT, log_candidate
 
 
 def test_log_candidate_records_a_comparable_run(tmp_path, monkeypatch) -> None:
+    pytest.importorskip("mlflow")
     monkeypatch.setenv("MLFLOW_TRACKING_URI", tmp_path.as_uri())
     frame = pd.DataFrame({"ret_1d": [0.1, -0.2, 0.3, -0.1, 0.2, -0.3], "y": [1, 0, 1, 0, 1, 0]})
     model = XGBClassifier(n_estimators=2, max_depth=1, random_state=0, n_jobs=1)
