@@ -4,7 +4,9 @@ import { getStock } from "@/lib/api";
 import { useApi } from "@/lib/useApi";
 import { useSelectedStock } from "@/lib/useSelectedStock";
 import { ForecastCard } from "./ForecastCard";
+import { HeadlinesCard } from "./HeadlinesCard";
 import { QuoteCard } from "./QuoteCard";
+import { SentimentCard } from "./SentimentCard";
 
 export function Dashboard() {
   const { selected } = useSelectedStock();
@@ -36,6 +38,8 @@ export function Dashboard() {
         <QuoteCard stock={stock.data} />
         <ForecastCard symbol={stock.data.symbol} forecast={stock.data.forecast} />
       </div>
+      <SentimentCard symbol={stock.data.symbol} sentiment={stock.data.sentiment} />
+      <HeadlinesCard headlines={stock.data.headlines} />
     </div>
   );
 }
