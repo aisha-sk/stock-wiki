@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "How Wall Street analysts, news media and Reddit feel about a stock, with a 5-day direction forecast and its track record.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${plexSans.variable} ${plexMono.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col font-sans">
