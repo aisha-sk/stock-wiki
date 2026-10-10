@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-10T21:49:54Z",
+  "generated_at": "2026-10-10T21:57:39Z",
   "is_demo_data": false,
   "summary": {
     "resolved": 180,
@@ -10,15 +10,15 @@
   },
   "forecasts": [
     {
-      "id": "TSLA-2026-10-09-v4",
+      "id": "TSLA-2026-10-09-v5",
       "symbol": "TSLA",
-      "made_at": "2026-10-10T21:49:54Z",
+      "made_at": "2026-10-10T21:57:39Z",
       "as_of_date": "2026-10-09",
       "target_date": "2026-10-16",
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3047,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "live",
       "status": "pending",
       "actual_direction": null,
@@ -26,15 +26,15 @@
       "result": null
     },
     {
-      "id": "NVDA-2026-10-09-v4",
+      "id": "NVDA-2026-10-09-v5",
       "symbol": "NVDA",
-      "made_at": "2026-10-10T21:49:54Z",
+      "made_at": "2026-10-10T21:57:39Z",
       "as_of_date": "2026-10-09",
       "target_date": "2026-10-16",
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4543,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "live",
       "status": "pending",
       "actual_direction": null,
@@ -42,15 +42,15 @@
       "result": null
     },
     {
-      "id": "AAPL-2026-10-09-v4",
+      "id": "AAPL-2026-10-09-v5",
       "symbol": "AAPL",
-      "made_at": "2026-10-10T21:49:54Z",
+      "made_at": "2026-10-10T21:57:39Z",
       "as_of_date": "2026-10-09",
       "target_date": "2026-10-16",
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6137,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "live",
       "status": "pending",
       "actual_direction": null,
@@ -58,7 +58,7 @@
       "result": null
     },
     {
-      "id": "TSLA-2026-10-02-v4",
+      "id": "TSLA-2026-10-02-v5",
       "symbol": "TSLA",
       "made_at": "2026-10-02T20:00:00Z",
       "as_of_date": "2026-10-02",
@@ -66,7 +66,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.2459,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -74,7 +74,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-10-02-v4",
+      "id": "NVDA-2026-10-02-v5",
       "symbol": "NVDA",
       "made_at": "2026-10-02T20:00:00Z",
       "as_of_date": "2026-10-02",
@@ -82,7 +82,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4845,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -90,7 +90,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-10-02-v4",
+      "id": "AAPL-2026-10-02-v5",
       "symbol": "AAPL",
       "made_at": "2026-10-02T20:00:00Z",
       "as_of_date": "2026-10-02",
@@ -98,7 +98,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6246,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -106,7 +106,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-10-01-v4",
+      "id": "TSLA-2026-10-01-v5",
       "symbol": "TSLA",
       "made_at": "2026-10-01T20:00:00Z",
       "as_of_date": "2026-10-01",
@@ -114,7 +114,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5242,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -122,7 +122,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-10-01-v4",
+      "id": "NVDA-2026-10-01-v5",
       "symbol": "NVDA",
       "made_at": "2026-10-01T20:00:00Z",
       "as_of_date": "2026-10-01",
@@ -130,7 +130,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.438,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -138,7 +138,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-10-01-v4",
+      "id": "AAPL-2026-10-01-v5",
       "symbol": "AAPL",
       "made_at": "2026-10-01T20:00:00Z",
       "as_of_date": "2026-10-01",
@@ -146,7 +146,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5157,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -154,7 +154,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-09-30-v4",
+      "id": "TSLA-2026-09-30-v5",
       "symbol": "TSLA",
       "made_at": "2026-09-30T20:00:00Z",
       "as_of_date": "2026-09-30",
@@ -162,7 +162,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6682,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -170,7 +170,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-09-30-v4",
+      "id": "NVDA-2026-09-30-v5",
       "symbol": "NVDA",
       "made_at": "2026-09-30T20:00:00Z",
       "as_of_date": "2026-09-30",
@@ -178,7 +178,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4648,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -186,7 +186,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-09-30-v4",
+      "id": "AAPL-2026-09-30-v5",
       "symbol": "AAPL",
       "made_at": "2026-09-30T20:00:00Z",
       "as_of_date": "2026-09-30",
@@ -194,7 +194,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6011,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -202,7 +202,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-09-29-v4",
+      "id": "TSLA-2026-09-29-v5",
       "symbol": "TSLA",
       "made_at": "2026-09-29T20:00:00Z",
       "as_of_date": "2026-09-29",
@@ -210,7 +210,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5935,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -218,7 +218,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-09-29-v4",
+      "id": "NVDA-2026-09-29-v5",
       "symbol": "NVDA",
       "made_at": "2026-09-29T20:00:00Z",
       "as_of_date": "2026-09-29",
@@ -226,7 +226,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4487,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -234,7 +234,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-09-29-v4",
+      "id": "AAPL-2026-09-29-v5",
       "symbol": "AAPL",
       "made_at": "2026-09-29T20:00:00Z",
       "as_of_date": "2026-09-29",
@@ -242,7 +242,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6075,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -250,7 +250,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-09-28-v4",
+      "id": "TSLA-2026-09-28-v5",
       "symbol": "TSLA",
       "made_at": "2026-09-28T20:00:00Z",
       "as_of_date": "2026-09-28",
@@ -258,7 +258,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5483,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -266,7 +266,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-09-28-v4",
+      "id": "NVDA-2026-09-28-v5",
       "symbol": "NVDA",
       "made_at": "2026-09-28T20:00:00Z",
       "as_of_date": "2026-09-28",
@@ -274,7 +274,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6226,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -282,7 +282,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-09-28-v4",
+      "id": "AAPL-2026-09-28-v5",
       "symbol": "AAPL",
       "made_at": "2026-09-28T20:00:00Z",
       "as_of_date": "2026-09-28",
@@ -290,7 +290,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3295,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -298,7 +298,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-09-25-v4",
+      "id": "TSLA-2026-09-25-v5",
       "symbol": "TSLA",
       "made_at": "2026-09-25T20:00:00Z",
       "as_of_date": "2026-09-25",
@@ -306,7 +306,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3759,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -314,7 +314,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-09-25-v4",
+      "id": "NVDA-2026-09-25-v5",
       "symbol": "NVDA",
       "made_at": "2026-09-25T20:00:00Z",
       "as_of_date": "2026-09-25",
@@ -322,7 +322,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5386,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -330,7 +330,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-09-25-v4",
+      "id": "AAPL-2026-09-25-v5",
       "symbol": "AAPL",
       "made_at": "2026-09-25T20:00:00Z",
       "as_of_date": "2026-09-25",
@@ -338,7 +338,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4201,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -346,7 +346,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-09-24-v4",
+      "id": "TSLA-2026-09-24-v5",
       "symbol": "TSLA",
       "made_at": "2026-09-24T20:00:00Z",
       "as_of_date": "2026-09-24",
@@ -354,7 +354,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5114,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -362,7 +362,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-09-24-v4",
+      "id": "NVDA-2026-09-24-v5",
       "symbol": "NVDA",
       "made_at": "2026-09-24T20:00:00Z",
       "as_of_date": "2026-09-24",
@@ -370,7 +370,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5889,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -378,7 +378,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-09-24-v4",
+      "id": "AAPL-2026-09-24-v5",
       "symbol": "AAPL",
       "made_at": "2026-09-24T20:00:00Z",
       "as_of_date": "2026-09-24",
@@ -386,7 +386,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3547,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -394,7 +394,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-09-23-v4",
+      "id": "TSLA-2026-09-23-v5",
       "symbol": "TSLA",
       "made_at": "2026-09-23T20:00:00Z",
       "as_of_date": "2026-09-23",
@@ -402,7 +402,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3822,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -410,7 +410,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-09-23-v4",
+      "id": "NVDA-2026-09-23-v5",
       "symbol": "NVDA",
       "made_at": "2026-09-23T20:00:00Z",
       "as_of_date": "2026-09-23",
@@ -418,7 +418,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.571,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -426,7 +426,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-09-23-v4",
+      "id": "AAPL-2026-09-23-v5",
       "symbol": "AAPL",
       "made_at": "2026-09-23T20:00:00Z",
       "as_of_date": "2026-09-23",
@@ -434,7 +434,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5219,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -442,7 +442,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-09-22-v4",
+      "id": "TSLA-2026-09-22-v5",
       "symbol": "TSLA",
       "made_at": "2026-09-22T20:00:00Z",
       "as_of_date": "2026-09-22",
@@ -450,7 +450,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6277,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -458,7 +458,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-09-22-v4",
+      "id": "NVDA-2026-09-22-v5",
       "symbol": "NVDA",
       "made_at": "2026-09-22T20:00:00Z",
       "as_of_date": "2026-09-22",
@@ -466,7 +466,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.658,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -474,7 +474,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-09-22-v4",
+      "id": "AAPL-2026-09-22-v5",
       "symbol": "AAPL",
       "made_at": "2026-09-22T20:00:00Z",
       "as_of_date": "2026-09-22",
@@ -482,7 +482,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5843,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -490,7 +490,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-09-21-v4",
+      "id": "TSLA-2026-09-21-v5",
       "symbol": "TSLA",
       "made_at": "2026-09-21T20:00:00Z",
       "as_of_date": "2026-09-21",
@@ -498,7 +498,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5069,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -506,7 +506,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-09-21-v4",
+      "id": "NVDA-2026-09-21-v5",
       "symbol": "NVDA",
       "made_at": "2026-09-21T20:00:00Z",
       "as_of_date": "2026-09-21",
@@ -514,7 +514,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5227,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -522,7 +522,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-09-21-v4",
+      "id": "AAPL-2026-09-21-v5",
       "symbol": "AAPL",
       "made_at": "2026-09-21T20:00:00Z",
       "as_of_date": "2026-09-21",
@@ -530,7 +530,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5724,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -538,7 +538,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-09-18-v4",
+      "id": "TSLA-2026-09-18-v5",
       "symbol": "TSLA",
       "made_at": "2026-09-18T20:00:00Z",
       "as_of_date": "2026-09-18",
@@ -546,7 +546,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3914,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -554,7 +554,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-09-18-v4",
+      "id": "NVDA-2026-09-18-v5",
       "symbol": "NVDA",
       "made_at": "2026-09-18T20:00:00Z",
       "as_of_date": "2026-09-18",
@@ -562,7 +562,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4586,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -570,7 +570,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-09-18-v4",
+      "id": "AAPL-2026-09-18-v5",
       "symbol": "AAPL",
       "made_at": "2026-09-18T20:00:00Z",
       "as_of_date": "2026-09-18",
@@ -578,7 +578,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.7302,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -586,7 +586,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-09-17-v4",
+      "id": "TSLA-2026-09-17-v5",
       "symbol": "TSLA",
       "made_at": "2026-09-17T20:00:00Z",
       "as_of_date": "2026-09-17",
@@ -594,7 +594,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5022,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -602,7 +602,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-09-17-v4",
+      "id": "NVDA-2026-09-17-v5",
       "symbol": "NVDA",
       "made_at": "2026-09-17T20:00:00Z",
       "as_of_date": "2026-09-17",
@@ -610,7 +610,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.7643,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -618,7 +618,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-09-17-v4",
+      "id": "AAPL-2026-09-17-v5",
       "symbol": "AAPL",
       "made_at": "2026-09-17T20:00:00Z",
       "as_of_date": "2026-09-17",
@@ -626,7 +626,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.7222,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -634,7 +634,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-09-16-v4",
+      "id": "TSLA-2026-09-16-v5",
       "symbol": "TSLA",
       "made_at": "2026-09-16T20:00:00Z",
       "as_of_date": "2026-09-16",
@@ -642,7 +642,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.462,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -650,7 +650,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-09-16-v4",
+      "id": "NVDA-2026-09-16-v5",
       "symbol": "NVDA",
       "made_at": "2026-09-16T20:00:00Z",
       "as_of_date": "2026-09-16",
@@ -658,7 +658,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6613,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -666,7 +666,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-09-16-v4",
+      "id": "AAPL-2026-09-16-v5",
       "symbol": "AAPL",
       "made_at": "2026-09-16T20:00:00Z",
       "as_of_date": "2026-09-16",
@@ -674,7 +674,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6292,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -682,7 +682,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-09-15-v4",
+      "id": "TSLA-2026-09-15-v5",
       "symbol": "TSLA",
       "made_at": "2026-09-15T20:00:00Z",
       "as_of_date": "2026-09-15",
@@ -690,7 +690,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4332,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -698,7 +698,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-09-15-v4",
+      "id": "NVDA-2026-09-15-v5",
       "symbol": "NVDA",
       "made_at": "2026-09-15T20:00:00Z",
       "as_of_date": "2026-09-15",
@@ -706,7 +706,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6667,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -714,7 +714,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-09-15-v4",
+      "id": "AAPL-2026-09-15-v5",
       "symbol": "AAPL",
       "made_at": "2026-09-15T20:00:00Z",
       "as_of_date": "2026-09-15",
@@ -722,7 +722,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.626,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -730,7 +730,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-09-14-v4",
+      "id": "TSLA-2026-09-14-v5",
       "symbol": "TSLA",
       "made_at": "2026-09-14T20:00:00Z",
       "as_of_date": "2026-09-14",
@@ -738,7 +738,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.2683,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -746,7 +746,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-09-14-v4",
+      "id": "NVDA-2026-09-14-v5",
       "symbol": "NVDA",
       "made_at": "2026-09-14T20:00:00Z",
       "as_of_date": "2026-09-14",
@@ -754,7 +754,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3402,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -762,7 +762,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-09-14-v4",
+      "id": "AAPL-2026-09-14-v5",
       "symbol": "AAPL",
       "made_at": "2026-09-14T20:00:00Z",
       "as_of_date": "2026-09-14",
@@ -770,7 +770,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.7114,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -778,7 +778,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-09-11-v4",
+      "id": "TSLA-2026-09-11-v5",
       "symbol": "TSLA",
       "made_at": "2026-09-11T20:00:00Z",
       "as_of_date": "2026-09-11",
@@ -786,7 +786,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6361,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -794,7 +794,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-09-11-v4",
+      "id": "NVDA-2026-09-11-v5",
       "symbol": "NVDA",
       "made_at": "2026-09-11T20:00:00Z",
       "as_of_date": "2026-09-11",
@@ -802,7 +802,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4177,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -810,7 +810,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-09-11-v4",
+      "id": "AAPL-2026-09-11-v5",
       "symbol": "AAPL",
       "made_at": "2026-09-11T20:00:00Z",
       "as_of_date": "2026-09-11",
@@ -818,7 +818,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.8222,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -826,7 +826,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-09-10-v4",
+      "id": "TSLA-2026-09-10-v5",
       "symbol": "TSLA",
       "made_at": "2026-09-10T20:00:00Z",
       "as_of_date": "2026-09-10",
@@ -834,7 +834,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6027,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -842,7 +842,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-09-10-v4",
+      "id": "NVDA-2026-09-10-v5",
       "symbol": "NVDA",
       "made_at": "2026-09-10T20:00:00Z",
       "as_of_date": "2026-09-10",
@@ -850,7 +850,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3382,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -858,7 +858,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-09-10-v4",
+      "id": "AAPL-2026-09-10-v5",
       "symbol": "AAPL",
       "made_at": "2026-09-10T20:00:00Z",
       "as_of_date": "2026-09-10",
@@ -866,7 +866,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.8693,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -874,7 +874,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-09-09-v4",
+      "id": "TSLA-2026-09-09-v5",
       "symbol": "TSLA",
       "made_at": "2026-09-09T20:00:00Z",
       "as_of_date": "2026-09-09",
@@ -882,7 +882,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4167,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -890,7 +890,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-09-09-v4",
+      "id": "NVDA-2026-09-09-v5",
       "symbol": "NVDA",
       "made_at": "2026-09-09T20:00:00Z",
       "as_of_date": "2026-09-09",
@@ -898,7 +898,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3766,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -906,7 +906,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-09-09-v4",
+      "id": "AAPL-2026-09-09-v5",
       "symbol": "AAPL",
       "made_at": "2026-09-09T20:00:00Z",
       "as_of_date": "2026-09-09",
@@ -914,7 +914,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.7186,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -922,7 +922,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-09-08-v4",
+      "id": "TSLA-2026-09-08-v5",
       "symbol": "TSLA",
       "made_at": "2026-09-08T20:00:00Z",
       "as_of_date": "2026-09-08",
@@ -930,7 +930,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3924,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -938,7 +938,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-09-08-v4",
+      "id": "NVDA-2026-09-08-v5",
       "symbol": "NVDA",
       "made_at": "2026-09-08T20:00:00Z",
       "as_of_date": "2026-09-08",
@@ -946,7 +946,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.1871,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -954,7 +954,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-09-08-v4",
+      "id": "AAPL-2026-09-08-v5",
       "symbol": "AAPL",
       "made_at": "2026-09-08T20:00:00Z",
       "as_of_date": "2026-09-08",
@@ -962,7 +962,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5896,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -970,7 +970,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-09-04-v4",
+      "id": "TSLA-2026-09-04-v5",
       "symbol": "TSLA",
       "made_at": "2026-09-04T20:00:00Z",
       "as_of_date": "2026-09-04",
@@ -978,7 +978,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.2289,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -986,7 +986,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-09-04-v4",
+      "id": "NVDA-2026-09-04-v5",
       "symbol": "NVDA",
       "made_at": "2026-09-04T20:00:00Z",
       "as_of_date": "2026-09-04",
@@ -994,7 +994,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.1725,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -1002,7 +1002,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-09-04-v4",
+      "id": "AAPL-2026-09-04-v5",
       "symbol": "AAPL",
       "made_at": "2026-09-04T20:00:00Z",
       "as_of_date": "2026-09-04",
@@ -1010,7 +1010,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6262,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1018,7 +1018,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-09-03-v4",
+      "id": "TSLA-2026-09-03-v5",
       "symbol": "TSLA",
       "made_at": "2026-09-03T20:00:00Z",
       "as_of_date": "2026-09-03",
@@ -1026,7 +1026,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3047,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -1034,7 +1034,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-09-03-v4",
+      "id": "NVDA-2026-09-03-v5",
       "symbol": "NVDA",
       "made_at": "2026-09-03T20:00:00Z",
       "as_of_date": "2026-09-03",
@@ -1042,7 +1042,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.2025,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -1050,7 +1050,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-09-03-v4",
+      "id": "AAPL-2026-09-03-v5",
       "symbol": "AAPL",
       "made_at": "2026-09-03T20:00:00Z",
       "as_of_date": "2026-09-03",
@@ -1058,7 +1058,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.531,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1066,7 +1066,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-09-02-v4",
+      "id": "TSLA-2026-09-02-v5",
       "symbol": "TSLA",
       "made_at": "2026-09-02T20:00:00Z",
       "as_of_date": "2026-09-02",
@@ -1074,7 +1074,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3215,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1082,7 +1082,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-09-02-v4",
+      "id": "NVDA-2026-09-02-v5",
       "symbol": "NVDA",
       "made_at": "2026-09-02T20:00:00Z",
       "as_of_date": "2026-09-02",
@@ -1090,7 +1090,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.2194,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -1098,7 +1098,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-09-02-v4",
+      "id": "AAPL-2026-09-02-v5",
       "symbol": "AAPL",
       "made_at": "2026-09-02T20:00:00Z",
       "as_of_date": "2026-09-02",
@@ -1106,7 +1106,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.535,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1114,7 +1114,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-09-01-v4",
+      "id": "TSLA-2026-09-01-v5",
       "symbol": "TSLA",
       "made_at": "2026-09-01T20:00:00Z",
       "as_of_date": "2026-09-01",
@@ -1122,7 +1122,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.2294,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1130,7 +1130,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-09-01-v4",
+      "id": "NVDA-2026-09-01-v5",
       "symbol": "NVDA",
       "made_at": "2026-09-01T20:00:00Z",
       "as_of_date": "2026-09-01",
@@ -1138,7 +1138,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.2428,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1146,7 +1146,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-09-01-v4",
+      "id": "AAPL-2026-09-01-v5",
       "symbol": "AAPL",
       "made_at": "2026-09-01T20:00:00Z",
       "as_of_date": "2026-09-01",
@@ -1154,7 +1154,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5607,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -1162,7 +1162,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-08-31-v4",
+      "id": "TSLA-2026-08-31-v5",
       "symbol": "TSLA",
       "made_at": "2026-08-31T20:00:00Z",
       "as_of_date": "2026-08-31",
@@ -1170,7 +1170,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.425,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1178,7 +1178,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-08-31-v4",
+      "id": "NVDA-2026-08-31-v5",
       "symbol": "NVDA",
       "made_at": "2026-08-31T20:00:00Z",
       "as_of_date": "2026-08-31",
@@ -1186,7 +1186,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.2891,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1194,7 +1194,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-08-31-v4",
+      "id": "AAPL-2026-08-31-v5",
       "symbol": "AAPL",
       "made_at": "2026-08-31T20:00:00Z",
       "as_of_date": "2026-08-31",
@@ -1202,7 +1202,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5893,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -1210,7 +1210,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-08-28-v4",
+      "id": "TSLA-2026-08-28-v5",
       "symbol": "TSLA",
       "made_at": "2026-08-28T20:00:00Z",
       "as_of_date": "2026-08-28",
@@ -1218,7 +1218,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.476,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1226,7 +1226,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-08-28-v4",
+      "id": "NVDA-2026-08-28-v5",
       "symbol": "NVDA",
       "made_at": "2026-08-28T20:00:00Z",
       "as_of_date": "2026-08-28",
@@ -1234,7 +1234,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.2551,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1242,7 +1242,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-08-28-v4",
+      "id": "AAPL-2026-08-28-v5",
       "symbol": "AAPL",
       "made_at": "2026-08-28T20:00:00Z",
       "as_of_date": "2026-08-28",
@@ -1250,7 +1250,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5926,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1258,7 +1258,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-08-27-v4",
+      "id": "TSLA-2026-08-27-v5",
       "symbol": "TSLA",
       "made_at": "2026-08-27T20:00:00Z",
       "as_of_date": "2026-08-27",
@@ -1266,7 +1266,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3425,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1274,7 +1274,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-08-27-v4",
+      "id": "NVDA-2026-08-27-v5",
       "symbol": "NVDA",
       "made_at": "2026-08-27T20:00:00Z",
       "as_of_date": "2026-08-27",
@@ -1282,7 +1282,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.2207,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1290,7 +1290,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-08-27-v4",
+      "id": "AAPL-2026-08-27-v5",
       "symbol": "AAPL",
       "made_at": "2026-08-27T20:00:00Z",
       "as_of_date": "2026-08-27",
@@ -1298,7 +1298,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5724,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1306,7 +1306,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-08-26-v4",
+      "id": "TSLA-2026-08-26-v5",
       "symbol": "TSLA",
       "made_at": "2026-08-26T20:00:00Z",
       "as_of_date": "2026-08-26",
@@ -1314,7 +1314,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.2893,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1322,7 +1322,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-08-26-v4",
+      "id": "NVDA-2026-08-26-v5",
       "symbol": "NVDA",
       "made_at": "2026-08-26T20:00:00Z",
       "as_of_date": "2026-08-26",
@@ -1330,7 +1330,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4486,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1338,7 +1338,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-08-26-v4",
+      "id": "AAPL-2026-08-26-v5",
       "symbol": "AAPL",
       "made_at": "2026-08-26T20:00:00Z",
       "as_of_date": "2026-08-26",
@@ -1346,7 +1346,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.651,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1354,7 +1354,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-08-25-v4",
+      "id": "TSLA-2026-08-25-v5",
       "symbol": "TSLA",
       "made_at": "2026-08-25T20:00:00Z",
       "as_of_date": "2026-08-25",
@@ -1362,7 +1362,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.328,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1370,7 +1370,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-08-25-v4",
+      "id": "NVDA-2026-08-25-v5",
       "symbol": "NVDA",
       "made_at": "2026-08-25T20:00:00Z",
       "as_of_date": "2026-08-25",
@@ -1378,7 +1378,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5908,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1386,7 +1386,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-08-25-v4",
+      "id": "AAPL-2026-08-25-v5",
       "symbol": "AAPL",
       "made_at": "2026-08-25T20:00:00Z",
       "as_of_date": "2026-08-25",
@@ -1394,7 +1394,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5001,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1402,7 +1402,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-08-24-v4",
+      "id": "TSLA-2026-08-24-v5",
       "symbol": "TSLA",
       "made_at": "2026-08-24T20:00:00Z",
       "as_of_date": "2026-08-24",
@@ -1410,7 +1410,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3398,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1418,7 +1418,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-08-24-v4",
+      "id": "NVDA-2026-08-24-v5",
       "symbol": "NVDA",
       "made_at": "2026-08-24T20:00:00Z",
       "as_of_date": "2026-08-24",
@@ -1426,7 +1426,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4612,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1434,7 +1434,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-08-24-v4",
+      "id": "AAPL-2026-08-24-v5",
       "symbol": "AAPL",
       "made_at": "2026-08-24T20:00:00Z",
       "as_of_date": "2026-08-24",
@@ -1442,7 +1442,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5263,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1450,7 +1450,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-08-21-v4",
+      "id": "TSLA-2026-08-21-v5",
       "symbol": "TSLA",
       "made_at": "2026-08-21T20:00:00Z",
       "as_of_date": "2026-08-21",
@@ -1458,7 +1458,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.2986,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -1466,7 +1466,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-08-21-v4",
+      "id": "NVDA-2026-08-21-v5",
       "symbol": "NVDA",
       "made_at": "2026-08-21T20:00:00Z",
       "as_of_date": "2026-08-21",
@@ -1474,7 +1474,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3788,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1482,7 +1482,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-08-21-v4",
+      "id": "AAPL-2026-08-21-v5",
       "symbol": "AAPL",
       "made_at": "2026-08-21T20:00:00Z",
       "as_of_date": "2026-08-21",
@@ -1490,7 +1490,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4043,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1498,7 +1498,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-08-20-v4",
+      "id": "TSLA-2026-08-20-v5",
       "symbol": "TSLA",
       "made_at": "2026-08-20T20:00:00Z",
       "as_of_date": "2026-08-20",
@@ -1506,7 +1506,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3653,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1514,7 +1514,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-08-20-v4",
+      "id": "NVDA-2026-08-20-v5",
       "symbol": "NVDA",
       "made_at": "2026-08-20T20:00:00Z",
       "as_of_date": "2026-08-20",
@@ -1522,7 +1522,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5588,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1530,7 +1530,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-08-20-v4",
+      "id": "AAPL-2026-08-20-v5",
       "symbol": "AAPL",
       "made_at": "2026-08-20T20:00:00Z",
       "as_of_date": "2026-08-20",
@@ -1538,7 +1538,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3697,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1546,7 +1546,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-08-19-v4",
+      "id": "TSLA-2026-08-19-v5",
       "symbol": "TSLA",
       "made_at": "2026-08-19T20:00:00Z",
       "as_of_date": "2026-08-19",
@@ -1554,7 +1554,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3926,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -1562,7 +1562,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-08-19-v4",
+      "id": "NVDA-2026-08-19-v5",
       "symbol": "NVDA",
       "made_at": "2026-08-19T20:00:00Z",
       "as_of_date": "2026-08-19",
@@ -1570,7 +1570,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5322,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -1578,7 +1578,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-08-19-v4",
+      "id": "AAPL-2026-08-19-v5",
       "symbol": "AAPL",
       "made_at": "2026-08-19T20:00:00Z",
       "as_of_date": "2026-08-19",
@@ -1586,7 +1586,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4022,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -1594,7 +1594,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-08-18-v4",
+      "id": "TSLA-2026-08-18-v5",
       "symbol": "TSLA",
       "made_at": "2026-08-18T20:00:00Z",
       "as_of_date": "2026-08-18",
@@ -1602,7 +1602,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4304,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1610,7 +1610,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-08-18-v4",
+      "id": "NVDA-2026-08-18-v5",
       "symbol": "NVDA",
       "made_at": "2026-08-18T20:00:00Z",
       "as_of_date": "2026-08-18",
@@ -1618,7 +1618,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4223,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -1626,7 +1626,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-08-18-v4",
+      "id": "AAPL-2026-08-18-v5",
       "symbol": "AAPL",
       "made_at": "2026-08-18T20:00:00Z",
       "as_of_date": "2026-08-18",
@@ -1634,7 +1634,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.541,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -1642,7 +1642,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-08-17-v4",
+      "id": "TSLA-2026-08-17-v5",
       "symbol": "TSLA",
       "made_at": "2026-08-17T20:00:00Z",
       "as_of_date": "2026-08-17",
@@ -1650,7 +1650,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.429,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1658,7 +1658,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-08-17-v4",
+      "id": "NVDA-2026-08-17-v5",
       "symbol": "NVDA",
       "made_at": "2026-08-17T20:00:00Z",
       "as_of_date": "2026-08-17",
@@ -1666,7 +1666,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6506,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -1674,7 +1674,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-08-17-v4",
+      "id": "AAPL-2026-08-17-v5",
       "symbol": "AAPL",
       "made_at": "2026-08-17T20:00:00Z",
       "as_of_date": "2026-08-17",
@@ -1682,7 +1682,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4128,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1690,7 +1690,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-08-14-v4",
+      "id": "TSLA-2026-08-14-v5",
       "symbol": "TSLA",
       "made_at": "2026-08-14T20:00:00Z",
       "as_of_date": "2026-08-14",
@@ -1698,7 +1698,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3188,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1706,7 +1706,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-08-14-v4",
+      "id": "NVDA-2026-08-14-v5",
       "symbol": "NVDA",
       "made_at": "2026-08-14T20:00:00Z",
       "as_of_date": "2026-08-14",
@@ -1714,7 +1714,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6481,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -1722,7 +1722,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-08-14-v4",
+      "id": "AAPL-2026-08-14-v5",
       "symbol": "AAPL",
       "made_at": "2026-08-14T20:00:00Z",
       "as_of_date": "2026-08-14",
@@ -1730,7 +1730,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4597,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1738,7 +1738,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-08-13-v4",
+      "id": "TSLA-2026-08-13-v5",
       "symbol": "TSLA",
       "made_at": "2026-08-13T20:00:00Z",
       "as_of_date": "2026-08-13",
@@ -1746,7 +1746,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4253,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1754,7 +1754,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-08-13-v4",
+      "id": "NVDA-2026-08-13-v5",
       "symbol": "NVDA",
       "made_at": "2026-08-13T20:00:00Z",
       "as_of_date": "2026-08-13",
@@ -1762,7 +1762,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5139,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -1770,7 +1770,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-08-13-v4",
+      "id": "AAPL-2026-08-13-v5",
       "symbol": "AAPL",
       "made_at": "2026-08-13T20:00:00Z",
       "as_of_date": "2026-08-13",
@@ -1778,7 +1778,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.8566,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1786,7 +1786,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-08-12-v4",
+      "id": "TSLA-2026-08-12-v5",
       "symbol": "TSLA",
       "made_at": "2026-08-12T20:00:00Z",
       "as_of_date": "2026-08-12",
@@ -1794,7 +1794,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3092,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1802,7 +1802,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-08-12-v4",
+      "id": "NVDA-2026-08-12-v5",
       "symbol": "NVDA",
       "made_at": "2026-08-12T20:00:00Z",
       "as_of_date": "2026-08-12",
@@ -1810,7 +1810,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6289,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -1818,7 +1818,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-08-12-v4",
+      "id": "AAPL-2026-08-12-v5",
       "symbol": "AAPL",
       "made_at": "2026-08-12T20:00:00Z",
       "as_of_date": "2026-08-12",
@@ -1826,7 +1826,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.7847,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1834,7 +1834,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-08-11-v4",
+      "id": "TSLA-2026-08-11-v5",
       "symbol": "TSLA",
       "made_at": "2026-08-11T20:00:00Z",
       "as_of_date": "2026-08-11",
@@ -1842,7 +1842,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4917,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1850,7 +1850,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-08-11-v4",
+      "id": "NVDA-2026-08-11-v5",
       "symbol": "NVDA",
       "made_at": "2026-08-11T20:00:00Z",
       "as_of_date": "2026-08-11",
@@ -1858,7 +1858,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.1687,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1866,7 +1866,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-08-11-v4",
+      "id": "AAPL-2026-08-11-v5",
       "symbol": "AAPL",
       "made_at": "2026-08-11T20:00:00Z",
       "as_of_date": "2026-08-11",
@@ -1874,7 +1874,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6607,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1882,7 +1882,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-08-10-v4",
+      "id": "TSLA-2026-08-10-v5",
       "symbol": "TSLA",
       "made_at": "2026-08-10T20:00:00Z",
       "as_of_date": "2026-08-10",
@@ -1890,7 +1890,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5375,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1898,7 +1898,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-08-10-v4",
+      "id": "NVDA-2026-08-10-v5",
       "symbol": "NVDA",
       "made_at": "2026-08-10T20:00:00Z",
       "as_of_date": "2026-08-10",
@@ -1906,7 +1906,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.146,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1914,7 +1914,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-08-10-v4",
+      "id": "AAPL-2026-08-10-v5",
       "symbol": "AAPL",
       "made_at": "2026-08-10T20:00:00Z",
       "as_of_date": "2026-08-10",
@@ -1922,7 +1922,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5253,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -1930,7 +1930,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-08-07-v4",
+      "id": "TSLA-2026-08-07-v5",
       "symbol": "TSLA",
       "made_at": "2026-08-07T20:00:00Z",
       "as_of_date": "2026-08-07",
@@ -1938,7 +1938,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4848,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1946,7 +1946,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-08-07-v4",
+      "id": "NVDA-2026-08-07-v5",
       "symbol": "NVDA",
       "made_at": "2026-08-07T20:00:00Z",
       "as_of_date": "2026-08-07",
@@ -1954,7 +1954,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5223,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1962,7 +1962,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-08-07-v4",
+      "id": "AAPL-2026-08-07-v5",
       "symbol": "AAPL",
       "made_at": "2026-08-07T20:00:00Z",
       "as_of_date": "2026-08-07",
@@ -1970,7 +1970,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.659,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -1978,7 +1978,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-08-06-v4",
+      "id": "TSLA-2026-08-06-v5",
       "symbol": "TSLA",
       "made_at": "2026-08-06T20:00:00Z",
       "as_of_date": "2026-08-06",
@@ -1986,7 +1986,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6867,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -1994,7 +1994,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-08-06-v4",
+      "id": "NVDA-2026-08-06-v5",
       "symbol": "NVDA",
       "made_at": "2026-08-06T20:00:00Z",
       "as_of_date": "2026-08-06",
@@ -2002,7 +2002,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.256,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2010,7 +2010,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-08-06-v4",
+      "id": "AAPL-2026-08-06-v5",
       "symbol": "AAPL",
       "made_at": "2026-08-06T20:00:00Z",
       "as_of_date": "2026-08-06",
@@ -2018,7 +2018,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6537,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2026,7 +2026,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-08-05-v4",
+      "id": "TSLA-2026-08-05-v5",
       "symbol": "TSLA",
       "made_at": "2026-08-05T20:00:00Z",
       "as_of_date": "2026-08-05",
@@ -2034,7 +2034,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.8317,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2042,7 +2042,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-08-05-v4",
+      "id": "NVDA-2026-08-05-v5",
       "symbol": "NVDA",
       "made_at": "2026-08-05T20:00:00Z",
       "as_of_date": "2026-08-05",
@@ -2050,7 +2050,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3418,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2058,7 +2058,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-08-05-v4",
+      "id": "AAPL-2026-08-05-v5",
       "symbol": "AAPL",
       "made_at": "2026-08-05T20:00:00Z",
       "as_of_date": "2026-08-05",
@@ -2066,7 +2066,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6769,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2074,7 +2074,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-08-04-v4",
+      "id": "TSLA-2026-08-04-v5",
       "symbol": "TSLA",
       "made_at": "2026-08-04T20:00:00Z",
       "as_of_date": "2026-08-04",
@@ -2082,7 +2082,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.7769,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2090,7 +2090,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-08-04-v4",
+      "id": "NVDA-2026-08-04-v5",
       "symbol": "NVDA",
       "made_at": "2026-08-04T20:00:00Z",
       "as_of_date": "2026-08-04",
@@ -2098,7 +2098,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3508,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2106,7 +2106,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-08-04-v4",
+      "id": "AAPL-2026-08-04-v5",
       "symbol": "AAPL",
       "made_at": "2026-08-04T20:00:00Z",
       "as_of_date": "2026-08-04",
@@ -2114,7 +2114,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.7786,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2122,7 +2122,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-08-03-v4",
+      "id": "TSLA-2026-08-03-v5",
       "symbol": "TSLA",
       "made_at": "2026-08-03T20:00:00Z",
       "as_of_date": "2026-08-03",
@@ -2130,7 +2130,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.7135,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2138,7 +2138,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-08-03-v4",
+      "id": "NVDA-2026-08-03-v5",
       "symbol": "NVDA",
       "made_at": "2026-08-03T20:00:00Z",
       "as_of_date": "2026-08-03",
@@ -2146,7 +2146,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3537,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2154,7 +2154,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-08-03-v4",
+      "id": "AAPL-2026-08-03-v5",
       "symbol": "AAPL",
       "made_at": "2026-08-03T20:00:00Z",
       "as_of_date": "2026-08-03",
@@ -2162,7 +2162,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.8109,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2170,7 +2170,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-07-31-v4",
+      "id": "TSLA-2026-07-31-v5",
       "symbol": "TSLA",
       "made_at": "2026-07-31T20:00:00Z",
       "as_of_date": "2026-07-31",
@@ -2178,7 +2178,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6581,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2186,7 +2186,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-07-31-v4",
+      "id": "NVDA-2026-07-31-v5",
       "symbol": "NVDA",
       "made_at": "2026-07-31T20:00:00Z",
       "as_of_date": "2026-07-31",
@@ -2194,7 +2194,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.586,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2202,7 +2202,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-07-31-v4",
+      "id": "AAPL-2026-07-31-v5",
       "symbol": "AAPL",
       "made_at": "2026-07-31T20:00:00Z",
       "as_of_date": "2026-07-31",
@@ -2210,7 +2210,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.7103,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2218,7 +2218,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-07-30-v4",
+      "id": "TSLA-2026-07-30-v5",
       "symbol": "TSLA",
       "made_at": "2026-07-30T20:00:00Z",
       "as_of_date": "2026-07-30",
@@ -2226,7 +2226,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5398,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2234,7 +2234,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-07-30-v4",
+      "id": "NVDA-2026-07-30-v5",
       "symbol": "NVDA",
       "made_at": "2026-07-30T20:00:00Z",
       "as_of_date": "2026-07-30",
@@ -2242,7 +2242,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5659,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2250,7 +2250,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-07-30-v4",
+      "id": "AAPL-2026-07-30-v5",
       "symbol": "AAPL",
       "made_at": "2026-07-30T20:00:00Z",
       "as_of_date": "2026-07-30",
@@ -2258,7 +2258,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5193,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2266,7 +2266,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-07-29-v4",
+      "id": "TSLA-2026-07-29-v5",
       "symbol": "TSLA",
       "made_at": "2026-07-29T20:00:00Z",
       "as_of_date": "2026-07-29",
@@ -2274,7 +2274,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5222,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2282,7 +2282,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-07-29-v4",
+      "id": "NVDA-2026-07-29-v5",
       "symbol": "NVDA",
       "made_at": "2026-07-29T20:00:00Z",
       "as_of_date": "2026-07-29",
@@ -2290,7 +2290,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5847,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2298,7 +2298,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-07-29-v4",
+      "id": "AAPL-2026-07-29-v5",
       "symbol": "AAPL",
       "made_at": "2026-07-29T20:00:00Z",
       "as_of_date": "2026-07-29",
@@ -2306,7 +2306,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5399,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2314,7 +2314,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-07-28-v4",
+      "id": "TSLA-2026-07-28-v5",
       "symbol": "TSLA",
       "made_at": "2026-07-28T20:00:00Z",
       "as_of_date": "2026-07-28",
@@ -2322,7 +2322,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4884,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2330,7 +2330,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-07-28-v4",
+      "id": "NVDA-2026-07-28-v5",
       "symbol": "NVDA",
       "made_at": "2026-07-28T20:00:00Z",
       "as_of_date": "2026-07-28",
@@ -2338,7 +2338,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4717,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2346,7 +2346,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-07-28-v4",
+      "id": "AAPL-2026-07-28-v5",
       "symbol": "AAPL",
       "made_at": "2026-07-28T20:00:00Z",
       "as_of_date": "2026-07-28",
@@ -2354,7 +2354,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.767,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2362,7 +2362,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-07-27-v4",
+      "id": "TSLA-2026-07-27-v5",
       "symbol": "TSLA",
       "made_at": "2026-07-27T20:00:00Z",
       "as_of_date": "2026-07-27",
@@ -2370,7 +2370,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3931,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2378,7 +2378,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-07-27-v4",
+      "id": "NVDA-2026-07-27-v5",
       "symbol": "NVDA",
       "made_at": "2026-07-27T20:00:00Z",
       "as_of_date": "2026-07-27",
@@ -2386,7 +2386,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5174,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2394,7 +2394,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-07-27-v4",
+      "id": "AAPL-2026-07-27-v5",
       "symbol": "AAPL",
       "made_at": "2026-07-27T20:00:00Z",
       "as_of_date": "2026-07-27",
@@ -2402,7 +2402,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6629,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2410,7 +2410,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-07-24-v4",
+      "id": "TSLA-2026-07-24-v5",
       "symbol": "TSLA",
       "made_at": "2026-07-24T20:00:00Z",
       "as_of_date": "2026-07-24",
@@ -2418,7 +2418,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.316,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2426,7 +2426,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-07-24-v4",
+      "id": "NVDA-2026-07-24-v5",
       "symbol": "NVDA",
       "made_at": "2026-07-24T20:00:00Z",
       "as_of_date": "2026-07-24",
@@ -2434,7 +2434,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.2119,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2442,7 +2442,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-07-24-v4",
+      "id": "AAPL-2026-07-24-v5",
       "symbol": "AAPL",
       "made_at": "2026-07-24T20:00:00Z",
       "as_of_date": "2026-07-24",
@@ -2450,7 +2450,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.7404,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2458,7 +2458,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-07-23-v4",
+      "id": "TSLA-2026-07-23-v5",
       "symbol": "TSLA",
       "made_at": "2026-07-23T20:00:00Z",
       "as_of_date": "2026-07-23",
@@ -2466,7 +2466,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5982,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2474,7 +2474,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-07-23-v4",
+      "id": "NVDA-2026-07-23-v5",
       "symbol": "NVDA",
       "made_at": "2026-07-23T20:00:00Z",
       "as_of_date": "2026-07-23",
@@ -2482,7 +2482,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4211,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2490,7 +2490,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-07-23-v4",
+      "id": "AAPL-2026-07-23-v5",
       "symbol": "AAPL",
       "made_at": "2026-07-23T20:00:00Z",
       "as_of_date": "2026-07-23",
@@ -2498,7 +2498,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5909,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2506,7 +2506,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-07-22-v4",
+      "id": "TSLA-2026-07-22-v5",
       "symbol": "TSLA",
       "made_at": "2026-07-22T20:00:00Z",
       "as_of_date": "2026-07-22",
@@ -2514,7 +2514,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4978,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2522,7 +2522,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-07-22-v4",
+      "id": "NVDA-2026-07-22-v5",
       "symbol": "NVDA",
       "made_at": "2026-07-22T20:00:00Z",
       "as_of_date": "2026-07-22",
@@ -2530,7 +2530,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4594,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2538,7 +2538,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-07-22-v4",
+      "id": "AAPL-2026-07-22-v5",
       "symbol": "AAPL",
       "made_at": "2026-07-22T20:00:00Z",
       "as_of_date": "2026-07-22",
@@ -2546,7 +2546,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5227,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2554,7 +2554,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-07-21-v4",
+      "id": "TSLA-2026-07-21-v5",
       "symbol": "TSLA",
       "made_at": "2026-07-21T20:00:00Z",
       "as_of_date": "2026-07-21",
@@ -2562,7 +2562,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6159,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2570,7 +2570,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-07-21-v4",
+      "id": "NVDA-2026-07-21-v5",
       "symbol": "NVDA",
       "made_at": "2026-07-21T20:00:00Z",
       "as_of_date": "2026-07-21",
@@ -2578,7 +2578,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5106,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2586,7 +2586,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-07-21-v4",
+      "id": "AAPL-2026-07-21-v5",
       "symbol": "AAPL",
       "made_at": "2026-07-21T20:00:00Z",
       "as_of_date": "2026-07-21",
@@ -2594,7 +2594,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5738,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2602,7 +2602,7 @@
       "result": "hit"
     },
     {
-      "id": "TSLA-2026-07-20-v4",
+      "id": "TSLA-2026-07-20-v5",
       "symbol": "TSLA",
       "made_at": "2026-07-20T20:00:00Z",
       "as_of_date": "2026-07-20",
@@ -2610,7 +2610,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.735,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2618,7 +2618,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-07-20-v4",
+      "id": "NVDA-2026-07-20-v5",
       "symbol": "NVDA",
       "made_at": "2026-07-20T20:00:00Z",
       "as_of_date": "2026-07-20",
@@ -2626,7 +2626,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.633,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2634,7 +2634,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-07-20-v4",
+      "id": "AAPL-2026-07-20-v5",
       "symbol": "AAPL",
       "made_at": "2026-07-20T20:00:00Z",
       "as_of_date": "2026-07-20",
@@ -2642,7 +2642,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4637,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2650,7 +2650,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-07-17-v4",
+      "id": "TSLA-2026-07-17-v5",
       "symbol": "TSLA",
       "made_at": "2026-07-17T20:00:00Z",
       "as_of_date": "2026-07-17",
@@ -2658,7 +2658,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6391,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2666,7 +2666,7 @@
       "result": "miss"
     },
     {
-      "id": "NVDA-2026-07-17-v4",
+      "id": "NVDA-2026-07-17-v5",
       "symbol": "NVDA",
       "made_at": "2026-07-17T20:00:00Z",
       "as_of_date": "2026-07-17",
@@ -2674,7 +2674,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5376,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2682,7 +2682,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-07-17-v4",
+      "id": "AAPL-2026-07-17-v5",
       "symbol": "AAPL",
       "made_at": "2026-07-17T20:00:00Z",
       "as_of_date": "2026-07-17",
@@ -2690,7 +2690,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6635,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2698,7 +2698,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-07-16-v4",
+      "id": "TSLA-2026-07-16-v5",
       "symbol": "TSLA",
       "made_at": "2026-07-16T20:00:00Z",
       "as_of_date": "2026-07-16",
@@ -2706,7 +2706,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.328,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2714,7 +2714,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-07-16-v4",
+      "id": "NVDA-2026-07-16-v5",
       "symbol": "NVDA",
       "made_at": "2026-07-16T20:00:00Z",
       "as_of_date": "2026-07-16",
@@ -2722,7 +2722,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3591,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2730,7 +2730,7 @@
       "result": "miss"
     },
     {
-      "id": "AAPL-2026-07-16-v4",
+      "id": "AAPL-2026-07-16-v5",
       "symbol": "AAPL",
       "made_at": "2026-07-16T20:00:00Z",
       "as_of_date": "2026-07-16",
@@ -2738,7 +2738,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.6043,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2746,7 +2746,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-07-15-v4",
+      "id": "TSLA-2026-07-15-v5",
       "symbol": "TSLA",
       "made_at": "2026-07-15T20:00:00Z",
       "as_of_date": "2026-07-15",
@@ -2754,7 +2754,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.351,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2762,7 +2762,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-07-15-v4",
+      "id": "NVDA-2026-07-15-v5",
       "symbol": "NVDA",
       "made_at": "2026-07-15T20:00:00Z",
       "as_of_date": "2026-07-15",
@@ -2770,7 +2770,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.2526,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2778,7 +2778,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-07-15-v4",
+      "id": "AAPL-2026-07-15-v5",
       "symbol": "AAPL",
       "made_at": "2026-07-15T20:00:00Z",
       "as_of_date": "2026-07-15",
@@ -2786,7 +2786,7 @@
       "horizon_days": 5,
       "direction": "up",
       "prob_up": 0.5941,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2794,7 +2794,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-07-14-v4",
+      "id": "TSLA-2026-07-14-v5",
       "symbol": "TSLA",
       "made_at": "2026-07-14T20:00:00Z",
       "as_of_date": "2026-07-14",
@@ -2802,7 +2802,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4594,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2810,7 +2810,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-07-14-v4",
+      "id": "NVDA-2026-07-14-v5",
       "symbol": "NVDA",
       "made_at": "2026-07-14T20:00:00Z",
       "as_of_date": "2026-07-14",
@@ -2818,7 +2818,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.406,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2826,7 +2826,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-07-14-v4",
+      "id": "AAPL-2026-07-14-v5",
       "symbol": "AAPL",
       "made_at": "2026-07-14T20:00:00Z",
       "as_of_date": "2026-07-14",
@@ -2834,7 +2834,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3804,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2842,7 +2842,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-07-13-v4",
+      "id": "TSLA-2026-07-13-v5",
       "symbol": "TSLA",
       "made_at": "2026-07-13T20:00:00Z",
       "as_of_date": "2026-07-13",
@@ -2850,7 +2850,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.2317,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2858,7 +2858,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-07-13-v4",
+      "id": "NVDA-2026-07-13-v5",
       "symbol": "NVDA",
       "made_at": "2026-07-13T20:00:00Z",
       "as_of_date": "2026-07-13",
@@ -2866,7 +2866,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.1989,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2874,7 +2874,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-07-13-v4",
+      "id": "AAPL-2026-07-13-v5",
       "symbol": "AAPL",
       "made_at": "2026-07-13T20:00:00Z",
       "as_of_date": "2026-07-13",
@@ -2882,7 +2882,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4181,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",
@@ -2890,7 +2890,7 @@
       "result": "miss"
     },
     {
-      "id": "TSLA-2026-07-10-v4",
+      "id": "TSLA-2026-07-10-v5",
       "symbol": "TSLA",
       "made_at": "2026-07-10T20:00:00Z",
       "as_of_date": "2026-07-10",
@@ -2898,7 +2898,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.368,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2906,7 +2906,7 @@
       "result": "hit"
     },
     {
-      "id": "NVDA-2026-07-10-v4",
+      "id": "NVDA-2026-07-10-v5",
       "symbol": "NVDA",
       "made_at": "2026-07-10T20:00:00Z",
       "as_of_date": "2026-07-10",
@@ -2914,7 +2914,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.3325,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "down",
@@ -2922,7 +2922,7 @@
       "result": "hit"
     },
     {
-      "id": "AAPL-2026-07-10-v4",
+      "id": "AAPL-2026-07-10-v5",
       "symbol": "AAPL",
       "made_at": "2026-07-10T20:00:00Z",
       "as_of_date": "2026-07-10",
@@ -2930,7 +2930,7 @@
       "horizon_days": 5,
       "direction": "down",
       "prob_up": 0.4082,
-      "model_version": "4",
+      "model_version": "5",
       "origin": "backtest",
       "status": "resolved",
       "actual_direction": "up",

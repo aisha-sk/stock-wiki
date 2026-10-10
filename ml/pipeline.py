@@ -10,15 +10,18 @@ import pandas as pd
 
 from ml.config import load_config
 from ml.evaluate import strategy_backtest
+from ml.ingest.analysts import fetch_analysts
 from ml.ingest.news import (
     dedupe_headlines,
     fetch_headlines,
+    read_api_key,
     scored_news_history,
     without_junk,
 )
 from ml.ingest.prices import load_prices
+from ml.ingest.reddit import fetch_reddit
 from ml.publish import median_latency_ms, write_artifacts
-from ml.sentiment.aggregate import aggregate_news
+from ml.sentiment.aggregate import aggregate_news, aggregate_posts
 from ml.sentiment.run import apply_scores
 from ml.tracking import log_candidate
 from ml.train import ALGORITHMS, XGB_PARAMS, format_report, walk_forward_pooled
@@ -37,7 +40,7 @@ def run_pipeline(symbols: list[str], out_dir: Path) -> int:
     ordered = [ticker.symbol for ticker in config.tickers if ticker.symbol in set(symbols)]
     prices: dict[str, pd.DataFrame] = {}
     headlines: dict[str, list[dict]] = {}
-    sources: dict[str, dict | None] = {}
+    sources: dict[str, list[dict]] = {}
     news: dict[str, list[dict]] = {}
     for symbol in ordered:
         frame = load_prices(symbol)
@@ -49,9 +52,11 @@ def run_pipeline(symbols: list[str], out_dir: Path) -> int:
         )
         print(f"{symbol}: {len(history)} historical headlines for news_lag1", flush=True)
         prices[symbol] = frame
-        headlines[symbol] = recent
         news[symbol] = history
-        sources[symbol] = aggregate_news(recent, now=now, window_days=config.sentiment_window_days)
+        company = names[symbol]
+        bundle = _sentiment_bundle(symbol, company, recent, now, config.sentiment_window_days)
+        headlines[symbol] = bundle["headlines"]
+        sources[symbol] = bundle["sources"]
 
     candidates = []
     for algorithm in ALGORITHMS:
@@ -160,6 +165,87 @@ def main(argv: list[str] | None = None) -> int:
     if not out_dir.is_absolute():
         out_dir = Path.cwd() / out_dir
     return run_pipeline([symbol.upper() for symbol in args.tickers], out_dir)
+
+
+def _sentiment_bundle(
+    symbol: str,
+    company: str,
+    news_documents: list[dict],
+    now: pd.Timestamp,
+    window_days: int,
+) -> dict:
+    """Analysts, news and Reddit, with any missing group left out."""
+    present: list[dict] = []
+    groups: list[list[dict]] = []
+    news_source = aggregate_news(news_documents, now=now, window_days=window_days)
+    if news_source is not None:
+        present.append(news_source)
+        groups.append(news_documents)
+    reddit_documents = fetch_reddit(symbol, company)
+    if reddit_documents:
+        from ml.sentiment.finbert import score_titles
+
+        scores = score_titles([document["title"] for document in reddit_documents])
+        scored = apply_scores(reddit_documents, scores)
+        reddit_source = aggregate_posts(
+            scored,
+            source="reddit",
+            display_name="Reddit",
+            now=now,
+            window_days=window_days,
+            noun="thread",
+            note=_reddit_note(scored, now, window_days),
+        )
+        if reddit_source is not None:
+            present.append(reddit_source)
+            groups.append(scored)
+    analyst = fetch_analysts(symbol, api_key=read_api_key(), now=now)
+    if analyst is not None:
+        present.append(analyst["source"])
+        groups.append([analyst["headline"]])
+    order = {"analysts": 0, "news": 1, "reddit": 2}
+    present.sort(key=lambda source: order[source["source"]])
+    return {"sources": present, "headlines": _mix_headlines(groups)}
+
+
+def _reddit_note(documents: list[dict], now: pd.Timestamp, window_days: int) -> str:
+    start = pd.Timestamp(now) - pd.Timedelta(days=window_days)
+    current = [
+        document
+        for document in documents
+        if start <= pd.Timestamp(document["published_at"]) <= pd.Timestamp(now)
+    ]
+    subs: list[str] = []
+    for document in current:
+        publisher = str(document["publisher"])
+        if publisher not in subs:
+            subs.append(publisher)
+    if len(subs) <= 1:
+        where = subs[0] if subs else "Reddit"
+    else:
+        where = ", ".join(subs[:-1]) + " and " + subs[-1]
+    noun = "thread" if len(current) == 1 else "threads"
+    return f"{len(current)} {noun}, {where}"
+
+
+def _mix_headlines(groups: list[list[dict]], limit: int = 30) -> list[dict]:
+    """Keep at least two headlines from each group, then fill by recency."""
+    protected: list[dict] = []
+    seen: set[str] = set()
+    for group in groups:
+        for document in sorted(group, key=lambda item: item["published_at"], reverse=True)[:2]:
+            if document["id"] not in seen:
+                protected.append(document)
+                seen.add(document["id"])
+    rest = [
+        document
+        for group in groups
+        for document in group
+        if document["id"] not in seen
+    ]
+    mixed = protected + rest
+    mixed.sort(key=lambda item: item["published_at"], reverse=True)
+    return mixed[:limit]
 
 
 def _prior_versions(out_dir: Path) -> list[dict]:

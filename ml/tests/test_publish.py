@@ -126,7 +126,7 @@ def test_failed_gate_nulls_the_forecast_and_keeps_a_live_log_row() -> None:
         gate_passed=False,
         generated_at=GENERATED_AT,
         window_days=7,
-        source=_source(),
+        sources=[_source()],
         headlines=_headlines(),
     )
     rows = build_forecast_rows(

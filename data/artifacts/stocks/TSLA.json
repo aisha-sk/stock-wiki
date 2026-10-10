@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "symbol": "TSLA",
   "name": "Tesla, Inc.",
-  "generated_at": "2026-10-10T21:49:54Z",
+  "generated_at": "2026-10-10T21:57:39Z",
   "is_demo_data": false,
   "quote": {
     "price": 382.7,
@@ -497,6 +497,16 @@
     "window_days": 7,
     "sources": [
       {
+        "source": "analysts",
+        "display_name": "Wall Street analysts",
+        "score": 19,
+        "label": "neutral",
+        "doc_count": 44,
+        "note": "44 analysts, Oct 2026",
+        "method": "ratings",
+        "previous_score": 19
+      },
+      {
         "source": "news",
         "display_name": "News media",
         "score": 22,
@@ -507,9 +517,24 @@
         "previous_score": 3
       }
     ],
-    "gap": null
+    "gap": {
+      "points": 3,
+      "most_bullish": "news",
+      "most_bearish": "analysts",
+      "summary": "The available groups are close together."
+    }
   },
   "headlines": [
+    {
+      "id": "2b86a543183f",
+      "source": "analysts",
+      "publisher": "Yahoo Finance",
+      "title": "Consensus: 19 buy, 21 hold, 4 sell (Oct 2026)",
+      "url": null,
+      "published_at": "2026-10-10T21:57:39Z",
+      "score": 19,
+      "label": "neutral"
+    },
     {
       "id": "4d43fd200b11",
       "source": "news",
@@ -798,16 +823,6 @@
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE92THhEUHRtdE1ja3VfSG1PdEVrdFBOVTJnQUlxSWdDc1FMdTBFcWxvdXZBcWtvV09KSDdkR1lLWFFWTEJMZUVxdzJpZFR6WUhuazcyOXhjd0tiU0pvNUl5Sg?oc=5",
       "published_at": "2026-10-06T19:12:00Z",
       "score": 0,
-      "label": "neutral"
-    },
-    {
-      "id": "b19eae8dd461",
-      "source": "news",
-      "publisher": "Moomoo",
-      "title": "$TSLA: Is The Market Finally Repricing Tesla? - Moomoo",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQcmZ5ekx6S3hMcVhTck9KY196bFN4MEhCOGh1aktsLVNUVy1ZNjJTX0FGZTlxV0VaazhsZGw1bDhjN1ZMbnIwS0FPQUowVU1PNTNUQ1B2azB2UlJ4d3hjajBPc3JPb3pIRkFrOW8yS2ZaTS0zYXdRZlRZeU94ZW93QVc4NE84X3E3cHY4eko5Q0VZa3pPVEVGQU1aSVA?oc=5",
-      "published_at": "2026-10-06T15:12:42Z",
-      "score": 14,
       "label": "neutral"
     }
   ]
