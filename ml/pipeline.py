@@ -10,7 +10,12 @@ import pandas as pd
 
 from ml.config import load_config
 from ml.evaluate import strategy_backtest
-from ml.ingest.news import dedupe_headlines, fetch_headlines, scored_news_history
+from ml.ingest.news import (
+    dedupe_headlines,
+    fetch_headlines,
+    scored_news_history,
+    without_junk,
+)
 from ml.ingest.prices import load_prices
 from ml.publish import median_latency_ms, write_artifacts
 from ml.sentiment.aggregate import aggregate_news
@@ -176,7 +181,7 @@ def _scored_headlines(symbol: str, now: pd.Timestamp) -> list[dict]:
     """Score titles once and reuse the file on a later run the same checkout."""
     cache = Path(__file__).resolve().parent / "data" / "news" / f"{symbol}.json"
     if cache.exists():
-        return json.loads(cache.read_text(encoding="utf-8"))
+        return without_junk(json.loads(cache.read_text(encoding="utf-8")))
     from ml.sentiment.finbert import score_titles
 
     documents = fetch_headlines(symbol, now=now)

@@ -3,6 +3,7 @@
 import hashlib
 import json
 import os
+import re
 import time
 from collections.abc import Callable
 from datetime import date
@@ -12,9 +13,25 @@ import pandas as pd
 
 LOOKBACK_DAYS = 14
 _DOCUMENT_KEYS = ("id", "source", "publisher", "title", "url", "published_at")
+_JUNK_TITLE = re.compile(
+    r"stock price, news, quote and history"
+    r"|\b[A-Z]{1,6}\d{6}[CP]\d{8}\b"
+    r"|\b\d+(?:\.\d+)?\s+(?:put|call)\b",
+    re.IGNORECASE,
+)
 
 FinnhubFetcher = Callable[[str, str, pd.Timestamp], list[dict]]
 HeadlineFetcher = Callable[[str], list[dict]]
+
+
+def is_junk_headline(title: str) -> bool:
+    """Quote pages and option-chain listings are not articles."""
+    return _JUNK_TITLE.search(str(title)) is not None
+
+
+def without_junk(documents: list[dict]) -> list[dict]:
+    """Drop market-data pages before they are scored or published."""
+    return [document for document in documents if not is_junk_headline(str(document.get("title") or ""))]
 
 
 def headline_id(url: str) -> str:
@@ -151,7 +168,7 @@ def fetch_headlines(
         for document in documents
         if _as_utc(document["published_at"]) >= cutoff and set(document) >= set(_DOCUMENT_KEYS)
     ]
-    return dedupe_headlines(recent)
+    return dedupe_headlines(without_junk(recent))
 
 
 def fetch_finnhub(symbol: str, api_key: str, now: pd.Timestamp) -> list[dict]:
@@ -263,7 +280,7 @@ def scored_news_history(symbol: str, start: date, end: date) -> list[dict]:
     """
     cache = Path(__file__).resolve().parents[1] / "data" / "news" / f"{symbol}-history.json"
     if cache.exists():
-        return json.loads(cache.read_text(encoding="utf-8"))
+        return without_junk(json.loads(cache.read_text(encoding="utf-8")))
     documents = fetch_news_history(symbol, start, end)
     if not documents:
         return []
@@ -291,7 +308,7 @@ def fetch_news_history(symbol: str, start: date, end: date) -> list[dict]:
         raw_cache.write_text(json.dumps(stored) + "\n", encoding="utf-8")
         time.sleep(1)
     documents = [document for chunk in stored.values() for document in chunk]
-    return dedupe_headlines(documents)
+    return dedupe_headlines(without_junk(documents))
 
 
 def _weeks(start: date, end: date) -> list[tuple[date, date, str]]:
