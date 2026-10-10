@@ -1,7 +1,7 @@
 """MLflow logging. Uses a temporary file store, not the repo mlruns directory."""
 
-import pytest
 import pandas as pd
+import pytest
 from xgboost import XGBClassifier
 
 from ml.tracking import EXPERIMENT, log_candidate
