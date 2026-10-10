@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-10T21:49:54Z",
+  "generated_at": "2026-10-10T21:57:39Z",
   "is_demo_data": false,
   "production": null,
   "task": {
@@ -23,7 +23,7 @@
     "f1": 0.5534,
     "sharpe_ratio": 0.6334,
     "max_drawdown": -0.1079,
-    "inference_latency_ms": 3.8459,
+    "inference_latency_ms": 4.626,
     "cost_per_request_usd": null
   },
   "baselines": [
@@ -104,6 +104,16 @@
     }
   ],
   "versions": [
+    {
+      "version": "5",
+      "model_name": "direction-xgb",
+      "algorithm": "xgboost",
+      "trained_at": "2026-10-10T21:57:39Z",
+      "directional_accuracy": 0.4955,
+      "gate_passed": false,
+      "status": "rejected",
+      "mlflow_run_id": "7cad5016910d47c4befd7a250bdeffb7"
+    },
     {
       "version": "4",
       "model_name": "direction-xgb",

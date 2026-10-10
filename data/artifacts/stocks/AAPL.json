@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "symbol": "AAPL",
   "name": "Apple Inc.",
-  "generated_at": "2026-10-10T21:49:54Z",
+  "generated_at": "2026-10-10T21:57:39Z",
   "is_demo_data": false,
   "quote": {
     "price": 336.64,
@@ -497,6 +497,16 @@
     "window_days": 7,
     "sources": [
       {
+        "source": "analysts",
+        "display_name": "Wall Street analysts",
+        "score": 25,
+        "label": "bullish",
+        "doc_count": 44,
+        "note": "44 analysts, Oct 2026",
+        "method": "ratings",
+        "previous_score": 25
+      },
+      {
         "source": "news",
         "display_name": "News media",
         "score": 8,
@@ -507,9 +517,24 @@
         "previous_score": 32
       }
     ],
-    "gap": null
+    "gap": {
+      "points": 17,
+      "most_bullish": "analysts",
+      "most_bearish": "news",
+      "summary": "The available groups are close together."
+    }
   },
   "headlines": [
+    {
+      "id": "d8cf60f16bca",
+      "source": "analysts",
+      "publisher": "Yahoo Finance",
+      "title": "Consensus: 25 buy, 13 hold, 6 sell (Oct 2026)",
+      "url": null,
+      "published_at": "2026-10-10T21:57:39Z",
+      "score": 25,
+      "label": "bullish"
+    },
     {
       "id": "15b1bf869751",
       "source": "news",
@@ -798,16 +823,6 @@
       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQUUM0bF9QY2FsMm9mWjhoMFU1X3dCb21ZcmlBMnpQMGt4QWVtekpTSmlFbHVORV9mS3BFUTgxOEI5eEdBU1Q1ckY5RWJ5eU85UFpMRmY4Vjh3QVpXUVZ6Vi1IQmFiWGVMSDVPdzRKNXE4Rmx2ZTdvTFI5aDZZSGlDOTZia3d2dVNacHdJdnVKQlBEQQ?oc=5",
       "published_at": "2026-10-07T07:00:00Z",
       "score": 1,
-      "label": "neutral"
-    },
-    {
-      "id": "b894766a2971",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "NVIDIA (NVDA) vs. Apple (AAPL): Which Stock Wins the Valuation Race? - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdEV1TE1CTTFVRlA4TGZBVEptU08zbnNtbDhvZnJWOERBOVZmZHJNUnQtMjZTOG1TN2NWbmR3YlBWM1hNQTJrWGM4S25SSE9EaTlNaFNWTDBiamhEMm9ldlltbjJuaUp1UnNkeEdScTAyVUdaZXV5MUh3OXlHUllHS28zbm9kNG5VZnFCZmZWU2d5eExl?oc=5",
-      "published_at": "2026-10-07T05:19:51Z",
-      "score": 8,
       "label": "neutral"
     }
   ]

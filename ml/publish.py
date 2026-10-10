@@ -9,6 +9,8 @@ import numpy as np
 import pandas as pd
 import pandas_market_calendars as mcal
 
+from ml.sentiment.gap import gap_for
+
 MODEL_NAME = "direction-xgb"
 MODEL_VERSION = "1"
 ALGORITHM = "xgboost"
@@ -83,7 +85,7 @@ def build_stock(
     gate_passed: bool,
     generated_at: str,
     window_days: int,
-    source: dict | None,
+    sources: list[dict] | None = None,
     headlines: list[dict],
     model_name: str = MODEL_NAME,
     model_version: str = MODEL_VERSION,
@@ -127,8 +129,8 @@ def build_stock(
         "forecast": forecast,
         "sentiment": {
             "window_days": window_days,
-            "sources": [] if source is None else [source],
-            "gap": None,
+            "sources": list(sources or []),
+            "gap": gap_for(list(sources or [])),
         },
         "headlines": _headlines(headlines),
     }
@@ -250,7 +252,7 @@ def write_artifacts(
                 gate_passed=gate_passed,
                 generated_at=generated_at,
                 window_days=window_days,
-                source=sources.get(symbol),
+                sources=_as_source_list(sources.get(symbol)),
                 headlines=headlines.get(symbol, []),
                 model_name=model_name,
                 model_version=model_version,
@@ -368,6 +370,14 @@ def _rows_on_dates(predictions: pd.DataFrame, dates: set[pd.Timestamp]) -> pd.Da
         return predictions.iloc[0:0]
     mask = pd.to_datetime(predictions["as_of_date"]).isin(dates)
     return predictions.loc[mask]
+
+
+def _as_source_list(value: object) -> list[dict]:
+    if value is None:
+        return []
+    if isinstance(value, dict):
+        return [value]
+    return list(value)
 
 
 def _rate(value: object) -> float:
