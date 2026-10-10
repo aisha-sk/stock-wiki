@@ -15,6 +15,7 @@ from ml.ingest.news import (
     from_yfinance_item,
     headline_id,
     normalize_headline,
+    without_junk,
 )
 from ml.sentiment.run import apply_scores
 
@@ -187,3 +188,24 @@ def test_scored_headline_matches_the_contract_schema() -> None:
     scored = apply_scores([document], [-48])[0]
 
     _headline_validator().validate(scored)
+
+
+def test_option_and_quote_pages_are_dropped_before_scoring() -> None:
+    documents = [
+        {"title": "Tesla stock slips after the company misses delivery estimates"},
+        {"title": "Investors put fresh money into the Texas factory plan"},
+        {
+            "title": (
+                "TSLA Oct 2026 322.500 put (TSLA261009P00322500) stock price, "
+                "news, quote and history - Yahoo Finance UK"
+            )
+        },
+        {"title": "NVDA261016C00100000 quote page"},
+    ]
+
+    kept = without_junk(documents)
+
+    assert [item["title"] for item in kept] == [
+        "Tesla stock slips after the company misses delivery estimates",
+        "Investors put fresh money into the Texas factory plan",
+    ]

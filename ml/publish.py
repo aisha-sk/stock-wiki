@@ -66,7 +66,7 @@ def build_weekly_accuracy(predictions: pd.DataFrame) -> list[dict]:
         weeks.append(
             {
                 "week_start": pd.Timestamp(week_start).strftime("%Y-%m-%d"),
-                "accuracy": float(group["correct"].mean()),
+                "accuracy": round(float(group["correct"].mean()), 4),
                 "n": len(group),
             }
         )
@@ -91,12 +91,12 @@ def build_stock(
     """One ``stocks/{SYMBOL}.json`` body. Forecast is null when the gate failed."""
     ordered = prices.sort_values("date")
     window = ordered.tail(prices_in_payload)
-    last = float(window["close"].iloc[-1])
-    previous = float(window["close"].iloc[-2])
+    last = round(float(window["close"].iloc[-1]), 2)
+    previous = round(float(window["close"].iloc[-2]), 2)
     as_of = _date(window["date"].iloc[-1])
     forecast = None
     if gate_passed:
-        probability = float(forecast_prob)
+        probability = round(float(forecast_prob), 4)
         forecast = {
             "horizon_days": 5,
             "direction": _direction(probability),
@@ -121,7 +121,7 @@ def build_stock(
             "currency": "USD",
         },
         "prices": [
-            {"date": _date(row.date), "close": float(row.close)}
+            {"date": _date(row.date), "close": round(float(row.close), 2)}
             for row in window.itertuples(index=False)
         ],
         "forecast": forecast,
@@ -145,7 +145,7 @@ def build_forecast_rows(
     limit: int = FORECAST_LOG_LIMIT,
 ) -> list[dict]:
     """Newest first. Today's row is live and pending; older rows are resolved backtests."""
-    probability = float(live_prob)
+    probability = round(float(live_prob), 4)
     rows = [
         {
             "id": f"{symbol}-{live_as_of}-v{model_version}",
@@ -169,7 +169,7 @@ def build_forecast_rows(
     recent = recent.sort_values("as_of_date", ascending=False).head(limit)
     for record in recent.itertuples(index=False):
         as_of = _date(record.as_of_date)
-        prob_up = float(record.prob_up)
+        prob_up = round(float(record.prob_up), 4)
         direction = _direction(prob_up)
         actual_return = float(record.fwd_return_pct)
         actual_direction = "up" if actual_return > 0 else "down"
@@ -223,7 +223,7 @@ def write_artifacts(
 ) -> None:
     """Write the four artifact files. Numbers come from the arguments, not from literals."""
     out_dir.mkdir(parents=True, exist_ok=True)
-    accuracy = float(metrics["directional_accuracy"])
+    accuracy = round(float(metrics["directional_accuracy"]), 4)
     gate_passed = accuracy >= float(gate_threshold)
     _write(
         out_dir / "tickers.json",
@@ -312,18 +312,18 @@ def write_artifacts(
             },
             "metrics": {
                 "directional_accuracy": accuracy,
-                "precision": float(metrics["precision"]),
-                "recall": float(metrics["recall"]),
-                "f1": float(metrics["f1"]),
-                "sharpe_ratio": sharpe_ratio,
-                "max_drawdown": max_drawdown,
-                "inference_latency_ms": float(latency_ms),
+                "precision": _rate(metrics["precision"]),
+                "recall": _rate(metrics["recall"]),
+                "f1": _rate(metrics["f1"]),
+                "sharpe_ratio": None if sharpe_ratio is None else _rate(sharpe_ratio),
+                "max_drawdown": None if max_drawdown is None else _rate(max_drawdown),
+                "inference_latency_ms": _rate(latency_ms),
                 "cost_per_request_usd": None,
             },
             "baselines": [
                 {
                     "name": str(row["name"]),
-                    "directional_accuracy": float(row["directional_accuracy"]),
+                    "directional_accuracy": _rate(row["directional_accuracy"]),
                 }
                 for row in baselines
             ],
@@ -368,6 +368,10 @@ def _rows_on_dates(predictions: pd.DataFrame, dates: set[pd.Timestamp]) -> pd.Da
         return predictions.iloc[0:0]
     mask = pd.to_datetime(predictions["as_of_date"]).isin(dates)
     return predictions.loc[mask]
+
+
+def _rate(value: object) -> float:
+    return round(float(value), 4)
 
 
 def _headlines(headlines: list[dict]) -> list[dict]:
