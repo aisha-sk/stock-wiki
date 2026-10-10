@@ -20,6 +20,18 @@ def test_gap_with_three_two_and_one_sources() -> None:
     assert "sell" not in three["summary"].lower()
     assert "lean bullish" in three["summary"]
     assert two is not None
+    assert "bearish" not in two["summary"]
     assert two["points"] == 8
     assert "close together" in two["summary"]
     assert one is None
+
+
+def test_a_wide_gap_uses_the_neutral_label() -> None:
+    gap = gap_for([_source("analysts", 55), _source("news", 15)])
+
+    assert gap is not None
+    assert gap["points"] == 40
+    assert gap["summary"] == "Wall Street analysts lean bullish while News media are neutral."
+    assert "bearish" not in gap["summary"]
+    assert "buy" not in gap["summary"].lower()
+    assert "sell" not in gap["summary"].lower()
