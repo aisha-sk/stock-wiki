@@ -9,7 +9,7 @@ from typing import Any
 from pydantic import BaseModel, ValidationError
 
 from .errors import DataUnavailable, NotFound
-from .schemas import Stock, Tickers
+from .schemas import Forecasts, Model, Stock, Tickers
 
 log = logging.getLogger("sentifi.api")
 
@@ -64,8 +64,35 @@ def tickers() -> dict[str, Any]:
     return load("tickers.json", Tickers)
 
 
-def stock(symbol: str) -> dict[str, Any]:
+def known_symbol(symbol: str) -> str:
+    """Upper-case `symbol` and check it is one we track."""
     symbol = symbol.upper()
     if symbol not in {t["symbol"] for t in tickers()["tickers"]}:
         raise NotFound(f"Unknown symbol: {symbol}")
-    return load(f"stocks/{symbol}.json", Stock)
+    return symbol
+
+
+def stock(symbol: str) -> dict[str, Any]:
+    return load(f"stocks/{known_symbol(symbol)}.json", Stock)
+
+
+def model() -> dict[str, Any]:
+    return load("model.json", Model)
+
+
+def forecasts(symbol: str | None, limit: int) -> dict[str, Any]:
+    """Filter by symbol, recompute the summary over what is left, then apply the limit."""
+    payload = load("forecasts.json", Forecasts)
+    rows = payload["forecasts"]
+    if symbol is not None:
+        symbol = known_symbol(symbol)
+        rows = [row for row in rows if row["symbol"] == symbol]
+    resolved = [row for row in rows if row["status"] == "resolved"]
+    hits = sum(row["result"] == "hit" for row in resolved)
+    summary = {
+        "resolved": len(resolved),
+        "hits": hits,
+        "hit_rate": round(hits / len(resolved), 3) if resolved else None,
+        "pending": len(rows) - len(resolved),
+    }
+    return {**payload, "summary": summary, "forecasts": rows[:limit]}
