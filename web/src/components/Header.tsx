@@ -36,7 +36,7 @@ export function Header() {
           SentiFi
         </Link>
 
-        <nav aria-label="Main" className="flex flex-1 flex-wrap gap-1">
+        <nav aria-label="Main" className="order-last flex basis-full gap-1 overflow-x-auto md:order-none md:flex-1 md:basis-auto">
           {TABS.map((tab) => {
             const active = pathname === tab.href;
             return (
@@ -44,7 +44,7 @@ export function Header() {
                 key={tab.href}
                 href={withSymbol(tab.href)}
                 aria-current={active ? "page" : undefined}
-                className={`flex min-h-11 items-center border-b-[3px] px-4 text-[15px] ${
+                className={`flex min-h-11 shrink-0 items-center border-b-[3px] px-2.5 text-[15px] md:px-4 ${
                   active ? "border-ink font-semibold text-ink" : "border-transparent text-muted hover:text-ink"
                 }`}
               >
@@ -54,7 +54,7 @@ export function Header() {
           })}
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="ml-auto flex items-center gap-3">
           {health.data?.is_demo_data && (
             <span className="rounded-full border border-control px-3 py-1 text-[13px] text-muted">Demo data</span>
           )}

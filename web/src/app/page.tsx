@@ -1,5 +1,5 @@
-import { Placeholder } from "@/components/Placeholder";
+import { Dashboard } from "@/components/Dashboard";
 
 export default function DashboardPage() {
-  return <Placeholder title="Dashboard" ticket="F1-SWE-3 and F1-SWE-4" />;
+  return <Dashboard />;
 }
