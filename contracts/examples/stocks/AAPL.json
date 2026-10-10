@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0",
+  "symbol": "AAPL",
+  "name": "Apple Inc.",
+  "generated_at": "2026-10-09T21:00:00Z",
+  "is_demo_data": true,
+  "quote": {
+    "price": 227.84,
+    "change_pct": 0.37,
+    "as_of": "2026-10-09",
+    "currency": "USD"
+  },
+  "prices": [
+    {
+      "date": "2026-09-14",
+      "close": 222.0
+    },
+    {
+      "date": "2026-09-15",
+      "close": 223.0
+    },
+    {
+      "date": "2026-09-16",
+      "close": 222.0
+    },
+    {
+      "date": "2026-09-17",
+      "close": 224.0
+    },
+    {
+      "date": "2026-09-18",
+      "close": 225.0
+    },
+    {
+      "date": "2026-09-21",
+      "close": 224.0
+    },
+    {
+      "date": "2026-09-22",
+      "close": 226.0
+    },
+    {
+      "date": "2026-09-23",
+      "close": 225.0
+    },
+    {
+      "date": "2026-09-24",
+      "close": 227.0
+    },
+    {
+      "date": "2026-09-25",
+      "close": 226.0
+    },
+    {
+      "date": "2026-09-28",
+      "close": 225.0
+    },
+    {
+      "date": "2026-09-29",
+      "close": 227.0
+    },
+    {
+      "date": "2026-09-30",
+      "close": 228.0
+    },
+    {
+      "date": "2026-10-01",
+      "close": 226.0
+    },
+    {
+      "date": "2026-10-02",
+      "close": 227.0
+    },
+    {
+      "date": "2026-10-05",
+      "close": 229.0
+    },
+    {
+      "date": "2026-10-06",
+      "close": 228.0
+    },
+    {
+      "date": "2026-10-07",
+      "close": 227.0
+    },
+    {
+      "date": "2026-10-08",
+      "close": 227.0
+    },
+    {
+      "date": "2026-10-09",
+      "close": 227.84
+    }
+  ],
+  "forecast": {
+    "horizon_days": 5,
+    "direction": "up",
+    "prob_up": 0.55,
+    "confidence": 0.55,
+    "made_at": "2026-10-09T20:30:00Z",
+    "as_of_date": "2026-10-09",
+    "target_date": "2026-10-16",
+    "model_name": "direction-xgb",
+    "model_version": "12"
+  },
+  "sentiment": {
+    "window_days": 7,
+    "sources": [
+      {
+        "source": "analysts",
+        "display_name": "Wall Street analysts",
+        "score": 18,
+        "label": "neutral",
+        "doc_count": 52,
+        "note": "52 analysts, last 7 days",
+        "method": "ratings",
+        "previous_score": 20
+      },
+      {
+        "source": "news",
+        "display_name": "News media",
+        "score": 14,
+        "label": "neutral",
+        "doc_count": 167,
+        "note": "167 articles, last 7 days",
+        "method": "finbert",
+        "previous_score": 10
+      },
+      {
+        "source": "reddit",
+        "display_name": "Reddit",
+        "score": 9,
+        "label": "neutral",
+        "doc_count": 1200,
+        "note": "1.2k threads, r/apple and r/stocks",
+        "method": "finbert",
+        "previous_score": 5
+      }
+    ],
+    "gap": {
+      "points": 9,
+      "most_bullish": "analysts",
+      "most_bearish": "reddit",
+      "summary": "All three groups are broadly aligned and mildly positive."
+    }
+  },
+  "headlines": [
+    {
+      "id": "69d5ff833a8b",
+      "source": "analysts",
+      "publisher": "Finnhub consensus",
+      "title": "Services revenue seen offsetting a slow hardware cycle",
+      "url": "https://example.com/aapl/69d5ff833a8b",
+      "published_at": "2026-10-09T13:30:00Z",
+      "score": 27,
+      "label": "bullish"
+    },
+    {
+      "id": "3c91e2304a99",
+      "source": "news",
+      "publisher": "Example Wire",
+      "title": "New product event expected to focus on on-device AI",
+      "url": "https://example.com/aapl/3c91e2304a99",
+      "published_at": "2026-10-09T10:00:00Z",
+      "score": 6,
+      "label": "neutral"
+    },
+    {
+      "id": "d03a948256b5",
+      "source": "reddit",
+      "publisher": "r/apple",
+      "title": "Discussion: is the upgrade cycle finally back?",
+      "url": "https://example.com/aapl/d03a948256b5",
+      "published_at": "2026-10-08T22:10:00Z",
+      "score": 11,
+      "label": "neutral"
+    },
+    {
+      "id": "82dfa122363c",
+      "source": "news",
+      "publisher": "Example Business Daily",
+      "title": "Supplier checks point to steady holiday-quarter orders",
+      "url": "https://example.com/aapl/82dfa122363c",
+      "published_at": "2026-10-08T12:20:00Z",
+      "score": 22,
+      "label": "bullish"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "tickers.schema.json",
+  "title": "Ticker list: GET /api/tickers and data/artifacts/tickers.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "tickers"],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "tickers": {
+      "description": "Display order. The first item is the default selection.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["symbol", "name"],
+        "properties": {
+          "symbol": { "type": "string", "pattern": "^[A-Z][A-Z.]{0,5}$" },
+          "name": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

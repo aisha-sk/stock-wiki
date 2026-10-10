@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0",
+  "symbol": "NVDA",
+  "name": "NVIDIA Corporation",
+  "generated_at": "2026-10-09T21:00:00Z",
+  "is_demo_data": true,
+  "quote": {
+    "price": 131.07,
+    "change_pct": -0.93,
+    "as_of": "2026-10-09",
+    "currency": "USD"
+  },
+  "prices": [
+    {
+      "date": "2026-09-14",
+      "close": 138.0
+    },
+    {
+      "date": "2026-09-15",
+      "close": 139.0
+    },
+    {
+      "date": "2026-09-16",
+      "close": 141.0
+    },
+    {
+      "date": "2026-09-17",
+      "close": 140.0
+    },
+    {
+      "date": "2026-09-18",
+      "close": 142.0
+    },
+    {
+      "date": "2026-09-21",
+      "close": 141.0
+    },
+    {
+      "date": "2026-09-22",
+      "close": 139.0
+    },
+    {
+      "date": "2026-09-23",
+      "close": 140.0
+    },
+    {
+      "date": "2026-09-24",
+      "close": 138.0
+    },
+    {
+      "date": "2026-09-25",
+      "close": 137.0
+    },
+    {
+      "date": "2026-09-28",
+      "close": 139.0
+    },
+    {
+      "date": "2026-09-29",
+      "close": 136.0
+    },
+    {
+      "date": "2026-09-30",
+      "close": 135.0
+    },
+    {
+      "date": "2026-10-01",
+      "close": 137.0
+    },
+    {
+      "date": "2026-10-02",
+      "close": 134.0
+    },
+    {
+      "date": "2026-10-05",
+      "close": 135.0
+    },
+    {
+      "date": "2026-10-06",
+      "close": 133.0
+    },
+    {
+      "date": "2026-10-07",
+      "close": 134.0
+    },
+    {
+      "date": "2026-10-08",
+      "close": 132.3
+    },
+    {
+      "date": "2026-10-09",
+      "close": 131.07
+    }
+  ],
+  "forecast": {
+    "horizon_days": 5,
+    "direction": "down",
+    "prob_up": 0.42,
+    "confidence": 0.58,
+    "made_at": "2026-10-09T20:30:00Z",
+    "as_of_date": "2026-10-09",
+    "target_date": "2026-10-16",
+    "model_name": "direction-xgb",
+    "model_version": "12"
+  },
+  "sentiment": {
+    "window_days": 7,
+    "sources": [
+      {
+        "source": "analysts",
+        "display_name": "Wall Street analysts",
+        "score": 45,
+        "label": "bullish",
+        "doc_count": 44,
+        "note": "44 analysts, last 7 days",
+        "method": "ratings",
+        "previous_score": 45
+      },
+      {
+        "source": "news",
+        "display_name": "News media",
+        "score": -6,
+        "label": "neutral",
+        "doc_count": 198,
+        "note": "198 articles, last 7 days",
+        "method": "finbert",
+        "previous_score": 12
+      },
+      {
+        "source": "reddit",
+        "display_name": "Reddit",
+        "score": -22,
+        "label": "bearish",
+        "doc_count": 3400,
+        "note": "3.4k threads, r/stocks and r/investing",
+        "method": "finbert",
+        "previous_score": 31
+      }
+    ],
+    "gap": {
+      "points": 67,
+      "most_bullish": "analysts",
+      "most_bearish": "reddit",
+      "summary": "Analysts hold firm while media and retail sentiment cool."
+    }
+  },
+  "headlines": [
+    {
+      "id": "ab7ab1b1fe03",
+      "source": "analysts",
+      "publisher": "Finnhub consensus",
+      "title": "Analysts reiterate positive ratings ahead of next earnings report",
+      "url": "https://example.com/nvda/ab7ab1b1fe03",
+      "published_at": "2026-10-09T14:00:00Z",
+      "score": 50,
+      "label": "bullish"
+    },
+    {
+      "id": "96b0be5f5799",
+      "source": "news",
+      "publisher": "Example Wire",
+      "title": "Export-rule uncertainty weighs on chip stocks",
+      "url": "https://example.com/nvda/96b0be5f5799",
+      "published_at": "2026-10-09T10:30:00Z",
+      "score": -44,
+      "label": "bearish"
+    },
+    {
+      "id": "57cfd610f75c",
+      "source": "reddit",
+      "publisher": "r/stocks",
+      "title": "Thread: taking profits before earnings, anyone else?",
+      "url": "https://example.com/nvda/57cfd610f75c",
+      "published_at": "2026-10-09T08:15:00Z",
+      "score": -33,
+      "label": "bearish"
+    },
+    {
+      "id": "e76e8b41c6ee",
+      "source": "news",
+      "publisher": "Example Tech Review",
+      "title": "Data-center demand stays strong, supply still the bottleneck",
+      "url": "https://example.com/nvda/e76e8b41c6ee",
+      "published_at": "2026-10-08T18:40:00Z",
+      "score": 28,
+      "label": "bullish"
+    },
+    {
+      "id": "59f648af686b",
+      "source": "reddit",
+      "publisher": "r/investing",
+      "title": "Is the AI trade crowded? Long post with charts",
+      "url": "https://example.com/nvda/59f648af686b",
+      "published_at": "2026-10-08T15:05:00Z",
+      "score": -18,
+      "label": "neutral"
+    }
+  ]
+}

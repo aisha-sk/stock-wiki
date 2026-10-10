@@ -1,0 +1,209 @@
+{
+  "schema_version": "1.0",
+  "symbol": "TSLA",
+  "name": "Tesla, Inc.",
+  "generated_at": "2026-10-09T21:00:00Z",
+  "is_demo_data": true,
+  "quote": {
+    "price": 248.31,
+    "change_pct": 1.77,
+    "as_of": "2026-10-09",
+    "currency": "USD"
+  },
+  "prices": [
+    {
+      "date": "2026-09-14",
+      "close": 231.0
+    },
+    {
+      "date": "2026-09-15",
+      "close": 233.0
+    },
+    {
+      "date": "2026-09-16",
+      "close": 230.0
+    },
+    {
+      "date": "2026-09-17",
+      "close": 236.0
+    },
+    {
+      "date": "2026-09-18",
+      "close": 238.0
+    },
+    {
+      "date": "2026-09-21",
+      "close": 235.0
+    },
+    {
+      "date": "2026-09-22",
+      "close": 239.0
+    },
+    {
+      "date": "2026-09-23",
+      "close": 241.0
+    },
+    {
+      "date": "2026-09-24",
+      "close": 238.0
+    },
+    {
+      "date": "2026-09-25",
+      "close": 240.0
+    },
+    {
+      "date": "2026-09-28",
+      "close": 243.0
+    },
+    {
+      "date": "2026-09-29",
+      "close": 241.0
+    },
+    {
+      "date": "2026-09-30",
+      "close": 245.0
+    },
+    {
+      "date": "2026-10-01",
+      "close": 244.0
+    },
+    {
+      "date": "2026-10-02",
+      "close": 242.0
+    },
+    {
+      "date": "2026-10-05",
+      "close": 246.0
+    },
+    {
+      "date": "2026-10-06",
+      "close": 245.0
+    },
+    {
+      "date": "2026-10-07",
+      "close": 247.0
+    },
+    {
+      "date": "2026-10-08",
+      "close": 244.0
+    },
+    {
+      "date": "2026-10-09",
+      "close": 248.31
+    }
+  ],
+  "forecast": {
+    "horizon_days": 5,
+    "direction": "up",
+    "prob_up": 0.64,
+    "confidence": 0.64,
+    "made_at": "2026-10-09T20:30:00Z",
+    "as_of_date": "2026-10-09",
+    "target_date": "2026-10-16",
+    "model_name": "direction-xgb",
+    "model_version": "12"
+  },
+  "sentiment": {
+    "window_days": 7,
+    "sources": [
+      {
+        "source": "analysts",
+        "display_name": "Wall Street analysts",
+        "score": 42,
+        "label": "bullish",
+        "doc_count": 31,
+        "note": "31 analysts, last 7 days",
+        "method": "ratings",
+        "previous_score": 38
+      },
+      {
+        "source": "news",
+        "display_name": "News media",
+        "score": 8,
+        "label": "neutral",
+        "doc_count": 142,
+        "note": "142 articles, last 7 days",
+        "method": "finbert",
+        "previous_score": 15
+      },
+      {
+        "source": "reddit",
+        "display_name": "Reddit",
+        "score": -37,
+        "label": "bearish",
+        "doc_count": 2100,
+        "note": "2.1k threads, r/stocks and r/wallstreetbets",
+        "method": "finbert",
+        "previous_score": -12
+      }
+    ],
+    "gap": {
+      "points": 79,
+      "most_bullish": "analysts",
+      "most_bearish": "reddit",
+      "summary": "Analysts lean bullish while retail forums lean bearish."
+    }
+  },
+  "headlines": [
+    {
+      "id": "ebe860c973bd",
+      "source": "analysts",
+      "publisher": "Finnhub consensus",
+      "title": "Several analysts raise price targets after delivery numbers beat estimates",
+      "url": "https://example.com/tsla/ebe860c973bd",
+      "published_at": "2026-10-09T13:10:00Z",
+      "score": 55,
+      "label": "bullish"
+    },
+    {
+      "id": "978c785b53aa",
+      "source": "news",
+      "publisher": "Example Wire",
+      "title": "Regulators open a review into driver-assist claims",
+      "url": "https://example.com/tsla/978c785b53aa",
+      "published_at": "2026-10-09T11:45:00Z",
+      "score": -48,
+      "label": "bearish"
+    },
+    {
+      "id": "153df06c0355",
+      "source": "reddit",
+      "publisher": "r/wallstreetbets",
+      "title": "Megathread: is the rally priced in? Most top comments say yes",
+      "url": "https://example.com/tsla/153df06c0355",
+      "published_at": "2026-10-09T09:20:00Z",
+      "score": -41,
+      "label": "bearish"
+    },
+    {
+      "id": "6bcde4a4e78e",
+      "source": "news",
+      "publisher": "Example Business Daily",
+      "title": "Deliveries beat estimates as price cuts lift volume",
+      "url": "https://example.com/tsla/6bcde4a4e78e",
+      "published_at": "2026-10-08T20:05:00Z",
+      "score": 36,
+      "label": "bullish"
+    },
+    {
+      "id": "0d829d65843a",
+      "source": "reddit",
+      "publisher": "r/stocks",
+      "title": "Sold half my position today, margins keep shrinking",
+      "url": "https://example.com/tsla/0d829d65843a",
+      "published_at": "2026-10-08T16:30:00Z",
+      "score": -52,
+      "label": "bearish"
+    },
+    {
+      "id": "0f34723ce73f",
+      "source": "analysts",
+      "publisher": "Finnhub consensus",
+      "title": "Consensus rating holds at buy with two new upgrades this week",
+      "url": "https://example.com/tsla/0f34723ce73f",
+      "published_at": "2026-10-07T12:00:00Z",
+      "score": 44,
+      "label": "bullish"
+    }
+  ]
+}

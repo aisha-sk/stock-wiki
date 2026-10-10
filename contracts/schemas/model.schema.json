@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "model.schema.json",
+  "title": "Model performance payload: GET /api/model and data/artifacts/model.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "generated_at", "is_demo_data", "production", "task", "metrics", "baselines", "gate", "weekly_accuracy", "versions"],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "is_demo_data": { "type": "boolean" },
+    "production": {
+      "description": "The version currently serving forecasts; null if none has passed the gate.",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["model_name", "version", "algorithm", "trained_at"],
+          "properties": {
+            "model_name": { "type": "string" },
+            "version": { "$ref": "#/$defs/version" },
+            "algorithm": { "$ref": "#/$defs/algorithm" },
+            "trained_at": { "type": "string", "format": "date-time" }
+          }
+        }
+      ]
+    },
+    "task": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["description", "horizon_days", "validation", "tickers", "test_start", "test_end", "n_test"],
+      "properties": {
+        "description": { "type": "string" },
+        "horizon_days": { "const": 5 },
+        "validation": { "enum": ["walk_forward", "chronological_holdout"] },
+        "tickers": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "test_start": { "type": "string", "format": "date" },
+        "test_end": { "type": "string", "format": "date" },
+        "n_test": { "type": "integer", "minimum": 1, "description": "Out-of-sample predictions behind the metrics." }
+      }
+    },
+    "metrics": {
+      "description": "Metrics of the production version (or of the latest candidate when production is null). Rates are fractions 0 to 1.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["directional_accuracy", "precision", "recall", "f1", "sharpe_ratio", "max_drawdown", "inference_latency_ms", "cost_per_request_usd"],
+      "properties": {
+        "directional_accuracy": { "$ref": "#/$defs/rate" },
+        "precision": { "$ref": "#/$defs/rate", "description": "Positive class = up." },
+        "recall": { "$ref": "#/$defs/rate" },
+        "f1": { "$ref": "#/$defs/rate" },
+        "sharpe_ratio": { "type": ["number", "null"], "description": "Annualised, long-when-up / flat-when-down backtest. null until computed." },
+        "max_drawdown": { "type": ["number", "null"], "maximum": 0, "description": "Negative fraction: -0.087 means -8.7%." },
+        "inference_latency_ms": { "type": ["number", "null"], "minimum": 0 },
+        "cost_per_request_usd": { "type": ["number", "null"], "minimum": 0, "description": "null for a locally run model." }
+      }
+    },
+    "baselines": {
+      "description": "Trivial predictors scored on the same test set.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "directional_accuracy"],
+        "properties": {
+          "name": { "enum": ["always_up", "previous_direction"] },
+          "directional_accuracy": { "$ref": "#/$defs/rate" }
+        }
+      }
+    },
+    "gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["metric", "threshold", "passed"],
+      "properties": {
+        "metric": { "const": "directional_accuracy" },
+        "threshold": { "$ref": "#/$defs/rate" },
+        "passed": { "type": "boolean" }
+      }
+    },
+    "weekly_accuracy": {
+      "description": "Ascending by week_start (a Monday). At most the last 12 weeks.",
+      "type": "array",
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["week_start", "accuracy", "n"],
+        "properties": {
+          "week_start": { "type": "string", "format": "date" },
+          "accuracy": { "$ref": "#/$defs/rate" },
+          "n": { "type": "integer", "minimum": 1 }
+        }
+      }
+    },
+    "versions": {
+      "description": "Newest first. At most one has status production.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["version", "model_name", "algorithm", "trained_at", "directional_accuracy", "gate_passed", "status", "mlflow_run_id"],
+        "properties": {
+          "version": { "$ref": "#/$defs/version" },
+          "model_name": { "type": "string" },
+          "algorithm": { "$ref": "#/$defs/algorithm" },
+          "trained_at": { "type": "string", "format": "date-time" },
+          "directional_accuracy": { "$ref": "#/$defs/rate" },
+          "gate_passed": { "type": "boolean" },
+          "status": { "enum": ["production", "archived", "rejected"] },
+          "mlflow_run_id": { "type": ["string", "null"] }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "rate": { "type": "number", "minimum": 0, "maximum": 1 },
+    "version": { "type": "string", "pattern": "^[0-9]+$" },
+    "algorithm": { "enum": ["logistic_regression", "xgboost"] }
+  }
+}

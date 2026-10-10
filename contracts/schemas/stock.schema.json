@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "stock.schema.json",
+  "title": "Stock dashboard payload: GET /api/stocks/{symbol} and data/artifacts/stocks/{SYMBOL}.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "symbol", "name", "generated_at", "is_demo_data", "quote", "prices", "forecast", "sentiment", "headlines"],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "symbol": { "$ref": "#/$defs/symbol" },
+    "name": { "type": "string", "minLength": 1 },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "is_demo_data": { "type": "boolean" },
+    "quote": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["price", "change_pct", "as_of", "currency"],
+      "properties": {
+        "price": { "type": "number", "exclusiveMinimum": 0 },
+        "change_pct": { "type": "number", "description": "Percent units: 1.8 means +1.8% vs the previous close." },
+        "as_of": { "type": "string", "format": "date" },
+        "currency": { "const": "USD" }
+      }
+    },
+    "prices": {
+      "description": "Daily closes, ascending by date, no gaps filled. Last item is the session in quote.as_of.",
+      "type": "array",
+      "minItems": 20,
+      "maxItems": 260,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["date", "close"],
+        "properties": {
+          "date": { "type": "string", "format": "date" },
+          "close": { "type": "number", "exclusiveMinimum": 0 }
+        }
+      }
+    },
+    "forecast": {
+      "description": "null when no model version has passed the quality gate.",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["horizon_days", "direction", "prob_up", "confidence", "made_at", "as_of_date", "target_date", "model_name", "model_version"],
+          "properties": {
+            "horizon_days": { "const": 5 },
+            "direction": { "$ref": "#/$defs/direction" },
+            "prob_up": { "type": "number", "minimum": 0, "maximum": 1 },
+            "confidence": { "type": "number", "minimum": 0.5, "maximum": 1, "description": "max(prob_up, 1 - prob_up)" },
+            "made_at": { "type": "string", "format": "date-time" },
+            "as_of_date": { "type": "string", "format": "date", "description": "Last session whose data the forecast used." },
+            "target_date": { "type": "string", "format": "date", "description": "as_of_date plus 5 trading days." },
+            "model_name": { "type": "string" },
+            "model_version": { "type": "string", "pattern": "^[0-9]+$" }
+          }
+        }
+      ]
+    },
+    "sentiment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["window_days", "sources", "gap"],
+      "properties": {
+        "window_days": { "type": "integer", "minimum": 1 },
+        "sources": {
+          "description": "0 to 3 items, at most one per source, ordered analysts, news, reddit. A source with no data is omitted, not zero-filled.",
+          "type": "array",
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["source", "display_name", "score", "label", "doc_count", "note", "method", "previous_score"],
+            "properties": {
+              "source": { "$ref": "#/$defs/source" },
+              "display_name": { "type": "string" },
+              "score": { "$ref": "#/$defs/score" },
+              "label": { "$ref": "#/$defs/label" },
+              "doc_count": { "type": "integer", "minimum": 0, "description": "Articles, posts or analysts behind the score." },
+              "note": { "type": "string", "description": "Display-only caption, e.g. '142 articles, last 7 days'." },
+              "method": { "enum": ["finbert", "llm", "ratings"], "description": "ratings = derived from analyst buy/hold/sell counts, not from text." },
+              "previous_score": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/score" }], "description": "Score for the window before this one; null if unknown." }
+            }
+          }
+        },
+        "gap": {
+          "description": "null when fewer than 2 sources are present.",
+          "oneOf": [
+            { "type": "null" },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["points", "most_bullish", "most_bearish", "summary"],
+              "properties": {
+                "points": { "type": "integer", "minimum": 0, "maximum": 200, "description": "max(score) - min(score) across present sources." },
+                "most_bullish": { "$ref": "#/$defs/source" },
+                "most_bearish": { "$ref": "#/$defs/source" },
+                "summary": { "type": "string", "description": "One plain sentence. Never uses buy/sell language." }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "headlines": {
+      "description": "Newest first, at most 30, aim for 2+ per present source.",
+      "type": "array",
+      "maxItems": 30,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "source", "publisher", "title", "url", "published_at", "score", "label"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1, "description": "Stable id, e.g. first 12 hex chars of sha1(url)." },
+          "source": { "$ref": "#/$defs/source" },
+          "publisher": { "type": "string", "description": "e.g. 'Reuters', 'r/wallstreetbets', 'Finnhub consensus'." },
+          "title": { "type": "string", "minLength": 1 },
+          "url": { "oneOf": [{ "type": "null" }, { "type": "string", "format": "uri" }] },
+          "published_at": { "type": "string", "format": "date-time" },
+          "score": { "$ref": "#/$defs/score" },
+          "label": { "$ref": "#/$defs/label" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "symbol": { "type": "string", "pattern": "^[A-Z][A-Z.]{0,5}$" },
+    "direction": { "enum": ["up", "down"] },
+    "source": { "enum": ["analysts", "news", "reddit"] },
+    "label": { "enum": ["bullish", "neutral", "bearish"] },
+    "score": { "type": "integer", "minimum": -100, "maximum": 100 }
+  }
+}

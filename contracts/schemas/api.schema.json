@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "api.schema.json",
+  "title": "API-only shapes (not produced by the ML pipeline)",
+  "$defs": {
+    "health": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "api_version", "data_generated_at", "is_demo_data"],
+      "properties": {
+        "status": { "const": "ok" },
+        "api_version": { "const": "1.0" },
+        "data_generated_at": { "type": ["string", "null"], "format": "date-time", "description": "generated_at of model.json." },
+        "is_demo_data": { "type": "boolean" }
+      }
+    },
+    "error": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["error"],
+      "properties": {
+        "error": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["code", "message"],
+          "properties": {
+            "code": { "enum": ["not_found", "validation_error", "data_unavailable", "internal_error"] },
+            "message": { "type": "string" }
+          }
+        }
+      }
+    },
+    "alert_request": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["email", "symbol", "trigger"],
+      "properties": {
+        "email": { "type": "string", "format": "email" },
+        "symbol": { "type": "string", "pattern": "^[A-Z][A-Z.]{0,5}$" },
+        "trigger": { "enum": ["sharp_shift", "any_flip", "weekly_digest"] }
+      }
+    },
+    "alert_response": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "email", "symbol", "trigger", "created_at", "delivery"],
+      "properties": {
+        "id": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "symbol": { "type": "string" },
+        "trigger": { "enum": ["sharp_shift", "any_flip", "weekly_digest"] },
+        "created_at": { "type": "string", "format": "date-time" },
+        "delivery": { "enum": ["mock", "email"], "description": "mock = stored, no email sent." }
+      }
+    },
+    "alert_preview": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["symbol", "subject", "body_lines", "is_demo_data"],
+      "properties": {
+        "symbol": { "type": "string" },
+        "subject": { "type": "string" },
+        "body_lines": { "type": "array", "items": { "type": "string" } },
+        "is_demo_data": { "type": "boolean" }
+      }
+    },
+    "explain_request": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["symbol", "question"],
+      "properties": {
+        "symbol": { "type": "string", "pattern": "^[A-Z][A-Z.]{0,5}$" },
+        "question": { "type": "string", "minLength": 1, "maxLength": 500 }
+      }
+    },
+    "explain_response": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["symbol", "answer", "citations", "model", "generated_at"],
+      "properties": {
+        "symbol": { "type": "string" },
+        "answer": { "type": "string" },
+        "citations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["headline_id", "title", "url"],
+            "properties": {
+              "headline_id": { "type": "string", "description": "Must match an id in that symbol's headlines." },
+              "title": { "type": "string" },
+              "url": { "type": ["string", "null"] }
+            }
+          }
+        },
+        "model": { "type": "string" },
+        "generated_at": { "type": "string", "format": "date-time" }
+      }
+    }
+  }
+}

@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SentiFi dashboard</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'IBM Plex Sans',system-ui,sans-serif;background:#F5F6F8;color:#11151B}
+button{font-family:inherit;cursor:pointer}
+input{font-family:inherit}
+</style>
+</helmet>
+<div style="min-height: 100%; background: #F5F6F8; font-family: 'IBM Plex Sans', system-ui, sans-serif; color: #11151B">
+
+<header style="background: #FFFFFF; border-bottom: 1px solid #E3E6EB">
+<div style="max-width: 1200px; margin: 0 auto; padding: 12px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px">
+<div style="display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 20px">
+<svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="6" fill="#11151B"/><path d="M6 19 L11 13 L15 16 L22 8" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+SentiFi
+</div>
+<nav style="display: flex; flex-wrap: wrap; gap: 4px; flex: 1 1 auto" aria-label="Main">
+<sc-for list="{{tabs}}" as="tab" hint-placeholder-count="3">
+<button onClick="{{ tab.pick }}" style="{{ tab.style }}">{{ tab.label }}</button>
+</sc-for>
+</nav>
+<div style="display: flex; gap: 8px; align-items: center">
+<span style="font-size: 13px; color: #5B6472">Demo data</span>
+<button onClick="{{ goAlerts }}" style="min-height: 44px; padding: 0 20px; border-radius: 8px; border: none; background: #11151B; color: #FFFFFF; font-size: 15px; font-weight: 500">Sign up free</button>
+</div>
+</div>
+</header>
+
+<main style="max-width: 1200px; margin: 0 auto; padding: 24px; display: flex; flex-direction: column; gap: 24px">
+
+<div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center" role="group" aria-label="Choose a stock">
+<span style="font-size: 14px; color: #5B6472; margin-right: 8px">Tracking</span>
+<sc-for list="{{tickers}}" as="tk" hint-placeholder-count="3">
+<button onClick="{{ tk.pick }}" style="{{ tk.style }}">{{ tk.sym }}</button>
+</sc-for>
+</div>
+
+<sc-if value="{{ isDash }}" hint-placeholder-val="{{ true }}">
+<section style="display: flex; flex-direction: column; gap: 24px">
+
+<div style="display: flex; flex-wrap: wrap; gap: 24px">
+<div style="flex: 999 1 560px; min-width: 0; background: #FFFFFF; border: 1px solid #E3E6EB; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px">
+<div>
+<div style="font-size: 14px; color: #5B6472">{{ cur.sym }} · {{ cur.name }}</div>
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 40px; font-weight: 500">{{ cur.price }}</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 16px; color: {{ cur.chgColor }}">{{ cur.chg }} today</span></div>
+</div>
+<div style="font-size: 13px; color: #5B6472; align-self: flex-start">Price, last 20 sessions, with model forecast</div>
+</div>
+<svg viewBox="0 0 700 130" style="width: 100%; height: auto; max-height: 200px" role="img" aria-label="Price line chart with dashed five-day forecast">
+<polyline points="{{ cur.line }}" fill="none" stroke="#11151B" stroke-width="2.5" stroke-linejoin="round"/>
+<line x1="{{ cur.lx }}" y1="{{ cur.ly }}" x2="{{ cur.fx }}" y2="{{ cur.fy }}" stroke="{{ cur.fcColor }}" stroke-width="3" stroke-dasharray="6 5"/>
+<circle cx="{{ cur.fx }}" cy="{{ cur.fy }}" r="5" fill="{{ cur.fcColor }}"/>
+</svg>
+</div>
+
+<div style="flex: 1 1 280px; min-width: 0; background: #11151B; color: #FFFFFF; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<div style="font-size: 14px; color: #C5CBD6">Model forecast · next 5 trading days</div>
+<div style="font-size: 36px; font-weight: 600">{{ cur.fcLabel }}</div>
+<div style="font-size: 15px; color: #C5CBD6">Model confidence <span style="font-family: 'IBM Plex Mono', monospace; color: #FFFFFF">{{ cur.conf }}%</span></div>
+<div style="height: 8px; border-radius: 4px; background: #3A424F"><div style="height: 8px; border-radius: 4px; background: #FFFFFF; width: {{ cur.conf }}%"></div></div>
+<div style="font-size: 13px; color: #C5CBD6; margin-top: 8px">direction-xgb v12 · Production · retrained Sun, Oct 4. Historical directional accuracy is on the Model performance tab.</div>
+</div>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #E3E6EB; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px">
+<h2 style="margin: 0; font-size: 20px; font-weight: 600">Sentiment spectrum</h2>
+<div style="font-size: 14px; color: #5B6472">Bearish &larr; &rarr; Bullish, scored from -100 to +100</div>
+</div>
+<sc-for list="{{cur.sources}}" as="s" hint-placeholder-count="3">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px">
+<div style="flex: 1 1 200px; min-width: 0">
+<div style="font-weight: 500">{{ s.name }}</div>
+<div style="font-size: 13px; color: #5B6472">{{ s.note }}</div>
+</div>
+<div style="flex: 3 1 320px; min-width: 0; position: relative; height: 28px">
+<div style="position: absolute; left: 0; right: 0; top: 10px; height: 8px; border-radius: 4px; background: linear-gradient(90deg, #C2410C, #E3E6EB 50%, #1D4ED8)"></div>
+<div style="position: absolute; top: 2px; width: 4px; height: 24px; margin-left: -2px; border-radius: 2px; background: #11151B; left: {{ s.pos }}%"></div>
+</div>
+<div style="flex: 0 0 110px; text-align: right; font-family: 'IBM Plex Mono', monospace; font-size: 15px; color: {{ s.color }}">{{ s.score }} {{ s.label }}</div>
+</div>
+</sc-for>
+<div style="border-top: 1px solid #E3E6EB; padding-top: 16px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; justify-content: space-between">
+<div style="font-size: 15px"><span style="font-weight: 600">Perspective gap: {{ cur.gap }} points.</span> {{ cur.gapNote }}</div>
+<button onClick="{{ goAlerts }}" style="min-height: 44px; padding: 0 16px; border-radius: 8px; border: 1px solid #11151B; background: #FFFFFF; color: #11151B; font-size: 15px; font-weight: 500">Alert me when this shifts</button>
+</div>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #E3E6EB; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h2 style="margin: 0 0 8px; font-size: 20px; font-weight: 600">What each side is reading</h2>
+<sc-for list="{{cur.heads}}" as="h" hint-placeholder-count="3">
+<div style="display: flex; flex-wrap: wrap; gap: 8px 16px; padding: 12px 0; border-top: 1px solid #E3E6EB; align-items: baseline">
+<span style="flex: 0 0 120px; font-size: 13px; font-weight: 600; color: #5B6472">{{ h.src }}</span>
+<span style="flex: 1 1 320px; min-width: 0">{{ h.title }}</span>
+<span style="flex: 0 0 80px; text-align: right; font-size: 13px; color: {{ h.color }}">{{ h.tone }}</span>
+</div>
+</sc-for>
+</div>
+
+</section>
+</sc-if>
+
+<sc-if value="{{ isModel }}" hint-placeholder-val="{{ false }}">
+<section style="display: flex; flex-direction: column; gap: 24px">
+
+<div style="background: #FFFFFF; border: 1px solid #E3E6EB; border-radius: 12px; padding: 24px; display: flex; flex-wrap: wrap; gap: 12px 32px; justify-content: space-between; align-items: center">
+<div>
+<h2 style="margin: 0 0 4px; font-size: 20px; font-weight: 600">Model performance</h2>
+<div style="font-size: 15px; color: #5B6472">direction-xgb v12 predicts five-day price direction. Sentiment scores come from a separate FinBERT model and explain narratives; they don't compete with it.</div>
+</div>
+<div style="font-size: 14px; padding: 6px 12px; border-radius: 16px; border: 1px solid #1D4ED8; color: #1D4ED8; font-weight: 500">Production · passed quality gate</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<sc-for list="{{metrics}}" as="m" hint-placeholder-count="8">
+<div style="flex: 1 1 200px; min-width: 0; background: #FFFFFF; border: 1px solid #E3E6EB; border-radius: 12px; padding: 16px 20px">
+<div style="font-size: 13px; color: #5B6472">{{ m.group }}</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 28px; font-weight: 500; margin: 4px 0">{{ m.value }}</div>
+<div style="font-size: 14px">{{ m.label }}</div>
+</div>
+</sc-for>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 24px">
+<div style="flex: 1 1 420px; min-width: 0; background: #FFFFFF; border: 1px solid #E3E6EB; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 16px">
+<h3 style="margin: 0; font-size: 17px; font-weight: 600">Weekly directional accuracy</h3>
+<div style="position: relative; height: 180px; display: flex; align-items: flex-end; gap: 6px; border-bottom: 1px solid #E3E6EB">
+<div style="position: absolute; left: 0; right: 0; bottom: 50%; border-top: 2px dashed #C2410C"></div>
+<sc-for list="{{weeks}}" as="w" hint-placeholder-count="12">
+<div style="flex: 1 1 0; min-width: 0; border-radius: 3px 3px 0 0; background: #11151B; height: {{ w.h }}%" title="{{ w.title }}"></div>
+</sc-for>
+</div>
+<div style="font-size: 13px; color: #5B6472"><span style="color: #C2410C; font-weight: 600">Dashed line:</span> 55% quality gate. Last 12 weeks, oldest on the left.</div>
+</div>
+
+<div style="flex: 1 1 420px; min-width: 0; background: #FFFFFF; border: 1px solid #E3E6EB; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-size: 17px; font-weight: 600">Model registry (MLflow)</h3>
+<div style="overflow-x: auto">
+<table style="border-collapse: collapse; width: 100%; min-width: 420px; font-size: 14px">
+<thead><tr style="text-align: left; color: #5B6472"><th style="padding: 8px 8px 8px 0; font-weight: 500">Version</th><th style="padding: 8px; font-weight: 500">Trained</th><th style="padding: 8px; font-weight: 500">Accuracy</th><th style="padding: 8px 0 8px 8px; font-weight: 500">Status</th></tr></thead>
+<tbody>
+<sc-for list="{{versions}}" as="v" hint-placeholder-count="3">
+<tr style="border-top: 1px solid #E3E6EB"><td style="padding: 12px 8px 12px 0; font-family: 'IBM Plex Mono', monospace">{{ v.id }}</td><td style="padding: 12px 8px">{{ v.date }}</td><td style="padding: 12px 8px; font-family: 'IBM Plex Mono', monospace">{{ v.acc }}</td><td style="padding: 12px 0 12px 8px; font-weight: 500">{{ v.status }}</td></tr>
+</sc-for>
+</tbody>
+</table>
+</div>
+<div style="font-size: 13px; color: #5B6472">The Sunday training run only promotes a model that clears the gate. v10 was rejected and never served.</div>
+</div>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #E3E6EB; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-size: 17px; font-weight: 600">Recent forecasts vs. what happened</h3>
+<div style="overflow-x: auto">
+<table style="border-collapse: collapse; width: 100%; min-width: 520px; font-size: 14px">
+<thead><tr style="text-align: left; color: #5B6472"><th style="padding: 8px 8px 8px 0; font-weight: 500">Stock</th><th style="padding: 8px; font-weight: 500">Forecast made</th><th style="padding: 8px; font-weight: 500">Called</th><th style="padding: 8px; font-weight: 500">Actual, 5 days later</th><th style="padding: 8px 0 8px 8px; font-weight: 500">Result</th></tr></thead>
+<tbody>
+<sc-for list="{{log}}" as="r" hint-placeholder-count="6">
+<tr style="border-top: 1px solid #E3E6EB"><td style="padding: 12px 8px 12px 0; font-family: 'IBM Plex Mono', monospace">{{ r.sym }}</td><td style="padding: 12px 8px">{{ r.date }}</td><td style="padding: 12px 8px">{{ r.call }}</td><td style="padding: 12px 8px">{{ r.actual }}</td><td style="padding: 12px 0 12px 8px; font-weight: 600; color: {{ r.color }}">{{ r.result }}</td></tr>
+</sc-for>
+</tbody>
+</table>
+</div>
+</div>
+
+</section>
+</sc-if>
+
+<sc-if value="{{ isAlerts }}" hint-placeholder-val="{{ false }}">
+<section style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+
+<div style="flex: 1 1 420px; min-width: 0; background: #FFFFFF; border: 1px solid #E3E6EB; border-radius: 12px; padding: 32px; display: flex; flex-direction: column; gap: 20px">
+<div>
+<h2 style="margin: 0 0 8px; font-size: 24px; font-weight: 600">Get a Sentiment Alert</h2>
+<div style="font-size: 15px; color: #5B6472">We email you when the story around a stock changes. Free account, no card.</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="em" style="font-size: 14px; font-weight: 500">Email</label>
+<input id="em" type="email" placeholder="you@example.com" value="{{ email }}" onInput="{{ setEmail }}" style="min-height: 44px; padding: 0 14px; font-size: 16px; border: 1px solid #98A1B0; border-radius: 8px; background: #FFFFFF; color: #11151B">
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px" role="group" aria-label="Alert type">
+<div style="font-size: 14px; font-weight: 500">Alert me on <span style="font-family: 'IBM Plex Mono', monospace">{{ cur.sym }}</span> when</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{triggers}}" as="t" hint-placeholder-count="3">
+<button onClick="{{ t.pick }}" style="{{ t.style }}">{{ t.label }}</button>
+</sc-for>
+</div>
+</div>
+<button onClick="{{ submit }}" style="min-height: 48px; border-radius: 8px; border: none; background: #11151B; color: #FFFFFF; font-size: 16px; font-weight: 500">Create alert</button>
+<sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+<div style="border: 1px solid #1D4ED8; border-radius: 8px; padding: 12px 16px; color: #1D4ED8; font-size: 15px; font-weight: 500">Alert created for {{ cur.sym }}. In this mock, no email is actually sent.</div>
+</sc-if>
+</div>
+
+<div style="flex: 1 1 360px; min-width: 0; background: #FFFFFF; border: 1px solid #E3E6EB; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<div style="font-size: 13px; color: #5B6472">Example email</div>
+<div style="font-weight: 600; font-size: 17px">NVDA sentiment flipped: Bullish to Bearish</div>
+<div style="font-size: 15px; line-height: 1.5">Reddit sentiment fell from <span style="font-family: 'IBM Plex Mono', monospace">+31</span> to <span style="font-family: 'IBM Plex Mono', monospace">-22</span> in 48 hours, while Wall Street analysts stayed at <span style="font-family: 'IBM Plex Mono', monospace">+45</span>.</div>
+<div style="font-size: 15px; line-height: 1.5">Model forecast, next 5 days: <b>Down</b>, 58% confidence.</div>
+<div style="font-size: 13px; color: #5B6472; border-top: 1px solid #E3E6EB; padding-top: 12px">Demo data. Not financial advice.</div>
+</div>
+
+</section>
+</sc-if>
+
+<footer style="font-size: 13px; color: #5B6472; padding: 8px 0 24px">SentiFi is a mock-up with placeholder numbers. Nothing here is real market data or financial advice.</footer>
+
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1500}}'>
+class Component extends DCLogic {
+state = { t: 'TSLA', v: 'dash', email: '', sent: false, trig: 0 };
+
+renderVals() {
+const BULL = '#1D4ED8', BEAR = '#C2410C', NEU = '#5B6472';
+const D = {
+TSLA: { name: 'Tesla, Inc.', price: '248.31', chg: '+1.8%', up: true, fc: 'Up', conf: 64,
+ px: [231,233,230,236,238,235,239,241,238,240,243,241,245,244,242,246,245,247,244,248],
+ src: [['Wall Street analysts','31 analysts, last 7 days',42],['News media','142 articles',8],['Reddit','2.1k threads, r/stocks and r/wallstreetbets',-37]],
+ note: 'Analysts lean bullish while retail forums lean bearish.',
+ heads: [['Wall Street','Several analysts raise price targets after delivery numbers beat estimates','Bullish'],['News media','Regulators open a review into driver-assist claims','Bearish'],['Reddit','Megathread: is the rally priced in? Most top comments say yes','Bearish']] },
+NVDA: { name: 'NVIDIA Corporation', price: '131.07', chg: '-0.9%', up: false, fc: 'Down', conf: 58,
+ px: [138,139,141,140,142,141,139,140,138,137,139,136,135,137,134,135,133,134,132,131],
+ src: [['Wall Street analysts','44 analysts, last 7 days',45],['News media','198 articles',-6],['Reddit','3.4k threads, r/stocks and r/investing',-22]],
+ note: 'Analysts hold firm while media and retail sentiment cool.',
+ heads: [['Wall Street','Analysts reiterate buy ratings ahead of next earnings report','Bullish'],['News media','Export-rule uncertainty weighs on chip stocks','Bearish'],['Reddit','Thread: taking profits before earnings, anyone else?','Bearish']] },
+AAPL: { name: 'Apple Inc.', price: '227.84', chg: '+0.4%', up: true, fc: 'Up', conf: 55,
+ px: [222,223,222,224,225,224,226,225,227,226,225,227,228,226,227,229,228,227,228,228],
+ src: [['Wall Street analysts','52 analysts, last 7 days',18],['News media','167 articles',14],['Reddit','1.2k threads, r/apple and r/stocks',9]],
+ note: 'All three groups are broadly aligned and mildly positive.',
+ heads: [['Wall Street','Services revenue seen offsetting a slow hardware cycle','Bullish'],['News media','New product event expected to focus on on-device AI','Neutral'],['Reddit','Discussion: is the upgrade cycle finally back?','Neutral']] }
+};
+const lab = (s) => s >= 20 ? 'Bullish' : s <= -20 ? 'Bearish' : 'Neutral';
+const col = (s) => s >= 20 ? BULL : s <= -20 ? BEAR : NEU;
+const tcol = (t) => t === 'Bullish' ? BULL : t === 'Bearish' ? BEAR : NEU;
+const d = D[this.state.t];
+const mn = Math.min(...d.px), mx = Math.max(...d.px), n = d.px.length;
+const yy = (v) => 12 + (1 - (v - mn) / (mx - mn)) * 100;
+const xs = (i) => (i / (n - 1)) * 600;
+const lx = xs(n - 1), ly = yy(d.px[n - 1]);
+const fy = d.fc === 'Up' ? ly - 22 : ly + 22;
+const sc = d.src.map((s) => ({ name: s[0], note: s[1], score: (s[2] > 0 ? '+' : '') + s[2], pos: (s[2] + 100) / 2, label: lab(s[2]), color: col(s[2]) }));
+const scores = d.src.map((s) => s[2]);
+const cur = {
+ sym: this.state.t, name: d.name, price: d.price, chg: d.chg, chgColor: d.up ? BULL : BEAR,
+ line: d.px.map((v, i) => xs(i).toFixed(1) + ',' + yy(v).toFixed(1)).join(' '),
+ lx: lx.toFixed(1), ly: ly.toFixed(1), fx: 690, fy: fy.toFixed(1), fcColor: d.fc === 'Up' ? BULL : BEAR,
+ fcLabel: d.fc === 'Up' ? 'Up' : 'Down', conf: d.conf,
+ sources: sc, gap: Math.max(...scores) - Math.min(...scores), gapNote: d.note,
+ heads: d.heads.map((h) => ({ src: h[0], title: h[1], tone: h[2], color: tcol(h[2]) }))
+};
+const pill = (on) => 'min-height: 44px; padding: 0 20px; border-radius: 22px; font-size: 15px; font-weight: 500; border: 1px solid ' + (on ? '#11151B' : '#98A1B0') + '; background: ' + (on ? '#11151B' : '#FFFFFF') + '; color: ' + (on ? '#FFFFFF' : '#11151B');
+const tab = (on) => 'min-height: 44px; padding: 0 16px; border: none; border-bottom: 3px solid ' + (on ? '#11151B' : 'transparent') + '; background: transparent; font-size: 15px; font-weight: ' + (on ? 600 : 400) + '; color: ' + (on ? '#11151B' : '#5B6472');
+const v = this.state.v;
+const tabs = [['dash','Dashboard'],['model','Model performance'],['alerts','Alerts']].map((x) => ({ label: x[1], style: tab(v === x[0]), pick: () => this.setState({ v: x[0] }) }));
+const tickers = Object.keys(D).map((k) => ({ sym: k, style: pill(this.state.t === k), pick: () => this.setState({ t: k, sent: false }) }));
+const triggers = ['Sentiment shifts sharply','Any bull/bear flip','Weekly digest only'].map((l, i) => ({ label: l, style: pill(this.state.trig === i), pick: () => this.setState({ trig: i, sent: false }) }));
+const accs = [57.1,56.4,58.0,55.2,54.6,56.9,57.8,59.3,58.1,57.5,58.9,58.4];
+const weeks = accs.map((a, i) => ({ h: ((a - 40) / 30) * 100, title: 'Week ' + (i + 1) + ': ' + a + '%' }));
+return {
+ isDash: v === 'dash', isModel: v === 'model', isAlerts: v === 'alerts',
+ tabs, tickers, triggers, cur, weeks, email: this.state.email, sent: this.state.sent,
+ goAlerts: () => this.setState({ v: 'alerts' }),
+ setEmail: (e) => this.setState({ email: e.target.value, sent: false }),
+ submit: () => this.setState({ sent: true }),
+ metrics: [
+  { group: 'Predictive', value: '58.4%', label: 'Directional accuracy' },
+  { group: 'Predictive', value: '0.61', label: 'Precision' },
+  { group: 'Predictive', value: '0.57', label: 'Recall' },
+  { group: 'Predictive', value: '0.59', label: 'F1-score' },
+  { group: 'Financial, if traded', value: '1.12', label: 'Sharpe ratio' },
+  { group: 'Financial, if traded', value: '-8.7%', label: 'Max drawdown' },
+  { group: 'System', value: '142 ms', label: 'Inference latency' },
+  { group: 'System', value: '$0.0004', label: 'Cost per request' }
+ ],
+ versions: [
+  { id: 'v12', date: 'Oct 4', acc: '58.4%', status: 'Production' },
+  { id: 'v11', date: 'Sep 27', acc: '57.2%', status: 'Archived' },
+  { id: 'v10', date: 'Sep 20', acc: '53.6%', status: 'Rejected, below gate' }
+ ],
+ log: [
+  { sym: 'TSLA', date: 'Sep 28', call: 'Up', actual: 'Up +3.1%', result: 'Hit', color: BULL },
+  { sym: 'NVDA', date: 'Sep 28', call: 'Up', actual: 'Down -2.4%', result: 'Miss', color: BEAR },
+  { sym: 'AAPL', date: 'Sep 29', call: 'Up', actual: 'Up +1.2%', result: 'Hit', color: BULL },
+  { sym: 'TSLA', date: 'Sep 30', call: 'Down', actual: 'Down -1.7%', result: 'Hit', color: BULL },
+  { sym: 'NVDA', date: 'Oct 1', call: 'Down', actual: 'Down -3.0%', result: 'Hit', color: BULL },
+  { sym: 'AAPL', date: 'Oct 2', call: 'Up', actual: 'Down -0.6%', result: 'Miss', color: BEAR }
+ ]
+};
+}
+}
+</script>
+</body>
+</html>

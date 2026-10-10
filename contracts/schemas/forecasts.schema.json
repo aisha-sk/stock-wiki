@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "forecasts.schema.json",
+  "title": "Forecast log: GET /api/forecasts and data/artifacts/forecasts.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "generated_at", "is_demo_data", "summary", "forecasts"],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "is_demo_data": { "type": "boolean" },
+    "summary": {
+      "description": "Counts over every forecast in this payload.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["resolved", "hits", "hit_rate", "pending"],
+      "properties": {
+        "resolved": { "type": "integer", "minimum": 0 },
+        "hits": { "type": "integer", "minimum": 0 },
+        "hit_rate": { "type": ["number", "null"], "minimum": 0, "maximum": 1, "description": "hits / resolved; null when resolved is 0." },
+        "pending": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "forecasts": {
+      "description": "Newest as_of_date first.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "symbol", "made_at", "as_of_date", "target_date", "horizon_days", "direction", "prob_up", "model_version", "origin", "status", "actual_direction", "actual_return_pct", "result"],
+        "properties": {
+          "id": { "type": "string", "description": "{symbol}-{as_of_date}-v{model_version}" },
+          "symbol": { "type": "string", "pattern": "^[A-Z][A-Z.]{0,5}$" },
+          "made_at": { "type": "string", "format": "date-time" },
+          "as_of_date": { "type": "string", "format": "date" },
+          "target_date": { "type": "string", "format": "date" },
+          "horizon_days": { "const": 5 },
+          "direction": { "enum": ["up", "down"] },
+          "prob_up": { "type": "number", "minimum": 0, "maximum": 1 },
+          "model_version": { "type": "string", "pattern": "^[0-9]+$" },
+          "origin": { "enum": ["backtest", "live"], "description": "backtest = out-of-sample walk-forward prediction; live = logged before the outcome existed." },
+          "status": { "enum": ["pending", "resolved"] },
+          "actual_direction": { "enum": ["up", "down", null] },
+          "actual_return_pct": { "type": ["number", "null"], "description": "Percent units: 3.1 means +3.1% from as_of_date close to target_date close." },
+          "result": { "enum": ["hit", "miss", null] }
+        }
+      }
+    }
+  }
+}
