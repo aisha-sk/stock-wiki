@@ -1,0 +1,16 @@
+pandas
+numpy
+scikit-learn
+xgboost
+yfinance
+pandas_market_calendars
+transformers
+torch
+feedparser
+requests
+mlflow
+pyyaml
+jsonschema[format]
+pytest
+ruff
+pyarrow
