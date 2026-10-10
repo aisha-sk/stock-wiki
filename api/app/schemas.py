@@ -128,3 +128,114 @@ class ErrorDetail(Contract):
 
 class ErrorBody(Contract):
     error: ErrorDetail
+
+
+# --- model.json -----------------------------------------------------------
+
+Rate = Annotated[float, Field(ge=0, le=1)]
+Version = Annotated[str, Field(pattern=r"^[0-9]+$")]
+Algorithm = Literal["logistic_regression", "xgboost"]
+
+
+class ProductionModel(Contract):
+    model_name: str
+    version: Version
+    algorithm: Algorithm
+    trained_at: AwareDatetime
+
+
+class ModelTask(Contract):
+    description: str
+    horizon_days: Literal[5]
+    validation: Literal["walk_forward", "chronological_holdout"]
+    tickers: list[str] = Field(min_length=1)
+    test_start: date
+    test_end: date
+    n_test: int = Field(ge=1)
+
+
+class ModelMetrics(Contract):
+    directional_accuracy: Rate
+    precision: Rate
+    recall: Rate
+    f1: Rate
+    sharpe_ratio: float | None
+    max_drawdown: Annotated[float, Field(le=0)] | None
+    inference_latency_ms: Annotated[float, Field(ge=0)] | None
+    cost_per_request_usd: Annotated[float, Field(ge=0)] | None
+
+
+class Baseline(Contract):
+    name: Literal["always_up", "previous_direction"]
+    directional_accuracy: Rate
+
+
+class Gate(Contract):
+    metric: Literal["directional_accuracy"]
+    threshold: Rate
+    passed: bool
+
+
+class WeeklyAccuracy(Contract):
+    week_start: date
+    accuracy: Rate
+    n: int = Field(ge=1)
+
+
+class ModelVersion(Contract):
+    version: Version
+    model_name: str
+    algorithm: Algorithm
+    trained_at: AwareDatetime
+    directional_accuracy: Rate
+    gate_passed: bool
+    status: Literal["production", "archived", "rejected"]
+    mlflow_run_id: str | None
+
+
+class Model(Contract):
+    schema_version: Literal["1.0"]
+    generated_at: AwareDatetime
+    is_demo_data: bool
+    production: ProductionModel | None
+    task: ModelTask
+    metrics: ModelMetrics
+    baselines: list[Baseline]
+    gate: Gate
+    weekly_accuracy: list[WeeklyAccuracy] = Field(max_length=12)
+    versions: list[ModelVersion]
+
+
+# --- forecasts.json -------------------------------------------------------
+
+
+class ForecastSummary(Contract):
+    resolved: int = Field(ge=0)
+    hits: int = Field(ge=0)
+    hit_rate: Rate | None
+    pending: int = Field(ge=0)
+
+
+class ForecastRow(Contract):
+    id: str
+    symbol: Symbol
+    made_at: AwareDatetime
+    as_of_date: date
+    target_date: date
+    horizon_days: Literal[5]
+    direction: Direction
+    prob_up: Rate
+    model_version: Version
+    origin: Literal["backtest", "live"]
+    status: Literal["pending", "resolved"]
+    actual_direction: Direction | None
+    actual_return_pct: float | None
+    result: Literal["hit", "miss"] | None
+
+
+class Forecasts(Contract):
+    schema_version: Literal["1.0"]
+    generated_at: AwareDatetime
+    is_demo_data: bool
+    summary: ForecastSummary
+    forecasts: list[ForecastRow]

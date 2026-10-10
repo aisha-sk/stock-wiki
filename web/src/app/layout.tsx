@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import { Suspense } from "react";
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { StockSelector } from "@/components/StockSelector";
 import "./globals.css";
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     "How Wall Street analysts, news media and Reddit feel about a stock, with a 5-day direction forecast and its track record.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${plexSans.variable} ${plexMono.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col font-sans">
@@ -36,10 +37,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <StockSelector />
           </Suspense>
           <Suspense>{children}</Suspense>
-          <footer className="mt-auto pb-6 pt-2 text-[13px] text-muted">
-            SentiFi is for research and education. Nothing here is financial advice, and past forecasts do not
-            guarantee future results.
-          </footer>
+          <Footer />
         </main>
       </body>
     </html>

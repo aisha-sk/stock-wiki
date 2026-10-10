@@ -1,15 +1,16 @@
 """SentiFi API. GET responses are the artifact files in DATA_DIR, unchanged."""
 
 import os
+from typing import Annotated
 
 from dotenv import load_dotenv
-from fastapi import FastAPI
+from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
 from . import errors, store
 from .errors import DataUnavailable
-from .schemas import ErrorBody, Health, Stock, Tickers
+from .schemas import ErrorBody, Forecasts, Health, Model, Stock, Tickers
 
 load_dotenv(store.REPO_ROOT / ".env")
 
@@ -28,6 +29,7 @@ app.add_middleware(
 
 NOT_FOUND = {404: {"model": ErrorBody}}
 UNAVAILABLE = {503: {"model": ErrorBody}}
+INVALID = {422: {"model": ErrorBody}}
 
 
 @app.get("/api/health", response_model=Health)
@@ -54,3 +56,16 @@ def get_tickers() -> JSONResponse:
 @app.get("/api/stocks/{symbol}", response_model=Stock, responses=NOT_FOUND | UNAVAILABLE)
 def get_stock(symbol: str) -> JSONResponse:
     return JSONResponse(store.stock(symbol))
+
+
+@app.get("/api/model", response_model=Model, responses=UNAVAILABLE)
+def get_model() -> JSONResponse:
+    return JSONResponse(store.model())
+
+
+@app.get("/api/forecasts", response_model=Forecasts, responses=NOT_FOUND | INVALID | UNAVAILABLE)
+def get_forecasts(
+    symbol: str | None = None,
+    limit: Annotated[int, Query(ge=1, le=200)] = 50,
+) -> JSONResponse:
+    return JSONResponse(store.forecasts(symbol, limit))

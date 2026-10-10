@@ -51,3 +51,25 @@ export function formatDateTime(timestamp: string) {
     minute: "2-digit",
   });
 }
+
+/** A whole-number percentage when the rate allows it: 0.52 -> "52%", 0.525 -> "52.5%". */
+export const formatThreshold = (rate: number) =>
+  formatRate(rate, Number.isInteger(Math.round(rate * 1000) / 10) ? 0 : 1);
+
+export const formatDecimal = (value: number, digits = 2) =>
+  `${value < 0 ? MINUS : ""}${Math.abs(value).toFixed(digits)}`;
+
+export const formatLatency = (ms: number) => `${ms < 10 ? ms.toFixed(1) : Math.round(ms)} ms`;
+
+export const formatCost = (usd: number) => `$${usd.toFixed(4)}`;
+
+const ALGORITHM_NAME: Record<string, string> = {
+  logistic_regression: "Logistic regression",
+  xgboost: "XGBoost",
+};
+
+export const formatAlgorithm = (algorithm: string) => ALGORITHM_NAME[algorithm] ?? algorithm;
+
+/** `null` becomes an em dash; anything else goes through `format`. */
+export const orDash = <T,>(value: T | null, format: (value: T) => string) =>
+  value === null ? EMPTY : format(value);
