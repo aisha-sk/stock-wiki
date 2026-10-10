@@ -1,0 +1,814 @@
+{
+  "schema_version": "1.0",
+  "symbol": "AAPL",
+  "name": "Apple Inc.",
+  "generated_at": "2026-10-10T21:00:18Z",
+  "is_demo_data": false,
+  "quote": {
+    "price": 336.6400146484375,
+    "change_pct": -1.11,
+    "as_of": "2026-10-09",
+    "currency": "USD"
+  },
+  "prices": [
+    {
+      "date": "2026-04-21",
+      "close": 265.69586181640625
+    },
+    {
+      "date": "2026-04-22",
+      "close": 272.68341064453125
+    },
+    {
+      "date": "2026-04-23",
+      "close": 272.9429016113281
+    },
+    {
+      "date": "2026-04-24",
+      "close": 270.5771179199219
+    },
+    {
+      "date": "2026-04-27",
+      "close": 267.1332702636719
+    },
+    {
+      "date": "2026-04-28",
+      "close": 270.2277526855469
+    },
+    {
+      "date": "2026-04-29",
+      "close": 269.688720703125
+    },
+    {
+      "date": "2026-04-30",
+      "close": 270.86663818359375
+    },
+    {
+      "date": "2026-05-01",
+      "close": 279.6409606933594
+    },
+    {
+      "date": "2026-05-04",
+      "close": 276.33685302734375
+    },
+    {
+      "date": "2026-05-05",
+      "close": 283.67376708984375
+    },
+    {
+      "date": "2026-05-06",
+      "close": 286.9978332519531
+    },
+    {
+      "date": "2026-05-07",
+      "close": 286.9279479980469
+    },
+    {
+      "date": "2026-05-08",
+      "close": 292.7974853515625
+    },
+    {
+      "date": "2026-05-11",
+      "close": 292.42779541015625
+    },
+    {
+      "date": "2026-05-12",
+      "close": 294.54595947265625
+    },
+    {
+      "date": "2026-05-13",
+      "close": 298.6124572753906
+    },
+    {
+      "date": "2026-05-14",
+      "close": 297.9530334472656
+    },
+    {
+      "date": "2026-05-15",
+      "close": 299.9713134765625
+    },
+    {
+      "date": "2026-05-18",
+      "close": 297.5833435058594
+    },
+    {
+      "date": "2026-05-19",
+      "close": 298.7123718261719
+    },
+    {
+      "date": "2026-05-20",
+      "close": 301.98956298828125
+    },
+    {
+      "date": "2026-05-21",
+      "close": 304.7271728515625
+    },
+    {
+      "date": "2026-05-22",
+      "close": 308.55389404296875
+    },
+    {
+      "date": "2026-05-26",
+      "close": 308.0643005371094
+    },
+    {
+      "date": "2026-05-27",
+      "close": 310.5821533203125
+    },
+    {
+      "date": "2026-05-28",
+      "close": 312.24072265625
+    },
+    {
+      "date": "2026-05-29",
+      "close": 311.7911071777344
+    },
+    {
+      "date": "2026-06-01",
+      "close": 306.0460510253906
+    },
+    {
+      "date": "2026-06-02",
+      "close": 314.92840576171875
+    },
+    {
+      "date": "2026-06-03",
+      "close": 309.9926452636719
+    },
+    {
+      "date": "2026-06-04",
+      "close": 310.9618225097656
+    },
+    {
+      "date": "2026-06-05",
+      "close": 307.0751647949219
+    },
+    {
+      "date": "2026-06-08",
+      "close": 301.2801818847656
+    },
+    {
+      "date": "2026-06-09",
+      "close": 290.29962158203125
+    },
+    {
+      "date": "2026-06-10",
+      "close": 291.3287353515625
+    },
+    {
+      "date": "2026-06-11",
+      "close": 295.375244140625
+    },
+    {
+      "date": "2026-06-12",
+      "close": 290.879150390625
+    },
+    {
+      "date": "2026-06-15",
+      "close": 296.1645812988281
+    },
+    {
+      "date": "2026-06-16",
+      "close": 298.9821472167969
+    },
+    {
+      "date": "2026-06-17",
+      "close": 295.6949768066406
+    },
+    {
+      "date": "2026-06-18",
+      "close": 297.7532043457031
+    },
+    {
+      "date": "2026-06-22",
+      "close": 296.75408935546875
+    },
+    {
+      "date": "2026-06-23",
+      "close": 294.04638671875
+    },
+    {
+      "date": "2026-06-24",
+      "close": 292.8274230957031
+    },
+    {
+      "date": "2026-06-25",
+      "close": 274.91290283203125
+    },
+    {
+      "date": "2026-06-26",
+      "close": 283.53546142578125
+    },
+    {
+      "date": "2026-06-29",
+      "close": 281.4972229003906
+    },
+    {
+      "date": "2026-06-30",
+      "close": 289.11065673828125
+    },
+    {
+      "date": "2026-07-01",
+      "close": 294.1263427734375
+    },
+    {
+      "date": "2026-07-02",
+      "close": 308.3640441894531
+    },
+    {
+      "date": "2026-07-06",
+      "close": 312.3905944824219
+    },
+    {
+      "date": "2026-07-07",
+      "close": 310.3923034667969
+    },
+    {
+      "date": "2026-07-08",
+      "close": 313.1199645996094
+    },
+    {
+      "date": "2026-07-09",
+      "close": 315.947509765625
+    },
+    {
+      "date": "2026-07-10",
+      "close": 315.0483093261719
+    },
+    {
+      "date": "2026-07-13",
+      "close": 317.03656005859375
+    },
+    {
+      "date": "2026-07-14",
+      "close": 314.58868408203125
+    },
+    {
+      "date": "2026-07-15",
+      "close": 327.2178039550781
+    },
+    {
+      "date": "2026-07-16",
+      "close": 332.97283935546875
+    },
+    {
+      "date": "2026-07-17",
+      "close": 333.452392578125
+    },
+    {
+      "date": "2026-07-20",
+      "close": 326.3085632324219
+    },
+    {
+      "date": "2026-07-21",
+      "close": 327.45758056640625
+    },
+    {
+      "date": "2026-07-22",
+      "close": 325.60919189453125
+    },
+    {
+      "date": "2026-07-23",
+      "close": 321.3828430175781
+    },
+    {
+      "date": "2026-07-24",
+      "close": 332.7330322265625
+    },
+    {
+      "date": "2026-07-27",
+      "close": 336.61968994140625
+    },
+    {
+      "date": "2026-07-28",
+      "close": 339.78692626953125
+    },
+    {
+      "date": "2026-07-29",
+      "close": 337.8985900878906
+    },
+    {
+      "date": "2026-07-30",
+      "close": 333.1426696777344
+    },
+    {
+      "date": "2026-07-31",
+      "close": 308.6438293457031
+    },
+    {
+      "date": "2026-08-03",
+      "close": 303.1585693359375
+    },
+    {
+      "date": "2026-08-04",
+      "close": 309.1134033203125
+    },
+    {
+      "date": "2026-08-05",
+      "close": 310.7320251464844
+    },
+    {
+      "date": "2026-08-06",
+      "close": 312.14080810546875
+    },
+    {
+      "date": "2026-08-07",
+      "close": 313.05999755859375
+    },
+    {
+      "date": "2026-08-10",
+      "close": 308.260009765625
+    },
+    {
+      "date": "2026-08-11",
+      "close": 304.9100036621094
+    },
+    {
+      "date": "2026-08-12",
+      "close": 302.25
+    },
+    {
+      "date": "2026-08-13",
+      "close": 305.260009765625
+    },
+    {
+      "date": "2026-08-14",
+      "close": 305.92999267578125
+    },
+    {
+      "date": "2026-08-17",
+      "close": 305.5899963378906
+    },
+    {
+      "date": "2026-08-18",
+      "close": 310.0299987792969
+    },
+    {
+      "date": "2026-08-19",
+      "close": 316.8299865722656
+    },
+    {
+      "date": "2026-08-20",
+      "close": 311.29998779296875
+    },
+    {
+      "date": "2026-08-21",
+      "close": 309.3500061035156
+    },
+    {
+      "date": "2026-08-24",
+      "close": 310.3399963378906
+    },
+    {
+      "date": "2026-08-25",
+      "close": 309.8999938964844
+    },
+    {
+      "date": "2026-08-26",
+      "close": 313.45001220703125
+    },
+    {
+      "date": "2026-08-27",
+      "close": 314.5799865722656
+    },
+    {
+      "date": "2026-08-28",
+      "close": 319.70001220703125
+    },
+    {
+      "date": "2026-08-31",
+      "close": 316.8500061035156
+    },
+    {
+      "date": "2026-09-01",
+      "close": 325.1300048828125
+    },
+    {
+      "date": "2026-09-02",
+      "close": 324.9599914550781
+    },
+    {
+      "date": "2026-09-03",
+      "close": 328.2099914550781
+    },
+    {
+      "date": "2026-09-04",
+      "close": 319.9700012207031
+    },
+    {
+      "date": "2026-09-08",
+      "close": 316.2200012207031
+    },
+    {
+      "date": "2026-09-09",
+      "close": 315.3399963378906
+    },
+    {
+      "date": "2026-09-10",
+      "close": 326.57000732421875
+    },
+    {
+      "date": "2026-09-11",
+      "close": 332.2699890136719
+    },
+    {
+      "date": "2026-09-14",
+      "close": 333.0799865722656
+    },
+    {
+      "date": "2026-09-15",
+      "close": 331.3399963378906
+    },
+    {
+      "date": "2026-09-16",
+      "close": 332.4100036621094
+    },
+    {
+      "date": "2026-09-17",
+      "close": 337.0
+    },
+    {
+      "date": "2026-09-18",
+      "close": 336.1300048828125
+    },
+    {
+      "date": "2026-09-21",
+      "close": 338.9800109863281
+    },
+    {
+      "date": "2026-09-22",
+      "close": 339.75
+    },
+    {
+      "date": "2026-09-23",
+      "close": 337.0199890136719
+    },
+    {
+      "date": "2026-09-24",
+      "close": 335.9200134277344
+    },
+    {
+      "date": "2026-09-25",
+      "close": 341.07000732421875
+    },
+    {
+      "date": "2026-09-28",
+      "close": 338.3999938964844
+    },
+    {
+      "date": "2026-09-29",
+      "close": 329.3999938964844
+    },
+    {
+      "date": "2026-09-30",
+      "close": 333.0199890136719
+    },
+    {
+      "date": "2026-10-01",
+      "close": 330.32000732421875
+    },
+    {
+      "date": "2026-10-02",
+      "close": 333.69000244140625
+    },
+    {
+      "date": "2026-10-05",
+      "close": 332.8900146484375
+    },
+    {
+      "date": "2026-10-06",
+      "close": 333.6300048828125
+    },
+    {
+      "date": "2026-10-07",
+      "close": 336.6700134277344
+    },
+    {
+      "date": "2026-10-08",
+      "close": 340.4200134277344
+    },
+    {
+      "date": "2026-10-09",
+      "close": 336.6400146484375
+    }
+  ],
+  "forecast": null,
+  "sentiment": {
+    "window_days": 7,
+    "sources": [
+      {
+        "source": "news",
+        "display_name": "News media",
+        "score": 4,
+        "label": "neutral",
+        "doc_count": 95,
+        "note": "95 articles, last 7 days",
+        "method": "finbert",
+        "previous_score": 32
+      }
+    ],
+    "gap": null
+  },
+  "headlines": [
+    {
+      "id": "15b1bf869751",
+      "source": "news",
+      "publisher": "Simply Wall Street",
+      "title": "Apple (AAPL) Could Be 33% Overvalued Following Formula 1 Streaming Buzz - Simply Wall Street",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNT0tDV24tNm9jMlREWmNzQUdvT2lxRkl0WEVMQTNKbVZPMHFUTWcxMGszQXI5REpLdkZoblJzd29QdDVQMlFMYzJtUm9LbWgwUjVBZC1GY1plX0RDOVJQRlF2ZkpZZXV5alhHaDdrRjh0QUhsR3RjdGloNTJicGIyQzAzWW80UU5VOUk1ZlV4ZGpraWM0ZzhYZ0dZYnYwdjF1ZURIdmVyQjdEc1NVUm5MeTNXVjJkTVRMVFkyStIBwgFBVV95cUxNNUlnYkNGOWhURWRRSjNNcWxPaFA0UTMxVDFkTnRBUWw0djJzNGZiOUVUTWlWZFFXTE9tWkVzVldQRzhxajZ1NFNyTHZoSWQ0VEQwR2ZHUGFVMVhsam9pX3ZoZkcyY2UzMXhUZHBiSnNSV0dTczdmazhXTzRfZG5lSTNoOUJlcXVRcEV4TjM1QnB2bFdjZ2tmd3pGVHVUSE55eGJvMG0waE9xQTlyRDdMd3pQQVJ0ZGtaZU95bGl6bk9kQQ?oc=5",
+      "published_at": "2026-10-10T11:57:29Z",
+      "score": 92,
+      "label": "bullish"
+    },
+    {
+      "id": "b55f01ddb778",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Did Softer iPhone 18 Pro Demand and Memory Costs Just Rewire Apple\u2019s (AAPL) AI Investment Narrative? - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPLWVTbmtRdXJnanRuaV9qOE1KTnJaSHlzVjJhc1dfUWZCbzQ0alhEV1ZSLVJOVGRkdm5QcUFZX01yR2FwSHlaLXJWMnhGTkRyRnhDSkhJeXRjcXpRa2RhWk90WVZ4X2pKZUpkZ2JqeHBsNEpQYXRsOHY5OUJINmZKVTB5RHdKTWtha1FPclFCNU5pem8?oc=5",
+      "published_at": "2026-10-10T11:14:19Z",
+      "score": 5,
+      "label": "neutral"
+    },
+    {
+      "id": "30ef2a0f2c50",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "AAPL Oct 2026 362.500 call (AAPL261009C00362500) interactive stock chart - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5FN25xSXJJMWVFZV9vR29TX0tDRDh6T2hlMlBQelJfN1JMY29FTkRlUGMtSUl0dU1UNHpMNlBKV3FhWlNqTzFxZmUtY1ZRam8zLVl1c2s4VnBoT3EwMTZTcDlRbE5SbWJQOEQ5UGVn?oc=5",
+      "published_at": "2026-10-10T08:43:56Z",
+      "score": 0,
+      "label": "neutral"
+    },
+    {
+      "id": "13d58887fa00",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "AAPL Oct 2026 320.000 put (AAPL261009P00320000) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBjemZ4Z1N0dGpJSEJQN21FY1ludzlONkxaYzlVSkl2eU9mVmNDMFMtTmR6TDB5Zy16YVVLWlZqcUJLb0hYVUJZVTE2aWt2cjl4bGhPeGtCdkszdkNZNjdUcWQ4bUc5UQ?oc=5",
+      "published_at": "2026-10-10T08:06:11Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "48de36aa89a7",
+      "source": "news",
+      "publisher": "TradingView",
+      "title": "Key facts: Apple (AAPL) slips; 18 Pro orders cut 15%; mixed lead times - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTHducEtnYzdYSHh4eHk3UWNFdVJuLVA5NFZTN2RMUXo2eS1Jc2JNbGkwSGFnaXdUaXhXMDB2WjN0SUw2V1dhNmtsczZfejJ6enlPZnRRbFlhcThuY0Nra0xGcEhyX2tael9iYkFDb2liRm13eUtjLTVvaFRPbDZxTUEwNUNwWUNtZGdRSVZrNV9HbUxKUzl2U3hZc1l2ejY1MGhmTUZQTG13Qk1lVDJFSFVoeER3a0Q3NVBKdFlhblNZa2N2?oc=5",
+      "published_at": "2026-10-10T07:00:00Z",
+      "score": -92,
+      "label": "bearish"
+    },
+    {
+      "id": "2f57306a0f36",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "AAPL Oct 2026 307.500 put (AAPL261012P00307500) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1YUEhSM0xVUjJYeUN3UnBRSFN2SGx4TW5JYWZTVkNhOWpMcG9lMHFQRHJaY0FKMTZqTmNHV0hxZ0M3d2tBUkN6clVPZ0h4QTlSVVZCbkpXbUx2dDdZT3lJdFFvazlqQQ?oc=5",
+      "published_at": "2026-10-10T01:33:58Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "560f64203029",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Why Apple (AAPL) Stock Is Trading Lower Today - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdjZGbVA3enFYQm1UcDlaQW1FeFNrbE0yWjhGVTRaUnZqQlNrVWZkTWxtOThreEVyemp0X0Nvck5pRElTd2JyN05uRGI0eXhsY29GVWFYbGg2WGsyYWo3VDIwc3VkYUVmQlVPNFpPRFQwQW9NVHRzY1VtTk9QRVB3bkRkRllZOGJHT0Q3Zm1HMjhIeWMxa0FzUw?oc=5",
+      "published_at": "2026-10-09T23:15:10Z",
+      "score": -90,
+      "label": "bearish"
+    },
+    {
+      "id": "15c73831cae4",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "AAPL Mar 2027 35.000 put (AAPL270319P00035000) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9nZkFfUDI3SVp1NjVNMV9WR0FPSmxFRUFuSVRDOS1DaUtCOWdjc1djWElSdGVMVTRSQjRLb0V1WG5KdGNWRzlmcnE0d19sNnBQdVBlaThfbXkyM2V2eHZVTTdXUFNXZw?oc=5",
+      "published_at": "2026-10-09T22:46:38Z",
+      "score": -2,
+      "label": "neutral"
+    },
+    {
+      "id": "ba2daec628ec",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "AAPL Dec 2027 65.000 put (AAPL271217P00065000) interactive stock chart - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1LdW12cG5LQWgxV1VFaW1MOGtBdEMtZ1M2aEtVWmlhRlF5R1plUlZCeFVJN19yVmcxaV9YbWhGQlhTUDBlVVR6OHFxcW9lSy12MEVuVlp1QXA4V2N1My13SWUtZmllanl5djUtOXRR?oc=5",
+      "published_at": "2026-10-09T21:04:47Z",
+      "score": 1,
+      "label": "neutral"
+    },
+    {
+      "id": "b1f135ed3850",
+      "source": "news",
+      "publisher": "Moomoo",
+      "title": "AAPL 261009 340.00C (AAPL261009C340000) Stock Options Chain | Quotes & News - Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5QYTFFT3llNzFKR0xhTFZ1b0JTOGRJakphMnhvU2lVVVBNN3Q4QXktc1lHSU5aSFdwdGZWVHNwWEZ5ZGQ1S0hVbjZkVERiVFJvY1BqREoyc2Y2dGNoU2ttTA?oc=5",
+      "published_at": "2026-10-09T19:59:00Z",
+      "score": 0,
+      "label": "neutral"
+    },
+    {
+      "id": "f16fa65f7459",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "AAPL Oct 2026 337.500 call (AAPL261009C00337500) interactive stock chart - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9RZ2pPZGhuR3F3R1hid0JfNW91MGhmeWExdjF6dE1CLUFaUGt2NFRENGdzWDdBejV6d3dvRDdjRmIxUGV4OVcwZ2FTUHFlNW9lY3oyb2I2UzNYbDQ4VHhkTThtejlhQ3BuS2xmQXJR?oc=5",
+      "published_at": "2026-10-09T17:08:16Z",
+      "score": 0,
+      "label": "neutral"
+    },
+    {
+      "id": "eaf5eb9fd436",
+      "source": "news",
+      "publisher": "Yahoo! Finance Canada",
+      "title": "AAPL Dec 2026 240.000 put (AAPL261218P00240000) Interactive Stock Chart - Yahoo! Finance Canada",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBQLUdRUC1oazQzU29CTHB4ZUQwSHZFNGNJaWpXb0RSMDlTWEJkakRNRkhTbkZuemhybndHeTZDVTBUWmEwN3ppellwckR4ejRJWHFiWFJTbE9uN1QxNnd3UkxuMVZJT0hLZm1Pa0Rn?oc=5",
+      "published_at": "2026-10-09T15:05:30Z",
+      "score": 0,
+      "label": "neutral"
+    },
+    {
+      "id": "d6c3d8d740d4",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "How Proprietary Silicon and Privacy Anchor Apple\u2019s (AAPL) Edge AI Leadership - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQX09qdkoyY21BZUNIOTFTSS1sekVfZ1lxeGV3Ujlvck9lMjZJM0hJajVnQ1p4VzkyVkM3OEpheFl4MjNGRE5iLTdXWjlFYVR4YU04WnpOMlplX0VnZ1AxRlRoZWNEb1lBTWxYVmdOS2Q3MnpkbXZtZDFTQ2QtMTBtekgxVm9LYjIzYmdqaWF4SnJaejdhOEJ4cnhoRncwVHQzWExxWVNYejc?oc=5",
+      "published_at": "2026-10-09T14:48:46Z",
+      "score": 2,
+      "label": "neutral"
+    },
+    {
+      "id": "f91211c718b6",
+      "source": "news",
+      "publisher": "Yahoo! Finance Canada",
+      "title": "AAPL Oct 2026 345.000 call (AAPL261009C00345000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9sQTFKYk5ZMVZ0SVdtMllvZmhCOW11UE1qVEJRZ0NVZXYxWk5KSnV1QlRDOENac1ZKTzN6Zkh2UEd1ZmxobWRBOGx5b0d6UDRoV1dPOHk4NjVQNUpybDRFQzZRSDJSQQ?oc=5",
+      "published_at": "2026-10-09T14:33:02Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "a4b5411f86ca",
+      "source": "news",
+      "publisher": "Yahoo! Finance Canada",
+      "title": "AAPL Oct 2026 342.500 call (AAPL261009C00342500) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE10N2I3cWIzSXZzR0hKemx2b2pnNFFDaXpoRzJzX3BCNVE5amtZQURtX0FpbzJCVjR6LWVMYThycW5VT0ktRldQNUZXUFdfaTFEa0tDOUR6MC1MUnM2MGJpZW9SZWxQQQ?oc=5",
+      "published_at": "2026-10-09T14:33:00Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "d2e84e386586",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "AAPL Mar 2028 450.000 put (AAPL280317P00450000) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBFR2l2VzZZdXdXeDBCem9yVm5EQl82Y0E5R0RqMGxrTEJBTFVVUTJUUGFpTmpqLWlwajNYc05NcWUzY1NQSE8ydGJvM2poRkhCRU0zRlFvcmJ6WjJZUkJYOXI1NjBJQQ?oc=5",
+      "published_at": "2026-10-09T14:26:38Z",
+      "score": -2,
+      "label": "neutral"
+    },
+    {
+      "id": "757079ced400",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "AAPL Oct 2026 350.000 call (AAPL261012C00350000) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5XQ2J0TkVqcm8tOGFBSGNFdzhzY1FzNU1uYWJtdUlZT1FMMGZ6dmE1LWdDZWtwRGF2V3NTUWdGcjY1VjJWWmZHWVNROUhnZDA5QUZrTUpyN0h4ZGR0ZUI5SGJqZDg5UQ?oc=5",
+      "published_at": "2026-10-09T13:46:02Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "86bef0225829",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Apple stock falls on report that company is cutting component orders on soft iPhone 18 Pro demand - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNdXRZODhUOUdIaGhYOXRmVnZLWGJCWlgtX0NacXhXYWxkalFkYXZPbEtjOEo3S3FhT0VMd3B2NktuOENFaThPOXAzUDBEOXpzSEdtcnJQNmpkZmh3RGtsdEVoRzEwSUY1ZnR3dThmcXh1cjBWTUhUTHBHRWtJOXRPSTVkanhWbVdCcVJTVUdyejZwSUlhQjBjS1ZvbXZwOVlSRWRMWk9vSzZ4bU0yQzExcGxOQjREdV96WURCbHBHWEt5QmxNeUFSYTRpVFpsbHY1LUN1OEpfcmlQRm9FODZFM0FfTjhNVG5WUVhSbUNB?oc=5",
+      "published_at": "2026-10-09T13:26:55Z",
+      "score": -96,
+      "label": "bearish"
+    },
+    {
+      "id": "99498abb8720",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "AAPL Oct 2026 322.500 put (AAPL261009P00322500) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5DeWtmRjhKUzhTcmxPcUdtRUNCRk1hUmV1bkJFVTVlelBCZWpTY3N2YmNzWmViOE1ySWpDSldOMVRhN3Y2TEJyZW1XRktqTFF0R2c1eTJsb3BXWXBDRHZlZDRWQlJMUQ?oc=5",
+      "published_at": "2026-10-09T12:14:20Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "1457746c2c45",
+      "source": "news",
+      "publisher": "Moomoo",
+      "title": "Tech Futures Lead, AAPL Slides Premarket - Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQejRNQ1F0OWRIUHdfaG9qUEFhUV9yaVc1eUZVNVVWQ01ibXVzWGtVX190SVd3ZEVfNmxIY0g3Z2ZHSTNwOTRMQjhQZUdHX1RIcW5OT2o3TUpaWmJxOTlhWGRIZW9pWFl5ZEhUZEoybTVrT3doZ25PR2F3Z0ZVOE9ibzB5clBKVnRVLXdhcUp6NEx0VDhmemZORg?oc=5",
+      "published_at": "2026-10-09T12:11:57Z",
+      "score": 24,
+      "label": "bullish"
+    },
+    {
+      "id": "d1cbbe296fd1",
+      "source": "news",
+      "publisher": "Seeking Alpha",
+      "title": "Apple set to unveil touchscreen MacBook, new iPad mini soon: report (AAPL:NASDAQ) - Seeking Alpha",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQYTQ1YlpHQ1hhM3B0ZGwwaW5fWFRfUnE3cmh1STVneV9wSXkzT210NDdBbmRRc1pMX3ozS3JVcTlmTjh0RlV6ejJzbVVNTXFQY2d6cmVBSmRKdHBlX0p0ZXpPVkNBRm5pdHA0WE8wbjVIaUxBaDBXYnZZSHM3VXVZeGhZLXdmZWI3a3FITzJxOVk4eVdhcFZmT3NSN2ppcm95enVhSmtR?oc=5",
+      "published_at": "2026-10-09T11:28:20Z",
+      "score": 26,
+      "label": "bullish"
+    },
+    {
+      "id": "82bffb865ca1",
+      "source": "news",
+      "publisher": "Simply Wall Street",
+      "title": "Apple (AAPL) Brings Formula 1 Streaming To Apple TV In The US - Simply Wall Street",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVExiZFNlXzlWQmxLcDJfUi1LbGJoV1NpMW81cVIxWUlrQ1N1UFVVY1RNUkZjbk9KT3lGYTlqTVI5VkUyZHpoajViV2x1XzU3N3h6QWpSeU5nc0ZQR3YtdWRVMVFLdUxoQl9PRHhXY0ZubFU2bVdRY3YtR1RJRlBHRndydy1XTS0zWjdMRmJja191VmJXVVlLTXNkRHd5c1BZODVFeEZIcDMyUDhUYkYwSXp6NDhkLVp1ZzhxclpoSTbSAcABQVVfeXFMUFRMYmRTZV85VkJsS3AyX1ItS2xiaFdTaTFvNXFSMVlJa0NTdVBVVWNUTVJGY25PSk95RmE5ak1SOVZFMmR6aGo1YldsdV81Nzd4ekFqUnlOZ3NGUEd2LXVkVTFRS3VMaEJfT0R4V2NGbmxVNm1XUWN2LUdUSUZQR0Z3cnctV00tM1o3TEZiY2tfdVZiV1VZS01zZER3eXNQWTg1RXhGSHAzMlA4VGJGMEl6ejQ4ZC1adWc4cXJaaEk2?oc=5",
+      "published_at": "2026-10-09T11:01:35Z",
+      "score": 33,
+      "label": "bullish"
+    },
+    {
+      "id": "8bd0e118bfec",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Why Are Nasdaq Futures Surging Premarket? SPCX, ASTS, AAPL, TMUS, VZ, NVDA, MU, LITE Stocks In Focus - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRlRPdWJWU3UtNTVHSUdxSDdObHVsZ0N2cTRwd3dsczA1WExnV2xrZ3M3Nl9rVFZvbkdzcl9YNllwWHZNSTRWTGdXV3J0WjZuS0VKTFh1RlFCZWlTWXRmU2MxT2FDSzg1THZ3c2k3Z090TVl2UWRVdUtSQlJldEU1NkllQUI2MlRfRFdFOUtTeTJfZ2RDUVc3VGZ2MWpyQzJxdUpj?oc=5",
+      "published_at": "2026-10-09T08:38:57Z",
+      "score": 2,
+      "label": "neutral"
+    },
+    {
+      "id": "a92b93f0b30d",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "AAPL Nov 2026 365.000 call (AAPL261106C00365000) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBFdGc0N1l3anN4Y3hQSngyWTlLTGNBdTVYalFuX3VhSzVkVXBfVTVmTlk0THNMZHdMREdIVldQYzEydk9ZM2hsN3YyaWhJZzBCXzNSSTB0TVRuS1pURjlNOWNBODBMUQ?oc=5",
+      "published_at": "2026-10-09T08:23:01Z",
+      "score": -2,
+      "label": "neutral"
+    },
+    {
+      "id": "cf05de4075de",
+      "source": "news",
+      "publisher": "Yahoo! Finance Canada",
+      "title": "AAPL Nov 2026 230.000 call (AAPL261106C00230000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1DUzRheEl2Zl9ieGxqUmJfclhxSzJvYzNKZHdfdGFVUFBnTTl1QVhxTHR2V2ZaLXhqM2czVmxOSWhsS3Q5OXRGV1F5X25GcFc3di1aSWwzY2lkamFuMU1kQlNQZVJQUQ?oc=5",
+      "published_at": "2026-10-09T08:09:22Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "a52bb4bf1654",
+      "source": "news",
+      "publisher": "MarketBeat",
+      "title": "Apple Inc. $AAPL Stock Bought by Endeavor Private Wealth Inc. - MarketBeat",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZkZSNEd0dFFfWno3TDVseGU0WXAtX3JQUm1zRUNyVXpQMUh6MFVLNFh5SFRtRVVBU19WVmhFRnVHMGtyQmdRY2dSbG5UUnVuS2FsRlptX1hYLWgtT3F1bWNNUkp2ajZQZWlkc0pfSFpzdmJ4LVJ4Y0poVl8xZ0R2ekNib29leEJkMXZyeVdWR2FDVlJwd09fMFJjZGRHT2RyNnhrTHRPY1VCUExSOVY1R2FUUG9jNlJnYWZz?oc=5",
+      "published_at": "2026-10-09T07:35:13Z",
+      "score": 1,
+      "label": "neutral"
+    },
+    {
+      "id": "079e67671889",
+      "source": "news",
+      "publisher": "MarketBeat",
+      "title": "Apple Inc. $AAPL Stock Purchased by Wedmont Private Capital - MarketBeat",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNX19zX1NPRFJxcXM4V1p4TGpWMTg0ZFJyOGFodVJKMDJZRk1TMnVTalBoZy1OLTRQQ0lYNFdmczcxNTR0NU80UXVoUkhDN1owc1U0TnRWTGVHZWR0VzFoRm9VVFNtX2FRMDhxZmZ6QXUxTHQzd0tpRER1QnhrSjZjRGFHVW44czRXYjdtYnNXeFBCQUhOSi1XRUFWMUhiTlNHT0Vyay1rd2oxUjlVa1A5SXAxdjk5NUhialE?oc=5",
+      "published_at": "2026-10-09T07:35:13Z",
+      "score": 2,
+      "label": "neutral"
+    },
+    {
+      "id": "46e6b2907df0",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "AAPL Nov 2026 300.000 put (AAPL261113P00300000) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4xNEZRZ0JOSVVRaXF3ZEpKbWdORmJpN0lBRGhzLU05eTBmdXhXckhRcEhYRkhkY3lxUzMtamNRa1FJUmFuLVVUN0p2U2ZfdUNENXdOaFo3M0tzdXZzcXdrV0p0OS02UQ?oc=5",
+      "published_at": "2026-10-09T06:09:32Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "37f6a9a0786a",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "AAPL Oct 2026 175.000 call (AAPL261009C00175000) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5TWGc3VUt4cGhTZ3pzbldCWjc1VkdRYzhZeVFlQ0ZncVlBU000RzVHZ3J5c1RBYUxkeGREdkVaNjJmT0Iwa09ZdWlOVXJSVk5XcUowYU9IZWpQVXpBNS01NjNKVFQwUQ?oc=5",
+      "published_at": "2026-10-09T06:06:43Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "19619e16e4b7",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "AAPL Oct 2026 337.500 put (AAPL261014P00337500) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5DdEZNdmhieHJRaVFVMEtLdlZ3a2tHeWtVZzFrNWZRSWhqaDZkT0U3aWdES0VJTVZsS09RWmVOUTVmX013NkdnYnJIV2cwYTdPN1hONGxJUE54VWpLQzJnRDVxTEt5UQ?oc=5",
+      "published_at": "2026-10-09T05:41:45Z",
+      "score": -2,
+      "label": "neutral"
+    }
+  ]
+}

@@ -1,6 +1,9 @@
 """Out-of-sample scores. The positive class is ``up`` (``y == 1``)."""
 
+import math
+
 import numpy as np
+import pandas as pd
 
 
 def classification_metrics(y_true: object, prob_up: object) -> dict[str, float]:
@@ -34,6 +37,37 @@ def baseline_scores(y_true: object, trailing_return_5d: object) -> list[dict[str
             "directional_accuracy": float(np.mean(previous == y)),
         },
     ]
+
+
+def strategy_backtest(predictions: pd.DataFrame) -> dict[str, float | None]:
+    """Long when the model says up, flat otherwise, on non-overlapping 5-day periods.
+
+    ``sharpe_ratio`` is ``mean / std * sqrt(252 / 5)`` of those period returns.
+    ``max_drawdown`` is the equity curve's worst drop, as a negative fraction.
+    """
+    frame = predictions.copy()
+    frame["as_of_date"] = pd.to_datetime(frame["as_of_date"])
+    dates = sorted(frame["as_of_date"].unique())
+    chosen = set(dates[::5])
+    held = frame["as_of_date"].isin(chosen)
+    period_return = np.where(
+        frame.loc[held, "prob_up"].to_numpy() >= 0.5,
+        frame.loc[held, "fwd_return_pct"].to_numpy(dtype=float) / 100.0,
+        0.0,
+    )
+    sampled = frame.loc[held, ["as_of_date"]].copy()
+    sampled["strategy_return"] = period_return
+    periods = sampled.groupby("as_of_date", sort=True)["strategy_return"].mean()
+    if periods.empty:
+        return {"sharpe_ratio": None, "max_drawdown": None}
+    equity = np.concatenate([[1.0], np.cumprod(1.0 + periods.to_numpy(dtype=float))])
+    peak = np.maximum.accumulate(equity)
+    drawdown = float(np.min(equity / peak - 1.0))
+    deviation = float(periods.std(ddof=1)) if len(periods) > 1 else 0.0
+    sharpe = None
+    if deviation > 0:
+        sharpe = float(periods.mean() / deviation * math.sqrt(252 / 5))
+    return {"sharpe_ratio": sharpe, "max_drawdown": min(0.0, drawdown)}
 
 
 def _ratio(numerator: int, denominator: int) -> float:

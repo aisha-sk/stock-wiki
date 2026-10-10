@@ -4,6 +4,14 @@
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc."
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA Corporation"
+    },
+    {
+      "symbol": "AAPL",
+      "name": "Apple Inc."
     }
   ]
 }

@@ -9,9 +9,9 @@ import numpy as np
 import pandas as pd
 import pandas_market_calendars as mcal
 
-MODEL_NAME = "direction-lr"
+MODEL_NAME = "direction-xgb"
 MODEL_VERSION = "1"
-ALGORITHM = "logistic_regression"
+ALGORITHM = "xgboost"
 TASK_DESCRIPTION = "Will the close 5 trading days from now be above today's close?"
 HEADLINE_LIMIT = 30
 FORECAST_LOG_LIMIT = 60
@@ -85,6 +85,8 @@ def build_stock(
     window_days: int,
     source: dict | None,
     headlines: list[dict],
+    model_name: str = MODEL_NAME,
+    model_version: str = MODEL_VERSION,
 ) -> dict:
     """One ``stocks/{SYMBOL}.json`` body. Forecast is null when the gate failed."""
     ordered = prices.sort_values("date")
@@ -103,8 +105,8 @@ def build_stock(
             "made_at": generated_at,
             "as_of_date": as_of,
             "target_date": nyse_sessions_after(as_of, 5),
-            "model_name": MODEL_NAME,
-            "model_version": MODEL_VERSION,
+            "model_name": model_name,
+            "model_version": model_version,
         }
     return {
         "schema_version": "1.0",
@@ -210,6 +212,14 @@ def write_artifacts(
     prices_in_payload: int,
     generated_at: str,
     latency_ms: float,
+    sharpe_ratio: float | None = None,
+    max_drawdown: float | None = None,
+    model_name: str = MODEL_NAME,
+    model_version: str = MODEL_VERSION,
+    algorithm: str = ALGORITHM,
+    mlflow_run_id: str | None = None,
+    prior_versions: list[dict] | None = None,
+    versions: list[dict] | None = None,
 ) -> None:
     """Write the four artifact files. Numbers come from the arguments, not from literals."""
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -224,9 +234,11 @@ def write_artifacts(
     )
     forecast_rows: list[dict] = []
     oos_frames: list[pd.DataFrame] = []
+    kept_dates = _last_session_dates(predictions, FORECAST_LOG_LIMIT)
     for symbol in symbols:
         frame = prices[symbol]
         as_of = _date(frame.sort_values("date")["date"].iloc[-1])
+        symbol_predictions = _rows_on_dates(predictions[symbol], kept_dates)
         _write(
             out_dir / "stocks" / f"{symbol}.json",
             build_stock(
@@ -240,16 +252,19 @@ def write_artifacts(
                 window_days=window_days,
                 source=sources.get(symbol),
                 headlines=headlines.get(symbol, []),
+                model_name=model_name,
+                model_version=model_version,
             ),
         )
         forecast_rows.extend(
             build_forecast_rows(
-                predictions=predictions[symbol],
+                predictions=symbol_predictions,
                 symbol=symbol,
-                model_version=MODEL_VERSION,
+                model_version=model_version,
                 live_prob=live_prob[symbol],
                 live_as_of=as_of,
                 generated_at=generated_at,
+                limit=len(symbol_predictions),
             )
         )
         oos_frames.append(predictions[symbol])
@@ -260,22 +275,24 @@ def write_artifacts(
     hits = sum(row["result"] == "hit" for row in resolved)
     pending = sum(row["status"] == "pending" for row in forecast_rows)
     version = {
-        "version": MODEL_VERSION,
-        "model_name": MODEL_NAME,
-        "algorithm": ALGORITHM,
+        "version": model_version,
+        "model_name": model_name,
+        "algorithm": algorithm,
         "trained_at": generated_at,
         "directional_accuracy": accuracy,
         "gate_passed": gate_passed,
         "status": "production" if gate_passed else "rejected",
-        "mlflow_run_id": None,
+        "mlflow_run_id": mlflow_run_id,
     }
+    history = versions if versions is not None else [version, *(prior_versions or [])]
+    serving = next((item for item in history if item["status"] == "production"), None)
     production = None
-    if gate_passed:
+    if serving is not None:
         production = {
-            "model_name": MODEL_NAME,
-            "version": MODEL_VERSION,
-            "algorithm": ALGORITHM,
-            "trained_at": generated_at,
+            "model_name": serving["model_name"],
+            "version": serving["version"],
+            "algorithm": serving["algorithm"],
+            "trained_at": serving["trained_at"],
         }
     _write(
         out_dir / "model.json",
@@ -298,8 +315,8 @@ def write_artifacts(
                 "precision": float(metrics["precision"]),
                 "recall": float(metrics["recall"]),
                 "f1": float(metrics["f1"]),
-                "sharpe_ratio": None,
-                "max_drawdown": None,
+                "sharpe_ratio": sharpe_ratio,
+                "max_drawdown": max_drawdown,
                 "inference_latency_ms": float(latency_ms),
                 "cost_per_request_usd": None,
             },
@@ -316,7 +333,7 @@ def write_artifacts(
                 "passed": gate_passed,
             },
             "weekly_accuracy": build_weekly_accuracy(oos),
-            "versions": [version],
+            "versions": history,
         },
     )
     _write(
@@ -334,6 +351,23 @@ def write_artifacts(
             "forecasts": forecast_rows,
         },
     )
+
+
+def _last_session_dates(predictions: dict[str, pd.DataFrame], limit: int) -> set[pd.Timestamp]:
+    """The most recent ``limit`` session dates present in any symbol's backtest."""
+    frames = [frame for frame in predictions.values() if not frame.empty]
+    if not frames:
+        return set()
+    dates = pd.to_datetime(pd.concat(frames, ignore_index=True)["as_of_date"])
+    newest = sorted(dates.drop_duplicates())[-limit:]
+    return {pd.Timestamp(value) for value in newest}
+
+
+def _rows_on_dates(predictions: pd.DataFrame, dates: set[pd.Timestamp]) -> pd.DataFrame:
+    if predictions.empty or not dates:
+        return predictions.iloc[0:0]
+    mask = pd.to_datetime(predictions["as_of_date"]).isin(dates)
+    return predictions.loc[mask]
 
 
 def _headlines(headlines: list[dict]) -> list[dict]:

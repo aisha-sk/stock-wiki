@@ -193,7 +193,7 @@ def test_written_artifacts_match_the_contract(tmp_path: Path) -> None:
     model = json.loads((tmp_path / "model.json").read_text(encoding="utf-8"))
     assert model["production"] is None
     assert model["versions"][0]["status"] == "rejected"
-    assert model["versions"][0]["model_name"] == "direction-lr"
+    assert model["versions"][0]["model_name"] == "direction-xgb"
     assert model["gate"]["passed"] is False
     assert model["gate"]["threshold"] == 0.52
     forecasts = json.loads((tmp_path / "forecasts.json").read_text(encoding="utf-8"))

@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "symbol": "TSLA",
   "name": "Tesla, Inc.",
-  "generated_at": "2026-10-10T19:47:09Z",
+  "generated_at": "2026-10-10T21:00:18Z",
   "is_demo_data": false,
   "quote": {
     "price": 382.70001220703125,
@@ -501,10 +501,10 @@
         "display_name": "News media",
         "score": 12,
         "label": "neutral",
-        "doc_count": 92,
-        "note": "92 articles, last 7 days",
+        "doc_count": 91,
+        "note": "91 articles, last 7 days",
         "method": "finbert",
-        "previous_score": 4
+        "previous_score": 3
       }
     ],
     "gap": null
