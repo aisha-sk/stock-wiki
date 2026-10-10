@@ -15,7 +15,7 @@ from sklearn.preprocessing import StandardScaler
 
 from ml.config import load_config
 from ml.evaluate import baseline_scores, classification_metrics
-from ml.features import FEATURE_COLUMNS, add_features, add_target
+from ml.features import FEATURE_COLUMNS, NEWS_LAG_COLUMN, add_features, add_target
 from ml.ingest.prices import load_prices
 
 INITIAL_SESSIONS = 252
@@ -50,11 +50,17 @@ def walk_forward(
     block: int = TEST_BLOCK,
     step: int = STEP,
     purge: int = PURGE,
+    news_documents: list[dict] | None = None,
 ) -> TrainResult:
     """Collect purged walk-forward predictions, then forecast the latest session."""
     ordered = prices.sort_values("date").reset_index(drop=True)
-    featured = add_target(add_features(ordered), horizon=horizon)
+    featured = add_target(
+        add_features(ordered, news_documents=news_documents),
+        horizon=horizon,
+    )
     columns = list(FEATURE_COLUMNS)
+    if news_documents:
+        columns.append(NEWS_LAG_COLUMN)
     model_rows = featured.dropna(subset=[*columns, "y"]).reset_index(drop=True)
     feature_ready = featured.dropna(subset=columns)
     if feature_ready.empty:

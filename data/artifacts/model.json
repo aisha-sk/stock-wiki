@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-10-10T19:47:09Z",
+  "is_demo_data": false,
+  "production": null,
+  "task": {
+    "description": "Will the close 5 trading days from now be above today's close?",
+    "horizon_days": 5,
+    "validation": "walk_forward",
+    "tickers": [
+      "TSLA"
+    ],
+    "test_start": "2025-11-11",
+    "test_end": "2026-10-02",
+    "n_test": 224
+  },
+  "metrics": {
+    "directional_accuracy": 0.47767857142857145,
+    "precision": 0.43333333333333335,
+    "recall": 0.23853211009174313,
+    "f1": 0.3076923076923077,
+    "sharpe_ratio": null,
+    "max_drawdown": null,
+    "inference_latency_ms": 3.418449981836602,
+    "cost_per_request_usd": null
+  },
+  "baselines": [
+    {
+      "name": "always_up",
+      "directional_accuracy": 0.48660714285714285
+    },
+    {
+      "name": "previous_direction",
+      "directional_accuracy": 0.47767857142857145
+    }
+  ],
+  "gate": {
+    "metric": "directional_accuracy",
+    "threshold": 0.52,
+    "passed": false
+  },
+  "weekly_accuracy": [
+    {
+      "week_start": "2026-07-13",
+      "accuracy": 0.8,
+      "n": 5
+    },
+    {
+      "week_start": "2026-07-20",
+      "accuracy": 0.4,
+      "n": 5
+    },
+    {
+      "week_start": "2026-07-27",
+      "accuracy": 0.6,
+      "n": 5
+    },
+    {
+      "week_start": "2026-08-03",
+      "accuracy": 0.0,
+      "n": 5
+    },
+    {
+      "week_start": "2026-08-10",
+      "accuracy": 0.4,
+      "n": 5
+    },
+    {
+      "week_start": "2026-08-17",
+      "accuracy": 0.6,
+      "n": 5
+    },
+    {
+      "week_start": "2026-08-24",
+      "accuracy": 0.0,
+      "n": 5
+    },
+    {
+      "week_start": "2026-08-31",
+      "accuracy": 0.2,
+      "n": 5
+    },
+    {
+      "week_start": "2026-09-07",
+      "accuracy": 0.5,
+      "n": 4
+    },
+    {
+      "week_start": "2026-09-14",
+      "accuracy": 0.0,
+      "n": 5
+    },
+    {
+      "week_start": "2026-09-21",
+      "accuracy": 0.6,
+      "n": 5
+    },
+    {
+      "week_start": "2026-09-28",
+      "accuracy": 0.8,
+      "n": 5
+    }
+  ],
+  "versions": [
+    {
+      "version": "1",
+      "model_name": "direction-lr",
+      "algorithm": "logistic_regression",
+      "trained_at": "2026-10-10T19:47:09Z",
+      "directional_accuracy": 0.47767857142857145,
+      "gate_passed": false,
+      "status": "rejected",
+      "mlflow_run_id": null
+    }
+  ]
+}

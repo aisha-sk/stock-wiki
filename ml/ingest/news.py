@@ -1,8 +1,11 @@
 """Headline ingestion. Finnhub, then Yahoo Finance, then Google News RSS."""
 
 import hashlib
+import json
 import os
+import time
 from collections.abc import Callable
+from datetime import date
 from pathlib import Path
 
 import pandas as pd
@@ -250,3 +253,72 @@ def _load_dotenv() -> None:
         key = key.strip()
         if key and key not in os.environ:
             os.environ[key] = value.strip().strip("'\"")
+
+
+def scored_news_history(symbol: str, start: date, end: date) -> list[dict]:
+    """FinBERT-scored headlines from ``start`` through ``end``, reused from disk.
+
+    The archive is Google News, one week at a time, so each session's lagged score
+    has headlines from that week rather than only the tail of a month.
+    """
+    cache = Path(__file__).resolve().parents[1] / "data" / "news" / f"{symbol}-history.json"
+    if cache.exists():
+        return json.loads(cache.read_text(encoding="utf-8"))
+    documents = fetch_news_history(symbol, start, end)
+    if not documents:
+        return []
+    from ml.sentiment.finbert import score_titles
+    from ml.sentiment.run import apply_scores
+
+    print(f"{symbol}: scoring {len(documents)} historical headlines", flush=True)
+    scores = score_titles([document["title"] for document in documents])
+    scored = apply_scores(documents, scores)
+    cache.parent.mkdir(parents=True, exist_ok=True)
+    cache.write_text(json.dumps(scored) + "\n", encoding="utf-8")
+    return scored
+
+
+def fetch_news_history(symbol: str, start: date, end: date) -> list[dict]:
+    """Headlines whose publish day falls inside each week from ``start`` to ``end``."""
+    raw_cache = Path(__file__).resolve().parents[1] / "data" / "news" / f"{symbol}-history-raw.json"
+    stored = json.loads(raw_cache.read_text(encoding="utf-8")) if raw_cache.exists() else {}
+    for week_start, week_end, week_key in _weeks(start, end):
+        if week_key in stored:
+            continue
+        print(f"news history {week_key}", flush=True)
+        stored[week_key] = _google_news_between(symbol, week_start, week_end)
+        raw_cache.parent.mkdir(parents=True, exist_ok=True)
+        raw_cache.write_text(json.dumps(stored) + "\n", encoding="utf-8")
+        time.sleep(1)
+    documents = [document for chunk in stored.values() for document in chunk]
+    return dedupe_headlines(documents)
+
+
+def _weeks(start: date, end: date) -> list[tuple[date, date, str]]:
+    weeks: list[tuple[date, date, str]] = []
+    cursor = pd.Timestamp(start).normalize()
+    last = pd.Timestamp(end).normalize()
+    while cursor <= last:
+        week_end = min(cursor + pd.Timedelta(days=6), last)
+        weeks.append((cursor.date(), week_end.date(), cursor.strftime("%Y-%m-%d")))
+        cursor = week_end + pd.Timedelta(days=1)
+    return weeks
+
+
+def _google_news_between(symbol: str, start: date, end: date) -> list[dict]:
+    import feedparser
+
+    before = (pd.Timestamp(end) + pd.Timedelta(days=1)).strftime("%Y-%m-%d")
+    after = pd.Timestamp(start).strftime("%Y-%m-%d")
+    feedparser.USER_AGENT = "sentifi-research/0.1"
+    parsed = feedparser.parse(
+        "https://news.google.com/rss/search"
+        f"?q={symbol}+after:{after}+before:{before}&hl=en-US&gl=US&ceid=US:en"
+    )
+    kept: list[dict] = []
+    for document in _parse_each(from_rss_entry, parsed.entries):
+        published = _as_utc(document["published_at"]).date()
+        if start <= published <= end:
+            kept.append(document)
+    print(f"news history {start} {len(kept)} headlines", flush=True)
+    return kept

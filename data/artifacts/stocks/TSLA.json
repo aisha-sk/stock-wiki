@@ -1,0 +1,814 @@
+{
+  "schema_version": "1.0",
+  "symbol": "TSLA",
+  "name": "Tesla, Inc.",
+  "generated_at": "2026-10-10T19:47:09Z",
+  "is_demo_data": false,
+  "quote": {
+    "price": 382.70001220703125,
+    "change_pct": 2.05,
+    "as_of": "2026-10-09",
+    "currency": "USD"
+  },
+  "prices": [
+    {
+      "date": "2026-04-21",
+      "close": 386.4200134277344
+    },
+    {
+      "date": "2026-04-22",
+      "close": 387.510009765625
+    },
+    {
+      "date": "2026-04-23",
+      "close": 373.7200012207031
+    },
+    {
+      "date": "2026-04-24",
+      "close": 376.29998779296875
+    },
+    {
+      "date": "2026-04-27",
+      "close": 378.6700134277344
+    },
+    {
+      "date": "2026-04-28",
+      "close": 376.0199890136719
+    },
+    {
+      "date": "2026-04-29",
+      "close": 372.79998779296875
+    },
+    {
+      "date": "2026-04-30",
+      "close": 381.6300048828125
+    },
+    {
+      "date": "2026-05-01",
+      "close": 390.82000732421875
+    },
+    {
+      "date": "2026-05-04",
+      "close": 392.510009765625
+    },
+    {
+      "date": "2026-05-05",
+      "close": 389.3699951171875
+    },
+    {
+      "date": "2026-05-06",
+      "close": 398.7300109863281
+    },
+    {
+      "date": "2026-05-07",
+      "close": 411.7900085449219
+    },
+    {
+      "date": "2026-05-08",
+      "close": 428.3500061035156
+    },
+    {
+      "date": "2026-05-11",
+      "close": 445.0
+    },
+    {
+      "date": "2026-05-12",
+      "close": 433.45001220703125
+    },
+    {
+      "date": "2026-05-13",
+      "close": 445.2699890136719
+    },
+    {
+      "date": "2026-05-14",
+      "close": 443.29998779296875
+    },
+    {
+      "date": "2026-05-15",
+      "close": 422.239990234375
+    },
+    {
+      "date": "2026-05-18",
+      "close": 409.989990234375
+    },
+    {
+      "date": "2026-05-19",
+      "close": 404.1099853515625
+    },
+    {
+      "date": "2026-05-20",
+      "close": 417.260009765625
+    },
+    {
+      "date": "2026-05-21",
+      "close": 417.8500061035156
+    },
+    {
+      "date": "2026-05-22",
+      "close": 426.010009765625
+    },
+    {
+      "date": "2026-05-26",
+      "close": 433.5899963378906
+    },
+    {
+      "date": "2026-05-27",
+      "close": 440.3599853515625
+    },
+    {
+      "date": "2026-05-28",
+      "close": 442.1000061035156
+    },
+    {
+      "date": "2026-05-29",
+      "close": 435.7900085449219
+    },
+    {
+      "date": "2026-06-01",
+      "close": 415.8800048828125
+    },
+    {
+      "date": "2026-06-02",
+      "close": 423.739990234375
+    },
+    {
+      "date": "2026-06-03",
+      "close": 423.70001220703125
+    },
+    {
+      "date": "2026-06-04",
+      "close": 418.45001220703125
+    },
+    {
+      "date": "2026-06-05",
+      "close": 391.0
+    },
+    {
+      "date": "2026-06-08",
+      "close": 408.95001220703125
+    },
+    {
+      "date": "2026-06-09",
+      "close": 396.67999267578125
+    },
+    {
+      "date": "2026-06-10",
+      "close": 381.5899963378906
+    },
+    {
+      "date": "2026-06-11",
+      "close": 399.1499938964844
+    },
+    {
+      "date": "2026-06-12",
+      "close": 406.42999267578125
+    },
+    {
+      "date": "2026-06-15",
+      "close": 411.1499938964844
+    },
+    {
+      "date": "2026-06-16",
+      "close": 404.6600036621094
+    },
+    {
+      "date": "2026-06-17",
+      "close": 396.3800048828125
+    },
+    {
+      "date": "2026-06-18",
+      "close": 400.489990234375
+    },
+    {
+      "date": "2026-06-22",
+      "close": 405.04998779296875
+    },
+    {
+      "date": "2026-06-23",
+      "close": 381.6099853515625
+    },
+    {
+      "date": "2026-06-24",
+      "close": 375.5299987792969
+    },
+    {
+      "date": "2026-06-25",
+      "close": 375.1199951171875
+    },
+    {
+      "date": "2026-06-26",
+      "close": 379.7099914550781
+    },
+    {
+      "date": "2026-06-29",
+      "close": 411.8399963378906
+    },
+    {
+      "date": "2026-06-30",
+      "close": 420.6000061035156
+    },
+    {
+      "date": "2026-07-01",
+      "close": 425.29998779296875
+    },
+    {
+      "date": "2026-07-02",
+      "close": 393.45001220703125
+    },
+    {
+      "date": "2026-07-06",
+      "close": 419.7699890136719
+    },
+    {
+      "date": "2026-07-07",
+      "close": 402.8999938964844
+    },
+    {
+      "date": "2026-07-08",
+      "close": 394.05999755859375
+    },
+    {
+      "date": "2026-07-09",
+      "close": 406.54998779296875
+    },
+    {
+      "date": "2026-07-10",
+      "close": 407.760009765625
+    },
+    {
+      "date": "2026-07-13",
+      "close": 394.760009765625
+    },
+    {
+      "date": "2026-07-14",
+      "close": 396.17999267578125
+    },
+    {
+      "date": "2026-07-15",
+      "close": 394.4599914550781
+    },
+    {
+      "date": "2026-07-16",
+      "close": 391.05999755859375
+    },
+    {
+      "date": "2026-07-17",
+      "close": 380.8399963378906
+    },
+    {
+      "date": "2026-07-20",
+      "close": 369.57000732421875
+    },
+    {
+      "date": "2026-07-21",
+      "close": 378.92999267578125
+    },
+    {
+      "date": "2026-07-22",
+      "close": 374.010009765625
+    },
+    {
+      "date": "2026-07-23",
+      "close": 319.69000244140625
+    },
+    {
+      "date": "2026-07-24",
+      "close": 313.0299987792969
+    },
+    {
+      "date": "2026-07-27",
+      "close": 309.2200012207031
+    },
+    {
+      "date": "2026-07-28",
+      "close": 307.44000244140625
+    },
+    {
+      "date": "2026-07-29",
+      "close": 298.32000732421875
+    },
+    {
+      "date": "2026-07-30",
+      "close": 308.8500061035156
+    },
+    {
+      "date": "2026-07-31",
+      "close": 311.2099914550781
+    },
+    {
+      "date": "2026-08-03",
+      "close": 322.0799865722656
+    },
+    {
+      "date": "2026-08-04",
+      "close": 327.3500061035156
+    },
+    {
+      "date": "2026-08-05",
+      "close": 321.54998779296875
+    },
+    {
+      "date": "2026-08-06",
+      "close": 319.5299987792969
+    },
+    {
+      "date": "2026-08-07",
+      "close": 328.5799865722656
+    },
+    {
+      "date": "2026-08-10",
+      "close": 330.8800048828125
+    },
+    {
+      "date": "2026-08-11",
+      "close": 332.80999755859375
+    },
+    {
+      "date": "2026-08-12",
+      "close": 327.510009765625
+    },
+    {
+      "date": "2026-08-13",
+      "close": 339.9599914550781
+    },
+    {
+      "date": "2026-08-14",
+      "close": 342.2699890136719
+    },
+    {
+      "date": "2026-08-17",
+      "close": 339.29998779296875
+    },
+    {
+      "date": "2026-08-18",
+      "close": 336.8699951171875
+    },
+    {
+      "date": "2026-08-19",
+      "close": 351.1199951171875
+    },
+    {
+      "date": "2026-08-20",
+      "close": 345.1300048828125
+    },
+    {
+      "date": "2026-08-21",
+      "close": 362.8599853515625
+    },
+    {
+      "date": "2026-08-24",
+      "close": 348.95001220703125
+    },
+    {
+      "date": "2026-08-25",
+      "close": 350.25
+    },
+    {
+      "date": "2026-08-26",
+      "close": 345.82000732421875
+    },
+    {
+      "date": "2026-08-27",
+      "close": 354.80999755859375
+    },
+    {
+      "date": "2026-08-28",
+      "close": 348.75
+    },
+    {
+      "date": "2026-08-31",
+      "close": 367.95001220703125
+    },
+    {
+      "date": "2026-09-01",
+      "close": 356.0899963378906
+    },
+    {
+      "date": "2026-09-02",
+      "close": 357.010009765625
+    },
+    {
+      "date": "2026-09-03",
+      "close": 376.3699951171875
+    },
+    {
+      "date": "2026-09-04",
+      "close": 354.0799865722656
+    },
+    {
+      "date": "2026-09-08",
+      "close": 368.1600036621094
+    },
+    {
+      "date": "2026-09-09",
+      "close": 367.80999755859375
+    },
+    {
+      "date": "2026-09-10",
+      "close": 363.55999755859375
+    },
+    {
+      "date": "2026-09-11",
+      "close": 365.44000244140625
+    },
+    {
+      "date": "2026-09-14",
+      "close": 358.9700012207031
+    },
+    {
+      "date": "2026-09-15",
+      "close": 356.5799865722656
+    },
+    {
+      "date": "2026-09-16",
+      "close": 358.0799865722656
+    },
+    {
+      "date": "2026-09-17",
+      "close": 366.20001220703125
+    },
+    {
+      "date": "2026-09-18",
+      "close": 364.2699890136719
+    },
+    {
+      "date": "2026-09-21",
+      "close": 375.29998779296875
+    },
+    {
+      "date": "2026-09-22",
+      "close": 378.8999938964844
+    },
+    {
+      "date": "2026-09-23",
+      "close": 380.1199951171875
+    },
+    {
+      "date": "2026-09-24",
+      "close": 377.94000244140625
+    },
+    {
+      "date": "2026-09-25",
+      "close": 372.1099853515625
+    },
+    {
+      "date": "2026-09-28",
+      "close": 357.45001220703125
+    },
+    {
+      "date": "2026-09-29",
+      "close": 352.8399963378906
+    },
+    {
+      "date": "2026-09-30",
+      "close": 354.80999755859375
+    },
+    {
+      "date": "2026-10-01",
+      "close": 354.1099853515625
+    },
+    {
+      "date": "2026-10-02",
+      "close": 370.5899963378906
+    },
+    {
+      "date": "2026-10-05",
+      "close": 378.7300109863281
+    },
+    {
+      "date": "2026-10-06",
+      "close": 380.67999267578125
+    },
+    {
+      "date": "2026-10-07",
+      "close": 377.80999755859375
+    },
+    {
+      "date": "2026-10-08",
+      "close": 375.0
+    },
+    {
+      "date": "2026-10-09",
+      "close": 382.70001220703125
+    }
+  ],
+  "forecast": null,
+  "sentiment": {
+    "window_days": 7,
+    "sources": [
+      {
+        "source": "news",
+        "display_name": "News media",
+        "score": 12,
+        "label": "neutral",
+        "doc_count": 92,
+        "note": "92 articles, last 7 days",
+        "method": "finbert",
+        "previous_score": 4
+      }
+    ],
+    "gap": null
+  },
+  "headlines": [
+    {
+      "id": "4d43fd200b11",
+      "source": "news",
+      "publisher": "Simply Wall Street",
+      "title": "Tesla (TSLA) Stock Could Look Expensive Despite Europe Driving Software News - Simply Wall Street",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPN2VDb0pnS3ZOaFVOZUdCa0RhaVhLbEEzUjdBRFhCZnlFb3h0bml3LW4ybmZvZEc4VDBlb1I4Yk9WQS1LdWVfYlozV3NsWVdrNnRQV2xVNHZNd3l2eWRiUUtwakRiZTlveU1Ma3o0UXY2ck1rMTZhbERVUUNMV1BraHp3NzYxa1AyVzlKcWgzeDRzMWVlVTlCby1MajZuMzRPMjB1MzVtd3FmdVlwb0hSd2xibGhIREk1RHczZ2ZiaHhzUVZINHfSAcsBQVVfeXFMTV9YeWVlclhSY1JtbWIzQ1o0OFM1YmxtZnpyeGphSTZReXpQU0xralU1UHlhMkRzZkd0MXgtQ1J4VjgzMWJjeHFPMk5MRHZYay0yQVVUUERaUGFjYmJQb0tyUjFCajF3enVhRjUyYml2aVJYRnZ2b3BnZFk3QjZrWkc5cFl3UFU0dkZqaWRlaUZBY1hMLXFlZmpwX0NnQWRwbjk5TW5NSC12aGY2SW5aT0JucDlLOWp2ak9NMUNxaU5ZbjNTaHdCQWZhZkk?oc=5",
+      "published_at": "2026-10-10T13:38:08Z",
+      "score": -3,
+      "label": "neutral"
+    },
+    {
+      "id": "a1d48b802f70",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "TSLA Oct 2026 322.500 put (TSLA261009P00322500) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1GRWNEeWZnVjdiMF9TaUlCaXpScDE3a2lNSzJhWl9weVk4Ylh3VTRqN0ZmQ0xYTmZQVDMtWlJyQjV4ZU1iUlNqNng0ZG9FVnJoRkhwNWU5UllDTUZBbFZtLWRUZTVjUQ?oc=5",
+      "published_at": "2026-10-10T07:42:38Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "7f53f9e264e5",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "TSLA Dec 2026 255.000 call (TSLA261218C00255000) interactive stock chart - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5QRUF5Q1hJQ1dKS1RRU3JhejBGSE05Zkt5SEZzLXp0OGszdHByeXNnek1ySnEyMHVwQVlMSHNGN3BGaEZod3JmTE1RbGJ6eVZtNXlzQWZVT1E2M0YzVWJTelhheUd1ZTU1UzFrcXN3?oc=5",
+      "published_at": "2026-10-09T23:39:14Z",
+      "score": 0,
+      "label": "neutral"
+    },
+    {
+      "id": "2f9fefe633a8",
+      "source": "news",
+      "publisher": "Beinsure",
+      "title": "Tesla (NASDAQ: TSLA) stock price forecast 2026 \u2013 Capital spending above $25 bn - Beinsure",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9XZWFzaWVSZV80blc2THhyeVAtT3o3RzRscjVSR2FkYTl1N1JWQm1NSVZrcTNaLURxQ3lwZnVpU3d4anptM3JUenhicVdEeF9KY29oeWJoMFNBbFMtZkVOcU1vUQ?oc=5",
+      "published_at": "2026-10-09T21:51:37Z",
+      "score": 36,
+      "label": "bullish"
+    },
+    {
+      "id": "4373d8575354",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Jim Cramer On SpaceX (SPCX): Buy Tesla (TSLA) If You Like It As An Earnings Explosion Might Be Coming - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUFUwMkpTSVRsZnpwR0tmVGVVaFVqdkNXbUtzZml6QmxFVTNLNVZ1a29sQ1pXcUJqWTJYeklFZ1JORnJIV0lrSU14aWpUMTllS29OT2pKTWxfNGRVV0tzOEdscW5aRGU5eHNKdldtcmEzSXhOWDFiNlRGMDl5WmNGb3V5bXg1MEJyTkJRZUpfOTk2TnJ1?oc=5",
+      "published_at": "2026-10-09T20:22:14Z",
+      "score": 8,
+      "label": "neutral"
+    },
+    {
+      "id": "cab5eba6f0fe",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "TSLA Nov 2026 210.000 put (TSLA261113P00210000) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE43MTlZdDk0eDduQkM2NDBxUHNwNE5VNzhoN0U0cEpOZHNENmNXZWxyb2RuTVpBN25WXzhNcWMtWXpzbm1ZOFk3QmkwWnp1OTVxYWtGQTJhZWJQbGFaTThLd1pQcTNGdw?oc=5",
+      "published_at": "2026-10-09T19:17:52Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "85c026bb24c7",
+      "source": "news",
+      "publisher": "Yahoo! Finance Canada",
+      "title": "TSLA Oct 2026 510.000 call (TSLA261009C00510000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5oX0lnXy1QRmt3WHhsdmNqOWtkRXFoQkNMRGJCd1Y0c0xaXzU5OFFXWGZOeFNpQWVoME1fVDhsTDRYdGhHM2Z4cUVILWphb1Y4ZllsLVJaRHBfay1YSHlkdFp2NDgxdw?oc=5",
+      "published_at": "2026-10-09T18:50:54Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "9502d0f69c22",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "TSLA Oct 2026 362.500 put (TSLA261007P00362500) interactive stock chart - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBxR183RURPRzdMRHB3MlJtcUtYQXlpNFJaZ2xnZGVfZDJIUHViaGtDbklFREFhZkRQQ29qY3I2czdSMk1EOUtaVk1rZ1JjTjJLSWNlMHFyOU5WU3hYN1Q0TDZyWndqR3NvcUFubGxB?oc=5",
+      "published_at": "2026-10-09T18:43:53Z",
+      "score": 0,
+      "label": "neutral"
+    },
+    {
+      "id": "26a3a909b845",
+      "source": "news",
+      "publisher": "Yahoo! Finance Canada",
+      "title": "Tesla, Inc. (TSLA) Options Chain - Yahoo! Finance Canada",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVnRsX09jaVhzcV9BdUNHTUNCbmJCR2tJMkdxRTduOWY4RWg2eC1BcWlTT01na2kxUTkxS1R6bFZUMkpCaV9xZDl5RkN3QXFQSWJhU1FHWVpURTFiRUhHeDBzSEZFZUxBNFp0SF9pMGVsY2J1Ni1YZWZxN3pSem5FWlRvMUE?oc=5",
+      "published_at": "2026-10-09T17:13:44Z",
+      "score": 1,
+      "label": "neutral"
+    },
+    {
+      "id": "4a20adaa9c0b",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Tesla\u2019s China-Made EV Sales Hit 2026 High In September \u2013 Yorkville Says TSLA Is One Of The Clearest Ways To Own \u2018Physical AI\u2019 In Public Markets - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPY2hfRUR4T28xQUNXYnFsdHBFNmxRQTFUTGZGa1RXSkJJMkhubHdrU1liUHBvZWlDR1J6Nm5va1dVR1Q0VW9OQWxrQjNYSlY0WnZ6Q0dQZ1RoRm9mRzhFb3RMb1NTUENYQ184UWJVRGpVUHBBRjU5emcxam04bExLeTdsX0QzaXVOZUxzdC1lM2V0RXN3?oc=5",
+      "published_at": "2026-10-09T16:08:28Z",
+      "score": 31,
+      "label": "bullish"
+    },
+    {
+      "id": "ca97bada029c",
+      "source": "news",
+      "publisher": "Benzinga",
+      "title": "Dan Ives' $500 Tesla Target Hinges on Robotaxis - Tesla (NASDAQ:TSLA) - Benzinga",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNdE9sSE5nTDA0MnNlNmRPMFBZanBCT1g5c2REdm9BckZYbFpsYzA4ZmVQN1FiLWRLQXNla2RRNFNFa2hubGZVdVB5UlJqbE4yMnJVRXdCeWJqR2NaR2lob0ppTFRsUjFIU0F2aGx1b21aOVpCTWUxUExPVjFxeE1jclp0NWJMM2hPbmZDSEpwQU5VZw?oc=5",
+      "published_at": "2026-10-09T15:27:43Z",
+      "score": 9,
+      "label": "neutral"
+    },
+    {
+      "id": "535b6e8d732b",
+      "source": "news",
+      "publisher": "Moomoo",
+      "title": "$Tesla (TSLA.US)$ - Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9DRzZmaWZBaWFxQjhuVzNPbEJHRjdaQnRQeUlTMzMzU0ZuU3JGRHhqWS1BZGhaQ0FqSmlJNlhhdFNReWVlcFZjX0tiRVpSeUFDQ20wRW9HdzF4YnA4Vjd3eXF0TkdETWlvMTZfNjB5TWFTWUVrRGc?oc=5",
+      "published_at": "2026-10-09T14:54:40Z",
+      "score": 1,
+      "label": "neutral"
+    },
+    {
+      "id": "e5e83b751a27",
+      "source": "news",
+      "publisher": "Seeking Alpha",
+      "title": "Tesla\u2019s China-made EV sales rise as Europe recovery continues (TSLA:NASDAQ) - Seeking Alpha",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNdEY1RDY3cUpXVjRJSDgtY3ljclRmQmlJUndnRUZoTnYtdkdmTHNFdk5zZEY1Nzh4SkZWTGdmYlR4WkhWeFlNa3FXQ3J2T3pLQkJhY3pWdnlrcmZ4UlVldWZHRDV2TlpQUjQ4dkNyWjR2NVN1cmRSZnhFM3lCdG1SUWhMSVpLcHUyRjBFRVlCa0xiUGozczgxbTh4LXhnM2c?oc=5",
+      "published_at": "2026-10-09T14:22:11Z",
+      "score": 93,
+      "label": "bullish"
+    },
+    {
+      "id": "de7fef4e3167",
+      "source": "news",
+      "publisher": "Moomoo",
+      "title": "US Stock Market Moves | Tesla (TSLA.US) Rises Over 2%; Cybercab Registers 150 New Units in a Single Day - Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQVmd1R0QxSlBHcTFaVXlhWEZjM3dQLUNUSlliUlJtTF9hanF6ZENJRWJLMFowbzlQNXBwY3F5SFdOR3Nnam5VbjBQZEM4S1VvbVY0d3BKTnFLSVRQeTZVcVl2U3d3UWt1UEhicjYxMzNMZzFLeDBCbnMzYmJOMzZuNW5MOGdGeWxhelpBWFo0OHJGa0FRX2M3Y2V1U1V2U2VvRmc?oc=5",
+      "published_at": "2026-10-09T14:20:08Z",
+      "score": 89,
+      "label": "bullish"
+    },
+    {
+      "id": "a251a429ad12",
+      "source": "news",
+      "publisher": "Moomoo",
+      "title": "Going for that stop lol 371 \ud83e\udd71 looks like $Tesla (TSLA.US)$ - Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQckFVakYyV3k1S0ljSFEzUUlmUmxqVXlReExnVUtQU0RWSVV6WVpTT3M2eGNYem9kTXI4VkxjNzNlU1g1UXFFVmlQUGRWVDhfYS1FeTQ5Qno1UjF6NmN4aUV1SGFfeXRaTUpjQW00NUJTUGt3VmJSSjlzNEJ5TGRvdk91dGJMdHBadVJMMlFEM2tHc1ZNT2dsTEw5c29JTGw0N3Z2bkxB?oc=5",
+      "published_at": "2026-10-09T14:02:39Z",
+      "score": 4,
+      "label": "neutral"
+    },
+    {
+      "id": "da4b623d9347",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "TSLA Feb 2027 395.000 put (TSLA270219P00395000) interactive stock chart - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9mTDBDS2E4Z1hwR0VKWi1qTmxVRHpHTGtqdV9DZ1lEVGdPcFVnRUFjM1h0eEd1dV9mWWFGNVVfUkxjZmhPaHFUSllwSHZyMG90UTFaZmNzeV9XYUJ0bFRNZHRFRFBvZTV1emlrQzhB?oc=5",
+      "published_at": "2026-10-09T13:42:49Z",
+      "score": 0,
+      "label": "neutral"
+    },
+    {
+      "id": "1310a4139696",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "TSLA Oct 2026 350.000 put (TSLA261023P00350000) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1VZW1BQW1ySVZOZHBJOFdIbURWLW1vWFFtT3lkVmowTHFtcXJfaUN6YW5BRDUwZngtZkp2NjV0cnZjQTlFLU5HeFNWaEl6ellMR01LNXNCUHliTThtMnJRTlZYRHlOdw?oc=5",
+      "published_at": "2026-10-09T13:40:30Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "2e29e07c63dd",
+      "source": "news",
+      "publisher": "Moomoo",
+      "title": "$Tesla (TSLA.US)$ - Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1qUTA2Q0VzSHQ4VDBmSEZRbkljdHp5QkNvcmxsclptTkN4Q2h2MUZJT29RYnRGaU9OWTJiQWlCRzNDMzFxM1JheTk5TUkxRUN6Z1l3SndEUEJwWXFjMzl2UUxlQ1ZWSjNLbE5WdUtSMFZKYnExc1E?oc=5",
+      "published_at": "2026-10-09T13:19:26Z",
+      "score": 1,
+      "label": "neutral"
+    },
+    {
+      "id": "755d68a68ffb",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "TSLA Oct 2026 255.000 put (TSLA261009P00255000) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBUNFdnTHhHcnNhZXJGXzZIcW5zTGRUY1hHX0NHam1zX3IzLWx3TUl3Z1Q5M0tRNElETkJlNTRlQmphTXIzblhvVTRSNm8wckp5VmFpM0t3UVJQekVDUm42YUZLMEhsdw?oc=5",
+      "published_at": "2026-10-09T12:53:43Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "b3cc8f58eb35",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "TSLA Oct 2026 310.000 call (TSLA261005C00310000) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE8tMkJPMnRjYmppVUxNMnVoTk5MUEh1MDJkTjRvQkktRGp6NlV6MjR2OTdBbXZMOEZtbm5vWFRsXy1zWlJ1UUw5OV9NRzZORy0xempzUUpLUVhLbXEyaVZMU1hKZDlPQQ?oc=5",
+      "published_at": "2026-10-09T11:31:40Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "7cdc4b2a8b69",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Elon Musk Defends $1 Trillion Fortune Tied to SPCX, TSLA, Slams Bernie Sanders: \u2018Takers\u2019 Take From the Makers - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOWDhVM2N6NnNpWkJwVGQtTklaY3VITHgzeDFhTDh1bFk4emJmTjhRVlNLaHNOZmlHaXYtWXdYaXAtM2ZOaVF2d0gyMGg0V1RkV0ZSajNBdGphSEhrOGc1RmFuZ2dGaGpaWTU5ODFUYkVIZ3g2b09FRXZEWjNJclFzOUxXVzBlRDdjZmFSZlVBaHFBOGdKemJocA?oc=5",
+      "published_at": "2026-10-09T10:45:31Z",
+      "score": 5,
+      "label": "neutral"
+    },
+    {
+      "id": "c5e4fe6fc128",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "TSLA Nov 2026 425.000 put (TSLA261113P00425000) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9EVXBJSWhraWtscmJNU1pGOWxuOEJIczAtYmZ0YjllcGRqaXcyMlRibXRrR3NOUjFaZ0ZKU2VZRXIzUjQ1TExzbjNrR3pIcjlJRUJOcmpaZFIxTTdIWElnckgyNzJGZw?oc=5",
+      "published_at": "2026-10-09T07:37:58Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "472cee1df80e",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "TSLA Nov 2026 340.000 put (TSLA261113P00340000) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE16RlhwaHhUUFVhSmNuR2Rmc0toQlZLVXZfZjc5Mkk0VlRqQ2ZjUmxkUmpleU5MNjlFV0NLZlZhMTF5ZVpuenQxdzVyV09uZzhjVUhHSmxQc1VMR2dMWGU5bVIzWnJWUQ?oc=5",
+      "published_at": "2026-10-09T07:21:39Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "00e9aa21f221",
+      "source": "news",
+      "publisher": "Moomoo",
+      "title": "thanks $TSLA 261014 390.00C$ - Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMGhpcm92b1V1blhPQ2NPekxkSmVwU0Jaelk0azUyWGY0eXhhelhvWWZhRk5lZDF3Rlo1U2hHek9wSi1yQ0x5Nk1oVlZKbWNZZDN1cGg2VTdNTEl5eUpFeVNJNDdWLWNiQmt1aEhuMFd1R2NxbEN6SGUwWHpwWWk0N250Zy1aTmhyb0VXSW1pUUJHbWpEX1k4eFlseGIyUVhJRHA4?oc=5",
+      "published_at": "2026-10-09T07:00:00Z",
+      "score": 4,
+      "label": "neutral"
+    },
+    {
+      "id": "d8996860cdf7",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "TSLA Nov 2026 320.000 put (TSLA261106P00320000) interactive stock chart - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBwSzB1V2U0TXRXRU9LZWRueHdWcXRYUGJIaWUxRlhpakVHeDMzc3l4RWlaTXJNN2o1VlhuZTBWdkNhelJrMUU5SElMZURHbDlDRDBrY01hTkZpUHNBdkt6eEdLZHRyYlVQdm1RQzhB?oc=5",
+      "published_at": "2026-10-09T05:16:38Z",
+      "score": 1,
+      "label": "neutral"
+    },
+    {
+      "id": "fa3739ec05a6",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Tesla (TSLA) Stock Looks Stretched After Its 45% Three Year Run - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNd1owUWNub2o2LXlON1NrT1ZxZ21FckNMTjRFMDhGWnZnWWo2aEpVS2JPaDZ5bWs4WGJVOHZLQ1VGbzlIWGdUSS04bHctOU52UjZMWVZoTTdTX2N0TnZ2X0hleFpjN3hJNjNuVHl2cWdFS3drX1hzVkZxRXJhTTg5VUdra0ZtN0NlNTBtdXFqZ3pLMEVxcmd4eWduY0VBdw?oc=5",
+      "published_at": "2026-10-09T05:10:33Z",
+      "score": -92,
+      "label": "bearish"
+    },
+    {
+      "id": "44db9c288fef",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "TSLA Oct 2026 295.000 put (TSLA261007P00295000) interactive stock chart - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5GdkRHMklIVkNHYlRDWnlNX3M1OGdVZ2MwbkVuYnZSSGRRQTlxZkdHcm93bkJrNFVzZkkteXJ3bXh4ZFNwVEw1dHZQaFk5Z0JNbGFhWjQwRU14Q0N1Y2o2WkRmTE1PaTdTSHlrVDhR?oc=5",
+      "published_at": "2026-10-09T04:27:44Z",
+      "score": 1,
+      "label": "neutral"
+    },
+    {
+      "id": "ed6064cb1eb5",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "TSLA Stock Rises Overnight On Record Cybercab Registrations \u2014 Analyst\u2019s 5 Bullish Bets Signal Nearly 50% Upside - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZEwwWGQ1Sk1GWGNCWmxJVURjdktLOGRaTnl2TE1kbFF3bUota0E5ZHk1bkplRHRGSXNMNW5iZFV2eXJ2OEZwbnZySUgwMVZaWEZEUnN1UERuRVFreTk4YlR5MVNqQ3hsUUZXV1NrM3B1WUl5dExsa3lVU0dPSXJJd2ozeTlrWUtlWDdFSjVGY3BKRGdaWE92V25vQ1dVUnM?oc=5",
+      "published_at": "2026-10-09T04:11:00Z",
+      "score": 88,
+      "label": "bullish"
+    },
+    {
+      "id": "8fe7a989e10e",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "TSLA Oct 2026 435.000 call (TSLA261023C00435000) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5fMWtWQkFMWVREeGJXelNRS1JqVHIyTGVESTNidzhRQmVpczc0T1h6Zkh1Vk9ZYnFoRnlISng3ZWN5WHBac2tKeHhZNTRIUkhuRWMxUENJRVNFVzFuRHMtNVVXWWFOUQ?oc=5",
+      "published_at": "2026-10-09T03:45:00Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "ae18268775ab",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "TSLA Oct 2026 375.000 call (TSLA261007C00375000) interactive stock chart - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5PbXFvRkJJZHEzMUJsVWp5TF9IeGF2YXl4Qk5jRkt6cGYtakhnUWZzZVJEQ3RuSXlhbUY0bng3UktyTVU3NVltcS1ocTEzb20wSkFYMHRvZlNWcHF2dFRrcGZHamotMlM1cU9lUHd3?oc=5",
+      "published_at": "2026-10-09T00:26:55Z",
+      "score": 1,
+      "label": "neutral"
+    }
+  ]
+}
