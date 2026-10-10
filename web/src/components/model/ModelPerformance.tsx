@@ -7,6 +7,8 @@ import { useSelectedStock } from "@/lib/useSelectedStock";
 import { ForecastLog } from "./ForecastLog";
 import { MetricCards } from "./MetricCards";
 import { RegistryTable } from "./RegistryTable";
+import { ErrorCard } from "../ui/ErrorCard";
+import { Loading, Skeleton } from "../ui/Skeleton";
 import { WeeklyAccuracyChart } from "./WeeklyAccuracyChart";
 
 export function ModelPerformance() {
@@ -14,17 +16,20 @@ export function ModelPerformance() {
   const model = useApi("model", getModel);
 
   if (model.status === "loading") {
-    return <p className="text-[15px] text-muted">Loading model performance…</p>;
+    return (
+      <Loading label="Loading model performance">
+        <Skeleton className="h-[120px]" />
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4">
+          {Array.from({ length: 8 }, (_, i) => (
+            <Skeleton key={i} className="h-[120px]" />
+          ))}
+        </div>
+        <Skeleton className="h-[300px]" />
+      </Loading>
+    );
   }
   if (model.status === "error") {
-    return (
-      <div role="alert" className="flex flex-wrap items-center gap-3 rounded-xl border border-line bg-card p-6">
-        <span>Couldn&apos;t load model performance. {model.error.message}</span>
-        <button onClick={model.reload} className="min-h-11 rounded-lg border border-ink px-4 font-medium">
-          Retry
-        </button>
-      </div>
-    );
+    return <ErrorCard what="model performance" error={model.error} onRetry={model.reload} />;
   }
 
   const { production, versions, task, gate } = model.data;

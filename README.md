@@ -1,5 +1,7 @@
 # ground-news-for-stocks:
 
+[![CI](https://github.com/aisha-sk/stock-wiki/actions/workflows/ci.yml/badge.svg)](https://github.com/aisha-sk/stock-wiki/actions/workflows/ci.yml)
+
 A weather app for how people feel about a stock. Pick a ticker and see how Wall Street
 analysts, news media and Reddit each read it, how far apart they are, and a model's 5-day
 direction forecast with its track record in the open, misses included.

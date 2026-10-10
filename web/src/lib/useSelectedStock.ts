@@ -16,6 +16,8 @@ export function useSelectedStock() {
   return {
     tickers,
     selected,
+    /** The raw `?symbol=` value, upper-cased, or null. */
+    requested,
     /** True when `?symbol=` named a stock we do not track. */
     isFallback: requested !== null && selected !== null && selected.symbol !== requested,
   };
