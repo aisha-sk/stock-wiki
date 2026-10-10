@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "symbol": "TSLA",
   "name": "Tesla, Inc.",
-  "generated_at": "2026-10-10T21:57:39Z",
+  "generated_at": "2026-10-10T22:13:54Z",
   "is_demo_data": false,
   "quote": {
     "price": 382.7,
@@ -531,7 +531,7 @@
       "publisher": "Yahoo Finance",
       "title": "Consensus: 19 buy, 21 hold, 4 sell (Oct 2026)",
       "url": null,
-      "published_at": "2026-10-10T21:57:39Z",
+      "published_at": "2026-10-10T22:13:54Z",
       "score": 19,
       "label": "neutral"
     },

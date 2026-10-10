@@ -10,6 +10,7 @@ import pandas as pd
 
 from ml.config import load_config
 from ml.evaluate import strategy_backtest
+from ml.features import FEATURE_COLUMNS, NEWS_LAG_COLUMN
 from ml.ingest.analysts import fetch_analysts
 from ml.ingest.news import (
     dedupe_headlines,
@@ -24,7 +25,15 @@ from ml.publish import median_latency_ms, write_artifacts
 from ml.sentiment.aggregate import aggregate_news, aggregate_posts
 from ml.sentiment.run import apply_scores
 from ml.tracking import log_candidate
-from ml.train import ALGORITHMS, XGB_PARAMS, format_report, walk_forward_pooled
+from ml.train import (
+    ALGORITHMS,
+    INITIAL_SESSIONS,
+    PURGE,
+    TEST_BLOCK,
+    XGB_PARAMS,
+    format_report,
+    walk_forward_pooled,
+)
 
 
 def run_pipeline(symbols: list[str], out_dir: Path) -> int:
@@ -67,7 +76,23 @@ def run_pipeline(symbols: list[str], out_dir: Path) -> int:
             algorithm=algorithm,
         )
         params = dict(XGB_PARAMS)
-        run_id = log_candidate(algorithm=algorithm, params=params, metrics=trained.metrics)
+        data_end = max(pd.Timestamp(frame["date"].max()) for frame in prices.values())
+        run_id = log_candidate(
+            algorithm=algorithm,
+            params=params,
+            metrics=trained.metrics,
+            baselines=trained.baselines,
+            predictions=trained.predictions,
+            model=trained.model,
+            feature_names=[*FEATURE_COLUMNS, NEWS_LAG_COLUMN],
+            tickers=ordered,
+            horizon=config.horizon_days,
+            initial_window=INITIAL_SESSIONS,
+            test_block=TEST_BLOCK,
+            purge=PURGE,
+            data_end=data_end.strftime("%Y-%m-%d"),
+            gate_threshold=config.gate_threshold,
+        )
         print(format_report(algorithm, trained.metrics, trained.baselines), flush=True)
         candidates.append((algorithm, trained, run_id))
 
