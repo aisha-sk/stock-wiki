@@ -94,7 +94,7 @@ def run_pipeline(symbols: list[str], out_dir: Path) -> int:
     next_version = 1 + max((int(item["version"]) for item in prior), default=0)
     recorded = []
     for offset, (name, result, candidate_run) in enumerate(candidates):
-        candidate_accuracy = float(result.metrics["directional_accuracy"])
+        candidate_accuracy = round(float(result.metrics["directional_accuracy"]), 4)
         is_serving = result is trained
         gate_passed = candidate_accuracy >= threshold
         if is_serving and gate_passed:
