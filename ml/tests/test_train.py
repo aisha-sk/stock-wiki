@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 
 from ml.features import FEATURE_COLUMNS, add_features, add_target
-from ml.train import walk_forward
+from ml.train import XGB_PARAMS, walk_forward, walk_forward_pooled
 
 
 def _synthetic_prices(n: int = 400) -> pd.DataFrame:
@@ -44,3 +44,24 @@ def test_test_dates_are_outside_the_training_window_and_five_rows_are_purged() -
         tested.update(test_dates)
 
     assert predicted == tested
+
+
+def test_pooled_folds_use_the_same_dates_for_every_ticker() -> None:
+    left = _synthetic_prices()
+    right = _synthetic_prices()
+    right["close"] = right["close"] * 1.2
+
+    result = walk_forward_pooled({"AAA": left, "BBB": right}, horizon=5, algorithm="xgboost")
+
+    counts = result.predictions.groupby("as_of_date")["symbol"].nunique()
+    assert counts.min() == 2
+    for fold in result.folds:
+        assert set(fold.test_dates).isdisjoint(fold.train_dates)
+        assert max(fold.train_dates) < min(fold.test_dates)
+
+
+def test_xgboost_candidate_keeps_the_fixed_small_settings() -> None:
+    assert XGB_PARAMS["n_estimators"] == 200
+    assert XGB_PARAMS["max_depth"] == 3
+    assert XGB_PARAMS["learning_rate"] == 0.05
+    assert XGB_PARAMS["subsample"] == 0.8

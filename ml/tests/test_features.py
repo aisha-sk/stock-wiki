@@ -51,3 +51,28 @@ def test_target_matches_hand_computed_value() -> None:
     assert labelled.loc[2, "fwd_return_pct"] == pytest.approx(-25.0)
     assert labelled.loc[3:, "y"].isna().all()
     assert labelled.loc[3:, "fwd_return_pct"].isna().all()
+
+
+def test_news_lag1_uses_the_window_ending_yesterday() -> None:
+    prices = _prices_from_closes([10, 11, 12, 13, 14])
+    dates = list(prices["date"])
+    documents = [
+        {"published_at": dates[0].strftime("%Y-%m-%dT12:00:00Z"), "score": 40},
+        {"published_at": dates[0].strftime("%Y-%m-%dT18:00:00Z"), "score": 20},
+        {"published_at": dates[1].strftime("%Y-%m-%dT12:00:00Z"), "score": 100},
+    ]
+
+    featured = add_features(prices, news_documents=documents)
+    later = add_features(
+        prices,
+        news_documents=[
+            *documents,
+            {"published_at": dates[2].strftime("%Y-%m-%dT12:00:00Z"), "score": -100},
+        ],
+    )
+
+    assert featured.loc[0, "news_lag1"] != featured.loc[0, "news_lag1"]
+    assert featured.loc[1, "news_lag1"] == 30
+    assert featured.loc[2, "news_lag1"] == 53
+    assert later.loc[1, "news_lag1"] == featured.loc[1, "news_lag1"]
+    assert later.loc[2, "news_lag1"] == featured.loc[2, "news_lag1"]

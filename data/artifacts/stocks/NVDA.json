@@ -1,0 +1,814 @@
+{
+  "schema_version": "1.0",
+  "symbol": "NVDA",
+  "name": "NVIDIA Corporation",
+  "generated_at": "2026-10-10T21:00:18Z",
+  "is_demo_data": false,
+  "quote": {
+    "price": 229.27999877929688,
+    "change_pct": -0.52,
+    "as_of": "2026-10-09",
+    "currency": "USD"
+  },
+  "prices": [
+    {
+      "date": "2026-04-21",
+      "close": 199.42417907714844
+    },
+    {
+      "date": "2026-04-22",
+      "close": 202.03819274902344
+    },
+    {
+      "date": "2026-04-23",
+      "close": 199.18470764160156
+    },
+    {
+      "date": "2026-04-24",
+      "close": 207.79502868652344
+    },
+    {
+      "date": "2026-04-27",
+      "close": 216.1160125732422
+    },
+    {
+      "date": "2026-04-28",
+      "close": 212.68385314941406
+    },
+    {
+      "date": "2026-04-29",
+      "close": 208.77279663085938
+    },
+    {
+      "date": "2026-04-30",
+      "close": 199.1148681640625
+    },
+    {
+      "date": "2026-05-01",
+      "close": 197.9974365234375
+    },
+    {
+      "date": "2026-05-04",
+      "close": 198.02734375
+    },
+    {
+      "date": "2026-05-05",
+      "close": 196.05186462402344
+    },
+    {
+      "date": "2026-05-06",
+      "close": 207.3560333251953
+    },
+    {
+      "date": "2026-05-07",
+      "close": 211.01766967773438
+    },
+    {
+      "date": "2026-05-08",
+      "close": 214.709228515625
+    },
+    {
+      "date": "2026-05-11",
+      "close": 218.93955993652344
+    },
+    {
+      "date": "2026-05-12",
+      "close": 220.27650451660156
+    },
+    {
+      "date": "2026-05-13",
+      "close": 225.3149871826172
+    },
+    {
+      "date": "2026-05-14",
+      "close": 235.202392578125
+    },
+    {
+      "date": "2026-05-15",
+      "close": 224.80615234375
+    },
+    {
+      "date": "2026-05-18",
+      "close": 221.81300354003906
+    },
+    {
+      "date": "2026-05-19",
+      "close": 220.1068878173828
+    },
+    {
+      "date": "2026-05-20",
+      "close": 222.9603729248047
+    },
+    {
+      "date": "2026-05-21",
+      "close": 219.0093994140625
+    },
+    {
+      "date": "2026-05-22",
+      "close": 214.83892822265625
+    },
+    {
+      "date": "2026-05-26",
+      "close": 214.37001037597656
+    },
+    {
+      "date": "2026-05-27",
+      "close": 212.1151580810547
+    },
+    {
+      "date": "2026-05-28",
+      "close": 213.7613983154297
+    },
+    {
+      "date": "2026-05-29",
+      "close": 210.6584930419922
+    },
+    {
+      "date": "2026-06-01",
+      "close": 223.8483428955078
+    },
+    {
+      "date": "2026-06-02",
+      "close": 222.3118438720703
+    },
+    {
+      "date": "2026-06-03",
+      "close": 214.26025390625
+    },
+    {
+      "date": "2026-06-04",
+      "close": 218.4156036376953
+    },
+    {
+      "date": "2026-06-05",
+      "close": 204.87075805664062
+    },
+    {
+      "date": "2026-06-08",
+      "close": 208.40679931640625
+    },
+    {
+      "date": "2026-06-09",
+      "close": 207.95730590820312
+    },
+    {
+      "date": "2026-06-10",
+      "close": 200.19598388671875
+    },
+    {
+      "date": "2026-06-11",
+      "close": 204.64100646972656
+    },
+    {
+      "date": "2026-06-12",
+      "close": 204.96066284179688
+    },
+    {
+      "date": "2026-06-15",
+      "close": 212.21253967285156
+    },
+    {
+      "date": "2026-06-16",
+      "close": 207.1781768798828
+    },
+    {
+      "date": "2026-06-17",
+      "close": 204.42124938964844
+    },
+    {
+      "date": "2026-06-18",
+      "close": 210.4545135498047
+    },
+    {
+      "date": "2026-06-22",
+      "close": 208.41677856445312
+    },
+    {
+      "date": "2026-06-23",
+      "close": 199.81640625
+    },
+    {
+      "date": "2026-06-24",
+      "close": 198.77757263183594
+    },
+    {
+      "date": "2026-06-25",
+      "close": 195.52122497558594
+    },
+    {
+      "date": "2026-06-26",
+      "close": 192.31480407714844
+    },
+    {
+      "date": "2026-06-29",
+      "close": 194.7520751953125
+    },
+    {
+      "date": "2026-06-30",
+      "close": 199.86634826660156
+    },
+    {
+      "date": "2026-07-01",
+      "close": 197.35916137695312
+    },
+    {
+      "date": "2026-07-02",
+      "close": 194.61224365234375
+    },
+    {
+      "date": "2026-07-06",
+      "close": 195.33143615722656
+    },
+    {
+      "date": "2026-07-07",
+      "close": 196.7098846435547
+    },
+    {
+      "date": "2026-07-08",
+      "close": 203.891845703125
+    },
+    {
+      "date": "2026-07-09",
+      "close": 202.5533447265625
+    },
+    {
+      "date": "2026-07-10",
+      "close": 210.72421264648438
+    },
+    {
+      "date": "2026-07-13",
+      "close": 203.30250549316406
+    },
+    {
+      "date": "2026-07-14",
+      "close": 211.5632781982422
+    },
+    {
+      "date": "2026-07-15",
+      "close": 212.26248168945312
+    },
+    {
+      "date": "2026-07-16",
+      "close": 207.16818237304688
+    },
+    {
+      "date": "2026-07-17",
+      "close": 202.58331298828125
+    },
+    {
+      "date": "2026-07-20",
+      "close": 203.05279541015625
+    },
+    {
+      "date": "2026-07-21",
+      "close": 207.0583038330078
+    },
+    {
+      "date": "2026-07-22",
+      "close": 211.82298278808594
+    },
+    {
+      "date": "2026-07-23",
+      "close": 208.5266571044922
+    },
+    {
+      "date": "2026-07-24",
+      "close": 206.6088104248047
+    },
+    {
+      "date": "2026-07-27",
+      "close": 196.2903594970703
+    },
+    {
+      "date": "2026-07-28",
+      "close": 196.789794921875
+    },
+    {
+      "date": "2026-07-29",
+      "close": 189.79762268066406
+    },
+    {
+      "date": "2026-07-30",
+      "close": 194.82199096679688
+    },
+    {
+      "date": "2026-07-31",
+      "close": 200.52561950683594
+    },
+    {
+      "date": "2026-08-03",
+      "close": 206.40904235839844
+    },
+    {
+      "date": "2026-08-04",
+      "close": 211.70310974121094
+    },
+    {
+      "date": "2026-08-05",
+      "close": 218.9749755859375
+    },
+    {
+      "date": "2026-08-06",
+      "close": 218.7452392578125
+    },
+    {
+      "date": "2026-08-07",
+      "close": 223.70968627929688
+    },
+    {
+      "date": "2026-08-10",
+      "close": 217.3068389892578
+    },
+    {
+      "date": "2026-08-11",
+      "close": 217.25689697265625
+    },
+    {
+      "date": "2026-08-12",
+      "close": 223.8395233154297
+    },
+    {
+      "date": "2026-08-13",
+      "close": 225.04818725585938
+    },
+    {
+      "date": "2026-08-14",
+      "close": 224.90834045410156
+    },
+    {
+      "date": "2026-08-17",
+      "close": 224.7584991455078
+    },
+    {
+      "date": "2026-08-18",
+      "close": 219.49440002441406
+    },
+    {
+      "date": "2026-08-19",
+      "close": 217.31683349609375
+    },
+    {
+      "date": "2026-08-20",
+      "close": 216.60763549804688
+    },
+    {
+      "date": "2026-08-21",
+      "close": 214.48001098632812
+    },
+    {
+      "date": "2026-08-24",
+      "close": 208.24697875976562
+    },
+    {
+      "date": "2026-08-25",
+      "close": 212.81187438964844
+    },
+    {
+      "date": "2026-08-26",
+      "close": 209.4256591796875
+    },
+    {
+      "date": "2026-08-27",
+      "close": 227.7251739501953
+    },
+    {
+      "date": "2026-08-28",
+      "close": 217.3068389892578
+    },
+    {
+      "date": "2026-08-31",
+      "close": 220.53323364257812
+    },
+    {
+      "date": "2026-09-01",
+      "close": 217.1969757080078
+    },
+    {
+      "date": "2026-09-02",
+      "close": 224.1591796875
+    },
+    {
+      "date": "2026-09-03",
+      "close": 228.1946563720703
+    },
+    {
+      "date": "2026-09-04",
+      "close": 230.10252380371094
+    },
+    {
+      "date": "2026-09-08",
+      "close": 225.47769165039062
+    },
+    {
+      "date": "2026-09-09",
+      "close": 223.4199981689453
+    },
+    {
+      "date": "2026-09-10",
+      "close": 218.36000061035156
+    },
+    {
+      "date": "2026-09-11",
+      "close": 218.2899932861328
+    },
+    {
+      "date": "2026-09-14",
+      "close": 210.9600067138672
+    },
+    {
+      "date": "2026-09-15",
+      "close": 212.1699981689453
+    },
+    {
+      "date": "2026-09-16",
+      "close": 213.89999389648438
+    },
+    {
+      "date": "2026-09-17",
+      "close": 219.33999633789062
+    },
+    {
+      "date": "2026-09-18",
+      "close": 222.27000427246094
+    },
+    {
+      "date": "2026-09-21",
+      "close": 227.3800048828125
+    },
+    {
+      "date": "2026-09-22",
+      "close": 228.8699951171875
+    },
+    {
+      "date": "2026-09-23",
+      "close": 225.50999450683594
+    },
+    {
+      "date": "2026-09-24",
+      "close": 224.5800018310547
+    },
+    {
+      "date": "2026-09-25",
+      "close": 225.07000732421875
+    },
+    {
+      "date": "2026-09-28",
+      "close": 228.86000061035156
+    },
+    {
+      "date": "2026-09-29",
+      "close": 227.2100067138672
+    },
+    {
+      "date": "2026-09-30",
+      "close": 228.3800048828125
+    },
+    {
+      "date": "2026-10-01",
+      "close": 230.86000061035156
+    },
+    {
+      "date": "2026-10-02",
+      "close": 233.9499969482422
+    },
+    {
+      "date": "2026-10-05",
+      "close": 238.89999389648438
+    },
+    {
+      "date": "2026-10-06",
+      "close": 239.24000549316406
+    },
+    {
+      "date": "2026-10-07",
+      "close": 237.47000122070312
+    },
+    {
+      "date": "2026-10-08",
+      "close": 230.47999572753906
+    },
+    {
+      "date": "2026-10-09",
+      "close": 229.27999877929688
+    }
+  ],
+  "forecast": null,
+  "sentiment": {
+    "window_days": 7,
+    "sources": [
+      {
+        "source": "news",
+        "display_name": "News media",
+        "score": 11,
+        "label": "neutral",
+        "doc_count": 95,
+        "note": "95 articles, last 7 days",
+        "method": "finbert",
+        "previous_score": -2
+      }
+    ],
+    "gap": null
+  },
+  "headlines": [
+    {
+      "id": "d13130b16fd4",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Nvidia (NVDA) More Than Doubled Revenue, Yet Its Multiple Sits Below History. Bargain or Warning? - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSllnZUxfMEdNUVB4TlJJaW9NVmhOT2NjN0F2bVdiRkxRS2QyQ1pSS0p3eWN1dFNqX09aRnUzZ0EzdzBCR053SEJqWDlLUmhwY0ZlaXgtdHp4aDA3ZnVrNGN4aUpxczlsQlR3Ym81ODhqcktLMzZXRzZIOEpoMEhFaTlMWDlyVTREeHd3WWZRVVZlNU5XUkR1ajdMaDczQQ?oc=5",
+      "published_at": "2026-10-10T17:10:39Z",
+      "score": 39,
+      "label": "bullish"
+    },
+    {
+      "id": "2d38bcc7949e",
+      "source": "news",
+      "publisher": "Yahoo Finance Australia",
+      "title": "Nvidia (NVDA) Deepens Its AI Infrastructure Role - Yahoo Finance Australia",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPTWxRTl9wWnZFdHJFREJDczdoei1PSmZwcVFPWFo5R2lfOVFYNERlcENEZzhKWDBoV3dkeXZFRnJWWmhFa2l0VXFlOWl3QXJ5N2hTZzIyMUlBWU5BeExoQ1dQN1lETUQxZHduZ19PdEFVSmZ0UEI5RVZJLUE0cFlsU3dxc3g5YWd5dGhYZTBIcw?oc=5",
+      "published_at": "2026-10-10T13:15:12Z",
+      "score": 85,
+      "label": "bullish"
+    },
+    {
+      "id": "f05669a3bc36",
+      "source": "news",
+      "publisher": "Simply Wall Street",
+      "title": "Why Is Nvidia (NVDA) Pushing Deeper Into Open AI And Consumer Devices? - Simply Wall Street",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOSEZwcU8zYVVNdHJCckd0cFZzNC1pWlkzY0dKRjlrSDd1ZXUwMmVzVDlkVzh3c0dTdXJZSFU0bC1KN0htRndSR3ZQMUF6YkJKdjV5TUdNM0t0X3ppZEhXdWphYk1qODA1ZDlydmV5UVphQkdKcHR1Y1lLVjVfZ2FPVlM5WXRMdVc5YlFBb2NObFhXeWY1SEYtZl9zX0VKa1F2aXRZMFRaQ2RHN3JsaVdjNFZpUWh5UjFmaXc0Y19vZVNmN2V6NVVvSXl30gHPAUFVX3lxTE9WUFZCQ0lidERoOFgxSDNlNHY2enZXc3ZZY2xjNXIzdU1Dc3I3QWdFYXRIdHVjVkNyLWVUUEhjRTBYR3pfSDVhRnlxNWhNcGRVVGs3OFJjTkhYYmpCZnJFb2RhYzcycXBndHQxcjJCd0hydE9FSnVfRlM5TUVibWdmWU55YXd2ZFVxYlA0RWxDSG1hVWpzcl9fakV4c052UTQ0OU5lUmluN29wTFJwbHRkeEtjWk1mYTFpUEpFVVVpTVg4RXJGRzZQWmFzdlFJVQ?oc=5",
+      "published_at": "2026-10-10T12:38:23Z",
+      "score": 8,
+      "label": "neutral"
+    },
+    {
+      "id": "5e79d9dea57d",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "NVDA Oct 2026 227.500 put (NVDA261009P00227500) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9zcGdLV0x3NnhEemlIcEpmcUd2Y05DV1hZX3ZkOGtoa29LNHNZYVRDSWh4WVlnQVJ3bldYRy1NSWdBQUE5SW1pWmJtWXd6eWFtYXpCc1hYT3hwUnlTcnFjd1lSakk0Zw?oc=5",
+      "published_at": "2026-10-10T09:20:17Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "b807e6ab0158",
+      "source": "news",
+      "publisher": "ChartMill",
+      "title": "NVIDIA (NASDAQ:NVDA): High-Growth Leadership and Momentum Face a Timing Caveat - ChartMill",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQYUhVWVB4eFFEbjBqM2ZkazZWZTdfWFdma3Z4TC1FbFppSmF4ekFhbmNwakZKd285Y3ZoSDdtNHdLNFFTMzY1dy1QOGdORTdza3ZrNmdOQWJBWm9hZW5DMnp3OUFDOEJWaUdwd3VHcUhfS21IQ00wUkFWTW1vem51dExpM0ttMThGYlB4aDJWMFZ1Y3hGanMxQjAzaWgtdm9wbGhjOFhmN0l0QjJSNFBheHdZelVsa20ybUpOS3dXSW5USXZy?oc=5",
+      "published_at": "2026-10-10T08:11:00Z",
+      "score": 49,
+      "label": "bullish"
+    },
+    {
+      "id": "8ffa5b5577b0",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "NVDA Oct 2026 197.500 call (NVDA261009C00197500) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4zWjBlQkVxbVZRc0JOcHNjcWY5YU5hQjY4RURXSVFsQWlOWnk2VlhDSVVvMUZ3c0wxanBTbmpEQ0pYX2FQb1FyRm5XT1gxaFg5TlBMRzVkNlNFdlNReWlkVHNBNmRBQQ?oc=5",
+      "published_at": "2026-10-10T02:26:30Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "6463c8f56c15",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "NVDA Oct 2026 80.000 call (NVDA261009C00080000) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9JQ2ZVZWNHU00tMS04YWVDeTBTYmdJSGtXa1VZcFBiSENJYTR6Y056dFJHSUxMY0YtRXFkaDEtT256a2FKMmw5WXdLaThMSmJCOWpOcHdsX3BZeEM5SUdoRkdOZjM2QQ?oc=5",
+      "published_at": "2026-10-10T02:04:43Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "4a0962a234e9",
+      "source": "news",
+      "publisher": "MarketWatch",
+      "title": "AI chip stocks wobble even as investors get clarity on a key OpenAI issue - MarketWatch",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPeGdDX19XYWJWaVFjMk4zRFo3QWVzbVZYZGpOT0RfUDFQRVBta3RuR3ZObVRqU0oyakUzdmxlNWljZVRrX1pHOTJuZFp1dE44end2UkFQLTFmVTRyRWVSM0t5VE9mYndrUnNEeVg1OHllbTNSeXpwTHdSNUxTbC1kdUppU2lucDVEYlVSU0hqMFdBN0VRd25waWlkZ3VpN1JsUlY2bVhha25EZzdnMGxUUTZQaUdKSWh5VE90alk2MA?oc=5",
+      "published_at": "2026-10-09T21:27:00Z",
+      "score": -75,
+      "label": "bearish"
+    },
+    {
+      "id": "9ff079621858",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "NVDA Oct 2026 202.500 call (NVDA261009C00202500) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE43WDQyOHk0ai0tRkhqcFlqdEJQRDdBdjUwbGg4MVNUQXdmeHVaVnIwMzBZS19ISGJiVUJleGM4cDFMWFRPb3VmU0J5Nlh0OFhiRFcwWERfcGJ5MnpJV25kNURzaU02Zw?oc=5",
+      "published_at": "2026-10-09T20:42:32Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "d3e364da7c64",
+      "source": "news",
+      "publisher": "Benzinga",
+      "title": "NVIDIA's Rally in Trouble? Analyst Warns of Bull Trap - Benzinga",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYUROUHVkc2lWamxYYmdhRWtQNnE2dEFvUDdKVkFxSE9YWG04Yl9XUjJjZk10T3RsM29sNDJEeFpOVXRSY1VwTUl4RmJXSUViY2hvOEl3ZnU0ellsN0I3SFhuazN1QU1NYko1VE1oRHRTei1MZ3Z0OVB4QXBRNTFSempVSUd4OTgwdXNpdUUxTkstZC1CQzY0ZXNHQkhLaVFJNURBLVZpTQ?oc=5",
+      "published_at": "2026-10-09T18:10:18Z",
+      "score": -93,
+      "label": "bearish"
+    },
+    {
+      "id": "c0542a1557aa",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "NVDA Jan 2029 320.000 call (NVDA290119C00320000) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBCMEQzUGtQYnFVTTZmcHlVN3Y2azJ1OVE3RVM5cDViNXNvSG1hbzdHWVBINlFnT0Z5S3p4YTRoRFI5STFBdlBjZGFSajY4eXMzaWxHeWNPOW5PYWphSDdkY1lORnhVZw?oc=5",
+      "published_at": "2026-10-09T17:49:20Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "bb2e6a121911",
+      "source": "news",
+      "publisher": "Elliott Wave Trader",
+      "title": "A Week of NVDA: Target, Timing & Pullback | Carolyn Boroden - Elliott Wave Trader",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRzd1QU9kMzNyNElXamZISG56UWdBbGJoZUVwejUxc01zYi1WZ3VmQnBpNUxIZEpmVzNDSFd1X1ZoQVdxQmZlazl0YnByWnU3NW1mbXVuZzgtX3FwZTVobVdfUUI3QVppbV85Q1ZiSXRqdTh4T05VMkxMTEZPZkNRcWRmWHIzZ3dqRFphMEI2ZTBZQ2xVX3lQYk1haktNM245bHhRVExreXlORWNiYlhJeDFISQ?oc=5",
+      "published_at": "2026-10-09T17:30:39Z",
+      "score": 2,
+      "label": "neutral"
+    },
+    {
+      "id": "cfe80e1d77b3",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "NVDA Oct 2026 217.500 call (NVDA261009C00217500) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9jQm5RcEN0ODl3NW15aVFpdVY0MWdBbVhwMVBGdkoyTnBxc3N5V0RZNFlLeVBiN18yMmdXMmh6OWN0aGswZzFqclh0bnpOZ05oOFQ1TWVvRDNFUzlIdENhV3JlYjhwUQ?oc=5",
+      "published_at": "2026-10-09T17:14:16Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "0a436bd57983",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Robust AI Demand Reinforces NVIDIA\u2019s (NVDA) Market Leadership - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVjZVZHlrN1lYbXdHUjlfVUdSa2NsMUlsWDRnVmRHVHVoRmNkemttUDVVWFBuNGdFWW1pcWthRE4wZVU0LXpiVERfdWRNdWNkZ2xnT2NRYWJWa1drWDcwZTVuNjhJWFZxbFhkRXROMXRsaEZEazY4Q2hqeGw5T0NnSy00ZFEzSTc1WlBzcnFyMmt2aklxazdBbWp0ejd2WU5C?oc=5",
+      "published_at": "2026-10-09T15:45:02Z",
+      "score": 39,
+      "label": "bullish"
+    },
+    {
+      "id": "1469d7596e1c",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "NVDA Oct 2026 130.000 put (NVDA261009P00130000) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9wb0JwNERMUFEtU3k3Z0ItaUphTXdpREZtVVFVMUNhR0VVTkZ5eUx6T1Y4cWdWN2xFbUFWMzI4am5xeDVXdWg1MEdlTHFiMUxNcmxldnhHanNlSHd6U1JiRER6SVk5UQ?oc=5",
+      "published_at": "2026-10-09T15:02:43Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "e611ffc75a71",
+      "source": "news",
+      "publisher": "Yahoo! Finance Canada",
+      "title": "NVDA Nov 2026 205.000 call (NVDA261113C00205000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9WY0ZKME5HVEFxM2Q4V0p0Ulh5VXNOcEw5RTFOLXVMaWJZbVNsbGFpdWltV0RRdTB0aFlDZzFQVUVxU1AwTkFyaF9LLXNzREpUSGtwUzlXeEh4REdydW9CczBGQkdIUQ?oc=5",
+      "published_at": "2026-10-09T14:07:23Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "9932ee7ff4aa",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "NVDA Oct 2026 100.000 put (NVDA261009P00100000) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBqNVo4NWwxb296S3VzRnFWVUM4NFpSajZNVGdKTXM0QVl1cEhoWWRncElvb3NzeFcyQmJGTGJyd3gydWJLVEFSLS1KcWFReHkwanlXSnBNdWEtMmJELXFzQklXV0U0dw?oc=5",
+      "published_at": "2026-10-09T13:47:22Z",
+      "score": 0,
+      "label": "neutral"
+    },
+    {
+      "id": "89478a9d1e1b",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "NVDA Oct 2026 202.500 put (NVDA261009P00202500) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE80ZWdUYUZKMHk0aVlXeWtLeVV6ZXpHdm5Ddnk5NFJZYzNja0M2OWNudVhScExlWVVTNXg2Tm1uUVJlRUVnd2hOaXBFNkpKclhvall1T3dnazZqWkluM3hGWnhGelI4Zw?oc=5",
+      "published_at": "2026-10-09T12:46:54Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "4d01f1ea27d6",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "NVDA Oct 2026 125.000 call (NVDA261009C00125000) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAtZHpCVlNsSVRvN2pCS0pGRld4WXRsRlpZWEg0MHBDZEVRR3kyRThsYksxcWtDdTlCQTVPNlplUHdTeE1pQzJsUE44LXUxNDFhTlNadVFYTEdkaHllZ1h6OXB2bVBEQQ?oc=5",
+      "published_at": "2026-10-09T11:35:02Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "fe5a7de0d0bc",
+      "source": "news",
+      "publisher": "Quiver Quantitative",
+      "title": "Fund Update: 285,209 NVIDIA (NVDA) shares added to Border to Coast Pensions Partnership Ltd portfolio - Quiver Quantitative",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNWWlQakp2Q25JS0dUNzhUMkRzam81Z3kzcURoXzNTN0FQQ2l1R0loMkx5dU1Rd3ZIOXVxb0tKc0M3czlOTS1hOU5KbDJMWndOUjUxRlVoUzcyc254elRWUUpyRWxMYVpXQ3JBcFl0T1FHX3Bmb1BONU84RVJhWXh4VzQ0NDczWEYtSGNSa0tlRmdWVTg0dkEzcURFNVpMUmQ0NDB2TW9LZ3hJWmN5R08tSEhIVGRmUWloTVlXMUNsWnVBYjFRX05pVlRZdV9VRWNSc0tvRGsxTnVXdw?oc=5",
+      "published_at": "2026-10-09T11:00:00Z",
+      "score": 16,
+      "label": "neutral"
+    },
+    {
+      "id": "8bd0e118bfec",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Why Are Nasdaq Futures Surging Premarket? SPCX, ASTS, AAPL, TMUS, VZ, NVDA, MU, LITE Stocks In Focus - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRlRPdWJWU3UtNTVHSUdxSDdObHVsZ0N2cTRwd3dsczA1WExnV2xrZ3M3Nl9rVFZvbkdzcl9YNllwWHZNSTRWTGdXV3J0WjZuS0VKTFh1RlFCZWlTWXRmU2MxT2FDSzg1THZ3c2k3Z090TVl2UWRVdUtSQlJldEU1NkllQUI2MlRfRFdFOUtTeTJfZ2RDUVc3VGZ2MWpyQzJxdUpj?oc=5",
+      "published_at": "2026-10-09T08:38:57Z",
+      "score": 2,
+      "label": "neutral"
+    },
+    {
+      "id": "97e17e088ab8",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "NVDA Oct 2026 315.000 call (NVDA261009C00315000) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE83RGJiWnhQMmo4NEJBZWVfY1F5dF9lZTYtWjlxY2t0TlJhUFBmb21IdGxJWlIwUU9USWJfNUw5cEs3OWNWVktleFEwckItQWJib1huRzFZMWcwWllxUXFkZ014OGc1QQ?oc=5",
+      "published_at": "2026-10-09T08:29:25Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "6933cae24cdd",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "NVDA Oct 2026 207.500 put (NVDA261007P00207500) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBIaWVIcG1FRHlCZ0Q0eG1PV2tkVktKZnBXeTlyY1FNX3Q1eXB6Q2N0VnZhODlQV1hjSWNPUXpvU2c0eGt0YUtIMTZzdnBLcVJ1YkgzWUpyeUI1RWVuSG9LR1NWaUMyZw?oc=5",
+      "published_at": "2026-10-09T08:24:50Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "f75eea0d9294",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "NVDA Oct 2026 300.000 put (NVDA261009P00300000) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5fVDltT1hvSHNQQWdNM19vR1phdENUWDhGUWpIMXlYSGJ0YUpvdV9TaXdxejItQjBvdzdzaFlNLVF0V2FPbU9MdUdfY1hmUVFpaXV6dG9ydy1JQnctMGlrNktJZGJXZw?oc=5",
+      "published_at": "2026-10-09T08:16:55Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "7263f50a00a3",
+      "source": "news",
+      "publisher": "Stocktwits",
+      "title": "Dan Ives Thinks AI Buildout Still In Early Stages, With NVDA, MSFT, PLTR, AAPL And CRWD As Top AI Picks - Stocktwits",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNVkF5bk9JWmRJLWZ5R3l3azF3UWgwUjNKWWNHa01MZ0JoYWV1SzBHd3FhbHRIc01JRnJBNUZvQmROZS1MeFZQVFlxbHI0Q1NyNnMyRXBUS3dsVVVEVGRBMHBfZVRzeVZtSlpJcXdlNW14bDFTN2dNemhuRVB0bkl1blZHZjJnb3RkYmVUWXU1M0hMSDk3OWZadmxUbzJ6MmI2dVhBQWVfckU3UENTMldEWTlBWVE2aVdoZGYyRTZ4ZEJRb05md2dkWXM4THNqZHpZQ3FRU2Q5RDNNV2NfakVBc1VxOGQyOGNRQmlIMmNDOVpDdVZTS1E?oc=5",
+      "published_at": "2026-10-09T07:49:42Z",
+      "score": 63,
+      "label": "bullish"
+    },
+    {
+      "id": "854382f5bf0a",
+      "source": "news",
+      "publisher": "TradingView",
+      "title": "Key facts: NVIDIA (NVDA) $96B Qtr; SpaceX GPU Demand; $1B R&D Pledge - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPV0FZUUNEMkZlZmxaZmdKVlMwRVhCOFVqWmVJMjJxRklXTkR6ak55V2pHa2VKRkdpRVVlYmhmX1c1ZHFPc0VrQzRmNHozbW1YempvOHN0RnhPNGdibWJuSFNlMTZBVEJVNWVkSTE3MmtuX1VIbEV6WGFFNThNaE5yeDdiQk53bGxzUjZwRnVVZzl4N0s2RXRPbjFPM1VSUmNCZ1d0TTZvVU9wZjJtZF85VDM1RWVYVzV4Y2dXXzZtVDM?oc=5",
+      "published_at": "2026-10-09T07:00:00Z",
+      "score": 43,
+      "label": "bullish"
+    },
+    {
+      "id": "b103e5f20a0e",
+      "source": "news",
+      "publisher": "Seeking Alpha",
+      "title": "Nvidia: Caught Between Cyclical Downside Risk And AI Bubble - Seeking Alpha",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQaUxJYkgyOU85Q0lvcEVCRjJXZmtleTF0ZF9wenB4U3ZWWDhrdnJaY3J4cy1rdnRGQmF4eVhUMWhmUENFRXJvVzJUWUJveXZvcFA2OFZzbGRxOFJDcGx0SnJlbHNBc1NaeFdKZVVsWWlKUEhEcVY5NUxKcTRkckg0cXUtb1VBbkFXX2xnaTRqaXFySmNpVW83eTU1RXkxZ2ktOW8xenlwS2ltRGV5cno5ejBRcFg?oc=5",
+      "published_at": "2026-10-09T04:22:57Z",
+      "score": -83,
+      "label": "bearish"
+    },
+    {
+      "id": "503147946207",
+      "source": "news",
+      "publisher": "Stocktwits",
+      "title": "Why Did NVDA, TSM, WBD Stocks Hit 52-Week Highs Today? - Stocktwits",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMUlRYWRDY3ZsTHBaME9LZGJCem4tbmV5bWNhMk1SUWh3YzFxTnZDOF80Mml1STZLWVI0azVyVVR3OHRSYzBiVmpVbkxxYlR1cG5HSVcxM1dKVlpBd3htbXB0SFNXdjdneGVzQ090UFVQSjVNSmJQQTZnd3BGRjBreUJSbE1mOFpvc2ZPSEJwc1ZuSUxvaUp3SGlCZ2l1VXNUZkt1MjluY3JrTXhPRVZXM25iaHQ2dw?oc=5",
+      "published_at": "2026-10-09T03:42:12Z",
+      "score": 3,
+      "label": "neutral"
+    },
+    {
+      "id": "a85e72e653bf",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "NVDA Oct 2026 265.000 call (NVDA261023C00265000) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBscDBFcFo5dHZTT2g1RWNiUE51anVNU1d4dFpWZ1EzWUNOZmhtd083Nm43NW9rXzFnN1c1SG0tRnpGSWlvb3J3RzF1M0hsMVJ4WUlVa0tIMmpnT0s4dUd3WmRzaXZMQQ?oc=5",
+      "published_at": "2026-10-09T03:42:09Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "49e90ce2ca9b",
+      "source": "news",
+      "publisher": "Yahoo Finance UK",
+      "title": "NVDA Oct 2026 60.000 call (NVDA261009C00060000) stock price, news, quote and history - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAwZWxwRDVJX0NWSndYYlQwX05hUlF1Wk1ZQUxKcWN0SENoazlQQ2VRTmhQbFlxQzhjckMzNWFxY3NNckszQ1RWZ284Ql83dVhJdFVkNDVMOGhnbHNxakVvMjQ4M2lMQQ?oc=5",
+      "published_at": "2026-10-09T03:37:11Z",
+      "score": -1,
+      "label": "neutral"
+    }
+  ]
+}

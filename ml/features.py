@@ -16,10 +16,19 @@ FEATURE_COLUMNS: tuple[str, ...] = (
     "volume_ratio",
     "sma20_gap",
 )
+NEWS_LAG_COLUMN = "news_lag1"
 
 
-def add_features(prices: pd.DataFrame) -> pd.DataFrame:
-    """Add the model features. ``prices`` must already be sorted by date."""
+def add_features(
+    prices: pd.DataFrame,
+    news_documents: list[dict] | None = None,
+    window_days: int = 7,
+) -> pd.DataFrame:
+    """Add the model features. ``prices`` must already be sorted by date.
+
+    ``news_lag1`` is the news score for the previous session. Day *t* does not
+    see headlines published on day *t*.
+    """
     frame = prices.copy()
     close = pd.to_numeric(frame["close"])
     volume = pd.to_numeric(frame["volume"])
@@ -33,7 +42,43 @@ def add_features(prices: pd.DataFrame) -> pd.DataFrame:
     frame["volume_ratio"] = volume / volume_mean - 1.0
     sma20 = close.rolling(20, min_periods=20).mean()
     frame["sma20_gap"] = close / sma20 - 1.0
+    if news_documents:
+        frame[NEWS_LAG_COLUMN] = lagged_news_scores(
+            frame["date"], news_documents, window_days=window_days
+        )
     return frame
+
+
+def lagged_news_scores(
+    session_dates: pd.Series,
+    documents: list[dict],
+    window_days: int = 7,
+) -> pd.Series:
+    """Rounded mean of document scores in the window that ends the previous session."""
+    published = pd.DataFrame(
+        {
+            "day": [_utc_day(document["published_at"]) for document in documents],
+            "score": [int(document["score"]) for document in documents],
+        }
+    )
+    dates = pd.to_datetime(session_dates).map(_utc_day)
+    scores: list[float] = []
+    for index, day in enumerate(dates):
+        if index == 0 or published.empty:
+            scores.append(float("nan"))
+            continue
+        yesterday = dates.iloc[index - 1]
+        start = yesterday - pd.Timedelta(days=window_days - 1)
+        window = published.loc[(published["day"] >= start) & (published["day"] <= yesterday), "score"]
+        scores.append(float("nan") if window.empty else float(round(float(window.mean()))))
+    return pd.Series(scores, index=session_dates.index, dtype="float64")
+
+
+def _utc_day(value: object) -> pd.Timestamp:
+    timestamp = pd.Timestamp(value)
+    if timestamp.tzinfo is not None:
+        timestamp = timestamp.tz_convert("UTC").tz_localize(None)
+    return timestamp.normalize()
 
 
 def add_target(frame: pd.DataFrame, horizon: int = 5) -> pd.DataFrame:
