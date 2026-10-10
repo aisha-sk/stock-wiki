@@ -98,6 +98,9 @@ list current when you add one.
   `agent/<ticket-id>-short-name`. Example: `swe/f1-swe-3-price-chart`.
 - One ticket per PR. Put `Closes #<issue number>` in the PR body.
 - Commit messages: `<ticket-id>: what changed`. Example: `F1-ML-2: walk-forward logistic regression`.
+- CI (`.github/workflows/ci.yml`) runs on every PR: contract validation, API, web and ML jobs.
+  The ML job installs a light dependency list written in the workflow; add to it there if a
+  fast test needs a new package.
 - You may merge your own PR when CI is green and it only touches your lane.
 - A PR labelled `contract-change` needs the other person's approval.
 - Pull `main` before starting each ticket. Rebase, do not merge `main` into your branch.
