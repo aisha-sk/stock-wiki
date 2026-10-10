@@ -7,8 +7,8 @@ Two people, two lanes:
 
 | Lane | Owns | Folders |
 |---|---|---|
-| **SWE** | Web app, API, CI, deploy | `web/`, `api/`, `.github/` |
-| **DS/ML** | Data, sentiment, forecasting model, MLflow, gate | `ml/`, `data/artifacts/` |
+| **SWE** (@aisha-sk, Edmonton) | Web app, API, CI, deploy | `web/`, `api/`, `.github/` |
+| **DS/ML** (@SubaitaM, Toronto) | Data, sentiment, forecasting model, MLflow, gate | `ml/`, `data/artifacts/` |
 | Shared | The contract | `contracts/`, `docs/`, `scripts/` |
 | Stretch | Agent and MCP server | `agent/` |
 
@@ -20,7 +20,7 @@ replaces them with real files in `data/artifacts`. Nobody waits on anybody.
 
 Each flow ends with a demo that works. Do not start a flow until the previous checkpoint passes.
 Ticket IDs link to their GitHub issues, which hold the full task lists and acceptance criteria.
-Board: https://github.com/aisha-sk/stock-wiki/issues
+Board: https://github.com/users/aisha-sk/projects/2
 
 ### Flow 1: Working MVP (must finish)
 
