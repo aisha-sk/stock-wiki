@@ -7,6 +7,8 @@ import { ForecastCard } from "./ForecastCard";
 import { HeadlinesCard } from "./HeadlinesCard";
 import { QuoteCard } from "./QuoteCard";
 import { SentimentCard } from "./SentimentCard";
+import { ErrorCard } from "./ui/ErrorCard";
+import { Loading, Skeleton } from "./ui/Skeleton";
 
 export function Dashboard() {
   const { selected } = useSelectedStock();
@@ -17,19 +19,19 @@ export function Dashboard() {
   if (!symbol) return null;
 
   if (stock.status === "loading") {
-    return <p className="text-[15px] text-muted">Loading {symbol}…</p>;
+    return (
+      <Loading label={`Loading ${symbol}`}>
+        <div className="flex flex-wrap gap-6">
+          <Skeleton className="h-[380px] min-w-0 flex-[999_1_560px]" />
+          <Skeleton className="h-[380px] min-w-0 flex-[1_1_280px]" />
+        </div>
+        <Skeleton className="h-[260px]" />
+        <Skeleton className="h-[320px]" />
+      </Loading>
+    );
   }
   if (stock.status === "error") {
-    return (
-      <div role="alert" className="flex flex-wrap items-center gap-3 rounded-xl border border-line bg-card p-6">
-        <span>
-          Couldn&apos;t load {symbol}. {stock.error.message}
-        </span>
-        <button onClick={stock.reload} className="min-h-11 rounded-lg border border-ink px-4 font-medium">
-          Retry
-        </button>
-      </div>
-    );
+    return <ErrorCard what={symbol} error={stock.error} onRetry={stock.reload} />;
   }
 
   return (

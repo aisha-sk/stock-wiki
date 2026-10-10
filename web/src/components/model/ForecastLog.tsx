@@ -5,6 +5,8 @@ import { getForecasts } from "@/lib/api";
 import { capitalize, formatDate, formatPct, formatRate } from "@/lib/format";
 import type { ForecastRow, ForecastSummary } from "@/lib/types";
 import { useApi } from "@/lib/useApi";
+import { ErrorCard } from "../ui/ErrorCard";
+import { Skeleton } from "../ui/Skeleton";
 
 const RESULT_STYLE = { hit: "text-bull", miss: "text-bear" } as const;
 
@@ -60,14 +62,13 @@ export function ForecastLog({ symbol }: { symbol: string }) {
         </div>
       </div>
 
-      {log.status === "loading" && <p className="text-[15px] text-muted">Loading forecasts…</p>}
-      {log.status === "error" && (
-        <div role="alert" className="flex flex-wrap items-center gap-3 text-[15px]">
-          <span>Couldn&apos;t load the forecast log. {log.error.message}</span>
-          <button onClick={log.reload} className="min-h-11 rounded-lg border border-ink px-4 font-medium">
-            Retry
-          </button>
+      {log.status === "loading" && (
+        <div role="status" aria-label="Loading forecasts">
+          <Skeleton className="h-[240px]" />
         </div>
+      )}
+      {log.status === "error" && (
+        <ErrorCard bare what="the forecast log" error={log.error} onRetry={log.reload} />
       )}
       {log.status === "ready" && (
         <>
