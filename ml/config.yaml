@@ -1,0 +1,11 @@
+tickers:
+  TSLA: Tesla, Inc.
+  NVDA: NVIDIA Corporation
+  AAPL: Apple Inc.
+horizon_days: 5
+history_years: 2
+sentiment_window_days: 7
+gate:
+  # Kickoff suggestion from docs/PLAN.md, fixed before any model result.
+  threshold: 0.52
+prices_in_payload: 120
