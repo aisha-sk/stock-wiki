@@ -19,6 +19,8 @@ replaces them with real files in `data/artifacts`. Nobody waits on anybody.
 ## The three flows
 
 Each flow ends with a demo that works. Do not start a flow until the previous checkpoint passes.
+Ticket IDs link to their GitHub issues, which hold the full task lists and acceptance criteria.
+Board: https://github.com/aisha-sk/stock-wiki/issues
 
 ### Flow 1: Working MVP (must finish)
 
@@ -27,16 +29,16 @@ and headlines on screen all come from files the ML pipeline wrote, served throug
 
 | ID | Lane | Ticket | Est. |
 |---|---|---|---|
-| F0-1 | Both | Kickoff: clone, read the contract, run the validator, confirm roles and keys | 0.5 h |
-| F1-SWE-1 | SWE | Next.js shell: tabs, stock selector, design tokens, typed API client | 1 h |
-| F1-SWE-2 | SWE | FastAPI: `/api/health`, `/api/tickers`, `/api/stocks/{symbol}` from `DATA_DIR` | 1 h |
-| F1-SWE-3 | SWE | Dashboard: quote header, price chart, forecast card | 1.5 h |
-| F1-SWE-4 | SWE | Dashboard: sentiment spectrum, perspective gap, headlines | 1.5 h |
-| F1-ML-1 | DS/ML | ML scaffold and daily price ingestion | 0.75 h |
-| F1-ML-2 | DS/ML | Features, target, walk-forward logistic regression, metrics and baselines | 1.75 h |
-| F1-ML-3 | DS/ML | News ingestion and FinBERT scoring | 1.5 h |
-| F1-ML-4 | DS/ML | Publisher: write and validate the four artifact files for TSLA | 1 h |
-| F1-INT | Both | Checkpoint 1: flip `DATA_DIR` to real data, walk the dashboard together | 0.5 h |
+| [F0-1](https://github.com/aisha-sk/stock-wiki/issues/1) | Both | Kickoff: clone, read the contract, run the validator, confirm roles and keys | 0.5 h |
+| [F1-SWE-2](https://github.com/aisha-sk/stock-wiki/issues/2) | SWE | FastAPI: `/api/health`, `/api/tickers`, `/api/stocks/{symbol}` from `DATA_DIR` | 1 h |
+| [F1-SWE-1](https://github.com/aisha-sk/stock-wiki/issues/3) | SWE | Next.js shell: tabs, stock selector, design tokens, typed API client | 1 h |
+| [F1-SWE-3](https://github.com/aisha-sk/stock-wiki/issues/4) | SWE | Dashboard: quote header, price chart, forecast card | 1.5 h |
+| [F1-SWE-4](https://github.com/aisha-sk/stock-wiki/issues/5) | SWE | Dashboard: sentiment spectrum, perspective gap, headlines | 1.5 h |
+| [F1-ML-1](https://github.com/aisha-sk/stock-wiki/issues/6) | DS/ML | ML scaffold and daily price ingestion | 0.75 h |
+| [F1-ML-2](https://github.com/aisha-sk/stock-wiki/issues/7) | DS/ML | Features, target, walk-forward logistic regression, metrics and baselines | 1.75 h |
+| [F1-ML-3](https://github.com/aisha-sk/stock-wiki/issues/8) | DS/ML | News ingestion and FinBERT scoring | 1.5 h |
+| [F1-ML-4](https://github.com/aisha-sk/stock-wiki/issues/9) | DS/ML | Publisher: write and validate the four artifact files for TSLA | 1 h |
+| [F1-INT](https://github.com/aisha-sk/stock-wiki/issues/10) | Both | Checkpoint 1: flip `DATA_DIR` to real data, walk the dashboard together | 0.5 h |
 
 ### Flow 2: Connected AI and MLOps (the portfolio core)
 
@@ -46,15 +48,15 @@ and CI is green.
 
 | ID | Lane | Ticket | Est. |
 |---|---|---|---|
-| F2-SWE-1 | SWE | API: `/api/model`, `/api/forecasts`, endpoint tests | 1 h |
-| F2-SWE-2 | SWE | Model performance page: metric cards, weekly chart, registry, forecast log | 1.5 h |
-| F2-SWE-3 | SWE | Loading, error, empty and `null` states; demo badge; disclaimer | 1 h |
-| F2-SWE-4 | SWE | CI: lint, type check, tests, contract validation | 0.75 h |
-| F2-ML-1 | DS/ML | MLflow tracking for every training run | 0.75 h |
-| F2-ML-2 | DS/ML | Quality gate and registry, exported to `model.json` | 1 h |
-| F2-ML-3 | DS/ML | XGBoost candidate, three tickers, backtest log, weekly accuracy, Sharpe, drawdown | 1.5 h |
-| F2-ML-4 | DS/ML | Reddit and analyst sources, three-way spectrum, `previous_score` | 1.5 h |
-| F2-INT | Both | Checkpoint 2: three tickers end to end on real data | 0.5 h |
+| [F2-SWE-1](https://github.com/aisha-sk/stock-wiki/issues/11) | SWE | API: `/api/model`, `/api/forecasts`, endpoint tests | 1 h |
+| [F2-SWE-2](https://github.com/aisha-sk/stock-wiki/issues/12) | SWE | Model performance page: metric cards, weekly chart, registry, forecast log | 1.5 h |
+| [F2-SWE-3](https://github.com/aisha-sk/stock-wiki/issues/13) | SWE | Loading, error, empty and `null` states; demo badge; disclaimer | 1 h |
+| [F2-SWE-4](https://github.com/aisha-sk/stock-wiki/issues/14) | SWE | CI: lint, type check, tests, contract validation | 0.75 h |
+| [F2-ML-1](https://github.com/aisha-sk/stock-wiki/issues/15) | DS/ML | MLflow tracking for every training run | 0.75 h |
+| [F2-ML-2](https://github.com/aisha-sk/stock-wiki/issues/16) | DS/ML | Quality gate and registry, exported to `model.json` | 1 h |
+| [F2-ML-3](https://github.com/aisha-sk/stock-wiki/issues/17) | DS/ML | XGBoost candidate, three tickers, backtest log, weekly accuracy, Sharpe, drawdown | 1.5 h |
+| [F2-ML-4](https://github.com/aisha-sk/stock-wiki/issues/18) | DS/ML | Reddit and analyst sources, three-way spectrum, `previous_score` | 1.5 h |
+| [F2-INT](https://github.com/aisha-sk/stock-wiki/issues/19) | Both | Checkpoint 2: three tickers end to end on real data | 0.5 h |
 
 ### Flow 3: Product polish and automation (stretch, cut from the bottom)
 
@@ -62,14 +64,14 @@ and CI is green.
 
 | ID | Lane | Ticket | Est. | Cut order |
 |---|---|---|---|---|
-| F3-SWE-1 | SWE | Alerts: `POST /api/alerts`, preview endpoint, Alerts page | 1.5 h | keep |
-| F3-SWE-2 | SWE | Deploy web and API, live link in README | 1 h | keep |
-| F3-ML-2 | DS/ML | Methodology and limitations write-up | 0.75 h | keep |
-| F3-INT | Both | Final: demo script, README, production smoke test | 1 h | keep |
-| F3-SWE-3 | SWE | Polish: responsive, accessibility, methodology section in the UI | 1 h | cut 4th |
-| F3-ML-1 | DS/ML | Scheduled retraining workflow, live forecast logging and resolver | 1.5 h | cut 3rd |
-| F3-AG-1 | Agent | MCP server over our own data | 1.5 h | cut 2nd |
-| F3-AG-2 | Agent | "Explain this gap" agent with citations, plus UI panel | 1.5 h | cut 1st |
+| [F3-SWE-1](https://github.com/aisha-sk/stock-wiki/issues/20) | SWE | Alerts: `POST /api/alerts`, preview endpoint, Alerts page | 1.5 h | keep |
+| [F3-SWE-2](https://github.com/aisha-sk/stock-wiki/issues/21) | SWE | Deploy web and API, live link in README | 1 h | keep |
+| [F3-ML-2](https://github.com/aisha-sk/stock-wiki/issues/24) | DS/ML | Methodology and limitations write-up | 0.75 h | keep |
+| [F3-INT](https://github.com/aisha-sk/stock-wiki/issues/27) | Both | Final: demo script, README, production smoke test | 1 h | keep |
+| [F3-SWE-3](https://github.com/aisha-sk/stock-wiki/issues/22) | SWE | Polish: responsive, accessibility, methodology section in the UI | 1 h | cut 4th |
+| [F3-ML-1](https://github.com/aisha-sk/stock-wiki/issues/23) | DS/ML | Scheduled retraining workflow, live forecast logging and resolver | 1.5 h | cut 3rd |
+| [F3-AG-1](https://github.com/aisha-sk/stock-wiki/issues/25) | Agent | MCP server over our own data | 1.5 h | cut 2nd |
+| [F3-AG-2](https://github.com/aisha-sk/stock-wiki/issues/26) | Agent | "Explain this gap" agent with citations, plus UI panel | 1.5 h | cut 1st |
 
 ## Schedule
 
