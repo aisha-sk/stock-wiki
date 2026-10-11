@@ -4,7 +4,7 @@ import type { Gate, ModelVersion, VersionStatus } from "@/lib/types";
 const STATUS_NAME: Record<VersionStatus, string> = {
   production: "Production",
   archived: "Archived",
-  rejected: "Rejected, below gate",
+  rejected: "Rejected by the gate",
 };
 
 export function RegistryTable({ versions, gate }: { versions: ModelVersion[]; gate: Gate }) {

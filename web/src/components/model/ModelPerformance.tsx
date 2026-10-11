@@ -48,7 +48,7 @@ export function ModelPerformance() {
           <p className="text-[15px] text-muted">
             {production
               ? `${subject} is serving forecasts. `
-              : `No version has reached the ${formatThreshold(gate.threshold)} quality gate, so no forecast is being served. `}
+              : `No version has passed the quality gate, so no forecast is being served. The gate is ${formatThreshold(gate.threshold)} accuracy and beating the always-quiet baseline. `}
             {!production && subject && `The numbers below are for the latest candidate, ${subject}. `}
             The question it answers: {task.description} Sentiment scores come from a separate model and describe
             what people are saying; they are not a forecast.
