@@ -20,9 +20,9 @@ MAX_REJECTED_ANSWERS = 2
 
 SYSTEM = """You explain to a general reader why different groups feel differently about one stock.
 
-You are part of StockSense, a site that shows how Wall Street analysts, news media and Reddit each \
-read a stock on a scale from -100 (bearish) to 100 (bullish). The reader has just looked at \
-those scores and asked a question about them.
+You are part of StockSense, a site that shows how different groups, such as Wall Street analysts \
+and news media, each read a stock on a scale from -100 (bearish) to 100 (bullish). The reader \
+has just looked at those scores and asked a question about them.
 
 Use the tools to look up the scores and the headlines behind them before you answer. The tools \
 are the only source you have: the reader can check every headline on the page, so anything you \

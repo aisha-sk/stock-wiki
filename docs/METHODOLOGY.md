@@ -14,13 +14,14 @@ page, apart from one lagged news feature described below. Neither is financial a
 | Daily prices (OHLCV) | Yahoo Finance via `yfinance`, 2 years, NYSE sessions only (`ml/ingest/prices.py`) | Intraday moves. Yahoo data is unofficial and can be revised. |
 | News headlines | Finnhub company news when `FINNHUB_API_KEY` is set, else Yahoo Finance, else Google News RSS (`ml/ingest/news.py`). Option-chain and quote pages are filtered out. | Article bodies (titles only). Paywalled and non-English coverage. |
 | Analyst ratings | Finnhub recommendation trends, or Yahoo Finance recommendations without a key (`ml/ingest/analysts.py`) | Price targets and the reasoning behind a rating. Counts are monthly. |
-| Reddit posts | Search RSS for r/wallstreetbets, r/stocks and r/investing (`ml/ingest/reddit.py`) | **Currently everything.** See below. |
+| Reddit posts | **Not collected.** The code in `ml/ingest/reddit.py` is switched off. See below. | Everything. |
 
-**Reddit is missing for every stock.** In every pipeline run on 2026-10-10, Reddit answered the
-search request with HTTP 429 (too many requests), and the log printed
-`reddit <SYMBOL> r/<subreddit> HTTP 429; omitting reddit`. On a 403 or 429 the pipeline leaves
-the Reddit source out. It does not retry, reuse old data or fill in a score. The page therefore
-compares analysts and news only.
+**There is no Reddit data.** Reddit's Responsible Builder Policy requires explicit approval
+before any access to Reddit data, including the public search feeds. The first version of the
+pipeline requested those feeds without approval; every request on 2026-10-10 was refused with
+HTTP 429, so no Reddit data was ever collected or published. The fetch is now switched off
+(`REDDIT_ENABLED` in `ml/pipeline.py`) until access is approved. The page compares analysts and
+news only.
 
 ## 2. Sentiment
 

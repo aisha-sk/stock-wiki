@@ -2,6 +2,7 @@
 
 import argparse
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -212,6 +213,12 @@ def main(argv: list[str] | None = None) -> int:
     )
 
 
+# Reddit's Responsible Builder Policy requires explicit approval before any access to Reddit
+# data, including the public search feeds. We do not have it, so the fetch is off. Set
+# REDDIT_ENABLED=1 only after access has been approved.
+REDDIT_ENABLED = os.environ.get("REDDIT_ENABLED") == "1"
+
+
 def _sentiment_bundle(
     symbol: str,
     company: str,
@@ -226,7 +233,7 @@ def _sentiment_bundle(
     if news_source is not None:
         present.append(news_source)
         groups.append(news_documents)
-    reddit_documents = fetch_reddit(symbol, company)
+    reddit_documents = fetch_reddit(symbol, company) if REDDIT_ENABLED else []
     if reddit_documents:
         from ml.sentiment.finbert import score_titles
 

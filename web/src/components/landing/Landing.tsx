@@ -260,7 +260,7 @@ function Scorecard({ model, forecasts }: { model: Model; forecasts: Forecasts })
 const STEPS = [
   {
     title: "Collect",
-    body: "We gather what each group is publishing about a stock: analyst ratings, news headlines and forum posts.",
+    body: "We gather what each group is publishing about a stock: analyst ratings and news headlines.",
   },
   {
     title: "Score",
