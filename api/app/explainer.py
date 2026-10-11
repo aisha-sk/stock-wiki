@@ -15,7 +15,7 @@ from typing import Any
 from .errors import DataUnavailable
 from .store import REPO_ROOT
 
-log = logging.getLogger("sentifi.api")
+log = logging.getLogger("stocksense.api")
 
 MAX_CALLS_PER_MINUTE = 10
 

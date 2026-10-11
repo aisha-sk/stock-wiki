@@ -16,7 +16,7 @@ export function Footer() {
         </p>
       )}
       <p>
-        SentiFi is for research and education. Nothing here is financial advice, and past forecasts do not
+        StockSense is for research and education. Nothing here is financial advice, and past forecasts do not
         guarantee future results.
       </p>
     </footer>

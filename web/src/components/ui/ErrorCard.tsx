@@ -23,7 +23,7 @@ export function ErrorCard({
     >
       <div className="min-w-0">
         <div className="font-semibold">
-          {unreachable ? "Can't reach the SentiFi API" : `Couldn't load ${what}`}
+          {unreachable ? "Can't reach the StockSense API" : `Couldn't load ${what}`}
         </div>
         <div className="text-[15px] text-muted">
           {unreachable ? "It may be starting up or offline." : error.message}

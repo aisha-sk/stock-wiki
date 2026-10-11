@@ -12,11 +12,18 @@ const sign = (value: number) => (value > 0 ? "+" : value < 0 ? MINUS : "");
 export const formatScore = (score: number) => `${sign(score)}${Math.abs(score)}`;
 
 /** A 0 to 1 fraction as a percentage: 0.584 -> "58.4%". */
-export const formatRate = (rate: number, digits = 1) => `${(rate * 100).toFixed(digits)}%`;
+// 0.5565 * 100 is not exactly 55.65 in floating point, so round away the noise first.
+// Otherwise 55.65% prints as 55.6% here and 55.7% in the docs.
+const fixed = (value: number, digits: number) => {
+  const scale = 10 ** digits;
+  return (Math.round(Number((value * scale).toPrecision(12))) / scale).toFixed(digits);
+};
+
+export const formatRate = (rate: number, digits = 1) => `${fixed(rate * 100, digits)}%`;
 
 /** A 0 to 1 fraction that can be negative, signed: -0.087 -> "−8.7%". */
 export const formatSignedRate = (rate: number, digits = 1) =>
-  `${sign(rate)}${Math.abs(rate * 100).toFixed(digits)}%`;
+  `${sign(rate)}${fixed(Math.abs(rate * 100), digits)}%`;
 
 /** A `_pct` value, already in percent units: 1.77 -> "+1.77%". */
 export const formatPct = (pct: number, digits = 2) => `${sign(pct)}${Math.abs(pct).toFixed(digits)}%`;

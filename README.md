@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/aisha-sk/stock-wiki/actions/workflows/ci.yml/badge.svg)](https://github.com/aisha-sk/stock-wiki/actions/workflows/ci.yml)
 
-**SentiFi** shows how different groups feel about a stock, how far apart they are, and what a
+**StockSense** shows how different groups feel about a stock, how far apart they are, and what a
 model makes of the next five trading days. Then it grades its own forecasts in public, misses
 included.
 

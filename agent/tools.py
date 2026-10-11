@@ -1,4 +1,4 @@
-"""Read-only lookups over SentiFi's published artifacts.
+"""Read-only lookups over StockSense's published artifacts.
 
 These are the tools both the MCP server and the explain agent expose. Each returns a trimmed
 copy of what is in DATA_DIR. Nothing is computed here, so an agent cannot get a number from
@@ -39,7 +39,7 @@ def _stock(symbol: str) -> dict[str, Any]:
 
 
 def list_tickers() -> list[dict[str, str]]:
-    """The stocks SentiFi tracks, as symbol and company name."""
+    """The stocks StockSense tracks, as symbol and company name."""
     return _read("tickers.json")["tickers"]
 
 

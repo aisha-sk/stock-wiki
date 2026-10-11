@@ -1,4 +1,4 @@
-"""Answers "why do these groups disagree about this stock?" from SentiFi's own data.
+"""Answers "why do these groups disagree about this stock?" from StockSense's own data.
 
 Claude reads the published sentiment and headlines through tools, then submits a short
 answer in which every claim points at a headline. An answer that cites a headline we did not
@@ -20,7 +20,7 @@ MAX_REJECTED_ANSWERS = 2
 
 SYSTEM = """You explain to a general reader why different groups feel differently about one stock.
 
-You are part of SentiFi, a site that shows how Wall Street analysts, news media and Reddit each \
+You are part of StockSense, a site that shows how Wall Street analysts, news media and Reddit each \
 read a stock on a scale from -100 (bearish) to 100 (bullish). The reader has just looked at \
 those scores and asked a question about them.
 
@@ -35,7 +35,7 @@ analysts' score has method "ratings", it comes from buy/hold/sell counts and not
 describe it as a ratings consensus. If the headlines do not explain the gap, say that plainly \
 instead of guessing: an honest "the data does not show why" is a good answer.
 
-SentiFi is for research and education, so describe what people are saying and never what the \
+StockSense is for research and education, so describe what people are saying and never what the \
 reader should do. Do not recommend buying, selling or holding, and do not predict the price."""
 
 READ_TOOLS: list[dict[str, Any]] = [

@@ -1,5 +1,5 @@
 # Build from the repo root, so the image holds the API, the contract and the published data:
-#   docker build -f api/Dockerfile -t sentifi-api .
+#   docker build -f api/Dockerfile -t stocksense-api .
 FROM python:3.11-slim
 
 ENV PYTHONDONTWRITEBYTECODE=1 \

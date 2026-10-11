@@ -1,5 +1,8 @@
 # Deploying
 
+The product is called StockSense. The Render service is still named `sentifi-api`, its original
+name, because renaming a Render service gives it a new URL.
+
 Two services: the API on Render, the web app on Vercel. Both redeploy on every push to `main`.
 Deploy the API first, because the web app needs its address.
 
@@ -31,10 +34,10 @@ was built.
 ## 3. Let the web app call the API
 
 1. In Render, open `sentifi-api` > **Environment** and set `CORS_ORIGINS` to the Vercel URL,
-   for example `https://sentifi.vercel.app`. Several origins are comma-separated.
+   for example `https://stock-wiki-xi.vercel.app`. Several origins are comma-separated.
 2. Save. Render redeploys.
 3. Open the Vercel URL. The landing page should show a live spectrum, with no "Can't reach the
-   SentiFi API" card.
+   StockSense API" card.
 
 `NEXT_PUBLIC_API_URL` is baked in at build time. If the API address changes, change the variable
 in Vercel and redeploy.
@@ -52,9 +55,9 @@ in Vercel and redeploy.
 ## Run the image locally
 
 ```bash
-docker build -f api/Dockerfile -t sentifi-api .
+docker build -f api/Dockerfile -t stocksense-api .
 ```
 
 ```bash
-docker run --rm -p 8000:8000 -e CORS_ORIGINS=http://localhost:3000 sentifi-api
+docker run --rm -p 8000:8000 -e CORS_ORIGINS=http://localhost:3000 stocksense-api
 ```

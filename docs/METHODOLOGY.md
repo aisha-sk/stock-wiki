@@ -1,6 +1,6 @@
 # Methodology and limitations
 
-How every figure in SentiFi is produced, so a sceptical reader can check it. Numbers below are
+How every figure in StockSense is produced, so a sceptical reader can check it. Numbers below are
 from the artifacts generated `2026-10-11T00:10:32Z` (`data/artifacts/model.json`). Code paths are
 given so each claim can be traced.
 

@@ -8,8 +8,21 @@ function counts(items: Headline[]) {
   return tally;
 }
 
-function SourceColumn({ title, items, empty }: { title: string; items: Headline[]; empty: string }) {
+function SourceColumn({
+  title,
+  items,
+  empty,
+  limit,
+}: {
+  title: string;
+  items: Headline[];
+  empty: string;
+  limit?: number;
+}) {
+  // The tally always covers every item; `limit` only shortens the list shown.
   const tally = counts(items);
+  const shown = limit === undefined ? items : items.slice(0, limit);
+  const hidden = items.length - shown.length;
   return (
     <div className="flex min-w-0 flex-[1_1_240px] flex-col gap-3">
       <h3 className="text-[15px] font-semibold">{title}</h3>
@@ -21,13 +34,14 @@ function SourceColumn({ title, items, empty }: { title: string; items: Headline[
             {tally.bullish} bullish · {tally.neutral} neutral · {tally.bearish} bearish
           </p>
           <ul className="flex flex-col gap-2">
-            {items.map((item) => (
+            {shown.map((item) => (
               <li key={item.id} className="text-[14px] leading-snug">
                 <span className={`font-medium ${labelColor(item.label)}`}>{capitalize(item.label)}</span>
                 <span className="text-ink"> · {item.title}</span>
               </li>
             ))}
           </ul>
+          {hidden > 0 && <p className="text-[13px] text-muted">and {hidden} more on the dashboard</p>}
         </>
       )}
     </div>
@@ -38,10 +52,13 @@ export function SentimentCard({
   symbol,
   sentiment,
   headlines,
+  maxHeadlines,
 }: {
   symbol: string;
   sentiment: Sentiment;
   headlines: Headline[];
+  /** Show at most this many headlines per group. Omit to show them all. */
+  maxHeadlines?: number;
 }) {
   const { gap } = sentiment;
   const analysts = sentiment.sources.find((source) => source.source === "analysts");
@@ -70,8 +87,8 @@ export function SentimentCard({
             <p className="text-[13px] text-muted">No analyst ratings available.</p>
           )}
         </div>
-        <SourceColumn title="News" items={news} empty={`No news articles in the last ${sentiment.window_days} days.`} />
-        <SourceColumn title="Reddit" items={reddit} empty={`No Reddit posts in the last ${sentiment.window_days} days.`} />
+        <SourceColumn title="News" items={news} limit={maxHeadlines} empty={`No news articles in the last ${sentiment.window_days} days.`} />
+        <SourceColumn title="Reddit" items={reddit} limit={maxHeadlines} empty={`No Reddit posts in the last ${sentiment.window_days} days.`} />
       </div>
 
       <div className="flex flex-wrap items-center justify-between gap-3 border-t border-line pt-4">

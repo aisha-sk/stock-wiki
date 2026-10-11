@@ -33,7 +33,7 @@ export function Header() {
               strokeLinejoin="round"
             />
           </svg>
-          SentiFi
+          StockSense
         </Link>
 
         <nav aria-label="Main" className="order-last flex basis-full gap-1 overflow-x-auto md:order-none md:flex-1 md:basis-auto">
