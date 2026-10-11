@@ -6,6 +6,9 @@
 model makes of the next five trading days. Then it grades its own forecasts in public, misses
 included.
 
+**Live site: https://stock-wiki-xi.vercel.app** (the API sleeps when idle, so the first load can
+take up to a minute)
+
 > Research and education only. Nothing here is financial advice, and past forecasts do not
 > guarantee future results.
 
