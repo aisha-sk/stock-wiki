@@ -202,7 +202,7 @@ function Scorecard({ model, forecasts }: { model: Model; forecasts: Forecasts })
     alwaysQuiet && {
       value: <CountUp value={alwaysQuiet.directional_accuracy} format={(v) => formatRate(v)} />,
       label: "is what always guessing “quiet” scores",
-      note: "a version must beat it to be promoted",
+      note: "shown beside the model, so you can compare",
     },
     {
       value: (
@@ -211,7 +211,7 @@ function Scorecard({ model, forecasts }: { model: Model; forecasts: Forecasts })
         </>
       ),
       label: "model versions passed the quality gate",
-      note: `the gate is ${formatThreshold(model.gate.threshold)} accuracy and beating “always quiet”`,
+      note: `the gate is ${formatThreshold(model.gate.threshold)} accuracy`,
     },
     {
       value: <CountUp value={logged} format={whole} />,

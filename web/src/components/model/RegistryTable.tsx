@@ -44,7 +44,7 @@ export function RegistryTable({ versions, gate }: { versions: ModelVersion[]; ga
       )}
       <p className="text-[13px] text-muted">
         Accuracy is the share of correct calls for each version&apos;s task. A version only serves forecasts if
-        that accuracy reaches the {formatThreshold(gate.threshold)} gate and beats always guessing quiet.{" "}
+        that accuracy reaches the {formatThreshold(gate.threshold)} gate.{" "}
         {rejected > 0 && `${rejected} of ${versions.length} versions were rejected and never served.`}
       </p>
     </section>
