@@ -1,8 +1,8 @@
-# Status: Flow 2 SWE merged, Checkpoint 2 pending
+# Status: Flow 3 SWE work merged, deploy and methodology remaining
 
-Updated Sat Oct 10, 2026 for SubaitaM's AI agent (DS/ML lane). It covers what changed since
-Checkpoint 1, what is on `main`, and what to do next. For the rules of the repo read
-`AGENTS.md`, and for every JSON shape read `docs/CONTRACT.md`. This file does not repeat them.
+Updated Sat Oct 10, 2026, 6:30 pm Edmonton, for SubaitaM's AI agent (DS/ML lane). Feature
+freeze is 8:00 pm Edmonton (10:00 pm Toronto). For the rules of the repo read `AGENTS.md`, and
+for every JSON shape read `docs/CONTRACT.md`. This file does not repeat them.
 
 ## Do this first
 
@@ -12,130 +12,105 @@ git pull
 python scripts/validate_contracts.py data/artifacts
 ```
 
-The last command must print `OK ... (3 ticker(s))`. `main` is at `aa31d4c` plus this file.
-Start every new ticket from a fresh branch off `main`. All older `ml/*` branches are merged
-and stale.
+The last command must print `OK ... (3 ticker(s))`. `main` is at `6d57a76` plus this file, and
+CI is green. Start every new ticket from a fresh branch off `main`.
 
-## What changed since Checkpoint 1
+## What changed since the last status
 
-| Who | What | PR |
+All of it is on `main`.
+
+| What | PR | What it means for DS/ML |
 |---|---|---|
-| DS/ML | Headline filter: option-chain and quote pages dropped; published figures rounded | #41 |
-| DS/ML | F2-ML-4: analyst ratings and Reddit ingestion, gap computation | #43 |
-| SWE | F2-SWE-1: `GET /api/model`, `GET /api/forecasts` | #38 |
-| SWE | F2-SWE-2: Model performance page | #39 |
-| SWE | F2-SWE-3: loading, error and empty states | #40 |
-| SWE | F2-SWE-4: CI on every PR and on `main` | #42 |
+| Fonts bundled in the app | #47 | Nothing. |
+| Alerts: `POST /api/alerts`, `GET /api/alerts/preview`, Alerts page | #48 | The example email reads `sentiment.sources[].previous_score`. Keep publishing it. |
+| Landing page at `/`; the dashboard moved to `/dashboard` | #49 | The landing page shows the stock with the widest `gap.points`, and a scorecard built from `model.json` and the forecast summary. |
+| Dockerfile, Render blueprint, deploy guide | #50 | The API image contains `data/artifacts` as it is on `main` when built. New data goes live when merged to `main`. |
+| MCP server and explain agent in `agent/` | #51 | New `Agent` CI job. See the contract note below. |
+| README with results and screenshots; `docs/DEMO.md` | #52 | The README quotes numbers from the current artifacts. See "If you re-run the pipeline". |
 
-All SWE Flow 2 tickets are done and closed. CI is green on `main`.
+Checkpoint 2 passed and is closed (#19). All Flow 2 tickets are closed.
 
-## CI now runs on your PRs
+## Contract note: please read
 
-`.github/workflows/ci.yml` runs four jobs on every pull request:
+PR #51 edited `docs/CONTRACT.md` and was merged without your approval, on @aisha-sk's
+instruction. The edit is to the optional `POST /api/explain` section only:
 
-| Job | What it runs | What it means for DS/ML |
-|---|---|---|
-| Contract validation | `scripts/validate_contracts.py` on the fixtures and on `data/artifacts` | A PR whose artifacts break the contract fails. Run the validator before pushing. |
-| ML | `ruff check ml`, `pytest ml -m "not slow"` | Uses a light package list written in the workflow: pandas, numpy, scikit-learn, xgboost, yfinance, pandas_market_calendars, pyyaml, jsonschema, pyarrow, feedparser, requests. torch, transformers and mlflow are **not** installed. |
-| API | `ruff`, `pytest` | Not your lane. |
-| Web | lint, type check, build | Not your lane. |
+- the example `model` value is now `claude-opus-5-5`
+- on a 503 the UI shows a note instead of hiding the panel
 
-If a fast ML test needs a new package, either import it lazily inside the function (as
-`mlflow`, `feedparser` and `requests` are now) or ask SWE to add it to the workflow's list.
-A test that needs torch must be marked `@pytest.mark.slow`.
+No schema, field, unit or enum changed, and nothing the pipeline produces is affected. If you
+disagree with either line, say so and it will be changed back.
 
 ## What the app shows on the current artifacts
 
-Artifacts generated `2026-10-10T21:57:39Z`. They pass the validator.
+Artifacts generated `2026-10-10T22:13:54Z`. They pass the validator.
 
 | Stock | Analysts | News | Reddit | Gap |
 |---|---|---|---|---|
-| TSLA | +19 neutral (44 analysts) | +22 bullish (51 articles) | missing | 3 |
-| NVDA | +55 bullish (62 analysts) | +15 neutral (69 articles) | missing | 40 |
-| AAPL | +25 bullish (44 analysts) | +8 neutral (52 articles) | missing | 17 |
+| TSLA | +19 | +22 | missing | 3 |
+| NVDA | +55 | +15 | missing | 40 |
+| AAPL | +25 | +8 | missing | 17 |
 
-| Version | Model | Directional accuracy | Status |
-|---|---|---|---|
-| 5 | `direction-xgb` | 0.4955 | rejected |
-| 4 | `direction-xgb` | 0.4955 | rejected |
-| 3 | `direction-xgb` | 0.4896 | rejected |
-| 2 | `direction-lr` | 0.4836 | rejected |
-| 1 | `direction-lr` | 0.4777 | rejected |
+- Best version: `direction-xgb` v7 at 0.4955. Baselines: always-up 0.5253, previous-direction
+  0.4747, over 672 test forecasts.
+- Seven versions, none past the 0.52 gate. `production` and every `forecast` are `null`.
+- Forecast log: 91 of 180 resolved correct (0.506), 3 pending.
 
-- Baselines: `always_up` 0.5253, `previous_direction` 0.4747, over 672 test forecasts.
-- Gate is 0.52. Nothing passes, so `production` and every `forecast` are `null`. The Dashboard
-  shows "No forecast" and the Model performance page shows "No production model".
-- Forecast log: 183 rows, 180 resolved, 91 hits (0.506), 3 pending.
-
-## Problems to fix (DS/ML lane)
-
-1. **Reddit is missing for all three stocks.** The code is merged, and `ml/ingest/reddit.py`
-   omits the source on HTTP 403 or 429, so the most likely cause is Reddit refusing the
-   request. This has not been confirmed. Run the pipeline and read the `reddit ... HTTP ...;
-   omitting reddit` log lines. If Reddit keeps refusing, leave the source out and say so in
-   the methodology note. Do not publish a made-up score.
-2. **A gap summary contradicts the labels.** NVDA reads "Wall Street analysts lean bullish
-   while News media lean bearish", but news is +15, labelled `neutral`. Build the sentence
-   from each source's actual `label`: only say "bearish" for a `bearish` label, and use
-   wording such as "while News media are neutral" otherwise. Add a test in
-   `ml/tests/test_gap.py` for a bullish-against-neutral pair.
-3. **Versions 4 and 5 are identical.** Both are `direction-xgb` at 0.4955, trained eight
-   minutes apart. Each pipeline run appends a version even when nothing changed, so the
-   registry fills with duplicates. Skip the append when the algorithm, parameters and data
-   end date match the latest version, or give the pipeline a flag that publishes without
-   retraining. Do not rewrite or delete the existing five rows without both humans agreeing.
-4. **Versions 1 to 3 still carry unrounded accuracy** (`0.4895833333333333`). Cosmetic. The
-   UI formats them. Leave them unless you are already touching the history.
-
-## What to do next, in order
+## What is left for DS/ML, in order
 
 | # | Ticket | Notes |
 |---|---|---|
-| 1 | Problems 1 to 3 above | Small. Problem 2 is user-visible on the Dashboard right now. |
-| 2 | [F2-ML-1](https://github.com/aisha-sk/stock-wiki/issues/15): MLflow tracking | Mostly in place (`ml/tracking.py`, run IDs on versions 2 to 5). Check each acceptance criterion: params, metrics, the four artifacts, a logged model, and the `docs/img/mlflow.png` screenshot. Then close it. |
-| 3 | [F2-ML-2](https://github.com/aisha-sk/stock-wiki/issues/16): gate and registry | Statuses and `gate_passed` are published. Check the promotion rule, the append-only history (see problem 3) and the tests the issue lists. Then close it. |
-| 4 | [F2-ML-3](https://github.com/aisha-sk/stock-wiki/issues/17) | Code is merged. Confirm its acceptance criteria and close it. |
-| 5 | [F2-INT](https://github.com/aisha-sk/stock-wiki/issues/19): Checkpoint 2 | With @aisha-sk, once 1 to 4 are done. |
-
-Then Flow 3 for DS/ML: [F3-ML-2](https://github.com/aisha-sk/stock-wiki/issues/24)
-(methodology write-up, keep) before [F3-ML-1](https://github.com/aisha-sk/stock-wiki/issues/23)
-(scheduled retraining, stretch).
-
-Read each issue in full before starting: `gh issue view <number>`.
+| 1 | [F3-ML-2](https://github.com/aisha-sk/stock-wiki/issues/24): `docs/METHODOLOGY.md` | Must finish. The README has a slot for the link. Every number in it must match `data/artifacts/model.json` on the same commit. |
+| 2 | Reddit | Still missing for every stock, cause unconfirmed. Run the pipeline and read the `reddit ... HTTP ...; omitting reddit` log lines. If Reddit keeps refusing, leave it out and say so in the methodology. The README already says Reddit is not in the data. |
+| 3 | Duplicate versions | Versions 4 to 7 are identical `direction-xgb` runs at 0.4955. Make the pipeline skip the append when nothing changed. Do not delete existing rows without both humans agreeing. |
+| 4 | [F3-ML-1](https://github.com/aisha-sk/stock-wiki/issues/23): scheduled retraining | Stretch. Only if 1 is done and there is time before the freeze. |
+| 5 | [F3-INT](https://github.com/aisha-sk/stock-wiki/issues/27): final | With @aisha-sk after the freeze. |
 
 Open decision for the humans, unchanged: keep the "No forecast" result, or spend a time-boxed
-hour trying to improve the model. Either way the gate stays at 0.52.
+hour on the model (more tickers and history, market-context features). The gate stays at 0.52
+either way.
+
+## If you re-run the pipeline
+
+A new run changes numbers that are now quoted in three places. In the same PR, update:
+
+- `README.md`, section "What we measured" (accuracy, baselines, version count, forecast log)
+- `docs/DEMO.md` (the numbers in the "Say" column and the "If someone asks" table)
+- `docs/METHODOLOGY.md`
+
+Each full training run also appends a model version, so until item 3 above is fixed, re-run
+only when the data or the model actually changed.
+
+## CI on your PRs
+
+Five jobs now run on every pull request: Contract validation, API, Web, ML, Agent. For DS/ML
+the two that matter are unchanged:
+
+- **Contract validation** runs `scripts/validate_contracts.py` on `data/artifacts`.
+- **ML** runs `ruff check ml` and `pytest ml -m "not slow"` with a light package list. torch,
+  transformers and mlflow are not installed, so tests that need them must be marked
+  `@pytest.mark.slow` or skip when the import is missing.
 
 ## What the SWE side does next
 
-F3-SWE-1 (Alerts page, `POST /api/alerts`, `GET /api/alerts/preview`), then F3-SWE-2 (deploy).
-The alert preview reads `sentiment.sources[].previous_score`, which the artifacts now carry.
-None of it changes the contract or touches `ml/` or `data/artifacts/`.
+Deploying: the API to Render and the web app to Vercel, following `docs/DEPLOY.md`. Then the
+live link goes into the README and both people smoke-test the deployed site for F3-INT.
 
 ## How to ship a ticket
 
 1. `git checkout main && git pull`
 2. `git checkout -b ml/<ticket-id>-short-name`
-3. Do the work. Stay inside `ml/` and `data/artifacts/`.
-4. Run the pipeline, then `python scripts/validate_contracts.py data/artifacts`, then
+3. Do the work. Stay inside `ml/`, `data/artifacts/` and `docs/METHODOLOGY.md`.
+4. Run the pipeline if needed, then `python scripts/validate_contracts.py data/artifacts`,
    `pytest ml -m "not slow"` and `ruff check ml`.
-5. Open a PR **into `main`**, with `Closes #<issue number>` in the body. An issue only closes
-   automatically when its PR merges straight into `main`.
-6. Wait for CI to go green, then merge with **Create a merge commit** before starting the
-   next ticket.
+5. Open a PR **into `main`** with `Closes #<issue number>` in the body.
+6. Wait for CI to go green, then merge with **Create a merge commit**.
 
-Do not stack PRs on each other. PRs #41 and #43 did this correctly.
+Do not stack PRs on each other.
 
 ## Things that must not change without both people agreeing
 
 - Anything in `contracts/` or `docs/CONTRACT.md`: field names, units, enums.
 - The gate threshold (0.52).
-- Files in `api/`, `web/` and `.github/workflows/ci.yml`.
+- Files in `api/`, `web/`, `agent/` and `.github/workflows/ci.yml`.
 - No "buy" or "sell" wording in `gap.summary` or anywhere else.
-
-## Earlier history
-
-Kickoff fixed the contract, plan and 27 tickets. Flow 1 delivered the API, the Dashboard, price
-ingestion, the walk-forward model, FinBERT news scoring and the publisher. Checkpoint 1 passed
-on real data for TSLA, NVDA and AAPL; the results are on issue #10, which is still open and
-can be closed.
