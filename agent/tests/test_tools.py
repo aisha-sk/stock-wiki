@@ -62,7 +62,7 @@ def test_get_track_record_summary_matches_the_rows():
     assert everything["summary"] == example("forecasts.json")["summary"]
     tsla = tools.get_track_record("TSLA")
     assert {r["symbol"] for r in tsla["forecasts"]} == {"TSLA"}
-    assert tsla["summary"] == {"resolved": 2, "hits": 2, "hit_rate": 1.0, "pending": 1}
+    assert tsla["summary"] == {"resolved": 2, "hits": 1, "hit_rate": 0.5, "pending": 1}
 
 
 def test_get_model_card():

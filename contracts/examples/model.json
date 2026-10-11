@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "generated_at": "2026-10-09T21:00:00Z",
   "is_demo_data": true,
   "production": {
@@ -9,7 +9,7 @@
     "trained_at": "2026-10-04T23:10:00Z"
   },
   "task": {
-    "description": "Will the close 5 trading days from now be above today's close?",
+    "description": "Will the absolute move over the next 5 sessions be larger than the typical move?",
     "horizon_days": 5,
     "validation": "walk_forward",
     "tickers": [
@@ -26,18 +26,18 @@
     "precision": 0.61,
     "recall": 0.57,
     "f1": 0.59,
-    "sharpe_ratio": 1.12,
-    "max_drawdown": -0.087,
+    "sharpe_ratio": null,
+    "max_drawdown": null,
     "inference_latency_ms": 142,
     "cost_per_request_usd": 0.0004
   },
   "baselines": [
     {
-      "name": "always_up",
+      "name": "always_quiet",
       "directional_accuracy": 0.538
     },
     {
-      "name": "previous_direction",
+      "name": "previous_move",
       "directional_accuracy": 0.502
     }
   ],
@@ -117,7 +117,8 @@
       "directional_accuracy": 0.584,
       "gate_passed": true,
       "status": "production",
-      "mlflow_run_id": "demo0000000000000000000000000012"
+      "mlflow_run_id": "demo0000000000000000000000000012",
+      "task": "direction"
     },
     {
       "version": "11",
@@ -127,7 +128,8 @@
       "directional_accuracy": 0.572,
       "gate_passed": true,
       "status": "archived",
-      "mlflow_run_id": "demo0000000000000000000000000011"
+      "mlflow_run_id": "demo0000000000000000000000000011",
+      "task": "direction"
     },
     {
       "version": "10",
@@ -137,7 +139,8 @@
       "directional_accuracy": 0.536,
       "gate_passed": false,
       "status": "rejected",
-      "mlflow_run_id": "demo0000000000000000000000000010"
+      "mlflow_run_id": "demo0000000000000000000000000010",
+      "task": "direction"
     }
   ]
 }

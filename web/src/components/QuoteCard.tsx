@@ -24,15 +24,10 @@ export function QuoteCard({ stock }: { stock: Stock }) {
           </div>
         </div>
         <p className="text-[13px] text-muted">
-          Price, last {sessions} sessions{stock.forecast ? ", with model forecast" : ""}
+          Price, last {sessions} sessions
         </p>
       </div>
-      <PriceChart symbol={stock.symbol} prices={stock.prices} forecast={stock.forecast} />
-      {stock.forecast && (
-        <p className="text-[13px] text-muted">
-          The dashed segment shows the forecast direction only. It is not a price target.
-        </p>
-      )}
+      <PriceChart symbol={stock.symbol} prices={stock.prices} />
     </section>
   );
 }

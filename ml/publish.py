@@ -9,12 +9,13 @@ import numpy as np
 import pandas as pd
 import pandas_market_calendars as mcal
 
+from ml.gate import passes_gate
 from ml.sentiment.gap import gap_for
 
-MODEL_NAME = "direction-xgb"
+MODEL_NAME = "move-xgb"
 MODEL_VERSION = "1"
 ALGORITHM = "xgboost"
-TASK_DESCRIPTION = "Will the close 5 trading days from now be above today's close?"
+TASK_DESCRIPTION = "Will the absolute move over the next 5 sessions be larger than the typical move?"
 HEADLINE_LIMIT = 30
 FORECAST_LOG_LIMIT = 60
 
@@ -60,9 +61,9 @@ def build_weekly_accuracy(predictions: pd.DataFrame) -> list[dict]:
     frame["week_start"] = frame["as_of_date"] - pd.to_timedelta(
         frame["as_of_date"].dt.dayofweek, unit="D"
     )
-    predicted_up = frame["prob_up"] >= 0.5
-    actually_up = frame["y_true"].astype(int) == 1
-    frame["correct"] = predicted_up == actually_up
+    predicted_large = frame["prob_large"] >= 0.5
+    actually_large = frame["y_true"].astype(int) == 1
+    frame["correct"] = predicted_large == actually_large
     weeks: list[dict] = []
     for week_start, group in frame.groupby("week_start", sort=True):
         weeks.append(
@@ -82,6 +83,7 @@ def build_stock(
     prices: pd.DataFrame,
     prices_in_payload: int,
     forecast_prob: float,
+    typical_move_pct: float,
     gate_passed: bool,
     generated_at: str,
     window_days: int,
@@ -101,8 +103,9 @@ def build_stock(
         probability = round(float(forecast_prob), 4)
         forecast = {
             "horizon_days": 5,
-            "direction": _direction(probability),
-            "prob_up": probability,
+            "move": _move(probability),
+            "prob_large": probability,
+            "typical_move_pct": round(float(typical_move_pct), 4),
             "confidence": float(max(probability, 1.0 - probability)),
             "made_at": generated_at,
             "as_of_date": as_of,
@@ -111,7 +114,7 @@ def build_stock(
             "model_version": model_version,
         }
     return {
-        "schema_version": "1.0",
+        "schema_version": "1.1",
         "symbol": symbol,
         "name": name,
         "generated_at": generated_at,
@@ -142,6 +145,7 @@ def build_forecast_rows(
     symbol: str,
     model_version: str,
     live_prob: float,
+    typical_move_pct: float,
     live_as_of: str,
     generated_at: str,
     limit: int = FORECAST_LOG_LIMIT,
@@ -156,12 +160,13 @@ def build_forecast_rows(
             "as_of_date": live_as_of,
             "target_date": nyse_sessions_after(live_as_of, 5),
             "horizon_days": 5,
-            "direction": _direction(probability),
-            "prob_up": probability,
+            "move": _move(probability),
+            "prob_large": probability,
+            "typical_move_pct": round(float(typical_move_pct), 4),
             "model_version": model_version,
             "origin": "live",
             "status": "pending",
-            "actual_direction": None,
+            "actual_move": None,
             "actual_return_pct": None,
             "result": None,
         }
@@ -171,10 +176,11 @@ def build_forecast_rows(
     recent = recent.sort_values("as_of_date", ascending=False).head(limit)
     for record in recent.itertuples(index=False):
         as_of = _date(record.as_of_date)
-        prob_up = round(float(record.prob_up), 4)
-        direction = _direction(prob_up)
+        prob_large = round(float(record.prob_large), 4)
+        move = _move(prob_large)
         actual_return = float(record.fwd_return_pct)
-        actual_direction = "up" if actual_return > 0 else "down"
+        cutoff = round(float(record.typical_move_pct), 4)
+        actual_move = "large" if abs(actual_return) > cutoff else "quiet"
         rows.append(
             {
                 "id": f"{symbol}-{as_of}-v{model_version}",
@@ -183,14 +189,15 @@ def build_forecast_rows(
                 "as_of_date": as_of,
                 "target_date": nyse_sessions_after(as_of, 5),
                 "horizon_days": 5,
-                "direction": direction,
-                "prob_up": prob_up,
+                "move": move,
+                "prob_large": prob_large,
+                "typical_move_pct": round(cutoff, 4),
                 "model_version": model_version,
                 "origin": "backtest",
                 "status": "resolved",
-                "actual_direction": actual_direction,
+                "actual_move": actual_move,
                 "actual_return_pct": actual_return,
-                "result": "hit" if direction == actual_direction else "miss",
+                "result": "hit" if move == actual_move else "miss",
             }
         )
     rows.sort(key=lambda row: row["as_of_date"], reverse=True)
@@ -205,6 +212,7 @@ def write_artifacts(
     prices: dict[str, pd.DataFrame],
     predictions: dict[str, pd.DataFrame],
     live_prob: dict[str, float],
+    typical_move_pct: dict[str, float],
     metrics: dict[str, float | int],
     baselines: list[dict[str, float | str]],
     gate_threshold: float,
@@ -226,11 +234,11 @@ def write_artifacts(
     """Write the four artifact files. Numbers come from the arguments, not from literals."""
     out_dir.mkdir(parents=True, exist_ok=True)
     accuracy = round(float(metrics["directional_accuracy"]), 4)
-    gate_passed = accuracy >= float(gate_threshold)
+    gate_passed = passes_gate({"directional_accuracy": accuracy}, gate_threshold, baselines)
     _write(
         out_dir / "tickers.json",
         {
-            "schema_version": "1.0",
+            "schema_version": "1.1",
             "tickers": [{"symbol": symbol, "name": names[symbol]} for symbol in symbols],
         },
     )
@@ -249,6 +257,7 @@ def write_artifacts(
                 prices=frame,
                 prices_in_payload=prices_in_payload,
                 forecast_prob=live_prob[symbol],
+                typical_move_pct=typical_move_pct[symbol],
                 gate_passed=gate_passed,
                 generated_at=generated_at,
                 window_days=window_days,
@@ -264,6 +273,7 @@ def write_artifacts(
                 symbol=symbol,
                 model_version=model_version,
                 live_prob=live_prob[symbol],
+                typical_move_pct=typical_move_pct[symbol],
                 live_as_of=as_of,
                 generated_at=generated_at,
                 limit=len(symbol_predictions),
@@ -285,8 +295,10 @@ def write_artifacts(
         "gate_passed": gate_passed,
         "status": "production" if gate_passed else "rejected",
         "mlflow_run_id": mlflow_run_id,
+        "task": "move",
     }
     history = versions if versions is not None else [version, *(prior_versions or [])]
+    history = [{**item, "task": item.get("task", "direction")} for item in history]
     serving = next((item for item in history if item["status"] == "production"), None)
     production = None
     if serving is not None:
@@ -299,7 +311,7 @@ def write_artifacts(
     _write(
         out_dir / "model.json",
         {
-            "schema_version": "1.0",
+            "schema_version": "1.1",
             "generated_at": generated_at,
             "is_demo_data": False,
             "production": production,
@@ -341,7 +353,7 @@ def write_artifacts(
     _write(
         out_dir / "forecasts.json",
         {
-            "schema_version": "1.0",
+            "schema_version": "1.1",
             "generated_at": generated_at,
             "is_demo_data": False,
             "summary": {
@@ -398,8 +410,8 @@ def _headlines(headlines: list[dict]) -> list[dict]:
     return kept
 
 
-def _direction(prob_up: float) -> str:
-    return "up" if prob_up >= 0.5 else "down"
+def _move(prob_large: float) -> str:
+    return "large" if prob_large >= 0.5 else "quiet"
 
 
 def _date(value: object) -> str:

@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "generated_at": "2026-10-09T21:00:00Z",
   "is_demo_data": true,
   "summary": {
     "resolved": 6,
-    "hits": 4,
-    "hit_rate": 0.667,
+    "hits": 2,
+    "hit_rate": 0.333,
     "pending": 3
   },
   "forecasts": [
@@ -16,14 +16,15 @@
       "as_of_date": "2026-10-09",
       "target_date": "2026-10-16",
       "horizon_days": 5,
-      "direction": "up",
-      "prob_up": 0.64,
       "model_version": "12",
       "origin": "live",
       "status": "pending",
-      "actual_direction": null,
       "actual_return_pct": null,
-      "result": null
+      "result": null,
+      "move": "large",
+      "prob_large": 0.64,
+      "typical_move_pct": 3.2,
+      "actual_move": null
     },
     {
       "id": "NVDA-2026-10-09-v12",
@@ -32,14 +33,15 @@
       "as_of_date": "2026-10-09",
       "target_date": "2026-10-16",
       "horizon_days": 5,
-      "direction": "down",
-      "prob_up": 0.42,
       "model_version": "12",
       "origin": "live",
       "status": "pending",
-      "actual_direction": null,
       "actual_return_pct": null,
-      "result": null
+      "result": null,
+      "move": "quiet",
+      "prob_large": 0.42,
+      "typical_move_pct": 3.2,
+      "actual_move": null
     },
     {
       "id": "AAPL-2026-10-09-v12",
@@ -48,14 +50,15 @@
       "as_of_date": "2026-10-09",
       "target_date": "2026-10-16",
       "horizon_days": 5,
-      "direction": "up",
-      "prob_up": 0.55,
       "model_version": "12",
       "origin": "live",
       "status": "pending",
-      "actual_direction": null,
       "actual_return_pct": null,
-      "result": null
+      "result": null,
+      "move": "large",
+      "prob_large": 0.55,
+      "typical_move_pct": 3.2,
+      "actual_move": null
     },
     {
       "id": "AAPL-2026-10-02-v12",
@@ -64,14 +67,15 @@
       "as_of_date": "2026-10-02",
       "target_date": "2026-10-09",
       "horizon_days": 5,
-      "direction": "up",
-      "prob_up": 0.54,
       "model_version": "12",
       "origin": "backtest",
       "status": "resolved",
-      "actual_direction": "down",
       "actual_return_pct": -0.6,
-      "result": "miss"
+      "result": "miss",
+      "move": "large",
+      "prob_large": 0.54,
+      "typical_move_pct": 3.2,
+      "actual_move": "quiet"
     },
     {
       "id": "NVDA-2026-10-01-v12",
@@ -80,14 +84,15 @@
       "as_of_date": "2026-10-01",
       "target_date": "2026-10-08",
       "horizon_days": 5,
-      "direction": "down",
-      "prob_up": 0.41,
       "model_version": "12",
       "origin": "backtest",
       "status": "resolved",
-      "actual_direction": "down",
       "actual_return_pct": -3.0,
-      "result": "hit"
+      "result": "hit",
+      "move": "quiet",
+      "prob_large": 0.41,
+      "typical_move_pct": 3.2,
+      "actual_move": "quiet"
     },
     {
       "id": "TSLA-2026-09-30-v12",
@@ -96,14 +101,15 @@
       "as_of_date": "2026-09-30",
       "target_date": "2026-10-07",
       "horizon_days": 5,
-      "direction": "down",
-      "prob_up": 0.44,
       "model_version": "12",
       "origin": "backtest",
       "status": "resolved",
-      "actual_direction": "down",
       "actual_return_pct": -1.7,
-      "result": "hit"
+      "result": "hit",
+      "move": "quiet",
+      "prob_large": 0.44,
+      "typical_move_pct": 3.2,
+      "actual_move": "quiet"
     },
     {
       "id": "AAPL-2026-09-29-v12",
@@ -112,14 +118,15 @@
       "as_of_date": "2026-09-29",
       "target_date": "2026-10-06",
       "horizon_days": 5,
-      "direction": "up",
-      "prob_up": 0.56,
       "model_version": "12",
       "origin": "backtest",
       "status": "resolved",
-      "actual_direction": "up",
       "actual_return_pct": 1.2,
-      "result": "hit"
+      "result": "miss",
+      "move": "large",
+      "prob_large": 0.56,
+      "typical_move_pct": 3.2,
+      "actual_move": "quiet"
     },
     {
       "id": "TSLA-2026-09-28-v12",
@@ -128,14 +135,15 @@
       "as_of_date": "2026-09-28",
       "target_date": "2026-10-05",
       "horizon_days": 5,
-      "direction": "up",
-      "prob_up": 0.61,
       "model_version": "12",
       "origin": "backtest",
       "status": "resolved",
-      "actual_direction": "up",
       "actual_return_pct": 3.1,
-      "result": "hit"
+      "result": "miss",
+      "move": "large",
+      "prob_large": 0.61,
+      "typical_move_pct": 3.2,
+      "actual_move": "quiet"
     },
     {
       "id": "NVDA-2026-09-28-v12",
@@ -144,14 +152,15 @@
       "as_of_date": "2026-09-28",
       "target_date": "2026-10-05",
       "horizon_days": 5,
-      "direction": "up",
-      "prob_up": 0.57,
       "model_version": "12",
       "origin": "backtest",
       "status": "resolved",
-      "actual_direction": "down",
       "actual_return_pct": -2.4,
-      "result": "miss"
+      "result": "miss",
+      "move": "large",
+      "prob_large": 0.57,
+      "typical_move_pct": 3.2,
+      "actual_move": "quiet"
     }
   ]
 }

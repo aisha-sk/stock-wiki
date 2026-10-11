@@ -1,10 +1,10 @@
 {
-  "schema_version": "1.0",
-  "generated_at": "2026-10-10T22:13:54Z",
+  "schema_version": "1.1",
+  "generated_at": "2026-10-11T00:10:32Z",
   "is_demo_data": false,
   "production": null,
   "task": {
-    "description": "Will the close 5 trading days from now be above today's close?",
+    "description": "Will the absolute move over the next 5 sessions be larger than the typical move?",
     "horizon_days": 5,
     "validation": "walk_forward",
     "tickers": [
@@ -17,23 +17,23 @@
     "n_test": 672
   },
   "metrics": {
-    "directional_accuracy": 0.4955,
-    "precision": 0.5172,
-    "recall": 0.5949,
-    "f1": 0.5534,
-    "sharpe_ratio": 0.6334,
-    "max_drawdown": -0.1079,
-    "inference_latency_ms": 4.9319,
+    "directional_accuracy": 0.5372,
+    "precision": 0.4807,
+    "recall": 0.5436,
+    "f1": 0.5102,
+    "sharpe_ratio": null,
+    "max_drawdown": null,
+    "inference_latency_ms": 3.1467,
     "cost_per_request_usd": null
   },
   "baselines": [
     {
-      "name": "always_up",
-      "directional_accuracy": 0.5253
+      "name": "always_quiet",
+      "directional_accuracy": 0.5565
     },
     {
-      "name": "previous_direction",
-      "directional_accuracy": 0.4747
+      "name": "previous_move",
+      "directional_accuracy": 0.5551
     }
   ],
   "gate": {
@@ -49,7 +49,7 @@
     },
     {
       "week_start": "2026-07-20",
-      "accuracy": 0.5333,
+      "accuracy": 0.6,
       "n": 15
     },
     {
@@ -59,51 +59,62 @@
     },
     {
       "week_start": "2026-08-03",
-      "accuracy": 0.4,
+      "accuracy": 0.6,
       "n": 15
     },
     {
       "week_start": "2026-08-10",
-      "accuracy": 0.2667,
+      "accuracy": 0.6,
       "n": 15
     },
     {
       "week_start": "2026-08-17",
-      "accuracy": 0.3333,
-      "n": 15
-    },
-    {
-      "week_start": "2026-08-24",
-      "accuracy": 0.4,
-      "n": 15
-    },
-    {
-      "week_start": "2026-08-31",
       "accuracy": 0.4667,
       "n": 15
     },
     {
+      "week_start": "2026-08-24",
+      "accuracy": 0.2667,
+      "n": 15
+    },
+    {
+      "week_start": "2026-08-31",
+      "accuracy": 0.4,
+      "n": 15
+    },
+    {
       "week_start": "2026-09-07",
-      "accuracy": 0.75,
+      "accuracy": 0.5,
       "n": 12
     },
     {
       "week_start": "2026-09-14",
-      "accuracy": 0.5333,
+      "accuracy": 0.4667,
       "n": 15
     },
     {
       "week_start": "2026-09-21",
-      "accuracy": 0.5333,
+      "accuracy": 0.6667,
       "n": 15
     },
     {
       "week_start": "2026-09-28",
-      "accuracy": 0.8,
+      "accuracy": 0.4667,
       "n": 15
     }
   ],
   "versions": [
+    {
+      "version": "8",
+      "model_name": "move-xgb",
+      "algorithm": "xgboost",
+      "trained_at": "2026-10-11T00:10:32Z",
+      "directional_accuracy": 0.5372,
+      "gate_passed": false,
+      "status": "rejected",
+      "mlflow_run_id": "49b04f9f80e8487081c564a9d508fe33",
+      "task": "move"
+    },
     {
       "version": "7",
       "model_name": "direction-xgb",
@@ -112,7 +123,8 @@
       "directional_accuracy": 0.4955,
       "gate_passed": false,
       "status": "rejected",
-      "mlflow_run_id": "54eddeadc6574b74a587fc9f9d46fd6d"
+      "mlflow_run_id": "54eddeadc6574b74a587fc9f9d46fd6d",
+      "task": "direction"
     },
     {
       "version": "6",
@@ -122,7 +134,8 @@
       "directional_accuracy": 0.4955,
       "gate_passed": false,
       "status": "rejected",
-      "mlflow_run_id": "6b809728b0714017a70c5a0eef80335a"
+      "mlflow_run_id": "6b809728b0714017a70c5a0eef80335a",
+      "task": "direction"
     },
     {
       "version": "5",
@@ -132,7 +145,8 @@
       "directional_accuracy": 0.4955,
       "gate_passed": false,
       "status": "rejected",
-      "mlflow_run_id": "7cad5016910d47c4befd7a250bdeffb7"
+      "mlflow_run_id": "7cad5016910d47c4befd7a250bdeffb7",
+      "task": "direction"
     },
     {
       "version": "4",
@@ -142,7 +156,8 @@
       "directional_accuracy": 0.4955,
       "gate_passed": false,
       "status": "rejected",
-      "mlflow_run_id": "86f365b5da1c48a8a6c3d0d962e5f5a0"
+      "mlflow_run_id": "86f365b5da1c48a8a6c3d0d962e5f5a0",
+      "task": "direction"
     },
     {
       "version": "3",
@@ -152,7 +167,8 @@
       "directional_accuracy": 0.4895833333333333,
       "gate_passed": false,
       "status": "rejected",
-      "mlflow_run_id": "4660092cbbf44c93b662366542a3d705"
+      "mlflow_run_id": "4660092cbbf44c93b662366542a3d705",
+      "task": "direction"
     },
     {
       "version": "2",
@@ -162,7 +178,8 @@
       "directional_accuracy": 0.4836309523809524,
       "gate_passed": false,
       "status": "rejected",
-      "mlflow_run_id": "1fa8ad17188e4d9e969641c469344893"
+      "mlflow_run_id": "1fa8ad17188e4d9e969641c469344893",
+      "task": "direction"
     },
     {
       "version": "1",
@@ -172,7 +189,8 @@
       "directional_accuracy": 0.47767857142857145,
       "gate_passed": false,
       "status": "rejected",
-      "mlflow_run_id": null
+      "mlflow_run_id": null,
+      "task": "direction"
     }
   ]
 }

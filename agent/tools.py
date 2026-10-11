@@ -74,7 +74,7 @@ def get_headlines(symbol: str, source: str | None = None, limit: int = 10) -> li
 
 
 def get_forecast(symbol: str) -> dict[str, Any]:
-    """The model's 5-day direction forecast for one stock, or why there is none."""
+    """The model's 5-day large-versus-quiet move forecast for one stock, or why there is none."""
     stock = _stock(symbol)
     if stock["forecast"] is None:
         return {

@@ -9,9 +9,8 @@ from pathlib import Path
 import pandas as pd
 
 from ml.config import load_config
-from ml.evaluate import strategy_backtest
 from ml.features import FEATURE_COLUMNS, NEWS_LAG_COLUMN
-from ml.gate import passes_gate
+from ml.gate import failed_checks, passes_gate
 from ml.ingest.analysts import fetch_analysts
 from ml.ingest.news import (
     dedupe_headlines,
@@ -102,7 +101,7 @@ def run_pipeline(symbols: list[str], out_dir: Path) -> int:
     passed = [
         item
         for item in candidates
-        if float(item[1].metrics["directional_accuracy"]) >= threshold
+        if passes_gate(item[1].metrics, threshold, item[1].baselines)
     ]
     if passed:
         serving = max(passed, key=lambda item: float(item[1].metrics["directional_accuracy"]))
@@ -110,16 +109,14 @@ def run_pipeline(symbols: list[str], out_dir: Path) -> int:
         serving = candidates[-1]
     algorithm, trained, run_id = serving
     accuracy = round(float(trained.metrics["directional_accuracy"]), 4)
-    if passes_gate({"directional_accuracy": accuracy}, threshold):
-        print(
-            f"Gate passed: {algorithm} directional_accuracy {accuracy:.4f} >= {threshold:.2f}.",
-            flush=True,
-        )
+    failures = failed_checks(trained.metrics, threshold, trained.baselines)
+    if not failures:
+        print(f"Gate passed: {algorithm} directional_accuracy {accuracy:.4f}.", flush=True)
     else:
         print("REJECTED", flush=True)
         print(
-            f"Gate failed: {algorithm} directional_accuracy {accuracy:.4f} is below {threshold:.2f}. "
-            "production is null and each stock forecast is null.",
+            f"Gate failed: {algorithm} directional_accuracy {accuracy:.4f} fails "
+            f"{'; '.join(failures)}. production is null and each stock forecast is null.",
             flush=True,
         )
 
@@ -129,8 +126,9 @@ def run_pipeline(symbols: list[str], out_dir: Path) -> int:
             history,
             accuracy=float(result.metrics["directional_accuracy"]),
             threshold=threshold,
+            baselines=result.baselines,
             algorithm=name,
-            model_name="direction-xgb",
+            model_name="move-xgb",
             trained_at=generated_at,
             mlflow_run_id=candidate_run,
         )
@@ -139,14 +137,16 @@ def run_pipeline(symbols: list[str], out_dir: Path) -> int:
     serving_version = fresh[0]["version"] if fresh else history[0]["version"]
     sample = trained.latest_features[ordered[0]]
     latency_ms = median_latency_ms(lambda row=sample, model=trained.model: model.predict_proba(row))
-    backtest = strategy_backtest(trained.predictions)
     write_artifacts(
         out_dir,
         symbols=ordered,
         names=names,
         prices=prices,
         predictions={symbol: trained.predictions[trained.predictions["symbol"] == symbol] for symbol in ordered},
-        live_prob={symbol: float(trained.forecasts[symbol]["prob_up"]) for symbol in ordered},
+        live_prob={symbol: float(trained.forecasts[symbol]["prob_large"]) for symbol in ordered},
+        typical_move_pct={
+            symbol: float(trained.forecasts[symbol]["typical_move_pct"]) for symbol in ordered
+        },
         metrics=trained.metrics,
         baselines=trained.baselines,
         gate_threshold=threshold,
@@ -156,9 +156,9 @@ def run_pipeline(symbols: list[str], out_dir: Path) -> int:
         prices_in_payload=config.prices_in_payload,
         generated_at=generated_at,
         latency_ms=latency_ms,
-        sharpe_ratio=backtest["sharpe_ratio"],
-        max_drawdown=backtest["max_drawdown"],
-        model_name="direction-xgb",
+        sharpe_ratio=None,
+        max_drawdown=None,
+        model_name="move-xgb",
         model_version=serving_version,
         algorithm=algorithm,
         mlflow_run_id=run_id,
@@ -187,7 +187,7 @@ def _sentiment_bundle(
     now: pd.Timestamp,
     window_days: int,
 ) -> dict:
-    """Analysts, news and Reddit, with any missing group left out."""
+    """Analysts, news and Reddit. A missing group is left out. The agent is not a source."""
     present: list[dict] = []
     groups: list[list[dict]] = []
     news_source = aggregate_news(news_documents, now=now, window_days=window_days)

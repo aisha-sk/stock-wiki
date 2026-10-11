@@ -97,7 +97,9 @@ def preview(stock: dict[str, Any]) -> dict[str, Any]:
     if forecast:
         lines.append(
             f"Model forecast, next {forecast['horizon_days']} trading days: "
-            f"{forecast['direction'].capitalize()}, {round(forecast['confidence'] * 100)}% confidence."
+            f"{'Larger-than-usual' if forecast['move'] == 'large' else 'Typical'} move "
+            f"(typical is {forecast['typical_move_pct']}%), "
+            f"{round(forecast['confidence'] * 100)}% confidence."
         )
 
     if not lines:

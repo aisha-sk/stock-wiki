@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": ["schema_version", "symbol", "name", "generated_at", "is_demo_data", "quote", "prices", "forecast", "sentiment", "headlines"],
   "properties": {
-    "schema_version": { "const": "1.0" },
+    "schema_version": { "const": "1.1" },
     "symbol": { "$ref": "#/$defs/symbol" },
     "name": { "type": "string", "minLength": 1 },
     "generated_at": { "type": "string", "format": "date-time" },
@@ -44,12 +44,13 @@
         {
           "type": "object",
           "additionalProperties": false,
-          "required": ["horizon_days", "direction", "prob_up", "confidence", "made_at", "as_of_date", "target_date", "model_name", "model_version"],
+          "required": ["horizon_days", "move", "prob_large", "typical_move_pct", "confidence", "made_at", "as_of_date", "target_date", "model_name", "model_version"],
           "properties": {
             "horizon_days": { "const": 5 },
-            "direction": { "$ref": "#/$defs/direction" },
-            "prob_up": { "type": "number", "minimum": 0, "maximum": 1 },
-            "confidence": { "type": "number", "minimum": 0.5, "maximum": 1, "description": "max(prob_up, 1 - prob_up)" },
+            "move": { "$ref": "#/$defs/move" },
+            "prob_large": { "type": "number", "minimum": 0, "maximum": 1 },
+            "typical_move_pct": { "type": "number", "exclusiveMinimum": 0, "description": "Percent units. A move is large when its absolute return is above this value." },
+            "confidence": { "type": "number", "minimum": 0.5, "maximum": 1, "description": "max(prob_large, 1 - prob_large)" },
             "made_at": { "type": "string", "format": "date-time" },
             "as_of_date": { "type": "string", "format": "date", "description": "Last session whose data the forecast used." },
             "target_date": { "type": "string", "format": "date", "description": "as_of_date plus 5 trading days." },
@@ -127,7 +128,7 @@
   },
   "$defs": {
     "symbol": { "type": "string", "pattern": "^[A-Z][A-Z.]{0,5}$" },
-    "direction": { "enum": ["up", "down"] },
+    "move": { "enum": ["large", "quiet"] },
     "source": { "enum": ["analysts", "news", "reddit"] },
     "label": { "enum": ["bullish", "neutral", "bearish"] },
     "score": { "type": "integer", "minimum": -100, "maximum": 100 }

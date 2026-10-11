@@ -13,7 +13,8 @@ Symbol = Annotated[str, Field(pattern=r"^[A-Z][A-Z.]{0,5}$")]
 Score = Annotated[int, Field(ge=-100, le=100)]
 Source = Literal["analysts", "news", "reddit"]
 Label = Literal["bullish", "neutral", "bearish"]
-Direction = Literal["up", "down"]
+Move = Literal["large", "quiet"]
+TaskName = Literal["direction", "move"]
 
 
 class Contract(BaseModel):
@@ -29,7 +30,7 @@ class Ticker(Contract):
 
 
 class Tickers(Contract):
-    schema_version: Literal["1.0"]
+    schema_version: Literal["1.1"]
     tickers: list[Ticker] = Field(min_length=1)
 
 
@@ -50,8 +51,9 @@ class PricePoint(Contract):
 
 class Forecast(Contract):
     horizon_days: Literal[5]
-    direction: Direction
-    prob_up: float = Field(ge=0, le=1)
+    move: Move
+    prob_large: float = Field(ge=0, le=1)
+    typical_move_pct: float = Field(gt=0)
     confidence: float = Field(ge=0.5, le=1)
     made_at: AwareDatetime
     as_of_date: date
@@ -96,7 +98,7 @@ class Headline(Contract):
 
 
 class Stock(Contract):
-    schema_version: Literal["1.0"]
+    schema_version: Literal["1.1"]
     symbol: Symbol
     name: str = Field(min_length=1)
     generated_at: AwareDatetime
@@ -166,7 +168,7 @@ class ModelMetrics(Contract):
 
 
 class Baseline(Contract):
-    name: Literal["always_up", "previous_direction"]
+    name: Literal["always_quiet", "previous_move"]
     directional_accuracy: Rate
 
 
@@ -191,10 +193,11 @@ class ModelVersion(Contract):
     gate_passed: bool
     status: Literal["production", "archived", "rejected"]
     mlflow_run_id: str | None
+    task: TaskName
 
 
 class Model(Contract):
-    schema_version: Literal["1.0"]
+    schema_version: Literal["1.1"]
     generated_at: AwareDatetime
     is_demo_data: bool
     production: ProductionModel | None
@@ -223,18 +226,19 @@ class ForecastRow(Contract):
     as_of_date: date
     target_date: date
     horizon_days: Literal[5]
-    direction: Direction
-    prob_up: Rate
+    move: Move
+    prob_large: Rate
+    typical_move_pct: float = Field(gt=0)
     model_version: Version
     origin: Literal["backtest", "live"]
     status: Literal["pending", "resolved"]
-    actual_direction: Direction | None
+    actual_move: Move | None
     actual_return_pct: float | None
     result: Literal["hit", "miss"] | None
 
 
 class Forecasts(Contract):
-    schema_version: Literal["1.0"]
+    schema_version: Literal["1.1"]
     generated_at: AwareDatetime
     is_demo_data: bool
     summary: ForecastSummary
