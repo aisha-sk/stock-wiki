@@ -27,21 +27,25 @@ API, [@SubaitaM](https://github.com/SubaitaM) on data, sentiment and the forecas
 
 ## What we measured
 
-From the artifacts generated on 2026-10-10. The live numbers are on the Model performance page.
+From the artifacts generated on 2026-10-11 UTC. The live numbers are on the Model performance
+page. How each one is computed: [docs/METHODOLOGY.md](docs/METHODOLOGY.md).
+
+The model estimates whether the next 5 sessions will be a larger move than usual, in either
+direction.
 
 | Measure | Result |
 |---|---|
-| Directional accuracy, best version (XGBoost) | 49.6% over 672 out-of-sample forecasts |
-| Baseline: always predict "up" | 52.5% |
-| Baseline: repeat the previous direction | 47.5% |
-| Model versions trained | 7 |
-| Versions that passed the 52% quality gate | 0 |
-| Forecast log | 91 of 180 resolved forecasts correct (50.6%), 3 pending |
+| Accuracy, current version (XGBoost) | 53.7% over 672 out-of-sample forecasts |
+| Baseline: always predict a quiet week | 55.7% |
+| Baseline: repeat the previous week's move size | 55.5% |
+| Model versions trained | 8 |
+| Versions that passed the quality gate | 0 |
+| Forecast log | 92 of 180 resolved forecasts correct (51.1%), 3 pending |
 
-**The model does not beat always guessing "up", so no version passed the gate and the site
-serves no forecast.** That is the system working as designed. Five-day direction is close to a
-coin flip, the gate was fixed before any result existed, and a model that fails its own test
-does not get shown as if it had passed.
+**The model clears 52% but does not beat always guessing a quiet week, so it failed the gate
+and the site serves no forecast.** That is the system working as designed. The gate was fixed
+before the result existed, and a model that fails its own test is not shown as if it had
+passed.
 
 ![The model performance page: accuracy beside its baselines and a "No production model" status](docs/img/model.jpg)
 
@@ -56,9 +60,10 @@ ml/  ──▶  data/artifacts/*.json  ──▶  api/ (FastAPI)  ──▶  web
 1. **Collect.** The pipeline pulls daily prices, news headlines and analyst ratings.
 2. **Score.** FinBERT scores each headline from -100 (bearish) to +100 (bullish). Analyst
    scores come from buy, hold and sell counts, and are labelled as a ratings consensus.
-3. **Forecast.** Logistic regression and XGBoost are trained with walk-forward validation, so
-   the model is only ever tested on days it has not seen. Runs are tracked in MLflow.
-4. **Gate.** A version serves forecasts only if its directional accuracy reaches 52%.
+3. **Forecast.** XGBoost is trained with walk-forward validation, so the model is only ever
+   tested on days it has not seen. Runs are tracked in MLflow.
+4. **Gate.** A version serves forecasts only if its accuracy reaches 52% and beats always
+   predicting a quiet week.
 5. **Publish.** The pipeline writes four kinds of JSON file. The API serves them unchanged and
    the web app renders them.
 
@@ -119,21 +124,22 @@ If you work with an AI coding agent, it reads [AGENTS.md](AGENTS.md).
 ## Limitations
 
 - **Reddit is not in the data.** Reddit ingestion is written and leaves the source out when
-  Reddit refuses a request. Every stock currently shows analysts and news only; we have not
-  confirmed the cause.
-- **Three stocks.** TSLA, NVDA and AAPL. The sample is small, and the Sharpe ratio on the Model
-  performance page is noisy for that reason.
+  Reddit refuses a request. Every run on 2026-10-10 got HTTP 429 (rate limited), so every
+  stock currently shows analysts and news only.
+- **Three stocks.** TSLA, NVDA and AAPL. The sample is small: with 672 test forecasts the margin
+  of error is about ±4 points, so the model and both baselines are not clearly apart.
 - **Headlines only.** Sentiment is scored from titles, not article text.
 - **The track record is a backtest for now.** A live five-day forecast needs five trading days
   to resolve, so the hit-and-miss rows are out-of-sample test predictions and are labelled so.
 - **Alerts are stored, not sent.** No email leaves the system.
 - **The data is a snapshot.** It is whatever the pipeline last published to `main`.
-- **Duplicate model versions.** Versions 4 to 7 in the registry are identical reruns.
+- **Duplicate model versions.** Versions 4 to 7 in the registry are identical reruns, kept
+  because the registry is append-only. The pipeline now skips identical reruns.
 
 ## What we would do next
 
 - Run the pipeline on a schedule, so data stays fresh and live forecasts accumulate
-- Train on more stocks and more history, and require a version to beat always-up as well
+- Train on more stocks and more history
 - Get Reddit working, or replace it with another retail source
 - Send real alert emails, and move sign-ups from SQLite to Postgres
 - Hand-label headlines to measure the sentiment scorer itself
