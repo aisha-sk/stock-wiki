@@ -326,14 +326,14 @@ Response `200`:
   "symbol": "TSLA",
   "answer": "Analysts are reacting to delivery numbers, while Reddit threads focus on margins…",
   "citations": [ { "headline_id": "3f2a9c1b7e10", "title": "Regulators open a review into driver-assist claims", "url": "https://example.com/…" } ],
-  "model": "claude-sonnet-5-5",
+  "model": "claude-opus-5-5",
   "generated_at": "2026-10-10T18:00:00Z"
 }
 ```
 
 Every `headline_id` must exist in that symbol's `headlines`. An answer with zero citations is
 returned as `503 data_unavailable`. Without `ANTHROPIC_API_KEY` the endpoint returns `503` and the
-UI hides the panel.
+UI replaces the panel with a note that the explainer is not set up.
 
 ## 4. Changing the contract
 

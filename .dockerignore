@@ -1,4 +1,4 @@
-# The API image needs api/app, contracts and data/artifacts. Keep everything else out.
+# The API image needs api/app, agent, contracts and data/artifacts. Keep everything else out.
 .git
 .github
 .claude

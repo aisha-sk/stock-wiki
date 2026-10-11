@@ -235,6 +235,20 @@ export interface AlertResponse extends AlertRequest {
   delivery: "mock" | "email";
 }
 
+export interface Citation {
+  headline_id: string;
+  title: string;
+  url: string | null;
+}
+
+export interface Explanation {
+  symbol: string;
+  answer: string;
+  citations: Citation[];
+  model: string;
+  generated_at: string;
+}
+
 export interface AlertPreview {
   symbol: string;
   subject: string;
