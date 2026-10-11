@@ -11,7 +11,7 @@ from pydantic import BaseModel, ValidationError
 from .errors import DataUnavailable, NotFound
 from .schemas import Forecasts, Model, Stock, Tickers
 
-log = logging.getLogger("sentifi.api")
+log = logging.getLogger("stocksense.api")
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_DATA_DIR = "contracts/examples"

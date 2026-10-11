@@ -102,7 +102,7 @@ These are settled so nobody burns an hour on them. Change one only by telling th
 
 | Topic | Decision | Why |
 |---|---|---|
-| Name | Product is "SentiFi" in the UI. Repo is `stock-wiki`. | Matches the mock. |
+| Name | Product is "StockSense" in the UI (renamed from "SentiFi" on Oct 10). Repo is `stock-wiki`; the Render service keeps the name `sentifi-api`. | Chosen by both people. |
 | Tickers | TSLA first, then NVDA and AAPL | Matches the mock. One high-drama name, two calmer ones. |
 | Web | Next.js (App Router, TypeScript), Tailwind, Recharts | Fast to build, deploys to Vercel in minutes. |
 | API | FastAPI, Pydantic v2, thin file-serving layer | Python on both sides of the artifact files. |

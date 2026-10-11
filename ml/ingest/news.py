@@ -204,7 +204,7 @@ def fetch_yfinance(symbol: str) -> list[dict]:
 def fetch_google_news(symbol: str) -> list[dict]:
     import feedparser
 
-    feedparser.USER_AGENT = "sentifi-research/0.1"
+    feedparser.USER_AGENT = "stocksense-research/0.1"
     parsed = feedparser.parse(
         "https://news.google.com/rss/search"
         f"?q={symbol}+when:14d&hl=en-US&gl=US&ceid=US:en"
@@ -328,7 +328,7 @@ def _google_news_between(symbol: str, start: date, end: date) -> list[dict]:
 
     before = (pd.Timestamp(end) + pd.Timedelta(days=1)).strftime("%Y-%m-%d")
     after = pd.Timestamp(start).strftime("%Y-%m-%d")
-    feedparser.USER_AGENT = "sentifi-research/0.1"
+    feedparser.USER_AGENT = "stocksense-research/0.1"
     parsed = feedparser.parse(
         "https://news.google.com/rss/search"
         f"?q={symbol}+after:{after}+before:{before}&hl=en-US&gl=US&ceid=US:en"

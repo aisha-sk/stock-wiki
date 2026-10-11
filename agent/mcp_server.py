@@ -1,4 +1,4 @@
-"""MCP server over SentiFi's own data: sentiment, headlines, forecasts and the track record.
+"""MCP server over StockSense's own data: sentiment, headlines, forecasts and the track record.
 
     python -m agent.mcp_server            # stdio, reads DATA_DIR (default: the demo fixtures)
 
@@ -15,9 +15,9 @@ from mcp.server.mcpserver.exceptions import ToolError
 from . import tools
 
 server = MCPServer(
-    "sentifi",
+    "stocksense",
     instructions=(
-        "Read-only access to SentiFi: how analysts, news media and Reddit feel about a stock "
+        "Read-only access to StockSense: how analysts, news media and Reddit feel about a stock "
         "(scores from -100 bearish to 100 bullish), the headlines behind each score, the model's "
         "5-day large-move forecast and its public track record. Nothing here is financial advice."
     ),

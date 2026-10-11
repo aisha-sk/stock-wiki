@@ -38,6 +38,6 @@ off the screen.
 
 | Problem | Do |
 |---|---|
-| "Can't reach the SentiFi API" | The API is asleep or stopped. Wait a few seconds and click Retry. |
+| "Can't reach the StockSense API" | The API is asleep or stopped. Wait a few seconds and click Retry. |
 | Fonts or colours look wrong locally | Stop the web server, delete `web/.next`, start it again. |
 | The "Why do they disagree?" panel says it is not set up | Expected without an Anthropic key. Skip it. |

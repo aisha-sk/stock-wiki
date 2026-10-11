@@ -7,7 +7,7 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
-log = logging.getLogger("sentifi.api")
+log = logging.getLogger("stocksense.api")
 
 CODE_FOR_STATUS = {404: "not_found", 422: "validation_error", 503: "data_unavailable"}
 

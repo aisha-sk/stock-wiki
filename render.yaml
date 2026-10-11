@@ -2,6 +2,8 @@
 # The web app is deployed separately on Vercel (see docs/DEPLOY.md).
 services:
   - type: web
+    # Kept as sentifi-api: the product is now StockSense, but renaming a Render service
+    # creates a new one with a new URL.
     name: sentifi-api
     runtime: docker
     plan: free
@@ -11,5 +13,5 @@ services:
     autoDeploy: true
     envVars:
       - key: CORS_ORIGINS
-        # Set to the Vercel URL of the web app, for example https://sentifi.vercel.app
+        # Set to the Vercel URL of the web app, for example https://stock-wiki-xi.vercel.app
         sync: false

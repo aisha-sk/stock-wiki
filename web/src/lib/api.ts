@@ -32,7 +32,7 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
   try {
     response = await fetch(`${API_URL}${path}`, init);
   } catch {
-    throw new ApiError(0, "network_error", "Can't reach the SentiFi API.");
+    throw new ApiError(0, "network_error", "Can't reach the StockSense API.");
   }
   const body: unknown = await response.json().catch(() => null);
   if (!response.ok) {

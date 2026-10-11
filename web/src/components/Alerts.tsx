@@ -130,7 +130,7 @@ function SignUpForm({ symbol }: { symbol: string }) {
       {otherFailure && (
         <p role="alert" className="rounded-lg border border-bear px-4 py-3 text-[15px] text-bear">
           {otherFailure.code === "network_error"
-            ? "Can't reach the SentiFi API. Your alert was not created."
+            ? "Can't reach the StockSense API. Your alert was not created."
             : `Your alert was not created. ${otherFailure.message}`}
         </p>
       )}

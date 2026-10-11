@@ -6,7 +6,7 @@ produces or consumes JSON.
 
 ## What this project is
 
-SentiFi shows how three groups feel about a stock (Wall Street analysts, news media, Reddit),
+StockSense shows how three groups feel about a stock (Wall Street analysts, news media, Reddit),
 how far apart they are, and a model's 5-day direction forecast with its public track record.
 Three tabs: Dashboard, Model performance, Alerts.
 

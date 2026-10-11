@@ -69,7 +69,12 @@ function ProductWindow({ stock }: { stock: Stock }) {
         </div>
       </div>
       <div className="p-4 text-left sm:p-6">
-        <SentimentCard symbol={stock.symbol} sentiment={stock.sentiment} headlines={stock.headlines} />
+        <SentimentCard
+          symbol={stock.symbol}
+          sentiment={stock.sentiment}
+          headlines={stock.headlines}
+          maxHeadlines={3}
+        />
       </div>
     </div>
   );
@@ -145,7 +150,7 @@ function EmailCard({ preview }: { preview: AlertPreview }) {
         <span aria-hidden="true" className="flex size-8 items-center justify-center rounded-full bg-ink text-white">
           S
         </span>
-        SentiFi alerts
+        StockSense alerts
       </div>
       <div className="font-display text-xl font-medium">{preview.subject}</div>
       {preview.body_lines.map((line) => (
@@ -226,7 +231,7 @@ function Scorecard({ model, forecasts }: { model: Model; forecasts: Forecasts })
           <p className="mt-5 max-w-[60ch] text-lg leading-relaxed text-ink-soft">
             {model.production
               ? `${model.production.model_name} ${formatVersion(model.production.version)} passed the gate and is serving forecasts. `
-              : "Right now no version has passed the gate, so SentiFi shows no forecast at all. We would rather show nothing than a guess that failed its own test. "}
+              : "Right now no version has passed the gate, so StockSense shows no forecast at all. We would rather show nothing than a guess that failed its own test. "}
             Predicting five days ahead is close to a coin flip, and the numbers below say so.
           </p>
         </Reveal>
@@ -281,7 +286,7 @@ export function Landing() {
           Wall Street says one thing. <em>The headlines say another.</em>
         </h1>
         <p className="mx-auto mt-6 max-w-[58ch] text-lg leading-relaxed text-muted sm:text-xl">
-          SentiFi shows how each group feels about a stock and how far apart they are. Then it forecasts the
+          StockSense shows how each group feels about a stock and how far apart they are. Then it forecasts the
           next five days and grades itself in public.
         </p>
         <div className="mt-9 flex flex-wrap justify-center gap-3">

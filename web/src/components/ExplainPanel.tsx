@@ -23,7 +23,7 @@ export function ExplainPanel({ symbol }: { symbol: string }) {
       const message =
         cause instanceof ApiError && cause.code !== "network_error"
           ? cause.message
-          : "Can't reach the SentiFi API.";
+          : "Can't reach the StockSense API.";
       setState({ status: "unavailable", message });
     }
   }

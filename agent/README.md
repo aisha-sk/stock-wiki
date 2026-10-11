@@ -1,6 +1,6 @@
 # agent
 
-Two things built on SentiFi's own published data. Both are read-only.
+Two things built on StockSense's own published data. Both are read-only.
 
 | File | What it is | Needs a key |
 |---|---|---|
@@ -26,7 +26,7 @@ It speaks MCP over stdio. To use it from Claude Code, add this to `.mcp.json` in
 ```json
 {
   "mcpServers": {
-    "sentifi": {
+    "stocksense": {
       "command": "python",
       "args": ["-m", "agent.mcp_server"],
       "env": { "DATA_DIR": "data/artifacts" }
@@ -35,7 +35,7 @@ It speaks MCP over stdio. To use it from Claude Code, add this to `.mcp.json` in
 }
 ```
 
-Then ask, for example, "Using sentifi, why do analysts and the news disagree about NVDA?"
+Then ask, for example, "Using stocksense, why do analysts and the news disagree about NVDA?"
 
 `DATA_DIR` defaults to `contracts/examples` (demo data), the same as the API.
 

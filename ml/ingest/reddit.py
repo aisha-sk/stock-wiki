@@ -19,7 +19,7 @@ def fetch_reddit(symbol: str, company_name: str) -> list[dict] | None:
     ``None`` tells the publisher to omit the source. A 429 is not retried.
     """
     read_api_key()
-    agent = os.environ.get("REDDIT_USER_AGENT", "sentifi-research/0.1").strip() or "sentifi-research/0.1"
+    agent = os.environ.get("REDDIT_USER_AGENT", "stocksense-research/0.1").strip() or "stocksense-research/0.1"
     documents: list[dict] = []
     for subreddit in SUBREDDITS:
         time.sleep(_PAUSE_SECONDS)

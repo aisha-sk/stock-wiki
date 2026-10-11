@@ -1,4 +1,4 @@
-"""SentiFi API. GET responses are the artifact files in DATA_DIR, unchanged."""
+"""StockSense API. GET responses are the artifact files in DATA_DIR, unchanged."""
 
 import os
 from typing import Annotated
@@ -28,7 +28,7 @@ load_dotenv(store.REPO_ROOT / ".env")
 
 API_VERSION = "1.0"
 
-app = FastAPI(title="SentiFi API", version=API_VERSION)
+app = FastAPI(title="StockSense API", version=API_VERSION)
 errors.install(app)
 
 origins = [o.strip() for o in os.environ.get("CORS_ORIGINS", "http://localhost:3000").split(",")]
