@@ -12,7 +12,7 @@ take up to a minute)
 > Research and education only. Nothing here is financial advice, and past forecasts do not
 > guarantee future results.
 
-![The landing page: a headline, two buttons, and the live sentiment spectrum for NVDA](docs/img/landing.jpg)
+<img src="docs/img/landing.jpg" width="460" alt="The landing page: a serif headline, two buttons, and a product window showing NVDA's analyst score and news headlines">
 
 Built in 24 hours by two people: [@aisha-sk](https://github.com/aisha-sk) on the web app and
 API, [@SubaitaM](https://github.com/SubaitaM) on data, sentiment and the forecasting model.
@@ -22,11 +22,11 @@ API, [@SubaitaM](https://github.com/SubaitaM) on data, sentiment and the forecas
 | Page | Question it answers |
 |---|---|
 | Landing (`/`) | What is this, and why should I care? Built from live data, not mock-ups. |
-| Dashboard | What is going on with this stock right now? Price, each group's sentiment on one scale, the gap between them, and the headlines behind each score. |
+| Dashboard | What is going on with this stock right now? Price, what analysts, news and Reddit each say, and the headlines behind each score. |
 | Model performance | Can I trust the forecasts? Accuracy beside trivial baselines, every model version and whether it passed the quality gate, and a hit-and-miss log. |
 | Alerts | Tell me when the story changes. Sign up for a stock and a trigger, and preview the email. |
 
-![The dashboard for NVDA: price chart, forecast card and the sentiment spectrum](docs/img/dashboard.jpg)
+<img src="docs/img/dashboard.jpg" width="460" alt="The dashboard for NVDA: price chart, a card reading No forecast, and the start of the sentiment section">
 
 ## What we measured
 
@@ -50,7 +50,7 @@ and the site serves no forecast.** That is the system working as designed. The g
 before the result existed, and a model that fails its own test is not shown as if it had
 passed.
 
-![The model performance page: accuracy beside its baselines and a "No production model" status](docs/img/model.jpg)
+<img src="docs/img/model.jpg" width="460" alt="The model performance page: 53.7% accuracy beside its baselines, and a No production model status">
 
 ## How it works
 

@@ -16,7 +16,8 @@ _DOCUMENT_KEYS = ("id", "source", "publisher", "title", "url", "published_at")
 _JUNK_TITLE = re.compile(
     r"stock price, news, quote and history"
     r"|\b[A-Z]{1,6}\d{6}[CP]\d{8}\b"
-    r"|\b\d+(?:\.\d+)?\s+(?:put|call)\b",
+    r"|\b\d+(?:\.\d+)?\s+(?:put|call)\b"
+    r"|\boptions?\s+chain\b",
     re.IGNORECASE,
 )
 
