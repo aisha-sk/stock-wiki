@@ -7,6 +7,7 @@ import { ForecastCard } from "./ForecastCard";
 import { HeadlinesCard } from "./HeadlinesCard";
 import { QuoteCard } from "./QuoteCard";
 import { SentimentCard } from "./SentimentCard";
+import { ExplainPanel } from "./ExplainPanel";
 import { ErrorCard } from "./ui/ErrorCard";
 import { Loading, Skeleton } from "./ui/Skeleton";
 
@@ -41,6 +42,7 @@ export function Dashboard() {
         <ForecastCard symbol={stock.data.symbol} forecast={stock.data.forecast} />
       </div>
       <SentimentCard symbol={stock.data.symbol} sentiment={stock.data.sentiment} />
+      {stock.data.sentiment.gap && <ExplainPanel key={stock.data.symbol} symbol={stock.data.symbol} />}
       <HeadlinesCard headlines={stock.data.headlines} />
     </div>
   );

@@ -268,3 +268,27 @@ class AlertPreview(Contract):
     subject: str
     body_lines: list[str]
     is_demo_data: bool
+
+
+# --- explain (optional, needs an Anthropic credential on the server) -----
+
+
+class ExplainRequest(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    symbol: str = Field(min_length=1, max_length=6)
+    question: str = Field(min_length=1, max_length=500)
+
+
+class Citation(Contract):
+    headline_id: str
+    title: str
+    url: str | None
+
+
+class ExplainResponse(Contract):
+    symbol: str
+    answer: str
+    citations: list[Citation]
+    model: str
+    generated_at: AwareDatetime

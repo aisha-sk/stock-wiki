@@ -8,13 +8,15 @@ from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from . import alerts, errors, store
+from . import alerts, errors, explainer, store
 from .errors import DataUnavailable
 from .schemas import (
     AlertPreview,
     AlertRequest,
     AlertResponse,
     ErrorBody,
+    ExplainRequest,
+    ExplainResponse,
     Forecasts,
     Health,
     Model,
@@ -97,3 +99,9 @@ def create_alert(body: AlertRequest) -> JSONResponse:
 @app.get("/api/alerts/preview", response_model=AlertPreview, responses=NOT_FOUND | INVALID | UNAVAILABLE)
 def get_alert_preview(symbol: str) -> JSONResponse:
     return JSONResponse(alerts.preview(store.stock(symbol)))
+
+
+@app.post("/api/explain", response_model=ExplainResponse, responses=NOT_FOUND | INVALID | UNAVAILABLE)
+def explain(body: ExplainRequest) -> JSONResponse:
+    stock = store.stock(body.symbol)
+    return JSONResponse(explainer.answer(stock["symbol"], body.question.strip(), stock["generated_at"]))

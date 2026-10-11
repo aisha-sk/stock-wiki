@@ -3,6 +3,7 @@ import type {
   AlertRequest,
   AlertResponse,
   ErrorCode,
+  Explanation,
   Forecasts,
   Health,
   Model,
@@ -63,6 +64,13 @@ export function getForecasts(params: { symbol?: string; limit?: number } = {}) {
 
 export const getAlertPreview = (symbol: string) =>
   request<AlertPreview>(`/api/alerts/preview?symbol=${encodeURIComponent(symbol)}`);
+
+export const explain = (symbol: string, question: string) =>
+  request<Explanation>("/api/explain", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ symbol, question }),
+  });
 
 export const createAlert = (body: AlertRequest) =>
   request<AlertResponse>("/api/alerts", {
