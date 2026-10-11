@@ -118,8 +118,9 @@ If you work with an AI coding agent, it reads [AGENTS.md](AGENTS.md).
 
 ## Limitations
 
-- **Reddit is not live.** Reddit ingestion is written, but Reddit refused the requests when the
-  current data was built, so every stock shows analysts and news only.
+- **Reddit is not in the data.** Reddit ingestion is written and leaves the source out when
+  Reddit refuses a request. Every stock currently shows analysts and news only; we have not
+  confirmed the cause.
 - **Three stocks.** TSLA, NVDA and AAPL. The sample is small, and the Sharpe ratio on the Model
   performance page is noisy for that reason.
 - **Headlines only.** Sentiment is scored from titles, not article text.

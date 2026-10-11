@@ -29,7 +29,7 @@ off the screen.
 | Question | Answer |
 |---|---|
 | "So the model doesn't work?" | "It doesn't beat a trivial baseline, and the site says so. Five-day direction is close to a coin flip. What we built is the pipeline that measures that honestly: walk-forward validation, a fixed gate, a public log." |
-| "Where's Reddit?" | "The ingestion is written, but Reddit refused our requests when this data was built. We left the source out instead of inventing a score." |
+| "Where's Reddit?" | "The ingestion is written, but Reddit is missing from this data, most likely because it refused our requests. We leave a source out instead of inventing a score." |
 | "Is the data live?" | "It is real data from the last pipeline run. It is not yet refreshed on a schedule." |
 | "What did the AI agents do?" | "Each of us worked with a coding agent. We fixed a JSON contract first, with a validator, so the two sides could be built separately and still fit." |
 | "What's the MCP server?" | "It lets an AI assistant query our sentiment and track record directly. Same data as the site." |
