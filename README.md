@@ -12,7 +12,7 @@ take up to a minute)
 > Research and education only. Nothing here is financial advice, and past forecasts do not
 > guarantee future results.
 
-<img src="docs/img/landing.jpg" width="460" alt="The landing page: a serif headline, two buttons, and a product window showing NVDA's analyst score and news headlines">
+<img src="docs/img/landing.jpg" width="420" alt="The landing page: a serif headline, two buttons, and a product window showing NVDA's analyst score and news headlines">
 
 Built in 24 hours by two people: [@aisha-sk](https://github.com/aisha-sk) on the web app and
 API, [@SubaitaM](https://github.com/SubaitaM) on data, sentiment and the forecasting model.
@@ -26,7 +26,7 @@ API, [@SubaitaM](https://github.com/SubaitaM) on data, sentiment and the forecas
 | Model performance | Can I trust the forecasts? Accuracy beside trivial baselines, every model version and whether it passed the quality gate, and a hit-and-miss log. |
 | Alerts | Tell me when the story changes. Sign up for a stock and a trigger, and preview the email. |
 
-<img src="docs/img/dashboard.jpg" width="460" alt="The dashboard for NVDA: price chart, a card reading No forecast, and the start of the sentiment section">
+<img src="docs/img/dashboard.jpg" width="420" alt="The dashboard for NVDA: price chart, a card reading No forecast, and the start of the sentiment section">
 
 ## What we measured
 
@@ -50,7 +50,7 @@ rejected under the rule in force when it ran, which also required beating that b
 the site serves no forecast until the pipeline runs again. The gate is now 52% alone; see
 [docs/METHODOLOGY.md](docs/METHODOLOGY.md#5-the-gate).
 
-<img src="docs/img/model.jpg" width="460" alt="The model performance page: 53.7% accuracy beside its baselines, and a No production model status">
+<img src="docs/img/model.jpg" width="420" alt="The model performance page: 53.7% accuracy beside its baselines, and a No production model status">
 
 ## How it works
 
