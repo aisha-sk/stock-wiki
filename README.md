@@ -2,61 +2,138 @@
 
 [![CI](https://github.com/aisha-sk/stock-wiki/actions/workflows/ci.yml/badge.svg)](https://github.com/aisha-sk/stock-wiki/actions/workflows/ci.yml)
 
-A weather app for how people feel about a stock. Pick a ticker and see how Wall Street
-analysts, news media and Reddit each read it, how far apart they are, and a model's 5-day
-direction forecast with its track record in the open, misses included.
+**SentiFi** shows how different groups feel about a stock, how far apart they are, and what a
+model makes of the next five trading days. Then it grades its own forecasts in public, misses
+included.
 
 > Research and education only. Nothing here is financial advice, and past forecasts do not
 > guarantee future results.
 
-**Status:** 24-hour build in progress. The contract and plan are settled; the app is being built.
+![The landing page: a headline, two buttons, and the live sentiment spectrum for NVDA](docs/img/landing.jpg)
 
-## The three tabs
+Built in 24 hours by two people: [@aisha-sk](https://github.com/aisha-sk) on the web app and
+API, [@SubaitaM](https://github.com/SubaitaM) on data, sentiment and the forecasting model.
 
-| Tab | Question it answers |
+## What it does
+
+| Page | Question it answers |
 |---|---|
-| Dashboard | What is going on with this stock right now? Price, forecast, sentiment spectrum, headlines. |
-| Model performance | Can I trust the forecasts? Accuracy against baselines, the version registry, a Hit/Miss log. |
-| Alerts | Tell me when the story changes. Sign up for an email when sentiment shifts. |
+| Landing (`/`) | What is this, and why should I care? Built from live data, not mock-ups. |
+| Dashboard | What is going on with this stock right now? Price, each group's sentiment on one scale, the gap between them, and the headlines behind each score. |
+| Model performance | Can I trust the forecasts? Accuracy beside trivial baselines, every model version and whether it passed the quality gate, and a hit-and-miss log. |
+| Alerts | Tell me when the story changes. Sign up for a stock and a trigger, and preview the email. |
 
-## How it fits together
+![The dashboard for NVDA: price chart, forecast card and the sentiment spectrum](docs/img/dashboard.jpg)
+
+## What we measured
+
+From the artifacts generated on 2026-10-10. The live numbers are on the Model performance page.
+
+| Measure | Result |
+|---|---|
+| Directional accuracy, best version (XGBoost) | 49.6% over 672 out-of-sample forecasts |
+| Baseline: always predict "up" | 52.5% |
+| Baseline: repeat the previous direction | 47.5% |
+| Model versions trained | 7 |
+| Versions that passed the 52% quality gate | 0 |
+| Forecast log | 91 of 180 resolved forecasts correct (50.6%), 3 pending |
+
+**The model does not beat always guessing "up", so no version passed the gate and the site
+serves no forecast.** That is the system working as designed. Five-day direction is close to a
+coin flip, the gate was fixed before any result existed, and a model that fails its own test
+does not get shown as if it had passed.
+
+![The model performance page: accuracy beside its baselines and a "No production model" status](docs/img/model.jpg)
+
+## How it works
 
 ```
 ml/  ──▶  data/artifacts/*.json  ──▶  api/ (FastAPI)  ──▶  web/ (Next.js)
+                    │
+                    └──▶  agent/ (MCP server, explain agent)
 ```
 
-The ML pipeline writes four kinds of JSON file. The API serves them. The web app renders them.
-The file shapes are fixed in [docs/CONTRACT.md](docs/CONTRACT.md), and `contracts/examples`
-holds fake versions so each side can be built without the other.
+1. **Collect.** The pipeline pulls daily prices, news headlines and analyst ratings.
+2. **Score.** FinBERT scores each headline from -100 (bearish) to +100 (bullish). Analyst
+   scores come from buy, hold and sell counts, and are labelled as a ratings consensus.
+3. **Forecast.** Logistic regression and XGBoost are trained with walk-forward validation, so
+   the model is only ever tested on days it has not seen. Runs are tracked in MLflow.
+4. **Gate.** A version serves forecasts only if its directional accuracy reaches 52%.
+5. **Publish.** The pipeline writes four kinds of JSON file. The API serves them unchanged and
+   the web app renders them.
+
+The two lanes meet at exactly one place, the JSON shapes in
+[docs/CONTRACT.md](docs/CONTRACT.md). `scripts/validate_contracts.py` checks any data folder
+against it, and CI runs that on every pull request.
+
+## Run it locally
+
+You need Python 3.11 and Node 20. From the repo root:
+
+```bash
+python3 -m venv api/.venv && api/.venv/bin/pip install -r api/requirements.txt
+```
+
+```bash
+DATA_DIR=data/artifacts api/.venv/bin/uvicorn app.main:app --app-dir api --port 8000
+```
+
+In a second terminal:
+
+```bash
+cd web && npm install && npm run dev
+```
+
+Open http://localhost:3000. Leave out `DATA_DIR=data/artifacts` to run on the demo fixtures;
+the site then shows a "Demo data" badge.
+
+To rebuild the data yourself, see `ml/README.md`. To deploy, see
+[docs/DEPLOY.md](docs/DEPLOY.md).
+
+## The agent and the MCP server
+
+Both are optional and read only the published data. Details in [agent/README.md](agent/README.md).
+
+- **Explain agent.** The dashboard's "Why do they disagree?" panel asks Claude to explain the
+  gap for one stock. An answer is only returned if every headline it cites is one we published.
+  It needs `ANTHROPIC_API_KEY` on the server, and each answer costs money. Without a key the
+  panel says the explainer is not set up.
+- **MCP server.** `python -m agent.mcp_server` lets an MCP client such as Claude Code query
+  sentiment, headlines, forecasts and the track record. No key needed.
 
 ## Repo layout
 
 | Path | What | Owner |
 |---|---|---|
-| `web/` | Next.js dashboard | SWE |
-| `api/` | FastAPI service | SWE |
+| `web/` | Next.js app: landing page, dashboard, model performance, alerts | SWE |
+| `api/` | FastAPI service, alert sign-ups, Dockerfile | SWE |
 | `ml/` | Ingestion, sentiment scoring, forecasting model, MLflow, quality gate | DS/ML |
 | `data/artifacts/` | Real pipeline output, served by the API | DS/ML |
-| `agent/` | Stretch: MCP server and the "explain this gap" agent | Agent |
+| `agent/` | MCP server and the explain agent | SWE |
 | `contracts/` | JSON Schemas and example payloads | Shared |
 | `scripts/validate_contracts.py` | Checks any data directory against the contract | Shared |
-| `design/` | The original UI mock | Reference |
-| `docs/` | [Contract](docs/CONTRACT.md), [plan](docs/PLAN.md) | Shared |
+| `docs/` | [Contract](docs/CONTRACT.md), [plan](docs/PLAN.md), [deploy](docs/DEPLOY.md), [demo script](docs/DEMO.md), [status](docs/STATUS.md) | Shared |
 
-## Start here
+If you work with an AI coding agent, it reads [AGENTS.md](AGENTS.md).
 
-```bash
-git clone git@github.com:aisha-sk/stock-wiki.git
-```
+## Limitations
 
-```bash
-pip install "jsonschema[format]"
-```
+- **Reddit is not in the data.** Reddit ingestion is written and leaves the source out when
+  Reddit refuses a request. Every stock currently shows analysts and news only; we have not
+  confirmed the cause.
+- **Three stocks.** TSLA, NVDA and AAPL. The sample is small, and the Sharpe ratio on the Model
+  performance page is noisy for that reason.
+- **Headlines only.** Sentiment is scored from titles, not article text.
+- **The track record is a backtest for now.** A live five-day forecast needs five trading days
+  to resolve, so the hit-and-miss rows are out-of-sample test predictions and are labelled so.
+- **Alerts are stored, not sent.** No email leaves the system.
+- **The data is a snapshot.** It is whatever the pipeline last published to `main`.
+- **Duplicate model versions.** Versions 4 to 7 in the registry are identical reruns.
 
-```bash
-python scripts/validate_contracts.py
-```
+## What we would do next
 
-That last command should print `OK`. Then read [docs/PLAN.md](docs/PLAN.md) for your tickets
-and [docs/CONTRACT.md](docs/CONTRACT.md) for the data shapes. If you work with an AI coding
-agent, it reads [AGENTS.md](AGENTS.md).
+- Run the pipeline on a schedule, so data stays fresh and live forecasts accumulate
+- Train on more stocks and more history, and require a version to beat always-up as well
+- Get Reddit working, or replace it with another retail source
+- Send real alert emails, and move sign-ups from SQLite to Postgres
+- Hand-label headlines to measure the sentiment scorer itself
