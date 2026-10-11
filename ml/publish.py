@@ -204,6 +204,46 @@ def build_forecast_rows(
     return rows
 
 
+def merge_live_log(
+    previous: list[dict], rows: list[dict], prices: dict[str, pd.DataFrame]
+) -> list[dict]:
+    """Keep every earlier live row, add new ones by ``id``, resolve pending rows that have a close.
+
+    An existing live row's prediction fields are never rewritten; only its outcome is filled in.
+    """
+    closes = {
+        symbol: frame.assign(day=frame["date"].map(_date)).set_index("day")["close"]
+        for symbol, frame in prices.items()
+    }
+    kept: list[dict] = []
+    for row in previous:
+        if row.get("origin") != "live":
+            continue
+        row = dict(row)
+        close = closes.get(row["symbol"])
+        if (
+            row["status"] == "pending"
+            and close is not None
+            and row["as_of_date"] in close.index
+            and row["target_date"] in close.index
+        ):
+            actual = round(
+                (float(close[row["target_date"]]) / float(close[row["as_of_date"]]) - 1) * 100, 4
+            )
+            actual_move = "large" if abs(actual) > row["typical_move_pct"] else "quiet"
+            row.update(
+                status="resolved",
+                actual_move=actual_move,
+                actual_return_pct=actual,
+                result="hit" if row["move"] == actual_move else "miss",
+            )
+        kept.append(row)
+    known = {row["id"] for row in kept}
+    merged = kept + [row for row in rows if row["id"] not in known]
+    merged.sort(key=lambda row: row["as_of_date"], reverse=True)
+    return merged
+
+
 def write_artifacts(
     out_dir: Path,
     *,
@@ -230,11 +270,13 @@ def write_artifacts(
     mlflow_run_id: str | None = None,
     prior_versions: list[dict] | None = None,
     versions: list[dict] | None = None,
+    gate_passed: bool | None = None,
 ) -> None:
     """Write the four artifact files. Numbers come from the arguments, not from literals."""
     out_dir.mkdir(parents=True, exist_ok=True)
     accuracy = round(float(metrics["directional_accuracy"]), 4)
-    gate_passed = passes_gate({"directional_accuracy": accuracy}, gate_threshold, baselines)
+    if gate_passed is None:
+        gate_passed = passes_gate({"directional_accuracy": accuracy}, gate_threshold, baselines)
     _write(
         out_dir / "tickers.json",
         {
@@ -280,7 +322,9 @@ def write_artifacts(
             )
         )
         oos_frames.append(predictions[symbol])
-    forecast_rows.sort(key=lambda row: row["as_of_date"], reverse=True)
+    log_path = out_dir / "forecasts.json"
+    previous = json.loads(log_path.read_text(encoding="utf-8"))["forecasts"] if log_path.exists() else []
+    forecast_rows = merge_live_log(previous, forecast_rows, prices)
     oos = pd.concat(oos_frames, ignore_index=True)
     oos_dates = pd.to_datetime(oos["as_of_date"])
     resolved = [row for row in forecast_rows if row["status"] == "resolved"]
@@ -351,7 +395,7 @@ def write_artifacts(
         },
     )
     _write(
-        out_dir / "forecasts.json",
+        log_path,
         {
             "schema_version": "1.1",
             "generated_at": generated_at,

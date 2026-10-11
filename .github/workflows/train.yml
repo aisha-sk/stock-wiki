@@ -1,0 +1,51 @@
+name: Weekly retrain
+
+on:
+  schedule:
+    - cron: "0 23 * * 0"
+  workflow_dispatch:
+
+concurrency:
+  group: artifacts
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: ml/requirements.txt
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: huggingface-finbert
+      - run: pip install --extra-index-url https://download.pytorch.org/whl/cpu -r ml/requirements.txt
+      # Exits non-zero when the validator fails, so nothing below runs and nothing is committed.
+      - run: python -m ml.pipeline --tickers TSLA NVDA AAPL --out data/artifacts
+        env:
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+      - run: python scripts/validate_contracts.py data/artifacts
+      - name: Commit artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/artifacts
+          git diff --cached --quiet && exit 0
+          outcome=$(python -c "import json; v = json.load(open('data/artifacts/model.json'))['versions'][0]; print(f\"v{v['version']} {'promoted' if v['status'] == 'production' else 'rejected'}\")")
+          git commit -m "data: weekly retrain ($outcome)"
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mlruns
+          path: mlruns/
+          if-no-files-found: ignore
