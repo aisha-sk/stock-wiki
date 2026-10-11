@@ -3,12 +3,12 @@
 /* Design tokens from design/Main.dc.html. Blue and orange stand in for green
    and red so the spectrum reads for colour-blind viewers. */
 @theme {
-  --color-page: #f5f6f8;
+  --color-page: #f6f5f1;
   --color-card: #ffffff;
   --color-ink: #11151b;
   --color-ink-soft: #c5cbd6;
   --color-muted: #5b6472;
-  --color-line: #e3e6eb;
+  --color-line: #e4e2db;
   --color-control: #98a1b0;
   --color-bull: #1d4ed8;
   --color-bear: #c2410c;
@@ -17,9 +17,49 @@
 @theme {
   --font-sans: "IBM Plex Sans", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --font-display: "Newsreader", Georgia, "Times New Roman", serif;
 }
 
 body {
   background: var(--color-page);
   color: var(--color-ink);
+}
+
+/* Motion. Every animation here is decorative and is switched off for reduced motion. */
+
+/* A spectrum marker slides from the neutral midpoint to its score. */
+@keyframes marker-in {
+  from {
+    left: 50%;
+  }
+}
+
+.marker-in {
+  animation: marker-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Sections rise into place the first time they scroll into view (see Reveal.tsx). */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal[data-shown="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marker-in {
+    animation: none;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }

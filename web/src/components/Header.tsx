@@ -6,7 +6,7 @@ import { getHealth } from "@/lib/api";
 import { useApi } from "@/lib/useApi";
 
 const TABS = [
-  { href: "/", label: "Dashboard" },
+  { href: "/dashboard", label: "Dashboard" },
   { href: "/model", label: "Model performance" },
   { href: "/alerts", label: "Alerts" },
 ];
@@ -62,7 +62,7 @@ export function Header() {
             href={withSymbol("/alerts")}
             className="flex min-h-11 items-center rounded-lg bg-ink px-5 text-[15px] font-medium text-white"
           >
-            Sign up free
+            Get alerts
           </Link>
         </div>
       </div>

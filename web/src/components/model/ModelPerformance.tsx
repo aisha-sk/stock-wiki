@@ -44,7 +44,7 @@ export function ModelPerformance() {
     <div className="flex flex-col gap-6">
       <section className="flex flex-wrap items-center justify-between gap-x-8 gap-y-3 rounded-xl border border-line bg-card p-6">
         <div className="min-w-0 flex-[1_1_480px]">
-          <h1 className="mb-1 text-xl font-semibold">Model performance</h1>
+          <h1 className="mb-1 font-display text-3xl font-medium">Model performance</h1>
           <p className="text-[15px] text-muted">
             {production
               ? `${subject} is serving forecasts. `

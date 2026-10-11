@@ -25,7 +25,7 @@ function SpectrumRow({ source }: { source: SentimentSource }) {
       >
         <div className="absolute inset-x-0 top-2.5 h-2 rounded bg-[linear-gradient(90deg,var(--color-bear),var(--color-line)_50%,var(--color-bull))]" />
         <div
-          className="absolute top-0.5 -ml-0.5 h-6 w-1 rounded-sm bg-ink ring-2 ring-card"
+          className="marker-in absolute top-0.5 -ml-0.5 h-6 w-1 rounded-sm bg-ink ring-2 ring-card"
           style={{ left: `${position}%` }}
         />
       </div>
@@ -44,7 +44,7 @@ export function SentimentCard({ symbol, sentiment }: { symbol: string; sentiment
       className="flex flex-col gap-5 rounded-xl border border-line bg-card p-6"
     >
       <div className="flex flex-wrap justify-between gap-2">
-        <h2 id="spectrum-title" className="text-xl font-semibold">
+        <h2 id="spectrum-title" className="font-display text-2xl font-medium">
           Sentiment spectrum
         </h2>
         <p className="text-sm text-muted">Bearish ← → Bullish, scored from −100 to +100</p>

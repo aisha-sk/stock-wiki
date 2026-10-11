@@ -53,7 +53,7 @@ function SignUpForm({ symbol }: { symbol: string }) {
       className="flex min-w-0 flex-[1_1_420px] flex-col gap-5 rounded-xl border border-line bg-card p-8"
     >
       <div>
-        <h1 className="mb-2 text-2xl font-semibold">Get a Sentiment Alert</h1>
+        <h1 className="mb-2 font-display text-3xl font-medium">Get a Sentiment Alert</h1>
         <p className="text-[15px] text-muted">
           We email you when the story around a stock changes. Free, no card.
         </p>
