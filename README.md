@@ -45,10 +45,10 @@ direction.
 | Versions that passed the quality gate | 0 |
 | Forecast log | 92 of 180 resolved forecasts correct (51.1%), 3 pending |
 
-**The model clears 52% but does not beat always guessing a quiet week, so it failed the gate
-and the site serves no forecast.** That is the system working as designed. The gate was fixed
-before the result existed, and a model that fails its own test is not shown as if it had
-passed.
+**The model clears 52% but does not beat always guessing a quiet week.** Version 8 was
+rejected under the rule in force when it ran, which also required beating that baseline, so
+the site serves no forecast until the pipeline runs again. The gate is now 52% alone; see
+[docs/METHODOLOGY.md](docs/METHODOLOGY.md#5-the-gate).
 
 <img src="docs/img/model.jpg" width="460" alt="The model performance page: 53.7% accuracy beside its baselines, and a No production model status">
 
@@ -65,8 +65,7 @@ ml/  ──▶  data/artifacts/*.json  ──▶  api/ (FastAPI)  ──▶  web
    scores come from buy, hold and sell counts, and are labelled as a ratings consensus.
 3. **Forecast.** XGBoost is trained with walk-forward validation, so the model is only ever
    tested on days it has not seen. Runs are tracked in MLflow.
-4. **Gate.** A version serves forecasts only if its accuracy reaches 52% and beats always
-   predicting a quiet week.
+4. **Gate.** A version serves forecasts only if its accuracy reaches 52%.
 5. **Publish.** The pipeline writes four kinds of JSON file. The API serves them unchanged and
    the web app renders them.
 

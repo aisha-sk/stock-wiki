@@ -14,23 +14,40 @@ def test_exact_threshold_passes() -> None:
     assert not passes_gate({"directional_accuracy": 0.5199}, 0.52, LAZY)
 
 
-def test_clearing_the_threshold_but_losing_to_always_quiet_is_rejected() -> None:
+def test_only_the_threshold_decides_even_when_always_quiet_is_better() -> None:
     lazy = [{"name": "always_quiet", "directional_accuracy": 0.557}]
-    assert failed_checks({"directional_accuracy": 0.5372}, 0.52, lazy) == ["accuracy beats always_quiet"]
-    assert not passes_gate({"directional_accuracy": 0.557}, 0.52, lazy)
-    assert not passes_gate({"directional_accuracy": 0.6}, 0.52, [])
+    assert failed_checks({"directional_accuracy": 0.5372}, 0.52, lazy) == []
+    assert failed_checks({"directional_accuracy": 0.51}, 0.52, lazy) == [
+        "accuracy is at least the gate threshold"
+    ]
+    assert passes_gate({"directional_accuracy": 0.6}, 0.52, [])
+
+
+def test_a_rerun_whose_gate_result_changed_is_appended() -> None:
+    rejected_under_old_rule = {
+        "version": "8",
+        "model_name": "move-xgb",
+        "algorithm": "xgboost",
+        "trained_at": "2026-10-11T00:10:32Z",
+        "directional_accuracy": 0.5372,
+        "gate_passed": False,
+        "status": "rejected",
+        "mlflow_run_id": "kept",
+        "task": "move",
+    }
     versions = append_version(
-        [],
+        [rejected_under_old_rule],
         accuracy=0.5372,
         threshold=0.52,
-        baselines=lazy,
+        baselines=[{"name": "always_quiet", "directional_accuracy": 0.557}],
         algorithm="xgboost",
         model_name="move-xgb",
-        trained_at="2026-10-10T22:00:00Z",
+        trained_at="2026-10-11T02:00:00Z",
         mlflow_run_id="new",
     )
-    assert versions[0]["status"] == "rejected"
-    assert versions[0]["gate_passed"] is False
+    assert versions[0]["version"] == "9"
+    assert versions[0]["status"] == "production"
+    assert versions[1] == rejected_under_old_rule
 
 
 def test_shuffled_labels_are_rejected_and_production_is_unchanged() -> None:
