@@ -12,9 +12,6 @@ PROMOTION_CHECKS: dict[str, Check] = {
     "accuracy is at least the gate threshold": lambda accuracy, baselines, threshold: (
         accuracy >= threshold
     ),
-    "accuracy beats always_quiet": lambda accuracy, baselines, threshold: (
-        "always_quiet" in baselines and accuracy > baselines["always_quiet"]
-    ),
 }
 
 

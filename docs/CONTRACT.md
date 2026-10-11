@@ -234,7 +234,7 @@ Full example: `contracts/examples/model.json`.
 | `precision`, `recall`, `f1` | Positive class is `large` |
 | `baselines` | Scored on the same test rows as `metrics` |
 | `gate.threshold` | The UI draws the dashed line from this value. It is never hardcoded in the UI. |
-| `gate.passed` | Every check in `ml/gate.py` passes. Today: `directional_accuracy >= gate.threshold` and above the `always_quiet` baseline. `passed` is never true below the threshold. |
+| `gate.passed` | Every check in `ml/gate.py` passes. Today: `directional_accuracy >= gate.threshold`. `passed` is never true below the threshold. |
 | `weekly_accuracy` | Last 12 weeks at most, ascending, `week_start` is a Monday |
 | `versions` | Newest first, at most one `production`. `status`: `production`, `archived` (passed, since replaced), `rejected` (failed the gate, never served) |
 

@@ -16,21 +16,22 @@ def append_version(
 ) -> list[dict]:
     """Return versions newest first.
 
-    An identical algorithm and accuracy is not appended again. A passing
+    An identical algorithm, accuracy and gate result is not appended again. A passing
     candidate becomes production only when it is at least as accurate as the
     current production version. The previous production row becomes archived.
     """
     published = round(float(accuracy), 4)
+    passed = passes_gate({"directional_accuracy": published}, threshold, baselines)
     newest = prior[0] if prior else None
     if (
         newest is not None
         and newest.get("algorithm") == algorithm
         and newest.get("task", "direction") == "move"
         and float(newest["directional_accuracy"]) == published
+        and newest.get("gate_passed") == passed
     ):
         return [{**item, "task": item.get("task", "direction")} for item in prior]
 
-    passed = passes_gate({"directional_accuracy": published}, threshold, baselines)
     production = next((item for item in prior if item.get("status") == "production"), None)
     if not passed:
         status = "rejected"

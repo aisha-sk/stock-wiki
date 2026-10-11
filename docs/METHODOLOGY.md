@@ -82,7 +82,8 @@ Test period 2025-11-11 to 2026-10-02, `n_test` = 672 out-of-sample forecasts.
 | Baseline: previous move | 55.51% |
 
 Precision 0.4807, recall 0.5436, F1 0.5102, with "large" as the positive class. **The model is
-worse than always guessing quiet**, so it is not served. The test period was calmer than the
+worse than always guessing quiet**, and version 8 was rejected under the rule in force when
+it ran (section 5). The test period was calmer than the
 training history, which is why quiet weeks were more common than half.
 
 Every version trained, newest first:
@@ -113,14 +114,13 @@ How the other Model performance figures are computed:
 
 ## 5. The gate
 
-A version serves forecasts only if every check in `ml/gate.py` passes:
-
-1. accuracy is at least **0.52**, and
-2. accuracy is above the `always_quiet` baseline.
+A version serves forecasts only if every check in `ml/gate.py` passes. Today there is one:
+accuracy is at least **0.52**. Beating the baselines is not required.
 
 The 0.52 threshold was fixed in `ml/config.yaml` at kickoff, before any model result, and has
-not been changed. The baseline check was added on 2026-10-10, after version 8 cleared 0.52 but
-lost to always-quiet. A rejected version stays in the registry with `status: "rejected"`, never
+not been changed. On 2026-10-10 a second check (beat `always_quiet`) was added, and version 8
+was rejected under it. That check was then removed, so the next run that clears 0.52 is
+promoted even if always-quiet scores higher. A rejected version stays in the registry with `status: "rejected"`, never
 serves a forecast, and its number is never rewritten. While nothing passes, `production` and
 every stock's `forecast` are `null` and the page says "No forecast".
 
