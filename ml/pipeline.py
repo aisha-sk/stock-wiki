@@ -37,8 +37,16 @@ from ml.train import (
 )
 
 
-def run_pipeline(symbols: list[str], out_dir: Path) -> int:
-    """Build artifacts for ``symbols`` and validate them. Returns the validator status."""
+def run_pipeline(symbols: list[str], out_dir: Path, train: bool = True) -> int:
+    """Build artifacts for ``symbols`` and validate them. Returns the validator status.
+
+    ``train=False`` refreshes prices, sentiment and forecasts but registers no version and
+    leaves ``model.json`` as it was.
+    """
+    model_path = out_dir / "model.json"
+    if not train and not model_path.exists():
+        raise SystemExit(f"--no-train needs an existing {model_path}")
+    prior_model = None if train else model_path.read_text(encoding="utf-8")
     config = load_config()
     names = {ticker.symbol: ticker.name for ticker in config.tickers}
     missing = [symbol for symbol in symbols if symbol not in names]
@@ -78,6 +86,9 @@ def run_pipeline(symbols: list[str], out_dir: Path) -> int:
         )
         params = dict(XGB_PARAMS)
         data_end = max(pd.Timestamp(frame["date"].max()) for frame in prices.values())
+        if not train:
+            candidates.append((algorithm, trained, None))
+            continue
         run_id = log_candidate(
             algorithm=algorithm,
             params=params,
@@ -110,7 +121,9 @@ def run_pipeline(symbols: list[str], out_dir: Path) -> int:
     algorithm, trained, run_id = serving
     accuracy = round(float(trained.metrics["directional_accuracy"]), 4)
     failures = failed_checks(trained.metrics, threshold, trained.baselines)
-    if not failures:
+    if not train:
+        pass
+    elif not failures:
         print(f"Gate passed: {algorithm} directional_accuracy {accuracy:.4f}.", flush=True)
     else:
         print("REJECTED", flush=True)
@@ -121,20 +134,29 @@ def run_pipeline(symbols: list[str], out_dir: Path) -> int:
         )
 
     history = _prior_versions(out_dir)
-    for name, result, candidate_run in candidates:
-        history = append_version(
-            history,
-            accuracy=float(result.metrics["directional_accuracy"]),
-            threshold=threshold,
-            baselines=result.baselines,
-            algorithm=name,
-            model_name="move-xgb",
-            trained_at=generated_at,
-            mlflow_run_id=candidate_run,
-        )
-        register_mlflow_model(candidate_run)
-    fresh = [item for item in history if item["trained_at"] == generated_at]
-    serving_version = fresh[0]["version"] if fresh else history[0]["version"]
+    gate_passed = None
+    if train:
+        for name, result, candidate_run in candidates:
+            history = append_version(
+                history,
+                accuracy=float(result.metrics["directional_accuracy"]),
+                threshold=threshold,
+                baselines=result.baselines,
+                algorithm=name,
+                model_name="move-xgb",
+                trained_at=generated_at,
+                mlflow_run_id=candidate_run,
+            )
+            register_mlflow_model(candidate_run)
+        fresh = [item for item in history if item["trained_at"] == generated_at]
+        serving_version = fresh[0]["version"] if fresh else history[0]["version"]
+    else:
+        # shortcut: refits the fixed-parameter model on today's data instead of loading the
+        # promoted binary (binaries stay out of git); upgrade with a registry CI can read.
+        production = json.loads(prior_model)["production"]
+        serving_version = production["version"] if production else history[0]["version"]
+        gate_passed = production is not None
+        print(f"--no-train: serving version {serving_version}, gate_passed {gate_passed}.")
     sample = trained.latest_features[ordered[0]]
     latency_ms = median_latency_ms(lambda row=sample, model=trained.model: model.predict_proba(row))
     write_artifacts(
@@ -163,7 +185,10 @@ def run_pipeline(symbols: list[str], out_dir: Path) -> int:
         algorithm=algorithm,
         mlflow_run_id=run_id,
         versions=history,
+        gate_passed=gate_passed,
     )
+    if prior_model is not None:
+        model_path.write_text(prior_model, encoding="utf-8")
     script = Path(__file__).resolve().parents[1] / "scripts" / "validate_contracts.py"
     completed = subprocess.run([sys.executable, str(script), str(out_dir)], check=False)
     return completed.returncode
@@ -173,11 +198,18 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Publish contract artifacts for the API.")
     parser.add_argument("--tickers", nargs="+", required=True)
     parser.add_argument("--out", required=True)
+    parser.add_argument(
+        "--no-train",
+        action="store_true",
+        help="refresh data and forecasts without registering a version or changing model.json",
+    )
     args = parser.parse_args(argv)
     out_dir = Path(args.out)
     if not out_dir.is_absolute():
         out_dir = Path.cwd() / out_dir
-    return run_pipeline([symbol.upper() for symbol in args.tickers], out_dir)
+    return run_pipeline(
+        [symbol.upper() for symbol in args.tickers], out_dir, train=not args.no_train
+    )
 
 
 def _sentiment_bundle(

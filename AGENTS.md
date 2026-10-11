@@ -86,6 +86,7 @@ cd web && npm install && npm run dev
 # ml
 pip install -r ml/requirements.txt
 python -m ml.pipeline --tickers TSLA NVDA AAPL --out data/artifacts
+python -m ml.pipeline --tickers TSLA NVDA AAPL --out data/artifacts --no-train # daily: no new version
 mlflow ui --port 5001
 ```
 

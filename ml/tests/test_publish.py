@@ -11,6 +11,7 @@ from ml.publish import (
     build_forecast_rows,
     build_stock,
     build_weekly_accuracy,
+    merge_live_log,
     nyse_sessions_after,
     write_artifacts,
 )
@@ -206,3 +207,52 @@ def test_written_artifacts_match_the_contract(tmp_path: Path) -> None:
     assert forecasts["summary"]["pending"] == 1
     assert forecasts["summary"]["resolved"] == 10
     assert forecasts["summary"]["hit_rate"] == 0.1
+
+
+def _live(as_of: str, target: str, move: str = "quiet", prob: float = 0.4) -> dict:
+    return {
+        "id": f"TSLA-{as_of}-v8",
+        "symbol": "TSLA",
+        "made_at": f"{as_of}T20:00:00Z",
+        "as_of_date": as_of,
+        "target_date": target,
+        "horizon_days": 5,
+        "move": move,
+        "prob_large": prob,
+        "typical_move_pct": 3.0,
+        "model_version": "8",
+        "origin": "live",
+        "status": "pending",
+        "actual_move": None,
+        "actual_return_pct": None,
+        "result": None,
+    }
+
+
+def test_merge_live_log_keeps_and_resolves_live_rows_without_rewriting_them() -> None:
+    old = _live("2026-10-02", "2026-10-09")
+    waiting = _live("2026-10-09", "2026-10-16")
+    stale_backtest = {**_live("2026-09-01", "2026-09-08"), "origin": "backtest"}
+    prices = {
+        "TSLA": pd.DataFrame(
+            {"date": pd.to_datetime(["2026-10-02", "2026-10-09"]), "close": [100.0, 110.0]}
+        )
+    }
+    todays = _live("2026-10-09", "2026-10-16", move="large", prob=0.9)
+    fresh = _live("2026-10-12", "2026-10-19")
+    backtest = {**_live("2026-09-02", "2026-09-09"), "origin": "backtest"}
+
+    merged = merge_live_log([old, waiting, stale_backtest], [todays, fresh, backtest], prices)
+
+    by_id = {row["id"]: row for row in merged}
+    assert set(by_id) == {old["id"], waiting["id"], fresh["id"], backtest["id"]}
+    resolved = by_id[old["id"]]
+    assert resolved["status"] == "resolved"
+    assert resolved["actual_return_pct"] == 10.0
+    assert resolved["actual_move"] == "large"
+    assert resolved["result"] == "miss"
+    for row, original in ((resolved, old), (by_id[waiting["id"]], waiting)):
+        for field in ("move", "prob_large", "made_at", "typical_move_pct", "model_version"):
+            assert row[field] == original[field]
+    assert by_id[waiting["id"]]["status"] == "pending"
+    assert old["status"] == "pending"
