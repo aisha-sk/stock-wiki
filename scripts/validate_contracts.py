@@ -68,10 +68,10 @@ def check_stock(d, path):
 
     f = d["forecast"]
     if f:
-        if (f["direction"] == "up") != (f["prob_up"] >= 0.5):
-            err(path, "forecast.direction must be up exactly when prob_up >= 0.5")
-        if abs(f["confidence"] - max(f["prob_up"], 1 - f["prob_up"])) > 0.0051:
-            err(path, "forecast.confidence must equal max(prob_up, 1 - prob_up)")
+        if (f["move"] == "large") != (f["prob_large"] >= 0.5):
+            err(path, "forecast.move must be large exactly when prob_large >= 0.5")
+        if abs(f["confidence"] - max(f["prob_large"], 1 - f["prob_large"])) > 0.0051:
+            err(path, "forecast.confidence must equal max(prob_large, 1 - prob_large)")
         if f["as_of_date"] != d["quote"]["as_of"]:
             err(path, "forecast.as_of_date must equal quote.as_of")
 
@@ -112,11 +112,12 @@ def check_model(d, path):
     if d["production"] and prod_versions and d["production"]["version"] != prod_versions[0]["version"]:
         err(path, "production.version must match the version with status production")
     gate = d["gate"]
-    if gate["passed"] != (d["metrics"][gate["metric"]] >= gate["threshold"]):
-        err(path, "gate.passed must equal metrics.directional_accuracy >= gate.threshold")
+    # Passing needs at least the threshold. ml/gate.py may add more checks, so failing does not imply below it.
+    if gate["passed"] and d["metrics"][gate["metric"]] < gate["threshold"]:
+        err(path, "gate.passed is true but metrics.directional_accuracy is below gate.threshold")
     for v in d["versions"]:
-        if v["gate_passed"] != (v["directional_accuracy"] >= gate["threshold"]):
-            err(path, f"version {v['version']}: gate_passed does not match gate.threshold")
+        if v["gate_passed"] and v["directional_accuracy"] < gate["threshold"]:
+            err(path, f"version {v['version']}: gate_passed is true below gate.threshold")
         if v["status"] == "rejected" and v["gate_passed"]:
             err(path, f"version {v['version']}: a rejected version cannot have gate_passed true")
         if v["status"] == "production" and not v["gate_passed"]:
@@ -138,18 +139,18 @@ def check_forecasts(d, path, symbols):
             err(path, f"forecast {r['id']}: id must be {{symbol}}-{{as_of_date}}-v{{model_version}}")
         if symbols and r["symbol"] not in symbols:
             err(path, f"forecast {r['id']}: symbol is not in tickers.json")
-        if (r["direction"] == "up") != (r["prob_up"] >= 0.5):
-            err(path, f"forecast {r['id']}: direction must be up exactly when prob_up >= 0.5")
-        outcome = (r["actual_direction"], r["actual_return_pct"], r["result"])
+        if (r["move"] == "large") != (r["prob_large"] >= 0.5):
+            err(path, f"forecast {r['id']}: move must be large exactly when prob_large >= 0.5")
+        outcome = (r["actual_move"], r["actual_return_pct"], r["result"])
         if r["status"] == "pending" and any(x is not None for x in outcome):
-            err(path, f"forecast {r['id']}: pending rows must have null actual_direction, actual_return_pct, result")
+            err(path, f"forecast {r['id']}: pending rows must have null actual_move, actual_return_pct, result")
         if r["status"] == "resolved":
             if any(x is None for x in outcome):
-                err(path, f"forecast {r['id']}: resolved rows need actual_direction, actual_return_pct, result")
-            elif (r["result"] == "hit") != (r["direction"] == r["actual_direction"]):
-                err(path, f"forecast {r['id']}: result must be hit exactly when direction == actual_direction")
-            elif (r["actual_direction"] == "up") != (r["actual_return_pct"] > 0):
-                err(path, f"forecast {r['id']}: actual_direction must be up exactly when actual_return_pct > 0")
+                err(path, f"forecast {r['id']}: resolved rows need actual_move, actual_return_pct, result")
+            elif (r["result"] == "hit") != (r["move"] == r["actual_move"]):
+                err(path, f"forecast {r['id']}: result must be hit exactly when move == actual_move")
+            elif (r["actual_move"] == "large") != (abs(r["actual_return_pct"]) > r["typical_move_pct"]):
+                err(path, f"forecast {r['id']}: actual_move must be large exactly when abs(actual_return_pct) > typical_move_pct")
     resolved = [r for r in rows if r["status"] == "resolved"]
     hits = sum(r["result"] == "hit" for r in resolved)
     s = d["summary"]

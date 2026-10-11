@@ -68,7 +68,7 @@ READ_TOOLS: list[dict[str, Any]] = [
     },
     {
         "name": "get_forecast",
-        "description": "The model's 5-day direction forecast for this stock, or why there is none.",
+        "description": "The model's 5-day large-move forecast for this stock, or why there is none.",
         "input_schema": {"type": "object", "properties": {}, "additionalProperties": False},
     },
 ]

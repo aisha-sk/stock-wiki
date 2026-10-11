@@ -16,7 +16,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: { default: "SentiFi", template: "%s · SentiFi" },
   description:
-    "See how different groups feel about a stock, how far apart they are, and a 5-day direction forecast that is graded in public.",
+    "See how different groups feel about a stock, how far apart they are, and a 5-day large-move forecast that is graded in public.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

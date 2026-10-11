@@ -1,4 +1,4 @@
-# Data and API contract (v1.0)
+# Data and API contract (v1.1)
 
 This is the single agreement between the ML pipeline, the API and the web app.
 If code and this file disagree, this file wins. If this file and
@@ -36,9 +36,9 @@ contracts/examples/*.json  =  the same files with fake numbers (is_demo_data: tr
 | Timestamps | ISO 8601 UTC with `Z`: `2026-10-09T20:30:00Z`. Keys end in `_at`. |
 | Dates | `YYYY-MM-DD`, the US trading session date. Keys end in `_date`, or are `date` / `as_of` / `week_start`. |
 | Symbols | Uppercase: `TSLA`. The API upper-cases the path parameter before lookup. |
-| Enums | Lowercase strings: `up`, `down`, `bullish`, `neutral`, `bearish`, `analysts`, `news`, `reddit`. The UI capitalises for display. |
+| Enums | Lowercase strings: `large`, `quiet`, `bullish`, `neutral`, `bearish`, `analysts`, `news`, `reddit`, `direction`, `move`. The UI capitalises for display. |
 | Sentiment scores | **Integer from -100 to 100.** Never a 0 to 1 float. |
-| Probabilities and rates | **Fraction from 0 to 1** (`prob_up`, `confidence`, `directional_accuracy`, `precision`, `recall`, `f1`, `hit_rate`, `accuracy`, `threshold`). The UI multiplies by 100. |
+| Probabilities and rates | **Fraction from 0 to 1** (`prob_large`, `confidence`, `directional_accuracy`, `precision`, `recall`, `f1`, `hit_rate`, `accuracy`, `threshold`). The UI multiplies by 100. `directional_accuracy` is the classification accuracy of that version's `task`. |
 | Percent changes | Keys ending in `_pct` are in **percent units**: `1.8` means +1.8%. |
 | `max_drawdown` | Negative fraction: `-0.087` means -8.7%. |
 | Model version | String of digits: `"12"`. The UI shows `v12`. |
@@ -63,6 +63,7 @@ The pipeline writes both `score` and `label`. The UI displays `label` and does n
   `score = round(100 * (2*strong_buy + buy - sell - 2*strong_sell) / (2 * total))`.
   This is a ratings consensus, not text sentiment. The Methodology note in the UI must say so.
 - A source with no documents in the window is **left out of the array**. It is not zero-filled.
+  The agent is not a source.
 
 ## 3. Endpoints
 
@@ -107,7 +108,7 @@ Every non-2xx response has this body. FastAPI's default 422 body is replaced by 
 
 ```json
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "tickers": [
     { "symbol": "TSLA", "name": "Tesla, Inc." },
     { "symbol": "NVDA", "name": "NVIDIA Corporation" },
@@ -124,7 +125,7 @@ Full example: `contracts/examples/stocks/TSLA.json`. Shortened here.
 
 ```json
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "symbol": "TSLA",
   "name": "Tesla, Inc.",
   "generated_at": "2026-10-09T21:00:00Z",
@@ -136,27 +137,28 @@ Full example: `contracts/examples/stocks/TSLA.json`. Shortened here.
   ],
   "forecast": {
     "horizon_days": 5,
-    "direction": "up",
-    "prob_up": 0.64,
+    "move": "large",
+    "prob_large": 0.64,
+    "typical_move_pct": 3.2,
     "confidence": 0.64,
     "made_at": "2026-10-09T20:30:00Z",
     "as_of_date": "2026-10-09",
     "target_date": "2026-10-16",
-    "model_name": "direction-xgb",
+    "model_name": "move-xgb",
     "model_version": "12"
   },
   "sentiment": {
     "window_days": 7,
     "sources": [
       { "source": "analysts", "display_name": "Wall Street analysts", "score": 42, "label": "bullish",
-        "doc_count": 31, "note": "31 analysts, last 7 days", "method": "ratings", "previous_score": 38 },
+        "doc_count": 38, "note": "38 analysts, Oct 2026", "method": "ratings", "previous_score": 40 },
       { "source": "news", "display_name": "News media", "score": 8, "label": "neutral",
         "doc_count": 142, "note": "142 articles, last 7 days", "method": "finbert", "previous_score": 15 },
       { "source": "reddit", "display_name": "Reddit", "score": -37, "label": "bearish",
         "doc_count": 2100, "note": "2.1k threads, r/stocks and r/wallstreetbets", "method": "finbert", "previous_score": -12 }
     ],
     "gap": { "points": 79, "most_bullish": "analysts", "most_bearish": "reddit",
-             "summary": "Analysts lean bullish while retail forums lean bearish." }
+             "summary": "Wall Street analysts lean bullish while Reddit lean bearish." }
   },
   "headlines": [
     { "id": "3f2a9c1b7e10", "source": "news", "publisher": "Example Wire",
@@ -175,8 +177,9 @@ Rules the validator enforces on top of the schema:
 | `quote.as_of`, `quote.price` | Equal the last `prices` item's `date` and `close` |
 | `quote.change_pct` | `(last close / previous close - 1) * 100`, 2 decimals |
 | `forecast` | `null` when no model version has passed the gate. The UI must render that state. |
-| `forecast.direction` | `"up"` exactly when `prob_up >= 0.5` |
-| `forecast.confidence` | `max(prob_up, 1 - prob_up)`, so always 0.5 to 1 |
+| `forecast.move` | `"large"` exactly when `prob_large >= 0.5` |
+| `forecast.typical_move_pct` | Percent units. The median absolute five-session return from the training rows only. |
+| `forecast.confidence` | `max(prob_large, 1 - prob_large)`, so always 0.5 to 1 |
 | `forecast.as_of_date` | Equals `quote.as_of` |
 | `forecast.target_date` | `as_of_date` plus 5 trading sessions |
 | `sentiment.sources` | 0 to 3 items, one per source, ordered `analysts`, `news`, `reddit` |
@@ -186,8 +189,7 @@ Rules the validator enforces on top of the schema:
 | `headlines[].id` | Stable across runs: first 12 hex characters of `sha1(url)` |
 | `headlines[].url` | `null` only when there is no link (for example a ratings summary row) |
 
-The dashed forecast segment on the price chart is drawn by the UI from `forecast.direction`.
-It is a direction indicator, not a price target, and the pipeline does not supply a target price.
+The forecast does not draw a price path. It says whether the model estimates a move larger than `typical_move_pct`, and it does not say which way.
 
 ### GET /api/model
 
@@ -195,31 +197,31 @@ Full example: `contracts/examples/model.json`.
 
 ```json
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "generated_at": "2026-10-09T21:00:00Z",
   "is_demo_data": true,
-  "production": { "model_name": "direction-xgb", "version": "12", "algorithm": "xgboost", "trained_at": "2026-10-04T23:10:00Z" },
+  "production": { "model_name": "move-xgb", "version": "12", "algorithm": "xgboost", "trained_at": "2026-10-04T23:10:00Z" },
   "task": {
-    "description": "Will the close 5 trading days from now be above today's close?",
+    "description": "Will the absolute move over the next 5 sessions be larger than the typical move?",
     "horizon_days": 5, "validation": "walk_forward", "tickers": ["TSLA", "NVDA", "AAPL"],
     "test_start": "2026-07-20", "test_end": "2026-10-09", "n_test": 180
   },
   "metrics": {
     "directional_accuracy": 0.584, "precision": 0.61, "recall": 0.57, "f1": 0.59,
-    "sharpe_ratio": 1.12, "max_drawdown": -0.087,
+    "sharpe_ratio": null, "max_drawdown": null,
     "inference_latency_ms": 142, "cost_per_request_usd": 0.0004
   },
   "baselines": [
-    { "name": "always_up", "directional_accuracy": 0.538 },
-    { "name": "previous_direction", "directional_accuracy": 0.502 }
+    { "name": "always_quiet", "directional_accuracy": 0.51 },
+    { "name": "previous_move", "directional_accuracy": 0.49 }
   ],
-  "gate": { "metric": "directional_accuracy", "threshold": 0.55, "passed": true },
+  "gate": { "metric": "directional_accuracy", "threshold": 0.52, "passed": true },
   "weekly_accuracy": [ { "week_start": "2026-07-20", "accuracy": 0.571, "n": 15 } ],
   "versions": [
-    { "version": "12", "model_name": "direction-xgb", "algorithm": "xgboost", "trained_at": "2026-10-04T23:10:00Z",
-      "directional_accuracy": 0.584, "gate_passed": true, "status": "production", "mlflow_run_id": "…" },
+    { "version": "12", "model_name": "move-xgb", "algorithm": "xgboost", "trained_at": "2026-10-04T23:10:00Z",
+      "directional_accuracy": 0.584, "gate_passed": true, "status": "production", "mlflow_run_id": "…", "task": "move" },
     { "version": "10", "model_name": "direction-xgb", "algorithm": "xgboost", "trained_at": "2026-09-20T23:10:00Z",
-      "directional_accuracy": 0.536, "gate_passed": false, "status": "rejected", "mlflow_run_id": "…" }
+      "directional_accuracy": 0.51, "gate_passed": false, "status": "rejected", "mlflow_run_id": "…", "task": "direction" }
   ]
 }
 ```
@@ -229,10 +231,10 @@ Full example: `contracts/examples/model.json`.
 | `production` | `null` when no version has `status: "production"` |
 | `metrics` | The production version's out-of-sample metrics. If `production` is `null`, the latest candidate's. |
 | `metrics.sharpe_ratio`, `max_drawdown`, `inference_latency_ms`, `cost_per_request_usd` | Nullable. The UI shows "—" for `null`. `cost_per_request_usd` is `null` for a locally run model. |
-| `precision`, `recall`, `f1` | Positive class is `up` |
+| `precision`, `recall`, `f1` | Positive class is `large` |
 | `baselines` | Scored on the same test rows as `metrics` |
 | `gate.threshold` | The UI draws the dashed line from this value. It is never hardcoded in the UI. |
-| `gate.passed` | `metrics.directional_accuracy >= gate.threshold` |
+| `gate.passed` | Every check in `ml/gate.py` passes. Today: `directional_accuracy >= gate.threshold` and above the `always_quiet` baseline. `passed` is never true below the threshold. |
 | `weekly_accuracy` | Last 12 weeks at most, ascending, `week_start` is a Monday |
 | `versions` | Newest first, at most one `production`. `status`: `production`, `archived` (passed, since replaced), `rejected` (failed the gate, never served) |
 
@@ -243,19 +245,19 @@ The API filters by symbol, recomputes `summary` over the filtered rows, then app
 
 ```json
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "generated_at": "2026-10-09T21:00:00Z",
   "is_demo_data": true,
   "summary": { "resolved": 6, "hits": 4, "hit_rate": 0.667, "pending": 3 },
   "forecasts": [
     { "id": "TSLA-2026-10-09-v12", "symbol": "TSLA", "made_at": "2026-10-09T20:30:00Z",
       "as_of_date": "2026-10-09", "target_date": "2026-10-16", "horizon_days": 5,
-      "direction": "up", "prob_up": 0.64, "model_version": "12", "origin": "live",
-      "status": "pending", "actual_direction": null, "actual_return_pct": null, "result": null },
+      "move": "large", "prob_large": 0.64, "typical_move_pct": 3.2, "model_version": "12", "origin": "live",
+      "status": "pending", "actual_move": null, "actual_return_pct": null, "result": null },
     { "id": "TSLA-2026-09-28-v12", "symbol": "TSLA", "made_at": "2026-09-28T20:30:00Z",
       "as_of_date": "2026-09-28", "target_date": "2026-10-05", "horizon_days": 5,
-      "direction": "up", "prob_up": 0.61, "model_version": "12", "origin": "backtest",
-      "status": "resolved", "actual_direction": "up", "actual_return_pct": 3.1, "result": "hit" }
+      "move": "large", "prob_large": 0.61, "typical_move_pct": 3.2, "model_version": "12", "origin": "backtest",
+      "status": "resolved", "actual_move": "quiet", "actual_return_pct": 3.1, "result": "miss" }
   ]
 }
 ```
@@ -264,8 +266,8 @@ The API filters by symbol, recomputes `summary` over the filtered rows, then app
 |---|---|
 | `id` | `{symbol}-{as_of_date}-v{model_version}`, unique |
 | `origin` | `backtest`: an out-of-sample walk-forward prediction. `live`: written before the outcome existed. The UI shows the origin, because only `live` rows are a true track record. |
-| `status: "pending"` | `actual_direction`, `actual_return_pct`, `result` are all `null` |
-| `status: "resolved"` | All three are set. `result` is `hit` exactly when `direction == actual_direction`. `actual_direction` is `up` exactly when `actual_return_pct > 0`. |
+| `status: "pending"` | `actual_move`, `actual_return_pct`, `result` are all `null` |
+| `status: "resolved"` | All three are set. `result` is `hit` exactly when `move == actual_move`. `actual_move` is `large` exactly when `abs(actual_return_pct) > typical_move_pct`. |
 | Order | Newest `as_of_date` first |
 | `summary.hit_rate` | `hits / resolved`, 3 decimals, `null` when `resolved` is 0 |
 

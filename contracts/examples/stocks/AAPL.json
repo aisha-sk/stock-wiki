@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "symbol": "AAPL",
   "name": "Apple Inc.",
   "generated_at": "2026-10-09T21:00:00Z",
@@ -94,14 +94,15 @@
   ],
   "forecast": {
     "horizon_days": 5,
-    "direction": "up",
-    "prob_up": 0.55,
     "confidence": 0.55,
     "made_at": "2026-10-09T20:30:00Z",
     "as_of_date": "2026-10-09",
     "target_date": "2026-10-16",
     "model_name": "direction-xgb",
-    "model_version": "12"
+    "model_version": "12",
+    "move": "large",
+    "prob_large": 0.55,
+    "typical_move_pct": 3.2
   },
   "sentiment": {
     "window_days": 7,

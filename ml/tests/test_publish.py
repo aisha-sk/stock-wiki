@@ -45,9 +45,10 @@ def _predictions() -> pd.DataFrame:
             {
                 "symbol": "TSLA",
                 "as_of_date": day,
-                "prob_up": 0.8,
+                "prob_large": 0.8,
                 "y_true": 1 if up else 0,
                 "fwd_return_pct": 1.5 if up else -2.0,
+                "typical_move_pct": 1.6,
             }
         )
     return pd.DataFrame(rows)
@@ -104,9 +105,10 @@ def test_weekly_accuracy_uses_mondays_and_keeps_the_last_12() -> None:
             {
                 "symbol": "TSLA",
                 "as_of_date": day,
-                "prob_up": 0.8,
+                "prob_large": 0.8,
                 "y_true": 1,
                 "fwd_return_pct": 1.0,
+                "typical_move_pct": 1.6,
             }
         )
     weeks = build_weekly_accuracy(pd.concat([pd.DataFrame(extra), frame], ignore_index=True))
@@ -123,6 +125,7 @@ def test_failed_gate_nulls_the_forecast_and_keeps_a_live_log_row() -> None:
         prices=_prices(),
         prices_in_payload=120,
         forecast_prob=0.4,
+        typical_move_pct=1.6,
         gate_passed=False,
         generated_at=GENERATED_AT,
         window_days=7,
@@ -134,6 +137,7 @@ def test_failed_gate_nulls_the_forecast_and_keeps_a_live_log_row() -> None:
         symbol="TSLA",
         model_version="1",
         live_prob=0.4,
+        typical_move_pct=1.6,
         live_as_of="2026-10-09",
         generated_at=GENERATED_AT,
         limit=60,
@@ -149,7 +153,7 @@ def test_failed_gate_nulls_the_forecast_and_keeps_a_live_log_row() -> None:
     assert stock["headlines"][0]["published_at"] > stock["headlines"][1]["published_at"]
     assert rows[0]["origin"] == "live"
     assert rows[0]["status"] == "pending"
-    assert rows[0]["actual_direction"] is None
+    assert rows[0]["actual_move"] is None
     assert rows[1]["origin"] == "backtest"
     assert rows[1]["status"] == "resolved"
     assert rows[0]["id"] == "TSLA-2026-10-09-v1"
@@ -163,6 +167,7 @@ def test_written_artifacts_match_the_contract(tmp_path: Path) -> None:
         prices={"TSLA": _prices()},
         predictions={"TSLA": _predictions()},
         live_prob={"TSLA": 0.4},
+        typical_move_pct={"TSLA": 1.6},
         metrics={
             "directional_accuracy": 0.46,
             "precision": 0.41,
@@ -171,8 +176,8 @@ def test_written_artifacts_match_the_contract(tmp_path: Path) -> None:
             "n_test": 10,
         },
         baselines=[
-            {"name": "always_up", "directional_accuracy": 0.5},
-            {"name": "previous_direction", "directional_accuracy": 0.48},
+            {"name": "always_quiet", "directional_accuracy": 0.5},
+            {"name": "previous_move", "directional_accuracy": 0.48},
         ],
         gate_threshold=0.52,
         headlines={"TSLA": _headlines()},
@@ -193,10 +198,11 @@ def test_written_artifacts_match_the_contract(tmp_path: Path) -> None:
     model = json.loads((tmp_path / "model.json").read_text(encoding="utf-8"))
     assert model["production"] is None
     assert model["versions"][0]["status"] == "rejected"
-    assert model["versions"][0]["model_name"] == "direction-xgb"
+    assert model["versions"][0]["model_name"] == "move-xgb"
+    assert model["versions"][0]["task"] == "move"
     assert model["gate"]["passed"] is False
     assert model["gate"]["threshold"] == 0.52
     forecasts = json.loads((tmp_path / "forecasts.json").read_text(encoding="utf-8"))
     assert forecasts["summary"]["pending"] == 1
     assert forecasts["summary"]["resolved"] == 10
-    assert forecasts["summary"]["hit_rate"] == 0.9
+    assert forecasts["summary"]["hit_rate"] == 0.1

@@ -69,7 +69,7 @@ function ProductWindow({ stock }: { stock: Stock }) {
         </div>
       </div>
       <div className="p-4 text-left sm:p-6">
-        <SentimentCard symbol={stock.symbol} sentiment={stock.sentiment} />
+        <SentimentCard symbol={stock.symbol} sentiment={stock.sentiment} headlines={stock.headlines} />
       </div>
     </div>
   );
@@ -184,7 +184,7 @@ function Feature({
 }
 
 function Scorecard({ model, forecasts }: { model: Model; forecasts: Forecasts }) {
-  const alwaysUp = model.baselines.find((b) => b.name === "always_up");
+  const alwaysQuiet = model.baselines.find((b) => b.name === "always_quiet");
   const passed = model.versions.filter((v) => v.gate_passed).length;
   const logged = forecasts.summary.resolved + forecasts.summary.pending;
   const whole = (value: number) => String(Math.round(value));
@@ -194,10 +194,10 @@ function Scorecard({ model, forecasts }: { model: Model; forecasts: Forecasts })
       label: "of 5-day calls were right",
       note: `${model.task.n_test} out-of-sample forecasts`,
     },
-    alwaysUp && {
-      value: <CountUp value={alwaysUp.directional_accuracy} format={(v) => formatRate(v)} />,
-      label: "is what always guessing “up” scores",
-      note: "the baseline every version is shown against",
+    alwaysQuiet && {
+      value: <CountUp value={alwaysQuiet.directional_accuracy} format={(v) => formatRate(v)} />,
+      label: "is what always guessing “quiet” scores",
+      note: "a version must beat it to be promoted",
     },
     {
       value: (
@@ -206,7 +206,7 @@ function Scorecard({ model, forecasts }: { model: Model; forecasts: Forecasts })
         </>
       ),
       label: "model versions passed the quality gate",
-      note: `the gate is ${formatThreshold(model.gate.threshold)} directional accuracy`,
+      note: `the gate is ${formatThreshold(model.gate.threshold)} accuracy and beating “always quiet”`,
     },
     {
       value: <CountUp value={logged} format={whole} />,

@@ -76,7 +76,7 @@ def test_preview_quotes_the_stock_payload(client):
         "body_lines": [
             "Reddit sentiment moved from -12 to -37 over the last 7 days, "
             "while Wall Street analysts stayed at +42.",
-            "Model forecast, next 5 trading days: Up, 64% confidence.",
+            "Model forecast, next 5 trading days: Larger-than-usual move (typical is 3.2%), 64% confidence.",
         ],
         "is_demo_data": True,
     }

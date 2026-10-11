@@ -25,7 +25,7 @@ def _synthetic_prices(n: int = 400) -> pd.DataFrame:
 def test_test_dates_are_outside_the_training_window_and_five_rows_are_purged() -> None:
     prices = _synthetic_prices()
     featured = add_target(add_features(prices), horizon=5)
-    eligible = featured.dropna(subset=[*FEATURE_COLUMNS, "y"])
+    eligible = featured.dropna(subset=[*FEATURE_COLUMNS, "fwd_return_pct"])
     eligible_dates = [pd.Timestamp(value) for value in eligible["date"]]
 
     result = walk_forward(prices, symbol="TEST", horizon=5)
@@ -58,6 +58,35 @@ def test_pooled_folds_use_the_same_dates_for_every_ticker() -> None:
     for fold in result.folds:
         assert set(fold.test_dates).isdisjoint(fold.train_dates)
         assert max(fold.train_dates) < min(fold.test_dates)
+
+
+def test_move_cutoff_ignores_returns_inside_the_test_fold() -> None:
+    prices = _synthetic_prices(80)
+    result = walk_forward(
+        prices, symbol="TEST", horizon=5, initial=30, block=10, step=10, purge=5
+    )
+    featured = add_target(add_features(prices), horizon=5)
+    featured = featured.dropna(subset=[*FEATURE_COLUMNS, "fwd_return_pct"])
+    fold = result.folds[0]
+    train = featured[pd.to_datetime(featured["date"]).isin(fold.train_dates)]
+    expected = float(np.median(np.abs(train["fwd_return_pct"].to_numpy(dtype=float))))
+    got = result.predictions.loc[
+        pd.to_datetime(result.predictions["as_of_date"]).isin(fold.test_dates),
+        "typical_move_pct",
+    ]
+    assert np.allclose(got, expected)
+
+    perturbed = prices.copy()
+    test_start = pd.Timestamp(min(fold.test_dates))
+    perturbed.loc[pd.to_datetime(perturbed["date"]) >= test_start, "close"] *= 3
+    again = walk_forward(
+        perturbed, symbol="TEST", horizon=5, initial=30, block=10, step=10, purge=5
+    )
+    again_got = again.predictions.loc[
+        pd.to_datetime(again.predictions["as_of_date"]).isin(fold.test_dates),
+        "typical_move_pct",
+    ]
+    assert np.allclose(again_got, expected)
 
 
 def test_xgboost_candidate_keeps_the_fixed_small_settings() -> None:

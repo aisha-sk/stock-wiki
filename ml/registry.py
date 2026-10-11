@@ -8,6 +8,7 @@ def append_version(
     *,
     accuracy: float,
     threshold: float,
+    baselines: list[dict[str, float | str]],
     algorithm: str,
     model_name: str,
     trained_at: str,
@@ -24,11 +25,12 @@ def append_version(
     if (
         newest is not None
         and newest.get("algorithm") == algorithm
+        and newest.get("task", "direction") == "move"
         and float(newest["directional_accuracy"]) == published
     ):
-        return [dict(item) for item in prior]
+        return [{**item, "task": item.get("task", "direction")} for item in prior]
 
-    passed = passes_gate({"directional_accuracy": published}, threshold)
+    passed = passes_gate({"directional_accuracy": published}, threshold, baselines)
     production = next((item for item in prior if item.get("status") == "production"), None)
     if not passed:
         status = "rejected"
@@ -46,10 +48,12 @@ def append_version(
         "gate_passed": passed,
         "status": status,
         "mlflow_run_id": mlflow_run_id,
+        "task": "move",
     }
     kept: list[dict] = []
     for item in prior:
         copy = dict(item)
+        copy.setdefault("task", "direction")
         if status == "production" and copy.get("status") == "production":
             copy["status"] = "archived"
         kept.append(copy)

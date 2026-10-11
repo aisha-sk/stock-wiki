@@ -93,7 +93,7 @@ def _save_confusion(predictions: pd.DataFrame, path: Path) -> None:
     import matplotlib.pyplot as plt
 
     y_true = predictions["y_true"].to_numpy(dtype=int)
-    guessed = (predictions["prob_up"].to_numpy(dtype=float) >= 0.5).astype(int)
+    guessed = (predictions["prob_large"].to_numpy(dtype=float) >= 0.5).astype(int)
     matrix = np.zeros((2, 2), dtype=int)
     for truth, guess in zip(y_true, guessed, strict=True):
         matrix[int(truth), int(guess)] += 1
@@ -118,7 +118,7 @@ def _save_calibration(predictions: pd.DataFrame, path: Path) -> None:
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
 
-    probability = predictions["prob_up"].to_numpy(dtype=float)
+    probability = predictions["prob_large"].to_numpy(dtype=float)
     y_true = predictions["y_true"].to_numpy(dtype=int)
     edges = np.linspace(0.0, 1.0, 6)
     predicted: list[float] = []

@@ -45,11 +45,9 @@ def test_target_matches_hand_computed_value() -> None:
     prices = _prices_from_closes([10, 11, 12, 13, 14, 16, 15, 9])
     labelled = add_target(prices, horizon=5)
 
-    assert labelled.loc[0, "y"] == 1
+    assert "y" not in labelled.columns
     assert labelled.loc[0, "fwd_return_pct"] == pytest.approx(60.0)
-    assert labelled.loc[2, "y"] == 0
     assert labelled.loc[2, "fwd_return_pct"] == pytest.approx(-25.0)
-    assert labelled.loc[3:, "y"].isna().all()
     assert labelled.loc[3:, "fwd_return_pct"].isna().all()
 
 

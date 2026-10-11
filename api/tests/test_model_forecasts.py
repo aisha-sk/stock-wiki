@@ -39,7 +39,7 @@ def test_forecasts_unfiltered_is_the_file(client):
 def test_forecasts_filter_by_symbol_recomputes_the_summary(client):
     body = client.get("/api/forecasts?symbol=TSLA").json()
     assert {row["symbol"] for row in body["forecasts"]} == {"TSLA"}
-    assert body["summary"] == {"resolved": 2, "hits": 2, "hit_rate": 1.0, "pending": 1}
+    assert body["summary"] == {"resolved": 2, "hits": 1, "hit_rate": 0.5, "pending": 1}
 
 
 def test_forecasts_symbol_is_case_insensitive(client):

@@ -1,4 +1,4 @@
-"""Metric definitions. Positive class is up."""
+"""Metric definitions. Positive class is large."""
 
 import numpy as np
 import pandas as pd
@@ -8,7 +8,7 @@ from ml.evaluate import baseline_scores, classification_metrics, strategy_backte
 
 
 def test_classification_metrics_treat_up_as_the_positive_class() -> None:
-    # Predictions at 0.5 and above are up: 1, 1, 0, 1 against labels 1, 0, 1, 1.
+    # Predictions at 0.5 and above are large: 1, 1, 0, 1 against labels 1, 0, 1, 1.
     metrics = classification_metrics([1, 0, 1, 1], [0.6, 0.7, 0.4, 0.8])
 
     assert metrics["directional_accuracy"] == pytest.approx(0.5)
@@ -18,12 +18,12 @@ def test_classification_metrics_treat_up_as_the_positive_class() -> None:
 
 
 def test_baselines_use_the_same_rows() -> None:
-    # Trailing return of 0 is not up, so previous_direction predicts down there.
-    baselines = baseline_scores([1, 0, 1], [0.1, -0.2, 0.0])
+    # previous_move is 1 only when the trailing five-session move was already large.
+    baselines = baseline_scores([1, 0, 1], [1, 0, 0])
     by_name = {row["name"]: row["directional_accuracy"] for row in baselines}
 
-    assert by_name["always_up"] == pytest.approx(2 / 3)
-    assert by_name["previous_direction"] == pytest.approx(2 / 3)
+    assert by_name["always_quiet"] == pytest.approx(1 / 3)
+    assert by_name["previous_move"] == pytest.approx(2 / 3)
 
 
 def test_strategy_backtest_uses_every_fifth_session() -> None:

@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": ["schema_version", "generated_at", "is_demo_data", "production", "task", "metrics", "baselines", "gate", "weekly_accuracy", "versions"],
   "properties": {
-    "schema_version": { "const": "1.0" },
+    "schema_version": { "const": "1.1" },
     "generated_at": { "type": "string", "format": "date-time" },
     "is_demo_data": { "type": "boolean" },
     "production": {
@@ -47,10 +47,10 @@
       "required": ["directional_accuracy", "precision", "recall", "f1", "sharpe_ratio", "max_drawdown", "inference_latency_ms", "cost_per_request_usd"],
       "properties": {
         "directional_accuracy": { "$ref": "#/$defs/rate" },
-        "precision": { "$ref": "#/$defs/rate", "description": "Positive class = up." },
+        "precision": { "$ref": "#/$defs/rate", "description": "Positive class = large." },
         "recall": { "$ref": "#/$defs/rate" },
         "f1": { "$ref": "#/$defs/rate" },
-        "sharpe_ratio": { "type": ["number", "null"], "description": "Annualised, long-when-up / flat-when-down backtest. null until computed." },
+        "sharpe_ratio": { "type": ["number", "null"], "description": "null for the move model, which does not take a side." },
         "max_drawdown": { "type": ["number", "null"], "maximum": 0, "description": "Negative fraction: -0.087 means -8.7%." },
         "inference_latency_ms": { "type": ["number", "null"], "minimum": 0 },
         "cost_per_request_usd": { "type": ["number", "null"], "minimum": 0, "description": "null for a locally run model." }
@@ -64,7 +64,7 @@
         "additionalProperties": false,
         "required": ["name", "directional_accuracy"],
         "properties": {
-          "name": { "enum": ["always_up", "previous_direction"] },
+          "name": { "enum": ["always_quiet", "previous_move"] },
           "directional_accuracy": { "$ref": "#/$defs/rate" }
         }
       }
@@ -76,7 +76,7 @@
       "properties": {
         "metric": { "const": "directional_accuracy" },
         "threshold": { "$ref": "#/$defs/rate" },
-        "passed": { "type": "boolean" }
+        "passed": { "type": "boolean", "description": "True when every promotion check in ml/gate.py passes: at least threshold and above always_quiet." }
       }
     },
     "weekly_accuracy": {
@@ -100,12 +100,13 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["version", "model_name", "algorithm", "trained_at", "directional_accuracy", "gate_passed", "status", "mlflow_run_id"],
+        "required": ["version", "model_name", "algorithm", "trained_at", "directional_accuracy", "gate_passed", "status", "mlflow_run_id", "task"],
         "properties": {
           "version": { "$ref": "#/$defs/version" },
           "model_name": { "type": "string" },
           "algorithm": { "$ref": "#/$defs/algorithm" },
           "trained_at": { "type": "string", "format": "date-time" },
+          "task": { "enum": ["direction", "move"], "description": "direction = older up/down versions. move = large versus quiet." },
           "directional_accuracy": { "$ref": "#/$defs/rate" },
           "gate_passed": { "type": "boolean" },
           "status": { "enum": ["production", "archived", "rejected"] },

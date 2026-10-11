@@ -1,9 +1,10 @@
-"""Price features and the 5-day direction target.
+"""Price features and the 5-day move target.
 
 Every feature on day *t* is computed from sessions up to and including *t*.
 The target looks forward and is kept out of this module's feature columns.
 """
 
+import numpy as np
 import pandas as pd
 
 FEATURE_COLUMNS: tuple[str, ...] = (
@@ -82,16 +83,22 @@ def _utc_day(value: object) -> pd.Timestamp:
 
 
 def add_target(frame: pd.DataFrame, horizon: int = 5) -> pd.DataFrame:
-    """Label day *t* as 1 when the close ``horizon`` sessions later is higher.
+    """Attach the forward return. The large/quiet label is applied inside each fold.
 
-    The last ``horizon`` rows have no label. ``fwd_return_pct`` is in percent units.
+    The last ``horizon`` rows have no forward return. ``fwd_return_pct`` is in percent units.
     """
     labelled = frame.copy()
     future = labelled["close"].shift(-horizon)
-    higher = future > labelled["close"]
-    labelled["y"] = higher.astype(float).mask(future.isna())
     labelled["fwd_return_pct"] = (future / labelled["close"] - 1.0) * 100.0
     return labelled
+
+
+def typical_move_pct(returns_pct: object) -> float:
+    """Median absolute return, in percent. Callers pass training rows only."""
+    values = np.abs(np.asarray(returns_pct, dtype=float))
+    if values.size == 0 or np.isnan(values).all():
+        raise ValueError("typical move needs at least one forward return")
+    return float(np.nanmedian(values))
 
 
 def _rsi(close: pd.Series, window: int) -> pd.Series:

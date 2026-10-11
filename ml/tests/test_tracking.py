@@ -14,7 +14,7 @@ def test_log_candidate_records_a_comparable_run(tmp_path, monkeypatch) -> None:
     model = XGBClassifier(n_estimators=2, max_depth=1, random_state=0, n_jobs=1)
     model.fit(frame[["ret_1d"]], frame["y"])
     predictions = pd.DataFrame(
-        {"y_true": [1, 0, 1, 0, 1, 0], "prob_up": [0.8, 0.2, 0.7, 0.3, 0.6, 0.4]}
+        {"y_true": [1, 0, 1, 0, 1, 0], "prob_large": [0.8, 0.2, 0.7, 0.3, 0.6, 0.4]}
     )
 
     run_id = log_candidate(
@@ -22,8 +22,8 @@ def test_log_candidate_records_a_comparable_run(tmp_path, monkeypatch) -> None:
         params={"n_estimators": 2, "max_depth": 1},
         metrics={"directional_accuracy": 0.5, "precision": 0.5, "recall": 0.5, "f1": 0.5, "n_test": 6},
         baselines=[
-            {"name": "always_up", "directional_accuracy": 0.5},
-            {"name": "previous_direction", "directional_accuracy": 0.4},
+            {"name": "always_quiet", "directional_accuracy": 0.5},
+            {"name": "previous_move", "directional_accuracy": 0.4},
         ],
         predictions=predictions,
         model=model,
@@ -42,7 +42,7 @@ def test_log_candidate_records_a_comparable_run(tmp_path, monkeypatch) -> None:
     assert recorded.info.experiment_id == client.get_experiment_by_name(EXPERIMENT).experiment_id
     assert recorded.data.params["algorithm"] == "xgboost"
     assert recorded.data.params["tickers"] == "TSLA"
-    assert recorded.data.metrics["always_up_accuracy"] == 0.5
+    assert recorded.data.metrics["always_quiet_accuracy"] == 0.5
     assert recorded.data.metrics["gate_threshold"] == 0.52
     assert recorded.data.tags["ticket"] == "F2-ML-1"
     names = {item.path for item in client.list_artifacts(run_id)}

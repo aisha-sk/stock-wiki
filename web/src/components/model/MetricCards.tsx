@@ -8,7 +8,7 @@ import {
 } from "@/lib/format";
 import type { Model } from "@/lib/types";
 
-const BASELINE_NAME = { always_up: "always up", previous_direction: "previous direction" } as const;
+const BASELINE_NAME = { always_quiet: "always quiet", previous_move: "previous move" } as const;
 
 export function MetricCards({ model }: { model: Model }) {
   const { metrics, baselines, task } = model;
@@ -16,7 +16,7 @@ export function MetricCards({ model }: { model: Model }) {
     {
       group: "Predictive",
       value: formatRate(metrics.directional_accuracy),
-      label: "Directional accuracy",
+      label: "Accuracy",
       note: [
         ...baselines.map((b) => `${BASELINE_NAME[b.name]} ${formatRate(b.directional_accuracy)}`),
         `${task.n_test} test forecasts`,
