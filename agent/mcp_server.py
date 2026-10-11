@@ -17,7 +17,7 @@ from . import tools
 server = MCPServer(
     "stocksense",
     instructions=(
-        "Read-only access to StockSense: how analysts, news media and Reddit feel about a stock "
+        "Read-only access to StockSense: how analysts and news media feel about a stock "
         "(scores from -100 bearish to 100 bullish), the headlines behind each score, the model's "
         "5-day large-move forecast and its public track record. Nothing here is financial advice."
     ),

@@ -64,11 +64,14 @@ export function SentimentCard({
   const analysts = sentiment.sources.find((source) => source.source === "analysts");
   const news = headlines.filter((item) => item.source === "news");
   const reddit = headlines.filter((item) => item.source === "reddit");
+  // Name only the groups we have data for. Reddit is not collected at the moment.
+  const groups = ["Wall Street", "news", ...(reddit.length > 0 ? ["Reddit"] : [])];
+  const title = `${groups.slice(0, -1).join(", ")} and ${groups[groups.length - 1]}`;
   return (
     <section aria-labelledby="spectrum-title" className="flex flex-col gap-5 rounded-xl border border-line bg-card p-6">
       <div className="flex flex-wrap justify-between gap-2">
         <h2 id="spectrum-title" className="font-display text-2xl font-medium">
-          Wall Street, news and Reddit
+          {title}
         </h2>
         <p className="text-sm text-muted">Each item labelled bullish, neutral, or bearish</p>
       </div>
@@ -88,7 +91,9 @@ export function SentimentCard({
           )}
         </div>
         <SourceColumn title="News" items={news} limit={maxHeadlines} empty={`No news articles in the last ${sentiment.window_days} days.`} />
-        <SourceColumn title="Reddit" items={reddit} limit={maxHeadlines} empty={`No Reddit posts in the last ${sentiment.window_days} days.`} />
+        {reddit.length > 0 && (
+          <SourceColumn title="Reddit" items={reddit} limit={maxHeadlines} empty={`No Reddit posts in the last ${sentiment.window_days} days.`} />
+        )}
       </div>
 
       <div className="flex flex-wrap items-center justify-between gap-3 border-t border-line pt-4">

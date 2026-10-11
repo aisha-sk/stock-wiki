@@ -22,7 +22,7 @@ API, [@SubaitaM](https://github.com/SubaitaM) on data, sentiment and the forecas
 | Page | Question it answers |
 |---|---|
 | Landing (`/`) | What is this, and why should I care? Built from live data, not mock-ups. |
-| Dashboard | What is going on with this stock right now? Price, what analysts, news and Reddit each say, and the headlines behind each score. |
+| Dashboard | What is going on with this stock right now? Price, what analysts and the news each say, and the headlines behind each score. |
 | Model performance | Can I trust the forecasts? Accuracy beside trivial baselines, every model version and whether it passed the quality gate, and a hit-and-miss log. |
 | Alerts | Tell me when the story changes. Sign up for a stock and a trigger, and preview the email. |
 
@@ -125,9 +125,10 @@ If you work with an AI coding agent, it reads [AGENTS.md](AGENTS.md).
 
 ## Limitations
 
-- **Reddit is not in the data.** Reddit ingestion is written and leaves the source out when
-  Reddit refuses a request. Every run on 2026-10-10 got HTTP 429 (rate limited), so every
-  stock currently shows analysts and news only.
+- **No Reddit data.** Reddit's Responsible Builder Policy requires explicit approval before any
+  access to its data, including the public feeds our first version tried (and was refused with
+  HTTP 429). We do not have approval, so the Reddit fetch is switched off and the site compares
+  analysts and news only.
 - **Three stocks.** TSLA, NVDA and AAPL. The sample is small: with 672 test forecasts the margin
   of error is about ±4 points, so the model and both baselines are not clearly apart.
 - **Headlines only.** Sentiment is scored from titles, not article text.
@@ -142,6 +143,6 @@ If you work with an AI coding agent, it reads [AGENTS.md](AGENTS.md).
 
 - Run the pipeline on a schedule, so data stays fresh and live forecasts accumulate
 - Train on more stocks and more history
-- Get Reddit working, or replace it with another retail source
+- Add a retail-investor source: request Reddit API access, or use a licensed social-sentiment feed
 - Send real alert emails, and move sign-ups from SQLite to Postgres
 - Hand-label headlines to measure the sentiment scorer itself
