@@ -4,3 +4,5 @@ uvicorn[standard]>=0.30
 pydantic>=2.7
 python-dotenv>=1.0
 email-validator>=2.1
+# For the optional explainer (POST /api/explain); imported only when a key is set.
+anthropic>=1.0

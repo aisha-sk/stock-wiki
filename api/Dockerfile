@@ -11,6 +11,8 @@ COPY api/requirements-prod.txt api/requirements-prod.txt
 RUN pip install --no-cache-dir -r api/requirements-prod.txt
 
 COPY api/app api/app
+# The optional explainer. It only runs when ANTHROPIC_API_KEY is set.
+COPY agent agent
 COPY contracts contracts
 COPY data/artifacts data/artifacts
 
