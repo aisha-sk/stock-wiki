@@ -15,12 +15,12 @@ off the screen.
 |---|---|---|---|
 | 1 | Landing page | Let the headline sit for a second, then point at the product window. | "Normal finance sites show you a price. This shows you who disagrees about it. That window is live data, not a mock-up: it picks whichever stock has the widest gap right now." |
 | 2 | Landing page | Scroll to "The gap is the story". | "All three stocks on one scale. NVDA's groups are 40 points apart; Tesla's are 3." |
-| 3 | Landing page | Scroll to "The receipts". | "And this is the part most projects hide. Our model estimates whether next week is a bigger move than usual, and it's right 53.7% of the time. Always guessing 'quiet week' gets 55.7%. Zero of eight versions passed our quality gate." |
-| 4 | Dashboard | Click "Open the dashboard", choose NVDA. | "Price on the left. On the right, where a forecast would be, it says 'No forecast', because no model passed the gate. We show nothing instead of a guess that failed its own test." |
+| 3 | Landing page | Scroll to "The receipts". | "And this is the part most projects hide. Our model estimates whether next week is a bigger move than usual, and it's right 53.7% of the time. Always guessing 'quiet week' gets 55.7%. It clears our 52% gate, so it's live, and we show you the baseline that beats it." |
+| 4 | Dashboard | Click "Open the dashboard", choose NVDA. | "Price on the left. On the right, the model estimates a quiet week for NVDA: a move smaller than the typical 3.5%, with its probability and the model version beside it." |
 | 5 | Dashboard | Point at the sentiment card. | "Analysts at +55, news at +15. The analyst column says 'ratings consensus' because it comes from buy and sell counts, not text." |
 | 6 | Dashboard | Scroll to the headlines, open one. | "Every score links back to the headlines that produced it." |
 | 7 | Model performance | Click the tab. | "The report card. Accuracy beside both baselines, on 672 forecasts the model had never seen." |
-| 8 | Model performance | Scroll to the registry. | "Every version we trained, tracked in MLflow, each marked rejected. The gate was fixed at 52% before we saw any result, so we could not tune it to pass." |
+| 8 | Model performance | Scroll to the registry. | "Every version we trained, tracked in MLflow. Eight were rejected; version 9 passed and is in production. The 52% threshold was fixed before we saw any result." |
 | 9 | Model performance | Scroll to the forecast log. | "Hits and misses, none removed. These are labelled 'backtest'; live forecasts need five trading days to resolve." |
 | 10 | Alerts | Click the tab, type an email, pick a trigger, create. | "Sign up for a stock and a trigger. The example email on the right is built from today's data. It is stored, not sent: that is the next step." |
 

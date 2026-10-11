@@ -1,8 +1,13 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-10-11T00:10:32Z",
+  "generated_at": "2026-10-11T01:32:21Z",
   "is_demo_data": false,
-  "production": null,
+  "production": {
+    "model_name": "move-xgb",
+    "version": "9",
+    "algorithm": "xgboost",
+    "trained_at": "2026-10-11T01:32:21Z"
+  },
   "task": {
     "description": "Will the absolute move over the next 5 sessions be larger than the typical move?",
     "horizon_days": 5,
@@ -18,12 +23,12 @@
   },
   "metrics": {
     "directional_accuracy": 0.5372,
-    "precision": 0.4807,
-    "recall": 0.5436,
-    "f1": 0.5102,
+    "precision": 0.4814,
+    "recall": 0.5638,
+    "f1": 0.5193,
     "sharpe_ratio": null,
     "max_drawdown": null,
-    "inference_latency_ms": 3.1467,
+    "inference_latency_ms": 4.4878,
     "cost_per_request_usd": null
   },
   "baselines": [
@@ -39,12 +44,12 @@
   "gate": {
     "metric": "directional_accuracy",
     "threshold": 0.52,
-    "passed": false
+    "passed": true
   },
   "weekly_accuracy": [
     {
       "week_start": "2026-07-13",
-      "accuracy": 0.5333,
+      "accuracy": 0.6,
       "n": 15
     },
     {
@@ -54,17 +59,17 @@
     },
     {
       "week_start": "2026-07-27",
-      "accuracy": 0.5333,
+      "accuracy": 0.4667,
       "n": 15
     },
     {
       "week_start": "2026-08-03",
-      "accuracy": 0.6,
+      "accuracy": 0.5333,
       "n": 15
     },
     {
       "week_start": "2026-08-10",
-      "accuracy": 0.6,
+      "accuracy": 0.5333,
       "n": 15
     },
     {
@@ -74,7 +79,7 @@
     },
     {
       "week_start": "2026-08-24",
-      "accuracy": 0.2667,
+      "accuracy": 0.4,
       "n": 15
     },
     {
@@ -104,6 +109,17 @@
     }
   ],
   "versions": [
+    {
+      "version": "9",
+      "model_name": "move-xgb",
+      "algorithm": "xgboost",
+      "trained_at": "2026-10-11T01:32:21Z",
+      "directional_accuracy": 0.5372,
+      "gate_passed": true,
+      "status": "production",
+      "mlflow_run_id": "d369a4fa15f046f69773a8c51091a41e",
+      "task": "move"
+    },
     {
       "version": "8",
       "model_name": "move-xgb",

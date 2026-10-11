@@ -1,7 +1,7 @@
 # Methodology and limitations
 
 How every figure in StockSense is produced, so a sceptical reader can check it. Numbers below are
-from the artifacts generated `2026-10-11T00:10:32Z` (`data/artifacts/model.json`). Code paths are
+from the artifacts generated `2026-10-11T01:32:21Z` (`data/artifacts/model.json`). Code paths are
 given so each claim can be traced.
 
 Sentiment and the forecast are separate. The forecast does not use the sentiment shown on the
@@ -77,19 +77,20 @@ Test period 2025-11-11 to 2026-10-02, `n_test` = 672 out-of-sample forecasts.
 
 | | Accuracy |
 |---|---|
-| Model (move-xgb, version 8) | 53.72% |
+| Model (move-xgb, version 9) | 53.72% |
 | Baseline: always quiet | 55.65% |
 | Baseline: previous move | 55.51% |
 
-Precision 0.4807, recall 0.5436, F1 0.5102, with "large" as the positive class. **The model is
-worse than always guessing quiet**, and version 8 was rejected under the rule in force when
-it ran (section 5). The test period was calmer than the
+Precision 0.4814, recall 0.5638, F1 0.5193, with "large" as the positive class. **The model is
+worse than always guessing quiet.** It clears the 0.52 gate, so version 9 is in production;
+version 8 scored the same and was rejected under the earlier rule (section 5). The test period was calmer than the
 training history, which is why quiet weeks were more common than half.
 
 Every version trained, newest first:
 
 | Version | Task | Algorithm | Accuracy | Status |
 |---|---|---|---|---|
+| 9 | move | XGBoost | 0.5372 | production |
 | 8 | move | XGBoost | 0.5372 | rejected |
 | 7 | direction | XGBoost | 0.4955 | rejected |
 | 6 | direction | XGBoost | 0.4955 | rejected |
@@ -110,7 +111,7 @@ How the other Model performance figures are computed:
 - **Sharpe ratio and max drawdown:** shown as "—". The move model does not take a side, so
   there is no trade to score.
 - **Inference latency:** median time of one single-row prediction on the machine that ran the
-  pipeline (3.1 ms). **Cost per request:** none, the model runs locally.
+  pipeline (4.5 ms). **Cost per request:** none, the model runs locally.
 
 ## 5. The gate
 
@@ -119,20 +120,22 @@ accuracy is at least **0.52**. Beating the baselines is not required.
 
 The 0.52 threshold was fixed in `ml/config.yaml` at kickoff, before any model result, and has
 not been changed. On 2026-10-10 a second check (beat `always_quiet`) was added, and version 8
-was rejected under it. That check was then removed, so the next run that clears 0.52 is
-promoted even if always-quiet scores higher. A rejected version stays in the registry with `status: "rejected"`, never
-serves a forecast, and its number is never rewritten. While nothing passes, `production` and
-every stock's `forecast` are `null` and the page says "No forecast".
+was rejected under it. That check was then removed, and version 9, a rerun at the same
+accuracy, was promoted even though always-quiet scores higher. A rejected version stays in
+the registry with `status: "rejected"`, never serves a forecast, and its number is never
+rewritten. When nothing passes, `production` and every stock's `forecast` are `null` and the
+page says "No forecast".
 
 ## 6. Backtest against live
 
-The forecast log has 180 resolved rows (92 correct, 51.1%) and 3 pending rows.
+The forecast log has 180 resolved rows (92 correct, 51.1%) and 6 pending rows.
 
 - The **resolved** rows are `origin: "backtest"`: out-of-sample walk-forward test predictions
   for the last 60 test sessions. The model had not trained on those days, but they were
   scored after the fact.
 - The **pending** rows are `origin: "live"`: made from the close of 2026-10-09 (typical move
-  3.52%), logged before the outcome existed. They resolve after the close on 2026-10-16.
+  3.52%), logged before the outcome existed: three by rejected version 8 and three by
+  version 9. They resolve after the close on 2026-10-16.
   Only live rows are a true track record. They are logged even when the model fails the gate,
   so the record includes rejected models.
 

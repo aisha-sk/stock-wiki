@@ -2,7 +2,7 @@
   "schema_version": "1.1",
   "symbol": "AAPL",
   "name": "Apple Inc.",
-  "generated_at": "2026-10-11T00:10:32Z",
+  "generated_at": "2026-10-11T01:32:21Z",
   "is_demo_data": false,
   "quote": {
     "price": 336.64,
@@ -492,7 +492,18 @@
       "close": 336.64
     }
   ],
-  "forecast": null,
+  "forecast": {
+    "horizon_days": 5,
+    "move": "quiet",
+    "prob_large": 0.4387,
+    "typical_move_pct": 3.5248,
+    "confidence": 0.5613,
+    "made_at": "2026-10-11T01:32:21Z",
+    "as_of_date": "2026-10-09",
+    "target_date": "2026-10-16",
+    "model_name": "move-xgb",
+    "model_version": "9"
+  },
   "sentiment": {
     "window_days": 7,
     "sources": [
@@ -511,8 +522,8 @@
         "display_name": "News media",
         "score": 8,
         "label": "neutral",
-        "doc_count": 52,
-        "note": "52 articles, last 7 days",
+        "doc_count": 50,
+        "note": "50 articles, last 7 days",
         "method": "finbert",
         "previous_score": 32
       }
@@ -531,7 +542,7 @@
       "publisher": "Yahoo Finance",
       "title": "Consensus: 25 buy, 13 hold, 6 sell (Oct 2026)",
       "url": null,
-      "published_at": "2026-10-11T00:10:32Z",
+      "published_at": "2026-10-11T01:32:21Z",
       "score": 25,
       "label": "bullish"
     },
@@ -574,16 +585,6 @@
       "published_at": "2026-10-09T23:15:10Z",
       "score": -90,
       "label": "bearish"
-    },
-    {
-      "id": "b1f135ed3850",
-      "source": "news",
-      "publisher": "Moomoo",
-      "title": "AAPL 261009 340.00C (AAPL261009C340000) Stock Options Chain | Quotes & News - Moomoo",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5QYTFFT3llNzFKR0xhTFZ1b0JTOGRJakphMnhvU2lVVVBNN3Q4QXktc1lHSU5aSFdwdGZWVHNwWEZ5ZGQ1S0hVbjZkVERiVFJvY1BqREoyc2Y2dGNoU2ttTA?oc=5",
-      "published_at": "2026-10-09T19:59:00Z",
-      "score": 0,
-      "label": "neutral"
     },
     {
       "id": "d6c3d8d740d4",
@@ -816,13 +817,23 @@
       "label": "neutral"
     },
     {
-      "id": "a94d3fc4bd38",
+      "id": "b894766a2971",
       "source": "news",
-      "publisher": "Yahoo Finance Australia",
-      "title": "Apple Inc. (AAPL) options chain - Yahoo Finance Australia",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQUUM0bF9QY2FsMm9mWjhoMFU1X3dCb21ZcmlBMnpQMGt4QWVtekpTSmlFbHVORV9mS3BFUTgxOEI5eEdBU1Q1ckY5RWJ5eU85UFpMRmY4Vjh3QVpXUVZ6Vi1IQmFiWGVMSDVPdzRKNXE4Rmx2ZTdvTFI5aDZZSGlDOTZia3d2dVNacHdJdnVKQlBEQQ?oc=5",
-      "published_at": "2026-10-07T07:00:00Z",
-      "score": 1,
+      "publisher": "Yahoo Finance",
+      "title": "NVIDIA (NVDA) vs. Apple (AAPL): Which Stock Wins the Valuation Race? - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdEV1TE1CTTFVRlA4TGZBVEptU08zbnNtbDhvZnJWOERBOVZmZHJNUnQtMjZTOG1TN2NWbmR3YlBWM1hNQTJrWGM4S25SSE9EaTlNaFNWTDBiamhEMm9ldlltbjJuaUp1UnNkeEdScTAyVUdaZXV5MUh3OXlHUllHS28zbm9kNG5VZnFCZmZWU2d5eExl?oc=5",
+      "published_at": "2026-10-07T05:19:51Z",
+      "score": 8,
+      "label": "neutral"
+    },
+    {
+      "id": "026e3571370c",
+      "source": "news",
+      "publisher": "9to5Mac",
+      "title": "Tim Cook sold nearly $63.9 million in Apple shares this month - 9to5Mac",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPQk1EMDB0R0lUd2ZJQUY3REZjbzhYd05ibnNtenJCb2stSFhaU0RTMFBZYWFPTmdmQ3c1T2pId0NZOEF0dXVOWDhkUmtQMEFVNTBPbnJON2JSb2ZWQUxoWkczX1ZOQ1MydlZ5UWVWVjhXM0JfUURZSVI3Y19hVzRROUFpZmFmN3FTWVZLX01ReTZWRW80cUY0?oc=5",
+      "published_at": "2026-10-06T20:11:00Z",
+      "score": 3,
       "label": "neutral"
     }
   ]
