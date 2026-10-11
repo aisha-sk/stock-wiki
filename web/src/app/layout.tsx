@@ -21,7 +21,7 @@ const plexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: { default: "SentiFi", template: "%s · SentiFi" },
   description:
-    "How Wall Street analysts, news media and Reddit feel about a stock, with a 5-day direction forecast and its track record.",
+    "How Wall Street analysts, news media and Reddit feel about a stock, with a 5-day large-move forecast and its track record.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

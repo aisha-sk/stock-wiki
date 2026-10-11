@@ -22,6 +22,7 @@ export function RegistryTable({ versions, gate }: { versions: ModelVersion[]; ga
                 <th className="py-2 pr-2 font-medium">Version</th>
                 <th className="p-2 font-medium">Trained</th>
                 <th className="p-2 font-medium">Algorithm</th>
+                <th className="p-2 font-medium">Task</th>
                 <th className="p-2 text-right font-medium">Accuracy</th>
                 <th className="py-2 pl-2 font-medium">Status</th>
               </tr>
@@ -32,6 +33,7 @@ export function RegistryTable({ versions, gate }: { versions: ModelVersion[]; ga
                   <td className="py-3 pr-2 font-mono">{formatVersion(version.version)}</td>
                   <td className="px-2 py-3">{formatDate(version.trained_at.slice(0, 10))}</td>
                   <td className="px-2 py-3">{formatAlgorithm(version.algorithm)}</td>
+                  <td className="px-2 py-3">{version.task === "move" ? "Large vs quiet" : "Direction"}</td>
                   <td className="px-2 py-3 text-right font-mono">{formatRate(version.directional_accuracy)}</td>
                   <td className="py-3 pl-2 font-medium">{STATUS_NAME[version.status]}</td>
                 </tr>
@@ -41,7 +43,7 @@ export function RegistryTable({ versions, gate }: { versions: ModelVersion[]; ga
         </div>
       )}
       <p className="text-[13px] text-muted">
-        A version only serves forecasts if its directional accuracy reaches the{" "}
+        Accuracy is the share of correct calls for that version's task. A version only serves forecasts if that accuracy reaches the{" "}
         {formatThreshold(gate.threshold)} gate.{" "}
         {rejected > 0 && `${rejected} of ${versions.length} versions were rejected and never served.`}
       </p>

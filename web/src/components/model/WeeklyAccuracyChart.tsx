@@ -21,12 +21,12 @@ function WeekTooltip({ active, payload }: TooltipContentProps) {
 export function WeeklyAccuracyChart({ weeks, gate }: { weeks: WeeklyAccuracy[]; gate: Gate }) {
   const above = weeks.filter((week) => week.accuracy >= gate.threshold).length;
   const summary =
-    `Weekly directional accuracy for the last ${weeks.length} weeks. ` +
+    `Weekly accuracy for the last ${weeks.length} weeks. ` +
     `${above} of ${weeks.length} weeks were at or above the ${formatThreshold(gate.threshold)} quality gate.`;
 
   return (
     <section className="flex min-w-0 flex-[1_1_420px] flex-col gap-4 rounded-xl border border-line bg-card p-6">
-      <h2 className="text-[17px] font-semibold">Weekly directional accuracy</h2>
+      <h2 className="text-[17px] font-semibold">Weekly accuracy</h2>
       {weeks.length === 0 ? (
         <p className="text-[15px] text-muted">No weekly results yet.</p>
       ) : (

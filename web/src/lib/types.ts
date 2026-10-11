@@ -1,6 +1,7 @@
 // Mirrors contracts/schemas/*.schema.json. Change the schema first, then this file.
 
-export type Direction = "up" | "down";
+export type Move = "large" | "quiet";
+export type TaskName = "direction" | "move";
 export type Source = "analysts" | "news" | "reddit";
 export type Label = "bullish" | "neutral" | "bearish";
 
@@ -12,7 +13,7 @@ export interface Ticker {
 }
 
 export interface Tickers {
-  schema_version: "1.0";
+  schema_version: "1.1";
   tickers: Ticker[];
 }
 
@@ -33,10 +34,12 @@ export interface PricePoint {
 
 export interface Forecast {
   horizon_days: 5;
-  direction: Direction;
+  move: Move;
   /** Fraction, 0 to 1. */
-  prob_up: number;
-  /** Fraction, 0.5 to 1. */
+  prob_large: number;
+  /** Percent units: the median absolute 5-session move used as the cutoff. */
+  typical_move_pct: number;
+  /** Fraction, 0.5 to 1. max(prob_large, 1 - prob_large). */
   confidence: number;
   made_at: string;
   as_of_date: string;
@@ -83,7 +86,7 @@ export interface Headline {
 }
 
 export interface Stock {
-  schema_version: "1.0";
+  schema_version: "1.1";
   symbol: string;
   name: string;
   generated_at: string;
@@ -131,7 +134,7 @@ export interface ModelMetrics {
 }
 
 export interface Baseline {
-  name: "always_up" | "previous_direction";
+  name: "always_quiet" | "previous_move";
   directional_accuracy: number;
 }
 
@@ -156,10 +159,12 @@ export interface ModelVersion {
   gate_passed: boolean;
   status: VersionStatus;
   mlflow_run_id: string | null;
+  /** direction = older up/down versions. move = large versus quiet. */
+  task: TaskName;
 }
 
 export interface Model {
-  schema_version: "1.0";
+  schema_version: "1.1";
   generated_at: string;
   is_demo_data: boolean;
   production: ProductionModel | null;
@@ -180,12 +185,13 @@ export interface ForecastRow {
   as_of_date: string;
   target_date: string;
   horizon_days: 5;
-  direction: Direction;
-  prob_up: number;
+  move: Move;
+  prob_large: number;
+  typical_move_pct: number;
   model_version: string;
   origin: "backtest" | "live";
   status: "pending" | "resolved";
-  actual_direction: Direction | null;
+  actual_move: Move | null;
   /** Percent units: 3.1 means +3.1%. */
   actual_return_pct: number | null;
   result: "hit" | "miss" | null;
@@ -199,7 +205,7 @@ export interface ForecastSummary {
 }
 
 export interface Forecasts {
-  schema_version: "1.0";
+  schema_version: "1.1";
   generated_at: string;
   is_demo_data: boolean;
   summary: ForecastSummary;

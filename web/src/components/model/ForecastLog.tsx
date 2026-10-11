@@ -21,10 +21,10 @@ function Row({ row }: { row: ForecastRow }) {
     <tr className="border-t border-line">
       <td className="py-3 pr-2 font-mono">{row.symbol}</td>
       <td className="px-2 py-3">{formatDate(row.as_of_date)}</td>
-      <td className="px-2 py-3">{capitalize(row.direction)}</td>
+      <td className="px-2 py-3">{row.move === "large" ? "Large" : "Quiet"}</td>
       <td className="px-2 py-3">
-        {row.actual_direction && row.actual_return_pct !== null
-          ? `${capitalize(row.actual_direction)} ${formatPct(row.actual_return_pct, 1)}`
+        {row.actual_move && row.actual_return_pct !== null
+          ? `${row.actual_move === "large" ? "Large" : "Quiet"} ${formatPct(row.actual_return_pct, 1)}`
           : `Resolves ${formatDate(row.target_date)}`}
       </td>
       <td className={`px-2 py-3 font-semibold ${row.result ? RESULT_STYLE[row.result] : "font-normal text-muted"}`}>

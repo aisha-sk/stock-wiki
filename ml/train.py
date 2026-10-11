@@ -15,7 +15,13 @@ from xgboost import XGBClassifier
 
 from ml.config import load_config
 from ml.evaluate import baseline_scores, classification_metrics
-from ml.features import FEATURE_COLUMNS, NEWS_LAG_COLUMN, add_features, add_target
+from ml.features import (
+    FEATURE_COLUMNS,
+    NEWS_LAG_COLUMN,
+    add_features,
+    add_target,
+    typical_move_pct,
+)
 from ml.ingest.prices import load_prices
 
 INITIAL_SESSIONS = 252
@@ -137,7 +143,7 @@ def walk_forward_pooled(
         prepared.append(featured)
 
     labelled = pd.concat(prepared, ignore_index=True)
-    model_rows = labelled.dropna(subset=[*columns, "y"]).reset_index(drop=True)
+    model_rows = labelled.dropna(subset=[*columns, "fwd_return_pct"]).reset_index(drop=True)
     dates = [pd.Timestamp(value) for value in pd.to_datetime(model_rows["date"]).drop_duplicates().sort_values()]
     blocks: list[pd.DataFrame] = []
     folds: list[Fold] = []
@@ -148,18 +154,23 @@ def walk_forward_pooled(
         test_dates = dates[test_slice]
         train = model_rows[pd.to_datetime(model_rows["date"]).isin(train_dates)]
         test = model_rows[pd.to_datetime(model_rows["date"]).isin(test_dates)]
+        threshold = typical_move_pct(train["fwd_return_pct"])
+        train_y = _large_labels(train["fwd_return_pct"], threshold)
+        test_y = _large_labels(test["fwd_return_pct"], threshold)
+        previous = _large_labels(test["ret_5d"] * 100.0, threshold)
         model = _new_model(algorithm)
-        model.fit(train[columns], train["y"].astype(int))
-        probabilities = _prob_up(model, test[columns])
+        model.fit(train[columns], train_y)
+        probabilities = _positive_probability(model, test[columns])
         blocks.append(
             pd.DataFrame(
                 {
                     "symbol": test["symbol"].to_numpy(),
                     "as_of_date": pd.to_datetime(test["date"]).to_numpy(),
-                    "prob_up": probabilities,
-                    "y_true": test["y"].astype(int).to_numpy(),
+                    "prob_large": probabilities,
+                    "y_true": test_y,
                     "fwd_return_pct": test["fwd_return_pct"].to_numpy(dtype=float),
-                    "ret_5d": test["ret_5d"].to_numpy(dtype=float),
+                    "typical_move_pct": threshold,
+                    "previous_was_large": previous,
                 }
             )
         )
@@ -170,26 +181,28 @@ def walk_forward_pooled(
         )
 
     predictions = pd.concat(blocks, ignore_index=True)
-    metrics = classification_metrics(predictions["y_true"], predictions["prob_up"])
+    metrics = classification_metrics(predictions["y_true"], predictions["prob_large"])
     metrics["n_test"] = len(predictions)
-    baselines = baseline_scores(predictions["y_true"], predictions["ret_5d"])
-    predictions = predictions.drop(columns=["ret_5d"])
+    baselines = baseline_scores(predictions["y_true"], predictions["previous_was_large"])
+    predictions = predictions.drop(columns=["previous_was_large"])
 
+    live_threshold = typical_move_pct(model_rows["fwd_return_pct"])
     final = _new_model(algorithm)
-    final.fit(model_rows[columns], model_rows["y"].astype(int))
+    final.fit(model_rows[columns], _large_labels(model_rows["fwd_return_pct"], live_threshold))
     forecasts: dict[str, dict[str, object]] = {}
     latest_features: dict[str, pd.DataFrame] = {}
     for symbol, forecast_row in latest_rows.items():
         latest = pd.DataFrame([forecast_row[columns]])
-        prob_up = float(_prob_up(final, latest)[0])
+        prob_large = float(_positive_probability(final, latest)[0])
         latest_features[symbol] = latest
         forecasts[symbol] = {
             "symbol": symbol,
             "as_of_date": pd.Timestamp(forecast_row["date"]),
             "horizon_days": horizon,
-            "direction": "up" if prob_up >= 0.5 else "down",
-            "prob_up": prob_up,
-            "confidence": float(max(prob_up, 1.0 - prob_up)),
+            "move": "large" if prob_large >= 0.5 else "quiet",
+            "prob_large": prob_large,
+            "typical_move_pct": live_threshold,
+            "confidence": float(max(prob_large, 1.0 - prob_large)),
         }
     return PooledTrainResult(
         predictions=predictions,
@@ -224,7 +237,7 @@ def format_report(
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description="Walk-forward XGBoost direction model.")
+    parser = argparse.ArgumentParser(description="Walk-forward XGBoost large-move model.")
     parser.add_argument("--tickers", nargs="+", required=True)
     args = parser.parse_args(argv)
     horizon = load_config().horizon_days
@@ -262,7 +275,11 @@ def _new_model(algorithm: str) -> XGBClassifier:
     return XGBClassifier(**XGB_PARAMS)
 
 
-def _prob_up(model: XGBClassifier, features: pd.DataFrame) -> np.ndarray:
+def _large_labels(returns_pct: object, threshold_pct: float) -> np.ndarray:
+    return (np.abs(np.asarray(returns_pct, dtype=float)) > threshold_pct).astype(int)
+
+
+def _positive_probability(model: XGBClassifier, features: pd.DataFrame) -> np.ndarray:
     probabilities = model.predict_proba(features)
     classes = [int(label) for label in model.classes_]
     if 1 not in classes:

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { capitalize, formatDate, formatDateTime, formatRate, formatVersion } from "@/lib/format";
+import { formatDate, formatDateTime, formatPct, formatRate, formatVersion } from "@/lib/format";
 import type { Forecast } from "@/lib/types";
 
 export function ForecastCard({ symbol, forecast }: { symbol: string; forecast: Forecast | null }) {
@@ -19,7 +19,15 @@ export function ForecastCard({ symbol, forecast }: { symbol: string; forecast: F
           <h2 className="text-sm font-normal text-ink-soft">
             Model forecast · next {forecast.horizon_days} trading days
           </h2>
-          <div className="text-4xl font-semibold">{capitalize(forecast.direction)}</div>
+          <div className="text-4xl font-semibold">
+            {forecast.move === "large"
+              ? "The model estimates a larger-than-usual move"
+              : "The model estimates a typical move"}
+          </div>
+          <div className="text-[15px] text-ink-soft">
+            Larger than usual means a move past{" "}
+            <span className="font-mono text-white">{formatPct(forecast.typical_move_pct, 1)}</span> either way.
+          </div>
           <div className="text-[15px] text-ink-soft">
             Model confidence <span className="font-mono text-white">{formatRate(forecast.confidence, 0)}</span>
           </div>

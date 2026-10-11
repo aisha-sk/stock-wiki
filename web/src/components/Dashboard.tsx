@@ -40,7 +40,11 @@ export function Dashboard() {
         <QuoteCard stock={stock.data} />
         <ForecastCard symbol={stock.data.symbol} forecast={stock.data.forecast} />
       </div>
-      <SentimentCard symbol={stock.data.symbol} sentiment={stock.data.sentiment} />
+      <SentimentCard
+        symbol={stock.data.symbol}
+        sentiment={stock.data.sentiment}
+        headlines={stock.data.headlines}
+      />
       <HeadlinesCard headlines={stock.data.headlines} />
     </div>
   );

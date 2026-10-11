@@ -22,20 +22,16 @@ def classification_metrics(y_true: object, prob_up: object) -> dict[str, float]:
     }
 
 
-def baseline_scores(y_true: object, trailing_return_5d: object) -> list[dict[str, float | str]]:
-    """Score ``always_up`` and ``previous_direction`` on the same rows as the model.
+def baseline_scores(y_true: object, previous_was_large: object) -> list[dict[str, float | str]]:
+    """Score ``always_quiet`` and ``previous_move`` on the same rows as the model.
 
-    ``previous_direction`` predicts up only when the trailing 5-day return is positive.
+    ``previous_move`` says large only when the trailing 5-session move was already large.
     """
     y = np.asarray(y_true, dtype=int)
-    trailing = np.asarray(trailing_return_5d, dtype=float)
-    previous = (trailing > 0).astype(int)
+    previous = np.asarray(previous_was_large, dtype=int)
     return [
-        {"name": "always_up", "directional_accuracy": float(np.mean(y == 1))},
-        {
-            "name": "previous_direction",
-            "directional_accuracy": float(np.mean(previous == y)),
-        },
+        {"name": "always_quiet", "directional_accuracy": float(np.mean(y == 0))},
+        {"name": "previous_move", "directional_accuracy": float(np.mean(previous == y))},
     ]
 
 
@@ -45,6 +41,8 @@ def strategy_backtest(predictions: pd.DataFrame) -> dict[str, float | None]:
     ``sharpe_ratio`` is ``mean / std * sqrt(252 / 5)`` of those period returns.
     ``max_drawdown`` is the equity curve's worst drop, as a negative fraction.
     """
+    if "prob_up" not in predictions:
+        return {"sharpe_ratio": None, "max_drawdown": None}
     frame = predictions.copy()
     frame["as_of_date"] = pd.to_datetime(frame["as_of_date"])
     dates = sorted(frame["as_of_date"].unique())
