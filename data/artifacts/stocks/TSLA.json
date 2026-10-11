@@ -2,7 +2,7 @@
   "schema_version": "1.1",
   "symbol": "TSLA",
   "name": "Tesla, Inc.",
-  "generated_at": "2026-10-11T00:10:32Z",
+  "generated_at": "2026-10-11T01:32:21Z",
   "is_demo_data": false,
   "quote": {
     "price": 382.7,
@@ -492,7 +492,18 @@
       "close": 382.7
     }
   ],
-  "forecast": null,
+  "forecast": {
+    "horizon_days": 5,
+    "move": "quiet",
+    "prob_large": 0.4208,
+    "typical_move_pct": 3.5248,
+    "confidence": 0.5791999999999999,
+    "made_at": "2026-10-11T01:32:21Z",
+    "as_of_date": "2026-10-09",
+    "target_date": "2026-10-16",
+    "model_name": "move-xgb",
+    "model_version": "9"
+  },
   "sentiment": {
     "window_days": 7,
     "sources": [
@@ -511,8 +522,8 @@
         "display_name": "News media",
         "score": 22,
         "label": "bullish",
-        "doc_count": 51,
-        "note": "51 articles, last 7 days",
+        "doc_count": 49,
+        "note": "49 articles, last 7 days",
         "method": "finbert",
         "previous_score": 3
       }
@@ -531,7 +542,7 @@
       "publisher": "Yahoo Finance",
       "title": "Consensus: 19 buy, 21 hold, 4 sell (Oct 2026)",
       "url": null,
-      "published_at": "2026-10-11T00:10:32Z",
+      "published_at": "2026-10-11T01:32:21Z",
       "score": 19,
       "label": "neutral"
     },
@@ -563,16 +574,6 @@
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUFUwMkpTSVRsZnpwR0tmVGVVaFVqdkNXbUtzZml6QmxFVTNLNVZ1a29sQ1pXcUJqWTJYeklFZ1JORnJIV0lrSU14aWpUMTllS29OT2pKTWxfNGRVV0tzOEdscW5aRGU5eHNKdldtcmEzSXhOWDFiNlRGMDl5WmNGb3V5bXg1MEJyTkJRZUpfOTk2TnJ1?oc=5",
       "published_at": "2026-10-09T20:22:14Z",
       "score": 8,
-      "label": "neutral"
-    },
-    {
-      "id": "26a3a909b845",
-      "source": "news",
-      "publisher": "Yahoo! Finance Canada",
-      "title": "Tesla, Inc. (TSLA) Options Chain - Yahoo! Finance Canada",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVnRsX09jaVhzcV9BdUNHTUNCbmJCR2tJMkdxRTduOWY4RWg2eC1BcWlTT01na2kxUTkxS1R6bFZUMkpCaV9xZDl5RkN3QXFQSWJhU1FHWVpURTFiRUhHeDBzSEZFZUxBNFp0SF9pMGVsY2J1Ni1YZWZxN3pSem5FWlRvMUE?oc=5",
-      "published_at": "2026-10-09T17:13:44Z",
-      "score": 1,
       "label": "neutral"
     },
     {
@@ -816,14 +817,24 @@
       "label": "bullish"
     },
     {
-      "id": "ef560c0bd2a2",
+      "id": "b19eae8dd461",
       "source": "news",
       "publisher": "Moomoo",
-      "title": "TSLA 261007 285.00C (TSLA261007C285000) Stock Options Chain | Quotes & News - Moomoo",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE92THhEUHRtdE1ja3VfSG1PdEVrdFBOVTJnQUlxSWdDc1FMdTBFcWxvdXZBcWtvV09KSDdkR1lLWFFWTEJMZUVxdzJpZFR6WUhuazcyOXhjd0tiU0pvNUl5Sg?oc=5",
-      "published_at": "2026-10-06T19:12:00Z",
-      "score": 0,
+      "title": "$TSLA: Is The Market Finally Repricing Tesla? - Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQcmZ5ekx6S3hMcVhTck9KY196bFN4MEhCOGh1aktsLVNUVy1ZNjJTX0FGZTlxV0VaazhsZGw1bDhjN1ZMbnIwS0FPQUowVU1PNTNUQ1B2azB2UlJ4d3hjajBPc3JPb3pIRkFrOW8yS2ZaTS0zYXdRZlRZeU94ZW93QVc4NE84X3E3cHY4eko5Q0VZa3pPVEVGQU1aSVA?oc=5",
+      "published_at": "2026-10-06T15:12:42Z",
+      "score": 14,
       "label": "neutral"
+    },
+    {
+      "id": "b73d7695f557",
+      "source": "news",
+      "publisher": "Benzinga",
+      "title": "TSLA Stock May Have 'More Near-Term Upside' as Delivery Beat Changes the Math \u2014 Gary Black Sees 'Room' Be - Benzinga",
+      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQc0psVWl3RkZPVG9oVUNFZ3Z6QWQtYWpKUjBmMlJVV25vWTNsdWJTT1dRbm00Z1NQNFczVjVOYzhscl9xbG4yNU9JVE41N2F0ZUhPSzJvMGp5UGl1cmtaNEluMVkxdGZVLTkzVWpoY1ZOdTdZTXgxX2J2ZUxMWVRPVGlEdXEtQ3hpOTF3TmdYeUgxZ0NUYkVnbFNJVm9zcDh6U3lzN29qWWxYOUNMdTk5Z0pTWmhPaWdKZFB3STNXM0MycEhTdWRtQ2hsTjNxSEd2NEZ4NkN6eWxGS2x5WlZKdjVoNHpaQ0JMdE44b29RLThkWFR0NnVyUWFVT2M3QTBNbjZWRDVZeF9TektaVEE?oc=5",
+      "published_at": "2026-10-06T09:54:32Z",
+      "score": 56,
+      "label": "bullish"
     }
   ]
 }

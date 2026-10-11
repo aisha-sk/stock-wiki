@@ -2,7 +2,7 @@
   "schema_version": "1.1",
   "symbol": "NVDA",
   "name": "NVIDIA Corporation",
-  "generated_at": "2026-10-11T00:10:32Z",
+  "generated_at": "2026-10-11T01:32:21Z",
   "is_demo_data": false,
   "quote": {
     "price": 229.28,
@@ -492,7 +492,18 @@
       "close": 229.28
     }
   ],
-  "forecast": null,
+  "forecast": {
+    "horizon_days": 5,
+    "move": "quiet",
+    "prob_large": 0.4623,
+    "typical_move_pct": 3.5248,
+    "confidence": 0.5377000000000001,
+    "made_at": "2026-10-11T01:32:21Z",
+    "as_of_date": "2026-10-09",
+    "target_date": "2026-10-16",
+    "model_name": "move-xgb",
+    "model_version": "9"
+  },
   "sentiment": {
     "window_days": 7,
     "sources": [
@@ -531,7 +542,7 @@
       "publisher": "Yahoo Finance",
       "title": "Consensus: 59 buy, 2 hold, 1 sell (Oct 2026)",
       "url": null,
-      "published_at": "2026-10-11T00:10:32Z",
+      "published_at": "2026-10-11T01:32:21Z",
       "score": 55,
       "label": "bullish"
     },

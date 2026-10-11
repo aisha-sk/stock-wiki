@@ -41,13 +41,13 @@ direction.
 | Accuracy, current version (XGBoost) | 53.7% over 672 out-of-sample forecasts |
 | Baseline: always predict a quiet week | 55.7% |
 | Baseline: repeat the previous week's move size | 55.5% |
-| Model versions trained | 8 |
-| Versions that passed the quality gate | 0 |
-| Forecast log | 92 of 180 resolved forecasts correct (51.1%), 3 pending |
+| Model versions trained | 9 |
+| Versions that passed the quality gate | 1 (version 9, in production) |
+| Forecast log | 92 of 180 resolved forecasts correct (51.1%), 6 pending |
 
-**The model clears 52% but does not beat always guessing a quiet week.** Version 8 was
-rejected under the rule in force when it ran, which also required beating that baseline, so
-the site serves no forecast until the pipeline runs again. The gate is now 52% alone; see
+**The model clears the 52% gate, so version 9 serves forecasts, but it does not beat always
+guessing a quiet week.** The site shows both numbers side by side. Version 8 scored the same
+and was rejected under an earlier rule that also required beating that baseline; see
 [docs/METHODOLOGY.md](docs/METHODOLOGY.md#5-the-gate).
 
 <img src="docs/img/model.jpg" width="420" alt="The model performance page: 53.7% accuracy beside its baselines, and a No production model status">
