@@ -12,7 +12,7 @@ take up to a minute)
 > Research and education only. Nothing here is financial advice, and past forecasts do not
 > guarantee future results.
 
-![The StockSense landing page: a serif headline reading "Wall Street says one thing. The headlines say another." above a live product window for NVDA](docs/img/landing.jpg)
+![The StockSense landing page: a serif headline reading "Wall Street says one thing. The headlines say another." above a live product window for NVDA](docs/img/landing-hero.jpg)
 
 Built in about a day by two people, each working with an AI coding agent:
 [@aisha-sk](https://github.com/aisha-sk) with Claude Code on the web app, API and agent, and
@@ -64,7 +64,7 @@ Pick a stock. The top row is the price over the last 20 sessions and the model's
 the next five. Below it, analysts and news sit side by side, with each headline labelled
 bullish, neutral or bearish.
 
-![The dashboard for NVDA: price chart, a forecast card reading "The model estimates a typical move" at 54% confidence, and the Wall Street and news section](docs/img/dashboard.jpg)
+![The dashboard for TSLA: the price over the last 20 sessions beside a forecast card reading "The model estimates a typical move" at 58% confidence](docs/img/dashboard-tsla.png)
 
 The forecast is about the **size** of the move, not its direction: will the next five sessions
 move more than this stock usually does, either way?
@@ -82,7 +82,7 @@ the list underneath.
 
 The report card. Accuracy sits next to both baselines, on forecasts the model had never seen.
 
-![The model performance page: 53.7% accuracy shown beside "always quiet 55.7%" and "previous move 55.5%", with a Production status](docs/img/model.jpg)
+![The model performance page: version 9 marked "Production, passed quality gate", with 53.7% accuracy shown beside "always quiet 55.7%" and "previous move 55.5%"](docs/img/model-performance.png)
 
 Below that, accuracy week by week against the gate, and the full registry. Eight of the nine
 versions were rejected and never served a forecast.
