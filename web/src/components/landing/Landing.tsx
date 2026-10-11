@@ -69,7 +69,7 @@ function ProductWindow({ stock }: { stock: Stock }) {
         </div>
       </div>
       <div className="p-4 text-left sm:p-6">
-        <SentimentCard symbol={stock.symbol} sentiment={stock.sentiment} />
+        <SentimentCard symbol={stock.symbol} sentiment={stock.sentiment} headlines={stock.headlines} />
       </div>
     </div>
   );
