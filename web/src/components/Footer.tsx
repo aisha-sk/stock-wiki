@@ -8,7 +8,7 @@ export function Footer() {
   const health = useApi("health", getHealth);
   const asOf = health.data?.data_generated_at;
   return (
-    <footer className="mt-auto pb-6 pt-2 text-[13px] text-muted">
+    <footer className="pb-6 pt-6 text-[13px] text-muted">
       {asOf && (
         <p>
           Data as of {formatDateTime(asOf)}

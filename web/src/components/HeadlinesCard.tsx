@@ -10,7 +10,7 @@ const SOURCE_NAME: Record<Source, string> = {
 export function HeadlinesCard({ headlines }: { headlines: Headline[] }) {
   return (
     <section aria-labelledby="headlines-title" className="rounded-xl border border-line bg-card p-6">
-      <h2 id="headlines-title" className="mb-4 text-xl font-semibold">
+      <h2 id="headlines-title" className="mb-4 font-display text-2xl font-medium">
         What each side is reading
       </h2>
       {headlines.length === 0 ? (

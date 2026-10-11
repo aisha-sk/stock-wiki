@@ -19,6 +19,6 @@ elsewhere, put `NEXT_PUBLIC_API_URL=...` in `web/.env.local`.
 | `src/lib/useApi.ts` | Loading, ready and error states for a fetch, with `reload` |
 | `src/lib/useSelectedStock.ts` | The stock chosen with `?symbol=` |
 | `src/components/` | Header, stock selector, cards |
-| `src/app/` | `/` Dashboard, `/model` Model performance, `/alerts` Alerts |
+| `src/app/` | `/` landing page; `(app)/` holds `/dashboard`, `/model` and `/alerts`, which share the stock selector |
 
 Checks: `npm run lint`, `npx tsc --noEmit`, `npm run build`.
