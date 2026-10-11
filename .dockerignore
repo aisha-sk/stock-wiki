@@ -1,0 +1,17 @@
+# The API image needs api/app, contracts and data/artifacts. Keep everything else out.
+.git
+.github
+.claude
+.env
+.env.*
+**/.venv
+**/node_modules
+**/__pycache__
+**/.pytest_cache
+**/.ruff_cache
+**/*.db
+web
+ml
+mlruns
+design
+docs

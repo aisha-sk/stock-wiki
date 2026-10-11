@@ -1,0 +1,15 @@
+# Render blueprint for the API. In Render: New > Blueprint, pick this repo.
+# The web app is deployed separately on Vercel (see docs/DEPLOY.md).
+services:
+  - type: web
+    name: sentifi-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./api/Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: CORS_ORIGINS
+        # Set to the Vercel URL of the web app, for example https://sentifi.vercel.app
+        sync: false

@@ -1,0 +1,6 @@
+# Runtime only. requirements.txt adds the test and lint tools on top of this.
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.7
+python-dotenv>=1.0
+email-validator>=2.1
