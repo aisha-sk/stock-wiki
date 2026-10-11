@@ -209,3 +209,20 @@ def test_option_and_quote_pages_are_dropped_before_scoring() -> None:
         "Tesla stock slips after the company misses delivery estimates",
         "Investors put fresh money into the Texas factory plan",
     ]
+
+
+def test_option_chain_listings_are_dropped() -> None:
+    documents = [
+        {"title": "Tesla, Inc. (TSLA) Options Chain - Yahoo! Finance Canada"},
+        {"title": "Apple Inc. (AAPL) options chain - Yahoo Finance Australia"},
+        {"title": "TSLA 261007 285.00C (TSLA261007C285000) Stock Options Chain | Quotes & News - Moomoo"},
+        {"title": "Apple weighs its options as the supply chain tightens"},
+        {"title": "NVIDIA: High-Growth Leadership and Momentum Face a Timing Caveat - ChartMill"},
+    ]
+
+    kept = without_junk(documents)
+
+    assert [item["title"] for item in kept] == [
+        "Apple weighs its options as the supply chain tightens",
+        "NVIDIA: High-Growth Leadership and Momentum Face a Timing Caveat - ChartMill",
+    ]
