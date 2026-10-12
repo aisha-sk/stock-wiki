@@ -2,7 +2,7 @@
   "schema_version": "1.1",
   "symbol": "AAPL",
   "name": "Apple Inc.",
-  "generated_at": "2026-10-11T01:32:21Z",
+  "generated_at": "2026-10-12T01:56:22Z",
   "is_demo_data": false,
   "quote": {
     "price": 336.64,
@@ -495,14 +495,14 @@
   "forecast": {
     "horizon_days": 5,
     "move": "quiet",
-    "prob_large": 0.4387,
-    "typical_move_pct": 3.5248,
-    "confidence": 0.5613,
-    "made_at": "2026-10-11T01:32:21Z",
+    "prob_large": 0.4919,
+    "typical_move_pct": 3.5255,
+    "confidence": 0.5081,
+    "made_at": "2026-10-12T01:56:22Z",
     "as_of_date": "2026-10-09",
     "target_date": "2026-10-16",
     "model_name": "move-xgb",
-    "model_version": "9"
+    "model_version": "10"
   },
   "sentiment": {
     "window_days": 7,
@@ -520,16 +520,16 @@
       {
         "source": "news",
         "display_name": "News media",
-        "score": 8,
+        "score": 6,
         "label": "neutral",
-        "doc_count": 50,
-        "note": "50 articles, last 7 days",
+        "doc_count": 48,
+        "note": "48 articles, last 7 days",
         "method": "finbert",
-        "previous_score": 32
+        "previous_score": 24
       }
     ],
     "gap": {
-      "points": 17,
+      "points": 19,
       "most_bullish": "analysts",
       "most_bearish": "news",
       "summary": "The available groups are close together."
@@ -542,8 +542,28 @@
       "publisher": "Yahoo Finance",
       "title": "Consensus: 25 buy, 13 hold, 6 sell (Oct 2026)",
       "url": null,
-      "published_at": "2026-10-11T01:32:21Z",
+      "published_at": "2026-10-12T01:56:22Z",
       "score": 25,
+      "label": "bullish"
+    },
+    {
+      "id": "93b936f7e62f",
+      "source": "news",
+      "publisher": "Beinsure",
+      "title": "Apple (NASDAQ: AAPL) stock price forecast: new launches and iPhone demand risks - Beinsure",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNLWd3NENQd2lXbURIS0lIYkowREE4alV3RncxeHQ1YTJ3cERMODhPZkhzbHdqWjZmZlYwcEZQSkNlUDNoank2Q2hIMldIS2pldGNyTXBkOTNnOXlIOEN5WU9vWnhWYlVxaVNwbUtFWTR3U3hJQW9QSDIzcDZjSGg5Yjltamk?oc=5",
+      "published_at": "2026-10-11T17:11:49Z",
+      "score": -11,
+      "label": "neutral"
+    },
+    {
+      "id": "2d729017fe15",
+      "source": "news",
+      "publisher": "Stocktwits",
+      "title": "NVDA, AAPL Stocks In Focus After Foxconn Revenue Hits Record High On AI Pull-In - Stocktwits",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPSEtGN1loQTVkV0hHSXFlb1ROLUFCUW9UejdlUTZzY0dUWDJWYlcydlNtSERiX3dHaE4wdFNnQkRLUUt4R2VkaEZkXzFXZGpDb05POEhwbXFseTI0U1l0bVFlcjZNblcwTW1saTVVaUhxODZsOW43dW1QbkdnbkVoMHRfSHhuZGhNb0FUMzlNTFJmY2IzUDhrdFNGVzcyZkpWNmU3UjlIaktEdGFRd1JRcmNjMjBjQ2UwYWRnTU9WUlBETEJ6RkJqdjB1UFJDajV5TnhhWg?oc=5",
+      "published_at": "2026-10-11T10:52:21Z",
+      "score": 66,
       "label": "bullish"
     },
     {
@@ -647,36 +667,6 @@
       "label": "neutral"
     },
     {
-      "id": "a52bb4bf1654",
-      "source": "news",
-      "publisher": "MarketBeat",
-      "title": "Apple Inc. $AAPL Stock Bought by Endeavor Private Wealth Inc. - MarketBeat",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZkZSNEd0dFFfWno3TDVseGU0WXAtX3JQUm1zRUNyVXpQMUh6MFVLNFh5SFRtRVVBU19WVmhFRnVHMGtyQmdRY2dSbG5UUnVuS2FsRlptX1hYLWgtT3F1bWNNUkp2ajZQZWlkc0pfSFpzdmJ4LVJ4Y0poVl8xZ0R2ekNib29leEJkMXZyeVdWR2FDVlJwd09fMFJjZGRHT2RyNnhrTHRPY1VCUExSOVY1R2FUUG9jNlJnYWZz?oc=5",
-      "published_at": "2026-10-09T07:35:13Z",
-      "score": 1,
-      "label": "neutral"
-    },
-    {
-      "id": "079e67671889",
-      "source": "news",
-      "publisher": "MarketBeat",
-      "title": "Apple Inc. $AAPL Stock Purchased by Wedmont Private Capital - MarketBeat",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNX19zX1NPRFJxcXM4V1p4TGpWMTg0ZFJyOGFodVJKMDJZRk1TMnVTalBoZy1OLTRQQ0lYNFdmczcxNTR0NU80UXVoUkhDN1owc1U0TnRWTGVHZWR0VzFoRm9VVFNtX2FRMDhxZmZ6QXUxTHQzd0tpRER1QnhrSjZjRGFHVW44czRXYjdtYnNXeFBCQUhOSi1XRUFWMUhiTlNHT0Vyay1rd2oxUjlVa1A5SXAxdjk5NUhialE?oc=5",
-      "published_at": "2026-10-09T07:35:13Z",
-      "score": 2,
-      "label": "neutral"
-    },
-    {
-      "id": "3790a1ac0ea1",
-      "source": "news",
-      "publisher": "Trefis",
-      "title": "What Does Western Digital Offer That Apple Does Not? - Trefis",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUUJpRFhHZElTbUtHX01fYThydDVYQ2Y5MXN3YXJRR3k0YTRTWW9NMTlycmF0T2g2eXdRMWllZnlOcHVEQ3NjT044ZXFJbTVHWkN5TGVtcUN6MUZ5ajBGVmhidVQwM2xkMUdWb3U4Vll3a2ZMb3BWcWNkdk9US2VobVRqdHpvMGxTN3gteGxZWVVHc1VaSVg5ZURsUXRGUUFYZk91YTk5QzVESWhaeUFNSE1B?oc=5",
-      "published_at": "2026-10-08T22:56:07Z",
-      "score": 4,
-      "label": "neutral"
-    },
-    {
       "id": "e1c44a1c7ea1",
       "source": "news",
       "publisher": "Stock Titan",
@@ -695,6 +685,16 @@
       "published_at": "2026-10-08T20:45:03Z",
       "score": -1,
       "label": "neutral"
+    },
+    {
+      "id": "c8c0a31e45b5",
+      "source": "news",
+      "publisher": "Seeking Alpha",
+      "title": "Apple gains share even as PC market slumps in Q3, IDC says (AAPL:NASDAQ) - Seeking Alpha",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNa1JHNG5mcThYRy11eF8xUlRLY01OMHNnZlNVT1FDcktjRF9LeEhqcXpPbTU0ZkVRVjM1cm5TZ0hsOFR4TEJnRjhiRkZGRUFXZzJHTHBsWm0zb01xZU5Ra1VlQkUxQWJPMTlHV3VsUXpGVmpaYzl4NkotNGhlX25WQVE1cXdSRldPU0I5WWhpU1NPS3p6X1ZUS3Jtbw?oc=5",
+      "published_at": "2026-10-08T20:10:16Z",
+      "score": -35,
+      "label": "bearish"
     },
     {
       "id": "13abb7fb09b7",
@@ -717,11 +717,11 @@
       "label": "neutral"
     },
     {
-      "id": "b297bc5b7b7c",
+      "id": "3e32d37fd9e7",
       "source": "news",
       "publisher": "TradingView",
       "title": "Apple Rises 24% YTD: Should You Buy, Sell or Hold the AAPL Stock? - TradingView",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPcGp5ZktTQ0tCUUxHY3RXUFkxUVFvekRqOVgyV1lpa1pnNUF5U095MDE2elR1WHJSU1E0Smc3aEc0LTFpcmxSS2xpVGNqNVBBQkNnX0RMZjIzWHJYeFFYblduQTVReURCb2g2RmNHX0t3SVFVTkk2eW80X25UXy1VVmhFaTRmSHBMNGI2MWZydUFHal82ZmN1YmdpNGU4QWtBeE5zNF9kWEJmVkdncDlnX0sydWMzajVs?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVkdCZ1diNllnX2l1RFA0X3VHRk4zNE01TGptMXM0bkdyaXd5TVBjcF9fOGNRV3RqNklSbzV2UGhwQzByRzJFMmp4TkFMRXpFVHFvYk5iSUM5S1FObzBuLU4tR0hiT1RDbDhfQWRCTDIwOXVITmstcURUdUp3aHFVTWV1Y2todmYxeno1blRPYWN6aS1nWEh6aHFidnF6TVpXTTBJQzVxSzdhZXJGQ1JsdUN6TFJFbFU?oc=5",
       "published_at": "2026-10-08T16:29:00Z",
       "score": 5,
       "label": "neutral"
@@ -757,14 +757,24 @@
       "label": "bullish"
     },
     {
-      "id": "d259e1ed93e4",
+      "id": "d66e28fd8d57",
       "source": "news",
       "publisher": "Simply Wall Street",
       "title": "Apple (AAPL) Stock Looks Fully Priced On Its 145% Five Year Run - Simply Wall Street",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOQVBCSGVRZkZfNVJoNzd4SzJBQV9hNXJDbXU3MHR4bGZFbExyQUNaUFVyNlVNdnNSWWhjb1NDOHJNUVRNWU5sb3kydzBqeWF3NDFfZHBkemd3M3ZDOUNhVXZuOHdLTzhsam5OdVhzTEdkR0VRN0hYdjBxV2FyblZUemRXWEFwdkZOTDBuN1lUSVRTeWI5b2JvNE1mVXZiRElialdrZDVjOVhjRHFfU0dzMTliMTU0QnFrYWVoaF9PclZnUdIBwgFBVV95cUxOQVBCSGVRZkZfNVJoNzd4SzJBQV9hNXJDbXU3MHR4bGZFbExyQUNaUFVyNlVNdnNSWWhjb1NDOHJNUVRNWU5sb3kydzBqeWF3NDFfZHBkemd3M3ZDOUNhVXZuOHdLTzhsam5OdVhzTEdkR0VRN0hYdjBxV2FyblZUemRXWEFwdkZOTDBuN1lUSVRTeWI5b2JvNE1mVXZiRElialdrZDVjOVhjRHFfU0dzMTliMTU0QnFrYWVoaF9PclZnUQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSEluMk1sUDZGWUE4SDc2aWtkZk4xQ3ZrWnF1UHVSdGFPUjlDTkIweUQxQWlIOTFqcmo4cjk5dEQtYURNSEp0UmVZdWtfdHlIVHRNalM1NnRvbWNhcUtuWU93bVBxeDdCVm9KWDNGQlZXa0hwV1l6OHNxbUNuZDgwZWhBaXRnSXpicC1iMFF3Rk05X3JEWWdlRHU1bWZwT3NwRWxDcHE1ZUZwTnFkMnRyOVlJWHgtX0ttd21MQtIBwgFBVV95cUxOQVBCSGVRZkZfNVJoNzd4SzJBQV9hNXJDbXU3MHR4bGZFbExyQUNaUFVyNlVNdnNSWWhjb1NDOHJNUVRNWU5sb3kydzBqeWF3NDFfZHBkemd3M3ZDOUNhVXZuOHdLTzhsam5OdVhzTEdkR0VRN0hYdjBxV2FyblZUemRXWEFwdkZOTDBuN1lUSVRTeWI5b2JvNE1mVXZiRElialdrZDVjOVhjRHFfU0dzMTliMTU0QnFrYWVoaF9PclZnUQ?oc=5",
       "published_at": "2026-10-08T10:32:26Z",
       "score": 91,
       "label": "bullish"
+    },
+    {
+      "id": "a3cf0c95a323",
+      "source": "news",
+      "publisher": "MarketBeat",
+      "title": "Apple Inc. $AAPL Stock Purchased by Angeles Wealth Management LLC - MarketBeat",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQOTM0c0oxSkZ2aDBzMjFrMEEwYmFMMTFvN1p2YjNlNS1JRFh6VE9pUF9LYmdLdGpMRDYwNHl4MDlxMEZWUlNKaFJ6OC04WXZqU1FINUxxeFNLU2lvLXNiTGZOSHdhUENqNXhwRDE4UWlXVjI4VHlqYklfd2p5VUJpOTZubG5FYjl2ZjZPaGtsNWJKSW1NY3JqMHN2U1BERldWNEFFSk43OEpvQUxMNFhwLXVJMmtCNUJ6UzBteFgyX0I2QQ?oc=5",
+      "published_at": "2026-10-08T07:13:03Z",
+      "score": 3,
+      "label": "neutral"
     },
     {
       "id": "31678e70bb25",
@@ -822,18 +832,8 @@
       "publisher": "Yahoo Finance",
       "title": "NVIDIA (NVDA) vs. Apple (AAPL): Which Stock Wins the Valuation Race? - Yahoo Finance",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdEV1TE1CTTFVRlA4TGZBVEptU08zbnNtbDhvZnJWOERBOVZmZHJNUnQtMjZTOG1TN2NWbmR3YlBWM1hNQTJrWGM4S25SSE9EaTlNaFNWTDBiamhEMm9ldlltbjJuaUp1UnNkeEdScTAyVUdaZXV5MUh3OXlHUllHS28zbm9kNG5VZnFCZmZWU2d5eExl?oc=5",
-      "published_at": "2026-10-07T05:19:51Z",
+      "published_at": "2026-10-07T05:19:00Z",
       "score": 8,
-      "label": "neutral"
-    },
-    {
-      "id": "026e3571370c",
-      "source": "news",
-      "publisher": "9to5Mac",
-      "title": "Tim Cook sold nearly $63.9 million in Apple shares this month - 9to5Mac",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPQk1EMDB0R0lUd2ZJQUY3REZjbzhYd05ibnNtenJCb2stSFhaU0RTMFBZYWFPTmdmQ3c1T2pId0NZOEF0dXVOWDhkUmtQMEFVNTBPbnJON2JSb2ZWQUxoWkczX1ZOQ1MydlZ5UWVWVjhXM0JfUURZSVI3Y19hVzRROUFpZmFmN3FTWVZLX01ReTZWRW80cUY0?oc=5",
-      "published_at": "2026-10-06T20:11:00Z",
-      "score": 3,
       "label": "neutral"
     }
   ]

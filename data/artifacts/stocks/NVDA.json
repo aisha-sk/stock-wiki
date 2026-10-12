@@ -2,7 +2,7 @@
   "schema_version": "1.1",
   "symbol": "NVDA",
   "name": "NVIDIA Corporation",
-  "generated_at": "2026-10-11T01:32:21Z",
+  "generated_at": "2026-10-12T01:56:22Z",
   "is_demo_data": false,
   "quote": {
     "price": 229.28,
@@ -494,15 +494,15 @@
   ],
   "forecast": {
     "horizon_days": 5,
-    "move": "quiet",
-    "prob_large": 0.4623,
-    "typical_move_pct": 3.5248,
-    "confidence": 0.5377000000000001,
-    "made_at": "2026-10-11T01:32:21Z",
+    "move": "large",
+    "prob_large": 0.5268,
+    "typical_move_pct": 3.5255,
+    "confidence": 0.5268,
+    "made_at": "2026-10-12T01:56:22Z",
     "as_of_date": "2026-10-09",
     "target_date": "2026-10-16",
     "model_name": "move-xgb",
-    "model_version": "9"
+    "model_version": "10"
   },
   "sentiment": {
     "window_days": 7,
@@ -512,24 +512,24 @@
         "display_name": "Wall Street analysts",
         "score": 55,
         "label": "bullish",
-        "doc_count": 62,
-        "note": "62 analysts, Oct 2026",
+        "doc_count": 61,
+        "note": "61 analysts, Oct 2026",
         "method": "ratings",
         "previous_score": 55
       },
       {
         "source": "news",
         "display_name": "News media",
-        "score": 15,
+        "score": 18,
         "label": "neutral",
-        "doc_count": 69,
-        "note": "69 articles, last 7 days",
+        "doc_count": 62,
+        "note": "62 articles, last 7 days",
         "method": "finbert",
-        "previous_score": -2
+        "previous_score": 22
       }
     ],
     "gap": {
-      "points": 40,
+      "points": 37,
       "most_bullish": "analysts",
       "most_bearish": "news",
       "summary": "Wall Street analysts lean bullish while News media are neutral."
@@ -537,14 +537,64 @@
   },
   "headlines": [
     {
-      "id": "8338cb30aaf7",
+      "id": "568c17e013a7",
       "source": "analysts",
       "publisher": "Yahoo Finance",
-      "title": "Consensus: 59 buy, 2 hold, 1 sell (Oct 2026)",
+      "title": "Consensus: 58 buy, 2 hold, 1 sell (Oct 2026)",
       "url": null,
-      "published_at": "2026-10-11T01:32:21Z",
+      "published_at": "2026-10-12T01:56:22Z",
       "score": 55,
       "label": "bullish"
+    },
+    {
+      "id": "822087b56e5d",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Nvidia (NVDA) Stock May Be 27% Undervalued Despite Record Highs - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNd1dlQVhPRElnNkdRc0FCd2FTTjVpNXBXWXh1QlB0bXBwUGt0eXZlb1J3YnFTMjNVOHZ0SU40UDZEUGRMS0VjMXZhVVpkWEtjWG1OQnhud3laYlBiRmJjdFd0OTE2UlZYWDg2ZGJRclFPNktCQThvRXdWLXRDSENRU0NISDE4RzctRGh5aGVwMUxqRzg?oc=5",
+      "published_at": "2026-10-11T19:09:09Z",
+      "score": 63,
+      "label": "bullish"
+    },
+    {
+      "id": "15288ca1c86f",
+      "source": "news",
+      "publisher": "Simply Wall Street",
+      "title": "Is NVIDIA (NVDA) Cheap As Its AI Narrative Points To $280 Fair Value? - Simply Wall Street",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNYTZDaE1QdllESjVKUHBVVWVxR3dxLUVyYmtMeUxMNk13WXNUc0tCbUhkb180QUZ6Z3BQWktZNklMN2lmMEtZb01meGpBYmlydURMUi1jYy1ZNlZqQk9nNnBEMzdSZ2hOVTdPeWlDR0szQ3QtR1ZWazhndl9PelFKYzBydm5QVi00eWJNRlFoMlNINExrWDhubEw2X0hKWHVTVlk0RG9aZ01zSFdQS0F2QnJhUjR4UnJLc3dINmxLbEI3cTFqR3ZkZElB0gHPAUFVX3lxTE14RjYxbzJxQkxjRVpwdTdlM0dVMkdkeFhCdExFbHRsbnNfcElKZ3JUeGVVZm1JQVdpWDdkbHJIWkNzN2phSUFYZ1BtVVpLYU9QSzNOS1FTQXBuM2hmeGNsZElrOV9hWkowaFZma0pCWDAtNlo3eTN2X0ZYNUVnNGY3TGk3LTJkVGJyUFVkLWhybDBnNFhZemdwTDVMNW5PS28yOVFOLTVFVkxENFVRZ25oOU80MkxURkU1TXB2MkFyU0REN2tReFRWajhBZmZCOA?oc=5",
+      "published_at": "2026-10-11T16:10:37Z",
+      "score": 19,
+      "label": "neutral"
+    },
+    {
+      "id": "ea131a56a0d5",
+      "source": "news",
+      "publisher": "Seeking Alpha",
+      "title": "Nvidia Stock: Finding New Ways To Extend The AI Growth Runway (NASDAQ:NVDA) - Seeking Alpha",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNMndobzRCTHpzOWJTYUhfQktHQ1JlRzdzYzV5V1ZfbjB0M2RiM0lLYTBaaW92ODRUWFc5VjYyTldyVFVMVHBQZWUteUN5dGZDdVZqMXVkN1c3SGhUcjVreFNwYnRkU29oWHNUVTBIMlVPVE1icmUtd3MwWFdLRExNWjR2cXpibXp0ZkRpREQ2NDJlTHhKQnEzYXdXSkw4Tlc2Vzcw?oc=5",
+      "published_at": "2026-10-11T15:05:00Z",
+      "score": 60,
+      "label": "bullish"
+    },
+    {
+      "id": "7263f50a00a3",
+      "source": "news",
+      "publisher": "Stocktwits",
+      "title": "Dan Ives Thinks AI Buildout Still In Early Stages, With NVDA, MSFT, PLTR, AAPL And CRWD As Top AI Picks - Stocktwits",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNVkF5bk9JWmRJLWZ5R3l3azF3UWgwUjNKWWNHa01MZ0JoYWV1SzBHd3FhbHRIc01JRnJBNUZvQmROZS1MeFZQVFlxbHI0Q1NyNnMyRXBUS3dsVVVEVGRBMHBfZVRzeVZtSlpJcXdlNW14bDFTN2dNemhuRVB0bkl1blZHZjJnb3RkYmVUWXU1M0hMSDk3OWZadmxUbzJ6MmI2dVhBQWVfckU3UENTMldEWTlBWVE2aVdoZGYyRTZ4ZEJRb05md2dkWXM4THNqZHpZQ3FRU2Q5RDNNV2NfakVBc1VxOGQyOGNRQmlIMmNDOVpDdVZTS1E?oc=5",
+      "published_at": "2026-10-11T00:45:29Z",
+      "score": 63,
+      "label": "bullish"
+    },
+    {
+      "id": "8fd516ab8e57",
+      "source": "news",
+      "publisher": "Seeking Alpha",
+      "title": "Nvidia in talks to buy \u2018open\u2019 model startup Reflection AI: FT - Seeking Alpha",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQLXZ1ZEtGRWFDZGoycHJ5WVN6ZllVd3R0dXI1TnJxX0ljT21hODJQR014QlJLMzkzRjlmS1ZzV3VKX0djUnI5QmxHT0pQMmJnVXFUQTNoTDlPdDBsUnJVZjZ6REJHYXhsamZzc045TTJScTBud25kVnRXZm51T1pFVzRtS24tM2xy?oc=5",
+      "published_at": "2026-10-10T19:12:18Z",
+      "score": 11,
+      "label": "neutral"
     },
     {
       "id": "d13130b16fd4",
@@ -557,13 +607,23 @@
       "label": "bullish"
     },
     {
-      "id": "2d38bcc7949e",
+      "id": "503147946207",
       "source": "news",
-      "publisher": "Yahoo Finance Australia",
-      "title": "Nvidia (NVDA) Deepens Its AI Infrastructure Role - Yahoo Finance Australia",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPTWxRTl9wWnZFdHJFREJDczdoei1PSmZwcVFPWFo5R2lfOVFYNERlcENEZzhKWDBoV3dkeXZFRnJWWmhFa2l0VXFlOWl3QXJ5N2hTZzIyMUlBWU5BeExoQ1dQN1lETUQxZHduZ19PdEFVSmZ0UEI5RVZJLUE0cFlsU3dxc3g5YWd5dGhYZTBIcw?oc=5",
+      "publisher": "Stocktwits",
+      "title": "Why Did NVDA, TSM, WBD Stocks Hit 52-Week Highs Today? - Stocktwits",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMUlRYWRDY3ZsTHBaME9LZGJCem4tbmV5bWNhMk1SUWh3YzFxTnZDOF80Mml1STZLWVI0azVyVVR3OHRSYzBiVmpVbkxxYlR1cG5HSVcxM1dKVlpBd3htbXB0SFNXdjdneGVzQ090UFVQSjVNSmJQQTZnd3BGRjBreUJSbE1mOFpvc2ZPSEJwc1ZuSUxvaUp3SGlCZ2l1VXNUZkt1MjluY3JrTXhPRVZXM25iaHQ2dw?oc=5",
+      "published_at": "2026-10-10T16:24:55Z",
+      "score": 3,
+      "label": "neutral"
+    },
+    {
+      "id": "562c6081d88d",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Nvidia (NVDA) Deepens Its AI Infrastructure Role - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVFNMSjNmdE5Kd2VHNGNIS2RWWEY5bzhvRGlpZ0FfV1FSSnQ3VzN6eFN6cG0tQmY3MU44M2pOcDV2UEhsU3RLRk5hNjlkUXFoVFV3SmZ3ZV9ORndfODlFd3pJS2Y3a3NWUjhuZm5PTEF5NVh6OURTQUZ2SVVQQlA0SXRTZ3JILWJaZld0aHRld2JCVlhHdlRRS1NkWGZfcjd3Mllr?oc=5",
       "published_at": "2026-10-10T13:15:12Z",
-      "score": 85,
+      "score": 80,
       "label": "bullish"
     },
     {
@@ -587,14 +647,24 @@
       "label": "bullish"
     },
     {
-      "id": "4a0962a234e9",
+      "id": "71f4ee83b47e",
       "source": "news",
-      "publisher": "MarketWatch",
-      "title": "AI chip stocks wobble even as investors get clarity on a key OpenAI issue - MarketWatch",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPeGdDX19XYWJWaVFjMk4zRFo3QWVzbVZYZGpOT0RfUDFQRVBta3RuR3ZObVRqU0oyakUzdmxlNWljZVRrX1pHOTJuZFp1dE44end2UkFQLTFmVTRyRWVSM0t5VE9mYndrUnNEeVg1OHllbTNSeXpwTHdSNUxTbC1kdUppU2lucDVEYlVSU0hqMFdBN0VRd25waWlkZ3VpN1JsUlY2bVhha25EZzdnMGxUUTZQaUdKSWh5VE90alk2MA?oc=5",
-      "published_at": "2026-10-09T21:27:00Z",
-      "score": -75,
-      "label": "bearish"
+      "publisher": "CNN",
+      "title": "NVDA Stock Quote Price and Forecast - CNN",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5oakpQaVAtWVg3Rjh6M2FFaExEa1JVeThKN1FIX1p2OG1lWmVaVnhlU3Zsek42ZlRyd055aXc2dGNHa0NxV2RfU1I1dUoweXNi?oc=5",
+      "published_at": "2026-10-09T20:15:57Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "825c18575c32",
+      "source": "news",
+      "publisher": "CNBC",
+      "title": "Two massive trades just happened in Micron and Nvidia. What they could mean for chips - CNBC",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOV29sNlQyVUhjWmFVRjNrRmNsWEtOWG1famtzQzVNMlUwRHhvb1AzNWdIckpjSFNCbzY4RzNRalRLTG90MFVYX2dPcGVHWE8wZ1U1RGhsellzR3FUajZVSDJVa01jclhOZmgzWmlQVy1lUzJQdTF2ekkzSnBRR2VSQ1duQmJVQjRHVGZJR0o4MDdIelk0SzdSR25ibGloVllsZG9pTFVKd1hOMl9QMFU5d3NDTEFjVUlVeDYtMUxB0gHDAUFVX3lxTE9jYnNNYXMzWTA4WlVlR20wcjlPRzF2SXh5djlxVTJJbnluQjFrS3UtMC12aEhMeGJSM1BnVnhmUTdURU9YMTI5Y3BiNVAzVDY4dGMwQVU1Q2R0LVdRMl9EbTNXdEQ4WTVwRVdqeENpNmJPcUpoNXdHSXFHMkVDSU5WVGdqSXczMEgzUW82Z0RObi1vQ2owcFdNMW5zbk5hZjFYcmF6VEw5WXhqX1pQV1N5aHh0XzNreGVMTDZxM1NCSEJraw?oc=5",
+      "published_at": "2026-10-09T18:50:21Z",
+      "score": 0,
+      "label": "neutral"
     },
     {
       "id": "d3e364da7c64",
@@ -614,6 +684,16 @@
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRzd1QU9kMzNyNElXamZISG56UWdBbGJoZUVwejUxc01zYi1WZ3VmQnBpNUxIZEpmVzNDSFd1X1ZoQVdxQmZlazl0YnByWnU3NW1mbXVuZzgtX3FwZTVobVdfUUI3QVppbV85Q1ZiSXRqdTh4T05VMkxMTEZPZkNRcWRmWHIzZ3dqRFphMEI2ZTBZQ2xVX3lQYk1haktNM245bHhRVExreXlORWNiYlhJeDFISQ?oc=5",
       "published_at": "2026-10-09T17:30:39Z",
       "score": 2,
+      "label": "neutral"
+    },
+    {
+      "id": "1d2d92f330da",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "Nvidia Has Already Made Investors Rich. Here\u2019s Where the Stock Could Be Headed Next - 24/7 Wall St.",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQNWdLcThXN2JSd1hrbjBJcDBJell2aXpiQ2R3WEFrYk03NXJVWXBXTUp0dmkyakJJajhNaTY2c2E5NGVUNkIyVnZhT1c3SjF4UWtSejRCbUFpQ2N1UDBNOGRFOThvSnduWVFyeVRURlFURTFQbVNZNk9OWjk3TmVYZl9lb21HZWpoQmFBMUxVc0hILW9UaFdzV3B2TDREYjVkRkpJUlVUMkdWMlM0eFJRdG40Z2FKcTNGa0pwUFhldWVhQ2c?oc=5",
+      "published_at": "2026-10-09T16:30:00Z",
+      "score": 3,
       "label": "neutral"
     },
     {
@@ -647,16 +727,6 @@
       "label": "neutral"
     },
     {
-      "id": "7263f50a00a3",
-      "source": "news",
-      "publisher": "Stocktwits",
-      "title": "Dan Ives Thinks AI Buildout Still In Early Stages, With NVDA, MSFT, PLTR, AAPL And CRWD As Top AI Picks - Stocktwits",
-      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNVkF5bk9JWmRJLWZ5R3l3azF3UWgwUjNKWWNHa01MZ0JoYWV1SzBHd3FhbHRIc01JRnJBNUZvQmROZS1MeFZQVFlxbHI0Q1NyNnMyRXBUS3dsVVVEVGRBMHBfZVRzeVZtSlpJcXdlNW14bDFTN2dNemhuRVB0bkl1blZHZjJnb3RkYmVUWXU1M0hMSDk3OWZadmxUbzJ6MmI2dVhBQWVfckU3UENTMldEWTlBWVE2aVdoZGYyRTZ4ZEJRb05md2dkWXM4THNqZHpZQ3FRU2Q5RDNNV2NfakVBc1VxOGQyOGNRQmlIMmNDOVpDdVZTS1E?oc=5",
-      "published_at": "2026-10-09T07:49:42Z",
-      "score": 63,
-      "label": "bullish"
-    },
-    {
       "id": "854382f5bf0a",
       "source": "news",
       "publisher": "TradingView",
@@ -667,26 +737,6 @@
       "label": "bullish"
     },
     {
-      "id": "b103e5f20a0e",
-      "source": "news",
-      "publisher": "Seeking Alpha",
-      "title": "Nvidia: Caught Between Cyclical Downside Risk And AI Bubble - Seeking Alpha",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQaUxJYkgyOU85Q0lvcEVCRjJXZmtleTF0ZF9wenB4U3ZWWDhrdnJaY3J4cy1rdnRGQmF4eVhUMWhmUENFRXJvVzJUWUJveXZvcFA2OFZzbGRxOFJDcGx0SnJlbHNBc1NaeFdKZVVsWWlKUEhEcVY5NUxKcTRkckg0cXUtb1VBbkFXX2xnaTRqaXFySmNpVW83eTU1RXkxZ2ktOW8xenlwS2ltRGV5cno5ejBRcFg?oc=5",
-      "published_at": "2026-10-09T04:22:57Z",
-      "score": -83,
-      "label": "bearish"
-    },
-    {
-      "id": "503147946207",
-      "source": "news",
-      "publisher": "Stocktwits",
-      "title": "Why Did NVDA, TSM, WBD Stocks Hit 52-Week Highs Today? - Stocktwits",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMUlRYWRDY3ZsTHBaME9LZGJCem4tbmV5bWNhMk1SUWh3YzFxTnZDOF80Mml1STZLWVI0azVyVVR3OHRSYzBiVmpVbkxxYlR1cG5HSVcxM1dKVlpBd3htbXB0SFNXdjdneGVzQ090UFVQSjVNSmJQQTZnd3BGRjBreUJSbE1mOFpvc2ZPSEJwc1ZuSUxvaUp3SGlCZ2l1VXNUZkt1MjluY3JrTXhPRVZXM25iaHQ2dw?oc=5",
-      "published_at": "2026-10-09T03:42:12Z",
-      "score": 3,
-      "label": "neutral"
-    },
-    {
       "id": "f101e849e06a",
       "source": "news",
       "publisher": "Yahoo Finance",
@@ -694,16 +744,6 @@
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNV295TG93WHFzalBJS0VBUFFFSy1tVFNDS0hxY1I4R0NPWTk0cm9iZ05pZERubmFIU0tiZzV3ZGlZQnhpT1o0Nm5ST1N3aUVBZzB4X21NV0xkN2hmaUdzOVY0UWgycFU3bFVHY3dtMERIYjd1eUY2eUNwZDdjUWhIMXN3MXUtSkRfalNYNWY0SzVmTEJ5cFJsUENB?oc=5",
       "published_at": "2026-10-09T00:00:00Z",
       "score": -91,
-      "label": "bearish"
-    },
-    {
-      "id": "6060b76052b9",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "Nasdaq 100 Ends Lower As Report Of Weaker-Than-Expected OpenAI Revenue Drags Chipmakers \u2014 NVDA, DIS, ORCL, SBUX In Focus - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOa2xoRnp3UDUwRW5RZnFSem5ZOWt1Mk01bmFVb3l6ZGdrdDE3VXY5dVJiX21IZ1NwRVllYW80eVpJRVlsU0NFbU04S0d2YXRHeUJjRTRNZGlMZExjbXdXMk9FZTJoandYMGhFMVJhajZoNW5GTThxOHpTSDZIMmdDSlpJVDJ3RUI2aTk0emZCVDg3UWdRMFByZw?oc=5",
-      "published_at": "2026-10-08T22:55:19Z",
-      "score": -95,
       "label": "bearish"
     },
     {
@@ -727,32 +767,22 @@
       "label": "bearish"
     },
     {
-      "id": "2518534e7e70",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "MSFT, ORCL, NVDA, QQQ In Focus: OpenAI\u2019s Annualized Revenue Reportedly Trails Prior Expectations By $20B - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQQ2ZwNUQxQ2ZocEZhenBqRVI5Qk9BZE43cm1IZGM0aGVTTURlZFZVRnRDX1FLeVg4QnlScVZObE81N3lPM2tmdmRmTVV6ay1YWXNGMVJSRjJoRGRaR3U1dEw2ZnZKLXNqRVdualFtUUJDYjlWOWplRURTcmxiV2dHZENxbVlBWFA4d3ZqR20zSEg4UQ?oc=5",
-      "published_at": "2026-10-08T19:01:41Z",
-      "score": 65,
-      "label": "bullish"
-    },
-    {
-      "id": "d573540359dd",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "OpenAI Revenue $20B Below Previous Reports, ORCL, NVDA Tumble - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQamJVajJCVXJMUWJ3LTZabXcxaEJFQUhVczJrSTZYeVBTeGxyUmIwZHBKaXlCOFRiSm1JZmpMZ2dzSVFEWk9XZ3dxbWpPc2p0R3llQ1FnZnhjbHVadjUzT3N6SDZTSk1UcW5EMWVsQlJMUWF0NjNpMmRidE9iRHVhZlFMOFpCZmtReU1pRkYtUlN4RHZJZFNvbmVlLTVIZw?oc=5",
-      "published_at": "2026-10-08T18:18:39Z",
-      "score": -6,
-      "label": "neutral"
-    },
-    {
       "id": "1064ca74ded4",
       "source": "news",
       "publisher": "NVIDIA Newsroom",
       "title": "NVIDIA Commits $1 Billion to Advance US Science Over the Next Five Years - NVIDIA Newsroom",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOWV9LdlNrOEhZeWpWaHNwSUlhSllPWFo3Y05sckNRbXBIeVZ5NElkNDdJbHlOR0pvZHRfRk9CMEI3U0xmNlU5RndtMkx3TWFRVk5oLWxIRktoeS0wMGxZMEpkN2hEVWZQa0JuWk85RUpZRVAxVGkwdnkxa1dxR0cxdFdXVlpQQUk3dGYzM21IVDdwZjJCNjFPamRib2FfdHhsWF9Ma2VFNVZmUQ?oc=5",
       "published_at": "2026-10-08T17:19:04Z",
+      "score": 19,
+      "label": "neutral"
+    },
+    {
+      "id": "793d5d0567ce",
+      "source": "news",
+      "publisher": "Seeking Alpha",
+      "title": "Nvidia: AI\u2019s Lender Of Last Resort (NASDAQ:NVDA) - Seeking Alpha",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBrVWpTSGJDLUNObnYxT0Q1RkN5N0tCUVZUeVNmLUpMTC1mTVJDdGxzektlQXh6dnRsei1adnZzX0Faa1lYYlR4NjFGZ1FhWk5LSkJ1cnlFZ1NDenJvaEQ0N2R0NUxXWWFrUlhMQzh3cElQTmtKZFNNLThHRHp5QQ?oc=5",
+      "published_at": "2026-10-08T16:48:56Z",
       "score": 19,
       "label": "neutral"
     },
@@ -765,16 +795,6 @@
       "published_at": "2026-10-08T16:00:00Z",
       "score": 4,
       "label": "neutral"
-    },
-    {
-      "id": "9390947d68b4",
-      "source": "news",
-      "publisher": "Yahoo! Finance Canada",
-      "title": "From Agentic AI Concerns to Solutions: How NVIDIA Corporation\u2019s (NVDA) Safety Platform Strengthens Bull Case - Yahoo! Finance Canada",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPVWtFQUVQWmxidTAydXpqeFBkN3ZuWjBlWlpqaXp4eVhsOTJDODh1THpvcFNuaXhVa0xSSWFnakJVWXZ0S29TcWJ1d3ZqSDVnSTM0ZXZYVXlZR29McG91MDNzT0hQZzJiek51VWZkaGpvSG9sSzc2UlV5dUFnVXpCbDEzSTdrcFlYNzlzc0h3?oc=5",
-      "published_at": "2026-10-08T14:40:41Z",
-      "score": 66,
-      "label": "bullish"
     },
     {
       "id": "a204ea6f758d",
@@ -807,34 +827,14 @@
       "label": "neutral"
     },
     {
-      "id": "e9058ea5a2ea",
+      "id": "f9746613557e",
       "source": "news",
       "publisher": "Simply Wall Street",
       "title": "Nvidia (NVDA) Stock Could Be 24% Undervalued Despite A Record Buyback Plan - Simply Wall Street",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNUnZqN2pBaUxtQUpYaklvMGhXb2tjM0JDMWJnWWN4R1VfUGo5amZ2T1hPWlpZbVFBSXMyUlFWaE5KV0ZmUTA3d1ZKb0JhSFZCTHZaSnBOLWtIUVh5M2htWlgwd0dKNDA1TVBTNUxkNzRzMTBETUswRnFvMC1lbDVPaVpzRXBpVTNma2ZnZ1FTSWc3Mk82cTQ1U25kSUpfajIyN1ppSUU4bXN1Q3hKQ0ExSm9teEwxNW5FS0JJRkx2WTYxTFlfeG5xMVN2ejY3OVRJ0gHQAUFVX3lxTE1Sdmo3akFpTG1BSlhqSW8waFdva2MzQkMxYmdZY3hHVV9QajlqZnZPWE9aWlltUUFJczJSUVZoTkpXRmZRMDd3VkpvQmFIVkJMdlpKcE4ta0hRWHkzaG1aWDB3R0o0MDVNUFM1TGQ3NHMxMERNSzBGcW8wLWVsNU9pWnNFcGlVM2ZrZmdnUVNJZzcyTzZxNDVTbmRJSl9qMjI3WmlJRThtc3VDeEpDQTFKb214TDE1bkVLQklGTHZZNjFMWV94bnExU3Z6Njc5VEk?oc=5",
-      "published_at": "2026-10-08T12:47:07Z",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOM0JxMW5oeFNXa1dwTjJVbGw4SXBYNzlwRElVMW1SdnR0R1pvN2NTckZWcXZYVDVxSDV6Qm1rdmEtaEZkMTR1cU9fcGR2WWxKa1ZkNWFWMlJDRTE2SWdBZDlHUS1Jb2NEY3Z6SlBkRktBVXBBZ1hqVmh3aHdLWUJYV0cxeEFSZ0FQWjZUZzkzV0poVE1ROW1XdUlTRWRyOUtUaDlIMUdyYllsNWcwZDVXd004OV9tbm80dG1UVnZLZDQ0Rk5ZbUxPRFlQNNIB0AFBVV95cUxNUnZqN2pBaUxtQUpYaklvMGhXb2tjM0JDMWJnWWN4R1VfUGo5amZ2T1hPWlpZbVFBSXMyUlFWaE5KV0ZmUTA3d1ZKb0JhSFZCTHZaSnBOLWtIUVh5M2htWlgwd0dKNDA1TVBTNUxkNzRzMTBETUswRnFvMC1lbDVPaVpzRXBpVTNma2ZnZ1FTSWc3Mk82cTQ1U25kSUpfajIyN1ppSUU4bXN1Q3hKQ0ExSm9teEwxNW5FS0JJRkx2WTYxTFlfeG5xMVN2ejY3OVRJ?oc=5",
+      "published_at": "2026-10-08T12:46:55Z",
       "score": 91,
       "label": "bullish"
-    },
-    {
-      "id": "52dff766b591",
-      "source": "news",
-      "publisher": "The Motley Fool",
-      "title": "What a $5,000 Investment in Nvidia Could Be Worth by 2030 - The Motley Fool",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQXhHMDZMcUVubmRGeVFCZXB5ZVl4cDkzUGF6VnlGYTVFWDVqQ2E1RERHVDV5ZmpaMFZQM3otNktDYWt4UnlROWNVUDhlWGxrX2lEWVhUT1BPNVp5TWtOMlBXM3FVN0dqc0tDYkZRdk9haThrYjlqVDFoX1pheU1QdFpKVUR6QmhlcHRZenBxMnc3THF5OXlpVw?oc=5",
-      "published_at": "2026-10-07T21:01:00Z",
-      "score": 4,
-      "label": "neutral"
-    },
-    {
-      "id": "ad2737684542",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "If You'd Invested $1,000 in Nvidia (NVDA) Stock 10 Years Ago, Here's How Much You'd Have Today - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNWnpLU3plS09wbHlpWDRjbkppUko2YkF0YjNxZzVELU1ZYmMwWXlyaXpuY3V2VlF6enRlWm81bU4xLWV3Y2hJd0VibjNPa2JLSmE4YTdOWUdUZmZYS0ZWNmpiRm5idmRhUk51NEtHTGVCOE9EbU5zM1VrWTZCWkVkZzlsYnIteW95WjJINVNxU2xDa1VsdlE?oc=5",
-      "published_at": "2026-10-07T20:56:00Z",
-      "score": 3,
-      "label": "neutral"
     }
   ]
 }
