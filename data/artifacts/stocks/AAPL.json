@@ -2,19 +2,15 @@
   "schema_version": "1.1",
   "symbol": "AAPL",
   "name": "Apple Inc.",
-  "generated_at": "2026-10-12T01:56:22Z",
+  "generated_at": "2026-10-13T02:50:52Z",
   "is_demo_data": false,
   "quote": {
-    "price": 336.64,
-    "change_pct": -1.11,
-    "as_of": "2026-10-09",
+    "price": 340.97,
+    "change_pct": 1.29,
+    "as_of": "2026-10-12",
     "currency": "USD"
   },
   "prices": [
-    {
-      "date": "2026-04-21",
-      "close": 265.7
-    },
     {
       "date": "2026-04-22",
       "close": 272.68
@@ -490,19 +486,23 @@
     {
       "date": "2026-10-09",
       "close": 336.64
+    },
+    {
+      "date": "2026-10-12",
+      "close": 340.97
     }
   ],
   "forecast": {
     "horizon_days": 5,
-    "move": "quiet",
-    "prob_large": 0.4919,
+    "move": "large",
+    "prob_large": 0.5402,
     "typical_move_pct": 3.5255,
-    "confidence": 0.5081,
-    "made_at": "2026-10-12T01:56:22Z",
-    "as_of_date": "2026-10-09",
-    "target_date": "2026-10-16",
+    "confidence": 0.5402,
+    "made_at": "2026-10-13T02:50:52Z",
+    "as_of_date": "2026-10-12",
+    "target_date": "2026-10-19",
     "model_name": "move-xgb",
-    "model_version": "10"
+    "model_version": "9"
   },
   "sentiment": {
     "window_days": 7,
@@ -520,16 +520,16 @@
       {
         "source": "news",
         "display_name": "News media",
-        "score": 6,
+        "score": 13,
         "label": "neutral",
         "doc_count": 48,
         "note": "48 articles, last 7 days",
         "method": "finbert",
-        "previous_score": 24
+        "previous_score": 6
       }
     ],
     "gap": {
-      "points": 19,
+      "points": 12,
       "most_bullish": "analysts",
       "most_bearish": "news",
       "summary": "The available groups are close together."
@@ -542,9 +542,149 @@
       "publisher": "Yahoo Finance",
       "title": "Consensus: 25 buy, 13 hold, 6 sell (Oct 2026)",
       "url": null,
-      "published_at": "2026-10-12T01:56:22Z",
+      "published_at": "2026-10-13T02:50:52Z",
       "score": 25,
       "label": "bullish"
+    },
+    {
+      "id": "6aaa82aa7dc1",
+      "source": "news",
+      "publisher": "Moomoo",
+      "title": "Market Movers: AAPL & INARI Draw the Spotlight - Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNRGdQU2xiZUI2bkZpMU9xdG5wQnlZdEI0MWZSb0FhVnNsOW5QTXN3Q2I2TEdpSjNXT2R6OGpON2M3Y0hZRmhFYUlFS3g5enMtaFBnVFBPZ2RrLUZ2VTd6MEktY29xblpsMHdXWG9iWlZpR3ZkQXQyRzM3QWVFYVM4VFJoLVVTemV0QWZCejh1dW5WLVB5SThQbTlBRlNUdw?oc=5",
+      "published_at": "2026-10-12T23:24:00Z",
+      "score": 7,
+      "label": "neutral"
+    },
+    {
+      "id": "d862dcefb6ed",
+      "source": "news",
+      "publisher": "MarketBeat",
+      "title": "Apple (NASDAQ:AAPL) Stock Jumps 1.3% Following Analyst Upgrade - MarketBeat",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNd01ZVXRkVGZ5U0RHTmM0RXJfNlpwdTFXX1Zyb0JIbzdTUXM2X24yNDhveXY5cWdqMEFVa1BReUNEOWN4QVZZeFJQaTVMN1ZTSWluZ3J5YXJGYzZMc3MzUGlxRmNCVTBpRHJaRnJtVFo2eUdORVRrdWtweHFhRGJVenFKSGZJcm5NaDhNRDhGMkNIbURuTEoxRWxaamt3RGk3aFB2clY4cjhJYjVMbWhxeVdOQW95RVlYNWc?oc=5",
+      "published_at": "2026-10-12T21:09:12Z",
+      "score": 79,
+      "label": "bullish"
+    },
+    {
+      "id": "fbe58dfd2fcf",
+      "source": "news",
+      "publisher": "Benzinga",
+      "title": "Google Challenges Apple With a New Health Data Play - Apple (NASDAQ:AAPL), Alphabet (NASDAQ:GOOGL), Alpha - Benzinga",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQU1g3a3ZGcml1RG5PN2tfU2lVOUUyY2J0dExxRjVSRTFZTVN6ckJRS1c1RlowSkk0dzlreHVkbm1udHJwUEJ6X3RFSXRKaHkwV1J4X2RHeVZXN21VSnpfV2FnUzd1Y0FtWmNQQm8zeVNjOE5SY2VjZklhQWdSR2xkUUtiejZqYno0VWljdUgzekNKUGc?oc=5",
+      "published_at": "2026-10-12T19:01:49Z",
+      "score": 38,
+      "label": "bullish"
+    },
+    {
+      "id": "01fc9adf7149",
+      "source": "news",
+      "publisher": "Benzinga",
+      "title": "Apple Stock Climbs as JPMorgan Lifts Target, BofA Reiterates Buy - Benzinga",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNajZlNXY0MkNuMlhWckdMMjNNSkVCbVU3a0ZfdnBDdGlpSElWS3J6bklwenBDekZEeGFMME0xUjdfdDhuS3J1YkN3bDN6SGZwNlZYal9sNlNQUzZ0NzFfWExIU09sSkotU2Z3dWtyX1duNzhTaU14YlVrai1WZ3pIMTBUc0FDV3p4VnNDaUo5MGhRdm9fbDBjU1d6YW1QNXc0TzA2ZG5MdVVwRkVnbmNuV1VqVjdNLVp5TEdpM1kzOExoQQ?oc=5",
+      "published_at": "2026-10-12T15:05:20Z",
+      "score": 29,
+      "label": "bullish"
+    },
+    {
+      "id": "d37971290de7",
+      "source": "news",
+      "publisher": "Seeking Alpha",
+      "title": "Apple increases iPhone Duo orders by 30%: report (AAPL:NASDAQ) - Seeking Alpha",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNNnhZc25kYmpZV0FZNm5QWmVDVW9EM1Izc1c4MTdnc25ZWVA1MFhzNHA2WUhvRmZEdnJ2WU12WXJmSVE3cWZiOTdFVkkyX01qY0s3M1BtR0FiaFlnQ3RhX01mUk5FQzFtNkh1N2lla0dqLXNBM0ZIZXlzb21iTVJ5akpSQUZtbkZGUlRReVZNWWcxY0U1TTA4?oc=5",
+      "published_at": "2026-10-12T15:04:47Z",
+      "score": 91,
+      "label": "bullish"
+    },
+    {
+      "id": "3ff8469d00cf",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "Apple Stock Price Prediction: Wall Street\u2019s Next Big Surprise Could Be Closer Than You Think - 24/7 Wall St.",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNTDBoWDBnZlQxT0tLNGU5R1dZZ1dUUlZwamxGZFRJbWh4bTNnRmpDYjA3b0ptME9UaHh2cXo1X3VCR3BOMGdHTjE1U0dFcEJkNl9tR0NIS0xST0puZG1aMzJhVmtmSTNuNHFBS2x5TGJGTnB2UUdBZjRfTnJnQUNiQXFlRFJ5RDFCa2JYM3RpMElYbWtpVzF1MXFwdWRaMndudFlkUGJWYWZuenlHcUhkay1kU3kweGVWbTc5WEJNSVJkRWNEenotZ0ZmcXNHYTA?oc=5",
+      "published_at": "2026-10-12T15:00:00Z",
+      "score": 6,
+      "label": "neutral"
+    },
+    {
+      "id": "ef7efbfcf047",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Apple\u2019s Strategy Is Starting to Look Like a Masterstroke of Genius - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSXBmY0JKUlZOcExDeHZHWU1JR2NEa3pyWXNveUdZZ1NEdFNsMExFNE12THNUaUxuTGRkNWdLS2RMSWp5aFdFLVZlcDdlUk9QcXBaTkN2RHdCUW5QZTM0cndkUUNYRzl5TVkxUjZzMDhzZ0dMNzRXUnJBN19jWWtPSVMtM2xnbzloMlo0LUEwdjF3M2RmX2Jzb1ZsMUl5R05aQjBwQzNzOTE3Zw?oc=5",
+      "published_at": "2026-10-12T14:45:05Z",
+      "score": -6,
+      "label": "neutral"
+    },
+    {
+      "id": "760e3589e678",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Apple (AAPL) Faces iPhone Demand Pressure. Can Its Growth Justify the Premium? - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRHl6d2J6cUR1Qjgxckg0UjRLOEZyTEhxaC0tbnNOWDdYX3lfR2h3QVQ2TGdNVi1WTEhxSXVaOTl6R2ZqREJRSGs5ekdtZkxjSkhVMkxkRGVMX3NlcDd2MFVrejU0ZG9zTTBma3V6bXcxU0d5OXN4WjAwdVM0alFpLXFFcTUyZHBpUzBWdnFpUkxGcGFXN3BIZGxodw?oc=5",
+      "published_at": "2026-10-12T14:39:20Z",
+      "score": -4,
+      "label": "neutral"
+    },
+    {
+      "id": "2a485497a1b9",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Apple (AAPL) Helped Lead the Mega-Cap Tech Rebound in Q3 2026 - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPeUlLSTJHbkFOR2JoSVdUdXg1VHEzd01OWlhHQ0ZiU1RBVTlUOFh3aUNDY3JXRUVsWGg1YVRfZzVmd1dxT3c4YTdLU2haczk3RFo1MlBVaEc1WDZCQ2FCRjk3bHU1aUUtYXU2YTh3TTZiZnA1aGJkTDNtMGxoaW1PUWVwUlZkRXNNTXp4MXNRQWNWYjZrZ2k0?oc=5",
+      "published_at": "2026-10-12T14:14:18Z",
+      "score": 63,
+      "label": "bullish"
+    },
+    {
+      "id": "c650e8c2588c",
+      "source": "news",
+      "publisher": "Newsquawk",
+      "title": "China's VP met with Apple (AAPL) Chairman in Beijing, Xinhua reports - Newsquawk",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORlVKVDZZSjJpbUlBYjdHczh6aFJkZEpoRlc2YUVsMHcwblpuYWcwZEJhbGhkc21qamV2OXVpVkFwTXpubXhYbVB1cElaUXdqQWM2dWZHWGFETGUtclRCUGdKbEZkUXVJeWM5U1BscDFBdXBycGxaOS1yeHh5RGNiU0JBczY0OHRCcXpSUHlnUmNndDctSUFXWFJ1WQ?oc=5",
+      "published_at": "2026-10-12T11:17:04Z",
+      "score": 6,
+      "label": "neutral"
+    },
+    {
+      "id": "3b08878860db",
+      "source": "news",
+      "publisher": "Moomoo",
+      "title": "$Apple (AAPL.US)$ - Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAtVVBxOGNtRy1BOUtfSXZneHNjejFVSlpEQzM0cHRBYUxvX21xRDRBS05KTVAxcDNic3lNdC1HLTAycGNkbGt0Tmp3bV9BRW1WY2hMRWo1ZTNNZzRzbVNoMzZiaXJpbm1qRVBHUjV6Rl82dTVQQlE?oc=5",
+      "published_at": "2026-10-12T07:00:00Z",
+      "score": 4,
+      "label": "neutral"
+    },
+    {
+      "id": "a6839f4a242d",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "New Apple TV and HomePod Mini Expected: What Matters for AAPL Stock - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQY2t0Z0lFdi0ycHFxQnJ3T3NEclFrNkY5cTRwRWNXRnhIY3pNQVlkeFJOOW9qNjUwT1gzWmJLZU1HdjlzMl9XMXgxOEpXODF1N3J3NlhFdlNUTE5fMldEU2RNUlE0SzFtRXBMWThVRzhJbzhxX3FPcTVxc0RldmVDTzR2dENVeDM5Wmk5MXE0MmZsd0xzNV9PdlR3NA?oc=5",
+      "published_at": "2026-10-12T06:16:12Z",
+      "score": 8,
+      "label": "neutral"
+    },
+    {
+      "id": "b31f1ff14309",
+      "source": "news",
+      "publisher": "Simply Wall Street",
+      "title": "Apple (AAPL) Brings In AI Podcast Team And Licenses Personalization Technology - Simply Wall Street",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVXlFNGtDM0g4cTdDek1mOGw2NVVzaENfYzFSVTdDRU5CMW9XQThlWUhsNDRoWFh1MkswaXVzdVo2TUQ5TkMxdnRCcGRnSjV6dURBaTM3M0FZemVTY0ppcDROMTJqb0tkN0JHSDR2TDFPYjBUQlhHaE1LNXRXOWpyTEVMRktPRHFUVzViUWpOMEhlMGZfVC1kTnRLM0dNaDAtVkg2NnR3OWdnUHNoYm1jVlVKV0k1MkZFSTI4NNIBwgFBVV95cUxOYm0zdmNTWGJ3SWMtU25QNTgwV0JwOVlVdlhTeENwQXhLUUxNaVplaVNkT0ZZTHZxclVWX2FuNjJJVWptLUhoZzdJSm1BNUhZQ09CWERzVUdLbjFSRkp6a1YxQzZmSkoxbVBIekpuOXZXR2JPbU5MLXBfNkpJY2o2S3k4WkVjZC1PSkhNQ3QtOE5RQWRMTFRGYmNyYUdjY0laOVBPQ3JvUGZTb0pjdy0xeUxnLTg4N0R5ZEVQeU1iSUVEdw?oc=5",
+      "published_at": "2026-10-12T05:16:01Z",
+      "score": 18,
+      "label": "neutral"
+    },
+    {
+      "id": "05ee8d010246",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Apple (AAPL) Resets With New CEO, Podcast Deal And A Fresh Phone Threat - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPX29PcldVOWVmeVNEWTVVeC00bGZtVFNiM05DcjBqUGxWWVpfZjdMb1diejh2d2Y3TGdOaHk4SHNxUXBlQjlvYXZFakFpWUN6S1htb1MwcnlMUjRBd3RxZE5mcmpHN3MyTEYzY2tqUlFlUmhkX0t0VXlSNVBoTmtGZkpaYlZNT3JiNEx4aDlDQWpST0V4VmI5cVB3?oc=5",
+      "published_at": "2026-10-12T03:17:00Z",
+      "score": -50,
+      "label": "bearish"
     },
     {
       "id": "93b936f7e62f",
@@ -555,16 +695,6 @@
       "published_at": "2026-10-11T17:11:49Z",
       "score": -11,
       "label": "neutral"
-    },
-    {
-      "id": "2d729017fe15",
-      "source": "news",
-      "publisher": "Stocktwits",
-      "title": "NVDA, AAPL Stocks In Focus After Foxconn Revenue Hits Record High On AI Pull-In - Stocktwits",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPSEtGN1loQTVkV0hHSXFlb1ROLUFCUW9UejdlUTZzY0dUWDJWYlcydlNtSERiX3dHaE4wdFNnQkRLUUt4R2VkaEZkXzFXZGpDb05POEhwbXFseTI0U1l0bVFlcjZNblcwTW1saTVVaUhxODZsOW43dW1QbkdnbkVoMHRfSHhuZGhNb0FUMzlNTFJmY2IzUDhrdFNGVzcyZkpWNmU3UjlIaktEdGFRd1JRcmNjMjBjQ2UwYWRnTU9WUlBETEJ6RkJqdjB1UFJDajV5TnhhWg?oc=5",
-      "published_at": "2026-10-11T10:52:21Z",
-      "score": 66,
-      "label": "bullish"
     },
     {
       "id": "15b1bf869751",
@@ -587,16 +717,6 @@
       "label": "neutral"
     },
     {
-      "id": "48de36aa89a7",
-      "source": "news",
-      "publisher": "TradingView",
-      "title": "Key facts: Apple (AAPL) slips; 18 Pro orders cut 15%; mixed lead times - TradingView",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTHducEtnYzdYSHh4eHk3UWNFdVJuLVA5NFZTN2RMUXo2eS1Jc2JNbGkwSGFnaXdUaXhXMDB2WjN0SUw2V1dhNmtsczZfejJ6enlPZnRRbFlhcThuY0Nra0xGcEhyX2tael9iYkFDb2liRm13eUtjLTVvaFRPbDZxTUEwNUNwWUNtZGdRSVZrNV9HbUxKUzl2U3hZc1l2ejY1MGhmTUZQTG13Qk1lVDJFSFVoeER3a0Q3NVBKdFlhblNZa2N2?oc=5",
-      "published_at": "2026-10-10T07:00:00Z",
-      "score": -92,
-      "label": "bearish"
-    },
-    {
       "id": "560f64203029",
       "source": "news",
       "publisher": "Yahoo Finance",
@@ -604,6 +724,16 @@
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdjZGbVA3enFYQm1UcDlaQW1FeFNrbE0yWjhGVTRaUnZqQlNrVWZkTWxtOThreEVyemp0X0Nvck5pRElTd2JyN05uRGI0eXhsY29GVWFYbGg2WGsyYWo3VDIwc3VkYUVmQlVPNFpPRFQwQW9NVHRzY1VtTk9QRVB3bkRkRllZOGJHT0Q3Zm1HMjhIeWMxa0FzUw?oc=5",
       "published_at": "2026-10-09T23:15:10Z",
       "score": -90,
+      "label": "bearish"
+    },
+    {
+      "id": "695de572c3aa",
+      "source": "news",
+      "publisher": "Benzinga",
+      "title": "Apple's iPhone Order Cut Is a Fall Tradition \u2014 And So Is the Stock Rebound - Benzinga",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPb2RPVkJqSmhQVEZDM2VoTldsaEROTzlEZG1XMEpMMTdhQlZxRFVEOHNlNXhyWGJkYlNMak1hLXAxNGtjT0dWYlVjbk5BTkFObUNZSE81b3UybkxUX0NFR2tIU3hySGFOMURuZ0t2bjVscm9RMFJSQWVFbVRaLUk3Vi10Y3lfR01IRnhMYkROamJ0YUltdWhSMG5WVXZTQnRfcy15SkxvbmhqRGRSd0VsODVGalQ5T3Y2X1dhNG1MTnliS2Z3aVB1MXhHTkE?oc=5",
+      "published_at": "2026-10-09T21:03:11Z",
+      "score": -87,
       "label": "bearish"
     },
     {
@@ -617,14 +747,14 @@
       "label": "neutral"
     },
     {
-      "id": "86bef0225829",
+      "id": "ad2376b63899",
       "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "Apple stock falls on report that company is cutting component orders on soft iPhone 18 Pro demand - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNdXRZODhUOUdIaGhYOXRmVnZLWGJCWlgtX0NacXhXYWxkalFkYXZPbEtjOEo3S3FhT0VMd3B2NktuOENFaThPOXAzUDBEOXpzSEdtcnJQNmpkZmh3RGtsdEVoRzEwSUY1ZnR3dThmcXh1cjBWTUhUTHBHRWtJOXRPSTVkanhWbVdCcVJTVUdyejZwSUlhQjBjS1ZvbXZwOVlSRWRMWk9vSzZ4bU0yQzExcGxOQjREdV96WURCbHBHWEt5QmxNeUFSYTRpVFpsbHY1LUN1OEpfcmlQRm9FODZFM0FfTjhNVG5WUVhSbUNB?oc=5",
-      "published_at": "2026-10-09T13:26:55Z",
-      "score": -96,
-      "label": "bearish"
+      "publisher": "Seeking Alpha",
+      "title": "Biggest stock movers Friday: HUM, SPCX, DAL, AAPL, and more - Seeking Alpha",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQMzV4cHVpaXhzM2xkMEczV0dtOU92MVhpWVhEdjZ3SVZwU2tLRGlOWjhJY0tFMklLc3FIVVVhQVAtMGpGNHJ6QXE4VjJvTU41aW90SjlVNDlSUW9VcVlhZXZBalVMbUVFUFJXNDh1MjJOX3oycGhIeTlhbmFXVjJFdFA2QVZFWkNfS1BB?oc=5",
+      "published_at": "2026-10-09T14:14:00Z",
+      "score": 8,
+      "label": "neutral"
     },
     {
       "id": "1457746c2c45",
@@ -647,11 +777,11 @@
       "label": "bullish"
     },
     {
-      "id": "82bffb865ca1",
+      "id": "0303ddcc55f8",
       "source": "news",
       "publisher": "Simply Wall Street",
       "title": "Apple (AAPL) Brings Formula 1 Streaming To Apple TV In The US - Simply Wall Street",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVExiZFNlXzlWQmxLcDJfUi1LbGJoV1NpMW81cVIxWUlrQ1N1UFVVY1RNUkZjbk9KT3lGYTlqTVI5VkUyZHpoajViV2x1XzU3N3h6QWpSeU5nc0ZQR3YtdWRVMVFLdUxoQl9PRHhXY0ZubFU2bVdRY3YtR1RJRlBHRndydy1XTS0zWjdMRmJja191VmJXVVlLTXNkRHd5c1BZODVFeEZIcDMyUDhUYkYwSXp6NDhkLVp1ZzhxclpoSTbSAcABQVVfeXFMUFRMYmRTZV85VkJsS3AyX1ItS2xiaFdTaTFvNXFSMVlJa0NTdVBVVWNUTVJGY25PSk95RmE5ak1SOVZFMmR6aGo1YldsdV81Nzd4ekFqUnlOZ3NGUEd2LXVkVTFRS3VMaEJfT0R4V2NGbmxVNm1XUWN2LUdUSUZQR0Z3cnctV00tM1o3TEZiY2tfdVZiV1VZS01zZER3eXNQWTg1RXhGSHAzMlA4VGJGMEl6ejQ4ZC1adWc4cXJaaEk2?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPOXAxazR3cjY4TzI2aFBjVnpVWVpMNDQ5ZTZxYlE2MUlsN0o1UXF0ZC1XWjBXM2daR2J2ZDlQTkpEN0ZJUE5VZjRXMlJ4SFYtaGtEM2lrakpSeWVkYjRxMWpMX3M4MnNjVjhHMXB5X1BEdC1JQllDMnJhOXFWUHNIOF80dlN0djZGSXRhbnFDY0F5T1p6eWZwU2JFSHFKS3E2cnFLTW5SZ05vRVl1cTBDaVgwNjVMVG0tU2pN0gHAAUFVX3lxTFBUTGJkU2VfOVZCbEtwMl9SLUtsYmhXU2kxbzVxUjFZSWtDU3VQVVVjVE1SRmNuT0pPeUZhOWpNUjlWRTJkemhqNWJXbHVfNTc3eHpBalJ5TmdzRlBHdi11ZFUxUUt1TGhCX09EeFdjRm5sVTZtV1Fjdi1HVElGUEdGd3J3LVdNLTNaN0xGYmNrX3VWYldVWUtNc2REd3lzUFk4NUV4RkhwMzJQOFRiRjBJeno0OGQtWnVnOHFyWmhJNg?oc=5",
       "published_at": "2026-10-09T11:01:35Z",
       "score": 33,
       "label": "bullish"
@@ -704,136 +834,6 @@
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNczV5cmhUWHhvUlFTQThEck1aRmR4dFRpZkhENnZ4V0duVTBBcjItOWE0SG9hMnhQSUpKaDFiczdHLUt6cS1POEtBWHBWTTBKMXRzc3hlZ3lPNGRLY1FmVDhtNE5tUkY2eWhpbDhLVlBqTG9kNGM1RmtFSVI2QmZpTE1waUtyXzdWcm1QX2JNOUN1ZGRVZDA2MDVn?oc=5",
       "published_at": "2026-10-08T18:36:49Z",
       "score": 2,
-      "label": "neutral"
-    },
-    {
-      "id": "4884b4286299",
-      "source": "news",
-      "publisher": "Zacks Investment Research",
-      "title": "Apple Rises 24% YTD: Should You Buy, Sell or Hold the AAPL Stock? - Zacks Investment Research",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQU2dPWVJMeUkwNmFPR1BhUnlub2xWQ3c1MUVvc2ZhVkhzanhScThNM2pWTkRtUm5zQkVpckZZcHRXc25VSW80OTBudFllMmJKNWpvREJDdTdmQWdSZG54di1lUnkzY011RFF1a2ttSEFwaHBSZ2xhVVRUd05ISE1vdWphSGR5TjFFQzVDX1VQUW0zak4zT1R2SDdNcUVxcmdLQm1LQg?oc=5",
-      "published_at": "2026-10-08T16:47:33Z",
-      "score": 5,
-      "label": "neutral"
-    },
-    {
-      "id": "3e32d37fd9e7",
-      "source": "news",
-      "publisher": "TradingView",
-      "title": "Apple Rises 24% YTD: Should You Buy, Sell or Hold the AAPL Stock? - TradingView",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVkdCZ1diNllnX2l1RFA0X3VHRk4zNE01TGptMXM0bkdyaXd5TVBjcF9fOGNRV3RqNklSbzV2UGhwQzByRzJFMmp4TkFMRXpFVHFvYk5iSUM5S1FObzBuLU4tR0hiT1RDbDhfQWRCTDIwOXVITmstcURUdUp3aHFVTWV1Y2todmYxeno1blRPYWN6aS1nWEh6aHFidnF6TVpXTTBJQzVxSzdhZXJGQ1JsdUN6TFJFbFU?oc=5",
-      "published_at": "2026-10-08T16:29:00Z",
-      "score": 5,
-      "label": "neutral"
-    },
-    {
-      "id": "c99641bb4a4f",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "Apple (AAPL) Stock Trades Above Fair Value On Cash Flow Estimates - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNY09CLUlZV2FZSlJkb3NyUW1JWElQNmZoLWhoWjZMejVNb3Z2ZE55cWtRU01KV2NwazFfdmJJQmJZb2RwUko2NC0wSjZHRUtzdi15NzFEZlB1Y09QWXU2ZU96Nm1nLW1rWXpYLWJ1Y0lTT2FicHFIVzQ5Ym5SNWhWR0ZrR2RBVi1XOWU1R3kwZFRzZ2RTSlprZTVB?oc=5",
-      "published_at": "2026-10-08T14:08:50Z",
-      "score": 14,
-      "label": "neutral"
-    },
-    {
-      "id": "005816765587",
-      "source": "news",
-      "publisher": "Yahoo! Finance Canada",
-      "title": "Apple (AAPL) Has a New Catalyst That Could Drive Its Next Upgrade Cycle - Yahoo! Finance Canada",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZWJfdnQwVUI1RHRHNWJ4UnhtdlRfQTc2WW5xeUltQUQxYVlGbzFYY2w2YU1DNllUcjZlNzU4YS1acGNTTXZKVFgtN0xsaDNtS2Y0Z1ZXOWhKV1p5eUVvbXpkcUFuRWk3TGwxWTR3WVR2QWtPZzRSekVoMXZJOGJ6QUF3emRQN3c?oc=5",
-      "published_at": "2026-10-08T13:58:08Z",
-      "score": 68,
-      "label": "bullish"
-    },
-    {
-      "id": "47b5aaada6e7",
-      "source": "news",
-      "publisher": "The Globe and Mail",
-      "title": "New Buy Rating for Apple (AAPL), the Technology Giant - The Globe and Mail",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSWtWSDh2dWItQUJBODYwVk8xOXBjV3kydWxzVzc3WGdPNHR6UkxjVFp4bE1lRHc3dXBzVHBzMTFRTGloaUx2cGtJQXhpUE84Q2s5bVhwZDV2RkNoeEdwZ3BZVE93Y3RjLWxSazNxN2ZkLXQ2bllneVlsemprQXNSdjdWRmdoRXB2d2JvU0ZSRVREaTZpZ0QwN1dreGNQMi1fcWljdGZPdENVd3ZOQmk3UTA4em5mNU1vV1RkYVplRUM5a3pVNko1dE9ZRW1HNHZt?oc=5",
-      "published_at": "2026-10-08T12:58:33Z",
-      "score": 71,
-      "label": "bullish"
-    },
-    {
-      "id": "d66e28fd8d57",
-      "source": "news",
-      "publisher": "Simply Wall Street",
-      "title": "Apple (AAPL) Stock Looks Fully Priced On Its 145% Five Year Run - Simply Wall Street",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSEluMk1sUDZGWUE4SDc2aWtkZk4xQ3ZrWnF1UHVSdGFPUjlDTkIweUQxQWlIOTFqcmo4cjk5dEQtYURNSEp0UmVZdWtfdHlIVHRNalM1NnRvbWNhcUtuWU93bVBxeDdCVm9KWDNGQlZXa0hwV1l6OHNxbUNuZDgwZWhBaXRnSXpicC1iMFF3Rk05X3JEWWdlRHU1bWZwT3NwRWxDcHE1ZUZwTnFkMnRyOVlJWHgtX0ttd21MQtIBwgFBVV95cUxOQVBCSGVRZkZfNVJoNzd4SzJBQV9hNXJDbXU3MHR4bGZFbExyQUNaUFVyNlVNdnNSWWhjb1NDOHJNUVRNWU5sb3kydzBqeWF3NDFfZHBkemd3M3ZDOUNhVXZuOHdLTzhsam5OdVhzTEdkR0VRN0hYdjBxV2FyblZUemRXWEFwdkZOTDBuN1lUSVRTeWI5b2JvNE1mVXZiRElialdrZDVjOVhjRHFfU0dzMTliMTU0QnFrYWVoaF9PclZnUQ?oc=5",
-      "published_at": "2026-10-08T10:32:26Z",
-      "score": 91,
-      "label": "bullish"
-    },
-    {
-      "id": "a3cf0c95a323",
-      "source": "news",
-      "publisher": "MarketBeat",
-      "title": "Apple Inc. $AAPL Stock Purchased by Angeles Wealth Management LLC - MarketBeat",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQOTM0c0oxSkZ2aDBzMjFrMEEwYmFMMTFvN1p2YjNlNS1JRFh6VE9pUF9LYmdLdGpMRDYwNHl4MDlxMEZWUlNKaFJ6OC04WXZqU1FINUxxeFNLU2lvLXNiTGZOSHdhUENqNXhwRDE4UWlXVjI4VHlqYklfd2p5VUJpOTZubG5FYjl2ZjZPaGtsNWJKSW1NY3JqMHN2U1BERldWNEFFSk43OEpvQUxMNFhwLXVJMmtCNUJ6UzBteFgyX0I2QQ?oc=5",
-      "published_at": "2026-10-08T07:13:03Z",
-      "score": 3,
-      "label": "neutral"
-    },
-    {
-      "id": "31678e70bb25",
-      "source": "news",
-      "publisher": "Moomoo",
-      "title": "$Apple (AAPL.US)$ When all hope fails, Apple to the rescue. Thank you! - Moomoo",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNWVhPT3pxaUlRSUxxdV9fQkNBcDFPNnJxd25GaU9ESzlYdkRrZ0pJYjIwV3dSei1JS085dE1jUUY5NmJMU2ZrUU9QVEc4S3BWOTJOdjBtX2Z5Qm9FdXpMbmczYW9GbWp0OHBwZ1h6eENfbXFsU01rMnd2cnhWZ0ZYcjI5VUVHZzNvNlR1aktPNFV4RlJVTzMxMUgyb1dzamlUekE?oc=5",
-      "published_at": "2026-10-08T07:00:00Z",
-      "score": 20,
-      "label": "bullish"
-    },
-    {
-      "id": "c9a35848728f",
-      "source": "news",
-      "publisher": "TradingView",
-      "title": "Key facts: Apple (AAPL) expands on\u2011device Mac AI; analysts differ on targets - TradingView",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOTTdlYkVuQVVfdjlCdUdpOWlQQTRvMklHaTNqSnEzWFpjdndHbXRxV1NMeDZfVTg4WktOZUdqV20zeGpTT213anNUZ0ttYzBJNkRreHJIRE5NS0FIUTg1d1c2MUVhbFJKVXk4bFAwRHZzLUdWczZ1Z3N3Tzk3YzlDSEJVZzdSMWlUaW8zQmd1N3FPbWpBUjhENHVCS2RlcExOSG9MeGZubHcxNjhSVDZKVk5MUTYxbG5ZM1ZkWExSS1Y3UF9mQ1hWME1xRVJhbTQ?oc=5",
-      "published_at": "2026-10-08T07:00:00Z",
-      "score": 4,
-      "label": "neutral"
-    },
-    {
-      "id": "a4ca34b46829",
-      "source": "news",
-      "publisher": "The Motley Fool",
-      "title": "Nvidia Earned About Twice as Much as Apple Last Quarter. Its Stock Is Worth Only About 20% More. - The Motley Fool",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNbExHTUpudDJ6QXBXNHdQdXlZTktLMi12QjlkbksyQ192clZvSEZtNzVfcDJHMnZPOV9KRUo3RUVoZF8zdnF5ZGtzb1V6M2tpSTVDV1FQVlRJa2dOblJ6RlpYQmNHcTBwYW1JdGRiVVJ5REdWdnViaUdQTjVZcFlXZEFna1dFTzVPbl9ONmNGSzRpMTg1SFQ4U3VMVWJrRFNIN2U4OWk4TlU3aVBKTEJRbVJ0MV9CNDNKYTVDeWhKYVg2VDhzeUJGOGhRTWY4TkI2bHc?oc=5",
-      "published_at": "2026-10-07T21:37:00Z",
-      "score": -3,
-      "label": "neutral"
-    },
-    {
-      "id": "84fd27354def",
-      "source": "news",
-      "publisher": "Simply Wall Street",
-      "title": "Apple (AAPL) Shares Enter 24 7 Token Trading Plan In 63 Stock Filing - Simply Wall Street",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQa1dWMkFVVzJ6UWNzNV8yQU44WndibmN1dktoWlIxaU9nRDE1NVNqLWxxUWlERmVvN1dMX0tMWTJyNkFkLTlzSXpnaHZtR0N5ZEd1VW1FLU0tLXZoc05uYU5HWGN5VEZSLXhlRVpzNHV6VlJMU0dsQVBqdlZVOUVIT2dINUNXTzlQUnZsX1hQOVk3bkhiaF9TWlRxYlBCcXBJVDNkTDV0V0dkajFTdGZSNVo3TjV0VVVzQURF0gHAAUFVX3lxTE41NHVEeHpFRXlWQk53bENpb0pjTWVjNDNwNzZmU1F4QnllaV9hNTNlY21lY0VKV1l4OFpxZ2hJYnM0Y202eXQ5bTlHbmZ2RGg4Rk1Cd2p5YVpEVkFaVkc0UFJUUm9NMEVVV2tiTlFVOGhUSV83OGlUZk9kdk1aSFFyalhVNEg1Vmp6dHRiMU1PQ2loSzNSQnV1bHhVTDFKN24xbV83VEhTNXlteEUyQ2RKRF93dnZyTS16Z3VpbEZteQ?oc=5",
-      "published_at": "2026-10-07T08:33:16Z",
-      "score": 6,
-      "label": "neutral"
-    },
-    {
-      "id": "f4cc8f9e4e35",
-      "source": "news",
-      "publisher": "TradingView",
-      "title": "Key facts: Apple Inc. (AAPL) Co-develops HomeKit with LG; App Store +5% - TradingView",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQa1JtQWlBWWhSMEpaWHZGT2hYMVpPYWE2RUJTTkc0MVJQR1MwS1prZzc1SzF3WlJNcU5fcHJnZlJBZ1N1NDkza2kwNWd3Y2UtVjhLb1ZlQ3hJUWI3NlpsNVJocDl5cVJkM3pnQXFaak5vMF9TcXdhQ2h1emIzRG1mdjIwU0cwbUNLRklNbjUzNGtxVTUxQWZBYkpqWUVFQTM2ZnZWeGs5ZW9ySzJVbDZtcUF3NFZfd245aWNqNzFNV0p6Y3lJ?oc=5",
-      "published_at": "2026-10-07T07:00:00Z",
-      "score": 10,
-      "label": "neutral"
-    },
-    {
-      "id": "b894766a2971",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "NVIDIA (NVDA) vs. Apple (AAPL): Which Stock Wins the Valuation Race? - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdEV1TE1CTTFVRlA4TGZBVEptU08zbnNtbDhvZnJWOERBOVZmZHJNUnQtMjZTOG1TN2NWbmR3YlBWM1hNQTJrWGM4S25SSE9EaTlNaFNWTDBiamhEMm9ldlltbjJuaUp1UnNkeEdScTAyVUdaZXV5MUh3OXlHUllHS28zbm9kNG5VZnFCZmZWU2d5eExl?oc=5",
-      "published_at": "2026-10-07T05:19:00Z",
-      "score": 8,
       "label": "neutral"
     }
   ]
