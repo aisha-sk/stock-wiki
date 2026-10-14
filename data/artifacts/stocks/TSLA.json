@@ -2,7 +2,7 @@
   "schema_version": "1.1",
   "symbol": "TSLA",
   "name": "Tesla, Inc.",
-  "generated_at": "2026-10-13T02:50:52Z",
+  "generated_at": "2026-10-14T00:51:34Z",
   "is_demo_data": false,
   "quote": {
     "price": 378.03,
@@ -495,10 +495,10 @@
   "forecast": {
     "horizon_days": 5,
     "move": "quiet",
-    "prob_large": 0.4063,
-    "typical_move_pct": 3.5255,
-    "confidence": 0.5937,
-    "made_at": "2026-10-13T02:50:52Z",
+    "prob_large": 0.4584,
+    "typical_move_pct": 3.5301,
+    "confidence": 0.5416000000000001,
+    "made_at": "2026-10-14T00:51:34Z",
     "as_of_date": "2026-10-12",
     "target_date": "2026-10-19",
     "model_name": "move-xgb",
@@ -520,18 +520,18 @@
       {
         "source": "news",
         "display_name": "News media",
-        "score": 19,
+        "score": 17,
         "label": "neutral",
-        "doc_count": 47,
-        "note": "47 articles, last 7 days",
+        "doc_count": 48,
+        "note": "48 articles, last 7 days",
         "method": "finbert",
-        "previous_score": 11
+        "previous_score": 33
       }
     ],
     "gap": {
-      "points": 0,
-      "most_bullish": "news",
-      "most_bearish": "analysts",
+      "points": 2,
+      "most_bullish": "analysts",
+      "most_bearish": "news",
       "summary": "The available groups are close together."
     }
   },
@@ -542,8 +542,58 @@
       "publisher": "Yahoo Finance",
       "title": "Consensus: 19 buy, 21 hold, 4 sell (Oct 2026)",
       "url": null,
-      "published_at": "2026-10-13T02:50:52Z",
+      "published_at": "2026-10-14T00:51:34Z",
       "score": 19,
+      "label": "neutral"
+    },
+    {
+      "id": "e8a06e6ef73b",
+      "source": "news",
+      "publisher": "Moomoo",
+      "title": "Tesla's (TSLA.US) Bitcoin holdings rebound to $1 billion; SpaceX (SPCX.US) holdings revealed - Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUVpMYmVWRjF1bDhZQWdJZ1F2MG5qM2N4ZTViQldLNW9DWmUtaGhSS2RMUjRkcUlRcWZUSTZpNEJ6ZGllbE9IVzljblJhcVItU2xSRUdFUktfTHZ5NUptTlNxS3E3MVlQYldXNUwxVGRtS21PaFJGMTNNT2FXQzV2ekJrTENPdDUyNVJONkZ3VThMY3pqSXptVG5wSWNob3pQaE5IMTFR?oc=5",
+      "published_at": "2026-10-14T00:36:12Z",
+      "score": 90,
+      "label": "bullish"
+    },
+    {
+      "id": "539956f9cb68",
+      "source": "news",
+      "publisher": "Stock Traders Daily",
+      "title": "(TSLA) Long Term Investment Analysis (TSLA:CA) - Stock Traders Daily",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTFpxTjdhMDNxWWwxbFJuV0NrYmZRa3hfa0p0eHd5ZzZIczhLR3lteUFKTkhOY2hYdkxBZmRiSnlXNFlUaXhERk9TeHhzZ29BdVZXTnF5WWloSlVJbTFUS0lkank1MDEzajRKR3RiQ05nYXRiaVVubzVPeTVPY2VUSWF6eDlRQlh2a25yWmNweUFjdWVBd2hR?oc=5",
+      "published_at": "2026-10-13T20:46:56Z",
+      "score": 1,
+      "label": "neutral"
+    },
+    {
+      "id": "b9c424bde6ce",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Is Tesla (TSLA) a Car Market Leader or a $1 Trillion Robotics Gamble? - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNY0RSSm03bmNCQVBzamNFWjI4X3l0b0pudmxuWVJDTlZSTmxZVVhuUmZqZmR4Y0ctSHMyOWtfV1Nab0J0MXRyLVBPQTJhRng4LTM1OUlKQnB3ckkzbDdIRC0zTGc2UE1KaDRwejB2QUgyNXpIWUZxQkJUMmYyd3ItNWxzRjdHeGg2cEFiUm5rOWZmd19LWUJtLQ?oc=5",
+      "published_at": "2026-10-13T12:11:57Z",
+      "score": 5,
+      "label": "neutral"
+    },
+    {
+      "id": "d9eca7e4dc7c",
+      "source": "news",
+      "publisher": "Moomoo",
+      "title": "$XPENG-W (09868.HK)$ Xpeng next to $Tesla (TSLA.US)$ ..only 2 brands for official Autonomous Lab, the NGP test at Paris Auto Show - Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPb211Y2hUdzlUR185M0ptM2kwbDN4M2ZFdkdXY3E3RFBrTmIwajA4azdfN1MwWVFubjRZR3psenNVRlNpYURVNVp6SDhnOXRKVkdUT1l3YVZKekFrdmdQdEQ1alFtRzhTWS1aR2I5azlOak83blQ0TUtDdEFoejVkTmNKSkExRzV2OHB4eC1SUzlwVks5b0tDbmNYRlM5T00?oc=5",
+      "published_at": "2026-10-13T12:09:31Z",
+      "score": 4,
+      "label": "neutral"
+    },
+    {
+      "id": "585cbaf77352",
+      "source": "news",
+      "publisher": "Moomoo",
+      "title": "$Tesla (TSLA.US)$ hugging at 200 ema resistant - Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMikANBVV95cUxPSThYMHNFbUZ2blp3dlFMajVaSlVreEdIR2p2VHZ3N25mN2ZSenN1cUlZcnVPVXJsMTE4U2VfT2FwWVNRRXA0X3JYNDNhUERodTJKVTJLd2Zha05KMmhVYm1WbVBBdWdmSFQ1cUJrNlYwTFgyam9XX05HSFIzYXpHR0hIc1lhNE9mWFpKTjdCUDAzd0RVRS1jYkoxRWJjekR0d25QQlU3VERhNTBmNXN5dVctZXVqdW80elJOemRCbTFjcFdlU2ZLc2M2ZGZiNkpQcTROU0xuWTZMd1UwQ3AydUh5U3hIaUVrS2hKTTV4YjlIQ0g5MFBrdjhrQVNwMlo0ck9hRUhVTl94TDJRU0M1MVRIb04yN2ZtaV9EY0kyLWVlWG14Rl91V00tZ1AtMy1Na25CWEl6NGpYVWVZbkxNdGwwc0pQTjY2eXdQVkhLUXljWjZEeUMwZjRrUlhOSlhiVkxQMGpQS3VFMWlsS1dfUThQX2gxd2tOWk9valhhTnZKcWg2ZVl1bWxBSGN3Z2RS?oc=5",
+      "published_at": "2026-10-13T07:00:00Z",
+      "score": 9,
       "label": "neutral"
     },
     {
@@ -577,6 +627,16 @@
       "label": "bullish"
     },
     {
+      "id": "42d6b43baeba",
+      "source": "news",
+      "publisher": "The Globe and Mail",
+      "title": "Should You Buy, Hold or Sell TSLA Stock After Its Cybercab Fleet Jump? - The Globe and Mail",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQRXF1YzdZN3lZS0trZTdqdXV2akZwSEFidHVESWduSUV5d3RfRnAwSVFhczhyUEhsT1ZWb3g2aUpnQjR3VmFPWnFHel9SY0xuNS1fV09tWVBNSXctSmphaXozemJhZTFLNmk3RWNZemxnQ01wQ2lwcmR5U25zaUtwMVFTZ2hfN3hvLUQxbC11dWt1NGJkckNJWTVHS2xBN0lMU3hHWmlkREdBV1FCd3c5TVY2WnJuRVJrWi1nOXlHemdZOWlDeWh1Sm1uVHVKVC1BX0I1Q240MzBYbnM3dXB0X3k5LW96MzZX?oc=5",
+      "published_at": "2026-10-12T15:04:00Z",
+      "score": 3,
+      "label": "neutral"
+    },
+    {
       "id": "7de5032a0211",
       "source": "news",
       "publisher": "Stocktwits",
@@ -605,16 +665,6 @@
       "published_at": "2026-10-12T13:05:00Z",
       "score": 91,
       "label": "bullish"
-    },
-    {
-      "id": "d1dd3ed45891",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "Should You Buy, Hold or Sell TSLA Stock After Its Cybercab Fleet Jump? - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZktVTkV4TkV1RUlkOTdlOXhmbElHVVZocU5CZDdVT1dVdVNQSDk3ZlBIWktPV2cwZkx5VDVBMm9WNkZJdWVTLUVPbzl6VmtyWDB0NHotWHJqZ2ZZamt0VUZpV0t4ck40MGlTNXFFQ3l4aWVhNGtRa2stYVo3M1RsNjdHQ0ljTm9vN3hFNkEyRDlHbnc?oc=5",
-      "published_at": "2026-10-12T12:57:00Z",
-      "score": 2,
-      "label": "neutral"
     },
     {
       "id": "64149a3599f2",
@@ -727,6 +777,16 @@
       "label": "neutral"
     },
     {
+      "id": "9bc77d539888",
+      "source": "news",
+      "publisher": "CNN",
+      "title": "TSLA Stock Quote Price and Forecast - CNN",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9qejEtbzhHOHJnMXJRWUVEbUxyUFF0RnJuNEtEN0U4Mk4wTlIycHNTejNyYTJYQlRDMFRCMllMcGJtNV81S0RNME9IZFBSZkRJ?oc=5",
+      "published_at": "2026-10-11T08:04:07Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
       "id": "d31bf6a7f84d",
       "source": "news",
       "publisher": "Yahoo Finance",
@@ -747,16 +807,6 @@
       "label": "neutral"
     },
     {
-      "id": "9bc77d539888",
-      "source": "news",
-      "publisher": "CNN",
-      "title": "TSLA Stock Quote Price and Forecast - CNN",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9qejEtbzhHOHJnMXJRWUVEbUxyUFF0RnJuNEtEN0U4Mk4wTlIycHNTejNyYTJYQlRDMFRCMllMcGJtNV81S0RNME9IZFBSZkRJ?oc=5",
-      "published_at": "2026-10-10T08:01:52Z",
-      "score": -1,
-      "label": "neutral"
-    },
-    {
       "id": "e17eb460ad34",
       "source": "news",
       "publisher": "Barron's",
@@ -764,6 +814,16 @@
       "url": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxPM0lBaGhpbWpZSlFOd2I0SWJReVI1RlpaVUxDN0IzYzRGS2FuZWtHdHBnQWhhc1hCYmsyNE0yMVpPQ29pVmhPbnJyeEp6bVVKMlpROE1mOHZkNnJKRHVsOW93dFJVYXluXzJ3bmJ5RVdZUkY0V3JSTGc3WW1hNURlSDFzaHVuQU96dkRyTUhXYzA5b0JJY2F3dk5rZm95R0hoMS1XeWpmcWJvQWZhMzNkdWFGc0t4Qy1sQkQ1eXZrOExnUU55b2JqUFN0RDE0Slc5dVA4Mlc3UkhqLWk3STBfWnJhV1BxVUhzQUVVUEFRT3JaWUNNQTU5M3V2X0tCZG9nWVVqNVp3Sk9VTlZOMW9DNV90MDBvWXN3TGFweDRwbk1fOWdCY0NvaURlNWJDY1lBS2paTFRNUDdsUUc2blJHNklKQzlySEo0Z24zaG1RbzQtUDN4OGxnNHhiamxVMklnZzJwU2YtSHM?oc=5",
       "published_at": "2026-10-09T23:59:00Z",
       "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "66ff5918fe73",
+      "source": "news",
+      "publisher": "Barron's",
+      "title": "Tesla Inc. Stock Grades | TSLA - Barron's",
+      "url": "https://news.google.com/rss/articles/CBMizAJBVV95cUxNSWtnT1E1MldxNDhEdUppYThSbjRvcGtfQ2RZcS14VTcxbFN3UXZ4cjNaMVNnTHg0cW5mdWpJbEFqaXF1dTRuT2FVc0h5Q0o1TEcwckZ4dmpBOWhWVjh6WlowS0N2MW1IOFVyRmRMdzNLTmwtVmJrOUVZd0hybFEwTno3VlFnSG9BYi0tVURnQzRuZTdfbmlPXzhpejl3SUdiQ2k4RV9CcGVId1JPTldsMURETTJhUS00WmxVN2JaOC1xeUtwa0RPNGFWd2gtZml2ME5BRTlmZC10Yi1WTjVIbjFOMDRXSXRNeTNvaDdGLUlqNmVZSHBER3RGY3o1QWdZZklsWVdZZVhqd3U4SkZ6ZmFlMEFoSWtvRTI3MXBQajJISlpBSTl4ZnFWcnpyM0c5aVZUMHNOVlRZeFVuMlhPMHA4LUYxQzNpdGc1Tw?oc=5",
+      "published_at": "2026-10-09T23:59:00Z",
+      "score": -3,
       "label": "neutral"
     },
     {
@@ -775,66 +835,6 @@
       "published_at": "2026-10-09T21:51:37Z",
       "score": 36,
       "label": "bullish"
-    },
-    {
-      "id": "4373d8575354",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "Jim Cramer On SpaceX (SPCX): Buy Tesla (TSLA) If You Like It As An Earnings Explosion Might Be Coming - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUFUwMkpTSVRsZnpwR0tmVGVVaFVqdkNXbUtzZml6QmxFVTNLNVZ1a29sQ1pXcUJqWTJYeklFZ1JORnJIV0lrSU14aWpUMTllS29OT2pKTWxfNGRVV0tzOEdscW5aRGU5eHNKdldtcmEzSXhOWDFiNlRGMDl5WmNGb3V5bXg1MEJyTkJRZUpfOTk2TnJ1?oc=5",
-      "published_at": "2026-10-09T20:22:14Z",
-      "score": 8,
-      "label": "neutral"
-    },
-    {
-      "id": "5beee9f1d82b",
-      "source": "news",
-      "publisher": "Benzinga",
-      "title": "Tesla's China Retail Sales Fall 9% Even as Shanghai Exports Surge 58% - Benzinga",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQUxudGNtR0tqM0x3V015Rldrd05zaFplQldLRWxoRWpqQjJZODJseTZMZW1lLXJBSFV6RkZMOUVGNXc1R1pSNEhVVVdxb0J6WVNfdDducmV0WldoRXN0MVBHeWlMVmxUdlFid3gtc2V2WVpRUmdvZk5UMmNUdHR1aDZ6amVlLUcycUd1YXBZZ1pvbUZJWEJnM0N6UEw3bGJkdHNHaw?oc=5",
-      "published_at": "2026-10-09T18:45:17Z",
-      "score": -96,
-      "label": "bearish"
-    },
-    {
-      "id": "f959b4fa9c98",
-      "source": "news",
-      "publisher": "Moomoo",
-      "title": "$Tesla (TSLA.US)$ Go boss! \u26fd - Moomoo",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPYVdrQk1OclJrMEJWNFNxY3lQTVVOUFdReUNtMjNKY0hsalVURnN0dWlIVlNIMDdyMFQ3bGlmZXhtVEtGbDRNZ1pZMlg5TUVrWUQxQkZLOUVuUTZBT0VVUzRJUGJGbjNxOE9nRmF5MHB4MzJSRTF6Y01UQ3ljU0ZxTg?oc=5",
-      "published_at": "2026-10-09T15:37:25Z",
-      "score": 0,
-      "label": "neutral"
-    },
-    {
-      "id": "ca97bada029c",
-      "source": "news",
-      "publisher": "Benzinga",
-      "title": "Dan Ives' $500 Tesla Target Hinges on Robotaxis - Tesla (NASDAQ:TSLA) - Benzinga",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNdE9sSE5nTDA0MnNlNmRPMFBZanBCT1g5c2REdm9BckZYbFpsYzA4ZmVQN1FiLWRLQXNla2RRNFNFa2hubGZVdVB5UlJqbE4yMnJVRXdCeWJqR2NaR2lob0ppTFRsUjFIU0F2aGx1b21aOVpCTWUxUExPVjFxeE1jclp0NWJMM2hPbmZDSEpwQU5VZw?oc=5",
-      "published_at": "2026-10-09T15:27:43Z",
-      "score": 9,
-      "label": "neutral"
-    },
-    {
-      "id": "535b6e8d732b",
-      "source": "news",
-      "publisher": "Moomoo",
-      "title": "$Tesla (TSLA.US)$ - Moomoo",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9DRzZmaWZBaWFxQjhuVzNPbEJHRjdaQnRQeUlTMzMzU0ZuU3JGRHhqWS1BZGhaQ0FqSmlJNlhhdFNReWVlcFZjX0tiRVpSeUFDQ20wRW9HdzF4YnA4Vjd3eXF0TkdETWlvMTZfNjB5TWFTWUVrRGc?oc=5",
-      "published_at": "2026-10-09T14:54:40Z",
-      "score": 1,
-      "label": "neutral"
-    },
-    {
-      "id": "2e29e07c63dd",
-      "source": "news",
-      "publisher": "Moomoo",
-      "title": "$Tesla (TSLA.US)$ - Moomoo",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1qUTA2Q0VzSHQ4VDBmSEZRbkljdHp5QkNvcmxsclptTkN4Q2h2MUZJT29RYnRGaU9OWTJiQWlCRzNDMzFxM1JheTk5TUkxRUN6Z1l3SndEUEJwWXFjMzl2UUxlQ1ZWSjNLbE5WdUtSMFZKYnExc1E?oc=5",
-      "published_at": "2026-10-09T13:19:26Z",
-      "score": 1,
-      "label": "neutral"
     }
   ]
 }
