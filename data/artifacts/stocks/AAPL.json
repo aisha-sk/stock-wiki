@@ -2,19 +2,15 @@
   "schema_version": "1.1",
   "symbol": "AAPL",
   "name": "Apple Inc.",
-  "generated_at": "2026-10-17T00:09:08Z",
+  "generated_at": "2026-10-19T00:37:29Z",
   "is_demo_data": false,
   "quote": {
-    "price": 342.0,
-    "change_pct": -0.28,
-    "as_of": "2026-10-15",
+    "price": 343.46,
+    "change_pct": 0.43,
+    "as_of": "2026-10-16",
     "currency": "USD"
   },
   "prices": [
-    {
-      "date": "2026-04-27",
-      "close": 267.13
-    },
     {
       "date": "2026-04-28",
       "close": 270.23
@@ -490,20 +486,13 @@
     {
       "date": "2026-10-15",
       "close": 342.0
+    },
+    {
+      "date": "2026-10-16",
+      "close": 343.46
     }
   ],
-  "forecast": {
-    "horizon_days": 5,
-    "move": "quiet",
-    "prob_large": 0.1713,
-    "typical_move_pct": 3.5301,
-    "confidence": 0.8287,
-    "made_at": "2026-10-17T00:09:08Z",
-    "as_of_date": "2026-10-15",
-    "target_date": "2026-10-22",
-    "model_name": "move-xgb",
-    "model_version": "9"
-  },
+  "forecast": null,
   "sentiment": {
     "window_days": 7,
     "sources": [
@@ -520,16 +509,16 @@
       {
         "source": "news",
         "display_name": "News media",
-        "score": 19,
-        "label": "neutral",
-        "doc_count": 73,
-        "note": "73 articles, last 7 days",
+        "score": 20,
+        "label": "bullish",
+        "doc_count": 70,
+        "note": "70 articles, last 7 days",
         "method": "finbert",
-        "previous_score": -42
+        "previous_score": -3
       }
     ],
     "gap": {
-      "points": 6,
+      "points": 5,
       "most_bullish": "analysts",
       "most_bearish": "news",
       "summary": "The available groups are close together."
@@ -542,9 +531,59 @@
       "publisher": "Yahoo Finance",
       "title": "Consensus: 25 buy, 13 hold, 6 sell (Oct 2026)",
       "url": null,
-      "published_at": "2026-10-17T00:09:08Z",
+      "published_at": "2026-10-19T00:37:29Z",
       "score": 25,
       "label": "bullish"
+    },
+    {
+      "id": "ecf1365dd7c9",
+      "source": "news",
+      "publisher": "Beinsure",
+      "title": "Apple (NASDAQ: AAPL) stock forecast: Wall Street analysts split on AAPL\u2019s upside - Beinsure",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPWDVRb2FrV3ZSYzNvc18taHNQZlZqV3pYRnV6SURCYk1RTFlhdVZRemt6RDRQM0RLWmxTc3hvQUI4ZGJkcFhrb3oxYTJza2EtenRqaWNLTG9nQzgxM1RHT1dLZUtyYzNDRUdsa3hISThMSGhBdS1sRkpEdHNBb25OUmd1ZzlsWmRWQkp5TnNTeTU1clJ2?oc=5",
+      "published_at": "2026-10-18T10:30:14Z",
+      "score": -78,
+      "label": "bearish"
+    },
+    {
+      "id": "5a09c7c1c05a",
+      "source": "news",
+      "publisher": "TradingView",
+      "title": "Apple's iPhone Duo Demand Tracking 'Solidly Out Of The Gate', Says Analyst As AAPL Stock Caps Off Best Week Since September Launch - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNZkhzUlpNNktLaDlYOGRwblFBN0h0TzBSc1FZbjRXelF5Ym5hT2lINHlqMU9EbW9hdi1HYzUzNmFtZDhPTDhWVWNrSWNqODdIZklRNHpLUnVxekxOYWpWVy1WcmU2Y2J0cmtGVHExVkF4TTJ4bGw0b21pTkVxOWVzMjY5NGt3b1dIamkzUEkwMmpiQ3JmWG9CYUtjcHFNUXktc0hldzFqcWFOOUJFNnBlWFFrNGN1MlNvMWtYWDlXRjJub3dLdWtrOGdnTmtjVlFsdk5NSlJCYXRfN1B6aEtKOTFiLU5VSlNtNGxFOVFEM2M2RmY4eTJQOG5jYThMSTFrYVJwcUU1c1NmX3ZPNVpJZGxUVFJlQQ?oc=5",
+      "published_at": "2026-10-17T09:11:05Z",
+      "score": 78,
+      "label": "bullish"
+    },
+    {
+      "id": "6e2f501641de",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "What Apple Holders Bought Into - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdURUR19mZmFvd0ZnS2NZOWF2NmlBZlQwX0ZPeXdWOWZHWUpVQktwR1JMcC03WlFxOTVDRG5taDlnak5XZ0djN2R1eVRzUXZKa0pna1hsNU5vUlJjWXFGZnJaemJudTZqUm9VeG14SGw4OHFhQzFIODZjOWg5MlY1VkxNUXZwZklILVF6dDdR?oc=5",
+      "published_at": "2026-10-17T00:14:00Z",
+      "score": 2,
+      "label": "neutral"
+    },
+    {
+      "id": "3598d392dd37",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "AAPL Stock Adds 1% As It Prepares To Tackle UK Regulators Over Apple Pay Dominance - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQcGFQMVFmM09QYjhYbkhjSndQdmkzRDNIVnZoRG1LSzBlY0NjU2pobFlLVzl5Q3NHSFowV3RUcF81d2xVb0d4YnhEWkdidDNCN3hrVE5kbng1a0JuT0lna04xMG1EVDlmaHlieUk2LVBDSi10eWcxOWVEMXhYZ19ZZ0ZDNWxXZGdvUWpKd0lNWU82WXc0QlE?oc=5",
+      "published_at": "2026-10-16T16:34:25Z",
+      "score": 43,
+      "label": "bullish"
+    },
+    {
+      "id": "47c017032558",
+      "source": "news",
+      "publisher": "Moomoo",
+      "title": "$Apple (AAPL.US)$ taking the profit first. - Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOa3pxR3lMSkNNZDdWWmI0MEFjRExmVmRDbjRkUHV1NHhtRUowWllwbEhZd3N0clhfOVhYZHlVY2ZSSzJQZUVYNDJKT1drNzBQSWJqVnNzR1dxQ3pvRGNJLVY5NHFZX0xsWlZ3X1NTMnh2Mld2VFRDVXY2dVFGS3ltZmlkOHhhRENsYlBTU1VRYWxvSjVR?oc=5",
+      "published_at": "2026-10-16T14:29:01Z",
+      "score": 6,
+      "label": "neutral"
     },
     {
       "id": "f2e24f2e5264",
@@ -565,16 +604,6 @@
       "published_at": "2026-10-16T14:04:00Z",
       "score": 91,
       "label": "bullish"
-    },
-    {
-      "id": "c1d40989eb2a",
-      "source": "news",
-      "publisher": "Trefis",
-      "title": "How Much Of Apple Stock Rides On One Product? - Trefis",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOalVNcnpWc3R4b3hnbnpiUUUwQW9uaThKTmpIN183VVZXMU55MVFwM0ttQS1FSzVNNE1VNjRobW9ORkZsakUydU1SZlNNQkFldXZVanVtY0RYM1FBZDVHQTYzWlNpbk5kQjRjUi1GcjBuNVFZenp3ZmxUZDZBZDBZZk5MMEJKSGJMM19vellXaUN2bExUbWNoVXBXZnhmNnozR0l6OWg2YTY?oc=5",
-      "published_at": "2026-10-16T13:37:55Z",
-      "score": 2,
-      "label": "neutral"
     },
     {
       "id": "a2d2a88da3f1",
@@ -617,6 +646,16 @@
       "label": "neutral"
     },
     {
+      "id": "760f1638ad28",
+      "source": "news",
+      "publisher": "TradingView",
+      "title": "Dan Ives Says Apple-Meta AI Partnership Could Help Unlock $75 Per Share in AI Value for AAPL Stock \u2014 'Start of What Could Be Just a Massive Collaboration' - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxNdER2a0FfOTE5NS1UZVRFYzA3dDNNbWNqTWFiUW4xb3lTNkEtR3pjZnh3bTRNWWE5Y2VGTVdWbGtqcEZkZVZRWnRZYW9WVS1BTXdOLW9zTWF6bnNDWVFobkgwTjZMeXkxRVY3Wk9RUG9lNm4yX2VTbjRUQlF5N2sxczZXU252U2dKbkhKbEtkbUJPN2oxVkd2MjRRTWVlZC1fUFlWOWZtaWNNMzNoZFl2a1Rsc1Q2SmRmSWFBZTdQTlo4dHNwZUhTdGdHcnJMZUszMVNsRDZ5dVRGbW5PNDR4eThkN3VRM19JN2FiQ1ZKWnpQbEpkTThfSk9EYmo0Mk01VmxadDd3YkNnQ1VHLTdRS2dPOTBPaU1ZR2IybGNOZnhteWhsOHFqTDlxeG5XcWl1RWc?oc=5",
+      "published_at": "2026-10-16T11:18:12Z",
+      "score": 73,
+      "label": "bullish"
+    },
+    {
       "id": "c046b5b982dc",
       "source": "news",
       "publisher": "Benzinga",
@@ -625,16 +664,6 @@
       "published_at": "2026-10-16T11:18:12Z",
       "score": 83,
       "label": "bullish"
-    },
-    {
-      "id": "da27e323f5dc",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "Apple (AAPL) Sees $365.1 Million in Net ETF Buying on Oct. 14 - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOS1hEbHBKYnhDV3QyQTg3d2pSVW5ucHN0WUd0OThHR2NRZUxJMVVHVnF4YkV3X1RaclJhc0ZOTGMtaHBRbGhrMlNFLTdOc3lSYW5OWGhKV2FiNGxlWFFncEZFUjAzR3ZqMmNvRkpkeEVoYlZSZ1lsVVdjemlHYjA3NkpjNG5vZUR2Z3lnNm45VQ?oc=5",
-      "published_at": "2026-10-16T11:00:36Z",
-      "score": 11,
-      "label": "neutral"
     },
     {
       "id": "706df24e9c55",
@@ -647,14 +676,14 @@
       "label": "neutral"
     },
     {
-      "id": "4cad162c699b",
+      "id": "b678d9e2fad7",
       "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "Apple (AAPL) Gets Court Order For AI Hiring Records In Trade Secrets Fight - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVEtxX01KU1d3a0MzNlQta0lMS19Qb1VMYUpwRk1PUjAyejF4YlMtZlVNVXNvSmZmNjF3aUc2R1pORXQ2dWIxZDJCM0x2QlBZNnd5bExaTEh0cUZqZEpNVk14V0JSeS1IX3RTQU8zaVFHNGdqNXpkR3htTXoxaENUTFVUdER3empoQzhKaEJjZDBOWm1jTkE?oc=5",
-      "published_at": "2026-10-16T06:16:00Z",
-      "score": -77,
-      "label": "bearish"
+      "publisher": "MarketBeat",
+      "title": "Apple Inc. $AAPL Stock Purchased by S.E.E.D. Planning Group LLC - MarketBeat",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTjNITzVJbGc0anNubE04b1RhMVp0OGMzOElBcjBWUldiYW1ZdzlaZklyUDYzeF8zRl94ZTBCUW1XUG9EZGNnZGxTUDFOWjN5Z2lScl9tOEFZaGItWVFyV1luN1BDaUZKMzVVaEdOV3gwa1hSVWJoYTdlMUdSR2xlcWU1SlJfYThYVEJRR1FVVVdIT3ZmdGZ4Ynd6RGtVcDZIbzAxamM3cG1ad0xCSS1JUzBCeTFKUTJ1bEE?oc=5",
+      "published_at": "2026-10-16T08:39:31Z",
+      "score": 1,
+      "label": "neutral"
     },
     {
       "id": "ec904333ca56",
@@ -664,6 +693,16 @@
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQOW5pLVlhOGg5ZGRGLS1DcHJQZUNmVXpyZW5FQnkwem1VdjF5QW5qR3BpbUJlSzViVGlicHhNV2plekNGQnNrcHlELUN2MWhScU92REhrdjVjQW9EZkhGRXRjR0N6LWFpNHJQV1lyNktWdVNaallKVl9qeFdIa0FKTlVMM3puVVZidExVeG8xYy11aHVJTlRrMWpic1AyTmhJT3pDRWNR?oc=5",
       "published_at": "2026-10-15T22:30:43Z",
       "score": 0,
+      "label": "neutral"
+    },
+    {
+      "id": "61187ad34c3f",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Is Apple the Ultimate Stock to Buy Right Now? - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeFF1SDgwNW1RNFNZdUdydFJDWFA3THJiUENVOFlUTnFaMV8zb2t2QVNuLUEzOGF5bmtVYU56RjhYTHdXeTBvcVZ2T3FNcEE4emlPZ0dZdWw3ZVFNZjgweVY0Y3FXUTl4XzlPX3d1RE5GdmYxaTB1VHpYWnAtNTQ5Zld2UmMyVDU0NmFlbFN3dWhzemNlQjY1cg?oc=5",
+      "published_at": "2026-10-15T21:43:00Z",
+      "score": 2,
       "label": "neutral"
     },
     {
@@ -695,16 +734,6 @@
       "published_at": "2026-10-15T14:56:47Z",
       "score": 8,
       "label": "neutral"
-    },
-    {
-      "id": "011a894b90cc",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "Apple (AAPL): Can Longer iPhone Ownership Still Produce More Profit per Customer? - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVHRtOXNvNXNlN3VZbVUydFBpOVRaMjJXR1RlNk14M254QmdSMGlLcnRjamlibWthSXFxWlFQczNXY2xsV1JEWWxscm1tdE8zZGJiWmxzazJVd1pndXlHQXNDanlab0hvQlRBSm1kMTlXbzBEbDlYUkJVOTVtQnFpbXN0elZHblV4bmhyLVFVTHZHWXZ1X0k2MHdNVzZwbzBi?oc=5",
-      "published_at": "2026-10-15T13:38:15Z",
-      "score": 25,
-      "label": "bullish"
     },
     {
       "id": "22615dfb9790",
@@ -742,7 +771,7 @@
       "publisher": "Stocktwits",
       "title": "Premarket Movers: AAPL Gains On China AI Approval Report \u2014 Why WMT, NFLX Stocks Are Also Rising - Stocktwits",
       "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPOFA2ZVBHR3R3cHFaVTJWWmQ5dGJiak42MTludDBRNzNFN3hKUF9nLUxiTHBQX3JiSkt2VmJGc0VoZE9qV2IzUC05T2dpZHVaQVM2Q2pOLW90OURUdVdVWHBJLTlCVWNURDlzUUtlaHdKcDVhZ1AxUU9ETlVOcXcxcEtNM3g0cnBBaFlpUFljaEhBVXpxVmRQVVk3akVDNUtHeDVFTXJQSjR5SDR1Sjdra0xvWEJGN2p3clVTSnl5VXlkQ0hYcU9adWNRSVlQRC1nM09nRmk5M2dkUEM0Mk1BM2E3ZkZYNXhDQS1Z?oc=5",
-      "published_at": "2026-10-15T10:19:00Z",
+      "published_at": "2026-10-15T10:20:07Z",
       "score": 71,
       "label": "bullish"
     },
@@ -795,46 +824,6 @@
       "published_at": "2026-10-14T18:10:03Z",
       "score": 14,
       "label": "neutral"
-    },
-    {
-      "id": "e31c170742bc",
-      "source": "news",
-      "publisher": "Moomoo",
-      "title": "$Apple (AAPL.US)$ - Moomoo",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1NOThfY29tVTB4TGhLOGlkT25fOWtfQlg2VkNzd3hUeXROQzBRemxxYTc3UGpUWk11YWJ3RzcxaVdUZ2RWaEFtN25qYkJnU1lhRDNPZjlERllWQVhZYTU5VnlqaUZtOW5YMDlzV3hXTmdTdkZCVEE?oc=5",
-      "published_at": "2026-10-14T15:37:54Z",
-      "score": 4,
-      "label": "neutral"
-    },
-    {
-      "id": "f233679f0260",
-      "source": "news",
-      "publisher": "Moomoo",
-      "title": "Market Heatmap: Memory Stocks Sink, Healthcare Leads as AAPL High - Moomoo",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRzJBUnVLNkx4Zi1GZ1ljT25Fel9PZkE2c2dpZDNRc3pwVF9PeF9yVENrNk1NaElRNUNiam1xY0dTYl9pakpqMEV2enFvU3Baa2xRZ3lybXc3RFkxTzlBNVhRazc5VTgyeEN3UFl1SW5Nb1FKd0t3b3E1UFN4UXEzckdMaGF5cXNMRmx1WGZnMS1MYTdFZkgxQUl2T1QwWUtVc2dIUVpSR3hfa2Zac1VBUDJBNy1yRWNC?oc=5",
-      "published_at": "2026-10-14T13:54:16Z",
-      "score": -70,
-      "label": "bearish"
-    },
-    {
-      "id": "74d594eb247d",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "Apple\u2019s AI Opportunity Could Be Bigger Than Investors Think - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOZzgtdjk3Nm1GY2xEMUl2RTZCNmg0ZTRyWHR0Ujc4NERjYldxVC1VR0FMNkx5bi1TRVU0MGxEM3RJS1ZrZXVrUzU1bGFkUzJJWU81TlBnZE5rX3ZQS05Vam1mWng3dEloTDlVUm04XzBwaUVpY2VtUTNULXlnNi1lM0NxY0ZSUktXYlJlT3JDOEFldw?oc=5",
-      "published_at": "2026-10-14T13:30:02Z",
-      "score": 12,
-      "label": "neutral"
-    },
-    {
-      "id": "1a60ac57b4f1",
-      "source": "news",
-      "publisher": "TradingView",
-      "title": "AAPL Stock Pulls Back From All-Time Highs: Gene Munster Says Apple Is Moving Faster on Hardware But Still Missing Tech's Biggest Opportunity - TradingView",
-      "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxQLU1hU3ZNRW9uOVd5TWYwal9OY0NHMnpacnVEWEx0SEx3ZHlhczhBdHJ3YjFSUmMteXYxQlZ4TTBLNW5BMXdyVTI5VXNHbFlCR0VhWU15NHU1VGJSM2MzYlJfYkdfMm5JaHVaMDNQZTU3eE9maTNyOFJua0RiOU9Cdnl4c1FVTEltazVYT0Q4RURrdlZzRHlndVVIR1RrakdZaTExbk5zazhvV19kSndyMnVfU1p3cmZ5YWZTY25lYlV3ZmtCQ01QWjRfVm82U1VUWXo2MFVVVTBOWWhKcy1KZ2FhUGxyOU1MNmRoNzBOYTRfTHpEb3AwWmpRTXdyMEF2a1hMSFFjSkM2RVhOc3QybG9RQUtEbkpUa0dYekxtVHpTY1hq?oc=5",
-      "published_at": "2026-10-14T11:29:48Z",
-      "score": -54,
-      "label": "bearish"
     }
   ]
 }
