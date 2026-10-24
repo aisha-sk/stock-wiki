@@ -2,19 +2,15 @@
   "schema_version": "1.1",
   "symbol": "TSLA",
   "name": "Tesla, Inc.",
-  "generated_at": "2026-10-23T00:23:02Z",
+  "generated_at": "2026-10-24T00:13:58Z",
   "is_demo_data": false,
   "quote": {
-    "price": 386.47,
-    "change_pct": 3.41,
-    "as_of": "2026-10-21",
+    "price": 374.58,
+    "change_pct": -3.08,
+    "as_of": "2026-10-22",
     "currency": "USD"
   },
   "prices": [
-    {
-      "date": "2026-05-01",
-      "close": 390.82
-    },
     {
       "date": "2026-05-04",
       "close": 392.51
@@ -490,17 +486,21 @@
     {
       "date": "2026-10-21",
       "close": 386.47
+    },
+    {
+      "date": "2026-10-22",
+      "close": 374.58
     }
   ],
   "forecast": {
     "horizon_days": 5,
     "move": "large",
-    "prob_large": 0.5689,
-    "typical_move_pct": 3.5387,
-    "confidence": 0.5689,
-    "made_at": "2026-10-23T00:23:02Z",
-    "as_of_date": "2026-10-21",
-    "target_date": "2026-10-28",
+    "prob_large": 0.5141,
+    "typical_move_pct": 3.5301,
+    "confidence": 0.5141,
+    "made_at": "2026-10-24T00:13:58Z",
+    "as_of_date": "2026-10-22",
+    "target_date": "2026-10-29",
     "model_name": "move-xgb",
     "model_version": "9"
   },
@@ -510,26 +510,26 @@
       {
         "source": "analysts",
         "display_name": "Wall Street analysts",
-        "score": 22,
+        "score": 23,
         "label": "bullish",
-        "doc_count": 44,
-        "note": "44 analysts, Oct 2026",
+        "doc_count": 43,
+        "note": "43 analysts, Oct 2026",
         "method": "ratings",
         "previous_score": 19
       },
       {
         "source": "news",
         "display_name": "News media",
-        "score": -7,
+        "score": -14,
         "label": "neutral",
         "doc_count": 79,
         "note": "79 articles, last 7 days",
         "method": "finbert",
-        "previous_score": 27
+        "previous_score": 19
       }
     ],
     "gap": {
-      "points": 29,
+      "points": 37,
       "most_bullish": "analysts",
       "most_bearish": "news",
       "summary": "Wall Street analysts lean bullish while News media are neutral."
@@ -537,13 +537,103 @@
   },
   "headlines": [
     {
-      "id": "3c3903b17782",
+      "id": "565e0c5520e0",
       "source": "analysts",
       "publisher": "Yahoo Finance",
-      "title": "Consensus: 19 buy, 22 hold, 3 sell (Oct 2026)",
+      "title": "Consensus: 18 buy, 23 hold, 2 sell (Oct 2026)",
       "url": null,
-      "published_at": "2026-10-23T00:23:02Z",
-      "score": 22,
+      "published_at": "2026-10-24T00:13:58Z",
+      "score": 23,
+      "label": "bullish"
+    },
+    {
+      "id": "8abb6d13c984",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Tesla Stock Lags Apple Because Of \u2018Communications Problem,\u2019 Says Investor Gary Black - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxONUN1VkpydjZiekdSLV9jT1ZHTUtGRzdDbUxlQXZiNEUyNjlmSXEtc042YTl4VGFYSDFWU0xaR1VCUXRtbmRIamFSbWNZSGJNMnRhQnRsdnNldWFmcndjUy1iYzBFZy1UY2dOWEtyMEdZUWZBSTRzLVBEa1c4bzByOGY4dGpTenhHUDJHOVowbTBfemg2RDdjZzBBZw?oc=5",
+      "published_at": "2026-10-23T21:11:56Z",
+      "score": -93,
+      "label": "bearish"
+    },
+    {
+      "id": "fad28340142a",
+      "source": "news",
+      "publisher": "Moomoo",
+      "title": "$Tesla (TSLA.US)$ - Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxNMlpCS1QyZFpiNWdOUExWSmVOZTdtM0w4M3BiSW8xUGt4WDNwRkF4RU45dmd0UHktUVVjMmRncnd6c0VXcXc5YXZ4cjdGSnhKNVcxcVNySzIza2RjZGItcF9BU0xnUHltakhzQ3l4bkEtdkhaSXBwUGhwNk5WcFVoRTd5eWt1QkFvd1hyNHpQSk1MbmNiWlRhY2R1Yy1pRzRoU05HTUZpTkdwSlpfcGNaUTROc1ByR0NIZjA2OGRWcDhSODlNNEMxbENUQWU2cFBiU0EycTBJTW5iRGFqSHl1TkhXdHBEekJURjZXT1lpUmNnelNmM1hSVHFpeks0SG1YSERTZ1pwR1RvODByczFqWnNIbEZDSmg4XzFRLVVKUEpYQnhiSGJna2Y1NVUzTlhoVHFraFFva05WTThLdmZfZ3d6UncyTWM?oc=5",
+      "published_at": "2026-10-23T15:28:28Z",
+      "score": 1,
+      "label": "neutral"
+    },
+    {
+      "id": "a07ec787c396",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "ETFs Are Net Sellers of Tesla (TSLA) on Wednesday - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNT1llTDlpdWRnSVVRTUZYYXpYcHptNGdpZXhmMWlGX1I4WTJ4T3NkWEhUV3VOUElvRWFkT3pUeFhhOWIzMWlUXzJTdUZNdHA4UTBlVkpoRG8xbGpXVVd5dG9Nc2dSN0E1azJYU1RRYkx1NXJHeVhyd1A0U3YzWFBoLTlQMFNpVmFSYzJ4a0JFZ0t1UmRscVBV?oc=5",
+      "published_at": "2026-10-23T11:03:02Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "19d5d7e1a39b",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Tesla (TSLA) Stock Could Be Above Fair Value After Merger Talks - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPSkJ3NkpvWjhCS1c1eUVEQkN0ZE14S0xObzlRVTNhczNoSERWbEpkZExtejg1bjZTVllXQzJibC02RmVpVTFGODgyOHZYMXZrVmh1TEJRUVlZU0ZCaU80QVJJckthencxdHlKbHZldTZfbGhIOUlsajNSaUIyel9MVklFNk5NMVZpbXQ3azZFTE4xb2RNS0kwZg?oc=5",
+      "published_at": "2026-10-23T09:13:41Z",
+      "score": -49,
+      "label": "bearish"
+    },
+    {
+      "id": "fb56857d5601",
+      "source": "news",
+      "publisher": "Stocktwits",
+      "title": "TSLA Eyes Best Week In 2 Months \u2014 Analyst Sees Physical Tech\u2019s \u2018Berkshire,\u2019 But Bear Credits Court Ruling For Q3 Beat - Stocktwits",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQWEdOajlzc1JPZjlHbjZsNEo1dFp0VDZhSmgxaWlSQVN4R0JwSl8zaFhYZG9uLUdQdkE1TzNxeEdVQzFMRndYVlhFek0yMzhMRWJidTREN0FyZGhkZ1lWSkFHZGxNZmx3Tzc0NkdtcGZVbXc3Yi1Pb05oc2FkY3ZWWE10WTZGaDJyQTRXSEstREFySmptYzRfdmtHYXlzVEI5eWwzUDhfSmpveHJKNC10N0RHMHlFdjhJTVFLcFJxSU1sNXRU?oc=5",
+      "published_at": "2026-10-23T06:20:24Z",
+      "score": 34,
+      "label": "bullish"
+    },
+    {
+      "id": "82f13ef85c41",
+      "source": "news",
+      "publisher": "TradingView",
+      "title": "TSLA Eyes Best Week In 2 Months \u2014 Analyst Sees Physical Tech\u2019s \u2018Berkshire,\u2019 But Bear Credits Court Ruling For Q3 Beat - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNeWJ0MkxaUFJwckpPTkhmWEU4NHJ5NXVKcFZ3SXNSX01qTDdHVUZfWTRCcVFCcnV5Qm9ydmI0R1o5VTNYd3kwc3hGQXFBc3JHWWJ3SEVaREMzTFFtQ2VNak4wYUc3NEVBbDBKczVCWEZOSDZKOWFkQzNMYnJqU0p1SEdrb1NNSXoyNzkxWG0tMjhxM2pzeDVXN2M2V1ZHbVpoS3hGMEdmTjQ5eFlhOVVhWWNBY2FMLXNDTEZ2MXVLbzBNTXhVSHBSUlRZc0JYLS1TU1ZrWVpHNWFOdlk5aDI3WjB2V1JKN3BONWFoUFB0SzRvbHA5clhkN1Z5QUZkT2RLc2c?oc=5",
+      "published_at": "2026-10-23T06:13:00Z",
+      "score": 35,
+      "label": "bullish"
+    },
+    {
+      "id": "49279356c8db",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "TSLA 10-Q & SEC Filings - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5RZTVpYnd5NVNRWC04YzRwTkE1Qk50cVhKSnczZVkweF9MV0pVRGhtcmpwWG9WN0k3ZUFoQnV6Q2trWjktVEozbjdaY2lXVkhzNDNSTGJJWVFCZ2FacTJPNmxDcVBib0t2NEd3Ny15OGlsUFVidHNfUndR?oc=5",
+      "published_at": "2026-10-23T00:38:47Z",
+      "score": -4,
+      "label": "neutral"
+    },
+    {
+      "id": "9cd15cd41c91",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "TSLA Q3 deep dive: autonomy adoption and margin dynamics shape outlook - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOTnFKaXBfVVI4WnhGdnFjSGJ5b0d2b3pkMkNLcFBLQUFsUnpXNHo3bUpMNDFwdWU5NEY4bGlHUGEydzZZem52ZlB2Y0RQMzZiWjdrMXdueldaVGwxLUo0RnhvdnFVRGVLX0Jtd3c5RTFQQ0JPdG9pSUVrTDV6UzZzRWM3YWRqMVU1VHFCMFN1VXdRdUZyQkE?oc=5",
+      "published_at": "2026-10-22T23:01:53Z",
+      "score": 15,
+      "label": "neutral"
+    },
+    {
+      "id": "cc0757587de9",
+      "source": "news",
+      "publisher": "TradingView",
+      "title": "TSLA, SPCX Boards Confirm Special Committees On Potential Combination As Megapack Deals And Terafab Plans Deepen Ties - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNX0k2aGZkVDdjRjdIMFB5Rzh1SGxMUVcxbmVlX0FlSGJ3LUtDemt1dHQtOG1uY0E3WnBjQ3lCQmVqaG1BVzlmNXkteF9ZUWUxMk84cy03MnhJWG1WZzBYanJfbjV1ajFWV1lIcmpjajhDbmo3WUxzTXcwdG1EODdZMS1YWmt1TjVVVTB6REtZWUIxbERCUGF6WXM4UF9WN2E4UE9yUzd4TzF2OU56b0VtQ25wM1VESFFEcWpVTEgtNDgwckJRdzBlTnBrOGM1VU5BMFZNMEMyUmhhNWlZQkdmclpoMFlQeTB5dGFVLWJxLWx4UVlhUlRJQzNBSU83dWJtVF9iajdnRQ?oc=5",
+      "published_at": "2026-10-22T22:34:48Z",
+      "score": 21,
       "label": "bullish"
     },
     {
@@ -597,24 +687,14 @@
       "label": "bearish"
     },
     {
-      "id": "40fa0bdc8143",
+      "id": "da8b619e2be9",
       "source": "news",
-      "publisher": "Moomoo",
-      "title": "$Tesla (TSLA.US)$ need another round of plunge! will it happen?? - Moomoo",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxORUxMY2RMNEJVd0xNV1lEZDlJdFVLdk9idC1HR1BHbmtPRUFrWUpUOEhfZC1CU0RMNVlGVTZueUpFaHg1NzB4Unp5RDNYTloxUmZQTnZOWHVmZTZHQThPZmdvZFBLM1lCSXJ1WTk5d3E3NER3NDB5YW0yTWFWb1N5QmJvcWpYT3ZCNzQ4QkcxcG04b0RBSUduNDA2VFhuQ29vN0htLThsTQ?oc=5",
-      "published_at": "2026-10-22T13:34:56Z",
-      "score": -20,
-      "label": "bearish"
-    },
-    {
-      "id": "0c61987e1155",
-      "source": "news",
-      "publisher": "Newsquawk",
-      "title": "Newsquawk Daily US Equity Opening News - TSLA & META fall after earnings; TSLA & SPCX said to target H1 2027 merger - Newsquawk",
-      "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxONUIwRno4cG04a3ZSUU5XX3A5Z3N5ZDU2SmRzX2ZZbEt2eTFkZmdFekNKUl85cmZlLW10elVrdTRNeE9HZkotUGNkamFjcG1ua2tXeEdkN3FjNGtyZkhzem5FY09BQjZidTZ6WUxBa2VVbG1qNlpBSm5YLWN6TTRuTFJiQm9MZk5KUHdxRVRldmpmTnRoYWdjRWcwYjhfb2RMZ3VZaFRsV21DNUFQTHpWNXBLS1EzWGI4MEFrSlh2d3owNEVOcDloc3E4RXQ0VzcxM2pCeHFQOUFiTXNZTkhHNkw2V1EwMXVLSl9QZGZWSVNpZ1Bwd3FxNk9lWGVNVDdKSXU5WlBIb3JsZjlkd0c3NnNuazV2WnYzRktWVkh5SE1FX21ZZmJYcHpILTFPd2RrcnVscm5n?oc=5",
-      "published_at": "2026-10-22T13:30:00Z",
-      "score": -94,
-      "label": "bearish"
+      "publisher": "Seeking Alpha",
+      "title": "What analysts are saying about Tesla after earnings (TSLA:NASDAQ) - Seeking Alpha",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPcDYtSXVxcEFpV2JUUXExdlFMS0d1dXRqenRLZVM2UTE4YkRPTWc0Xy1pdjdGLWtyanNFcFE5TE5qNmdkd0dqU0ZnOEo3TGc4dzA5UXZxcmxuT2YyQXV5dWxNNURlUXFCZV9PZjNXUkZwVEtFSWlDQ0ZkN0dsd2dMREgyRGFqMTVZWVVEMl9UT24yN0E?oc=5",
+      "published_at": "2026-10-22T12:53:31Z",
+      "score": 5,
+      "label": "neutral"
     },
     {
       "id": "8bc6e1bb447f",
@@ -657,6 +737,16 @@
       "label": "bearish"
     },
     {
+      "id": "5cc8dd68188b",
+      "source": "news",
+      "publisher": "TradingView",
+      "title": "TSLA Stock Heads For Worst Day In Nearly 7 Weeks \u2013 Goldman Sachs Flags Two Key Factors Likely To Pressure Tesla\u2019s Profitability - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxQUk80QmlnV1QydklxbnlMQkJQVUFRbklsNWk3ZFJ1eFg5WTM5MmFNdHBHVzZpLVEzV0c5aW12d3RHbzZOVmQydFppaW55cmFJeFNQVnNCd09aaW9BWVp0TjRlUnNJbWtCb1NJQ09oZjB3WUd0UERPNC10NHB2QmRVWHBXc3FjTkpGVWJ3cHJUZ2hHMjliT2RTMEt0cXRPdnZDWGlvaUNXUVJPc2s3eDhLaUU5Tks2Mm1ZdVY5RkRPNm9nVk05dG81VFFVNWNlbGZBd3hTUlk1T1hHQ3B1YzZQd1hZXzgyUUlHX0pvb0dncE93TW1fczlLeUJqVHNRbTc1YjVRVjFieVpnZHpSeG5zdWx0Yw?oc=5",
+      "published_at": "2026-10-22T11:16:15Z",
+      "score": -94,
+      "label": "bearish"
+    },
+    {
       "id": "c3c56e72e1ba",
       "source": "news",
       "publisher": "Yahoo Finance",
@@ -687,14 +777,54 @@
       "label": "bearish"
     },
     {
-      "id": "3bb9f6ab073a",
+      "id": "33100ea214ed",
       "source": "news",
-      "publisher": "Benzinga",
-      "title": "Gene Munster Says Tesla FSD Is at an \u2018Inflection Point\u2019 as TSLA AI Lead Says Rivals Can\u2019t 'Match It' for - Benzinga",
-      "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNekZpWmhEV0hEOGhEcEhZbXhtaC1sQURwOHF2bER6YVZrWXhYbVFyUVRuTGlVcDhOMUZWUEhWdlp2YnExUE5lYW1XQTM2cmFZT0VfaW9jVWJHc1pSU0RIeEktcF9QOEVDODU0eXlmVDRLdWQzeFRCeWpZTlQwUzBYQU8wLU9Ib1ZiOVVScDVJTzU0dWxKSUIzSzNDb1hERzRnTXhmdEFKOWlrNWhEaDNObmFrc1dBSkxHUUNXWnFoRVlfWTVnTjJuY2xPMkVnc2twMWx5ZFNwMnBPM0Q2VEx0UFhPUXVkSWp0d0NSOXQwTEV5dS1xNjcyM3JraFNqaG8xYmpra2VVSUNCN2VYcElhTF9YYWxGeTI4clNpQQ?oc=5",
-      "published_at": "2026-10-22T07:24:41Z",
-      "score": -6,
+      "publisher": "TradingView",
+      "title": "Why Is Tesla (TSLA) Stock Trending Pre-Market? - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1MMmdiUk56cTJmdUNNYnh1bWgxQ2sxcDNUYXZna0pzZWxITDF3anBWelpCX3NLRXRBYmpaQ1AwQkFaN3ZNTzRvYTd2Z2V3cXBnaVYxWlBNZFppaHJCVjBueHl2dWVFVjN0?oc=5",
+      "published_at": "2026-10-22T10:16:21Z",
+      "score": -8,
       "label": "neutral"
+    },
+    {
+      "id": "55be6e7ce3d7",
+      "source": "news",
+      "publisher": "TradingView",
+      "title": "TSLA, SPCX Slide Premarket: Musk\u2019s Merger Talk Reportedly Creates \u2018Mess\u2019 \u2014 Rivian Exec Urges Tesla To \u2018Stop Doing These Calls\u2019 - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQY2IxU3FkdkJhQ25Ic2ZLRkxuclhVMTNxQjdVU1ZiM19xYUhhdWV4T3J1ME5tTGRLNVRqODhoTVpXQVRKTVRIaG5sbFVMdUczTGtmUDFVaVgwMVloS1R4NjNHTWhZSXVlY0stVWNsWGxCYURyaVVZUXYxYVlMT1RFUnlSbXRHRk9DckZxQ2NBdWZKdVQ4U3ltcWo1cnRuMlRaS2E5Sk5kazk1Q1FPQ1ozZ01NbGhPM25WRlBPTEJFcm9GWGNxbmJYeWoxMkszUV9OdmFYX3I1QkxrLWcxeXFHRUUzQ2xvS1dLQm82U2FIVFhncmQ0UGxucWxtZVBxT2F4Z1NXNm9QaUVNZw?oc=5",
+      "published_at": "2026-10-22T08:21:25Z",
+      "score": -93,
+      "label": "bearish"
+    },
+    {
+      "id": "b69041f8ae9d",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "TSLA, SPCX Slide Premarket: Musk\u2019s Merger Talk Reportedly Creates \u2018Mess\u2019 \u2014 Rivian Exec Urges Tesla To \u2018Stop Doing These Calls\u2019 - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQLU0zZVZuWWVtUzVkZ0xfVUdlTGtpMFowd3lLc1IySHk5aTI1WTQ3d2dfV2w4bU1aLUU0R3RPcHQyMnRoRWhKb3Z5WW4wN0R3Q3dvX1Iyckh6WVoxLXJnQzZiZVlWeDRSX1YzVWlocDdxZ3VmaTQtQWtNQ2w3S2h5QkdYYXpzS1Qzck9mWlRXbzBiUF9mQkc2NVRfYw?oc=5",
+      "published_at": "2026-10-22T08:21:25Z",
+      "score": -87,
+      "label": "bearish"
+    },
+    {
+      "id": "f072530c73d5",
+      "source": "news",
+      "publisher": "Moomoo",
+      "title": "Nasdaq Comp Sinks 2%+ as META, SPCX, NVDA, MU, TSLA Fall on AI-Spending Fears: Wall Street Today - Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWkIwaFZSQThKNGh1eTlERGJlTW1iVXRsVU5oWnZ3RXA1X0ZYVU53UVRVaFFTYllScXktcjFTVWsyd2l5VjlSRlBmTWpDQ2htZE5SeEVZUUd3V0lVUFhoM0ZscHF4eVl1c0hKNU9QUFlENFY0YzItSGRLcF9EaGgxQ1dnd0hKTEoyNG1Xa2Q5cUU2ZUVBOVBGbmJodmhFUDMw?oc=5",
+      "published_at": "2026-10-22T07:00:00Z",
+      "score": -93,
+      "label": "bearish"
+    },
+    {
+      "id": "6ebe5042bdba",
+      "source": "news",
+      "publisher": "Moomoo",
+      "title": "Nasdaq Comp Sinks 2%+ as META, SPCX, NVDA, MU, TSLA Fall on AI-Spending Fears: Wall Street Today - Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMi8AJBVV95cUxOQW5PaWVmQU1PSVBaY2ZvdjF2b0ZFbWhpYVROLWF5RENyNy1UNlhNZGNmZG4wZEFSR0hvUGZXaER1cWNGMkRIdjlBMC1MVmNHb0I3MU9fZ3N4VzdqZ01Fd0xFczNIbTRMV1JxaGJ4d295cTRvYy1iX2lfdmJMbzFCOWgwSEFvU3BBN0NmbjdleDY1OVR1SjlKaTQ5YXdHSmdTckt4LURpbUpLX3JSbHBGRWxBMWRpUUNZMVRsODBmS205ZVhMUXZPeEZnbEJQdjVwbDIwREcxTzJabzNQZEpXWE4weFBFdnJhTE9SZkl4dHhGckYyMGhyTEtRTC0wdDZ1QlcwdG5HbDF4M3FMVHAxN3ZPSFBrU3Q2T1hNRFlvZ3lETGc4aW82X2Z2ZkZTdERSUFVuWURtbzZWOFhZV0U5QlJHOG5XcU5YbzF5T3BYZlZRU29nSkx4LWlka2MyazFFcHE5RnNXaDA1eWZPVDFFSw?oc=5",
+      "published_at": "2026-10-22T07:00:00Z",
+      "score": -93,
+      "label": "bearish"
     },
     {
       "id": "0c00b05583f0",
@@ -705,136 +835,6 @@
       "published_at": "2026-10-22T06:47:24Z",
       "score": 21,
       "label": "bullish"
-    },
-    {
-      "id": "87324b068763",
-      "source": "news",
-      "publisher": "TradingView",
-      "title": "TSLA: Tesla Stock Falls 3% as Spending Cuts, Shrinking Profits Cloud Earnings Beat - TradingView",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOMHlWcUFKNjJpRVA5dGZWQjY1aEhOdndSV3NzLW1mQ3l6anVwZXBvaVhzLUlENVd0R3BZOUdpSU9iZnU5QTFjb3N5bV9haDhWc0ZkOWhuX1dwckNObEoydktnTWJiTmxjZTVuVDBSbFd5Y085WXJDeTkxd2haT2dQVldlZUNNelpGU0thd0I4M0ZubWZTZ0tUNUFaN1ZHNVJKT3VEWlN6THctalBLdTdwbWkwejU3TDZabFJmQTZLTWU4c1BwNW1HbFp1YkJuNGlBYmlqVmhsSzU?oc=5",
-      "published_at": "2026-10-22T05:49:00Z",
-      "score": -96,
-      "label": "bearish"
-    },
-    {
-      "id": "8d71c0bb06d9",
-      "source": "news",
-      "publisher": "Stocktwits",
-      "title": "How Are Dow, S&P 500, Nasdaq Futures Trading After META, TSLA Earnings? - Stocktwits",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPOVZMTjBjR29lVmM4cUdwTVRLckZCY2hBVVpDdW42VWNKb2ZGYTVhdWVtbnNjOEx0X253TXVjZEV4Z3VZSjZkVUNnenVOczdIcGZha003Vm81SHZWQkRVTGVzVnpTa0w0QThPN1JYX0w4dXQ0RGNCZ2tkaDBBRHdpOVNUNUJZMklCWGZaWVVlZUlhdkhuYVFIanRWRGRxMFVZRFl6SkI1a2VIYldXTzAxdG52aGo4TkViY0l6WW83dXM4bXJNNGUyQXhVQWdFaG9D?oc=5",
-      "published_at": "2026-10-22T03:11:00Z",
-      "score": -1,
-      "label": "neutral"
-    },
-    {
-      "id": "3f5d90d2ac2d",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "TSLA, SPCX Slip Overnight: Musk Reportedly Pushes Merger Before Trump\u2019s Exit \u2014 ARK Sees Tesla Holders \u20185x Better Off\u2019 By 2036 - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQOXEyVVRCaWZpRksxYlRBOHdnMFNCQXByblRYbFhRNk1yRzl2LWdqZDl0cnBwSVJuOGQybDZ6WmVvODl1WUpDU0tOdGhBTDVxRHUtanhsWlkyalJuYmI0emZzS1FfandLbmN6MFYxUHFoeDNBVUJfRDdGNmJXUWFVdllnX2NnTGlnc0FBdk42bENCckliSXpWS0N3?oc=5",
-      "published_at": "2026-10-22T01:44:00Z",
-      "score": 43,
-      "label": "bullish"
-    },
-    {
-      "id": "852c7a1a821b",
-      "source": "news",
-      "publisher": "TradingView",
-      "title": "TSLA, SPCX Slip Overnight: Musk Reportedly Pushes Merger Before Trump\u2019s Exit \u2014 ARK Sees Tesla Holders \u20185x Better Off\u2019 By 2036 - TradingView",
-      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPS2hiOVNmSmhqTlFNdjM4TWUzaVpnNlRFSVRnTk9hczRnbU9qSWtPdGs0cWZKMGxZbGhUSC1kcTEtMmdDWnY2WXJkVERvMmV3ck5kRWRyQVdYYzFjZm40VEpsRTI4YkpOY0ppQk9BSjFZeEgyVXR5dkNnRHlUUG9TVGp6NVFYY2VVWkZiaHVRU2ZNclBYUWxoUWJkcENUaU5jV09aUWZ6R29fRmJ6Smptd2RiOUx3ZG1lRFc4QjRZd3dTeE1SWTAxQ2otQlhVQmltM3hwWGM3cGs1V1Zma0k5ZlUtUlVsT21uUzFZZXExSFZuZWY3dUxqYTM0bU8tRUZhNlRBYnBfb2lkTXc?oc=5",
-      "published_at": "2026-10-22T01:44:00Z",
-      "score": 68,
-      "label": "bullish"
-    },
-    {
-      "id": "1ea6bed91300",
-      "source": "news",
-      "publisher": "TradingView",
-      "title": "What Tesla (TSLA) Said on Its Q3 Earnings Call - TradingView",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQRzVIQUZKNzBxNER4ZGlBeEFFRlBVY3J6T0NHNjhqUTZJU2c3NjZLenJsYm9oNmxwZktVd3k2Ykc2a2RWdjNqcVZnOXU0MU4zdEtoaXlLTi1BXzYyRGduWTl2ZFpHVGhhMVRPMHRTV1FxSU5mOWxLSUxIdjB6VVl1N1lxZFNzalhndzBHUXR6czh6LVpDSlVsdnNJR3V4d2F3bVZuZGduVQ?oc=5",
-      "published_at": "2026-10-22T00:04:00Z",
-      "score": 1,
-      "label": "neutral"
-    },
-    {
-      "id": "10bb07b64a14",
-      "source": "news",
-      "publisher": "Seeking Alpha",
-      "title": "Tesla: SpaceX, Robots, And A Valuation That Defies Gravity - Seeking Alpha",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNGtLdXcxSXV2SERIdWdnYnNGeXJVYWN6Z0RXVjJhdmk5LXZHX1VBY2RlaDJpNG9ieHRlbE50TWg3WlNzMmg4YV9tQ3huaUR1TUFLa3lqQkNpNUdFSjNhcjVtazVaYzYzT1hJSzRLcl9rSENFbVZhNW5CVEMxeURZUmQ0ZDF6OFg3QUxhZDJ2by1mUFE2b3BmMzZCeV8?oc=5",
-      "published_at": "2026-10-22T00:00:57Z",
-      "score": 8,
-      "label": "neutral"
-    },
-    {
-      "id": "87be967be468",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "TSLA Stock Reverses After-Hours Gains As Tesla Cuts Full-Year Capex Guidance To $20B, Musk Tempers Optimus Timeline - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONkozR1VqMTB0alRDZlRMdEQwZTUxTVAwekRPaFZYeDZSWUN3WXRScENXSU9meFV0VFRrbzZpX05MZTg0OHdnOEI3dXFiQVNWTFhrdl9Dci1udjZmamk2MlpyZ3pwalNFNGtXcGRLdV9WdWhfelF5azc5czF2Nm9PNVo1M3NTN0N6SURlVHBDRFZGQTNUUWlDOVllUEU?oc=5",
-      "published_at": "2026-10-21T23:56:49Z",
-      "score": -91,
-      "label": "bearish"
-    },
-    {
-      "id": "2a0ccaedccad",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "TESLA INC (TSLA.MX) Q3 FY2026 earnings call transcript - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRVBRbE1uR2tnLTRfZ1FMN1ZhNE5ucmpnUHpid01qNUtGeEtCMHNjOVZJcW5TM1lfX3pmOTNfNW5HdzRvWVBWeXNVeXNSUVpyLURPOFV4REpHdk9ibkQ2cUMwLWN2UlJMX3paMy1CVVd6ekp0dlk1dS1MakNmN1RIMW56YTZUNXNDQ0pPTTY2cmZGaF9j?oc=5",
-      "published_at": "2026-10-21T23:47:10Z",
-      "score": -1,
-      "label": "neutral"
-    },
-    {
-      "id": "a8d1340a054a",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "S&P 500, Nasdaq Gain, Powered By Meta, Tesla Stock \u2014 SPCX, META, TSLA, SKYD, IBM In Focus - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxONjQyd3F1UEZZNnhKMnA3YmhnSmxHWjlGQmpfcVRXZlFlaHVFMG5ySk1oRkQ3YWtPbmdLaVpTNkZLQnIteXBiU1hIa2xibUFwZ2xiTEsyaXlZN3htczcteEdYQ1pLN0J1WjlzSDFBbzFON2p5QVhURXNyUkV0aU1BSWRCWF9jekNidXY4Nkdvdm5YMmpQ?oc=5",
-      "published_at": "2026-10-21T23:15:19Z",
-      "score": 38,
-      "label": "bullish"
-    },
-    {
-      "id": "89eef22831e6",
-      "source": "news",
-      "publisher": "Investor's Business Daily",
-      "title": "Tesla Earnings Beat, FSD Revenue Strong, But Stock Falls - Investor's Business Daily",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQTnZraWtJM1kyeXlrZjBuVS0zUmpIb1BiSDFKNXZpQzEwUkhRVUZuQWlCc2tlWnpIMnY0RUptNlM4NUVHeGxUVWtWY2VVM3l1cmRPS1RremUtN2tNcEVUVVlCMnRnbjZEdERDZ2Y0cFNudWJ4Q19wUUVIRmdiWFo0Z1h5S2E3YzJHTjVHTjF1a29IWEcyRGJHalY2NVc?oc=5",
-      "published_at": "2026-10-21T22:57:00Z",
-      "score": -89,
-      "label": "bearish"
-    },
-    {
-      "id": "cfe748b98f5b",
-      "source": "news",
-      "publisher": "Seeking Alpha",
-      "title": "Tesla: One Of The Worst Quarters Ever (NASDAQ:TSLA) - Seeking Alpha",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORjFsX2FWQ05Fa2RxblVKb0t3aU5Gbk5XbEpLazVDdUtHOHhNMnh3Umk3RGo3ZzhpRDNuY0kzaHVhdmEyd1pHNFh3eWJScTFGSjJ0cGJ0WnhPUkViWFB4OXRvWkVMckhCR1NaOVZTeTMzNEZwY282UFItV1ZzSDJuYjdTZw?oc=5",
-      "published_at": "2026-10-21T21:50:12Z",
-      "score": -87,
-      "label": "bearish"
-    },
-    {
-      "id": "b2a2e0cb4a37",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "TSLA Stock Trades Flat After Hours Following Drop In Q3 Revenue, Earnings, And Heavy AI Spending - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMGZ1YzVKWUhpVVdzSklLVWw3cUNJRE1sbWdkV2k3OWpNeTMzbkF1TlBCa3htaHVmQjBWS1R1N2VnZUdiY21IQVFWdzBscjVBaWFNWDdsbWE4SmVwTHVmRXRsVU1uMGVibnNzeUxHVG01aEhaVEpWejB3U3ItaEFuZ2pYY2xvOHZUYmg4RDJNYTdJRER6YU12Xw?oc=5",
-      "published_at": "2026-10-21T21:13:08Z",
-      "score": -96,
-      "label": "bearish"
-    },
-    {
-      "id": "861b0a055ac4",
-      "source": "news",
-      "publisher": "TradingView",
-      "title": "TSLA Stock Trades Flat After Hours Following Drop In Q3 Revenue, Earnings, And Heavy AI Spending - TradingView",
-      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOb2NIZ1BKMHY4aGtmSzZJLWRJTnowY0RDMlJGQ050YUtVUXBEX215eVRFQmhNVHYxTTJtTzF6N3A3N3FlaHNqODVNazl1WUhaOFppenRFOGdiZTlYT3BpdFBnRXBCNjJxRmJXNlZJdDhSZmtYcDNVUEFOLUFoMWV6Y2o2TkJQbGVtMTBFamFXQ0xrZGp2VkgyN0tsT2RjTGhlY0ZMd3VqSDZjRVhEMXViMjZpbzlSbDNuYmk0eGFYM1Q0Qy16Z3hBT2xNcU5CcnFsU1pSQWhJVUlvSUtQUVRPR2pmT1pRZjRydVE?oc=5",
-      "published_at": "2026-10-21T21:13:08Z",
-      "score": -96,
-      "label": "bearish"
     }
   ]
 }
