@@ -2,19 +2,15 @@
   "schema_version": "1.1",
   "symbol": "NVDA",
   "name": "NVIDIA Corporation",
-  "generated_at": "2026-10-24T00:13:58Z",
+  "generated_at": "2026-10-26T00:52:55Z",
   "is_demo_data": false,
   "quote": {
-    "price": 212.21,
-    "change_pct": -4.4,
-    "as_of": "2026-10-22",
+    "price": 210.96,
+    "change_pct": -0.59,
+    "as_of": "2026-10-23",
     "currency": "USD"
   },
   "prices": [
-    {
-      "date": "2026-05-04",
-      "close": 198.03
-    },
     {
       "date": "2026-05-05",
       "close": 196.05
@@ -490,19 +486,23 @@
     {
       "date": "2026-10-22",
       "close": 212.21
+    },
+    {
+      "date": "2026-10-23",
+      "close": 210.96
     }
   ],
   "forecast": {
     "horizon_days": 5,
     "move": "large",
-    "prob_large": 0.5622,
-    "typical_move_pct": 3.5301,
-    "confidence": 0.5622,
-    "made_at": "2026-10-24T00:13:58Z",
-    "as_of_date": "2026-10-22",
-    "target_date": "2026-10-29",
+    "prob_large": 0.5669,
+    "typical_move_pct": 3.5348,
+    "confidence": 0.5669,
+    "made_at": "2026-10-26T00:52:55Z",
+    "as_of_date": "2026-10-23",
+    "target_date": "2026-10-30",
     "model_name": "move-xgb",
-    "model_version": "9"
+    "model_version": "12"
   },
   "sentiment": {
     "window_days": 7,
@@ -520,16 +520,16 @@
       {
         "source": "news",
         "display_name": "News media",
-        "score": 5,
+        "score": 3,
         "label": "neutral",
-        "doc_count": 51,
-        "note": "51 articles, last 7 days",
+        "doc_count": 53,
+        "note": "53 articles, last 7 days",
         "method": "finbert",
-        "previous_score": -7
+        "previous_score": -9
       }
     ],
     "gap": {
-      "points": 50,
+      "points": 52,
       "most_bullish": "analysts",
       "most_bearish": "news",
       "summary": "Wall Street analysts lean bullish while News media are neutral."
@@ -542,9 +542,99 @@
       "publisher": "Yahoo Finance",
       "title": "Consensus: 59 buy, 2 hold, 1 sell (Oct 2026)",
       "url": null,
-      "published_at": "2026-10-24T00:13:58Z",
+      "published_at": "2026-10-26T00:52:55Z",
       "score": 55,
       "label": "bullish"
+    },
+    {
+      "id": "c171084bbbe4",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Nvidia (NVDA) Has Lost Its China AI Accelerator Market - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNZXBrdnEtYnZLWk95RmJjZlRTeFR2ZjZDaGM5dDR4VW9KNWdDZjRjTmJidlY0eWExNVJVYUZ2NGJlNlo3NXZYMzFTZkhYeUU4ZC1RSGUzMXhLYkdkRUZXMEt5bVJRY1E0LW52Z0QzaWFYRTE3bDh1SVBMWnRNZUs0dndHVXBXdmZkYjBoRWFsX0p6RG8?oc=5",
+      "published_at": "2026-10-25T19:06:26Z",
+      "score": -94,
+      "label": "bearish"
+    },
+    {
+      "id": "e253a856918f",
+      "source": "news",
+      "publisher": "Trefis",
+      "title": "Is Nvidia Stock Cheaper Now That Its Multiple Has Fallen? - Trefis",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbHllMkEzbmQ3RkwzUEEtNWJDWnVnTnlRX2JUc1h1a2xXdExPT0Qwem5VMC15QTNFcnluenRqQVVtRkVCczNhMU9JV3lHUm9Fb1hFYXhxa2F5eEh5bWkyOUFVenFzTGJ5dG5naTRlc09tQmlzTEhaOURfVzFTOE9YUWZRWVk5UnExQmxadHg2UEFRcDExZ3kxMDdwYW4zY3FZOTgzSzVnYmdMMVk4Y2szRTRzVTI1S2Qy?oc=5",
+      "published_at": "2026-10-25T17:17:51Z",
+      "score": -22,
+      "label": "bearish"
+    },
+    {
+      "id": "6885296b08d9",
+      "source": "news",
+      "publisher": "Stocktwits",
+      "title": "GOOGL's $250B AI Chip Opportunity Takes Aim At NVDA \u2014 Beth Kindig Says Google Is Going After \u2018One Of The Most Profitable Hardware Businesses\u2019 - Stocktwits",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPeWp2U0RzdHBRTFh6dVpHUlBqb3lxMXFFWnM1Mld3WndRbzRpbXEtbkxLbWw2aFhscGJJT3M5aWF5Q3lLaWJyOVRHUEtKT04yWWZNdUVHWWdhMklva2k3TF82YUs3RlBtVVhxTFBVTjRXc3NCWGtIWi1nX19uSzN5UzJ4TXVMZFJfYkoxc3JORDRhak5LU1lCWnFlbk9SZDRCN3pGYWJORUN6aTIweUE?oc=5",
+      "published_at": "2026-10-25T14:46:00Z",
+      "score": 50,
+      "label": "bullish"
+    },
+    {
+      "id": "72a7f045ab43",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "AI Debt Has Exploded 4X To Nearly $500 Billion: What It Means For NVDA, ORCL And CRWV, According To IO Fund - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZjhHVnZROFhoX3o4VHJxSkJmTzg0Ym9RODRoU3BXRzVxbm1sWC1aMTBtR09DVGpfYWJFczI4OWNFbVZsdnBjcGZvS2IwcTJiSjktVDluTDViN2lycUVPc2JXNUtwZFpsWVptVFBhbWVXTnhVY21GbnhRYmFmQ2Nldjg2VkZldExGa05RY0hPclphSzJZOFE?oc=5",
+      "published_at": "2026-10-25T11:24:37Z",
+      "score": 73,
+      "label": "bullish"
+    },
+    {
+      "id": "cc49d581bc3e",
+      "source": "news",
+      "publisher": "Moomoo",
+      "title": "$SanDisk (SNDK.US)$ $NVIDIA (NVDA.US)$ $Moderna (MRNA.US)$ - Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMi-AJBVV95cUxNbjJjc1VnN0FoWFF6ZUJtaEhxakdWX1J2Y2g4aHJBNWRPQUlqQ0pqemsxMEhwWWdicjVuOXotb1dIMkE2bGMtVG5RQ1V5bFBxRHlOeWliTjFFUHJydHJ2MzBwdnhkbWFDQ2dkWi0tQnMwcW5OUjY1dEdGTFdiZVVNT21lSFNtR0lqcjBHR09yODZNaDQyeTVSTlZoUWl6VUNqR2gwMWF0R3hGcjQ3a0g4YTJkNV85T2Y5ZG9UamR3U0dDTkRsVndDQTVHRlhKbDVjMnk5QnJ6b3JFZUZuWlhUbFNqQ1BveEh3Sno5UEFNR3FZYnluUjFxdzcyQW5ScS1DTFg2M19uN2s3LWtSa0tYa2NHcU9zTnhHX0V2VFhOSGMzbk1TYmNpUDloRS1FQ1dzaUNSckdrQVRySjhVbUNLVk9sdjJPNVJaaG51U1JrV1ZfeXFRNjF6R0JiUFV5T2wyeGVZU0dwMWRrdGFCMWpsVUh5bWl0NEFi?oc=5",
+      "published_at": "2026-10-25T08:09:46Z",
+      "score": 27,
+      "label": "bullish"
+    },
+    {
+      "id": "5038d0c51289",
+      "source": "news",
+      "publisher": "Stocktwits",
+      "title": "NVDA Logs Best Day In Over A Month: Burry Spotlights Partnership Blitz \u2014 Analyst Calls Full-Stack Strategy \u2018Underappreciated\u2019 - Stocktwits",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOdmFMMDAzV1dxMGVLQ1JiS0dzTWN2ZFl2WW8ySXVLaHRmeWN5UVB2ZkdYSGVJS19wUjdLOUZnU3VlVjhqeFBGUEFOYk1zMWUwUnFfckZJSjVpRGFDWlV3WFZxb05BbWtwSmpfalEzb2Y4RHltS3l3VE9yTU1EZFhkVENrQXBfZndfalB4amlsN2hGVnMtNkRFdWhvV3NiZzZKUmZiWnk4bHpzSW8wSmVwcWd6VzFlVUxmQ1hNUXd2Nkp2blhSQzRXVjRnWk1WbXpPMURv?oc=5",
+      "published_at": "2026-10-25T01:22:50Z",
+      "score": -20,
+      "label": "bearish"
+    },
+    {
+      "id": "9cc2767c107e",
+      "source": "news",
+      "publisher": "Techi",
+      "title": "Apollo finds no broad AI payoff: NVDA stock forecast before earnings - Techi",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE81OU10Ql9qQl9PcnlOeEUxRTMteVU3N2VLc2FYTm5xcXF5TEowVi0xWXNsVkhReE9jNU9GaFJSWXV2WEpsRkFLVGhna1hWU29vcVJnWGtUd0RPNDBWU3FOVUJrRU81Q0dPMGtR?oc=5",
+      "published_at": "2026-10-24T21:17:44Z",
+      "score": 4,
+      "label": "neutral"
+    },
+    {
+      "id": "363d20f3ca92",
+      "source": "news",
+      "publisher": "The Motley Fool",
+      "title": "Prediction: $200 a Month Invested in Nvidia Will Be Worth This Much by 2035 - The Motley Fool",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPQjRKeXR1Y2ZxeVBnS21lRDA2S0t4a18yNHJfdVpwUS1DbC1qZEZ2NUFBdnBVMVk4QldTdlVYZjRNWml0LWNpdTNucFYwbVBnMzBjWjZyYV9DMEp2by1ma0lpNW84RUNwYTBpT0l4VHh3MEZHZlVLcU5ITld0Nzg5RjFQNi13eEZha0Z3M1ByVGx1aEVnRjRF?oc=5",
+      "published_at": "2026-10-24T12:12:00Z",
+      "score": 15,
+      "label": "neutral"
+    },
+    {
+      "id": "098f0fa20d6d",
+      "source": "news",
+      "publisher": "TheStreet",
+      "title": "Jim Cramer\u2019s 5% to 8% rule puts Nvidia stock in focus - TheStreet",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQQXVnYnlTVmxDSXpQTnU4R0dYMk12TVVUcW5wMXNyck5rNzhEZ3JIMFVlT05Qc0JUYmRzdV9rcy1aQXl6QVVJV3QxNWp3Y3hwT25HTmRqQXFFcFgyZG1EaE95Q0dhdVlLS1lydnplYnNmakhlOW81OXhVTks2RlRCUzZFQ1hJd1dMTl82dF8zY0FvUzA?oc=5",
+      "published_at": "2026-10-23T22:37:00Z",
+      "score": 13,
+      "label": "neutral"
     },
     {
       "id": "c8183ff934a1",
@@ -552,29 +642,19 @@
       "publisher": "CNBC",
       "title": "Final Trade: NVDA, JPM, SLB, XMAG - CNBC",
       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE0tN3VmWVdaX1dnREEyaGpTVFltOEV0S09tcTNTN3hJMXRESmlaX19sWU9ka19mQlpyREhib2hTNHItNFhjenBpeEZkU0Z6S0VlX1hyOWNyV0lCS0l0eDVhdzRXUnR2R0dLLW1QX01KT29sUG5qUXhPZml3VGE?oc=5",
-      "published_at": "2026-10-23T21:41:25Z",
+      "published_at": "2026-10-23T22:04:00Z",
       "score": 0,
       "label": "neutral"
     },
     {
-      "id": "9e82f992f41f",
+      "id": "8ac2243d753d",
       "source": "news",
-      "publisher": "Benzinga",
-      "title": "Nvidia Growth Could Slow to 20% But Its Stock Can Still Double, Expert Says - Benzinga",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNM2s2VGY2dDN4TTZCRWFXY3o0ZmZRVFJQRGp5UklibTVIbWtWT1Jid24tTnlZMEFHUjNkNnpQcTJOWTdBdGxHVUF6Uk5pSVFXUlRVVnNEZGh6WXc5dTNweEpac19jX1FDRTczZmk2Z1RpMVh2TW44QjgycmRMYjZDVU03bWdhVHZhbWtXX1JpemdkQ0VMWWtBcXdiVnBINTNpa3ZTdkdicnE?oc=5",
-      "published_at": "2026-10-23T17:30:08Z",
-      "score": -10,
-      "label": "neutral"
-    },
-    {
-      "id": "ab39169fc24e",
-      "source": "news",
-      "publisher": "Barron's",
-      "title": "Nvidia Stock\u2019s 2 Critical Flaws and More Reasons an Analyst Says Sell - Barron's",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5SVktBZjJfVEV6cG1KNTRURUZ5MUNuSmFSeW5aeldtcWg4LWNkZC05TVVmRmhZYzhSWnNtbG81Vkt0ellCTWZ3dGRYMGptZ0xfZGdCTU8xY3lmR2tjNE80NE5MZ0l1R3M5M0xHV0k2THFIYk13QXlRRU5hSFdzZw?oc=5",
-      "published_at": "2026-10-23T16:33:00Z",
-      "score": -74,
-      "label": "bearish"
+      "publisher": "Yahoo Finance",
+      "title": "Prediction: Nvidia Will Outperform Broadcom Over the Next 5 Years - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbjBpZzNVSDdGcnZZX2lmdkN6MUpuT2JVdHRMRjFmLVJxeDlVOTBhX3U4STN2aDljcnM2bWMtRGRLZzM1Y3FYQmVYcXM3N1FGcncwRkZkS05wZEtFeW1oeDRlUEJHNHJ1X3ZLMXNUWWJEbHhwdmlSYjF2QjNEVHB5WEJKWEtYTU5ZQ3REVDlIbFMxT2NMVm5UY0Q0Y2J4NVluM05NLWpJLWNMdnM?oc=5",
+      "published_at": "2026-10-23T21:05:01Z",
+      "score": 85,
+      "label": "bullish"
     },
     {
       "id": "fe4d1e132f4b",
@@ -587,11 +667,21 @@
       "label": "neutral"
     },
     {
-      "id": "ebfb93147ead",
+      "id": "716d8edc5304",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "My Nvidia Stock Price Prediction for 2027 Is More Bullish Than You Might Expect - 24/7 Wall St.",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNclZHaEd6blNJMjZ6TTN4UjVDVmJGZERvRXZlcXA2bUhKQ3FfbWI5c0lkeW1lREU0RVB4SGRtRHktZFlCaEJNYU1oVzFGTjJGempjSkhPaDNCY01kMUhMMnJuSnVya1J3d2hOTTVnZGl2VHRqRXpuWnRUWkZpVk0xSWQ4MkVfRERaVmVTYWYwTTFyZGk5VzhPd2JEVDdyQ3JSc0NXQWJlQTFCanU1b2ZiVWUtVjNOa2R1OHdkd2ZFU2E?oc=5",
+      "published_at": "2026-10-23T14:30:00Z",
+      "score": 9,
+      "label": "neutral"
+    },
+    {
+      "id": "2f75a48fcfa2",
       "source": "news",
       "publisher": "Moomoo",
       "title": "$NVIDIA (NVDA.US)$ it will be green \ud83d\ude2d we all gonna survive this time (hopefully) - Moomoo",
-      "url": "https://news.google.com/rss/articles/CBMikwNBVV95cUxOVVNrTGVWS1hkcXV5T0tuZGlPeGhNSHRxa19UakNBNk94Nm9MdHhrNXBLUUVja0t4YnA0dkNXLXdPY2txUWVIcGJIZzk3MkZjaC15ZEpOVFc1MDVTR1c4TlYwTmtQd0NHdHpkbWRrc2s3N01ZbUxxV0tzY3c3SGQ3SHkwZDNuQkR0RlRaYnlpTC1zS1hyTXdjNHZadk1tbF83SnVVYkdlMWpBZUduSndpWXMzUzB5X0RRMzBhVVYtN3VMSTNIb242VTh0QlRTRjFoWi11RV9kbDFXNEhQNXlRNWVhcElSd3l6UVIyTmNkWUpnVFJuY2NaNTRqcGRBa3k5NnlxMVJfT20tQjFPRHp6bWJGVWU3N1FIMTFLeHFHZHY2a2x5a1NiSlM0SXBUOEZaakludlhnNXQ2T3JnN1J6LUtGNDRsS1FjbWJhOUV0dlo4TFNFZDhtdkl0clo0WGJrSnBDcUNXMlhWc2xIRll3RUxLWkJjcXNlRXI1WGpJZ1JBbnVGUFJjSzVsV05FYVpQamRR?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQN3RXU3dsQ2thLXJZZmN0a1hDUE4yYy03N2g2cGdBQWZ0MjhQZnNvOGk2MDJQSHlGZzgyNDYyWkRmcHhadU9OdWR5ZmF4VFN5WTdmVnFZRHh6TU50YjAxbHlQTFU1QmxGOG4wV3ZKdlRTUUhVNS12a3dGbHFXblYxWjdyU2JDeHBGWDZtcDBZUDRRVldGSDRtY1NnTllReWs?oc=5",
       "published_at": "2026-10-23T14:13:59Z",
       "score": 25,
       "label": "bullish"
@@ -617,11 +707,11 @@
       "label": "neutral"
     },
     {
-      "id": "06dc739d306a",
+      "id": "c3ba49644d08",
       "source": "news",
-      "publisher": "Yahoo Finance UK",
-      "title": "Brokers Suggest Investing in Nvidia (NVDA): Read This Before Placing a Bet - Yahoo Finance UK",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNS1V1X1BHV21ZajhmNXJuV0dpUkttR3dLUWFKS3pfVFRnU01OamtuUldwR01nbExSYzNnS2hwZl93NDNJLVlmZmxiazBCQktVUFh4N1JPMlVQYThxazNJUUpMZ19kTHBpR0JIMFNSWURndTZDcWY1TWV0UzF4LWoxRDdLT2NmcUN0aEVDYW0wRQ?oc=5",
+      "publisher": "Yahoo Finance",
+      "title": "Brokers Suggest Investing in Nvidia (NVDA): Read This Before Placing a Bet - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPS3J0dHNFak5qLWJiRU01REZFS2lLaHE1MlY4UDQ4Y0prNW9mY2JfZ3FlTFI2MkpWQWN1NVVhUkNoMWFSeHlsV0FVcGI3Sl8tX05yZVJtREpKeDg1OFpuTVQxNms5OUhCNHJRN21EUjFpaUVBSnVIbTN2aGIxSHdjdWdVY3NEbTQ5VXlwVnk4MlZyZmNJQXlZWmU1TkxUN2tTenZYQw?oc=5",
       "published_at": "2026-10-23T12:30:03Z",
       "score": 2,
       "label": "neutral"
@@ -647,14 +737,14 @@
       "label": "bearish"
     },
     {
-      "id": "5d5ff3c048bb",
+      "id": "60decc30d18c",
       "source": "news",
-      "publisher": "Yahoo! Finance Canada",
-      "title": "NVDA,AVGO,NIO,BTAFF,MRVL,PANW | Stock Prices | Quote Comparison - Yahoo! Finance Canada",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1ISTQ5dzBqODRzTkpaTkNsa0NfSm14cGRMUFBGeU1XTVNyc2UtS2JET0hPd1Iwb1FGSjRhVUlwaUVDT0MxTk1jWjhkSmQ1d2ZkajBxdkhqanZRZTZPZUMwX2l6OTRHajlvR3RmdDBrV0hPZG03?oc=5",
-      "published_at": "2026-10-22T21:32:48Z",
-      "score": -1,
-      "label": "neutral"
+      "publisher": "TradingView",
+      "title": "Nasdaq, Dow, S&P 500 Futures Drop Premarket: NVDA, AMD, META, CRWV, MRNA, WDC, BE In Focus - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPVmZSeWVkXzZEQVhwSmJENWlhbjQxUHc1LW05bDZoR09XelZqdjRvY25ZZEl2RmlqdkF4NUpMeDM2Z0RHY2c5WG5rUWl3T0lxLU5Wd05lN3MxaG10OHljcV9ESTdHLS1QTlV3azRuYlZMZUtBZDdSSXJXYWR4N1gzNW5kT09IMGhZelFfSEtrVkEtdzNwclRDOVdMZ1JMT0JZN3JTRERoMWhEdUNncUhyRmpOV01mRENuMVlIMDZhanNUejM1LUdPTFVCSUpQM0ZiNHZpSlJjUmQ?oc=5",
+      "published_at": "2026-10-23T10:13:48Z",
+      "score": -47,
+      "label": "bearish"
     },
     {
       "id": "42bfec5a40f4",
@@ -727,36 +817,6 @@
       "label": "neutral"
     },
     {
-      "id": "1d414e0eece5",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "NVIDIA (NVDA) Leverages AI Growth to Expand Its Autonomous Driving Opportunity - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPQS1Yczc4QnhSUFFxa3ZVWkxoN0F2NGVPWFJSUWRQbnBEU2VCZmhqQjNadVgxVUtJSy1QWVJzODBLY2pCNEVhRllCcDdENG92dDBnNmY1TzlQVFE5UVdfYVY4NjQwZy0tbGNKQWlqcWZjdDkxUlNhb1MycTlGZ0pTdEZmZ2FsQUhna1BPcTEtYVRkWkJDVnR4RlBfQQ?oc=5",
-      "published_at": "2026-10-21T15:37:14Z",
-      "score": 85,
-      "label": "bullish"
-    },
-    {
-      "id": "386a011407ca",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "NVIDIA Corp.\u2019s (NVDA): Surging AI Demand Across End-Markets Powers Standout Results - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQQ3dDa1JNNGt5c05VYjljSFlUN1dubkVKNjRLWHk5VHBCcXpuQUtMd0pzS2RUTmFWRW82TlJ0THdfYzlUN1FPb3hTdTBxZTVwN0JlRlNuSm5jUHd2bTZ1Z1doRTRMTGhGYkkyd1RaU2hkSnNPUFV3elBYc2tVQ2hmRVREYjB3VWFCZ0dGaEF1M2ZGdmtRbnRV?oc=5",
-      "published_at": "2026-10-21T15:29:45Z",
-      "score": 90,
-      "label": "bullish"
-    },
-    {
-      "id": "0cbd75a6f1b1",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "Nvidia Is Becoming More Than a Chipmaker. Can it Sustain Its Exceptional Margins? - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUFRwb2RjYUFBNFgwMFRwWFU5cE4yLWhBMENSd2pFOVN0eFBIOVNMLWlXc3otZF9TeW94dEdTVEJBQl9USV9ubVpkZ3VQQW1ZMW1PMEtvR2ZMaTBZUTRMVXMxUlpQN3FVRkZRbGQ0dHY4TktCMjhBTDNjYlNaZlptQzdJZEJSWUdhanozTGx2TFlTcjJ4TjdTZlliX25oMEpXZkxKdWRB?oc=5",
-      "published_at": "2026-10-21T15:25:08Z",
-      "score": 63,
-      "label": "bullish"
-    },
-    {
       "id": "6cb8e661633a",
       "source": "news",
       "publisher": "Yahoo Finance",
@@ -775,66 +835,6 @@
       "published_at": "2026-10-21T15:14:52Z",
       "score": -67,
       "label": "bearish"
-    },
-    {
-      "id": "1731715ce544",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "NVIDIA (NVDA) is Strengthening AI Conviction Balanced Against Evolving Competitive Risks - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNN1Rpd0dfWEJrS19ReUk5RlF5NWhJaVB5SEhvNldOTTdHLXFfbkVka0VYNWFhcENZOVdNd0gxaWViY0lLTlAzUzZlMjJLNUdtNU1Oa1RUQzE5elE1Z2ZaNUhoSF9QcmxFVXBmYUhpcG82MEJWT2pRdHBXQnlhLS1iWVYxTjRwYUZfY2kzUXJZemlVVmozREpQQzh4eUdmS09Sa014bFpB?oc=5",
-      "published_at": "2026-10-21T13:59:25Z",
-      "score": 92,
-      "label": "bullish"
-    },
-    {
-      "id": "d3aabe6a951a",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "Nvidia Stock Rises in Wednesday Premarket as Elon Musk Says SpaceX Is Adding 200,000 Chips a Month \u2014 Daniel Newman Says NVDA Is 'Ripping' (UPDATED) - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNlJ3a3BoVTJkcVB3c2V6LWg1RU53V3FOeEZkUXNNYXNEVUF2NXJZb18yZ1JFSTR6djVzX2hScnNBdG4tcEQtdjRBMUJ4cjJJYVN4OExVMXBDU0pfaTI5ZXc2MXhuSU54ZXRjZDNabFNLNUYzbGZRNno1YU1DVnFvNmIxbVZhVnAzeXZYaDk3clY4OUtDMEdsNg?oc=5",
-      "published_at": "2026-10-21T12:20:26Z",
-      "score": 46,
-      "label": "bullish"
-    },
-    {
-      "id": "a3becc863665",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "NVDA, ZM, SPCX Stocks Rise Premarket: Nvidia Announces AI Factory Pods, Zoom Gets Upgrade, SpaceX Target Rises - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOelAyY21HT3RjY0t4X005MDk4Z1M0akpYRGlXUTJkNkZONTRIYVh5b0M5bWNYbVJtOTAyeDU0cURuODZNMnlRMExqS3dqdnJPcUVkZEh2VkxpLXkxT3c1TFk0ek8taU0xN1ZPMEVmb21xaWJXYm96WEZWVm5JdjNXWWc1SVBYZS1kZFlOeVR1SjJ4ZkE?oc=5",
-      "published_at": "2026-10-21T11:31:49Z",
-      "score": 53,
-      "label": "bullish"
-    },
-    {
-      "id": "2b547c9754b9",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "45 ETFs Add to NVIDIA (NVDA) Holdings on Oct. 19 - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNNXNtTHp3OHlDc0ZXbnhycmdSVExPSzU3NlJ5b3VwbzlRVzN1Q2MwZGxTQV8tRjVYeHlMMkg3Ql84cHF6LU4xUm9HbzUwbmtvRDhnYk9fUVBMSEpRazFaaG55QmRuV05YSUs0LUxZVWNUcXpFbDFMblhYUjNIS1pPRktqTENXZGlEM0pwRnA4YUMwZw?oc=5",
-      "published_at": "2026-10-21T11:00:37Z",
-      "score": 6,
-      "label": "neutral"
-    },
-    {
-      "id": "3ffea9bfa0cf",
-      "source": "news",
-      "publisher": "NVIDIA Newsroom",
-      "title": "European Mobility Leaders Build Safe Vehicles and Robotaxi Fleets on NVIDIA Hyperion - NVIDIA Newsroom",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNWGJVNHZWcFp1b0U5bk9CYktzTFQ0dWtxU0lGaW0zVGVpeGVsazdKeTMwLV9LT0FhRTQxWFhyUHB5N3M2dnloekE0UThjb2dINVQyb1B5WEdhTFNidElPdnNWZ1RWSy1IeGxzYS14M3BCZFBuNmxTSFVFdW9TdUxMY3VsbzNNQ1VHdGdPaWVKOVBJNm5IQWk3YmxwTUNhNlJEUmlaMkQxYlp5b01hM0cxMjVmaHR6R3dQa05r?oc=5",
-      "published_at": "2026-10-21T10:23:51Z",
-      "score": 10,
-      "label": "neutral"
-    },
-    {
-      "id": "c0169ece0c58",
-      "source": "news",
-      "publisher": "NVIDIA Newsroom",
-      "title": "NVIDIA, Nokia and Leading Telecom Operators Turn Networks Into Distributed Intelligence Platforms - NVIDIA Newsroom",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMkxkdXNwTlJma0NkUEN1VHVqa0k2TTBtZWhrTDV4ODg2a09uTmo2MzdvTzNPVHFMUEd0MFNuZnBPWTgybEl0Y3lUQXAzMG1zUXl1Q0kyQjhEWndINFVfWm03dmo1Vm9zRHhZalZyWTdzenNsMUQyRjVGc1g5NTMzZEpoU0FZZE8zdGE3UlFraG1pWi1HYTlZU1EtaVhiX2JmcXROMGhBbk04R3hIQVhmbHZTNU1UWW9yckhTek1xclN5TWZ5eHBtdjBQQQ?oc=5",
-      "published_at": "2026-10-21T10:18:59Z",
-      "score": 6,
-      "label": "neutral"
     }
   ]
 }
