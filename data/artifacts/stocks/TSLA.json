@@ -2,19 +2,15 @@
   "schema_version": "1.1",
   "symbol": "TSLA",
   "name": "Tesla, Inc.",
-  "generated_at": "2026-11-02T01:59:18Z",
+  "generated_at": "2026-11-03T03:18:12Z",
   "is_demo_data": false,
   "quote": {
-    "price": 399.81,
-    "change_pct": -0.87,
-    "as_of": "2026-10-30",
+    "price": 403.82,
+    "change_pct": 1.0,
+    "as_of": "2026-11-02",
     "currency": "USD"
   },
   "prices": [
-    {
-      "date": "2026-05-12",
-      "close": 433.45
-    },
     {
       "date": "2026-05-13",
       "close": 445.27
@@ -490,19 +486,23 @@
     {
       "date": "2026-10-30",
       "close": 399.81
+    },
+    {
+      "date": "2026-11-02",
+      "close": 403.82
     }
   ],
   "forecast": {
     "horizon_days": 5,
-    "move": "quiet",
-    "prob_large": 0.4669,
-    "typical_move_pct": 3.5242,
-    "confidence": 0.5331,
-    "made_at": "2026-11-02T01:59:18Z",
-    "as_of_date": "2026-10-30",
-    "target_date": "2026-11-06",
+    "move": "large",
+    "prob_large": 0.6069,
+    "typical_move_pct": 3.5236,
+    "confidence": 0.6069,
+    "made_at": "2026-11-03T03:18:12Z",
+    "as_of_date": "2026-11-02",
+    "target_date": "2026-11-09",
     "model_name": "move-xgb",
-    "model_version": "13"
+    "model_version": "9"
   },
   "sentiment": {
     "window_days": 7,
@@ -515,17 +515,17 @@
         "doc_count": 44,
         "note": "44 analysts, Nov 2026",
         "method": "ratings",
-        "previous_score": 19
+        "previous_score": 26
       },
       {
         "source": "news",
         "display_name": "News media",
         "score": 10,
         "label": "neutral",
-        "doc_count": 50,
-        "note": "50 articles, last 7 days",
+        "doc_count": 35,
+        "note": "35 articles, last 7 days",
         "method": "finbert",
-        "previous_score": 0
+        "previous_score": 5
       }
     ],
     "gap": {
@@ -542,9 +542,99 @@
       "publisher": "Yahoo Finance",
       "title": "Consensus: 20 buy, 22 hold, 2 sell (Nov 2026)",
       "url": null,
-      "published_at": "2026-11-02T01:59:18Z",
+      "published_at": "2026-11-03T03:18:12Z",
       "score": 26,
       "label": "bullish"
+    },
+    {
+      "id": "b9d73a3d8ac7",
+      "source": "news",
+      "publisher": "Yahoo! Finance Canada",
+      "title": "IncomeShares Tesla TSLA Options ETP (TSLI.DE) Seasonal Returns Chart - Yahoo Finance - Yahoo! Finance Canada",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9INTcxc2x2SXg0MzZZZUQ4TXo1c3EyLUhySVJLOXRYNC1aeFRIdE9HaWQyMVJQalZPbWQzTUp1LV9UT19YRkJheUloUWh1eGlfa0R2NXZ3QkE2NWUwUk91dTJ1U291UQ?oc=5",
+      "published_at": "2026-11-02T15:40:07Z",
+      "score": 0,
+      "label": "neutral"
+    },
+    {
+      "id": "1d94c2086f6d",
+      "source": "news",
+      "publisher": "Seeking Alpha",
+      "title": "Tesla gains momentum in Sweden and Norway, faces Danish market pressure (TSLA:NASDAQ) - Seeking Alpha",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNV2FiLXYzVVhuc0pjb0pESXZtQVBveTRNTTNSUEVMdGFKaW9ubXZIWUtRelRlVkQ5WFAwd0pfLU44T0d3bXhpZXgxOGtYenpIbzJDWGd3QWlqZlFiS0VncGxTR2VnZ2VJRHBxbjVaWmQtckpHX3dXX2hjckxLaUt0bjJrZ2hpZjg1UUl6REstVEFYS1NqNmcxTE1HNDZuZW80a19MVHppM0ZKcGpy?oc=5",
+      "published_at": "2026-11-02T13:12:16Z",
+      "score": 76,
+      "label": "bullish"
+    },
+    {
+      "id": "648c1260d118",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Tesla Registrations Surge in Sweden, Norway and Denmark as European EV Demand Grows - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSWczVjNINWo3YWwxOHREOXRENldlVDZsOHc2TmtiMk10eUVYTk84TWl0dFlHOHhkTzFsRk9lZWZlNXJrS3M0UjJPLTlGcU5KZjZCUjlSX3R4dTg4Wm50VkZZT0pGY2loTHNfMTFFMk5KVnV1cWNGcUJKVUFlYVQzTW9jMXBORlczaDQwM3pFNkhoY3pjamtRV0M5aUZ2c3dYQ0dsTVpiMA?oc=5",
+      "published_at": "2026-11-02T11:55:05Z",
+      "score": 84,
+      "label": "bullish"
+    },
+    {
+      "id": "454b4f98ddd0",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "ETFs Are Net Sellers of Tesla (TSLA) on Oct. 29 - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOcm1jeWd1eldqcUtXbHE3eUFnZEZxZG4xXzRoVi1xYjZYbDc0Rld0dngzYzFJQnN5U0JZdVlUYVByN3Z4MVZHdlJBMk1IYTFsQWExOVVXdkZ2T292TEw4aEo0LTkyNmNmN0NLSks5QjA2OTh4dk5NUFBsN2lQTERVZW56MzhjWHRtN29nblpKQkx4YlBvZFJr?oc=5",
+      "published_at": "2026-11-02T11:03:08Z",
+      "score": 0,
+      "label": "neutral"
+    },
+    {
+      "id": "29c41cd0e88f",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Should Tesla (TSLA) Rethink Its Marketing As Smaller EV Rivals Gain Ground? - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcGFqWFhmTG1xYjFrTEp5YVdoRUQ0RW1vYm9ySXBYV0ZDbGxIZkVua1V0TzlWcHRVeDhNRXFzbmt4cnZPUDhveHA2VFd6Sl9abHRkRmNodjI1eDJ6dHhRYklOSFY1Y0Z6OGQxcDJ5aVBKMUNvTUZXOExnMjByMmhjTTA4YjNRRF9zNTVtekhRV054QUpQWURWMldob25GaFp3TFhV?oc=5",
+      "published_at": "2026-11-02T10:07:12Z",
+      "score": 9,
+      "label": "neutral"
+    },
+    {
+      "id": "9f5a5681d0f7",
+      "source": "news",
+      "publisher": "Moomoo",
+      "title": "Tesla (TSLA.US) Market Share Drops from 80% to 50%: Black Warns High Valuation Is Unsustainable - Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMm1laldocmZabEZxZE11YV9iTWRWVHJ4YzZDZXYtanJuMkRoWVV3UERESHk1LWl4eFZLMXFWYmJUdm9JcHcyNXRrZTVkUFR6VWVWOWhjY3NmNmhJcDJiVHE0SHQ5dUh3TDVYNHQ2UE1wYlFzM2xMOVRWSWl5SGltQjJSa2Jpbnh1RmlQUVlXV256dWI2d1F4QjI0cw?oc=5",
+      "published_at": "2026-11-02T09:19:40Z",
+      "score": -96,
+      "label": "bearish"
+    },
+    {
+      "id": "0b040344367d",
+      "source": "news",
+      "publisher": "Moomoo",
+      "title": "$Tesla (TSLA.US)$ out, good night guys! - Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxObmFVUFF6bmRxYkw0dHJQUnd4al82VDF6aTI0cC15OWNGRDhDd2pHXzVLUWc0elpQSkpRWWw0a25TNmhnWDYyVjh6YzZNV0Y1eGVteWh1dHl2ZFBlU1huZ1V5WjMtR1lRZHk0cmhCclBINnpLVUtnaF9sNnREdjF0TExSRGZQczZjTjNVYkdoWHM?oc=5",
+      "published_at": "2026-11-02T08:00:00Z",
+      "score": 8,
+      "label": "neutral"
+    },
+    {
+      "id": "e53fd4fc975a",
+      "source": "news",
+      "publisher": "Seeking Alpha",
+      "title": "Tesla, Samsung flag manufacturing risks from Trump's Vietnam tariff push (TSLA:NASDAQ) - Seeking Alpha",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUy1qdGRmUlhla244NXh5a3lqZnZCN0QwUi1jWGI4ZUJJMDJ1NzhiMy1YUjlDeExSRUZkbUNVVzBwUHZkbUR1b2R3VWkyMWpnTlY5SnNQZjJSSndkNXk0M1pzVGpCemRyNEVpc2haNXF6c1Zvc3FHWTd5cDZrMWpWeWJxdGw0U0Z4bGg3eHBnOGxLcDVkbTVnRjBSV0lwbVdWVHFJdFNoNFRwUGIx?oc=5",
+      "published_at": "2026-11-02T05:23:15Z",
+      "score": 2,
+      "label": "neutral"
+    },
+    {
+      "id": "daaa70e5caf9",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Barclays Says a SpaceX Merger Is Now \"a Key Part\" of the Tesla Bull Case. Here's Who Actually Wins if It Happens -- and Who Pays. - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQWg4YTdLSnk3d1p2cDZpaWFVcFVzbWZfbkdfeVVWejRjZjM5OGVTY0RoQXB0UklxdTVkejE3SzExYm13dWRVOVVDcWZGRjRDNXdJVEtpMEFCU3hKc1RyQ3RvakNEbXo3OE5Gb0E0UjBpczNlMC12blFBRWV5YjYzaXBIU3h6RzVZOWVYaDRMajdHWFFnUm5aLUhFcVk?oc=5",
+      "published_at": "2026-11-01T21:05:00Z",
+      "score": 1,
+      "label": "neutral"
     },
     {
       "id": "21813811c5c4",
@@ -577,63 +667,13 @@
       "label": "neutral"
     },
     {
-      "id": "9cefc55d0b8e",
-      "source": "news",
-      "publisher": "Yahoo Finance Australia",
-      "title": "Tesla, Inc. (TSLA.WA) Seasonal returns chart - Yahoo Finance Australia",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9xTnR2NFVlRnZXbEpjdkZnbVRDN2N1N05Qa2x4al9RTTJqNWktVHowM2U2Z1BqWHFvYk9MZ3RaYnRERlRzR1NkLXduYWxjZ1BCOUFCLWliWS1TX1lRbXFVWEJ3QjVMdw?oc=5",
-      "published_at": "2026-10-31T00:39:51Z",
-      "score": -2,
-      "label": "neutral"
-    },
-    {
-      "id": "57e6bad4471b",
-      "source": "news",
-      "publisher": "Yahoo Finance UK",
-      "title": "Tesla, Inc. (TSLA) Seasonal returns chart - Yahoo Finance UK",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8yUm1odU02R1BUWURNZDVEMzNwczhkNkdHZW93bmJaZmR0MV9FanZhZU1FUnZNdjVWRUx4ZllfSXFXQXFsTVd2cV9LNV82aGZvN1VoTWRPY3p0Q1ZsVkNaNUhR?oc=5",
-      "published_at": "2026-10-30T20:00:00Z",
-      "score": -3,
-      "label": "neutral"
-    },
-    {
-      "id": "b05a34a26de9",
-      "source": "news",
-      "publisher": "Yahoo! Finance Canada",
-      "title": "Tesla, Inc. (TSLA) Seasonal Returns Chart - Yahoo! Finance Canada",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE96R2kya2lZX05NRnl0dDlDS1VoRGtMSEh6emowZnhPWVc1aVd4TEhZcXRTVFptcktQR2RnN1QxVm0wZDZla2F1bmtGVE82MUVqOWF4QjBZOEhuY3hYT2l6ejZB?oc=5",
-      "published_at": "2026-10-30T20:00:00Z",
-      "score": -3,
-      "label": "neutral"
-    },
-    {
-      "id": "02c751dbc330",
-      "source": "news",
-      "publisher": "Yahoo! Finance Canada",
-      "title": "Tesla, Inc. (TSLA.TO) Seasonal Returns Chart - Yahoo Finance - Yahoo! Finance Canada",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1ISFZmTWYxQmlieFVfYzQ5c3RSVThYMkwtMVM2VjY3MHJGaTZZbzBBTk81V0NXOG4zRFBMSnRuRDRzSnlwcWxHRGdDQTRxQi1QM2ozV0Ntc3JsVWNVVWhKaHdxZTVwUQ?oc=5",
-      "published_at": "2026-10-30T19:59:49Z",
-      "score": -1,
-      "label": "neutral"
-    },
-    {
-      "id": "20bd32bd9c96",
-      "source": "news",
-      "publisher": "Yahoo! Finance Canada",
-      "title": "Tesla, Inc. (TSLA.NE) Seasonal Returns Chart - Yahoo Finance - Yahoo! Finance Canada",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBWakdabm9zbVhwQWYxTEJONG5scU1oVGRDODFwd19Ld0o3NjBiYTVDNjgwNTV6dlc5b1Q3NW1iZndiMm9FRmNURFp0QURCTHB1S0FFanJxOWpHYXFuVFpnWE5tS1N2dw?oc=5",
-      "published_at": "2026-10-30T19:59:08Z",
-      "score": -2,
-      "label": "neutral"
-    },
-    {
-      "id": "e9d693923719",
+      "id": "5a73c9ecbb38",
       "source": "news",
       "publisher": "Yahoo Finance",
-      "title": "Tesla Could Be About to Unlock a Brand-New Revenue Stream. Time to Buy the Stock? - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxON2hDZ0tYR2FJMlhjTTBEdGYxWjJVay13TWpyWjlBN2Zqa0d3Y1N2TVdqVkZmekotWEFsRk9TOG5lWnR2cGNXZjRqSmNUYzJpM19UZmZsSk0takxITHpYVnpQbmRRYnFvb0ZyRTBmVnEzXzBQYkxJSk5lRnZmZHN2X2taYV9aOUlXOEpkNWpTdzBlbFZQM0h1bGZ3dmVndw?oc=5",
-      "published_at": "2026-10-30T17:09:01Z",
-      "score": 10,
+      "title": "Are Wall Street Analysts Bullish on Tesla Stock? - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQd3JrTzNKaXZ1aThkWk5lTWdmd3MzRnJOWlZfTWx6b2xWVmViRVdpSzJmSklqR1oxV1E3WTRKNWdhdW1rY1VqbXBnTmFoSUtJdHJLdFpVN0puUmlCUGhlZWduRVN6eWt5WnNKSXh2NFp5YmZwZG5qMU5jLWxLYlBua2tValY2T3U1RFh0S0JGQVpRZ1hVamxmVVhUc2xjU1Rh?oc=5",
+      "published_at": "2026-10-30T12:25:50Z",
+      "score": -3,
       "label": "neutral"
     },
     {
@@ -647,16 +687,6 @@
       "label": "bullish"
     },
     {
-      "id": "2121822704de",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "Why Is Tesla (TSLA) Reworking Cybertruck Plans And Battery Rules Now? - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZEowZHZ0TkFWVVgtWHVfb3E4Y1diZEJFRlVLNDBhTV9seHloNURGcE1XSUMwX1lYYXV3V1lkRGIwbGZ0dlVVWlZBU0NnLUdUaWRWM0hZc29FSktELXMyeW5oUUo1bWdKTE1tRGRVVDJyZzhhc1ZZZ2VpNjMzd1E2RkVoTTJaTnlsd09OM20tQVQ1ckFOb01HdEhxY2luZDVVTUE?oc=5",
-      "published_at": "2026-10-30T09:09:55Z",
-      "score": -6,
-      "label": "neutral"
-    },
-    {
       "id": "00565063d623",
       "source": "news",
       "publisher": "Moomoo",
@@ -664,26 +694,6 @@
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNSTQ0czUzUzZlbmdZaHRvakF0MTAxNnlRNGoyNl9laUQyaG94Zm5QYnk0bVAtdWlTR3JRR3R6OWFvNWFWUHRmQnhLVGQ4T0tXcWR5SHpVc1BTU1BNdE5IZ1B6U1h4MzhUUi0wX0k2ZHlVMDVad3psTmZFa29UUWJpTXBZTmRfYnNTb0J1Y2xSQldzbmRKa0ItWXFPOEZYYXhfbkwzU2pR?oc=5",
       "published_at": "2026-10-30T08:17:10Z",
       "score": 8,
-      "label": "neutral"
-    },
-    {
-      "id": "832751142d72",
-      "source": "news",
-      "publisher": "Yahoo Finance UK",
-      "title": "Tesla, Inc. (TSLA.BA) Seasonal returns chart - Yahoo Finance UK",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9Bb3pmM2FTVGxER0xtOG1kQjRQc0NzUUFFUmktWW1URlZvNW5fUlphZDVucy0wbGFPZXFsbHJkNkNod1l1TWh1Vy14ZFR5OTY3R05UOVBfckZaUmZybXhoZ3ZzdUpHZw?oc=5",
-      "published_at": "2026-10-29T22:51:24Z",
-      "score": -2,
-      "label": "neutral"
-    },
-    {
-      "id": "21ec960bb92e",
-      "source": "news",
-      "publisher": "Yahoo Finance Singapore",
-      "title": "Tesla, Inc. (TSLA) Seasonal returns chart - Yahoo Finance - Yahoo Finance Singapore",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBmbm5qWmNKRW9uOVQ2aHhyWmJMRXFNNFZwaWs4MHgwMUFkNzNDVDN1Z09NNDRYY3ZuSjBBWXJzZGtnQ2drWVVnaDMwVUppUDJHRE5WZ3Fic0h0Z29HUFdzSDdn?oc=5",
-      "published_at": "2026-10-29T22:04:14Z",
-      "score": -2,
       "label": "neutral"
     },
     {
@@ -727,16 +737,6 @@
       "label": "neutral"
     },
     {
-      "id": "0197670f477d",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "ETFs Bought $40.7 Million of Tesla (TSLA) on Oct. 27 - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRm5QT2xfeElfMkNacUd0dVo3MTZTcHpoY2tkNG1lZDlqam1kNXFwRUdRVi14QWJETHNrNjJvZ0lRRUJqQjB4eEEwYXY0WHRQajRNTjNSU1poMVk4Y1VPU0IxOTBqTjI4ejZ3clplSDJubi14cmtLQ3FGcTJVWVdpMUNMdWttS095NjJSY1BnMWpJUWc?oc=5",
-      "published_at": "2026-10-29T11:02:01Z",
-      "score": 5,
-      "label": "neutral"
-    },
-    {
       "id": "3e3375b6bb62",
       "source": "news",
       "publisher": "Trefis",
@@ -757,6 +757,26 @@
       "label": "neutral"
     },
     {
+      "id": "77f201f0a670",
+      "source": "news",
+      "publisher": "TradingView",
+      "title": "Key facts: Tesla (TSLA) 1.7M FSD Users; Barclays Upgrade; 450x PE - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPWFZJaWRRamJxZXQ4amY2LWo3Um5HREFMemhuLTVybWg3ZEM3SzVyY1hsVHV0bmx2cG1UQ3F4ak8zMUNGYzlDYWtnQUk3elFMdlJ1TVFJd045c1Nvb0NNX1dobUU2NmluM3d3VkpIY1NCZXFkNHV0MjhDVEpHZEREXzdJLWFYYzBzanhHVWExMF9nN0ZWMTZsU1AtTldMWk9ETUs1WTF2SlR6MWtlX0JweHQ2ZzVTTHVwUnI0cDNycw?oc=5",
+      "published_at": "2026-10-29T07:00:00Z",
+      "score": 33,
+      "label": "bullish"
+    },
+    {
+      "id": "ab53503557a8",
+      "source": "news",
+      "publisher": "Seeking Alpha",
+      "title": "Tesla wins court battle over delayed FSD features in South Korea (TSLA:NASDAQ) - Seeking Alpha",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbEp0Vkl0TllLMjd6MzhSZ3JRVUY4YmhaMFl0UFJUcDhLajBDZlpsWnZCSHJpZTMxNkw3bkZUT2lqN2otcU9HT21WOHd1U3JvNC0tQTg1T3ljb2MwRWJvTWpPaV95aVZxMVduWURRTUd0WGw4bFltc29JWnVNbk85TDRUM1lGTVNpdldBajBuVTJDeEh0SFZWdHFfM2UteHhLMm9QeQ?oc=5",
+      "published_at": "2026-10-29T06:48:08Z",
+      "score": -20,
+      "label": "bearish"
+    },
+    {
       "id": "b27ac420a986",
       "source": "news",
       "publisher": "Seeking Alpha",
@@ -767,13 +787,23 @@
       "label": "bearish"
     },
     {
-      "id": "0fc85c4ee8e4",
+      "id": "09ecf994ad3f",
       "source": "news",
-      "publisher": "The Globe and Mail",
-      "title": "TSLA Q3 Earnings Call Highlights Autonomy and Expansion Plans - The Globe and Mail",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNLVBJWU1OckYxeUJuNFBLb1BkX1RpVFFnUk5VRzJYR25rdlcwektaSl84aWZOVnBadnZCRkYzOTZmUmdHTndjSHpqUl81dFZGUnhJRzF6Q0s0VGFCaWFFV0VXQ3lHQWk1TVUxYTNva2R3U2VGOG5reDA4WEp3bW1VU2FaWmF2WHh3bWlQZlFnc0VsYWM2aHhudm40U1hXSFU2eVVzYzh4ai1LNGxSUWtYUVc5Nkt3Xy1DeHpRdHpLMzl5dmNra01NMjA0QkJwbGZqSzZBdzcxSU1YTFFfRlQw?oc=5",
-      "published_at": "2026-10-28T15:06:00Z",
-      "score": 15,
+      "publisher": "Yahoo Finance",
+      "title": "TSLA Q3 Earnings Call Highlights Autonomy and Expansion Plans - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNLVRyRmRnNUI5eUZfaFVDV01YQzRLalVYc0VscnJuTDA5R2ZxWEJVSkNUbDF5XzdmdEViVmsybHlrRkY0NFFfdnJWWGIxUW5EMmdFM0FwNF90VlY0YU1xNEJKeS1QUFVZeU9QSGpkLWlDREF4RXlOZFhaYVBsdVJ2b3c5aVRyU05sblk5dGg3ZU44THFJMHhHN2ZhYU5WZw?oc=5",
+      "published_at": "2026-10-28T13:00:00Z",
+      "score": 12,
+      "label": "neutral"
+    },
+    {
+      "id": "9b5672508107",
+      "source": "news",
+      "publisher": "TradingView",
+      "title": "TSLA Q3 Earnings Call Highlights Autonomy and Expansion Plans - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdF9XYlV0bEhrWnNRc1Vqd1pWTmNrUWZVRnlVd1VUM19kQUFqczJKZzctX1dGaXRLcnBIeGVkM3N2clNEc01OcERGLWR4WlJxNzZCQVBrcGV2YTNDcUJ1ZEdrZVlwTElKYkdjaGJnd3h1c2xrcmRpYVFTV05hclFYRThnTWh6UVhodUJnMGNYTzVzeHNSNmI1SXFpUFZPZDYwYmR2SS1PcUg1THBsWGdIR1ZiRmtPY3dx?oc=5",
+      "published_at": "2026-10-28T13:00:00Z",
+      "score": 4,
       "label": "neutral"
     },
     {
@@ -784,16 +814,6 @@
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxORVB4YXphSFBvMjN2ZV9JTTd6TTlNeWhRUEZVMmY5eFZSY05aTUIwR1NPSTNBeHA2d2xsMDNJeUZ4Yl9HbXUtTzZYcDdfQ3doQllBeFQxX2lvWjVRNXgzSVZIQ0JUY1BPeEVWY0NsWEQ3a2J4LXNHWjBoUXlpQ3ZVRUc2TE95Um9tUy1FY1VHeUpzRDdFbVhVN25XX013SFhsc3ln?oc=5",
       "published_at": "2026-10-28T11:30:25Z",
       "score": 9,
-      "label": "neutral"
-    },
-    {
-      "id": "a5fbca467262",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "Tesla Closed Up 4% at $407. Here\u2019s What a SpaceX Merger Could Mean for Your Shares. - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOTlpGaVJsNlE2MjFtYW91QVdYTk1xMnM4QmM2ajJRV29xSG5CZEIxTDhCYVhMb2FNWExhUnF5LUlUbUpGbFI0UW9mT1AwekJORUNfeU1ubkJiTHJnSlNLVU1pcXE5QmVpZmVIYzF5NlV2YTgxaGlkNmRQcU4yb3ZxWGV5Z1p2a0JRYWlrZWhIdUJ3OUtV?oc=5",
-      "published_at": "2026-10-28T11:04:26Z",
-      "score": 8,
       "label": "neutral"
     },
     {
@@ -815,26 +835,6 @@
       "published_at": "2026-10-28T03:08:00Z",
       "score": 17,
       "label": "neutral"
-    },
-    {
-      "id": "b36e4c50513b",
-      "source": "news",
-      "publisher": "Stocktwits",
-      "title": "TSLA Stock Is October\u2019s Mag 7 King \u2014 But 2 Motorcycle Stocks Race Past Tesla Even As Chinese EV Stocks See Red - Stocktwits",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPd2h5cGVOYmZUaGJkSHMxVGVPWmM2RGsxUlduSW9tWWF6bDg1VHprc3AtOFk1amRlN3RZTThpbGh2TEFDSmd3QlR6bFY4UGJ3bXJpOWptOW52d1ZTZkxMYzcyR080QlVUejgza2xwSUlIc25IekhldVhGdHoyUWdKaWlaaEJ1Q2ljaGtZNEV3UmE3T1pIcFhVTUZyc2hQOHFPbHp1MFpaYTh2RWdTdml1TWowTTZoQV9MbU9aRmpkeFZGWnBjdFNkRWo1TXNhc0g2cHdtOU1pYy13Ni01SGk2MXAzNlFTUQ?oc=5",
-      "published_at": "2026-10-28T01:12:18Z",
-      "score": 18,
-      "label": "neutral"
-    },
-    {
-      "id": "f846f425cfcf",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "TSLA Stock Rises As Cybercabs Overtake Model Ys In Authorized Texas Robotaxi Fleet - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQd0RoSHNwWDRJSU9kWVFwODA0QTRVc3l3UUR3OWNRcUUtYkMwclozdDlQQVo2bWJCRDEyUTZSOVd4N1F3UktieDU0cVNPbUpkWkQ3dEstR2pGWXZYUlBBa3RCU2RuTDVjY2k3TnE2SGVYT2hqWEF5TTJWMS0zdVluaGRiN1NFdE9rdkdLNnhIWmtBcmhGOWNlNFlyaEw0OXZESnc?oc=5",
-      "published_at": "2026-10-27T22:39:57Z",
-      "score": 78,
-      "label": "bullish"
     }
   ]
 }
