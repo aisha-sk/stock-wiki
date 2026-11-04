@@ -2,7 +2,7 @@
   "schema_version": "1.1",
   "symbol": "NVDA",
   "name": "NVIDIA Corporation",
-  "generated_at": "2026-11-03T03:18:12Z",
+  "generated_at": "2026-11-04T01:53:22Z",
   "is_demo_data": false,
   "quote": {
     "price": 202.06,
@@ -495,10 +495,10 @@
   "forecast": {
     "horizon_days": 5,
     "move": "large",
-    "prob_large": 0.5589,
-    "typical_move_pct": 3.5236,
-    "confidence": 0.5589,
-    "made_at": "2026-11-03T03:18:12Z",
+    "prob_large": 0.5431,
+    "typical_move_pct": 3.522,
+    "confidence": 0.5431,
+    "made_at": "2026-11-04T01:53:22Z",
     "as_of_date": "2026-11-02",
     "target_date": "2026-11-09",
     "model_name": "move-xgb",
@@ -520,16 +520,16 @@
       {
         "source": "news",
         "display_name": "News media",
-        "score": -2,
+        "score": -12,
         "label": "neutral",
-        "doc_count": 71,
-        "note": "71 articles, last 7 days",
+        "doc_count": 50,
+        "note": "50 articles, last 7 days",
         "method": "finbert",
-        "previous_score": 29
+        "previous_score": null
       }
     ],
     "gap": {
-      "points": 57,
+      "points": 67,
       "most_bullish": "analysts",
       "most_bearish": "news",
       "summary": "Wall Street analysts lean bullish while News media are neutral."
@@ -542,299 +542,299 @@
       "publisher": "Yahoo Finance",
       "title": "Consensus: 59 buy, 2 hold, 1 sell (Nov 2026)",
       "url": null,
-      "published_at": "2026-11-03T03:18:12Z",
+      "published_at": "2026-11-04T01:53:22Z",
       "score": 55,
       "label": "bullish"
     },
     {
-      "id": "775de76ffecf",
-      "source": "news",
-      "publisher": "Vermont Business Magazine",
-      "title": "Nov 2026: News and Announcements from NVDA - Vermont Business Magazine",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNX1NRN09Dd05rcVJWSWs1N1kxZnBlTmJnaFNTNVFNOWRyNmg0NXBmdkhLTVNnWEZJTHE1RDNXam9tX2tIY04tZy1lV21VY0hmR3lKemNyaUFENjlDZTNucTdPLXpkWWs2U1E5ZzlOd2packtHRXd2M09Zc21VNEFIQmRfS1VXV0k1?oc=5",
-      "published_at": "2026-11-03T01:15:42Z",
-      "score": 0,
-      "label": "neutral"
-    },
-    {
-      "id": "e3cc295f27e4",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "NVIDIA vs. Intel over 5 years: a 668% gap that reshaped chip investing - 24/7 Wall St.",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUllQZFI4VU5CdkMweS15WDdyV05oQmlMLTVPbGxkTV9KUTBUYmVFUF8xSmh6SG5sNWx4V2luMDVWZWE4ZUNtSHhLSjN5WUI2WW9rODZTR3JSNGVSblFjNUY5NlJLZXo2NVNiVE9kUjJ3c05CRDdIcDFQMmhSR0pjUFNKSGV3a000cmlzLWRBbS1fWHV4Q2xVd2xlRy1HSl80dXdUT1hLOXB0VWkyOVZnUGtGdFR0dEhOcktjWVJReXpOYk9ZRGt6QnBB?oc=5",
-      "published_at": "2026-11-03T00:28:58Z",
-      "score": 74,
-      "label": "bullish"
-    },
-    {
-      "id": "2b69db7ad219",
+      "id": "e483088c7b95",
       "source": "news",
       "publisher": "Investor's Business Daily",
-      "title": "Nvidia Flashes Sell Signals As Earnings Loom; Is Nvidia A Buy Now? - Investor's Business Daily",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNlNYZi1HUzQyS0s4YlN6TUtGZG5JYXI3VXQ0cW1hNjhzNzlmQ2JSdGxSWTBuX1JiMW04LUVTcFptOE9ORjY1YjJRNG15cVpyaHBzVGZ0X3FLeGRyUUg0OVRlNWcwNUlCNzJ6ZWUtdEYtc0wyMFlIMzR4QjVlOHRwcHRKOFNoMnRQZjVOcg?oc=5",
-      "published_at": "2026-11-02T21:47:00Z",
-      "score": 4,
-      "label": "neutral"
-    },
-    {
-      "id": "d071df8bca48",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "Nvidia (NVDA) Falls More Steeply Than Broader Market: What Investors Need to Know - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNNjROdjdjOVlRX3RIOVVXbDVmSm0yTkJDZUZOcDY3NlJTLXFjSFFTV1A1SHVYeVIxeWw2R1B1anVKaDl0R3RLYmxqTVRiX2hQT18tbm5lVVNBdE9CU3JUZnY3MlBMNDBwSHFDNlJPX2JsdXEtcFdDOVJRNDhFQXg3aXNEX09yck9UbC1vXzZSNmE3cmQ3NHE2Q3o2Yw?oc=5",
-      "published_at": "2026-11-02T21:45:03Z",
-      "score": -70,
-      "label": "bearish"
-    },
-    {
-      "id": "a7e0a5667265",
-      "source": "news",
-      "publisher": "GuruFocus",
-      "title": "Bank of America Analysts Maintain Bullish View on Nvidia (NVDA) Amid AI Demand and Election Uncertainty - GuruFocus",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPSXJQaVRhR3ZkZEpFWWlYX3N4OWZwQV9EMVhTdkFVWUhSMVdkdlRWZXRRMVNhZjBPQTBwYWcweks0dGJVRzZmUFhhVEg4ckRsSTQ2aE15QUdpZVJzS1ExYVBEU3F1OVNGQUxKNjNHMjg4X1hLcUJJNndFUEo0VDdUZTZyOGJ6Uml3VHd3MWgzX3VMTUhvemxJSkI2bDNnaFlSbGJ5R0hKLXY2dGozOUtVZ3puX2RDQ3BvWUtrOEh3emlhamN2ZVp1VHlja3hSQXBxUWRKV0FGRQ?oc=5",
-      "published_at": "2026-11-02T21:23:15Z",
-      "score": 23,
-      "label": "bullish"
-    },
-    {
-      "id": "f1b375326909",
-      "source": "news",
-      "publisher": "Investing.com",
-      "title": "SKHY vs NVDA: valuation, earnings, and risk compared - Investing.com",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPMUQzOXNzSlhDdzBsWDd4c3NPVUdRYzBNbElFbm1wMlVZaG5zblhGQWhqU0s5bjl4ZndKVnkwdUtQMU0ydVJzY1lYWUtkM3F6MjBnTWJIWEhOb3o4LU9mT3ZFaE0yUnBRcFE5RVFpemlORkR6MzF1NFRJMmdseGtOZHpQSlZHT2xlbXBCTG9LUXRGbHFDSXYtV2V3d0JSeGdBajV6eXpmM1JtTDZMVGFhVw?oc=5",
-      "published_at": "2026-11-02T20:57:57Z",
-      "score": -1,
-      "label": "neutral"
-    },
-    {
-      "id": "515ca1ddfc88",
-      "source": "news",
-      "publisher": "Seeking Alpha",
-      "title": "Capex cuts could be 'unwelcome' but extend the cycle: BofA (NVDA:NASDAQ) - Seeking Alpha",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNGIxbU4xbGdwa0h0b3NWLVlwV096elRYalc4Q181MlNRUW5QU2hDVTZ5aU1kQ2tURmdkcnE0NkZhaDZlMHQ1czZiX2NXYXNfbDVSM1V1SEpmcU5vU0lDOEs5aTRRVGRONW91TzRkZ1k2bmh2Qi1MU1hFelhVNXpHUTRwV2JxQW81Vm1hMzJfUkhNMVRHelFtZw?oc=5",
-      "published_at": "2026-11-02T20:43:54Z",
-      "score": -73,
-      "label": "bearish"
-    },
-    {
-      "id": "772bd734feaa",
-      "source": "news",
-      "publisher": "Investing.com",
-      "title": "NVIDIA breaks support, oversold at $205: Live levels - Investing.com",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMnFIbm8zM2NWVE5od1Foc3c0RXZYRE54ZHQyY3g1eEpYTHZRRV8zdVp1VUtuQnlrQjktbGRDdHFPbkRraTBESWFySEdRLVJlTkEzb2hBS3dUUjFqaEEtYnBmZ19yS3Z1SzNTTnlPYm0xS3dlR2todjd6bnBIcWI1SzlkSENubVJrVF9SZjhNdG1uT2R5WmFBRjA4M2NxVW9JcTRlNDNnNXptOWItdHQyZQ?oc=5",
-      "published_at": "2026-11-02T19:30:39Z",
-      "score": -84,
-      "label": "bearish"
-    },
-    {
-      "id": "0c97583c68d3",
-      "source": "news",
-      "publisher": "Barchart.com",
-      "title": "Nvidia Stock Looks Surprisingly Cheap. Why NVDA Could Rise 61%. - Barchart.com",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQYjA4NDQtRjBtaDZMX05LdkpMeWZrOVYxWFc2TTgtU0phdXlnc1RvZlJVb3NxWjlfbnkwY3VIOXpvZWpzUklKWEh3LTF6NVBxLWs3OWlsVDY2bXpwa2MwZXczNDhXelFzYUNfWHhwaDVKSnhWZnZDQ1FiRWN4TUNjUVdsaHNHWjJCMDNmbFR0SHFscGpZekx4b21zYmZ5aDVsSkF2UTRmQQ?oc=5",
-      "published_at": "2026-11-02T18:48:18Z",
-      "score": 32,
-      "label": "bullish"
-    },
-    {
-      "id": "420e6ae4d44b",
-      "source": "news",
-      "publisher": "Benzinga",
-      "title": "Elon Musk's SpaceX Plan Swallows Nvidia's Entire $300 Billion Growth Forecast \u2014 And Then Some - Benzinga",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNMkwyM2NSc0JjRmkzd3VmVmtrMThkU3Y0cGlGSWRzUGVFYUVzdV9QMWZxS2FRUVhVSVBtdUdWay0wS29aa1UxemlCZ0k3SEVTeXZEQWpCQk1tZUwwYmRfNkFpZWZaZFFpbmVrYmE0TFVoV1gwcXhVanYzT0JzNFROTHpsWUt2NGV0NTg5ejlEVnlPSHVHMmx4aldwYjJyUDR1WXBhNVdXSGFkZw?oc=5",
-      "published_at": "2026-11-02T16:20:55Z",
-      "score": 7,
-      "label": "neutral"
-    },
-    {
-      "id": "18609404c27b",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "META_TITLE_QUOTE - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBpVTJIYnhWcW1kNFFKTHNoajhPeE9zSW9lTElhZkZvcEo3MExtQnpIZjBRek95cWJ0XzRKMzBtMHh0Ty1SYVRESUxfRTJ4Zw?oc=5",
-      "published_at": "2026-11-02T16:04:41Z",
-      "score": -3,
-      "label": "neutral"
-    },
-    {
-      "id": "0e1832948e7e",
-      "source": "news",
-      "publisher": "Investing.com",
-      "title": "NVDA earnings reactions: historical next-day returns over 12 reports - Investing.com",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPQ2lycnF4alJRcm5MMU1RSFQtaFA0dkZQd25fd2JCc3ZWRFUxMXZtdDljdWZTNUNPbjZsNFBkZXdWb2FxdW1nYzdCN0VHTDVEM2ROQ1Ziek52b0RSV21paEdhNm9RUGpwdmRkQ1B3WmhUcHdwbUs2SUpDaS1MQ2s3NF9tLURMc0VhUk1KSG5iTjY1V0FBSXFHWVhScmppLWl1Skp0cm5VdlJIT0pnQnY5OUlKclVUWUhxUzRlUWxFUVJhMHZwSDdV?oc=5",
-      "published_at": "2026-11-02T15:35:48Z",
-      "score": -2,
-      "label": "neutral"
-    },
-    {
-      "id": "a71937fc2250",
-      "source": "news",
-      "publisher": "CoinDesk",
-      "title": "Nvidia (NVDA), Costco (COST), Nike (NKE) join OKX\u2013ICE tokenized stock objections, bringing total to 50 - CoinDesk",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNT2JRbThULWtaaVVVeGEyVlZPSTQ0alVKSk1Qc2VKRGppaHVtSFoyM3Uzam1jWE1iVXFsT0dTNmFuTWJhQ3d1ZXZ6dWc3X0RvaVBSeGV5MTNvNm9MdmtyYWVNcmlkRWNMbWttQ2JQTzdEVlZ2SW5UZDRQZnJpOWtsN0V3dmtXaVdTOEZWZm5MeGpoRXZ3NjFHOGZkWEZSc2FObEZFT2hWSk1iYmZJSWxDamlQbWxFN0ppTzRv?oc=5",
-      "published_at": "2026-11-02T15:26:43Z",
-      "score": 64,
-      "label": "bullish"
-    },
-    {
-      "id": "2ae116ab5823",
-      "source": "news",
-      "publisher": "Moomoo",
-      "title": "Market Heatmap: NVDA Lifts Semis, Cyclicals Outrun Big Tech - Moomoo",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbHZYLWxpdWNWaUVSODRYeTdBMVZmRlNRMUkyM3Y2eXJzNnRVUWg4Y3RjOEhDY05BXzZkME5uR3BOUkZZVUpXMDZJVjhROXRlaUJZRk1CNVNNdUxHdE0wSjJxXzBadXRTOFJPajdtR2RDVUgyb19GQkJyM2hWV3pGVEJsV0R6MDVhVEdOdzhYUnp3cUQza0JrbXpNcHU5V0IwUnNjNHhtUUNrSFRVZWRxYw?oc=5",
-      "published_at": "2026-11-02T14:54:09Z",
-      "score": 74,
-      "label": "bullish"
-    },
-    {
-      "id": "c583ccac0b01",
-      "source": "news",
-      "publisher": "GuruFocus",
-      "title": "NVDA Maintains Rating by Melius Research -- Price Target Lowered to $315 - GuruFocus",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOTGNpRk8zLUZkRU5uVnRsSkJIOFAtX1lMeGEwQTJCUzZxMDZjYzdPaE9jS3otWEdDdUFVakhRZnR3R2I1Y1ZrSE5FQ3BQWFdhTWdfOTZIMlczNTRLZkIyMHZLUy1VVlVtYllFR2p2SzdlWHFGemxBajEwdWlQV2ZudnJnVEFyVVRMLUdkMVBmdGxrTTFDSl9MNUVwTUxGa1RucUVicF9jTmJYS3M?oc=5",
-      "published_at": "2026-11-02T14:45:37Z",
-      "score": 13,
-      "label": "neutral"
-    },
-    {
-      "id": "c6fee710e899",
-      "source": "news",
-      "publisher": "TradingView",
-      "title": "Roundhill NVDA WeeklyPay ETF declares $0.2224 dividend - TradingView",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOU0lncDRTNlAxRnF1ZE82QUl1OHplYUFxV3dlbzRSYTZJWG1fS25QdE94U2x0c3A0bHc1U0hhVG5Fdl94R1c3d1FwVmtuVVR0UjJUc1F0bXBKRTBUcTE0NnRQRVNTakNaeTdlRm5CaXlkZktmTHJCV2ZWcnR6NU5lemhJVzRwamZXdmJxZG1uZHBxMTFOa2dyQkZyZTkzNGZCYWp0TXl6S1FRNVJwMUQwNnhlN3ladVU?oc=5",
-      "published_at": "2026-11-02T14:42:19Z",
-      "score": 0,
-      "label": "neutral"
-    },
-    {
-      "id": "0431e929d749",
-      "source": "news",
-      "publisher": "Benzinga",
-      "title": "Nvidia, AMD, Marvell Targets Cut: Melius Pulls Back on AI Stocks as Big Tech Lines Up to Raise Cash - Benzinga",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPdmFVNG00aDdBdENWS1RKQmJYMzdKaUpwVGEzS05BbzZEdGY1cDV1MFplNWROcFpXQ0ctMEN0d2hCUmEwclFucHJaTDd4NmlGbTNxWTdFTmxzekJSTG9zWVA4VE5mRDlpMFpuMFc4UEpUbGl5S1NsV1RzR01JdnVMeE9nR3llVHFWUnVuY09iTGZzdkg4R0lLWnJIc0ZMSmVVYjVNX0ZZODJpNW54Q1B5ZzVYajVYVHJnRk1uUFAxbzI?oc=5",
-      "published_at": "2026-11-02T14:27:57Z",
-      "score": -88,
-      "label": "bearish"
-    },
-    {
-      "id": "ab357ade815d",
-      "source": "news",
-      "publisher": "GuruFocus",
-      "title": "NVDA DCF Analysis: Intrinsic Value $239 vs Price $205 - GuruFocus",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQTEVmWW0yRmkzQi16OW5RUkJlbmJwRERVM3hkYVZSdUJWTG9LQzR5YVUxY1dpYk1RMjAxeDljTnRBX3BlNk5vWHhuQW1NR1dDU1hOZlJmLWo2SmljZzRadDBIY2VvWEl3alQwY3AyMkZpUGtVWGpkRVNkMkg2SWpGSVdfZVpEbEJOTGhpYUJRbGYwOTg?oc=5",
-      "published_at": "2026-11-02T13:04:20Z",
-      "score": 0,
-      "label": "neutral"
-    },
-    {
-      "id": "4c1d64247c4f",
-      "source": "news",
-      "publisher": "Trefis",
-      "title": "Nvidia Stock\u2019s Real Risk Isn\u2019t China. It\u2019s Power. - Trefis",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNdzZKN2F5RERPVFNaanM1VFhDNm13NFJNUDU4N0ZWaDlOWUZwRW1BelV0Z1l2M3Nwa3NvNHJqZVpBZDNRVjV5N255MEFSX1loRVk1ZkUxNTRQanVlLTJSQXZacUVpYWRlcnpaRGh4dXBpNkFLUXNScTlfaEpKUVZSQk9MYlJHNDZBQktpMDZDdHJ1RFBMVGhSYjdTRm1iQlF4blROOVljdFA3VjlI?oc=5",
-      "published_at": "2026-11-02T12:49:02Z",
-      "score": 3,
-      "label": "neutral"
-    },
-    {
-      "id": "a6f094cc95d9",
-      "source": "news",
-      "publisher": "Trefis",
-      "title": "9 Biggest U.S. Stocks Ranked By Midterm Risk - Trefis",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOdE9PcHU2MFBMZkYxOGcyM0VoXzZHcE5reWJNQ0R6SVZfS0JhZmtwMV9hdmhmbzlfM3M4MGx2aHg2WWVPbFpUdUxfektzanBmYTN4UnJIZ1YxTlJpM1BQYzItMDJ4ZTNlaTdzejdlakQ5ZjFvZzdFUHhicTBwMUJUS3JUZ1JYd09yUmhNUnlZWnhUNURXQkVDZ1YxMFhqaDQzb29JQnc0dw?oc=5",
-      "published_at": "2026-11-02T12:42:22Z",
-      "score": 1,
-      "label": "neutral"
-    },
-    {
-      "id": "600d57df6b84",
-      "source": "news",
-      "publisher": "GuruFocus",
-      "title": "ETFs Are Net Sellers of NVIDIA (NVDA) on Oct. 29 - GuruFocus",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPRVZJbGJJLXRXbUNxVklkQ0NjZ3pHZlBpempTZDIyS1UzODAxMEpUbTdUZnByT0hEdTdCeFllUExiUFFRcHl6eUxpWFFDU2ZOOGp3UFF1ZWlKXzlfUUVTUUl0WVFMS1p4MEZQcmRxTHN0R1M4d0JydGp0a2NaUEVUMUc5Wi1qT0hnUEpzYw?oc=5",
-      "published_at": "2026-11-02T11:27:29Z",
-      "score": 1,
-      "label": "neutral"
-    },
-    {
-      "id": "886a21b03e8f",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "Nvidia stock valuation gets torched by tech stock rout - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNcGZseDhYeDZxTDFzcm9tLVdXRlo0RzdnTzR6U284RVFhTW1Rc09WU2R6TG1iODczZUQ0RUdPTDdPR09CajZWc0tNMV9laGxQZktza2RtZXRKTE5YT0xfY2FFWFRmVTkyWUxnb251UEJ5TWV5UFJ0VzU1LVgtTzEyZ0RjcURPUXItdEc2YzdSREtuRGZhVUlHQ3JMbWNOZmllc1RzNUphcFBRSjFTakZrT0dpTENVMFhFVVE?oc=5",
-      "published_at": "2026-11-02T11:01:45Z",
-      "score": -82,
-      "label": "bearish"
-    },
-    {
-      "id": "21b1db3bfd75",
-      "source": "news",
-      "publisher": "Moomoo",
-      "title": "$NVIDIA (NVDA.US)$ You are welcomed. - Moomoo",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNSkpyVW5lX1pjSGhIaDFTR1VjOW5taEZQeHluWUJtSTYzZUFyMEk4c1pMRVkteEh2N3dZejFaaWh6Umd6U2pEc2k0RGR1Si1PVXJRTXRtUjZMQkhWU25oWjY4YUdKQ0lZLXRDNkhjeGNIbU9LSjFnTjE1TW1MVUMzMkw0OGlGMVMtc0JHSC1n?oc=5",
-      "published_at": "2026-11-02T10:04:09Z",
-      "score": 18,
-      "label": "neutral"
-    },
-    {
-      "id": "32a135b8dfa2",
-      "source": "news",
-      "publisher": "Moomoo",
-      "title": "$NVIDIA (NVDA.US)$ $Invesco QQQ Trust (QQQ.US)$ $SPDR S&P 500 ETF (SPY.US)$ - Moomoo",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNVFVBTmhnOEtSb3dwTlVYRzI4bThTT3U0RWxTM3ItNnFUcWJZbDBPUjRoXzRBQUJhNUQxNHFEX0hSdEJwVFV2VDdQdWpiRFU2d2x0M1JSYmxzTGRybkFRTE43UUt0TFNuUlFiSHNjM3M3TmJHeVM5SnVCaUEwcGNmRUZwWnpXMXhtaGllUFlJVzJ3Ui0tVTZxMDh4OEFMQnJrWHc?oc=5",
-      "published_at": "2026-11-02T08:00:00Z",
-      "score": 49,
-      "label": "bullish"
-    },
-    {
-      "id": "187c640c8fb7",
-      "source": "news",
-      "publisher": "Moomoo",
-      "title": "$NVIDIA (NVDA.US)$ Wheeeeee! XL pump, L slowly follow up, XL sell! - Moomoo",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQbktERlJUdmZacTBDRzJLam9IdklrNWM4aGxIQTdBRm0wUGNjRGlRQm9DUGtvbjgtUzJlRUNQVXVFckJUZWxES3hpYUNXQlZpR0RoWGthbndRNURVVlRYRDFPMWY3Q3RUd3JTNHNuUmU4Y2NzN1dEVFNpY2E5eTRWYmFKRVVYQjdHZU5RUklZMWdkSVBmTmtSaUNZN0lrME1URnlnQUlLMA?oc=5",
-      "published_at": "2026-11-02T08:00:00Z",
-      "score": 25,
-      "label": "bullish"
-    },
-    {
-      "id": "1817e407a899",
-      "source": "news",
-      "publisher": "Gotrade",
-      "title": "Nvidia Stock (NVDA) Falls 4.2% as Intel Outlook Hits Chips (Oct 30) - Gotrade",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE15aFlLX1RMVWFxbDB1YjV4Vk1lcGNiR3JxdS1DcVhRNHZ4VXYwaFRRY01RSGhTOHJQMmhkMjVFeTVUUG1HQVNVdl9jOGNpSVhGWWVmamptYkFLeWVSNURTa3prRjhZZXcyYllLYmpjZEc2VXc3cEFYVS1lQXh5ODg?oc=5",
-      "published_at": "2026-11-02T03:30:00Z",
+      "title": "Stock Market Election Night: Futures Fall As Votes Pour In; AMD, Arista Rise On Earnings",
+      "url": "https://www.investors.com/market-trend/stock-market-today/stock-market-election-night-dow-jones-futures-ai-oil-prices-elon-musk-amd/?src=A00220&yptr=yahoo",
+      "published_at": "2026-11-04T01:45:27Z",
       "score": -94,
       "label": "bearish"
     },
     {
-      "id": "63d32a7f3f44",
+      "id": "b3e84a4f4783",
       "source": "news",
-      "publisher": "Seeking Alpha",
-      "title": "Nvidia: SpaceX Offers An Ignored Bonus (NASDAQ:NVDA) - Seeking Alpha",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNemNyVTdEa0psUHdDNVBBU0t2bnM0dzFFTk1ZcFJzTWRHb1lMaG9tM19FZXNoTERHR3ZtbU0tRFQ5RlE3ZF9ydGlXNGJ2UGtycFFrcjk5LU82UFBNRjZrdVVoRnFtaEd2UXYxd1ZUNjBjLVA0WVRIUEE5VlZQamczVW0zYW4?oc=5",
-      "published_at": "2026-11-02T01:00:00Z",
-      "score": 61,
+      "publisher": "Motley Fool",
+      "title": "Should You Buy Alphabet Stock After Anthropic Raised Its Google Commitment to $121 Billion?",
+      "url": "https://www.fool.com/investing/2026/11/03/should-you-buy-alphabet-stock-after-anthropic-raised-its-google-commitment-to-usd121-billion/",
+      "published_at": "2026-11-04T01:43:01Z",
+      "score": 36,
       "label": "bullish"
     },
     {
-      "id": "f6a6d9584bee",
+      "id": "b1c7f173fe6a",
       "source": "news",
-      "publisher": "The Motley Fool",
-      "title": "If I Could Only Buy and Hold 1 \"Magnificent Seven\" Stock Through 2030, It Would Be This One - The Motley Fool",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQczl4dHpEMWJDc3l6U282cm81YUxJeDB6Y2hETFNCc3ZOT0F0VklvYUJWS3d5WGlRUUIwZDFHbzhRQ2NZemR4cmo2bVBDNEg0cUlNVVdXU3JaSFJuNjVwbmlfV3BiSWRwWm02NmZMcXItTEg4MGtKNC1Vd0pNZUN5MzZ2LWtjWjFISGNpbUxfXzNFVnNpQ3RUTw?oc=5",
-      "published_at": "2026-11-02T00:08:00Z",
+      "publisher": "Motley Fool",
+      "title": "Why Fiserv Stock Triumphed on Tuesday",
+      "url": "https://www.fool.com/investing/2026/11/03/why-fiserv-stock-triumphed-on-tuesday/",
+      "published_at": "2026-11-04T01:18:56Z",
+      "score": 49,
+      "label": "bullish"
+    },
+    {
+      "id": "38605c30338e",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "President Donald Trump Claims He'll \"Veto Everything\" if Democrats Retake Congress, and It Has Big Implications for the Stock Market",
+      "url": "https://www.fool.com/investing/2026/11/03/donald-trump-claims-veto-everything-democrats-retake-congress-big-implications-for-stock-market/",
+      "published_at": "2026-11-04T01:07:01Z",
+      "score": -86,
+      "label": "bearish"
+    },
+    {
+      "id": "ce85058457e8",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Why DuPont Stock Trounced the Market on Tuesday",
+      "url": "https://www.fool.com/investing/2026/11/03/why-dupont-stock-rocked-the-market-today/",
+      "published_at": "2026-11-04T00:36:07Z",
+      "score": -11,
+      "label": "neutral"
+    },
+    {
+      "id": "c0a47207bfa5",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "The S&P 500 Fell in Both September and October for Only the 17th Time Since 1950. Here's What Usually Followed.",
+      "url": "https://www.fool.com/investing/2026/11/03/the-s-and-p-500-fell-in-both-september-and-october-for-only-the-17th-time-since-1950-here-s-what-usually-followed/",
+      "published_at": "2026-11-04T00:28:02Z",
+      "score": -92,
+      "label": "bearish"
+    },
+    {
+      "id": "04f756b535b1",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Why Herbalife Stock Is Up Today",
+      "url": "https://www.fool.com/investing/2026/11/03/why-herbalife-stock-is-up-today/",
+      "published_at": "2026-11-04T00:11:58Z",
+      "score": 20,
+      "label": "bullish"
+    },
+    {
+      "id": "7989e211b9e3",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Why Thomson Reuters Stock Plummeted by Almost 10% Today",
+      "url": "https://www.fool.com/investing/2026/11/03/why-thomson-reuters-stock-plummeted-by-almost-10-today/",
+      "published_at": "2026-11-03T23:55:26Z",
+      "score": -94,
+      "label": "bearish"
+    },
+    {
+      "id": "d9bc726e7481",
+      "source": "news",
+      "publisher": "Simply Wall St.",
+      "title": "What Is Nvidia (NVDA) Asking Cloud Clients To Change Under New China Rules?",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-nvda-asking-cloud-clients-232102833.html",
+      "published_at": "2026-11-03T23:21:02Z",
+      "score": 0,
+      "label": "neutral"
+    },
+    {
+      "id": "ce4caa872dd5",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "3 Key Takeaways From Upstart's Latest Report",
+      "url": "https://www.fool.com/investing/2026/11/03/3-key-takeaways-from-upstart-s-latest-report/",
+      "published_at": "2026-11-03T23:20:02Z",
+      "score": 15,
+      "label": "neutral"
+    },
+    {
+      "id": "137efb496cf5",
+      "source": "news",
+      "publisher": "Zacks",
+      "title": "AMD EPS: Intel's Drag Makes No Sense",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/amd-eps-intels-drag-makes-231300384.html",
+      "published_at": "2026-11-03T23:13:00Z",
+      "score": -22,
+      "label": "bearish"
+    },
+    {
+      "id": "d26689fe14cc",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Should You Buy Qualcomm Stock Before Its Nov. 4 Report?",
+      "url": "https://www.fool.com/investing/2026/11/03/should-you-buy-qualcomm-stock-before-its-nov-4-report/",
+      "published_at": "2026-11-03T23:12:02Z",
       "score": 2,
       "label": "neutral"
     },
     {
-      "id": "1bdea1b75f91",
+      "id": "9a3bbad63c18",
       "source": "news",
-      "publisher": "Tokenist",
-      "title": "Claude AI Predicts a Huge Move for Nvidia (NVDA) in Euphoric Scenario - Tokenist",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNcWZocFRkbkZ1Skx1RGw1a3Vsd1lLLUdkWXRxbUdzQzFoMk1wQkVxS0xkSzJqQTJTcWtwQ0tkRXA5MnBTa0FtSE5mZjRhVmQwZXJBLVE0U0ltNWswTi01SFhZUmVTb3F0a0NSXy1UdDdrTGhqTTl2M2hkU0c5ZHhySzBpUUQtWDRySUtmTWdjaVQySE0?oc=5",
-      "published_at": "2026-11-01T20:46:02Z",
-      "score": 59,
+      "publisher": "Moby",
+      "title": "Ferrari N.V. Q3 2026 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-ferrari-nv-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published_at": "2026-11-03T22:51:35Z",
+      "score": -4,
+      "label": "neutral"
+    },
+    {
+      "id": "830e33af311d",
+      "source": "news",
+      "publisher": "Moby",
+      "title": "Regal Rexnord Corporation Q3 2026 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-regal-rexnord-corporation-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published_at": "2026-11-03T22:50:24Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "6da87b90cab2",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Is Palantir Stock a Buy After its Latest Earnings Report?",
+      "url": "https://www.fool.com/investing/2026/11/03/is-palantir-stock-a-buy-after-its-latest-earnings-report/",
+      "published_at": "2026-11-03T22:50:02Z",
+      "score": 8,
+      "label": "neutral"
+    },
+    {
+      "id": "ed317eb64668",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "Bitcoin vs Nvidia: $10,000 Invested 5 Years Ago, Which Is Worth More Now?",
+      "url": "https://247wallst.com/investing/cryptocurrency/2026/11/03/bitcoin-vs-nvidia-10000-invested-5-years-ago-which-is-worth-more-now/",
+      "published_at": "2026-11-03T22:47:30Z",
+      "score": 7,
+      "label": "neutral"
+    },
+    {
+      "id": "deabe9018799",
+      "source": "news",
+      "publisher": "Moby",
+      "title": "Pfizer Inc. Q3 2026 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-pfizer-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published_at": "2026-11-03T22:44:17Z",
+      "score": -5,
+      "label": "neutral"
+    },
+    {
+      "id": "575bfd299ca9",
+      "source": "news",
+      "publisher": "Moby",
+      "title": "The Marzetti Company Q1 2027 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-the-marzetti-company-q1-2027-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published_at": "2026-11-03T22:42:22Z",
+      "score": -3,
+      "label": "neutral"
+    },
+    {
+      "id": "1f2769f19e60",
+      "source": "news",
+      "publisher": "Stocktwits",
+      "title": "AMD Stock Surges After Hours As Q3 Sales Surge 45% On AI Boom, And Expectations For 80% Revenue Jump In 2027",
+      "url": "https://stocktwits.com/news-articles/markets/equity/amd-expectations-for-80-percent-revenue-jump-in-2027/cNGXj5vR9dK",
+      "published_at": "2026-11-03T22:38:31Z",
+      "score": 90,
       "label": "bullish"
+    },
+    {
+      "id": "f2693ed44d32",
+      "source": "news",
+      "publisher": "Moby",
+      "title": "EnPro Industries, Inc. Q3 2026 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-enpro-industries-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published_at": "2026-11-03T22:38:13Z",
+      "score": -8,
+      "label": "neutral"
+    },
+    {
+      "id": "29d3068a714a",
+      "source": "news",
+      "publisher": "Moby",
+      "title": "Great Elm Capital Corp. Q3 2026 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-great-elm-capital-corp-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published_at": "2026-11-03T22:37:10Z",
+      "score": -3,
+      "label": "neutral"
+    },
+    {
+      "id": "05d3d59c6c69",
+      "source": "news",
+      "publisher": "Barrons.com",
+      "title": "AMD Earnings Show Big Tech Can\u2019t Get Enough AI Chips",
+      "url": "https://www.barrons.com/articles/amd-earnings-stock-price-7c8d5465?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-03T22:36:00Z",
+      "score": -88,
+      "label": "bearish"
+    },
+    {
+      "id": "7dd6fcf50fdd",
+      "source": "news",
+      "publisher": "Bloomberg",
+      "title": "AMD Forecast Exceeds Estimates as AI Chip Demand Soars",
+      "url": "https://finance.yahoo.com/video/amd-forecast-exceeds-estimates-ai-223434603.html",
+      "published_at": "2026-11-03T22:34:34Z",
+      "score": -76,
+      "label": "bearish"
+    },
+    {
+      "id": "6c807839134c",
+      "source": "news",
+      "publisher": "Moby",
+      "title": "IPG Photonics Corporation Q3 2026 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-ipg-photonics-corporation-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published_at": "2026-11-03T22:33:16Z",
+      "score": -6,
+      "label": "neutral"
+    },
+    {
+      "id": "8a7ded316231",
+      "source": "news",
+      "publisher": "Moby",
+      "title": "Marathon Petroleum Corporation Q3 2026 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-marathon-petroleum-corporation-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published_at": "2026-11-03T22:29:54Z",
+      "score": -7,
+      "label": "neutral"
+    },
+    {
+      "id": "7e5997737666",
+      "source": "news",
+      "publisher": "Moby",
+      "title": "Lindblad Expeditions Holdings, Inc. Q3 2026 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-lindblad-expeditions-holdings-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published_at": "2026-11-03T22:28:45Z",
+      "score": -7,
+      "label": "neutral"
+    },
+    {
+      "id": "dec9610d337c",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Retiring Before Age 65 in 2027? 2 Key Things You Need to Know",
+      "url": "https://www.fool.com/retirement/2026/11/03/retiring-before-age-65-in-2027-2-key-things-you-need-to-know/",
+      "published_at": "2026-11-03T22:28:02Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "2fb431637ca6",
+      "source": "news",
+      "publisher": "Moby",
+      "title": "Xenia Hotels & Resorts, Inc. Q3 2026 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-xenia-hotels-resorts-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published_at": "2026-11-03T22:25:50Z",
+      "score": -6,
+      "label": "neutral"
+    },
+    {
+      "id": "04f5288301a6",
+      "source": "news",
+      "publisher": "Moby",
+      "title": "Willis Lease Finance Corporation Q3 2026 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-willis-lease-finance-corporation-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published_at": "2026-11-03T22:25:46Z",
+      "score": -6,
+      "label": "neutral"
     }
   ]
 }
