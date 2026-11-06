@@ -2,19 +2,15 @@
   "schema_version": "1.1",
   "symbol": "TSLA",
   "name": "Tesla, Inc.",
-  "generated_at": "2026-11-05T01:59:37Z",
+  "generated_at": "2026-11-06T01:59:17Z",
   "is_demo_data": false,
   "quote": {
-    "price": 398.5,
-    "change_pct": -1.32,
-    "as_of": "2026-11-03",
+    "price": 385.19,
+    "change_pct": -3.34,
+    "as_of": "2026-11-04",
     "currency": "USD"
   },
   "prices": [
-    {
-      "date": "2026-05-14",
-      "close": 443.3
-    },
     {
       "date": "2026-05-15",
       "close": 422.24
@@ -490,17 +486,21 @@
     {
       "date": "2026-11-03",
       "close": 398.5
+    },
+    {
+      "date": "2026-11-04",
+      "close": 385.19
     }
   ],
   "forecast": {
     "horizon_days": 5,
     "move": "large",
-    "prob_large": 0.5627,
-    "typical_move_pct": 3.5239,
-    "confidence": 0.5627,
-    "made_at": "2026-11-05T01:59:37Z",
-    "as_of_date": "2026-11-03",
-    "target_date": "2026-11-10",
+    "prob_large": 0.6344,
+    "typical_move_pct": 3.522,
+    "confidence": 0.6344,
+    "made_at": "2026-11-06T01:59:17Z",
+    "as_of_date": "2026-11-04",
+    "target_date": "2026-11-11",
     "model_name": "move-xgb",
     "model_version": "9"
   },
@@ -520,8 +520,8 @@
       {
         "source": "news",
         "display_name": "News media",
-        "score": -12,
-        "label": "neutral",
+        "score": -21,
+        "label": "bearish",
         "doc_count": 50,
         "note": "50 articles, last 7 days",
         "method": "finbert",
@@ -529,10 +529,10 @@
       }
     ],
     "gap": {
-      "points": 38,
+      "points": 47,
       "most_bullish": "analysts",
       "most_bearish": "news",
-      "summary": "Wall Street analysts lean bullish while News media are neutral."
+      "summary": "Wall Street analysts lean bullish while News media lean bearish."
     }
   },
   "headlines": [
@@ -542,298 +542,298 @@
       "publisher": "Yahoo Finance",
       "title": "Consensus: 20 buy, 22 hold, 2 sell (Nov 2026)",
       "url": null,
-      "published_at": "2026-11-05T01:59:37Z",
+      "published_at": "2026-11-06T01:59:17Z",
       "score": 26,
       "label": "bullish"
     },
     {
-      "id": "ca1d2ffc6689",
+      "id": "f8e8eb79859f",
       "source": "news",
-      "publisher": "Benzinga",
-      "title": "Tesla Registrations Explode Across Europe as Iran War Sends Fuel Prices Soaring \u2014 But BYD and Chinese EV Rivals Are Gaining Fast",
-      "url": "https://finance.yahoo.com/energy/articles/tesla-registrations-explode-across-europe-003014737.html",
-      "published_at": "2026-11-05T00:30:14Z",
-      "score": 71,
-      "label": "bullish"
-    },
-    {
-      "id": "7d06f7210fe7",
-      "source": "news",
-      "publisher": "The Wall Street Journal",
-      "title": "SpaceX, Tesla Stocks Fall After Elon Musk\u2019s Election Bet Flounders",
-      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-04-2026/card/spacex-tesla-stock-sells-off-as-elon-musk-s-election-bet-flounders-Z15vf3dmxn7pMk5Vkkqw?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-04T22:21:39Z",
-      "score": -95,
-      "label": "bearish"
-    },
-    {
-      "id": "bc68dc939619",
-      "source": "news",
-      "publisher": "Barrons.com",
-      "title": "SpaceX, Tesla, Micron, AMD, Lockheed, CVS, DJT, and More Stocks That Explain Today\u2019s Market",
-      "url": "https://www.barrons.com/articles/stock-movers-4be709cb?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-04T21:51:00Z",
-      "score": 0,
+      "publisher": "Stocktwits",
+      "title": "Zero To Sixty: Fort Worth Gets Tesla Robotaxi While UBS Upgrades Rivian And Citigroup Shuffles EV Holdings",
+      "url": "https://stocktwits.com/news-articles/markets/equity/zero-to-sixty-fort-worth-gets-tesla-robotaxi-while-ubs-upgrades-rivian-and-citigroup-shuffles-ev-holdings/cNGl4ABR94q",
+      "published_at": "2026-11-06T00:54:24Z",
+      "score": 8,
       "label": "neutral"
     },
     {
-      "id": "b50a588b0684",
+      "id": "3b0a6ea77175",
       "source": "news",
-      "publisher": "Stocktwits",
-      "title": "Apple Reportedly Tightens The Belt On Employee AI Budgets Amid Cost-Cutting Drive",
-      "url": "https://stocktwits.com/news-articles/markets/equity/apple-reportedly-tightens-the-belt-on-employee-ai-budgets-amid-cost-cutting-drive/cNGL8Z8R9EG",
-      "published_at": "2026-11-04T21:35:25Z",
+      "publisher": "Motley Fool",
+      "title": "1 Unstoppable Cryptocurrency That Could Join Bitcoin in the $1 Trillion Club",
+      "url": "https://www.fool.com/investing/2026/11/05/1-cryptocurrency-with-trillion-dollar-potential/",
+      "published_at": "2026-11-05T22:51:00Z",
+      "score": 20,
+      "label": "bullish"
+    },
+    {
+      "id": "a607d3eeed76",
+      "source": "news",
+      "publisher": "Insider Monkey",
+      "title": "Here\u2019s Why AI Insurer Lemonade (LMND) May Skyrocket in 2027",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-ai-insurer-lemonade-lmnd-223259045.html",
+      "published_at": "2026-11-05T22:32:59Z",
+      "score": -65,
+      "label": "bearish"
+    },
+    {
+      "id": "399182d8e049",
+      "source": "news",
+      "publisher": "Insider Monkey",
+      "title": "A Utah Drilling Project Puts Ormat Technologies (ORA) at the Center of Geothermal\u2019s Next Push",
+      "url": "https://finance.yahoo.com/energy/articles/utah-drilling-project-puts-ormat-223143273.html",
+      "published_at": "2026-11-05T22:31:43Z",
+      "score": 38,
+      "label": "bullish"
+    },
+    {
+      "id": "45f771caecbd",
+      "source": "news",
+      "publisher": "Insider Monkey",
+      "title": "Marc Chaikin Sees Alphabet (GOOGL) as a Conglomerate Hiding Three World-Class Businesses",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/marc-chaikin-sees-alphabet-googl-223123609.html",
+      "published_at": "2026-11-05T22:31:23Z",
+      "score": 6,
+      "label": "neutral"
+    },
+    {
+      "id": "245f1ff98937",
+      "source": "news",
+      "publisher": "Yahoo Finance Video",
+      "title": "Stocks slide as Wall Street's post-election rally fizzles",
+      "url": "https://finance.yahoo.com/video/stocks-slide-as-wall-streets-post-election-rally-fizzles-214250142.html",
+      "published_at": "2026-11-05T21:42:50Z",
+      "score": -92,
+      "label": "bearish"
+    },
+    {
+      "id": "dbf7ae885478",
+      "source": "news",
+      "publisher": "Barrons.com",
+      "title": "Tesla Stock Plunges Along With the Rest of Tech",
+      "url": "https://www.barrons.com/articles/tesla-stock-roadster-ferrari-luce-9adc5a6a?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-05T21:36:00Z",
       "score": -93,
       "label": "bearish"
     },
     {
-      "id": "a6236879aa0a",
+      "id": "3464d36b54a2",
       "source": "news",
-      "publisher": "The Wall Street Journal",
-      "title": "Stocks to Watch Recap: AMD, CoreWeave, McDonald\u2019s, SpaceX",
-      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-04-2026/card/stocks-to-watch-amd-coreweave-mcdonald-s-QrVTa6PsB75JZBmjLYSs?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-04T21:23:14Z",
+      "publisher": "Barrons.com",
+      "title": "SpaceX Stock Is Still Falling. It Trades at Apple\u2019s Valuation.",
+      "url": "https://www.barrons.com/articles/spacex-stock-buy-rating-cathie-wood-e46d26d7?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-05T21:20:00Z",
+      "score": -94,
+      "label": "bearish"
+    },
+    {
+      "id": "d78ecacc7a43",
+      "source": "news",
+      "publisher": "Investing.com",
+      "title": "Best Mag7 dip buys: NVIDIA leads on valuation, Alphabet on RSI",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/best-mag7-dip-buys-nvidia-210653656.html",
+      "published_at": "2026-11-05T21:06:53Z",
+      "score": 74,
+      "label": "bullish"
+    },
+    {
+      "id": "abf4fb9f1a21",
+      "source": "news",
+      "publisher": "Investor's Business Daily",
+      "title": "Tesla, SpaceX Continue Postelection Plunge. Dems Pledge Investigations Into Trump.",
+      "url": "https://www.investors.com/news/elon-musk-tesla-spacex-2026-midterm-elections/?src=A00220&yptr=yahoo",
+      "published_at": "2026-11-05T21:04:31Z",
+      "score": -72,
+      "label": "bearish"
+    },
+    {
+      "id": "7b291019569e",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "SpaceX and Tesla Stock Plunges Have Wiped About $450 Billion in Value Since the Midterms. Is It Time to Buy?",
+      "url": "https://www.fool.com/investing/2026/11/05/spacex-and-tesla-stock-plunges-have-wiped-about-usd450-billion-in-value-since-the-midterms-is-it-time-to-buy/",
+      "published_at": "2026-11-05T21:03:35Z",
+      "score": -46,
+      "label": "bearish"
+    },
+    {
+      "id": "71d8185672ca",
+      "source": "news",
+      "publisher": "Investor's Business Daily",
+      "title": "Tesla Optimus Rival Agility Robotics Begins Trading After SPAC Merger",
+      "url": "https://www.investors.com/news/tesla-agility-robotics-nvidia-amazon-foxconn-optimus-spac-merger/?src=A00220&yptr=yahoo",
+      "published_at": "2026-11-05T21:02:50Z",
       "score": 3,
       "label": "neutral"
     },
     {
-      "id": "d4e90a26e1a0",
+      "id": "d3f8e41a58a5",
       "source": "news",
-      "publisher": "The Wall Street Journal",
-      "title": "The Blue Wave Sets Off a Potential Regime Change in Markets",
-      "url": "https://www.wsj.com/politics/elections/the-winners-and-losers-on-wall-street-from-the-election-earthquake-55ff9cd4?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-04T21:21:00Z",
-      "score": -2,
+      "publisher": "Benzinga",
+      "title": "Gene Munster Says Anduril Is Having Its Own Tesla Model 3 Moment\u2014Company President Says 'We've Hired a Lot' of People From That Era",
+      "url": "https://finance.yahoo.com/technology/articles/gene-munster-says-anduril-having-193007478.html",
+      "published_at": "2026-11-05T19:30:07Z",
+      "score": 41,
+      "label": "bullish"
+    },
+    {
+      "id": "1ac2be3b4167",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Anthropic's IPO plans run up against a battered Wall Street",
+      "url": "https://finance.yahoo.com/technology/article/anthropics-ipo-plans-run-up-against-a-battered-wall-street-192138177.html",
+      "published_at": "2026-11-05T19:21:38Z",
+      "score": 81,
+      "label": "bullish"
+    },
+    {
+      "id": "c5ae88d8d7e6",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "If You Invested $1,000 in Tesla at Its 2010 IPO, Here\u2019s What You\u2019d Have Today",
+      "url": "https://247wallst.com/investing/2026/11/05/if-you-invested-1000-in-tesla-at-its-2010-ipo-heres-what-youd-have-today/",
+      "published_at": "2026-11-05T19:17:42Z",
+      "score": 2,
       "label": "neutral"
     },
     {
-      "id": "a3d4467c62bc",
-      "source": "news",
-      "publisher": "Barrons.com",
-      "title": "Why a Democratic Sweep Is Crushing GE Vernova and More Industrial Stocks",
-      "url": "https://www.barrons.com/articles/ge-vernova-vertiv-eaton-ai-industrials-stocks-bf41f4bc?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-04T21:14:00Z",
-      "score": -17,
-      "label": "neutral"
-    },
-    {
-      "id": "16836a9e9231",
+      "id": "e4403c0a12d5",
       "source": "news",
       "publisher": "TIKR",
-      "title": "Rocket Lab Falls 4%, SpaceX Down 4% as Midterms Make Musk the \u201cBiggest Loser\u201d",
-      "url": "https://www.tikr.com/blog/rocket-lab-falls-4-spacex-down-4-as-midterms-make-musk-the-biggest-loser?ref=yahoofinance&tlnk=yf-261104-q45r2fr7",
-      "published_at": "2026-11-04T21:11:13Z",
+      "title": "Tesla Sinks 12%, SpaceX Down 9% as Midterm Sweep Puts Merger on \u201cA Much Tougher Regulatory Roadmap\u201d",
+      "url": "https://www.tikr.com/blog/tesla-sinks-12-spacex-down-9-as-midterm-sweep-puts-merger-on-a-much-tougher-regulatory-roadmap?ref=yahoofinance&tlnk=yf-261105-3qjm6j48",
+      "published_at": "2026-11-05T18:43:02Z",
       "score": -95,
       "label": "bearish"
     },
     {
-      "id": "c384a47869fe",
+      "id": "ec9bd4acda10",
       "source": "news",
-      "publisher": "Motley Fool",
-      "title": "The Nasdaq-100 Is Outperforming Nvidia, Microsoft, Amazon, Meta Platforms, Alphabet, and Tesla This Year. Here's My Favorite Low-Cost ETF to Buy the Dip.",
-      "url": "https://www.fool.com/investing/2026/11/04/the-nasdaq-100-is-outperforming-nvidia-microsoft-a/",
-      "published_at": "2026-11-04T21:05:00Z",
-      "score": 14,
-      "label": "neutral"
-    },
-    {
-      "id": "448c72e6a2e4",
-      "source": "news",
-      "publisher": "Investor's Business Daily",
-      "title": "Tesla, SpaceX Dive As Elon Musk's Big GOP Election Bet Fails",
-      "url": "https://www.investors.com/news/tesla-spacex-elon-musk-gop-election-bet-texas/?src=A00220&yptr=yahoo",
-      "published_at": "2026-11-04T21:03:01Z",
-      "score": 12,
-      "label": "neutral"
-    },
-    {
-      "id": "028e16bced91",
-      "source": "news",
-      "publisher": "Investor's Business Daily",
-      "title": "Analysts Say These Industries Will See Midterm Election Impact",
-      "url": "https://www.investors.com/news/spacex-stock-analysts-weigh-in-on-how-midterm-election-results-will-hit-stocks/?src=A00220&yptr=yahoo",
-      "published_at": "2026-11-04T20:44:27Z",
-      "score": -75,
-      "label": "bearish"
-    },
-    {
-      "id": "d85d04978e57",
-      "source": "news",
-      "publisher": "USA TODAY",
-      "title": "Tesla made the Roadster fly. Expert says its $25K EV mattered more",
-      "url": "https://www.usatoday.com/story/money/cars/auto-insider/2026/11/04/tesla-made-roadster-fly-missing-affordable-ev/92614666007/",
-      "published_at": "2026-11-04T20:39:31Z",
-      "score": 27,
+      "publisher": "Simply Wall St.",
+      "title": "SpaceX (SPCX) Stock Gets Fair Value Boost As Analysts Weigh AI Growth And Risks",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-spcx-stock-gets-fair-181345897.html",
+      "published_at": "2026-11-05T18:13:45Z",
+      "score": 93,
       "label": "bullish"
     },
     {
-      "id": "4f827acd9c68",
+      "id": "7a903e246952",
+      "source": "news",
+      "publisher": "Barchart",
+      "title": "Dear Tesla Stock Fans, Mark Your Calendars for November 29",
+      "url": "https://www.barchart.com/story/news/8679584/dear-tesla-stock-fans-mark-your-calendars-for-november-29",
+      "published_at": "2026-11-05T18:01:11Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "45f85fca4c45",
+      "source": "news",
+      "publisher": "Stocktwits",
+      "title": "Citi Loads Up On Tesla, Lucid And Rivian In Q3 While Slashing XPeng, General Motors",
+      "url": "https://stocktwits.com/news-articles/markets/equity/citi-loads-up-on-tesla-lucid-and-rivian-in-q3-while-slashing-x-peng-general-motors/cNG1oswR94W",
+      "published_at": "2026-11-05T17:14:38Z",
+      "score": -25,
+      "label": "bearish"
+    },
+    {
+      "id": "72256ca91a1e",
       "source": "news",
       "publisher": "Fortune",
-      "title": "\u2018He basically gets to steer a political party\u2019: Elon Musk is $474 million poorer post-election, but it may not have deterred his influence on 2028",
-      "url": "https://finance.yahoo.com/economy/policy/articles/basically-gets-steer-political-party-203123864.html",
-      "published_at": "2026-11-04T20:31:23Z",
-      "score": -2,
-      "label": "neutral"
-    },
-    {
-      "id": "7b989b831fb8",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Why SpaceX Stock Is Down Today",
-      "url": "https://www.fool.com/investing/2026/11/04/why-spacex-stock-is-down-today/",
-      "published_at": "2026-11-04T20:15:01Z",
-      "score": -88,
+      "title": "Elon Musk spent at least $225 million in Texas. The governor-elect who sued for Abbott emails and vowed a data center freeze won anyway",
+      "url": "https://finance.yahoo.com/economy/policy/articles/elon-musk-spent-least-225-164537696.html",
+      "published_at": "2026-11-05T16:45:37Z",
+      "score": -44,
       "label": "bearish"
     },
     {
-      "id": "6803a1f9bccc",
+      "id": "7d0f288fd9fd",
       "source": "news",
-      "publisher": "TIKR",
-      "title": "Musk Says Data Centers in Space \u201cLooking Pretty Appealing Right Now\u201d as SpaceX Sinks on Blue Wave",
-      "url": "https://www.tikr.com/blog/musk-says-data-centers-in-space-looking-pretty-appealing-right-now-as-spacex-sinks-on-blue-wave?ref=yahoofinance&tlnk=yf-261104-6mp9633w",
-      "published_at": "2026-11-04T20:14:06Z",
-      "score": 85,
-      "label": "bullish"
+      "publisher": "The Wall Street Journal",
+      "title": "\ud83d\udcc9SpaceX, Tesla Take a Dive",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026/card/-spacex-tesla-stocks-take-double-digit-dive-Hx5cmU3C51DDQ83xVo4x?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-05T16:07:41Z",
+      "score": 1,
+      "label": "neutral"
     },
     {
-      "id": "bfd6b6c3893a",
+      "id": "b46d9b3618f0",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "Tesla\u2019s Plunge Just Hit Millions of Index Fund Investors. Here\u2019s How Much Your ETF Lost",
+      "url": "https://247wallst.com/investing/etf/2026/11/05/teslas-plunge-just-hit-millions-of-index-fund-investors-heres-how-much-your-etf-lost/",
+      "published_at": "2026-11-05T16:03:49Z",
+      "score": 0,
+      "label": "neutral"
+    },
+    {
+      "id": "7b008a47996a",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "Prediction: Tesla\u2019s Next Act Could Be Its Most Important Yet",
+      "url": "https://247wallst.com/investing/2026/11/05/prediction-teslas-next-act-could-be-its-most-important-yet/",
+      "published_at": "2026-11-05T16:03:45Z",
+      "score": 13,
+      "label": "neutral"
+    },
+    {
+      "id": "7fc507f20cc9",
+      "source": "news",
+      "publisher": "The Wall Street Journal",
+      "title": "Mag 7 Stocks Lose $1 Trillion in Market Value",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026/card/mag-7-stocks-lose-1-trillion-in-tech-bloodbath-TRxq1E844eYRKAn2LTju?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-05T15:58:23Z",
+      "score": -95,
+      "label": "bearish"
+    },
+    {
+      "id": "de5a008057d3",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "SpaceX, Tesla stocks tumble as Democratic sweep raises questions on merger prospects, AI build-out",
+      "url": "https://finance.yahoo.com/markets/article/spacex-tesla-stocks-tumble-as-democratic-sweep-raises-questions-on-merger-prospects-ai-buildout-153753814.html",
+      "published_at": "2026-11-05T15:30:32Z",
+      "score": -95,
+      "label": "bearish"
+    },
+    {
+      "id": "12e3e378d7b5",
+      "source": "news",
+      "publisher": "GuruFocus.com",
+      "title": "Elon Musk faces a new $28.5 trillion problem after Texas upset",
+      "url": "https://finance.yahoo.com/technology/ai/articles/elon-musk-faces-28-5-150747509.html",
+      "published_at": "2026-11-05T15:07:47Z",
+      "score": -85,
+      "label": "bearish"
+    },
+    {
+      "id": "132b6962622b",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "SpaceX and Tesla stocks extend their slide as chip stocks drop: AlphaCheck",
+      "url": "https://finance.yahoo.com/markets/article/spacex-tesla-shares-extend-declines-semiconductor-stocks-drop-alphacheck-150427180.html",
+      "published_at": "2026-11-05T15:04:27Z",
+      "score": -91,
+      "label": "bearish"
+    },
+    {
+      "id": "0242c63f4031",
+      "source": "news",
+      "publisher": "Zacks",
+      "title": "Democrats Win: Time to Shift from AI to Consumer & Healthcare ETFs?",
+      "url": "https://finance.yahoo.com/healthcare/articles/democrats-win-time-shift-ai-150000212.html",
+      "published_at": "2026-11-05T15:00:00Z",
+      "score": 8,
+      "label": "neutral"
+    },
+    {
+      "id": "7fcac80aa49c",
       "source": "news",
       "publisher": "Barrons.com",
-      "title": "The Mag 7 Just Got a $600B Blue-Wave Surprise",
-      "url": "https://www.barrons.com/articles/mag-7-stocks-elections-market-cap-b751be65?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-04T19:55:00Z",
-      "score": 45,
-      "label": "bullish"
-    },
-    {
-      "id": "f5779caabe88",
-      "source": "news",
-      "publisher": "GuruFocus.com",
-      "title": "Elon Musk's $474 Million Election Bet Backfires",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/elon-musks-474-million-election-195142581.html",
-      "published_at": "2026-11-04T19:51:42Z",
-      "score": 34,
-      "label": "bullish"
-    },
-    {
-      "id": "42a5ffa92a86",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Tesla Wants to Build 20,000 Optimus Robots a Week. Here's the Supplier That Gets Paid for Every Single One -- and It's Not Nvidia.",
-      "url": "https://www.fool.com/investing/2026/11/04/tesla-wants-to-build-20000-optimus-robots-a-week-h/",
-      "published_at": "2026-11-04T19:40:00Z",
-      "score": 2,
-      "label": "neutral"
-    },
-    {
-      "id": "75c815554eab",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "If You Invested $1,000 in Uber at Its IPO, Here\u2019s What You\u2019d Have Now",
-      "url": "https://247wallst.com/investing/2026/11/04/if-you-invested-1000-in-uber-at-its-ipo-heres-what-youd-have-now/",
-      "published_at": "2026-11-04T19:17:40Z",
-      "score": 2,
-      "label": "neutral"
-    },
-    {
-      "id": "9c7dbe25c356",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "Lucid Jumps 12%, Rivian Climbs 6% as Post-Election Rally Lifts EV Stocks; Tesla Slides 3%",
-      "url": "https://247wallst.com/investing/2026/11/04/lucid-jumps-12-rivian-climbs-6-as-post-election-rally-lifts-ev-stocks-tesla-slides-3/",
-      "published_at": "2026-11-04T19:04:17Z",
-      "score": 87,
-      "label": "bullish"
-    },
-    {
-      "id": "ce7038c3576d",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Was Elon Musk the Midterms\u2019 Biggest Loser? What It Means for Tesla and SpaceX Investors",
-      "url": "https://www.fool.com/investing/2026/11/04/was-elon-musk-the-midterms-biggest-loser-what-it-means-for-tesla-and-spacex-investors/",
-      "published_at": "2026-11-04T18:54:19Z",
-      "score": -2,
-      "label": "neutral"
-    },
-    {
-      "id": "52bfa31b56e1",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Prediction: Nov. 6 Will Be a Huge Day for the Stock Market",
-      "url": "https://www.fool.com/investing/2026/11/04/prediction-nov-6-will-be-a-huge-day-for-the-stock/",
-      "published_at": "2026-11-04T18:35:00Z",
-      "score": 18,
-      "label": "neutral"
-    },
-    {
-      "id": "8645bed791d4",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "Nvidia And Tesla Left Behind, As Rest Of Mag7 Rally On Dem\u2019s Big Night",
-      "url": "https://247wallst.com/investing/2026/11/04/nvidia-and-tesla-left-behind-as-rest-of-mag7-rally-on-dems-big-night/",
-      "published_at": "2026-11-04T18:19:04Z",
-      "score": -29,
-      "label": "bearish"
-    },
-    {
-      "id": "cf2e37b1145d",
-      "source": "news",
-      "publisher": "First for Money",
-      "title": "Elon Musk\u2019s Tesla and SpaceX Stocks Fall After Democrats Sweep Elections, Senator Warns of \u2018Subpoenas\u2019",
-      "url": "https://firstformoney.com/elon-musks-tesla-and-spacex-stocks-fall-after-democrats-sweep-elections-senator-warns-of-subpoenas/",
-      "published_at": "2026-11-04T17:59:45Z",
-      "score": -93,
-      "label": "bearish"
-    },
-    {
-      "id": "4b1ec9946a29",
-      "source": "news",
-      "publisher": "Trefis",
-      "title": "Why Did Enphase Stock Jump?",
-      "url": "https://www.trefis.com/stock/enph/articles/622645/why-did-enphase-stock-jump/2026-11-04",
-      "published_at": "2026-11-04T17:53:06Z",
-      "score": -5,
-      "label": "neutral"
-    },
-    {
-      "id": "962e3263a792",
-      "source": "news",
-      "publisher": "TIKR",
-      "title": "Morgan Stanley Calls Tesla the \u201cVery Obvious Player\u201d as Data Centers Outbuy the Grid on Batteries",
-      "url": "https://www.tikr.com/blog/morgan-stanley-calls-tesla-the-very-obvious-player-as-data-centers-outbuy-the-grid-on-batteries?ref=yahoofinance&tlnk=yf-261104-w9cfc72c",
-      "published_at": "2026-11-04T17:51:13Z",
-      "score": 39,
-      "label": "bullish"
-    },
-    {
-      "id": "8950fc57028c",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "\u2018We\u2019re Assuming $3.50 Per Gallon for Gas\u2019: Wes Moss Prices 20 Years of Driving as Pumps Hit $4.27",
-      "url": "https://247wallst.com/personal-finance/2026/11/04/were-assuming-3-50-per-gallon-for-gas-wes-moss-prices-20-years-of-driving-as-pumps-hit-4-27/",
-      "published_at": "2026-11-04T17:48:03Z",
-      "score": 16,
-      "label": "neutral"
-    },
-    {
-      "id": "d1a7f5be30f5",
-      "source": "news",
-      "publisher": "TIKR",
-      "title": "Blue Wave Puts Tesla\u2019s SpaceX Merger Premium at Risk as Democrats Eye Musk\u2019s Companies",
-      "url": "https://www.tikr.com/blog/blue-wave-puts-teslas-spacex-merger-premium-at-risk-as-democrats-eye-musks-companies?ref=yahoofinance&tlnk=yf-261104-3xj3phr7",
-      "published_at": "2026-11-04T17:47:20Z",
-      "score": -81,
-      "label": "bearish"
-    },
-    {
-      "id": "da87dd8ae2e3",
-      "source": "news",
-      "publisher": "GuruFocus.com",
-      "title": "Elon Musk's Political Gamble Just Backfired on Tesla",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/elon-musks-political-gamble-just-173418961.html",
-      "published_at": "2026-11-04T17:34:18Z",
-      "score": -35,
+      "title": "These AI Names Sat Out the Midterm Rally. Now, the Losses Are Intensifying.",
+      "url": "https://www.barrons.com/livecoverage/stock-market-news-today-110526/card/these-ai-names-sat-out-the-midterm-rally-now-the-losses-are-intensifying--BcFY6Lm1GbpHCLAHiShr?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-05T13:41:56Z",
+      "score": -95,
       "label": "bearish"
     }
   ]

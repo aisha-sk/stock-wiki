@@ -2,19 +2,15 @@
   "schema_version": "1.1",
   "symbol": "AAPL",
   "name": "Apple Inc.",
-  "generated_at": "2026-11-05T01:59:37Z",
+  "generated_at": "2026-11-06T01:59:17Z",
   "is_demo_data": false,
   "quote": {
-    "price": 331.9,
-    "change_pct": -1.9,
-    "as_of": "2026-11-03",
+    "price": 349.51,
+    "change_pct": 5.31,
+    "as_of": "2026-11-04",
     "currency": "USD"
   },
   "prices": [
-    {
-      "date": "2026-05-14",
-      "close": 297.95
-    },
     {
       "date": "2026-05-15",
       "close": 299.97
@@ -490,17 +486,21 @@
     {
       "date": "2026-11-03",
       "close": 331.9
+    },
+    {
+      "date": "2026-11-04",
+      "close": 349.51
     }
   ],
   "forecast": {
     "horizon_days": 5,
-    "move": "large",
-    "prob_large": 0.5062,
-    "typical_move_pct": 3.5239,
-    "confidence": 0.5062,
-    "made_at": "2026-11-05T01:59:37Z",
-    "as_of_date": "2026-11-03",
-    "target_date": "2026-11-10",
+    "move": "quiet",
+    "prob_large": 0.4309,
+    "typical_move_pct": 3.522,
+    "confidence": 0.5690999999999999,
+    "made_at": "2026-11-06T01:59:17Z",
+    "as_of_date": "2026-11-04",
+    "target_date": "2026-11-11",
     "model_name": "move-xgb",
     "model_version": "9"
   },
@@ -520,8 +520,8 @@
       {
         "source": "news",
         "display_name": "News media",
-        "score": -2,
-        "label": "neutral",
+        "score": -27,
+        "label": "bearish",
         "doc_count": 50,
         "note": "50 articles, last 7 days",
         "method": "finbert",
@@ -529,10 +529,10 @@
       }
     ],
     "gap": {
-      "points": 26,
+      "points": 51,
       "most_bullish": "analysts",
       "most_bearish": "news",
-      "summary": "Wall Street analysts lean bullish while News media are neutral."
+      "summary": "Wall Street analysts lean bullish while News media lean bearish."
     }
   },
   "headlines": [
@@ -542,299 +542,299 @@
       "publisher": "Yahoo Finance",
       "title": "Consensus: 24 buy, 13 hold, 6 sell (Nov 2026)",
       "url": null,
-      "published_at": "2026-11-05T01:59:37Z",
+      "published_at": "2026-11-06T01:59:17Z",
       "score": 24,
       "label": "bullish"
     },
     {
-      "id": "2ed036c00eb3",
+      "id": "893ec13fe20b",
       "source": "news",
       "publisher": "Investor's Business Daily",
-      "title": "Dow Jones Futures Rise, But Techs Tumble; Apple, Microsoft, Amazon Flash Buy Signals In Postelection Rally",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-elections-oil-apple-microsoft-amazon-buy-signals-coreweave-spacex-skid/?src=A00220&yptr=yahoo",
-      "published_at": "2026-11-05T01:51:20Z",
-      "score": -82,
+      "title": "Dow Jones Futures Fall, Techs Bounce After Nasdaq Dives 5.5%; Nvidia, Sandisk, CoreWeave, SpaceX Plunge",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nasdaq-dives-55-nvidia-sandisk-coreweave-spacex-plunge-jobs/?src=A00220&yptr=yahoo",
+      "published_at": "2026-11-06T01:55:15Z",
+      "score": -94,
       "label": "bearish"
     },
     {
-      "id": "995fb13949bf",
-      "source": "news",
-      "publisher": "The Wall Street Journal",
-      "title": "The Dow\u2019s Big Winners Today",
-      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-04-2026/card/the-dow-s-big-winners-today-n8DIkW6wC8p63dGJAmwp?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-04T23:45:02Z",
-      "score": 51,
-      "label": "bullish"
-    },
-    {
-      "id": "bf3c396d761b",
+      "id": "5e7d0408740e",
       "source": "news",
       "publisher": "Stocktwits",
-      "title": "S&P 500, Nasdaq Surge Ahead After Democratic Sweep, Dow Jumps To One-Year High On Lower Oil \u2014 AAPL, SNAP, INTC, CRWV, QCOM In Focus",
-      "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-nasdaq-dow-surge-ahead-after-democratic-sweep/cNGLApkR9ET",
-      "published_at": "2026-11-04T23:32:33Z",
-      "score": 78,
-      "label": "bullish"
-    },
-    {
-      "id": "352dd51ad8b6",
-      "source": "news",
-      "publisher": "Benzinga",
-      "title": "Apple CEO Says Memory Prices Are \u2018Unprecedented\u2019 and Could Keep Climbing \u2014 iPhone, Mac and iPad Costs Face Fresh Pressure After Recent Price Hikes",
-      "url": "https://finance.yahoo.com/technology/articles/apple-ceo-says-memory-prices-233012502.html",
-      "published_at": "2026-11-04T23:30:12Z",
-      "score": -89,
+      "title": "S&P 500, Nasdaq, Dow Futures Dip As Investors Step Back From AI And Tech With Nasdaq In Correction Territory \u2014  NVDA, AAPL, UBER, SOXX In Focus",
+      "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-nasdaq-dow-futures-dip-as-investors-step-back-from-ai-and-tech-with-nasdaq-in-correction-territory-nvda-aapl-uber-soxx-in-focus/cNGlIylR94A",
+      "published_at": "2026-11-06T01:00:30Z",
+      "score": -91,
       "label": "bearish"
     },
     {
-      "id": "88af24a8c8c4",
+      "id": "5f33c130327e",
       "source": "news",
-      "publisher": "TheStreet",
-      "title": "Why an equal-weight S&P 500 fund can reduce Big Tech risk",
-      "url": "https://www.thestreet.com/investing/why-an-equal-weight-sp-500-fund-can-reduce-big-tech-risk",
-      "published_at": "2026-11-04T22:54:08Z",
-      "score": 5,
-      "label": "neutral"
-    },
-    {
-      "id": "a4551cd89586",
-      "source": "news",
-      "publisher": "Barrons.com",
-      "title": "Qualcomm\u2019s Stock Falls After It Warns Chip Margins Are Getting Squeezed",
-      "url": "https://www.barrons.com/articles/qualcomm-earnings-stock-price-e0d72311?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-04T22:27:00Z",
-      "score": -95,
-      "label": "bearish"
-    },
-    {
-      "id": "b50a588b0684",
-      "source": "news",
-      "publisher": "Stocktwits",
-      "title": "Apple Reportedly Tightens The Belt On Employee AI Budgets Amid Cost-Cutting Drive",
-      "url": "https://stocktwits.com/news-articles/markets/equity/apple-reportedly-tightens-the-belt-on-employee-ai-budgets-amid-cost-cutting-drive/cNGL8Z8R9EG",
-      "published_at": "2026-11-04T21:35:25Z",
-      "score": -93,
-      "label": "bearish"
-    },
-    {
-      "id": "b644a213cee0",
-      "source": "news",
-      "publisher": "Investing.com",
-      "title": "Arm stock slips after hours as lack of blowout guidance offsets quarterly results",
-      "url": "https://finance.yahoo.com/technology/ai/articles/arm-stock-slips-hours-lack-213203690.html",
-      "published_at": "2026-11-04T21:32:03Z",
-      "score": -96,
-      "label": "bearish"
-    },
-    {
-      "id": "2a00f5022e3b",
-      "source": "news",
-      "publisher": "Benzinga",
-      "title": "Apple\u2019s Siri AI Could Become a Paid Upgrade \u2014 CEO John Ternus Reveals Plans to Charge for More Server-Side Apple Intelligence Usage",
-      "url": "https://finance.yahoo.com/technology/ai/articles/apple-siri-ai-could-become-213018500.html",
-      "published_at": "2026-11-04T21:30:18Z",
-      "score": 39,
+      "publisher": "Zacks",
+      "title": "Apple, Alphabet, and Meta: 3 Big Takeaways from Recent Earnings",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/apple-alphabet-meta-3-big-230000891.html",
+      "published_at": "2026-11-05T23:00:00Z",
+      "score": 23,
       "label": "bullish"
     },
     {
-      "id": "3007021e63b0",
+      "id": "d377d64e9691",
       "source": "news",
-      "publisher": "Kiplinger",
-      "title": "Dow Rallies 1,590 Points on Midterm Relief: Stock Market Today",
-      "url": "https://www.kiplinger.com/investing/stocks/dow-rallies-1-570-points-on-midterm-relief-stock-market-today",
-      "published_at": "2026-11-04T21:12:48Z",
-      "score": 13,
-      "label": "neutral"
-    },
-    {
-      "id": "ee1bea902c40",
-      "source": "news",
-      "publisher": "Barrons.com",
-      "title": "The Apple Supply Chain Faces Its Biggest Test Yet",
-      "url": "https://www.barrons.com/articles/apple-supply-chain-chip-shortage-e08436a0?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-04T21:10:00Z",
-      "score": 9,
-      "label": "neutral"
-    },
-    {
-      "id": "c384a47869fe",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "The Nasdaq-100 Is Outperforming Nvidia, Microsoft, Amazon, Meta Platforms, Alphabet, and Tesla This Year. Here's My Favorite Low-Cost ETF to Buy the Dip.",
-      "url": "https://www.fool.com/investing/2026/11/04/the-nasdaq-100-is-outperforming-nvidia-microsoft-a/",
-      "published_at": "2026-11-04T21:05:00Z",
-      "score": 14,
-      "label": "neutral"
-    },
-    {
-      "id": "61b820d632cd",
-      "source": "news",
-      "publisher": "Barrons.com",
-      "title": "Dow Heads for Best Post-Midterm Peformance in Decades",
-      "url": "https://www.barrons.com/livecoverage/stock-market-news-today-110426/card/dow-skyrockets-1-500-points-in-best-day-since-trump-s-tariff-pause-VMSWQxf1stpK33dtSPtV?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-04T20:34:46Z",
-      "score": 88,
+      "publisher": "Investor's Business Daily",
+      "title": "Berkshire After Buffett: Steady Hands, Big Bets In The Greg Abel Era",
+      "url": "https://www.investors.com/news/berkshire-hathaway-after-warren-buffett-greg-abel-capital-allocation/?src=A00220&yptr=yahoo",
+      "published_at": "2026-11-05T22:53:24Z",
+      "score": 22,
       "label": "bullish"
     },
     {
-      "id": "f46baab52237",
-      "source": "news",
-      "publisher": "Investing.com",
-      "title": "Apple reportedly lowers daily AI spending limits for engineers",
-      "url": "https://finance.yahoo.com/technology/ai/articles/apple-reportedly-lowers-daily-ai-203245096.html",
-      "published_at": "2026-11-04T20:32:45Z",
-      "score": -11,
-      "label": "neutral"
-    },
-    {
-      "id": "177238451dc3",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "Arm Stock Has Crashed 37%. Is It a Better Buy Than Qualcomm?",
-      "url": "https://247wallst.com/investing/2026/11/04/arm-stock-has-crashed-37-is-it-a-better-buy-than-qualcomm/",
-      "published_at": "2026-11-04T20:17:42Z",
-      "score": -32,
-      "label": "bearish"
-    },
-    {
-      "id": "51cca2345d31",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "Your Adviser Retired and Handed the Accounts Back at 71? These 3 ETFs Are a Portfolio You Can Run Yourself",
-      "url": "https://247wallst.com/investing/etf/2026/11/04/your-adviser-retired-and-handed-the-accounts-back-at-71-these-3-etfs-are-a-portfolio-you-can-run-yourself/",
-      "published_at": "2026-11-04T20:03:21Z",
-      "score": -1,
-      "label": "neutral"
-    },
-    {
-      "id": "bfd6b6c3893a",
-      "source": "news",
-      "publisher": "Barrons.com",
-      "title": "The Mag 7 Just Got a $600B Blue-Wave Surprise",
-      "url": "https://www.barrons.com/articles/mag-7-stocks-elections-market-cap-b751be65?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-04T19:55:00Z",
-      "score": 45,
-      "label": "bullish"
-    },
-    {
-      "id": "b98838172a4e",
-      "source": "news",
-      "publisher": "GuruFocus.com",
-      "title": "Apple Makes Big Push to Turn Siri Into an AI Platform",
-      "url": "https://finance.yahoo.com/technology/ai/articles/apple-makes-big-push-turn-195002429.html",
-      "published_at": "2026-11-04T19:50:02Z",
-      "score": 38,
-      "label": "bullish"
-    },
-    {
-      "id": "629660de87fa",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "How Much It Takes to Collect $3,000 a Month From Covered Call Funds GPIX, RYLD, and BST",
-      "url": "https://247wallst.com/personal-finance/2026/11/04/how-much-it-takes-to-collect-3000-a-month-from-covered-call-funds-gpix-ryld-and-bst/",
-      "published_at": "2026-11-04T19:18:51Z",
-      "score": 0,
-      "label": "neutral"
-    },
-    {
-      "id": "f12a3aa8ba67",
+      "id": "f94c7f059758",
       "source": "news",
       "publisher": "TIKR",
-      "title": "Micron Sinks 6% as Democratic Sweep Stokes Fears of an AI \u201cSlowdown in Build\u201d",
-      "url": "https://www.tikr.com/blog/micron-sinks-6-as-democratic-sweep-stokes-fears-of-an-ai-slowdown-in-build?ref=yahoofinance&tlnk=yf-261104-99f4g74r",
-      "published_at": "2026-11-04T19:17:44Z",
+      "title": "Baird Cut Its Qualcomm Target to $320. It Still Sees 104% Upside",
+      "url": "https://www.tikr.com/blog/baird-cut-its-qualcomm-target-to-320-it-still-sees-104-upside?ref=yahoofinance&tlnk=yf-261105-m8g363m2",
+      "published_at": "2026-11-05T22:16:15Z",
       "score": -85,
       "label": "bearish"
     },
     {
-      "id": "65ac24335356",
+      "id": "047736b2d4e4",
       "source": "news",
-      "publisher": "Stocktwits",
-      "title": "Big Tech Stocks And Mag7 ETF Jumps After Democratic Sweep Raises Bets For Easing AI Capex",
-      "url": "https://stocktwits.com/news-articles/markets/equity/big-tech-stocks-and-mag7-etf-jumps-after-democratic-sweep-raises-bets-for-easing-ai-capex/cNGLlXXR93y",
-      "published_at": "2026-11-04T18:57:30Z",
-      "score": -27,
-      "label": "bearish"
+      "publisher": "Simply Wall St.",
+      "title": "Apple (AAPL) Stock Could Be 30% Overvalued Despite Record iPhone Sales",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/apple-aapl-stock-could-30-221028392.html",
+      "published_at": "2026-11-05T22:10:28Z",
+      "score": 69,
+      "label": "bullish"
     },
     {
-      "id": "288bbf8044ba",
-      "source": "news",
-      "publisher": "Yahoo Finance Video",
-      "title": "Market reaction to changes in Congress, AMD earnings, and where to find value in healthcare stocks",
-      "url": "https://finance.yahoo.com/video/market-reaction-to-changes-in-congress-amd-earnings-and-where-to-find-value-in-healthcare-stocks-185012443.html",
-      "published_at": "2026-11-04T18:50:12Z",
-      "score": 1,
-      "label": "neutral"
-    },
-    {
-      "id": "5089a3881485",
+      "id": "1169a15ea615",
       "source": "news",
       "publisher": "Barrons.com",
-      "title": "The Rise of AI Shoppers\u2014and the Asterisk Attached",
-      "url": "https://www.barrons.com/articles/muse-ai-shoppers-walmart-target-1451fb80?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-04T18:50:00Z",
-      "score": 6,
-      "label": "neutral"
+      "title": "Gap and 5 Other Dividend Stocks Safe From the AI Trade",
+      "url": "https://www.barrons.com/articles/apple-dividend-stocks-ai-b7c812d0?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-05T21:37:00Z",
+      "score": -26,
+      "label": "bearish"
     },
     {
-      "id": "5ca2a5562728",
+      "id": "9c647f77aecb",
       "source": "news",
-      "publisher": "Barchart",
-      "title": "Apple Stock Is a Good Place to Hide Amid AI Capex Angst, but Don\u2019t Expect Big Gains",
-      "url": "https://www.barchart.com/story/news/8652939/apple-stock-is-a-good-place-to-hide-amid-ai-capex-angst-but-dont-expect-big-gains",
-      "published_at": "2026-11-04T18:40:18Z",
-      "score": -16,
-      "label": "neutral"
+      "publisher": "Investor's Business Daily",
+      "title": "Micron Stock Plunges As Memory-Chip Shortages Cause Ripple Effects",
+      "url": "https://www.investors.com/news/technology/micron-stock-plunges-memory-chip-shortages/?src=A00220&yptr=yahoo",
+      "published_at": "2026-11-05T21:35:03Z",
+      "score": -96,
+      "label": "bearish"
     },
     {
-      "id": "52bfa31b56e1",
+      "id": "3853c26eb22a",
       "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Prediction: Nov. 6 Will Be a Huge Day for the Stock Market",
-      "url": "https://www.fool.com/investing/2026/11/04/prediction-nov-6-will-be-a-huge-day-for-the-stock/",
-      "published_at": "2026-11-04T18:35:00Z",
-      "score": 18,
-      "label": "neutral"
+      "publisher": "Unchained",
+      "title": "dYdX Team\u2019s Arcus Opens Stock-Token Collateral to All Perps Traders, With a $20,000 Cap",
+      "url": "https://unchainedcrypto.com/dydx-teams-arcus-opens-stock-token-collateral-to-all-perps-traders-with-a-20000-cap/",
+      "published_at": "2026-11-05T21:25:56Z",
+      "score": 42,
+      "label": "bullish"
     },
     {
-      "id": "165fd215ccd2",
+      "id": "3464d36b54a2",
       "source": "news",
       "publisher": "Barrons.com",
-      "title": "Micron Stock Faces a Memory Price Conundrum in the Wake of Democrat Success",
-      "url": "https://www.barrons.com/articles/micron-stock-price-memory-warning-democrats-6ab3cf2f?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-04T18:26:00Z",
-      "score": -93,
+      "title": "SpaceX Stock Is Still Falling. It Trades at Apple\u2019s Valuation.",
+      "url": "https://www.barrons.com/articles/spacex-stock-buy-rating-cathie-wood-e46d26d7?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-05T21:20:00Z",
+      "score": -94,
       "label": "bearish"
     },
     {
-      "id": "8645bed791d4",
+      "id": "aa093aadde24",
       "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "Nvidia And Tesla Left Behind, As Rest Of Mag7 Rally On Dem\u2019s Big Night",
-      "url": "https://247wallst.com/investing/2026/11/04/nvidia-and-tesla-left-behind-as-rest-of-mag7-rally-on-dems-big-night/",
-      "published_at": "2026-11-04T18:19:04Z",
-      "score": -29,
+      "publisher": "Simply Wall St.",
+      "title": "Why Is Apple (AAPL) Capping Internal AI Spending Under John Ternus?",
+      "url": "https://finance.yahoo.com/technology/ai/articles/why-apple-aapl-capping-internal-211247074.html",
+      "published_at": "2026-11-05T21:12:47Z",
+      "score": -51,
       "label": "bearish"
     },
     {
-      "id": "677d107c9cc1",
+      "id": "d78ecacc7a43",
       "source": "news",
-      "publisher": "TIKR",
-      "title": "Cramer\u2019s Blue Wave Call: \u201cApple Winner\u201d as Slower Data Center Builds Ease the Memory Squeeze",
-      "url": "https://www.tikr.com/blog/cramers-blue-wave-call-apple-winner-as-slower-data-center-builds-ease-the-memory-squeeze?ref=yahoofinance&tlnk=yf-261104-xx6r3h9c",
-      "published_at": "2026-11-04T17:57:46Z",
+      "publisher": "Investing.com",
+      "title": "Best Mag7 dip buys: NVIDIA leads on valuation, Alphabet on RSI",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/best-mag7-dip-buys-nvidia-210653656.html",
+      "published_at": "2026-11-05T21:06:53Z",
       "score": 74,
       "label": "bullish"
     },
     {
-      "id": "56c80536e50d",
+      "id": "339036295985",
+      "source": "news",
+      "publisher": "Stocktwits",
+      "title": "Apple Reportedly Set To Raise $7.5B From Bond Offering Amid Market Selloff",
+      "url": "https://stocktwits.com/news-articles/markets/equity/apple-reportedly-set-to-raise-7-5-b-from-bond-offering-amid-market-selloff/cNG1HDrR948",
+      "published_at": "2026-11-05T21:03:05Z",
+      "score": 85,
+      "label": "bullish"
+    },
+    {
+      "id": "0040e9c053d8",
+      "source": "news",
+      "publisher": "GuruFocus.com",
+      "title": "Apple Stocks Move Lower as Investors Revisit Earnings Quality",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/apple-stocks-move-lower-investors-192048060.html",
+      "published_at": "2026-11-05T19:20:48Z",
+      "score": -93,
+      "label": "bearish"
+    },
+    {
+      "id": "f0293f6f500d",
+      "source": "news",
+      "publisher": "GuruFocus.com",
+      "title": "Apple Makes Major $7 Billion Funding Move",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/apple-makes-major-7-billion-184833106.html",
+      "published_at": "2026-11-05T18:48:33Z",
+      "score": 29,
+      "label": "bullish"
+    },
+    {
+      "id": "247ee95c7a68",
+      "source": "news",
+      "publisher": "Barrons.com",
+      "title": "Why GM and Hilton Are Moving to the Nasdaq From NYSE",
+      "url": "https://www.barrons.com/articles/general-motors-hilton-stocks-nasdaq-nyse-aaf2ea6c?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-05T18:37:00Z",
+      "score": 3,
+      "label": "neutral"
+    },
+    {
+      "id": "2cbb35732e6f",
+      "source": "news",
+      "publisher": "Fortune",
+      "title": "Apple and Home Depot join list of objectors to tokenized stock plan pushed by NYSE owner",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/apple-home-depot-join-list-183416535.html",
+      "published_at": "2026-11-05T18:34:16Z",
+      "score": -38,
+      "label": "bearish"
+    },
+    {
+      "id": "a8e7c80dc3f8",
+      "source": "news",
+      "publisher": "MT Newswires",
+      "title": "Sector Update: Tech Stocks Tumble Thursday Afternoon",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-stocks-tumble-thursday-182101545.html",
+      "published_at": "2026-11-05T18:21:01Z",
+      "score": -96,
+      "label": "bearish"
+    },
+    {
+      "id": "6ddfe2d7a0a9",
+      "source": "news",
+      "publisher": "Barrons.com",
+      "title": "A 'Fugazi' Day in the Markets",
+      "url": "https://www.barrons.com/livecoverage/stock-market-news-today-110526/card/a-fugazi-day-in-the-markets-R5y9bcMEDQAbbVLPHadD?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-05T17:58:00Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "17d85d5b20cf",
       "source": "news",
       "publisher": "24/7 Wall St.",
-      "title": "Apple\u2019s Pain Could Be Micron\u2019s Gain as Memory Prices Surge",
-      "url": "https://247wallst.com/investing/2026/11/04/apples-pain-could-be-microns-gain-as-memory-prices-surge/",
-      "published_at": "2026-11-04T17:33:14Z",
-      "score": -62,
+      "title": "Qualcomm Says December Won\u2019t Be Its Biggest Quarter Anymore as Apple Walks Away",
+      "url": "https://247wallst.com/investing/2026/11/05/qualcomm-says-december-wont-be-its-biggest-quarter-anymore-as-apple-walks-away/",
+      "published_at": "2026-11-05T17:14:44Z",
+      "score": -87,
       "label": "bearish"
+    },
+    {
+      "id": "2ff9792f92e4",
+      "source": "news",
+      "publisher": "GuruFocus.com",
+      "title": "Evercore Names 5 Tech Stocks to Own After Blue Wave",
+      "url": "https://finance.yahoo.com/technology/articles/evercore-names-5-tech-stocks-171239665.html",
+      "published_at": "2026-11-05T17:12:39Z",
+      "score": 13,
+      "label": "neutral"
+    },
+    {
+      "id": "4eb0af516d63",
+      "source": "news",
+      "publisher": "Proactive",
+      "title": "Apple cuts employee AI budgets as new CEO looks to rein in costs",
+      "url": "https://www.proactiveinvestors.com/companies/news/1101319/apple-cuts-employee-ai-budgets-as-new-ceo-looks-to-rein-in-costs-1101319.html",
+      "published_at": "2026-11-05T17:10:00Z",
+      "score": -94,
+      "label": "bearish"
+    },
+    {
+      "id": "62046dd553c1",
+      "source": "news",
+      "publisher": "decrypt",
+      "title": "Solana Labs\u2019 Leap Launches Mobile App for Trading Tokenized Stocks and Crypto",
+      "url": "https://decrypt.co/382609/solana-labs-leap-launches-mobile-app-tokenized-stocks-crypto",
+      "published_at": "2026-11-05T17:01:03Z",
+      "score": 12,
+      "label": "neutral"
+    },
+    {
+      "id": "a05b4af9ec0e",
+      "source": "news",
+      "publisher": "Barchart",
+      "title": "Apple Just Proved the AI Bears Wrong Again. Here\u2019s Why Dan Ives Isn\u2019t Blinking.",
+      "url": "https://www.barchart.com/story/news/8677773/apple-just-proved-the-ai-bears-wrong-again-heres-why-dan-ives-isnt-blinking",
+      "published_at": "2026-11-05T16:37:54Z",
+      "score": -7,
+      "label": "neutral"
+    },
+    {
+      "id": "dea8ae6edf06",
+      "source": "news",
+      "publisher": "TIKR",
+      "title": "Micron Sinks 13% as Chip Rout Deepens and $4.5 Billion Taiwan Plant Stalls",
+      "url": "https://www.tikr.com/blog/micron-sinks-13-as-chip-rout-deepens-and-4-5-billion-taiwan-plant-stalls?ref=yahoofinance&tlnk=yf-261105-4j94c4wf",
+      "published_at": "2026-11-05T16:13:35Z",
+      "score": -94,
+      "label": "bearish"
+    },
+    {
+      "id": "4855d4bc057f",
+      "source": "news",
+      "publisher": "Entrepreneur",
+      "title": "I Dropped Out of Harvard to Start a  Company That Lets You Copy Successful Investors. It\u2019s Powered $2B in Trades.",
+      "url": "https://www.entrepreneur.com/business-news/i-dropped-out-of-harvard-to-start-a-company-that-lets-you-copy-successful-investors-its-powered-over-1-6b-in-trades",
+      "published_at": "2026-11-05T16:03:17Z",
+      "score": 7,
+      "label": "neutral"
+    },
+    {
+      "id": "7fc507f20cc9",
+      "source": "news",
+      "publisher": "The Wall Street Journal",
+      "title": "Mag 7 Stocks Lose $1 Trillion in Market Value",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026/card/mag-7-stocks-lose-1-trillion-in-tech-bloodbath-TRxq1E844eYRKAn2LTju?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-05T15:58:23Z",
+      "score": -95,
+      "label": "bearish"
+    },
+    {
+      "id": "2d653185984c",
+      "source": "news",
+      "publisher": "Barchart",
+      "title": "Apple Shares Fell Despite a Double Beat in Q4. Don\u2019t Let Anyone Tell You the Results Weren\u2019t Great.",
+      "url": "https://www.barchart.com/story/news/8675940/apple-shares-fell-despite-a-double-beat-in-q4-dont-let-anyone-tell-you-the-results-werent-great",
+      "published_at": "2026-11-05T15:25:13Z",
+      "score": -91,
+      "label": "bearish"
+    },
+    {
+      "id": "53e1bf7acfdc",
+      "source": "news",
+      "publisher": "Simply Wall St.",
+      "title": "Learn Why The Bull Case For Resideo Technologies (REZI) Could Change Following Apple HomeView Update",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/learn-why-bull-case-resideo-151728521.html",
+      "published_at": "2026-11-05T15:17:28Z",
+      "score": 1,
+      "label": "neutral"
     }
   ]
 }

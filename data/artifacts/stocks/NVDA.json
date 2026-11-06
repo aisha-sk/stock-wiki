@@ -2,19 +2,15 @@
   "schema_version": "1.1",
   "symbol": "NVDA",
   "name": "NVIDIA Corporation",
-  "generated_at": "2026-11-05T01:59:37Z",
+  "generated_at": "2026-11-06T01:59:17Z",
   "is_demo_data": false,
   "quote": {
-    "price": 206.69,
-    "change_pct": 2.29,
-    "as_of": "2026-11-03",
+    "price": 200.13,
+    "change_pct": -3.17,
+    "as_of": "2026-11-04",
     "currency": "USD"
   },
   "prices": [
-    {
-      "date": "2026-05-14",
-      "close": 235.2
-    },
     {
       "date": "2026-05-15",
       "close": 224.81
@@ -490,17 +486,21 @@
     {
       "date": "2026-11-03",
       "close": 206.69
+    },
+    {
+      "date": "2026-11-04",
+      "close": 200.13
     }
   ],
   "forecast": {
     "horizon_days": 5,
     "move": "quiet",
-    "prob_large": 0.452,
-    "typical_move_pct": 3.5239,
-    "confidence": 0.548,
-    "made_at": "2026-11-05T01:59:37Z",
-    "as_of_date": "2026-11-03",
-    "target_date": "2026-11-10",
+    "prob_large": 0.4867,
+    "typical_move_pct": 3.522,
+    "confidence": 0.5133,
+    "made_at": "2026-11-06T01:59:17Z",
+    "as_of_date": "2026-11-04",
+    "target_date": "2026-11-11",
     "model_name": "move-xgb",
     "model_version": "9"
   },
@@ -520,7 +520,7 @@
       {
         "source": "news",
         "display_name": "News media",
-        "score": 1,
+        "score": -12,
         "label": "neutral",
         "doc_count": 50,
         "note": "50 articles, last 7 days",
@@ -529,7 +529,7 @@
       }
     ],
     "gap": {
-      "points": 54,
+      "points": 67,
       "most_bullish": "analysts",
       "most_bearish": "news",
       "summary": "Wall Street analysts lean bullish while News media are neutral."
@@ -542,298 +542,298 @@
       "publisher": "Yahoo Finance",
       "title": "Consensus: 59 buy, 2 hold, 1 sell (Nov 2026)",
       "url": null,
-      "published_at": "2026-11-05T01:59:37Z",
+      "published_at": "2026-11-06T01:59:17Z",
       "score": 55,
       "label": "bullish"
     },
     {
-      "id": "d52206d32713",
+      "id": "893ec13fe20b",
+      "source": "news",
+      "publisher": "Investor's Business Daily",
+      "title": "Dow Jones Futures Fall, Techs Bounce After Nasdaq Dives 5.5%; Nvidia, Sandisk, CoreWeave, SpaceX Plunge",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nasdaq-dives-55-nvidia-sandisk-coreweave-spacex-plunge-jobs/?src=A00220&yptr=yahoo",
+      "published_at": "2026-11-06T01:55:15Z",
+      "score": -94,
+      "label": "bearish"
+    },
+    {
+      "id": "be2f757584ff",
+      "source": "news",
+      "publisher": "Investing.com",
+      "title": "U.S. stock futures rise after AI rout batters Wall St; payrolls data in focus",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/u-stock-futures-rise-ai-013807565.html",
+      "published_at": "2026-11-06T01:38:07Z",
+      "score": -75,
+      "label": "bearish"
+    },
+    {
+      "id": "12c7b11ccd40",
       "source": "news",
       "publisher": "Motley Fool",
-      "title": "Is Broadcom Stock a Buy After Marvell's $115 Billion Deal?",
-      "url": "https://www.fool.com/investing/2026/11/04/is-broadcom-stock-a-buy-after-marvell-s-usd115-billion-deal/",
-      "published_at": "2026-11-05T01:43:01Z",
+      "title": "Prediction: This Is How Much XRP Will Be Worth by the End of 2030",
+      "url": "https://www.fool.com/investing/2026/11/05/prediction-this-is-how-much-xrp-will-be-worth-by-t/",
+      "published_at": "2026-11-06T01:20:00Z",
       "score": 3,
       "label": "neutral"
     },
     {
-      "id": "077a9d9b3319",
-      "source": "news",
-      "publisher": "Stocktwits",
-      "title": "SPCX Slides Overnight: SpaceX\u2019s $40B Chip Financing Reportedly Hits Market \u2014 Texas Senator Says Democrats Will \u2018Go After Elon Musk\u2019",
-      "url": "https://stocktwits.com/news-articles/markets/equity/spcx-spacex-40b-chip-financing-market-texas-senator-democrats-go-after-elon-musk/cNG1bF6R9Ed",
-      "published_at": "2026-11-05T01:33:45Z",
-      "score": -89,
-      "label": "bearish"
-    },
-    {
-      "id": "012187c924ee",
+      "id": "a03e41e1e7bb",
       "source": "news",
       "publisher": "Motley Fool",
-      "title": "Why Accel Entertainment Was a Huge Winner on Wednesday",
-      "url": "https://www.fool.com/investing/2026/11/04/why-accel-entertainment-was-a-huge-winner-on-wednesday/",
-      "published_at": "2026-11-05T01:32:01Z",
-      "score": 27,
-      "label": "bullish"
-    },
-    {
-      "id": "63b39de856c8",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Why Duolingo Stock Skyrocketed Today",
-      "url": "https://www.fool.com/investing/2026/11/04/why-duolingo-stock-skyrocketed-today/",
-      "published_at": "2026-11-05T01:25:09Z",
-      "score": -21,
-      "label": "bearish"
-    },
-    {
-      "id": "d74147fda8f2",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Is the AI Bubble Popping?",
-      "url": "https://www.fool.com/investing/2026/11/04/is-the-ai-bubble-popping/",
-      "published_at": "2026-11-05T01:16:38Z",
-      "score": -35,
-      "label": "bearish"
-    },
-    {
-      "id": "893327ae2dd2",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Why Horace Mann Educators Stock Soared Today",
-      "url": "https://www.fool.com/investing/2026/11/04/why-horace-mann-educators-stock-soared-today/",
-      "published_at": "2026-11-05T01:04:23Z",
-      "score": 19,
+      "title": "Prediction: This Will Be SpaceX's Stock Price by the End of 2029",
+      "url": "https://www.fool.com/investing/2026/11/05/prediction-this-will-be-spacexs-stock-price-by-the/",
+      "published_at": "2026-11-06T01:15:00Z",
+      "score": 0,
       "label": "neutral"
     },
     {
-      "id": "9b5068fca068",
+      "id": "1c67d1a56e36",
+      "source": "news",
+      "publisher": "GuruFocus.com",
+      "title": "Chatham Lodging Trust (CLDT) (Q3 2026) Earnings Call Highlights: Silicon Valley Surge Drives ...",
+      "url": "https://finance.yahoo.com/real-estate/articles/chatham-lodging-trust-cldt-q3-011124012.html",
+      "published_at": "2026-11-06T01:11:24Z",
+      "score": 43,
+      "label": "bullish"
+    },
+    {
+      "id": "dd8b5352d2ef",
       "source": "news",
       "publisher": "Motley Fool",
-      "title": "Here's What $10,000 Invested in SpaceX and Nvidia Could Be Worth by 2030",
-      "url": "https://www.fool.com/investing/2026/11/04/heres-what-10000-invested-in-spacex-and-nvidia-cou/",
-      "published_at": "2026-11-05T00:49:00Z",
+      "title": "The Nasdaq Composite Just Shattered Its Single-Session Point-Loss Record: 3 Reasons These Elevator-Down Moves May Be Just Beginning",
+      "url": "https://www.fool.com/investing/2026/11/05/nasdaq-composite-shattered-single-session-point-loss-record-3-reasons-elevator-down-moves-just-beginning/",
+      "published_at": "2026-11-06T01:10:02Z",
+      "score": -23,
+      "label": "bearish"
+    },
+    {
+      "id": "5e7d0408740e",
+      "source": "news",
+      "publisher": "Stocktwits",
+      "title": "S&P 500, Nasdaq, Dow Futures Dip As Investors Step Back From AI And Tech With Nasdaq In Correction Territory \u2014  NVDA, AAPL, UBER, SOXX In Focus",
+      "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-nasdaq-dow-futures-dip-as-investors-step-back-from-ai-and-tech-with-nasdaq-in-correction-territory-nvda-aapl-uber-soxx-in-focus/cNGlIylR94A",
+      "published_at": "2026-11-06T01:00:30Z",
+      "score": -91,
+      "label": "bearish"
+    },
+    {
+      "id": "7199cd6e72f6",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Is Appian a Buy After Its Latest Earnings Report?",
+      "url": "https://www.fool.com/investing/2026/11/05/is-appian-a-buy-after-its-latest-earnings-report/",
+      "published_at": "2026-11-06T00:50:01Z",
       "score": 4,
       "label": "neutral"
     },
     {
-      "id": "50add35a7118",
+      "id": "5774810e80a7",
       "source": "news",
       "publisher": "Motley Fool",
-      "title": "Did IBM Just Tell the Truth About AI?",
-      "url": "https://www.fool.com/investing/2026/11/04/did-ibm-just-tell-the-truth-about-ai/",
-      "published_at": "2026-11-05T00:46:39Z",
-      "score": -9,
+      "title": "Why Krispy Kreme Stock Crushed It Today",
+      "url": "https://www.fool.com/investing/2026/11/05/why-krispy-kreme-stock-crushed-it-today/",
+      "published_at": "2026-11-06T00:45:56Z",
+      "score": 2,
       "label": "neutral"
     },
     {
-      "id": "1e6a589134bc",
+      "id": "7504cbc539c5",
       "source": "news",
-      "publisher": "TheStreet",
-      "title": "5-star analyst resets Nvidia stock target after Intel crash",
-      "url": "https://www.thestreet.com/investing/stocks/melius-nvidia-target-cut-intel",
-      "published_at": "2026-11-05T00:37:00Z",
-      "score": -81,
+      "publisher": "MarketBeat",
+      "title": "Box Unveils AI Agent Tools and NVIDIA Partnership at BoxWorks 2026",
+      "url": "https://www.marketbeat.com/instant-alerts/event-box-unveils-ai-agent-tools-and-nvidia-partnership-at-boxworks-2026-2026-11-05/?utm_source=yahoofinance&utm_medium=yahoofinance",
+      "published_at": "2026-11-06T00:14:32Z",
+      "score": 13,
+      "label": "neutral"
+    },
+    {
+      "id": "fdfa98c21e88",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "Nvidia Stock Just Crashed 22%. Jim Cramer Says It\u2019s the Cheapest in a Decade",
+      "url": "https://247wallst.com/investing/2026/11/05/nvidia-stock-just-crashed-22-jim-cramer-says-its-the-cheapest-in-a-decade/",
+      "published_at": "2026-11-06T00:09:51Z",
+      "score": 64,
+      "label": "bullish"
+    },
+    {
+      "id": "df881f54f744",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Palantir Is Down 16% From Its High. History Suggests This Is What Happens Next.",
+      "url": "https://www.fool.com/investing/2026/11/05/palantir-is-down-16-from-its-high-history-suggests/",
+      "published_at": "2026-11-06T00:05:00Z",
+      "score": -96,
       "label": "bearish"
     },
     {
-      "id": "5770dbe67811",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Prediction: This Is How Much IonQ Stock Will Be Worth by the End of 2027",
-      "url": "https://www.fool.com/investing/2026/11/04/prediction-this-is-how-much-ionq-stock-will-be-wor/",
-      "published_at": "2026-11-05T00:20:00Z",
-      "score": 2,
-      "label": "neutral"
-    },
-    {
-      "id": "317e306b0264",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Why Alphabet Stock Popped on Wednesday",
-      "url": "https://www.fool.com/investing/2026/11/04/why-alphabet-stock-popped-on-wednesday/",
-      "published_at": "2026-11-05T00:13:01Z",
-      "score": 5,
-      "label": "neutral"
-    },
-    {
-      "id": "48d097e9a02b",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "Steve Weiss Says the Midterms Just Put a Lid on AI Spending. Here\u2019s Who Could Get Hurt",
-      "url": "https://247wallst.com/investing/2026/11/04/steve-weiss-says-the-midterms-just-put-a-lid-on-ai-spending-heres-who-could-get-hurt/",
-      "published_at": "2026-11-05T00:09:14Z",
-      "score": -12,
-      "label": "neutral"
-    },
-    {
-      "id": "8c9911af6489",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "If You'd Invested $5,000 in VOO 15 Years Ago, Here's What You'd Have Today",
-      "url": "https://www.fool.com/investing/2026/11/04/if-youd-invested-5000-in-voo-15-years-ago-heres-wh/",
-      "published_at": "2026-11-04T23:50:00Z",
-      "score": 2,
-      "label": "neutral"
-    },
-    {
-      "id": "6de8a7f6ed4b",
-      "source": "news",
-      "publisher": "Zacks",
-      "title": "Q3 Earnings Scorecard: Solid Beats, Upward Revisions, and AI Drivers",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/q3-earnings-scorecard-solid-beats-233900397.html",
-      "published_at": "2026-11-04T23:39:00Z",
-      "score": 92,
-      "label": "bullish"
-    },
-    {
-      "id": "55894d8d0a0f",
-      "source": "news",
-      "publisher": "Zacks",
-      "title": "Q3 Earnings Scorecard: Solid Beats, Upward Revisions, and AI Drivers",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/q3-earnings-scorecard-solid-beats-233500227.html",
-      "published_at": "2026-11-04T23:35:00Z",
-      "score": 92,
-      "label": "bullish"
-    },
-    {
-      "id": "cf8e0948206f",
+      "id": "4847aa2fb1f1",
       "source": "news",
       "publisher": "Moby",
-      "title": "Nuvectis Pharma, Inc. Q3 2026 Earnings Call Summary",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-nuvectis-pharma-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published_at": "2026-11-04T23:24:25Z",
-      "score": -5,
+      "title": "Amylyx Pharmaceuticals, Inc. Q3 2026 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-amylyx-pharmaceuticals-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published_at": "2026-11-05T23:52:15Z",
+      "score": -11,
       "label": "neutral"
     },
     {
-      "id": "df3865aa9cb2",
+      "id": "078afd93ff5d",
       "source": "news",
       "publisher": "Moby",
-      "title": "Natural Resource Partners L.P. Q3 2026 Earnings Call Summary",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-natural-resource-partners-lp-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published_at": "2026-11-04T23:22:46Z",
-      "score": -4,
-      "label": "neutral"
-    },
-    {
-      "id": "9e0295542073",
-      "source": "news",
-      "publisher": "Moby",
-      "title": "Royalty Pharma plc Q3 2026 Earnings Call Summary",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-royalty-pharma-plc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published_at": "2026-11-04T23:21:01Z",
-      "score": -9,
-      "label": "neutral"
-    },
-    {
-      "id": "0aea3ae98965",
-      "source": "news",
-      "publisher": "Moby",
-      "title": "NNN REIT, Inc. Q3 2026 Earnings Call Summary",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-nnn-reit-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published_at": "2026-11-04T23:20:48Z",
-      "score": -9,
-      "label": "neutral"
-    },
-    {
-      "id": "ee4414eda29c",
-      "source": "news",
-      "publisher": "Moby",
-      "title": "Navios Maritime Partners L.P. Q3 2026 Earnings Call Summary",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-navios-maritime-partners-lp-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published_at": "2026-11-04T23:20:42Z",
-      "score": -2,
-      "label": "neutral"
-    },
-    {
-      "id": "a0d2ab3c5c25",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "A Major Neocloud Stock Rally May Be Coming. These 3 Stocks Could Be the Biggest Winners.",
-      "url": "https://www.fool.com/investing/2026/11/04/a-major-neocloud-stock-rally-may-be-coming-these-3/",
-      "published_at": "2026-11-04T23:20:00Z",
-      "score": 35,
-      "label": "bullish"
-    },
-    {
-      "id": "092b94746ca1",
-      "source": "news",
-      "publisher": "Moby",
-      "title": "Materion Corporation Q3 2026 Earnings Call Summary",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-materion-corporation-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published_at": "2026-11-04T23:15:12Z",
+      "title": "Evolent Health, Inc. Q3 2026 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-evolent-health-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published_at": "2026-11-05T23:49:18Z",
       "score": -6,
       "label": "neutral"
     },
     {
-      "id": "dbf10b2385b6",
+      "id": "4ebab6b69c9f",
       "source": "news",
       "publisher": "Moby",
-      "title": "Martin Marietta Materials, Inc. Q3 2026 Earnings Call Summary",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-martin-marietta-materials-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published_at": "2026-11-04T23:11:14Z",
+      "title": "Duke Energy Corporation Q3 2026 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-duke-energy-corporation-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published_at": "2026-11-05T23:45:32Z",
       "score": -8,
       "label": "neutral"
     },
     {
-      "id": "90d6b7170fbd",
+      "id": "766824da9a03",
       "source": "news",
       "publisher": "Moby",
-      "title": "Vishay Intertechnology, Inc. Q3 2026 Earnings Call Summary",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-vishay-intertechnology-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published_at": "2026-11-04T23:09:29Z",
-      "score": -2,
-      "label": "neutral"
-    },
-    {
-      "id": "0e0f8ef17951",
-      "source": "news",
-      "publisher": "Moby",
-      "title": "LivaNova PLC Q3 2026 Earnings Call Summary",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-livanova-plc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published_at": "2026-11-04T23:07:33Z",
-      "score": -7,
-      "label": "neutral"
-    },
-    {
-      "id": "a694363fa647",
-      "source": "news",
-      "publisher": "Moby",
-      "title": "Twin Disc, Incorporated Q1 2027 Earnings Call Summary",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-twin-disc-incorporated-q1-2027-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published_at": "2026-11-04T23:03:43Z",
-      "score": -2,
-      "label": "neutral"
-    },
-    {
-      "id": "ed04a0d5234d",
-      "source": "news",
-      "publisher": "Moby",
-      "title": "Trinity Capital Inc. Q3 2026 Earnings Call Summary",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-trinity-capital-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published_at": "2026-11-04T23:01:28Z",
+      "title": "The Middleby Corporation Q3 2026 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-the-middleby-corporation-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published_at": "2026-11-05T23:45:31Z",
       "score": -6,
       "label": "neutral"
     },
     {
-      "id": "6b0f00ed1ac3",
+      "id": "e5c4b87bcbd2",
       "source": "news",
       "publisher": "Moby",
-      "title": "Madison Square Garden Entertainment Corp. Q1 2027 Earnings Call Summary",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-madison-square-garden-entertainment-corp-q1-2027-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published_at": "2026-11-04T22:58:51Z",
+      "title": "Frontdoor, Inc. Q3 2026 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-frontdoor-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published_at": "2026-11-05T23:45:29Z",
+      "score": -4,
+      "label": "neutral"
+    },
+    {
+      "id": "10df26c0c8fc",
+      "source": "news",
+      "publisher": "Moby",
+      "title": "Haemonetics Corporation Q2 2027 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-haemonetics-corporation-q2-2027-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published_at": "2026-11-05T23:43:56Z",
+      "score": -4,
+      "label": "neutral"
+    },
+    {
+      "id": "0ec72384d571",
+      "source": "news",
+      "publisher": "Moby",
+      "title": "ConocoPhillips Q3 2026 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-conocophillips-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published_at": "2026-11-05T23:36:13Z",
+      "score": -9,
+      "label": "neutral"
+    },
+    {
+      "id": "42da272d785f",
+      "source": "news",
+      "publisher": "Moby",
+      "title": "Ralph Lauren Corporation Q2 2027 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-ralph-lauren-corporation-q2-2027-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published_at": "2026-11-05T23:33:58Z",
+      "score": -8,
+      "label": "neutral"
+    },
+    {
+      "id": "4faf6376a103",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "What Tom Gardner Said About Days Like This",
+      "url": "https://www.fool.com/investing/2026/11/05/what-tom-gardner-said-about-days-like-this/",
+      "published_at": "2026-11-05T23:33:01Z",
+      "score": -2,
+      "label": "neutral"
+    },
+    {
+      "id": "c4e982e1ae97",
+      "source": "news",
+      "publisher": "Moby",
+      "title": "Collegium Pharmaceutical, Inc. Q3 2026 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-collegium-pharmaceutical-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published_at": "2026-11-05T23:28:11Z",
       "score": -10,
       "label": "neutral"
     },
     {
-      "id": "f9889ccaf641",
+      "id": "7ed0bf4bbfe3",
       "source": "news",
       "publisher": "Moby",
-      "title": "Vishay Precision Group, Inc. Q3 2026 Earnings Call Summary",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-vishay-precision-group-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published_at": "2026-11-04T22:58:23Z",
+      "title": "BKV Corporation Q3 2026 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-bkv-corporation-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published_at": "2026-11-05T23:26:34Z",
+      "score": -7,
+      "label": "neutral"
+    },
+    {
+      "id": "a6e0cef296c5",
+      "source": "news",
+      "publisher": "Moby",
+      "title": "Cognition Therapeutics, Inc. Q3 2026 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-cognition-therapeutics-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published_at": "2026-11-05T23:25:32Z",
+      "score": -13,
+      "label": "neutral"
+    },
+    {
+      "id": "cfe4b88c8205",
+      "source": "news",
+      "publisher": "Moby",
+      "title": "Six Flags Entertainment Corporation Q3 2026 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-six-flags-entertainment-corporation-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published_at": "2026-11-05T23:24:23Z",
+      "score": -14,
+      "label": "neutral"
+    },
+    {
+      "id": "d20a63e007cb",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Why Ecovyst Stock Topped the Market Today",
+      "url": "https://www.fool.com/investing/2026/11/05/why-ecovyst-stock-topped-the-market-today/",
+      "published_at": "2026-11-05T23:23:31Z",
+      "score": 27,
+      "label": "bullish"
+    },
+    {
+      "id": "10bde8dca7c4",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Himax Blames 'Abrupt and Significant Correction' in Auto Chip Demand as Stock Crashes Nearly 30%. Is Now the Time to Buy?",
+      "url": "https://www.fool.com/investing/2026/11/05/himax-blames-abrupt-and-significant-correction-in-auto-chip-demand-as-stock-crashes-nearly-30-is-now-the-time-to-buy/",
+      "published_at": "2026-11-05T23:23:30Z",
+      "score": -93,
+      "label": "bearish"
+    },
+    {
+      "id": "937e662d2484",
+      "source": "news",
+      "publisher": "Moby",
+      "title": "Celsius Holdings, Inc. Q3 2026 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-celsius-holdings-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published_at": "2026-11-05T23:22:35Z",
       "score": -5,
+      "label": "neutral"
+    },
+    {
+      "id": "cd867d4cbccb",
+      "source": "news",
+      "publisher": "Moby",
+      "title": "FS KKR Capital Corp. Q3 2026 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-fs-kkr-capital-corp-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published_at": "2026-11-05T23:21:54Z",
+      "score": -3,
       "label": "neutral"
     }
   ]
