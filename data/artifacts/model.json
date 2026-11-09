@@ -1,12 +1,12 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-11-02T01:59:18Z",
+  "generated_at": "2026-11-09T02:14:00Z",
   "is_demo_data": false,
   "production": {
     "model_name": "move-xgb",
-    "version": "9",
+    "version": "14",
     "algorithm": "xgboost",
-    "trained_at": "2026-10-11T01:32:21Z"
+    "trained_at": "2026-11-09T02:14:00Z"
   },
   "task": {
     "description": "Will the absolute move over the next 5 sessions be larger than the typical move?",
@@ -17,28 +17,28 @@
       "NVDA",
       "AAPL"
     ],
-    "test_start": "2025-12-04",
-    "test_end": "2026-10-23",
-    "n_test": 668
+    "test_start": "2025-12-11",
+    "test_end": "2026-10-30",
+    "n_test": 666
   },
   "metrics": {
-    "directional_accuracy": 0.5359,
-    "precision": 0.4798,
-    "recall": 0.5608,
-    "f1": 0.5171,
+    "directional_accuracy": 0.548,
+    "precision": 0.4919,
+    "recall": 0.5135,
+    "f1": 0.5025,
     "sharpe_ratio": null,
     "max_drawdown": null,
-    "inference_latency_ms": 0.494,
+    "inference_latency_ms": 0.7055,
     "cost_per_request_usd": null
   },
   "baselines": [
     {
       "name": "always_quiet",
-      "directional_accuracy": 0.5569
+      "directional_accuracy": 0.5556
     },
     {
       "name": "previous_move",
-      "directional_accuracy": 0.5479
+      "directional_accuracy": 0.5495
     }
   ],
   "gate": {
@@ -48,13 +48,8 @@
   },
   "weekly_accuracy": [
     {
-      "week_start": "2026-08-03",
-      "accuracy": 0.4667,
-      "n": 15
-    },
-    {
       "week_start": "2026-08-10",
-      "accuracy": 0.6,
+      "accuracy": 0.6667,
       "n": 15
     },
     {
@@ -64,12 +59,12 @@
     },
     {
       "week_start": "2026-08-24",
-      "accuracy": 0.2667,
+      "accuracy": 0.3333,
       "n": 15
     },
     {
       "week_start": "2026-08-31",
-      "accuracy": 0.4667,
+      "accuracy": 0.4,
       "n": 15
     },
     {
@@ -84,31 +79,47 @@
     },
     {
       "week_start": "2026-09-21",
-      "accuracy": 0.6,
+      "accuracy": 0.5333,
       "n": 15
     },
     {
       "week_start": "2026-09-28",
-      "accuracy": 0.4667,
+      "accuracy": 0.4,
       "n": 15
     },
     {
       "week_start": "2026-10-05",
-      "accuracy": 0.4667,
+      "accuracy": 0.6667,
       "n": 15
     },
     {
       "week_start": "2026-10-12",
-      "accuracy": 0.7333,
+      "accuracy": 0.6667,
       "n": 15
     },
     {
       "week_start": "2026-10-19",
-      "accuracy": 0.8667,
+      "accuracy": 0.8,
+      "n": 15
+    },
+    {
+      "week_start": "2026-10-26",
+      "accuracy": 0.4667,
       "n": 15
     }
   ],
   "versions": [
+    {
+      "version": "14",
+      "model_name": "move-xgb",
+      "algorithm": "xgboost",
+      "trained_at": "2026-11-09T02:14:00Z",
+      "directional_accuracy": 0.548,
+      "gate_passed": true,
+      "status": "production",
+      "mlflow_run_id": "bd37864550b5498885ef56753d0c77dd",
+      "task": "move"
+    },
     {
       "version": "13",
       "model_name": "move-xgb",
@@ -160,7 +171,7 @@
       "trained_at": "2026-10-11T01:32:21Z",
       "directional_accuracy": 0.5372,
       "gate_passed": true,
-      "status": "production",
+      "status": "archived",
       "mlflow_run_id": "d369a4fa15f046f69773a8c51091a41e",
       "task": "move"
     },

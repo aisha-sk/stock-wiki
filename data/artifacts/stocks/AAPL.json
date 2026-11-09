@@ -2,7 +2,7 @@
   "schema_version": "1.1",
   "symbol": "AAPL",
   "name": "Apple Inc.",
-  "generated_at": "2026-11-07T01:35:40Z",
+  "generated_at": "2026-11-09T02:14:00Z",
   "is_demo_data": false,
   "quote": {
     "price": 342.37,
@@ -495,14 +495,14 @@
   "forecast": {
     "horizon_days": 5,
     "move": "large",
-    "prob_large": 0.5085,
-    "typical_move_pct": 3.5236,
-    "confidence": 0.5085,
-    "made_at": "2026-11-07T01:35:40Z",
+    "prob_large": 0.509,
+    "typical_move_pct": 3.5242,
+    "confidence": 0.509,
+    "made_at": "2026-11-09T02:14:00Z",
     "as_of_date": "2026-11-06",
     "target_date": "2026-11-13",
     "model_name": "move-xgb",
-    "model_version": "9"
+    "model_version": "14"
   },
   "sentiment": {
     "window_days": 7,
@@ -520,7 +520,7 @@
       {
         "source": "news",
         "display_name": "News media",
-        "score": -7,
+        "score": -6,
         "label": "neutral",
         "doc_count": 50,
         "note": "50 articles, last 7 days",
@@ -529,7 +529,7 @@
       }
     ],
     "gap": {
-      "points": 31,
+      "points": 30,
       "most_bullish": "analysts",
       "most_bearish": "news",
       "summary": "Wall Street analysts lean bullish while News media are neutral."
@@ -542,8 +542,248 @@
       "publisher": "Yahoo Finance",
       "title": "Consensus: 24 buy, 14 hold, 6 sell (Nov 2026)",
       "url": null,
-      "published_at": "2026-11-07T01:35:40Z",
+      "published_at": "2026-11-09T02:14:00Z",
       "score": 24,
+      "label": "bullish"
+    },
+    {
+      "id": "d4c42a942e97",
+      "source": "news",
+      "publisher": "Investor's Business Daily",
+      "title": "Dow Jones Futures Rise As Nvidia Probes CEO Jensen Huang Spying Case",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-probes-ceo-jensen-huang-espionage/?src=A00220&yptr=yahoo",
+      "published_at": "2026-11-09T02:06:38Z",
+      "score": -84,
+      "label": "bearish"
+    },
+    {
+      "id": "637a9947781f",
+      "source": "news",
+      "publisher": "Insider Monkey",
+      "title": "5 Stocks I am Retiring On",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/5-stocks-am-retiring-004943035.html",
+      "published_at": "2026-11-09T00:49:43Z",
+      "score": -2,
+      "label": "neutral"
+    },
+    {
+      "id": "34dc67171fba",
+      "source": "news",
+      "publisher": "TIKR",
+      "title": "Apple Won\u2019t \u201cPlay in Traffic\u201d on AI. It\u2019s Up 28% in a Year: Too Late to Buy?",
+      "url": "https://www.tikr.com/blog/apple-wont-play-in-traffic-on-ai-its-up-28-in-a-year-too-late-to-buy?ref=yahoofinance&tlnk=yf-261108-522mf3wh",
+      "published_at": "2026-11-08T21:55:41Z",
+      "score": 24,
+      "label": "bullish"
+    },
+    {
+      "id": "937bfd24be12",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "This Is the Best-Performing Magnificent Seven Stock of 2026. Is It Still a Buy?",
+      "url": "https://www.fool.com/investing/2026/11/08/this-is-best-performing-magnificent-seven-stock/",
+      "published_at": "2026-11-08T19:50:00Z",
+      "score": 1,
+      "label": "neutral"
+    },
+    {
+      "id": "c6a2628c6fee",
+      "source": "news",
+      "publisher": "Barrons.com",
+      "title": "Tesla Isn\u2019t a Mag-7 Stock. This Is.",
+      "url": "https://www.barrons.com/articles/tesla-mag-7-stock-spacex-musk-545b6807?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-08T19:44:00Z",
+      "score": 0,
+      "label": "neutral"
+    },
+    {
+      "id": "81f1f142e5cd",
+      "source": "news",
+      "publisher": "TheStreet",
+      "title": "Democrats prepare to go after Apple, Meta and Elon Musk companies",
+      "url": "https://www.thestreet.com/technology/democrats-prepare-to-go-after-apple-meta-and-elon-musk-companies",
+      "published_at": "2026-11-08T17:17:00Z",
+      "score": 1,
+      "label": "neutral"
+    },
+    {
+      "id": "52b9532ea3ec",
+      "source": "news",
+      "publisher": "Barchart",
+      "title": "Apple\u2019s iPhone Demand Surges, But AAPL Still Isn\u2019t a \u2018Strong Buy\u2019",
+      "url": "https://www.barchart.com/story/news/8724367/apples-iphone-demand-surges-but-aapl-still-isnt-a-strong-buy",
+      "published_at": "2026-11-08T13:41:45Z",
+      "score": 81,
+      "label": "bullish"
+    },
+    {
+      "id": "a1b1b107d37c",
+      "source": "news",
+      "publisher": "The Wall Street Journal",
+      "title": "My Week With Apple\u2019s Beach-Friendly iPad Mini and Amazon\u2019s Upscale Alexa Tablet",
+      "url": "https://www.wsj.com/tech/personal-tech/apple-ipad-mini-amazon-alexa-tablet-best-in-years-c5004bac?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-08T12:00:00Z",
+      "score": 24,
+      "label": "bullish"
+    },
+    {
+      "id": "3d6cefd7e01b",
+      "source": "news",
+      "publisher": "Simply Wall St.",
+      "title": "Cellcom Israel (TASE:CEL) Stock Still Looks Reasonable After A 192% Run",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/cellcom-israel-tase-cel-stock-091436041.html",
+      "published_at": "2026-11-08T09:14:36Z",
+      "score": 92,
+      "label": "bullish"
+    },
+    {
+      "id": "7ad4e2ac9e71",
+      "source": "news",
+      "publisher": "Insider Monkey",
+      "title": "5 Worst Dow Stocks To Buy According to Analysts",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/5-worst-dow-stocks-buy-232028142.html",
+      "published_at": "2026-11-07T23:20:28Z",
+      "score": -2,
+      "label": "neutral"
+    },
+    {
+      "id": "a8fbf3589a11",
+      "source": "news",
+      "publisher": "Benzinga",
+      "title": "Republican Senator Who Won Reelection Is Selling Magnificent Seven Stocks: Here Are the Trades",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/republican-senator-won-reelection-selling-193025792.html",
+      "published_at": "2026-11-07T19:30:25Z",
+      "score": -2,
+      "label": "neutral"
+    },
+    {
+      "id": "3cf6373681af",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Did Apple Just Get a Boost From Democrats? Data Center Moratoriums Could Benefit the iPhone Maker",
+      "url": "https://www.fool.com/investing/2026/11/07/apple-get-boost-democrats-data-center-iphone/",
+      "published_at": "2026-11-07T19:23:00Z",
+      "score": 27,
+      "label": "bullish"
+    },
+    {
+      "id": "43206ebba159",
+      "source": "news",
+      "publisher": "decrypt",
+      "title": "Apple Completes the Set: Every Magnificent Seven Stock Opts Out of OKX-ICE Venue",
+      "url": "https://decrypt.co/382768/apple-meta-every-magnificent-seven-stock-opts-out-okx-ice-venue",
+      "published_at": "2026-11-07T17:01:03Z",
+      "score": -3,
+      "label": "neutral"
+    },
+    {
+      "id": "b788bcb69df2",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Booking vs. DoorDash: Does Going Out or Staying In Make One Stock a Better Buy for 2027?",
+      "url": "https://www.fool.com/coverage/better-buy/2026/11/07/booking-vs-doordash-does-going-out-or-staying-in-make-one-stock-a-better-buy-for-2027/",
+      "published_at": "2026-11-07T14:27:01Z",
+      "score": 7,
+      "label": "neutral"
+    },
+    {
+      "id": "f9a9ea785dec",
+      "source": "news",
+      "publisher": "Insider Monkey",
+      "title": "Analysts Just Sounded the Alarm on These 5 Overhyped Stocks",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/analysts-just-sounded-alarm-5-141904403.html",
+      "published_at": "2026-11-07T14:19:04Z",
+      "score": -25,
+      "label": "bearish"
+    },
+    {
+      "id": "db47a1fdf9f2",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "Eric Balchunas Calls It a \u201cFive Alarm Fire\u201d Sell-Off. Here\u2019s What Record ETF Trading Tells You",
+      "url": "https://247wallst.com/investing/2026/11/07/eric-balchunas-calls-it-a-five-alarm-fire-sell-off-heres-what-record-etf-trading-tells-you/",
+      "published_at": "2026-11-07T14:17:05Z",
+      "score": -7,
+      "label": "neutral"
+    },
+    {
+      "id": "8e864a67a7f8",
+      "source": "news",
+      "publisher": "TIKR",
+      "title": "Alibaba Just Gained 12% in a Week as the Nasdaq Fell: Take Profits, or Buy More?",
+      "url": "https://www.tikr.com/blog/alibaba-just-gained-12-in-a-week-as-the-nasdaq-fell-take-profits-or-buy-more?ref=yahoofinance&tlnk=yf-261107-9466567f",
+      "published_at": "2026-11-07T12:28:46Z",
+      "score": -35,
+      "label": "bearish"
+    },
+    {
+      "id": "90fc9c9a306e",
+      "source": "news",
+      "publisher": "MarketBeat",
+      "title": "MarketBeat Week in Review \u2013 11/2 - 11/6",
+      "url": "https://www.marketbeat.com/articles/marketbeat-week-in-review-2026-11-2-11-6/?utm_source=yahoofinance&utm_medium=yahoofinance",
+      "published_at": "2026-11-07T12:00:00Z",
+      "score": -6,
+      "label": "neutral"
+    },
+    {
+      "id": "c72d8a8bf5e1",
+      "source": "news",
+      "publisher": "TIKR",
+      "title": "Big Tech\u2019s $1 Trillion Rally Bets Regulation Won\u2019t Touch \u201cthe Profits of the Tech Companies\u201d",
+      "url": "https://www.tikr.com/blog/big-techs-1-trillion-rally-bets-regulation-wont-touch-the-profits-of-the-tech-companies?ref=yahoofinance&tlnk=yf-261107-76c7gj42",
+      "published_at": "2026-11-07T10:51:17Z",
+      "score": -45,
+      "label": "bearish"
+    },
+    {
+      "id": "6550c79d3f6a",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "These 4 Stocks Are Tied to the Smartphone in Your Pocket",
+      "url": "https://www.fool.com/investing/2026/11/07/these-4-stocks-are-tied-to-the-smartphone-in-your-pocket/",
+      "published_at": "2026-11-07T10:13:02Z",
+      "score": 0,
+      "label": "neutral"
+    },
+    {
+      "id": "d708879771e8",
+      "source": "news",
+      "publisher": "Trefis",
+      "title": "The S&P 500 Is Up 75% In 3 Years. Priced In Gold, It Is Down 14%. Which Is Real?",
+      "url": "https://www.trefis.com/stock/nvda/articles/623129/the-s-p-500-is-up-75-in-3-years-priced-in-gold-it-is-down-14-which-is-real/2026-11-07",
+      "published_at": "2026-11-07T09:14:54Z",
+      "score": -72,
+      "label": "bearish"
+    },
+    {
+      "id": "d24d7891af06",
+      "source": "news",
+      "publisher": "Trefis",
+      "title": "Bonds Now Pay More Than Stocks. Is 60/40 Back?",
+      "url": "https://www.trefis.com/stock/ups/articles/623128/bonds-now-pay-more-than-stocks-is-60-40-back/2026-11-07",
+      "published_at": "2026-11-07T09:14:49Z",
+      "score": 7,
+      "label": "neutral"
+    },
+    {
+      "id": "c2397ba8fd60",
+      "source": "news",
+      "publisher": "Trefis",
+      "title": "Where Will Your Portfolio Be In 2031, Not Tomorrow?",
+      "url": "https://www.trefis.com/stock/nvda/articles/623125/where-will-your-portfolio-be-in-2031-not-tomorrow/2026-11-07",
+      "published_at": "2026-11-07T09:13:10Z",
+      "score": -2,
+      "label": "neutral"
+    },
+    {
+      "id": "54ceb7329f94",
+      "source": "news",
+      "publisher": "TIKR",
+      "title": "Mark Gurman Expects \u201cMore Price Increases\u201d on Apple Hardware Through 2027",
+      "url": "https://www.tikr.com/blog/mark-gurman-expects-more-price-increases-on-apple-hardware-through-2027?ref=yahoofinance&tlnk=yf-261107-98v4r49r",
+      "published_at": "2026-11-07T07:38:39Z",
+      "score": 86,
       "label": "bullish"
     },
     {
@@ -564,16 +804,6 @@
       "url": "https://www.barrons.com/articles/ubers-robo-push-18461554?siteid=yhoof2&yptr=yahoo",
       "published_at": "2026-11-07T00:19:00Z",
       "score": 4,
-      "label": "neutral"
-    },
-    {
-      "id": "ac8779887db9",
-      "source": "news",
-      "publisher": "Investor's Business Daily",
-      "title": "Dow Jones Futures: Market Needs Repair But Sandisk, Micron Look Broken; Apple, Amazon, Microsoft Strong",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sandisk-micron-broken-apple-amazon-microsoft-strong-berkshire-earnings/?src=A00220&yptr=yahoo",
-      "published_at": "2026-11-06T23:41:36Z",
-      "score": -4,
       "label": "neutral"
     },
     {
@@ -605,236 +835,6 @@
       "published_at": "2026-11-06T19:26:24Z",
       "score": 9,
       "label": "neutral"
-    },
-    {
-      "id": "492a0ffc12ea",
-      "source": "news",
-      "publisher": "Reuters",
-      "title": "Apple's autocomplete restrictions include 'Dictator Trump' and 'Sleepy Joe,' researcher finds",
-      "url": "https://uk.finance.yahoo.com/news/exclusive-apples-predictive-text-restrictions-110213171.html",
-      "published_at": "2026-11-06T18:19:11Z",
-      "score": -15,
-      "label": "neutral"
-    },
-    {
-      "id": "362fcde7d4bc",
-      "source": "news",
-      "publisher": "GuruFocus.com",
-      "title": "Qualcomm Faces Worst Day Since 2020 as Chips Crater",
-      "url": "https://finance.yahoo.com/technology/articles/qualcomm-faces-worst-day-since-181632192.html",
-      "published_at": "2026-11-06T18:16:32Z",
-      "score": -92,
-      "label": "bearish"
-    },
-    {
-      "id": "f005470fa241",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "State Pension Funds Have at Least $578 Billion Riding on Tumbling AI Stocks",
-      "url": "https://247wallst.com/investing/2026/11/06/state-pension-funds-have-at-least-578-billion-riding-on-tumbling-ai-stocks/",
-      "published_at": "2026-11-06T17:34:41Z",
-      "score": -76,
-      "label": "bearish"
-    },
-    {
-      "id": "6ebc04cad963",
-      "source": "news",
-      "publisher": "TIKR",
-      "title": "Apple Is \u201cthe Anti-AI Large Cap Tech Trade,\u201d Says Josh Brown. Now It\u2019s Capping AI Spending",
-      "url": "https://www.tikr.com/blog/apple-is-the-anti-ai-large-cap-tech-trade-says-josh-brown-now-its-capping-ai-spending?ref=yahoofinance&tlnk=yf-261106-5rx9fr6v",
-      "published_at": "2026-11-06T17:23:13Z",
-      "score": 6,
-      "label": "neutral"
-    },
-    {
-      "id": "1332f947a004",
-      "source": "news",
-      "publisher": "GuruFocus.com",
-      "title": "Apple, Meta, Musk Face New Threat From Democrats",
-      "url": "https://finance.yahoo.com/technology/articles/apple-meta-musk-face-threat-172226280.html",
-      "published_at": "2026-11-06T17:22:26Z",
-      "score": -59,
-      "label": "bearish"
-    },
-    {
-      "id": "7952f64e111d",
-      "source": "news",
-      "publisher": "GuruFocus.com",
-      "title": "Apple Stocks Edge Lower as $7.5 Billion Bond Sale Prices Across Seven Tranches",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/apple-stocks-edge-lower-7-170806326.html",
-      "published_at": "2026-11-06T17:08:06Z",
-      "score": -96,
-      "label": "bearish"
-    },
-    {
-      "id": "d87de3ebc66d",
-      "source": "news",
-      "publisher": "Investor's Business Daily",
-      "title": "Stock Market Suffers Ugly Losses In Election Week; Apple, Palantir Led Key Earnings: Weekly Review",
-      "url": "https://www.investors.com/news/stock-market-suffers-ugly-losses-in-election-week-apple-palantir-led-key-earnings-weekly-review/?src=A00220&yptr=yahoo",
-      "published_at": "2026-11-06T17:06:39Z",
-      "score": -80,
-      "label": "bearish"
-    },
-    {
-      "id": "5e8596e93380",
-      "source": "news",
-      "publisher": "GuruFocus.com",
-      "title": "Oracle beats Microsoft and Amazon on a key Wall Street metric",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/oracle-beats-microsoft-amazon-key-160655388.html",
-      "published_at": "2026-11-06T16:06:55Z",
-      "score": 87,
-      "label": "bullish"
-    },
-    {
-      "id": "12be39ec108a",
-      "source": "news",
-      "publisher": "Entrepreneur",
-      "title": "Apple Is Reportedly Slashing AI Budgets. Here\u2019s Why Employees Are Worried.",
-      "url": "https://www.entrepreneur.com/business-news/apple-is-reportedly-slashing-ai-budgets-heres-why-employees-are-worried",
-      "published_at": "2026-11-06T15:54:00Z",
-      "score": -94,
-      "label": "bearish"
-    },
-    {
-      "id": "17ed78f31abb",
-      "source": "news",
-      "publisher": "Investing.com",
-      "title": "TSMC rises on report of potential push into advanced memory for Nvidia",
-      "url": "https://finance.yahoo.com/technology/ai/articles/tsmc-rises-report-potential-push-151300006.html",
-      "published_at": "2026-11-06T15:13:00Z",
-      "score": 85,
-      "label": "bullish"
-    },
-    {
-      "id": "617fdcd60023",
-      "source": "news",
-      "publisher": "Zacks",
-      "title": "Is Qualcomm Stock Worth Buying After Mixed Q4 Results?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/qualcomm-stock-worth-buying-mixed-151000647.html",
-      "published_at": "2026-11-06T15:10:00Z",
-      "score": 19,
-      "label": "neutral"
-    },
-    {
-      "id": "3b0d1fe7ab4b",
-      "source": "news",
-      "publisher": "Digital Trends",
-      "title": "Apple issues a grim warning as memory costs soar. It seems pricey iPhones and Macs are here to stay",
-      "url": "https://www.digitaltrends.com/computing/apple-issues-a-grim-warning-as-memory-costs-soar-it-seems-pricey-iphones-and-macs-are-here-to-stay/",
-      "published_at": "2026-11-06T15:08:04Z",
-      "score": -90,
-      "label": "bearish"
-    },
-    {
-      "id": "dc4c457fb6b8",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "5 Dividend Stocks With Ex-Dividend Deadlines Next Week. Don\u2019t Miss These Dates",
-      "url": "https://247wallst.com/investing/2026/11/06/5-dividend-stocks-with-ex-dividend-deadlines-next-week-dont-miss-these-dates/",
-      "published_at": "2026-11-06T14:47:11Z",
-      "score": -3,
-      "label": "neutral"
-    },
-    {
-      "id": "187beeac4de4",
-      "source": "news",
-      "publisher": "International Business Times",
-      "title": "Magnificent Seven Lost $1 Trillion in Tech Rout. Here's How Much Each Plunged.",
-      "url": "https://www.ibtimes.com/tech-stocks-ai-spending-fears-market-selloff-3809480",
-      "published_at": "2026-11-06T14:41:34Z",
-      "score": -28,
-      "label": "bearish"
-    },
-    {
-      "id": "1d840a9efacb",
-      "source": "news",
-      "publisher": "Trefis",
-      "title": "What Will Decide Apple Stock As Memory Costs Rise?",
-      "url": "https://www.trefis.com/stock/aapl/articles/623369/what-will-decide-apple-stock-as-memory-costs-rise/2026-11-06",
-      "published_at": "2026-11-06T14:19:27Z",
-      "score": -4,
-      "label": "neutral"
-    },
-    {
-      "id": "838d46cb1b84",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "Apple Is Borrowing $7.5 Billion, Its First Bond Sale Since 2025",
-      "url": "https://247wallst.com/investing/2026/11/06/apple-is-borrowing-7-5-billion-its-first-bond-sale-since-2025/",
-      "published_at": "2026-11-06T13:53:35Z",
-      "score": 19,
-      "label": "neutral"
-    },
-    {
-      "id": "4584c955004c",
-      "source": "news",
-      "publisher": "Supply Chain Dive",
-      "title": "Apple boosts purchase commitments by $33B amid memory crunch",
-      "url": "https://www.supplychaindive.com/news/apple-boosts-purchase-commitments-by-33b-amid-memory-crunch/873936/",
-      "published_at": "2026-11-06T13:51:00Z",
-      "score": 91,
-      "label": "bullish"
-    },
-    {
-      "id": "a3c174e48ac6",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "Apple Is Now Worth $600 Billion More Than Nvidia",
-      "url": "https://247wallst.com/investing/2026/11/06/apple-is-now-worth-600-billion-more-than-nvidia/",
-      "published_at": "2026-11-06T13:22:06Z",
-      "score": 17,
-      "label": "neutral"
-    },
-    {
-      "id": "893ec13fe20b",
-      "source": "news",
-      "publisher": "Investor's Business Daily",
-      "title": "Dow Jones Futures Fall, AI Stocks Nvidia, Sandisk, CoreWeave, SpaceX Bounce; Tesla To End Cybertruck Production",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nasdaq-dives-55-nvidia-sandisk-coreweave-spacex-plunge-jobs/?src=A00220&yptr=yahoo",
-      "published_at": "2026-11-06T13:01:21Z",
-      "score": -86,
-      "label": "bearish"
-    },
-    {
-      "id": "d2df2e451be9",
-      "source": "news",
-      "publisher": "Investor's Business Daily",
-      "title": "Top Funds Feast On Shell, Microsoft, Palantir And 24 More Stocks",
-      "url": "https://www.investors.com/etfs-and-funds/mutual-funds/best-mutual-funds-feast-on-shell-microsoft-palantir-lilly-apple-and-more-stocks-to-watch/?src=A00220&yptr=yahoo",
-      "published_at": "2026-11-06T13:00:49Z",
-      "score": 5,
-      "label": "neutral"
-    },
-    {
-      "id": "79b0b08bcf32",
-      "source": "news",
-      "publisher": "Zacks",
-      "title": "Investors Heavily Search Apple Inc. (AAPL): Here is What You Need to Know",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/investors-heavily-search-apple-inc-130002664.html",
-      "published_at": "2026-11-06T13:00:02Z",
-      "score": 0,
-      "label": "neutral"
-    },
-    {
-      "id": "c9fef41251a1",
-      "source": "news",
-      "publisher": "Simply Wall St.",
-      "title": "Cloud AI Update - AI Accelerator Market Poised for Significant Growth by 2030",
-      "url": "https://finance.yahoo.com/technology/ai/articles/cloud-ai-ai-accelerator-market-123805845.html",
-      "published_at": "2026-11-06T12:38:05Z",
-      "score": 89,
-      "label": "bullish"
-    },
-    {
-      "id": "1bbfecad66ca",
-      "source": "news",
-      "publisher": "Stocktwits",
-      "title": "From Musk\u2019s Tesla Cybertruck To Ternus\u2019 Memory Warning: MAG 7 Voices In Midterm Election Week",
-      "url": "https://stocktwits.com/news-articles/markets/equity/musk-tesla-cybertruck-ternus-memory-warning-mag-7-voices-in-midterm-election-week/cNGlofFR9Ic",
-      "published_at": "2026-11-06T12:30:00Z",
-      "score": -20,
-      "label": "bearish"
     }
   ]
 }
