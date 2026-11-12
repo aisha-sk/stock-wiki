@@ -2,19 +2,15 @@
   "schema_version": "1.1",
   "symbol": "NVDA",
   "name": "NVIDIA Corporation",
-  "generated_at": "2026-11-11T01:42:28Z",
+  "generated_at": "2026-11-12T02:41:13Z",
   "is_demo_data": false,
   "quote": {
-    "price": 168.89,
-    "change_pct": -5.47,
-    "as_of": "2026-11-10",
+    "price": 173.73,
+    "change_pct": 2.87,
+    "as_of": "2026-11-11",
     "currency": "USD"
   },
   "prices": [
-    {
-      "date": "2026-05-21",
-      "close": 219.01
-    },
     {
       "date": "2026-05-22",
       "close": 214.84
@@ -490,17 +486,21 @@
     {
       "date": "2026-11-10",
       "close": 168.89
+    },
+    {
+      "date": "2026-11-11",
+      "close": 173.73
     }
   ],
   "forecast": {
     "horizon_days": 5,
     "move": "large",
-    "prob_large": 0.8571,
-    "typical_move_pct": 3.502,
-    "confidence": 0.8571,
-    "made_at": "2026-11-11T01:42:28Z",
-    "as_of_date": "2026-11-10",
-    "target_date": "2026-11-17",
+    "prob_large": 0.7912,
+    "typical_move_pct": 3.5236,
+    "confidence": 0.7912,
+    "made_at": "2026-11-12T02:41:13Z",
+    "as_of_date": "2026-11-11",
+    "target_date": "2026-11-18",
     "model_name": "move-xgb",
     "model_version": "14"
   },
@@ -510,7 +510,7 @@
       {
         "source": "analysts",
         "display_name": "Wall Street analysts",
-        "score": 54,
+        "score": 53,
         "label": "bullish",
         "doc_count": 62,
         "note": "62 analysts, Nov 2026",
@@ -520,8 +520,8 @@
       {
         "source": "news",
         "display_name": "News media",
-        "score": -19,
-        "label": "neutral",
+        "score": -42,
+        "label": "bearish",
         "doc_count": 50,
         "note": "50 articles, last 7 days",
         "method": "finbert",
@@ -529,311 +529,311 @@
       }
     ],
     "gap": {
-      "points": 73,
+      "points": 95,
       "most_bullish": "analysts",
       "most_bearish": "news",
-      "summary": "Wall Street analysts lean bullish while News media are neutral."
+      "summary": "Wall Street analysts lean bullish while News media lean bearish."
     }
   },
   "headlines": [
     {
-      "id": "29e0f0578e7d",
+      "id": "7e89e1de279a",
       "source": "analysts",
       "publisher": "Yahoo Finance",
-      "title": "Consensus: 58 buy, 3 hold, 1 sell (Nov 2026)",
+      "title": "Consensus: 57 buy, 4 hold, 1 sell (Nov 2026)",
       "url": null,
-      "published_at": "2026-11-11T01:42:28Z",
-      "score": 54,
+      "published_at": "2026-11-12T02:41:13Z",
+      "score": 53,
       "label": "bullish"
     },
     {
-      "id": "48aac77710b3",
+      "id": "b92c2a9b0d00",
       "source": "news",
       "publisher": "Investor's Business Daily",
-      "title": "Dow Jones Futures Rise, CoreWave Jumps After Stocks Fall On Nvidia, Surging Treasury Yields",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-treasury-yields-nvidia-coreweave/?src=A00220&yptr=yahoo",
-      "published_at": "2026-11-11T01:25:50Z",
-      "score": -36,
+      "title": "Dow Jones Futures Rise, Techs Fall As Nvidia May Oust CEO Huang After CoreWave Leads Rally",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-coreweave-sandisk-nvidia-amd-nebius-bloom/?src=A00220&yptr=yahoo",
+      "published_at": "2026-11-12T02:31:16Z",
+      "score": -90,
       "label": "bearish"
     },
     {
-      "id": "831685c35e39",
+      "id": "1370469d98db",
       "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Meet the 1 Stock I'd Buy With $500, Even If the Market Fell 5% Tomorrow",
-      "url": "https://www.fool.com/investing/2026/11/10/meet-the-1-stock-id-buy-with-500-even-if-the-marke/",
-      "published_at": "2026-11-11T01:25:00Z",
-      "score": 18,
-      "label": "neutral"
-    },
-    {
-      "id": "0210252cb970",
-      "source": "news",
-      "publisher": "Investing.com",
-      "title": "U.S. stock futures tick higher after Wall St slips on hot CPI, Nvidia losses",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/u-stock-futures-tick-higher-011241932.html",
-      "published_at": "2026-11-11T01:12:41Z",
-      "score": -81,
-      "label": "bearish"
-    },
-    {
-      "id": "1ee97f3f1631",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Anthropic Is Reserving Up to 20% of Its IPO for Retail Investors, Far Above the Typical 5% to 10%",
-      "url": "https://www.fool.com/investing/2026/11/10/anthropic-is-reserving-up-to-20-of-its-ipo-for-retail-investors-far-above-the-typical-5-to-10/",
-      "published_at": "2026-11-11T01:11:02Z",
-      "score": 86,
-      "label": "bullish"
-    },
-    {
-      "id": "b2c05ad198b1",
-      "source": "news",
-      "publisher": "BeInCrypto",
-      "title": "Analysts Split on How to Trade Nvidia After Jensen Huang Spy Scandal",
-      "url": "https://beincrypto.com/how-to-trade-nvidia-spy-scandal/",
-      "published_at": "2026-11-11T01:10:52Z",
-      "score": -28,
-      "label": "bearish"
-    },
-    {
-      "id": "6d0c3d4abd2f",
-      "source": "news",
-      "publisher": "Trefis",
-      "title": "What Would It Take For AMD Stock To Move Higher?",
-      "url": "https://www.trefis.com/stock/amd/articles/623964/what-would-it-take-for-amd-stock-to-move-higher/2026-11-10",
-      "published_at": "2026-11-11T01:09:44Z",
-      "score": 7,
-      "label": "neutral"
-    },
-    {
-      "id": "cfbf988a0cdd",
-      "source": "news",
-      "publisher": "CBS News",
-      "title": "Nvidia's trillion-dollar bind: Can it afford to lose Jensen Huang?",
-      "url": "https://www.cbsnews.com/news/jensen-huang-affair-nvidia-ceo-dilemma/",
-      "published_at": "2026-11-11T01:02:52Z",
-      "score": 0,
-      "label": "neutral"
-    },
-    {
-      "id": "57fbcfd028b5",
-      "source": "news",
-      "publisher": "Barrons.com",
-      "title": "Review & Preview: Hot Inflation",
-      "url": "https://www.barrons.com/articles/stocks-today-hot-inflation-pushes-indexes-lower-cf9d41ec?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-11T00:55:00Z",
-      "score": -5,
-      "label": "neutral"
-    },
-    {
-      "id": "4827e2129901",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Rivian's Deliveries Jumped 58%. Why Didn't Gross Profit Follow?",
-      "url": "https://www.fool.com/investing/2026/11/10/rivians-deliveries-jumped-58-why-didnt-gross-profi/",
-      "published_at": "2026-11-11T00:50:00Z",
-      "score": 33,
-      "label": "bullish"
-    },
-    {
-      "id": "dbbc0c0d3f92",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "BYD's Profits Rebounded. These 2 Questions Will Decide What Comes Next.",
-      "url": "https://www.fool.com/investing/2026/11/10/byds-profits-rebounded-these-2-questions-will-deci/",
-      "published_at": "2026-11-11T00:50:00Z",
+      "publisher": "24/7 Wall St.",
+      "title": "Warren Buffett\u2019s 1991 Playbook Points The Path Forward As Nvidia Reportedly Prepares To Oust Jensen Huang. Buffett Said He Could Forgive Losses, But There Was One Thing He Would Be Ruthless About",
+      "url": "https://247wallst.com/investing/2026/11/11/warren-buffetts-1991-playbook-points-the-path-forward-as-nvidia-reportedly-prepares-to-oust-jensen-huang-buffett-said-he-could-forgive-losses-but-there-was-one-thing-he-would-be-ruthless-about/",
+      "published_at": "2026-11-12T02:26:06Z",
       "score": 4,
       "label": "neutral"
     },
     {
-      "id": "4cd7ffb6e21d",
+      "id": "2d5cdd784535",
       "source": "news",
-      "publisher": "Motley Fool",
-      "title": "AST SpaceMobile Has Fallen for 3 Straight Weeks and Sits More Than 75% Below Its High. Here's What $5,000 Invested Today Will Be Worth If It Gets Back There.",
-      "url": "https://www.fool.com/investing/2026/11/10/ast-spacemobile-has-fallen-for-3-straight-weeks-an/",
-      "published_at": "2026-11-11T00:25:00Z",
-      "score": -89,
+      "publisher": "Reuters",
+      "title": "Nvidia board meets to decide CEO Huang's future as leadership crisis deepens",
+      "url": "https://finance.yahoo.com/news/nvidia-preparing-oust-ceo-jensen-223546395.html",
+      "published_at": "2026-11-12T02:21:13Z",
+      "score": -48,
       "label": "bearish"
     },
     {
-      "id": "a7ab35dc849e",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "Jim Cramer Warns About the AI Data Center Trade. What It Means for Nvidia and Broadcom",
-      "url": "https://247wallst.com/investing/2026/11/10/jim-cramer-warns-about-the-ai-data-center-trade-what-it-means-for-nvidia-and-broadcom/",
-      "published_at": "2026-11-11T00:07:39Z",
-      "score": -16,
-      "label": "neutral"
-    },
-    {
-      "id": "3d83110691d9",
+      "id": "039a1baf1dcd",
       "source": "news",
       "publisher": "Motley Fool",
-      "title": "Why AAON Stock Popped Today",
-      "url": "https://www.fool.com/investing/2026/11/10/why-aaon-stock-popped-today/",
-      "published_at": "2026-11-10T23:46:05Z",
-      "score": -19,
-      "label": "neutral"
-    },
-    {
-      "id": "39f5b18de973",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "2 Reasons AMD Can Still Outperform by 2030",
-      "url": "https://www.fool.com/investing/2026/11/10/2-reasons-amd-can-still-outperform-by-2030/",
-      "published_at": "2026-11-10T23:33:02Z",
-      "score": 90,
-      "label": "bullish"
-    },
-    {
-      "id": "94a1cd6fd563",
-      "source": "news",
-      "publisher": "TIKR",
-      "title": "Dell Sinks 12% in a Week on Texas Data Center Fears: \u201cA Moratorium, a Ban\u201d",
-      "url": "https://www.tikr.com/blog/dell-sinks-12-in-a-week-on-texas-data-center-fears-a-moratorium-a-ban?ref=yahoofinance&tlnk=yf-261110-pm2vw2xc",
-      "published_at": "2026-11-10T23:30:09Z",
-      "score": -94,
-      "label": "bearish"
-    },
-    {
-      "id": "ee3f3d0e4b66",
-      "source": "news",
-      "publisher": "Investor's Business Daily",
-      "title": "CoreWeave Earnings, Revenue Top Views. Cash Burn Less Than Expected.",
-      "url": "https://www.investors.com/news/technology/coreweave-stock-q326-earnings-crwv/?src=A00220&yptr=yahoo",
-      "published_at": "2026-11-10T23:29:24Z",
-      "score": -93,
-      "label": "bearish"
-    },
-    {
-      "id": "2f1a1519cc60",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Hyperscalers Are Projected to Spend $1.3 Trillion on Capex in 2027. Here's the 1 Industrial Stock That Gets Paid Before a Single AI Token Is Sold.",
-      "url": "https://www.fool.com/investing/2026/11/10/hyperscalers-are-projected-to-spend-13-trillion-on/",
-      "published_at": "2026-11-10T23:25:00Z",
-      "score": 2,
-      "label": "neutral"
-    },
-    {
-      "id": "1f4f99aedd6b",
-      "source": "news",
-      "publisher": "BeInCrypto",
-      "title": "Why Would China Send a Spy to Nvidia CEO Jensen Huang?",
-      "url": "https://beincrypto.com/why-china-targeted-nvidia-ceo-jensen-huang-spy-scandal/",
-      "published_at": "2026-11-10T23:11:11Z",
+      "title": "Here's My Biggest Worry About Broadcom Stock. It Isn't Enough to Stop Me From Buying.",
+      "url": "https://www.fool.com/investing/2026/11/11/here-s-my-biggest-worry-about-broadcom-stock-it-isn-t-enough-to-stop-me-from-buying/",
+      "published_at": "2026-11-12T02:13:02Z",
       "score": -22,
       "label": "bearish"
     },
     {
-      "id": "d384acfe551b",
+      "id": "0e89977b74d6",
       "source": "news",
       "publisher": "The Wall Street Journal",
-      "title": "Law Firm Wachtell Lipton to Lead Nvidia Internal Investigation",
-      "url": "https://www.wsj.com/tech/law-firm-wachtell-lipton-to-lead-nvidia-internal-investigation-d37731c7?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-10T23:05:00Z",
-      "score": -1,
+      "title": "Top Democrats Target Trump Administration\u2019s Nvidia-China Records",
+      "url": "https://www.wsj.com/politics/policy/top-democrats-target-trump-administrations-nvidia-china-records-0c212746?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-12T02:00:00Z",
+      "score": -2,
       "label": "neutral"
     },
     {
-      "id": "52f8a2465500",
+      "id": "7d6c7bd4a086",
       "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Why Lincoln Educational Services Stock Soared Again Today",
-      "url": "https://www.fool.com/investing/2026/11/10/why-lincoln-educational-services-stock-soared-again-today/",
-      "published_at": "2026-11-10T22:51:06Z",
-      "score": 84,
-      "label": "bullish"
-    },
-    {
-      "id": "8319e82d77f6",
-      "source": "news",
-      "publisher": "TipRanks",
-      "title": "IREN Stock Falls Even as JPMorgan Goes Bullish",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/iren-stock-falls-even-jpmorgan-224457686.html",
-      "published_at": "2026-11-10T22:44:57Z",
-      "score": -67,
+      "publisher": "The Wall Street Journal",
+      "title": "Huang\u2019s Coziness With Trump Wasn\u2019t Enough to Save Him From Spying Scandal",
+      "url": "https://www.wsj.com/politics/national-security/huangs-coziness-with-trump-wasnt-enough-to-save-him-from-spying-scandal-85ce06f4?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-12T02:00:00Z",
+      "score": -42,
       "label": "bearish"
     },
     {
-      "id": "83ae13886612",
+      "id": "3deec1310b63",
       "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Here's How Much a $5,000 Investment in SpaceX Stock Could Be Worth by November 2027",
-      "url": "https://www.fool.com/investing/2026/11/10/heres-how-much-a-5000-investment-in-spacex-stock-c/",
-      "published_at": "2026-11-10T22:42:00Z",
-      "score": 4,
-      "label": "neutral"
-    },
-    {
-      "id": "bc077296c56d",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Stock Market Today, Nov. 10: Nvidia Stock Plunges 5.5% as CEO Scandal Overshadows Its Upcoming Earnings Report",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/10/stock-market-today-nov-10-nvidia-stock-plunges-5-5-as-ceo-scandal-overshadows-its-upcoming-earnings-report/",
-      "published_at": "2026-11-10T22:35:02Z",
-      "score": -96,
-      "label": "bearish"
-    },
-    {
-      "id": "9fb02247de12",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Nvidia Stock Just Lost 10% in 1 Day. Should You Buy It Before It Reports Earnings on Nov. 17?",
-      "url": "https://www.fool.com/investing/2026/11/10/nvidia-stock-just-lost-10-in-1-day-should-you-buy-it-before-it-reports-earnings-on-nov-17/",
-      "published_at": "2026-11-10T22:28:02Z",
-      "score": -71,
-      "label": "bearish"
-    },
-    {
-      "id": "b2e2be5b1893",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Only 2 Novembers Since 1950 Have Started Worse for the S&P 500 Than This One. Here's What Followed the Other Weak Starts.",
-      "url": "https://www.fool.com/investing/2026/11/10/only-2-novembers-since-1950-have-started-worse-for-the-s-and-p-500-than-this-one-here-s-what-followed-the-other-weak-starts/",
-      "published_at": "2026-11-10T22:27:01Z",
-      "score": -87,
-      "label": "bearish"
-    },
-    {
-      "id": "4e3ed4355b47",
-      "source": "news",
-      "publisher": "TheStreet",
-      "title": "Ethereum ended CoreWeave's mining days. Earnings test its AI bet",
-      "url": "https://www.thestreet.com/crypto/markets/coreweave-stock-could-swing-15-on-q3-earnings-options-imply",
-      "published_at": "2026-11-10T22:25:25Z",
-      "score": 69,
-      "label": "bullish"
-    },
-    {
-      "id": "2ea8fc970c22",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "The Stock Market Just Got Bad News on Inflation.",
-      "url": "https://www.fool.com/investing/2026/11/10/the-stock-market-just-got-bad-news-on-inflation/",
-      "published_at": "2026-11-10T22:25:02Z",
+      "publisher": "Reuters",
+      "title": "Asian stocks fragile, Nvidia plummets as board to decide CEO's fate",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/asian-stocks-fragile-nvidia-plummets-015524144.html",
+      "published_at": "2026-11-12T01:55:24Z",
       "score": -93,
       "label": "bearish"
     },
     {
-      "id": "2ea881bf1821",
+      "id": "e628e03ee7ba",
       "source": "news",
-      "publisher": "Yahoo Finance Video",
-      "title": "OpenAI's Q3 results and Nvidia's scandal impact on the AI ecosystem",
-      "url": "https://finance.yahoo.com/video/openais-q3-results-and-nvidias-scandal-impact-on-the-ai-ecosystem-222332740.html",
-      "published_at": "2026-11-10T22:23:32Z",
+      "publisher": "Motley Fool",
+      "title": "These 5 Dividend Aristocrats\u00ae Have Raised Payouts for Decades",
+      "url": "https://www.fool.com/investing/2026/11/11/these-5-dividend-aristocrats-have-raised-payouts-f/",
+      "published_at": "2026-11-12T01:35:00Z",
+      "score": 67,
+      "label": "bullish"
+    },
+    {
+      "id": "df6af76473c5",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Nvidia Board May Vote to Remove Jensen Huang as CEO Tonight. Here\u2019s What Investors Need to Know.",
+      "url": "https://www.fool.com/investing/2026/11/11/nvidia-board-may-vote-to-remove-jensen-huang-as-ceo-tonight-here-s-what-investors-need-to-know/",
+      "published_at": "2026-11-12T01:25:02Z",
+      "score": -25,
+      "label": "bearish"
+    },
+    {
+      "id": "5ed432c78b99",
+      "source": "news",
+      "publisher": "Investing.com",
+      "title": "Wall St futures fall as Nvidia slides on report of possible CEO ouster",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-fall-nvidia-011540333.html",
+      "published_at": "2026-11-12T01:15:40Z",
+      "score": -94,
+      "label": "bearish"
+    },
+    {
+      "id": "3f70d356ec2d",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "Meet Ian Buck: The NVIDIA Executive Insiders Believe Is the One Man Who Can Replace Jensen Huang",
+      "url": "https://247wallst.com/investing/2026/11/11/meet-ian-buck-the-nvidia-executive-insiders-believe-is-the-one-man-who-can-replace-jensen-huang/",
+      "published_at": "2026-11-12T01:11:50Z",
+      "score": 3,
+      "label": "neutral"
+    },
+    {
+      "id": "f07b8cab2093",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Why Globant Stock Wilted by 5% on Wednesday",
+      "url": "https://www.fool.com/investing/2026/11/11/why-globant-stock-wilted-by-5-on-wednesday/",
+      "published_at": "2026-11-12T01:10:54Z",
+      "score": -96,
+      "label": "bearish"
+    },
+    {
+      "id": "1ba061371c79",
+      "source": "news",
+      "publisher": "CNN Business",
+      "title": "Nvidia stock drops as board weighs Jensen Huang\u2019s future",
+      "url": "https://www.cnn.com/2026/11/11/investing/nvidia-stock-jensen-huang",
+      "published_at": "2026-11-12T01:10:13Z",
+      "score": -92,
+      "label": "bearish"
+    },
+    {
+      "id": "c0f2ae0512f5",
+      "source": "news",
+      "publisher": "First for Money",
+      "title": "Nvidia Preparing to Oust CEO Jensen Huang After He\u2019s Accused of Another Affair",
+      "url": "https://firstformoney.com/nvidia-preparing-to-oust-ceo-jensen-huang-after-hes-accused-of-another-affair/",
+      "published_at": "2026-11-12T01:09:54Z",
+      "score": -85,
+      "label": "bearish"
+    },
+    {
+      "id": "60c757d6d7bc",
+      "source": "news",
+      "publisher": "Barrons.com",
+      "title": "Nvidia Stock Tumbles. Jensen Huang Could Be Out Soon.",
+      "url": "https://www.barrons.com/articles/nvidia-stock-price-huang-affair-ceo-ouster-26c99dad?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-12T01:06:00Z",
+      "score": -91,
+      "label": "bearish"
+    },
+    {
+      "id": "eb459c96da33",
+      "source": "news",
+      "publisher": "MT Newswires",
+      "title": "Market Chatter: House Republicans Press Nvidia's Huang to Testify, Float Subpoena",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/market-chatter-house-republicans-press-010005071.html",
+      "published_at": "2026-11-12T01:00:05Z",
+      "score": -22,
+      "label": "bearish"
+    },
+    {
+      "id": "142ce5810f22",
+      "source": "news",
+      "publisher": "The Wall Street Journal",
+      "title": "Nvidia\u2019s Disappearing Singapore Sales Deepen Mystery Around Megaspeed",
+      "url": "https://www.wsj.com/business/earnings/nvidias-disappearing-singapore-sales-deepen-mystery-around-megaspeed-7d483180?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-12T01:00:00Z",
+      "score": -92,
+      "label": "bearish"
+    },
+    {
+      "id": "a1238ad5be8a",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Why B&G Foods Stock Soared Today",
+      "url": "https://www.fool.com/investing/2026/11/11/why-b-and-g-foods-stock-soared-today/",
+      "published_at": "2026-11-12T00:55:09Z",
+      "score": 73,
+      "label": "bullish"
+    },
+    {
+      "id": "b1445dda8721",
+      "source": "news",
+      "publisher": "Bloomberg",
+      "title": "Nvidia's CEO Change Won't Derail AI Trade: Pepperstone",
+      "url": "https://finance.yahoo.com/video/nvidias-ceo-change-wont-derail-004443742.html",
+      "published_at": "2026-11-12T00:44:43Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "d15e5178d667",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Why Anterix Stock Climbed Higher Today",
+      "url": "https://www.fool.com/investing/2026/11/11/why-anterix-stock-was-climbing-today/",
+      "published_at": "2026-11-12T00:43:57Z",
+      "score": 83,
+      "label": "bullish"
+    },
+    {
+      "id": "80ad82f26169",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Here's What a $10,000 Investment in Nvidia Could Be Worth if Jensen Huang Is Removed as CEO, According to Wall Street Analyst Dan Ives",
+      "url": "https://www.fool.com/investing/2026/11/11/here-s-what-a-usd10-000-investment-in-nvidia-could-be-worth-if-jensen-huang-is-removed-as-ceo-according-to-wall-street-analyst-dan-ives/",
+      "published_at": "2026-11-12T00:40:02Z",
+      "score": -37,
+      "label": "bearish"
+    },
+    {
+      "id": "ef4d6d8e6605",
+      "source": "news",
+      "publisher": "The Telegraph",
+      "title": "Nvidia prepares to oust Jensen Huang after \u2018Chinese spy\u2019 affair",
+      "url": "https://www.telegraph.co.uk/business/2026/11/12/nvidia-to-oust-jensen-huang-after-chinese-spy-affair/",
+      "published_at": "2026-11-12T00:33:11Z",
+      "score": -28,
+      "label": "bearish"
+    },
+    {
+      "id": "b7521071ac6a",
+      "source": "news",
+      "publisher": "The Telegraph",
+      "title": "Nvidia prepares to oust Jensen Huang after \u2018Chinese spy\u2019 affair",
+      "url": "https://uk.finance.yahoo.com/news/nvidia-prepares-oust-jensen-huang-003311885.html",
+      "published_at": "2026-11-12T00:33:11Z",
+      "score": -28,
+      "label": "bearish"
+    },
+    {
+      "id": "b62aab64c228",
+      "source": "news",
+      "publisher": "Benzinga",
+      "title": "Nvidia Has No Obvious Jensen Huang Successor. That\u2019s Becoming a Bigger Problem",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-no-obvious-jensen-huang-030947978.html",
+      "published_at": "2026-11-12T00:30:00Z",
       "score": -68,
       "label": "bearish"
     },
     {
-      "id": "8d2500aaf9b7",
+      "id": "f54954f2124a",
       "source": "news",
-      "publisher": "Insider Monkey",
-      "title": "Why Did Aletheia Downgrade Nvidia (NVDA)?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-did-aletheia-downgrade-nvidia-222303350.html",
-      "published_at": "2026-11-10T22:23:03Z",
-      "score": -28,
+      "publisher": "Stocktwits",
+      "title": "CoreWeave Reportedly Plans $4B Investment-Grade Loan After Strong Earnings Beat \u2014 But Shares Fall After-Hours On Nvidia CEO Drama",
+      "url": "https://stocktwits.com/news-articles/markets/equity/core-weave-reportedly-plans-4-b-investment-grade-loan-after-strong-earnings-beat-but-shares-fall-after-hours-on-nvidia-ceo-drama/cNGzQDlR99J",
+      "published_at": "2026-11-12T00:26:40Z",
+      "score": -95,
+      "label": "bearish"
+    },
+    {
+      "id": "9407d6ea40d7",
+      "source": "news",
+      "publisher": "Benzinga",
+      "title": "Nvidia Stock Sinks as Jensen Huang Ouster Report Sends Investors Toward AMD, Broadcom",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stock-sinks-jensen-huang-002504447.html",
+      "published_at": "2026-11-12T00:25:04Z",
+      "score": -83,
+      "label": "bearish"
+    },
+    {
+      "id": "c665e567f623",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "USA Rare Earth Earnings Report Left Me With 1 Big Unanswered Question",
+      "url": "https://www.fool.com/investing/2026/11/11/usa-rare-earth-earnings-report-left-me-with-1-big/",
+      "published_at": "2026-11-12T00:25:00Z",
+      "score": -82,
+      "label": "bearish"
+    },
+    {
+      "id": "c7e6e563321a",
+      "source": "news",
+      "publisher": "Stocktwits",
+      "title": "Nasdaq 100 Futures Drop As Reports Relating To Jensen Huang\u2019s Ousting Outweigh CoreWeave\u2019s Strong Outlook \u2014  NVDA, TSLA, SNDK, CAPR, CRWV In Focus",
+      "url": "https://stocktwits.com/news-articles/markets/equity/nasdaq-100-futures-drop-as-reports-relating-to-jensen-huang-s-ousting/cNGzQslR997",
+      "published_at": "2026-11-12T00:22:06Z",
+      "score": -95,
+      "label": "bearish"
+    },
+    {
+      "id": "9fec686db1de",
+      "source": "news",
+      "publisher": "Simply Wall St.",
+      "title": "Nvidia Export Curbs Could Shift AI Demand Toward These Data Center Stocks",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-export-curbs-could-shift-002027068.html",
+      "published_at": "2026-11-12T00:20:27Z",
+      "score": -87,
       "label": "bearish"
     }
   ]
