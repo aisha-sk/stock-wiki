@@ -2,7 +2,7 @@
   "schema_version": "1.1",
   "symbol": "TSLA",
   "name": "Tesla, Inc.",
-  "generated_at": "2026-11-12T02:41:13Z",
+  "generated_at": "2026-11-13T02:22:25Z",
   "is_demo_data": false,
   "quote": {
     "price": 390.84,
@@ -495,10 +495,10 @@
   "forecast": {
     "horizon_days": 5,
     "move": "large",
-    "prob_large": 0.5921,
-    "typical_move_pct": 3.5236,
-    "confidence": 0.5921,
-    "made_at": "2026-11-12T02:41:13Z",
+    "prob_large": 0.6259,
+    "typical_move_pct": 3.5255,
+    "confidence": 0.6259,
+    "made_at": "2026-11-13T02:22:25Z",
     "as_of_date": "2026-11-11",
     "target_date": "2026-11-18",
     "model_name": "move-xgb",
@@ -520,7 +520,7 @@
       {
         "source": "news",
         "display_name": "News media",
-        "score": -6,
+        "score": -10,
         "label": "neutral",
         "doc_count": 50,
         "note": "50 articles, last 7 days",
@@ -529,7 +529,7 @@
       }
     ],
     "gap": {
-      "points": 34,
+      "points": 38,
       "most_bullish": "analysts",
       "most_bearish": "news",
       "summary": "Wall Street analysts lean bullish while News media are neutral."
@@ -542,298 +542,298 @@
       "publisher": "Yahoo Finance",
       "title": "Consensus: 21 buy, 21 hold, 2 sell (Nov 2026)",
       "url": null,
-      "published_at": "2026-11-12T02:41:13Z",
+      "published_at": "2026-11-13T02:22:25Z",
       "score": 28,
       "label": "bullish"
     },
     {
-      "id": "c7e6e563321a",
+      "id": "538af5203f31",
+      "source": "news",
+      "publisher": "Investor's Business Daily",
+      "title": "Dow Jones Futures Rise After Market Weathers Nvidia CEO Huang's Exit, Surging Yields; SpaceX-Tesla Merger Deal Close",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-ceo-huang-exit-surging-yields-spacex-tesla-merger-deal/?src=A00220&yptr=yahoo",
+      "published_at": "2026-11-13T01:55:24Z",
+      "score": -73,
+      "label": "bearish"
+    },
+    {
+      "id": "f5fa91286739",
+      "source": "news",
+      "publisher": "TheStreet",
+      "title": "Musk gives Cybertruck a reprieve, but many will still get refunds",
+      "url": "https://www.thestreet.com/retail/tesla-cybertruck-refunds-musk-production-extension",
+      "published_at": "2026-11-13T01:03:00Z",
+      "score": -64,
+      "label": "bearish"
+    },
+    {
+      "id": "9c82ae2dcf3e",
       "source": "news",
       "publisher": "Stocktwits",
-      "title": "Nasdaq 100 Futures Drop As Reports Relating To Jensen Huang\u2019s Ousting Outweigh CoreWeave\u2019s Strong Outlook \u2014  NVDA, TSLA, SNDK, CAPR, CRWV In Focus",
-      "url": "https://stocktwits.com/news-articles/markets/equity/nasdaq-100-futures-drop-as-reports-relating-to-jensen-huang-s-ousting/cNGzQslR997",
-      "published_at": "2026-11-12T00:22:06Z",
-      "score": -95,
-      "label": "bearish"
-    },
-    {
-      "id": "659a61258e79",
-      "source": "news",
-      "publisher": "Simply Wall St.",
-      "title": "3 Growth Stocks With At Least 18% Revenue Growth",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/3-growth-stocks-least-18-200905110.html",
-      "published_at": "2026-11-11T20:09:05Z",
-      "score": 13,
-      "label": "neutral"
-    },
-    {
-      "id": "5440dea1f55a",
-      "source": "news",
-      "publisher": "CBS News",
-      "title": "Tesla extends Cybertruck production to clear backlog, Musk says",
-      "url": "https://www.cbsnews.com/news/tesla-extend-cybertruck-production-backlog/",
-      "published_at": "2026-11-11T19:55:13Z",
-      "score": 78,
-      "label": "bullish"
-    },
-    {
-      "id": "d120e3d76334",
-      "source": "news",
-      "publisher": "Barrons.com",
-      "title": "Tesla Extends Cybertruck\u2019s Run. Its Driving Software Matters More.",
-      "url": "https://www.barrons.com/articles/tesla-stock-cybertruck-production-fsd-finland-007503ae?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-11T19:39:00Z",
-      "score": 9,
-      "label": "neutral"
-    },
-    {
-      "id": "f2d6320ee428",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "3 Possible Paths Forward for AI Stocks (Bull Case, Bear Case, Base Case) -- and How to Invest for Each",
-      "url": "https://www.fool.com/investing/2026/11/11/3-possible-paths-forward-for-ai-stocks-bull-case-b/",
-      "published_at": "2026-11-11T19:24:09Z",
-      "score": 4,
-      "label": "neutral"
-    },
-    {
-      "id": "a4e119591307",
-      "source": "news",
-      "publisher": "Stocktwits",
-      "title": "TSLA Stock Climbs After Elon Musk Extends Cybertruck Run Through Summer 2027, Citing \u2018Sentimentality\u2019",
-      "url": "https://stocktwits.com/news-articles/markets/equity/tsla-stock-climbs-after-elon-musk-extends-cybertruck-run-through-summer-2027-citing-sentimentality/cNGDx6dR992",
-      "published_at": "2026-11-11T18:42:14Z",
-      "score": -61,
-      "label": "bearish"
-    },
-    {
-      "id": "6cd39c505ceb",
-      "source": "news",
-      "publisher": "Yahoo Finance Video",
-      "title": "How Miami-Dade residents can use bitcoin to pay their property taxes",
-      "url": "https://finance.yahoo.com/video/miami-dade-residents-bitcoin-pay-183000617.html",
-      "published_at": "2026-11-11T18:30:00Z",
-      "score": 2,
-      "label": "neutral"
-    },
-    {
-      "id": "944ffdc32763",
-      "source": "news",
-      "publisher": "Simply Wall St.",
-      "title": "Tesla (TSLA) Forms Special Committee To Review Possible All Stock Merger",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-tsla-forms-special-committee-181131688.html",
-      "published_at": "2026-11-11T18:11:31Z",
-      "score": 1,
-      "label": "neutral"
-    },
-    {
-      "id": "ac867780883e",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "Tesla Rises 4% as Finland Clears Its Driver-Assistance System Ahead of EU Vote; Lucid Slides 2% After Citi Cut, Rivian Dips",
-      "url": "https://247wallst.com/investing/2026/11/11/tesla-rises-4-as-finland-clears-its-driver-assistance-system-ahead-of-eu-vote-lucid-slides-2-after-citi-cut-rivian-dips/",
-      "published_at": "2026-11-11T17:48:36Z",
-      "score": -79,
-      "label": "bearish"
-    },
-    {
-      "id": "f8614d744a20",
-      "source": "news",
-      "publisher": "Investing.com",
-      "title": "Anthropic IPO retail demand and market positioning risks ahead of debut",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-ipo-retail-demand-market-174615481.html",
-      "published_at": "2026-11-11T17:46:15Z",
-      "score": -71,
-      "label": "bearish"
-    },
-    {
-      "id": "02a9a068f7bf",
-      "source": "news",
-      "publisher": "Benzinga Prediction Markets",
-      "title": "Google Could Buy Uber to Win the Robotaxi Wars, Reuters Columnist Argues",
-      "url": "https://www.benzinga.com/markets/prediction-markets/26/11/63153119/google-uber-robotaxis?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral",
-      "published_at": "2026-11-11T17:00:07Z",
-      "score": 26,
-      "label": "bullish"
-    },
-    {
-      "id": "37d409210353",
-      "source": "news",
-      "publisher": "GuruFocus.com",
-      "title": "Tesla Clears Major Hurdle in European Self-Driving Push",
-      "url": "https://finance.yahoo.com/technology/ai/articles/tesla-clears-major-hurdle-european-164003928.html",
-      "published_at": "2026-11-11T16:40:03Z",
-      "score": 18,
-      "label": "neutral"
-    },
-    {
-      "id": "598c3244b6ac",
-      "source": "news",
-      "publisher": "Zacks",
-      "title": "Top Electric & Autonomous Vehicle Stocks to Charge Up Your Portfolio",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/top-electric-autonomous-vehicle-stocks-160300058.html",
-      "published_at": "2026-11-11T16:03:00Z",
-      "score": 12,
-      "label": "neutral"
-    },
-    {
-      "id": "6eda3b0b4af0",
-      "source": "news",
-      "publisher": "First for Money",
-      "title": "Elon Musk Warns Tesla May Have to Refund Cybertruck Deposits as Production Winds Down",
-      "url": "https://firstformoney.com/elon-musk-warns-tesla-may-have-to-refund-cybertruck-deposits-as-production-winds-down/",
-      "published_at": "2026-11-11T15:45:22Z",
-      "score": -95,
-      "label": "bearish"
-    },
-    {
-      "id": "05e96004a61c",
-      "source": "news",
-      "publisher": "CryptoProwl",
-      "title": "OKXICE to Launch Tokenized Stock Trading with Coinbase, Circle, Strategy",
-      "url": "https://www.cryptoprowl.com/releases/okxice-to-launch-tokenized-stock-trading-with-coinbase-circle-strategy-7846",
-      "published_at": "2026-11-11T15:34:00Z",
-      "score": 9,
-      "label": "neutral"
-    },
-    {
-      "id": "83c2b7d1f074",
-      "source": "news",
-      "publisher": "TIKR",
-      "title": "Tesla Is Scrapping a 250,000-Unit Cybertruck Dream for Cybercabs. Waymo Got to San Antonio First",
-      "url": "https://www.tikr.com/blog/tesla-is-scrapping-a-250000-unit-cybertruck-dream-for-cybercabs-waymo-got-to-san-antonio-first?ref=yahoofinance&tlnk=yf-261111-cfg3jq4x",
-      "published_at": "2026-11-11T14:50:35Z",
-      "score": -2,
-      "label": "neutral"
-    },
-    {
-      "id": "11fce7a79d53",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "How Much Is Tesla\u2019s Robotaxi Actually Worth?",
-      "url": "https://247wallst.com/investing/2026/11/11/how-much-is-teslas-robotaxi-actually-worth/",
-      "published_at": "2026-11-11T14:20:17Z",
-      "score": 3,
-      "label": "neutral"
-    },
-    {
-      "id": "5f6808505a9e",
-      "source": "news",
-      "publisher": "Barchart",
-      "title": "The Uber Stock Correction Provides a Good Entry Opportunity With Ample Revenue Growth Drivers",
-      "url": "https://www.barchart.com/story/news/8776582/the-uber-stock-correction-provides-a-good-entry-opportunity-with-ample-revenue-growth-drivers",
-      "published_at": "2026-11-11T13:50:42Z",
-      "score": 88,
-      "label": "bullish"
-    },
-    {
-      "id": "732c22a1e41b",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "Musk\u2019s Companies Will Face Intense Democrat Scrutiny, But One is Under More Heat",
-      "url": "https://247wallst.com/investing/2026/11/11/musks-companies-will-face-intense-democrat-scrutiny-but-one-is-under-more-heat/",
-      "published_at": "2026-11-11T13:45:40Z",
-      "score": -69,
-      "label": "bearish"
-    },
-    {
-      "id": "a8dae3bcb664",
-      "source": "news",
-      "publisher": "Simply Wall St.",
-      "title": "This Week In Electric Vehicles - Green Rain Energy Drives Sustainable Energy Solutions Forward",
-      "url": "https://finance.yahoo.com/energy/articles/week-electric-vehicles-green-rain-123718795.html",
-      "published_at": "2026-11-11T12:37:18Z",
-      "score": 22,
-      "label": "bullish"
-    },
-    {
-      "id": "a77f44d0849e",
-      "source": "news",
-      "publisher": "GuruFocus.com",
-      "title": "Tesla wins major European approval with a surprising catch",
-      "url": "https://finance.yahoo.com/technology/ai/articles/tesla-wins-major-european-approval-121208613.html",
-      "published_at": "2026-11-11T12:12:08Z",
-      "score": 90,
-      "label": "bullish"
-    },
-    {
-      "id": "b880e222dc21",
-      "source": "news",
-      "publisher": "Barrons.com",
-      "title": "Tesla Stock Thrives on Key-Man Drama. Nvidia Might Not Be So Lucky.",
-      "url": "https://www.barrons.com/articles/tesla-stock-elon-musk-nvidia-ceo-e8ecac3a?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-11T11:47:00Z",
-      "score": 5,
-      "label": "neutral"
-    },
-    {
-      "id": "4365d7ea733c",
-      "source": "news",
-      "publisher": "Simply Wall St.",
-      "title": "Tesla (TSLA) Faces A Valuation Test Following Its Cybertruck Wind Down And Robotaxi Pivot",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-tsla-faces-valuation-test-111110357.html",
-      "published_at": "2026-11-11T11:11:10Z",
+      "title": "S&P 500, Dow, Nasdaq Futures Recover After Markets End Lower On Jensen Huang\u2019s Exit, Oil Price Pressure  \u2014  CRWV, CBRS, NVDA, TSLA In Focus",
+      "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-dow-nasdaq-futures-recover-after-markets-end-lower-on-jensen-huang-s-exit-oil-price-pressure-crwv-cbrs-nvda-tsla-in-focus/cNbbkHFR9OI",
+      "published_at": "2026-11-13T00:19:00Z",
       "score": -92,
       "label": "bearish"
     },
     {
-      "id": "4a3281ef197a",
+      "id": "3a4f8a8b9e3c",
       "source": "news",
-      "publisher": "Just Auto",
-      "title": "South Korean import sales surge 29% in October",
-      "url": "https://www.just-auto.com/news/south-korean-import-sales-surge-29-in-october/",
-      "published_at": "2026-11-11T10:49:10Z",
-      "score": 90,
-      "label": "bullish"
-    },
-    {
-      "id": "e1df2d4158d0",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Can Cathie Wood's Ark Invest ETF Make a Comeback With Its Large SpaceX Position?",
-      "url": "https://www.fool.com/investing/2026/11/11/can-cathie-woods-ark-invest-etf-make-a-comeback-wi/",
-      "published_at": "2026-11-11T10:31:00Z",
-      "score": 73,
-      "label": "bullish"
-    },
-    {
-      "id": "8792b2e1a762",
-      "source": "news",
-      "publisher": "TIKR",
-      "title": "Musk: Cybercab Will Do \u201ca Majority of All Passenger Miles.\u201d Uber\u2019s Tiny Margin Is the Target",
-      "url": "https://www.tikr.com/blog/musk-cybercab-will-do-a-majority-of-all-passenger-miles-ubers-tiny-margin-is-the-target?ref=yahoofinance&tlnk=yf-261111-5r3pgq93",
-      "published_at": "2026-11-11T10:25:38Z",
+      "publisher": "24/7 Wall St.",
+      "title": "A 68-Year-Old Retiree Bought 1,000 Tesla Shares at $108 in January 2023. Now Musk Could Merge Tesla Into SpaceX by December, and a 15% Premium Would Turn Her Stake Into About 3,270 SpaceX Shares",
+      "url": "https://247wallst.com/investing/2026/11/12/a-68-year-old-retiree-bought-1000-tesla-shares-at-108-in-january-2023-now-musk-could-merge-tesla-into-spacex-by-december-and-a-15-premium-would-turn-her-stake-into-about-3270-spacex-shares/",
+      "published_at": "2026-11-13T00:17:00Z",
       "score": 10,
       "label": "neutral"
     },
     {
-      "id": "2d9b0ff8cb43",
+      "id": "3589a6fddd12",
       "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "Elon Musk Just Put a $1 Trillion Chip Bill on Tesla\u2019s Table. That\u2019s a Warning for Anyone Holding 1,000 Tesla Shares",
-      "url": "https://247wallst.com/investing/2026/11/11/elon-musk-just-put-a-1-trillion-chip-bill-on-teslas-table-thats-a-warning-for-anyone-holding-1000-tesla-shares/",
-      "published_at": "2026-11-11T09:41:58Z",
-      "score": -23,
-      "label": "bearish"
+      "publisher": "Benzinga",
+      "title": "Elon Musk Makes Bold $10 Trillion Net Worth Remark as He Predicts Tesla Cybercab Will Dominate Ride-Hailing: \u2018Obvious to Anyone With Eyes and a Brain\u2019",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/elon-musk-makes-bold-10-230014083.html",
+      "published_at": "2026-11-12T23:00:14Z",
+      "score": 7,
+      "label": "neutral"
     },
     {
-      "id": "6e4c95c2cb73",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Is It Too Late to Buy Tesla Stock?",
-      "url": "https://www.fool.com/investing/2026/11/11/is-it-too-late-to-buy-tesla-stock/",
-      "published_at": "2026-11-11T09:35:00Z",
-      "score": -23,
-      "label": "bearish"
-    },
-    {
-      "id": "192a28e00426",
+      "id": "fc00054b323b",
       "source": "news",
       "publisher": "TIKR",
-      "title": "Musk Calls Model Y \u201cthe Best-Selling Car\u201d on Earth. Inside China, Tesla Sales Hit a 4-Year Low",
-      "url": "https://www.tikr.com/blog/musk-calls-model-y-the-best-selling-car-on-earth-inside-china-tesla-sales-hit-a-4-year-low?ref=yahoofinance&tlnk=yf-261111-h5qmxg8q",
-      "published_at": "2026-11-11T07:39:34Z",
-      "score": -73,
+      "title": "Musk: It Takes \u201c20 to 30 Million Robots\u201d to Match America\u2019s Output. That\u2019s Optimus\u2019 Market",
+      "url": "https://www.tikr.com/blog/musk-it-takes-20-to-30-million-robots-to-match-americas-output-thats-optimus-market?ref=yahoofinance&tlnk=yf-261112-w585gqg3",
+      "published_at": "2026-11-12T22:19:29Z",
+      "score": 4,
+      "label": "neutral"
+    },
+    {
+      "id": "76fee0e63e7d",
+      "source": "news",
+      "publisher": "Simply Wall St.",
+      "title": "Why Retail Investors Are Watching AI Infrastructure Stocks After Tesla SpaceX Merger Talk",
+      "url": "https://finance.yahoo.com/technology/ai/articles/why-retail-investors-watching-ai-221437110.html",
+      "published_at": "2026-11-12T22:14:37Z",
+      "score": -7,
+      "label": "neutral"
+    },
+    {
+      "id": "5e007aee5485",
+      "source": "news",
+      "publisher": "Stocktwits",
+      "title": "TSLA Stock Climbs Amid Reports Of SpaceX Tie-Up As Early As December",
+      "url": "https://stocktwits.com/news-articles/markets/equity/tsla-stock-climbs-amid-reports-of-space-x-tie-up-as-early-as-december/cNGCBV8R9O5",
+      "published_at": "2026-11-12T22:07:01Z",
+      "score": 38,
+      "label": "bullish"
+    },
+    {
+      "id": "bba137d8614f",
+      "source": "news",
+      "publisher": "Yahoo Finance Video",
+      "title": "Cathie Wood: After Huang, AI push isn\u2019t \u2018going to stop\u2019",
+      "url": "https://finance.yahoo.com/video/cathie-wood-huang-ai-push-214100089.html",
+      "published_at": "2026-11-12T21:41:00Z",
+      "score": 5,
+      "label": "neutral"
+    },
+    {
+      "id": "0a249fec8d9f",
+      "source": "news",
+      "publisher": "Investor's Business Daily",
+      "title": "Elon Musk Could Announce Tesla-SpaceX Merger By December: Report",
+      "url": "https://www.investors.com/news/elon-musk-tesla-spacex-merger/?src=A00220&yptr=yahoo",
+      "published_at": "2026-11-12T21:35:32Z",
+      "score": 1,
+      "label": "neutral"
+    },
+    {
+      "id": "b2977faee67d",
+      "source": "news",
+      "publisher": "Barrons.com",
+      "title": "Nvidia, AMD, CoreWeave, Nebius, Tesla, and More Stocks That Explain Today\u2019s Market",
+      "url": "https://www.barrons.com/articles/stock-movers-cd2d0ebf?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-12T21:35:00Z",
+      "score": 1,
+      "label": "neutral"
+    },
+    {
+      "id": "eae9f93e8dde",
+      "source": "news",
+      "publisher": "The Wall Street Journal",
+      "title": "Nvidia\u2019s Market Cap Continues to Slide",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-12-2026/card/nvidia-s-market-cap-continues-to-slide-NPJDTzE5NpYFxp2GPkaR?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-12T21:28:07Z",
+      "score": -82,
+      "label": "bearish"
+    },
+    {
+      "id": "49086c7e02b1",
+      "source": "news",
+      "publisher": "Investor's Business Daily",
+      "title": "Musk Offers To Hire Huang; Prediction Markets Capitalize On Scandal",
+      "url": "https://www.investors.com/news/jensen-huang-elon-musk-hire-honor-nvidia-ousting-prediction-markets-odds-polymarket-kalshi-spacex/?src=A00220&yptr=yahoo",
+      "published_at": "2026-11-12T21:23:01Z",
+      "score": 65,
+      "label": "bullish"
+    },
+    {
+      "id": "71f0579e0861",
+      "source": "news",
+      "publisher": "Yahoo Finance Video",
+      "title": "SpaceX, Telsa merger talks begin to take shape",
+      "url": "https://finance.yahoo.com/video/spacex-telsa-merger-talks-begin-to-take-shape-212004858.html",
+      "published_at": "2026-11-12T21:20:04Z",
+      "score": 23,
+      "label": "bullish"
+    },
+    {
+      "id": "575a7b2a2fa3",
+      "source": "news",
+      "publisher": "BeInCrypto",
+      "title": "SpaceX-Tesla Merger Could Come Soon: What Do Shareholders Get?",
+      "url": "https://beincrypto.com/spacex-tesla-merger-december-shareholders/",
+      "published_at": "2026-11-12T21:13:08Z",
+      "score": -2,
+      "label": "neutral"
+    },
+    {
+      "id": "62864325cb1f",
+      "source": "news",
+      "publisher": "Investing.com",
+      "title": "Musk\u2019s SpaceX-Tesla empire moves closer, but China and Washington loom large",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/musk-spacex-tesla-empire-moves-205333382.html",
+      "published_at": "2026-11-12T20:53:33Z",
+      "score": 12,
+      "label": "neutral"
+    },
+    {
+      "id": "c6ac3d7a1f09",
+      "source": "news",
+      "publisher": "Bloomberg",
+      "title": "SpaceX and Tesla Talks on Record Merger Are Said to Progress",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-tesla-talks-record-merger-202235758.html",
+      "published_at": "2026-11-12T20:22:35Z",
+      "score": 2,
+      "label": "neutral"
+    },
+    {
+      "id": "e43202be5d5f",
+      "source": "news",
+      "publisher": "GuruFocus.com",
+      "title": "Tesla fund makes surprise Microsoft bet, keeps Nvidia stake",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-fund-makes-surprise-microsoft-175904923.html",
+      "published_at": "2026-11-12T17:59:04Z",
+      "score": 5,
+      "label": "neutral"
+    },
+    {
+      "id": "2cb97c31ec5b",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Binance founder CZ says crypto exchange didn't sell any SpaceX stock amid hack",
+      "url": "https://finance.yahoo.com/markets/crypto/article/binance-founder-cz-says-crypto-exchange-didnt-sell-any-spacex-stock-amid-hack-174829693.html",
+      "published_at": "2026-11-12T17:48:29Z",
+      "score": -2,
+      "label": "neutral"
+    },
+    {
+      "id": "1f72affc33f4",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "Tesla Vs. Nvidia: The Regulatory Crosshairs are Trained on These Two Mag 7 Shares, One is Worse Off",
+      "url": "https://247wallst.com/investing/2026/11/12/tesla-vs-nvidia-the-regulatory-crosshairs-are-trained-on-these-two-mag-7-shares-one-is-worse-off/",
+      "published_at": "2026-11-12T17:45:07Z",
+      "score": -35,
+      "label": "bearish"
+    },
+    {
+      "id": "ab78e95702c5",
+      "source": "news",
+      "publisher": "Benzinga",
+      "title": "Tesla May Be Done With Cybertruck, but This Company Wants to Keep It Alive \u2014 and Ross Gerber Is on Board",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-may-done-cybertruck-company-173008375.html",
+      "published_at": "2026-11-12T17:30:08Z",
+      "score": 7,
+      "label": "neutral"
+    },
+    {
+      "id": "7825c02bea41",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "Lucid Sinks 8% as Cash-Burn Worries Linger After Earnings; Rivian Falls 3%, Tesla Holds Steady After Musk\u2019s Jensen Huang Remark",
+      "url": "https://247wallst.com/investing/2026/11/12/lucid-sinks-8-as-cash-burn-worries-linger-after-earnings-rivian-falls-3-tesla-holds-steady-after-musks-jensen-huang-remark/",
+      "published_at": "2026-11-12T16:56:50Z",
+      "score": -93,
+      "label": "bearish"
+    },
+    {
+      "id": "5508b5e1c688",
+      "source": "news",
+      "publisher": "TIKR",
+      "title": "Musk\u2019s Chip Plan Is \u201cGonna Cost a Trillion Dollars.\u201d Tesla\u2019s Cash Flow Can\u2019t Cover It",
+      "url": "https://www.tikr.com/blog/musks-chip-plan-is-gonna-cost-a-trillion-dollars-teslas-cash-flow-cant-cover-it?ref=yahoofinance&tlnk=yf-261112-4fx24j5f",
+      "published_at": "2026-11-12T16:32:49Z",
+      "score": -39,
+      "label": "bearish"
+    },
+    {
+      "id": "0124aa9ddeb0",
+      "source": "news",
+      "publisher": "Benzinga",
+      "title": "\u2018That\u2019s The Bet\u2019: Palmer Luckey Backs Elon Musk\u2019s $150 Billion Robotaxi Ambitions as Tesla Tops Waymo in Texas",
+      "url": "https://finance.yahoo.com/technology/articles/bet-palmer-luckey-backs-elon-160012178.html",
+      "published_at": "2026-11-12T16:00:12Z",
+      "score": 17,
+      "label": "neutral"
+    },
+    {
+      "id": "89cc3395ae64",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Rivian CEO says robotaxis won't end car ownership \u2014 he's betting on both",
+      "url": "https://finance.yahoo.com/markets/article/rivian-ceo-says-robotaxis-wont-end-car-ownership--hes-betting-on-both-153000409.html",
+      "published_at": "2026-11-12T15:30:00Z",
+      "score": 4,
+      "label": "neutral"
+    },
+    {
+      "id": "45eeca0b1a33",
+      "source": "news",
+      "publisher": "Barrons.com",
+      "title": "Could Elon Musk End Up as Jensen Huang\u2019s Boss? \u2018That Would Be an Honor.\u2019",
+      "url": "https://www.barrons.com/articles/tesla-stock-elon-musk-jensen-huang-0718c7b7?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-12T15:04:00Z",
+      "score": 14,
+      "label": "neutral"
+    },
+    {
+      "id": "0b2c19e7ddf7",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "Qualcomm CEO: AI won't replace your smartphone anytime soon",
+      "url": "https://finance.yahoo.com/technology/article/qualcomm-ceo-ai-wont-replace-your-smartphone-anytime-soon-150140110.html",
+      "published_at": "2026-11-12T15:01:40Z",
+      "score": -8,
+      "label": "neutral"
+    },
+    {
+      "id": "031b55454ec6",
+      "source": "news",
+      "publisher": "Barchart",
+      "title": "\u2018That Would Be an Honor\u2019: Elon Musk Answers a Plea to Hire Jensen Huang as Nvidia\u2019s Board Ousts Its CEO of 33 Years Following $600 Billion Plunge",
+      "url": "https://www.barchart.com/story/news/8802699/that-would-be-an-honor-elon-musk-answers-a-plea-to-hire-jensen-huang-as-nvidias-board-ousts-its-ceo-of-33-years-following-600-billion-plunge",
+      "published_at": "2026-11-12T15:00:16Z",
+      "score": -7,
+      "label": "neutral"
+    },
+    {
+      "id": "096434d06d73",
+      "source": "news",
+      "publisher": "Benzinga Prediction Markets",
+      "title": "How the SpaceX Stock Slump Complicates Elon Musk\u2019s Tesla Merger",
+      "url": "https://www.benzinga.com/markets/prediction-markets/26/11/63190512/spacex-tesla-merger?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral",
+      "published_at": "2026-11-12T14:48:18Z",
+      "score": -56,
       "label": "bearish"
     }
   ]
