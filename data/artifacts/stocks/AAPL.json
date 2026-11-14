@@ -2,505 +2,505 @@
   "schema_version": "1.1",
   "symbol": "AAPL",
   "name": "Apple Inc.",
-  "generated_at": "2026-11-13T02:22:25Z",
+  "generated_at": "2026-11-14T01:58:35Z",
   "is_demo_data": false,
   "quote": {
-    "price": 355.63,
-    "change_pct": 2.04,
-    "as_of": "2026-11-11",
+    "price": 356.27,
+    "change_pct": 0.39,
+    "as_of": "2026-11-13",
     "currency": "USD"
   },
   "prices": [
     {
-      "date": "2026-05-22",
-      "close": 308.55
-    },
-    {
-      "date": "2026-05-26",
-      "close": 308.06
-    },
-    {
       "date": "2026-05-27",
-      "close": 310.58
+      "close": 310.35
     },
     {
       "date": "2026-05-28",
-      "close": 312.24
+      "close": 312.0
     },
     {
       "date": "2026-05-29",
-      "close": 311.79
+      "close": 311.55
     },
     {
       "date": "2026-06-01",
-      "close": 306.05
+      "close": 305.81
     },
     {
       "date": "2026-06-02",
-      "close": 314.93
+      "close": 314.69
     },
     {
       "date": "2026-06-03",
-      "close": 309.99
+      "close": 309.76
     },
     {
       "date": "2026-06-04",
-      "close": 310.96
-    },
-    {
-      "date": "2026-06-05",
-      "close": 307.08
-    },
-    {
-      "date": "2026-06-08",
-      "close": 301.28
-    },
-    {
-      "date": "2026-06-09",
-      "close": 290.3
-    },
-    {
-      "date": "2026-06-10",
-      "close": 291.33
-    },
-    {
-      "date": "2026-06-11",
-      "close": 295.38
-    },
-    {
-      "date": "2026-06-12",
-      "close": 290.88
-    },
-    {
-      "date": "2026-06-15",
-      "close": 296.16
-    },
-    {
-      "date": "2026-06-16",
-      "close": 298.98
-    },
-    {
-      "date": "2026-06-17",
-      "close": 295.69
-    },
-    {
-      "date": "2026-06-18",
-      "close": 297.75
-    },
-    {
-      "date": "2026-06-22",
-      "close": 296.75
-    },
-    {
-      "date": "2026-06-23",
-      "close": 294.05
-    },
-    {
-      "date": "2026-06-24",
-      "close": 292.83
-    },
-    {
-      "date": "2026-06-25",
-      "close": 274.91
-    },
-    {
-      "date": "2026-06-26",
-      "close": 283.54
-    },
-    {
-      "date": "2026-06-29",
-      "close": 281.5
-    },
-    {
-      "date": "2026-06-30",
-      "close": 289.11
-    },
-    {
-      "date": "2026-07-01",
-      "close": 294.13
-    },
-    {
-      "date": "2026-07-02",
-      "close": 308.36
-    },
-    {
-      "date": "2026-07-06",
-      "close": 312.39
-    },
-    {
-      "date": "2026-07-07",
-      "close": 310.39
-    },
-    {
-      "date": "2026-07-08",
-      "close": 313.12
-    },
-    {
-      "date": "2026-07-09",
-      "close": 315.95
-    },
-    {
-      "date": "2026-07-10",
-      "close": 315.05
-    },
-    {
-      "date": "2026-07-13",
-      "close": 317.04
-    },
-    {
-      "date": "2026-07-14",
-      "close": 314.59
-    },
-    {
-      "date": "2026-07-15",
-      "close": 327.22
-    },
-    {
-      "date": "2026-07-16",
-      "close": 332.97
-    },
-    {
-      "date": "2026-07-17",
-      "close": 333.45
-    },
-    {
-      "date": "2026-07-20",
-      "close": 326.31
-    },
-    {
-      "date": "2026-07-21",
-      "close": 327.46
-    },
-    {
-      "date": "2026-07-22",
-      "close": 325.61
-    },
-    {
-      "date": "2026-07-23",
-      "close": 321.38
-    },
-    {
-      "date": "2026-07-24",
-      "close": 332.73
-    },
-    {
-      "date": "2026-07-27",
-      "close": 336.62
-    },
-    {
-      "date": "2026-07-28",
-      "close": 339.79
-    },
-    {
-      "date": "2026-07-29",
-      "close": 337.9
-    },
-    {
-      "date": "2026-07-30",
-      "close": 333.14
-    },
-    {
-      "date": "2026-07-31",
-      "close": 308.64
-    },
-    {
-      "date": "2026-08-03",
-      "close": 303.16
-    },
-    {
-      "date": "2026-08-04",
-      "close": 309.11
-    },
-    {
-      "date": "2026-08-05",
       "close": 310.73
     },
     {
-      "date": "2026-08-06",
-      "close": 312.14
+      "date": "2026-06-05",
+      "close": 306.84
     },
     {
-      "date": "2026-08-07",
-      "close": 313.06
+      "date": "2026-06-08",
+      "close": 301.05
     },
     {
-      "date": "2026-08-10",
-      "close": 308.26
+      "date": "2026-06-09",
+      "close": 290.08
     },
     {
-      "date": "2026-08-11",
-      "close": 304.91
+      "date": "2026-06-10",
+      "close": 291.11
     },
     {
-      "date": "2026-08-12",
-      "close": 302.25
+      "date": "2026-06-11",
+      "close": 295.15
     },
     {
-      "date": "2026-08-13",
-      "close": 305.26
+      "date": "2026-06-12",
+      "close": 290.66
     },
     {
-      "date": "2026-08-14",
-      "close": 305.93
+      "date": "2026-06-15",
+      "close": 295.94
     },
     {
-      "date": "2026-08-17",
-      "close": 305.59
+      "date": "2026-06-16",
+      "close": 298.76
     },
     {
-      "date": "2026-08-18",
-      "close": 310.03
+      "date": "2026-06-17",
+      "close": 295.47
     },
     {
-      "date": "2026-08-19",
-      "close": 316.83
+      "date": "2026-06-18",
+      "close": 297.53
     },
     {
-      "date": "2026-08-20",
-      "close": 311.3
+      "date": "2026-06-22",
+      "close": 296.53
     },
     {
-      "date": "2026-08-21",
-      "close": 309.35
+      "date": "2026-06-23",
+      "close": 293.82
     },
     {
-      "date": "2026-08-24",
-      "close": 310.34
+      "date": "2026-06-24",
+      "close": 292.61
     },
     {
-      "date": "2026-08-25",
-      "close": 309.9
+      "date": "2026-06-25",
+      "close": 274.7
     },
     {
-      "date": "2026-08-26",
-      "close": 313.45
+      "date": "2026-06-26",
+      "close": 283.32
     },
     {
-      "date": "2026-08-27",
-      "close": 314.58
+      "date": "2026-06-29",
+      "close": 281.28
     },
     {
-      "date": "2026-08-28",
-      "close": 319.7
+      "date": "2026-06-30",
+      "close": 288.89
     },
     {
-      "date": "2026-08-31",
-      "close": 316.85
+      "date": "2026-07-01",
+      "close": 293.9
     },
     {
-      "date": "2026-09-01",
-      "close": 325.13
+      "date": "2026-07-02",
+      "close": 308.13
     },
     {
-      "date": "2026-09-02",
-      "close": 324.96
+      "date": "2026-07-06",
+      "close": 312.15
     },
     {
-      "date": "2026-09-03",
-      "close": 328.21
+      "date": "2026-07-07",
+      "close": 310.16
     },
     {
-      "date": "2026-09-04",
-      "close": 319.97
+      "date": "2026-07-08",
+      "close": 312.88
     },
     {
-      "date": "2026-09-08",
-      "close": 316.22
+      "date": "2026-07-09",
+      "close": 315.71
     },
     {
-      "date": "2026-09-09",
-      "close": 315.34
+      "date": "2026-07-10",
+      "close": 314.81
     },
     {
-      "date": "2026-09-10",
-      "close": 326.57
+      "date": "2026-07-13",
+      "close": 316.8
     },
     {
-      "date": "2026-09-11",
-      "close": 332.27
+      "date": "2026-07-14",
+      "close": 314.35
     },
     {
-      "date": "2026-09-14",
-      "close": 333.08
+      "date": "2026-07-15",
+      "close": 326.97
     },
     {
-      "date": "2026-09-15",
-      "close": 331.34
+      "date": "2026-07-16",
+      "close": 332.72
     },
     {
-      "date": "2026-09-16",
-      "close": 332.41
+      "date": "2026-07-17",
+      "close": 333.2
     },
     {
-      "date": "2026-09-17",
-      "close": 337.0
+      "date": "2026-07-20",
+      "close": 326.06
     },
     {
-      "date": "2026-09-18",
-      "close": 336.13
+      "date": "2026-07-21",
+      "close": 327.21
     },
     {
-      "date": "2026-09-21",
-      "close": 338.98
+      "date": "2026-07-22",
+      "close": 325.36
     },
     {
-      "date": "2026-09-22",
-      "close": 339.75
+      "date": "2026-07-23",
+      "close": 321.14
     },
     {
-      "date": "2026-09-23",
-      "close": 337.02
+      "date": "2026-07-24",
+      "close": 332.48
     },
     {
-      "date": "2026-09-24",
-      "close": 335.92
+      "date": "2026-07-27",
+      "close": 336.36
     },
     {
-      "date": "2026-09-25",
-      "close": 341.07
+      "date": "2026-07-28",
+      "close": 339.53
     },
     {
-      "date": "2026-09-28",
-      "close": 338.4
+      "date": "2026-07-29",
+      "close": 337.64
     },
     {
-      "date": "2026-09-29",
-      "close": 329.4
-    },
-    {
-      "date": "2026-09-30",
-      "close": 333.02
-    },
-    {
-      "date": "2026-10-01",
-      "close": 330.32
-    },
-    {
-      "date": "2026-10-02",
-      "close": 333.69
-    },
-    {
-      "date": "2026-10-05",
+      "date": "2026-07-30",
       "close": 332.89
     },
     {
+      "date": "2026-07-31",
+      "close": 308.41
+    },
+    {
+      "date": "2026-08-03",
+      "close": 302.93
+    },
+    {
+      "date": "2026-08-04",
+      "close": 308.88
+    },
+    {
+      "date": "2026-08-05",
+      "close": 310.5
+    },
+    {
+      "date": "2026-08-06",
+      "close": 311.9
+    },
+    {
+      "date": "2026-08-07",
+      "close": 312.82
+    },
+    {
+      "date": "2026-08-10",
+      "close": 308.03
+    },
+    {
+      "date": "2026-08-11",
+      "close": 304.68
+    },
+    {
+      "date": "2026-08-12",
+      "close": 302.02
+    },
+    {
+      "date": "2026-08-13",
+      "close": 305.03
+    },
+    {
+      "date": "2026-08-14",
+      "close": 305.7
+    },
+    {
+      "date": "2026-08-17",
+      "close": 305.36
+    },
+    {
+      "date": "2026-08-18",
+      "close": 309.79
+    },
+    {
+      "date": "2026-08-19",
+      "close": 316.59
+    },
+    {
+      "date": "2026-08-20",
+      "close": 311.06
+    },
+    {
+      "date": "2026-08-21",
+      "close": 309.12
+    },
+    {
+      "date": "2026-08-24",
+      "close": 310.1
+    },
+    {
+      "date": "2026-08-25",
+      "close": 309.66
+    },
+    {
+      "date": "2026-08-26",
+      "close": 313.21
+    },
+    {
+      "date": "2026-08-27",
+      "close": 314.34
+    },
+    {
+      "date": "2026-08-28",
+      "close": 319.46
+    },
+    {
+      "date": "2026-08-31",
+      "close": 316.61
+    },
+    {
+      "date": "2026-09-01",
+      "close": 324.88
+    },
+    {
+      "date": "2026-09-02",
+      "close": 324.71
+    },
+    {
+      "date": "2026-09-03",
+      "close": 327.96
+    },
+    {
+      "date": "2026-09-04",
+      "close": 319.73
+    },
+    {
+      "date": "2026-09-08",
+      "close": 315.98
+    },
+    {
+      "date": "2026-09-09",
+      "close": 315.1
+    },
+    {
+      "date": "2026-09-10",
+      "close": 326.32
+    },
+    {
+      "date": "2026-09-11",
+      "close": 332.02
+    },
+    {
+      "date": "2026-09-14",
+      "close": 332.83
+    },
+    {
+      "date": "2026-09-15",
+      "close": 331.09
+    },
+    {
+      "date": "2026-09-16",
+      "close": 332.16
+    },
+    {
+      "date": "2026-09-17",
+      "close": 336.74
+    },
+    {
+      "date": "2026-09-18",
+      "close": 335.87
+    },
+    {
+      "date": "2026-09-21",
+      "close": 338.72
+    },
+    {
+      "date": "2026-09-22",
+      "close": 339.49
+    },
+    {
+      "date": "2026-09-23",
+      "close": 336.76
+    },
+    {
+      "date": "2026-09-24",
+      "close": 335.66
+    },
+    {
+      "date": "2026-09-25",
+      "close": 340.81
+    },
+    {
+      "date": "2026-09-28",
+      "close": 338.14
+    },
+    {
+      "date": "2026-09-29",
+      "close": 329.15
+    },
+    {
+      "date": "2026-09-30",
+      "close": 332.77
+    },
+    {
+      "date": "2026-10-01",
+      "close": 330.07
+    },
+    {
+      "date": "2026-10-02",
+      "close": 333.44
+    },
+    {
+      "date": "2026-10-05",
+      "close": 332.64
+    },
+    {
       "date": "2026-10-06",
-      "close": 333.63
+      "close": 333.38
     },
     {
       "date": "2026-10-07",
-      "close": 336.67
+      "close": 336.41
     },
     {
       "date": "2026-10-08",
-      "close": 340.42
+      "close": 340.16
     },
     {
       "date": "2026-10-09",
-      "close": 336.64
+      "close": 336.38
     },
     {
       "date": "2026-10-12",
-      "close": 340.97
+      "close": 340.71
     },
     {
       "date": "2026-10-13",
-      "close": 341.27
+      "close": 341.01
     },
     {
       "date": "2026-10-14",
-      "close": 342.96
+      "close": 342.7
     },
     {
       "date": "2026-10-15",
-      "close": 342.0
+      "close": 341.74
     },
     {
       "date": "2026-10-16",
-      "close": 343.46
+      "close": 343.2
     },
     {
       "date": "2026-10-19",
-      "close": 342.94
+      "close": 342.68
     },
     {
       "date": "2026-10-20",
-      "close": 339.5
+      "close": 339.24
     },
     {
       "date": "2026-10-21",
-      "close": 343.99
+      "close": 343.73
     },
     {
       "date": "2026-10-22",
-      "close": 348.22
+      "close": 347.96
     },
     {
       "date": "2026-10-23",
-      "close": 347.73
+      "close": 347.47
     },
     {
       "date": "2026-10-26",
-      "close": 343.91
+      "close": 343.65
     },
     {
       "date": "2026-10-27",
-      "close": 347.1
+      "close": 346.84
     },
     {
       "date": "2026-10-28",
-      "close": 343.83
+      "close": 343.57
     },
     {
       "date": "2026-10-29",
-      "close": 348.91
+      "close": 348.65
     },
     {
       "date": "2026-10-30",
-      "close": 344.63
+      "close": 344.37
     },
     {
       "date": "2026-11-02",
-      "close": 338.32
+      "close": 338.06
     },
     {
       "date": "2026-11-03",
-      "close": 331.9
+      "close": 331.65
     },
     {
       "date": "2026-11-04",
-      "close": 349.51
+      "close": 349.24
     },
     {
       "date": "2026-11-05",
-      "close": 344.17
+      "close": 343.91
     },
     {
       "date": "2026-11-06",
-      "close": 342.37
+      "close": 342.11
     },
     {
       "date": "2026-11-09",
-      "close": 350.69
+      "close": 350.42
     },
     {
       "date": "2026-11-10",
-      "close": 348.51
+      "close": 348.25
     },
     {
       "date": "2026-11-11",
-      "close": 355.63
+      "close": 355.36
+    },
+    {
+      "date": "2026-11-12",
+      "close": 354.88
+    },
+    {
+      "date": "2026-11-13",
+      "close": 356.27
     }
   ],
   "forecast": {
     "horizon_days": 5,
     "move": "quiet",
-    "prob_large": 0.429,
-    "typical_move_pct": 3.5255,
-    "confidence": 0.571,
-    "made_at": "2026-11-13T02:22:25Z",
-    "as_of_date": "2026-11-11",
-    "target_date": "2026-11-18",
+    "prob_large": 0.4312,
+    "typical_move_pct": 3.5348,
+    "confidence": 0.5688,
+    "made_at": "2026-11-14T01:58:35Z",
+    "as_of_date": "2026-11-13",
+    "target_date": "2026-11-20",
     "model_name": "move-xgb",
     "model_version": "14"
   },
@@ -520,7 +520,7 @@
       {
         "source": "news",
         "display_name": "News media",
-        "score": -3,
+        "score": -1,
         "label": "neutral",
         "doc_count": 50,
         "note": "50 articles, last 7 days",
@@ -529,7 +529,7 @@
       }
     ],
     "gap": {
-      "points": 29,
+      "points": 27,
       "most_bullish": "analysts",
       "most_bearish": "news",
       "summary": "Wall Street analysts lean bullish while News media are neutral."
@@ -542,298 +542,298 @@
       "publisher": "Yahoo Finance",
       "title": "Consensus: 26 buy, 13 hold, 6 sell (Nov 2026)",
       "url": null,
-      "published_at": "2026-11-13T02:22:25Z",
+      "published_at": "2026-11-14T01:58:35Z",
       "score": 26,
       "label": "bullish"
     },
     {
-      "id": "4239044f2199",
+      "id": "fa35f7c69751",
       "source": "news",
-      "publisher": "TheStreet",
-      "title": "Apple rises 26 places on the Roundtable 100",
-      "url": "https://www.thestreet.com/crypto/markets/apple-rises-26-places-on-the-roundtable-100",
-      "published_at": "2026-11-12T23:20:00Z",
-      "score": 61,
-      "label": "bullish"
-    },
-    {
-      "id": "e6fce7ad04f3",
-      "source": "news",
-      "publisher": "GuruFocus.com",
-      "title": "Google's Next Big AI Push Has Apple in the Picture",
-      "url": "https://finance.yahoo.com/technology/ai/articles/googles-next-big-ai-push-230445065.html",
-      "published_at": "2026-11-12T23:04:45Z",
-      "score": 8,
-      "label": "neutral"
-    },
-    {
-      "id": "8f27645d6f1f",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "Nvidia market cap plunges $490 billion following former CEO Huang's affair scandals",
-      "url": "https://finance.yahoo.com/technology/article/nvidia-market-cap-plunges-490-billion-following-former-ceo-huangs-affair-scandals-224412004.html",
-      "published_at": "2026-11-12T22:44:12Z",
-      "score": -95,
-      "label": "bearish"
-    },
-    {
-      "id": "0fe6876baf64",
-      "source": "news",
-      "publisher": "Insider Monkey",
-      "title": "China Renaissance Upgraded Apple (AAPL) to Buy. DZ Bank Cut It to Sell. Here\u2019s the Split",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/china-renaissance-upgraded-apple-aapl-223345838.html",
-      "published_at": "2026-11-12T22:33:45Z",
-      "score": 6,
-      "label": "neutral"
-    },
-    {
-      "id": "2200e98fb874",
-      "source": "news",
-      "publisher": "Barrons.com",
-      "title": "Why Tim Cook Shouldn\u2019t Run Nvidia",
-      "url": "https://www.barrons.com/articles/nvidia-apple-jensen-huang-tim-cook-f258002a?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-12T22:31:00Z",
-      "score": -4,
-      "label": "neutral"
-    },
-    {
-      "id": "21eb5579bd12",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "Nvidia Needs a Colossus to Replace Jensen Huang, and Eric Schmidt May Be the Only One Who Fits",
-      "url": "https://247wallst.com/videos/nvidia-needs-a-colossus-to-replace-jensen-huang-and-eric-schmidt-may-be-the-only-one-who-fits/",
-      "published_at": "2026-11-12T22:30:53Z",
-      "score": -12,
-      "label": "neutral"
-    },
-    {
-      "id": "53b638cd285d",
-      "source": "news",
-      "publisher": "Investor's Business Daily",
-      "title": "Apple Stock Called 'Safe Haven,' Hits Record High",
-      "url": "https://www.investors.com/news/technology/apple-stock-called-safe-haven-hits-record-high/?src=A00220&yptr=yahoo",
-      "published_at": "2026-11-12T22:23:52Z",
-      "score": 65,
-      "label": "bullish"
-    },
-    {
-      "id": "62846301272c",
-      "source": "news",
-      "publisher": "Barrons.com",
-      "title": "Anthropic\u2019s IPO Price Isn\u2019t So Outlandish. Here\u2019s the Case for the Stock.",
-      "url": "https://www.barrons.com/articles/anthropic-ipo-ant-stock-price-fa215f5a?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-12T22:01:00Z",
-      "score": 1,
-      "label": "neutral"
-    },
-    {
-      "id": "60c757d6d7bc",
-      "source": "news",
-      "publisher": "Barrons.com",
-      "title": "Nvidia CEO Jensen Huang Resigns\u2014and the Stock Is Falling",
-      "url": "https://www.barrons.com/articles/nvidia-stock-price-huang-affair-ceo-ouster-26c99dad?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-12T21:55:00Z",
-      "score": -76,
-      "label": "bearish"
-    },
-    {
-      "id": "7d8687095d35",
-      "source": "news",
-      "publisher": "TheStreet",
-      "title": "Microsoft And Amazon Show AI Spending Can Pay Off",
-      "url": "https://cdn.jwplayer.com/previews/ROry4HT2",
-      "published_at": "2026-11-12T21:40:44Z",
-      "score": 73,
-      "label": "bullish"
-    },
-    {
-      "id": "8f1b8688c277",
-      "source": "news",
-      "publisher": "Barrons.com",
-      "title": "You Don\u2019t Need Nvidia to Beat the S&P 500. These ETFs Prove It.",
-      "url": "https://www.barrons.com/articles/etfs-beating-sp500-without-nvidia-stock-97ea9f52?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-12T21:28:00Z",
-      "score": 26,
-      "label": "bullish"
-    },
-    {
-      "id": "4dcd3c376a99",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "Nvidia Should Call Tim Cook, the One Leader Big Enough to Step Into Jensen Huang\u2019s Empty Chair",
-      "url": "https://247wallst.com/videos/nvidia-should-call-tim-cook-the-one-leader-big-enough-to-step-into-jensen-huangs-empty-chair/",
-      "published_at": "2026-11-12T21:15:43Z",
+      "publisher": "Motley Fool",
+      "title": "Is Apple Stock a Buy Right Now?",
+      "url": "https://www.fool.com/investing/2026/11/13/is-apple-stock-a-buy-right-now/",
+      "published_at": "2026-11-14T00:27:00Z",
       "score": 3,
       "label": "neutral"
     },
     {
-      "id": "b41c69d48f60",
+      "id": "efb45673c5e7",
       "source": "news",
-      "publisher": "Barrons.com",
-      "title": "Even in Crisis, Nvidia Stock Is Still a Buy",
-      "url": "https://www.barrons.com/articles/jensen-huang-buy-nvidia-stock-ee276ed1?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-12T21:12:00Z",
-      "score": 43,
-      "label": "bullish"
-    },
-    {
-      "id": "347e5c8e12fc",
-      "source": "news",
-      "publisher": "Insider Monkey",
-      "title": "Apple (AAPL): A CIBC Pick Riding Record Results and a New iPhone Lineup",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/apple-aapl-cibc-pick-riding-211122586.html",
-      "published_at": "2026-11-12T21:11:22Z",
-      "score": 60,
-      "label": "bullish"
-    },
-    {
-      "id": "b7519d2f2693",
-      "source": "news",
-      "publisher": "The Wall Street Journal",
-      "title": "Why Isn\u2019t Nvidia Stock Down More?",
-      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-12-2026/card/why-isn-t-nvidia-stock-down-more--NnXh2hxqmeLq98FSIoN2?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-12T20:15:14Z",
-      "score": -91,
+      "publisher": "Yahoo Finance Video",
+      "title": "Nvidia's competitors pounce, and what GPU rental prices say about the AI race",
+      "url": "https://finance.yahoo.com/video/nvidias-competitors-pounce-and-what-gpu-rental-prices-say-about-the-ai-race-221551379.html",
+      "published_at": "2026-11-13T22:15:51Z",
+      "score": -32,
       "label": "bearish"
     },
     {
-      "id": "8712f25cf4e0",
+      "id": "c6f7089e9e73",
       "source": "news",
-      "publisher": "Trefis",
-      "title": "How Much Higher Can Snap Stock Go From Here?",
-      "url": "https://www.trefis.com/stock/snap/articles/624531/how-much-higher-can-snap-stock-go-from-here/2026-11-12",
-      "published_at": "2026-11-12T19:32:12Z",
-      "score": 14,
+      "publisher": "Investor's Business Daily",
+      "title": "Stock Market Today: Indexes Trim Losses, Manage To Score Weekly Gains Despite Strong Volatility",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-ppi-inflation-data-cerebras-earnings/?src=A00220&yptr=yahoo",
+      "published_at": "2026-11-13T21:49:53Z",
+      "score": 81,
+      "label": "bullish"
+    },
+    {
+      "id": "c5f3874ad2ec",
+      "source": "news",
+      "publisher": "Insider Monkey",
+      "title": "A $1,999 Sellout. What China Renaissance Sees in Apple (AAPL)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/1-999-sellout-china-renaissance-211310813.html",
+      "published_at": "2026-11-13T21:13:10Z",
+      "score": 4,
       "label": "neutral"
     },
     {
-      "id": "0343081606bc",
+      "id": "e3328c26d26e",
       "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "Duolingo CEO on owl's guilt-trip reminders: 'Passive-aggressive works'",
-      "url": "https://finance.yahoo.com/markets/stocks/article/duolingo-ceo-on-owls-guilt-trip-reminders-passive-aggressive-works-191641543.html",
-      "published_at": "2026-11-12T19:16:41Z",
+      "publisher": "Insider Monkey",
+      "title": "Inside Jim Cramer\u2019s Charitable Trust: 5 Stocks He Actually Owns",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/inside-jim-cramer-charitable-trust-203302856.html",
+      "published_at": "2026-11-13T20:33:02Z",
+      "score": 1,
+      "label": "neutral"
+    },
+    {
+      "id": "29ac395a95ca",
+      "source": "news",
+      "publisher": "Barrons.com",
+      "title": "The Price Tag on Jensen Huang\u2019s Resignation: $639 Billion and Counting",
+      "url": "https://www.barrons.com/articles/nvidia-stock-jensen-huang-resignation-cost-1893df0f?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-13T20:32:00Z",
+      "score": -4,
+      "label": "neutral"
+    },
+    {
+      "id": "9d12a7c7a3df",
+      "source": "news",
+      "publisher": "Investing.com",
+      "title": "Meta tests prediction-market app for employees, WSJ reports",
+      "url": "https://finance.yahoo.com/technology/articles/meta-tests-prediction-market-app-203017664.html",
+      "published_at": "2026-11-13T20:30:17Z",
+      "score": 4,
+      "label": "neutral"
+    },
+    {
+      "id": "432f877f88e0",
+      "source": "news",
+      "publisher": "Investor's Business Daily",
+      "title": "3 Favorite Warren Buffett Stocks Hit Record Highs As Nvidia Sinks",
+      "url": "https://www.investors.com/news/warren-buffett-stocks-apple-coca-cola-berkshire-hathway-record-highs/?src=A00220&yptr=yahoo",
+      "published_at": "2026-11-13T20:27:35Z",
+      "score": 62,
+      "label": "bullish"
+    },
+    {
+      "id": "b4819d68953e",
+      "source": "news",
+      "publisher": "Bloomberg",
+      "title": "Ackman on Huang's Exit, Anthropic IPO Roadshow",
+      "url": "https://finance.yahoo.com/video/ackman-huangs-exit-anthropic-ipo-194527836.html",
+      "published_at": "2026-11-13T19:45:27Z",
+      "score": 1,
+      "label": "neutral"
+    },
+    {
+      "id": "f050ddb50bb7",
+      "source": "news",
+      "publisher": "Yahoo Finance Video",
+      "title": "Why Nvidia\u2019s leadership shift could reshape its competitive edge",
+      "url": "https://finance.yahoo.com/video/why-nvidias-leadership-shift-could-reshape-its-competitive-edge-190152777.html",
+      "published_at": "2026-11-13T19:01:52Z",
+      "score": 65,
+      "label": "bullish"
+    },
+    {
+      "id": "cc7f9cd10f63",
+      "source": "news",
+      "publisher": "Yahoo Finance Video",
+      "title": "Jensen Huang fallout at Nvidia, Anthropic ready for IPO, United bans AI agents",
+      "url": "https://finance.yahoo.com/video/jensen-huang-fallout-at-nvidia-anthropic-ready-for-ipo-united-bans-ai-agents-184327833.html",
+      "published_at": "2026-11-13T18:43:27Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "d94961da1b55",
+      "source": "news",
+      "publisher": "TheStreet",
+      "title": "Nvidia CEO out \u2014 10 stocks to buy before S&P 500 hits 8,000",
+      "url": "https://cdn.jwplayer.com/previews/SzPZvTal",
+      "published_at": "2026-11-13T18:29:38Z",
+      "score": 2,
+      "label": "neutral"
+    },
+    {
+      "id": "6530bb79228f",
+      "source": "news",
+      "publisher": "GuruFocus.com",
+      "title": "Nvidia Without Huang Has It Harder Than Apple Without Jobs, DA Davidson Says",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-without-huang-harder-apple-175559536.html",
+      "published_at": "2026-11-13T17:55:59Z",
+      "score": -47,
+      "label": "bearish"
+    },
+    {
+      "id": "75b5b54ba059",
+      "source": "news",
+      "publisher": "Trefis",
+      "title": "Can Dell Stock Fall 40%?",
+      "url": "https://www.trefis.com/stock/dell/articles/624937/can-dell-stock-fall-40/2026-11-13",
+      "published_at": "2026-11-13T17:47:56Z",
+      "score": -93,
+      "label": "bearish"
+    },
+    {
+      "id": "c64b14446bc8",
+      "source": "news",
+      "publisher": "GuruFocus.com",
+      "title": "Apple Stocks Rise 1.04% as Siri AI-Powered HomeView and Apple TV Hit Shelves",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/apple-stocks-rise-1-04-173942861.html",
+      "published_at": "2026-11-13T17:39:42Z",
+      "score": 72,
+      "label": "bullish"
+    },
+    {
+      "id": "056dfdf73eb1",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "Microsoft Goes Ex-Dividend Nov 19. Here\u2019s What Backs the $0.98 Payout",
+      "url": "https://247wallst.com/investing/2026/11/13/microsoft-goes-ex-dividend-nov-19-heres-what-backs-the-0-98-payout/",
+      "published_at": "2026-11-13T16:47:07Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "f5ab6fd0cece",
+      "source": "news",
+      "publisher": "Trefis",
+      "title": "What Could Still Send Apple Stock Higher?",
+      "url": "https://www.trefis.com/stock/aapl/articles/624982/what-could-still-send-apple-stock-higher/2026-11-13",
+      "published_at": "2026-11-13T16:25:48Z",
       "score": -62,
       "label": "bearish"
     },
     {
-      "id": "f7954f6b132d",
+      "id": "eba8c43ee159",
+      "source": "news",
+      "publisher": "Yahoo Finance Video",
+      "title": "The road ahead without Jensen Huang: Who can run Nvidia?",
+      "url": "https://finance.yahoo.com/video/the-road-ahead-without-jensen-huang-who-can-run-nvidia-160601033.html",
+      "published_at": "2026-11-13T16:06:01Z",
+      "score": 3,
+      "label": "neutral"
+    },
+    {
+      "id": "550fcc19f4b4",
+      "source": "news",
+      "publisher": "Yahoo Finance Video",
+      "title": "What investors should consider before hitting buy on Nvidia",
+      "url": "https://finance.yahoo.com/video/what-investors-should-consider-before-hitting-buy-on-nvidia-172018567.html",
+      "published_at": "2026-11-13T15:59:00Z",
+      "score": 1,
+      "label": "neutral"
+    },
+    {
+      "id": "3d8c64857221",
       "source": "news",
       "publisher": "Motley Fool",
-      "title": "Warren Buffett's Successor, Greg Abel, Has Nearly $110 Billion Invested in These 2 Tech Stocks",
-      "url": "https://www.fool.com/investing/2026/11/12/warren-buffetts-successor-greg-abel-has-nearly-110/",
-      "published_at": "2026-11-12T19:05:00Z",
-      "score": 7,
+      "title": "Forget the \"Magnificent Seven.\" Berkshire Hathaway Could Be the Better Long-Term Bet.",
+      "url": "https://www.fool.com/investing/2026/11/13/forget-the-magnificent-seven-berkshire-hathaway-could-be-the-better-long-term-bet/",
+      "published_at": "2026-11-13T15:43:02Z",
+      "score": 10,
       "label": "neutral"
     },
     {
-      "id": "e19627942b14",
+      "id": "970f3741793c",
       "source": "news",
-      "publisher": "Barrons.com",
-      "title": "It\u2019s the End of the AI Trade as We Know It. Who\u2019s Feeling Fine?",
-      "url": "https://www.barrons.com/articles/ai-trade-nvidia-anthropic-winners-losers-f1fae417?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-12T18:59:00Z",
-      "score": -18,
+      "publisher": "Motley Fool",
+      "title": "Apple Is the World\u2019s Largest Company, and Nvidia Is Second. Here\u2019s What $10,000 Invested in Each Today Could Be Worth by the End of Next Year.",
+      "url": "https://www.fool.com/investing/2026/11/13/apple-is-the-world-s-largest-company-and-nvidia-is-second-here-s-what-usd10-000-in-each-could-be-worth-by-the-end-of-next-year/",
+      "published_at": "2026-11-13T15:42:01Z",
+      "score": 3,
       "label": "neutral"
     },
     {
-      "id": "72211a9939c8",
+      "id": "0610a5417977",
       "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "MP Materials Gains 3% as Traders Pick Winners Among Critical-Minerals Stocks; United States Antimony Slides 6%, Critical Metals Drops 5%",
-      "url": "https://247wallst.com/investing/2026/11/12/mp-materials-gains-3-as-traders-pick-winners-among-critical-minerals-stocks-united-states-antimony-slides-6-critical-metals-drops-5/",
-      "published_at": "2026-11-12T18:57:16Z",
-      "score": -66,
-      "label": "bearish"
-    },
-    {
-      "id": "097d8f1bd3f6",
-      "source": "news",
-      "publisher": "Benzinga",
-      "title": "What Is Going on With Apple Stock on Thursday?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/going-apple-stock-thursday-182739647.html",
-      "published_at": "2026-11-12T18:27:39Z",
-      "score": -54,
-      "label": "bearish"
-    },
-    {
-      "id": "006e805b1c50",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "Wall Street Models Lag Structural Reality, Prompting Me To Add an \u2018Overvalued\u2019 Apple",
-      "url": "https://247wallst.com/investing/2026/11/12/wall-street-models-lag-structural-reality-prompting-me-to-add-an-overvalued-apple/",
-      "published_at": "2026-11-12T17:45:33Z",
-      "score": 5,
+      "publisher": "Barchart",
+      "title": "Trump Floated Tim Cook as a Potential Successor to Jensen Huang. Nvidia\u2019s Operating Performance Matters More Than Huang\u2019s Successor.",
+      "url": "https://www.barchart.com/story/news/8823391/trump-floated-tim-cook-as-a-potential-successor-to-jensen-huang-nvidias-operating-performance-matters-more-than-huangs-successor",
+      "published_at": "2026-11-13T15:22:31Z",
+      "score": 4,
       "label": "neutral"
     },
     {
-      "id": "6deb1959d1c7",
+      "id": "a10643c358cf",
+      "source": "news",
+      "publisher": "Yahoo Finance Video",
+      "title": "Qualcomm CEO Cristiano Amon on fueling the AI boom",
+      "url": "https://finance.yahoo.com/video/qualcomm-ceo-cristiano-amon-on-fueling-the-ai-boom-150849126.html",
+      "published_at": "2026-11-13T15:08:49Z",
+      "score": -8,
+      "label": "neutral"
+    },
+    {
+      "id": "0dfc62d374b4",
       "source": "news",
       "publisher": "The Wall Street Journal",
-      "title": "Nvidia Shareholders Won\u2019t Miss Jensen Huang for Long",
-      "url": "https://www.wsj.com/finance/stocks/nvidia-shareholders-wont-miss-jensen-huang-for-long-13429e31?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-12T17:43:00Z",
-      "score": 9,
+      "title": "Nvidia Needs Three CEOs in One",
+      "url": "https://www.wsj.com/cio-journal/nvidia-needs-three-ceos-in-one-59038b0c?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-13T15:07:00Z",
+      "score": 0,
       "label": "neutral"
     },
     {
-      "id": "2ec1c6bf255f",
+      "id": "1e080f49d983",
       "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Apple's Market Cap Grew From $347 Billion to $4.6 Trillion During Tim Cook's 15 Years as CEO. Here's What That Growth Curve Means for Apple's Next Chapter Under John Ternus.",
-      "url": "https://www.fool.com/investing/2026/11/12/apples-market-cap-grew-from-usd347-billion-to-usd4-6-trillion-during-tim-cook-s-15-years-as-ceo-here-s-what-that-growth-curve-means-for-apple-s-next-chapter-under-john-ternus/",
-      "published_at": "2026-11-12T17:23:02Z",
-      "score": 5,
-      "label": "neutral"
-    },
-    {
-      "id": "af07ebfb728c",
-      "source": "news",
-      "publisher": "Stocktwits",
-      "title": "Tom Lee Says Jensen Huang Exit Doesn\u2019t Change His Bullish Tech Outlook: AVGO, AMD Stocks Lead Chip Rally",
-      "url": "https://stocktwits.com/news-articles/markets/equity/tom-lee-jensen-huang-exit-no-impact-on-tech-amd-avgo-stocks-lead-chip-rally/cNGCcGiR9aH",
-      "published_at": "2026-11-12T17:22:03Z",
-      "score": 19,
-      "label": "neutral"
-    },
-    {
-      "id": "f908a97f3250",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Warren Buffett Doesn't Follow His Own S&P 500 Advice. Should You?",
-      "url": "https://www.fool.com/investing/2026/11/12/warren-buffett-doesnt-follow-his-own-sp-500-advice-should-you/",
-      "published_at": "2026-11-12T17:20:02Z",
-      "score": -13,
-      "label": "neutral"
-    },
-    {
-      "id": "4fd3532e76ea",
-      "source": "news",
-      "publisher": "Zacks",
-      "title": "PayPal's Venmo Grows in Q3: Can Rising Monetization Fuel Earnings?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/paypals-venmo-grows-q3-rising-170100262.html",
-      "published_at": "2026-11-12T17:01:00Z",
-      "score": 22,
+      "publisher": "Yahoo Finance Video",
+      "title": "Three positive signs for the AI trade, America's inflation problem, and Huang's Nvidia departure",
+      "url": "https://finance.yahoo.com/video/three-positive-signs-for-the-ai-trade-americas-inflation-problem-and-huangs-nvidia-departure-150622803.html",
+      "published_at": "2026-11-13T15:06:22Z",
+      "score": 80,
       "label": "bullish"
     },
     {
-      "id": "3181abe579cd",
+      "id": "c2063af5f015",
       "source": "news",
-      "publisher": "CorpGov.com",
-      "title": "Intellectual Property: Valuing, Protecting and Securitizing, 6th Palm Beach CorpGov Forum",
-      "url": "https://finance.yahoo.com/small-business/articles/intellectual-property-valuing-protecting-securitizing-163915128.html",
-      "published_at": "2026-11-12T16:39:15Z",
-      "score": 5,
+      "publisher": "Trefis",
+      "title": "Nvidia Is 6.1% Of Your S&P 500 Fund. What Is Your Number?",
+      "url": "https://www.trefis.com/stock/nvda/articles/624815/nvidia-is-6-1-of-your-s-p-500-fund-what-is-your-number/2026-11-13",
+      "published_at": "2026-11-13T14:56:12Z",
+      "score": -2,
       "label": "neutral"
     },
     {
-      "id": "b494d4857350",
+      "id": "a286445bd4cc",
       "source": "news",
-      "publisher": "TIKR",
-      "title": "What to Watch When Berkshire Hathaway Files Its 13F on Monday",
-      "url": "https://www.tikr.com/blog/what-to-watch-when-berkshire-hathaway-files-its-13f-on-monday?ref=yahoofinance&tlnk=yf-261112-gvv6gwvf",
-      "published_at": "2026-11-12T16:35:42Z",
-      "score": -2,
+      "publisher": "Trefis",
+      "title": "What Could Surprise Netflix Stock Investors On The Upside?",
+      "url": "https://www.trefis.com/stock/nflx/articles/624979/what-could-surprise-netflix-stock-investors-on-the-upside/2026-11-13",
+      "published_at": "2026-11-13T14:56:12Z",
+      "score": -30,
+      "label": "bearish"
+    },
+    {
+      "id": "af7c07ba44fb",
+      "source": "news",
+      "publisher": "Yahoo Finance Video",
+      "title": "What to make of Jensen Huang's resignation: AI Investing Panel",
+      "url": "https://finance.yahoo.com/video/what-to-make-of-jensen-huangs-resignation-ai-investing-panel-144935369.html",
+      "published_at": "2026-11-13T14:49:35Z",
+      "score": -25,
+      "label": "bearish"
+    },
+    {
+      "id": "e4304bd1a538",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Not Apple. Not Microsoft. This \"Magnificent Seven\" Stock Is My Top Tech Buy for 2027.",
+      "url": "https://www.fool.com/investing/2026/11/13/not-apple-microsoft-magnificent-7-stock-buy-goog/",
+      "published_at": "2026-11-13T14:25:00Z",
+      "score": 6,
       "label": "neutral"
     }
   ]
