@@ -2,7 +2,7 @@
   "schema_version": "1.1",
   "symbol": "AAPL",
   "name": "Apple Inc.",
-  "generated_at": "2026-11-14T01:58:35Z",
+  "generated_at": "2026-11-16T02:30:33Z",
   "is_demo_data": false,
   "quote": {
     "price": 356.27,
@@ -495,14 +495,14 @@
   "forecast": {
     "horizon_days": 5,
     "move": "quiet",
-    "prob_large": 0.4312,
+    "prob_large": 0.4132,
     "typical_move_pct": 3.5348,
-    "confidence": 0.5688,
-    "made_at": "2026-11-14T01:58:35Z",
+    "confidence": 0.5868,
+    "made_at": "2026-11-16T02:30:33Z",
     "as_of_date": "2026-11-13",
     "target_date": "2026-11-20",
     "model_name": "move-xgb",
-    "model_version": "14"
+    "model_version": "15"
   },
   "sentiment": {
     "window_days": 7,
@@ -520,7 +520,7 @@
       {
         "source": "news",
         "display_name": "News media",
-        "score": -1,
+        "score": 0,
         "label": "neutral",
         "doc_count": 50,
         "note": "50 articles, last 7 days",
@@ -529,7 +529,7 @@
       }
     ],
     "gap": {
-      "points": 27,
+      "points": 26,
       "most_bullish": "analysts",
       "most_bearish": "news",
       "summary": "Wall Street analysts lean bullish while News media are neutral."
@@ -542,9 +542,149 @@
       "publisher": "Yahoo Finance",
       "title": "Consensus: 26 buy, 13 hold, 6 sell (Nov 2026)",
       "url": null,
-      "published_at": "2026-11-14T01:58:35Z",
+      "published_at": "2026-11-16T02:30:33Z",
       "score": 26,
       "label": "bullish"
+    },
+    {
+      "id": "b493cd1e9264",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "\u2018Bond King\u2019 Jeffrey Gundlach Is \u201cNot Interested in Buying Stocks.\u201d His Warning Points to 10 Years of Losses",
+      "url": "https://247wallst.com/investing/2026/11/15/bond-king-jeffrey-gundlach-is-not-interested-in-buying-stocks-his-warning-points-to-10-years-of-losses/",
+      "published_at": "2026-11-15T17:12:51Z",
+      "score": -19,
+      "label": "neutral"
+    },
+    {
+      "id": "bed6491f9e36",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Want to Invest in Top Growth Stocks Like Amazon, Apple, and Microsoft but Avoid Nvidia? Consider This Low-Cost Vanguard ETF That\u2019s Up 24.8% This Year.",
+      "url": "https://www.fool.com/investing/2026/11/15/want-to-invest-in-top-growth-stocks-like-amazon-apple-and-microsoft-but-avoid-nvidia-consider-this-low-cost-vanguard-etf-that-s-up-24-8-this-year/",
+      "published_at": "2026-11-15T11:50:02Z",
+      "score": 34,
+      "label": "bullish"
+    },
+    {
+      "id": "7f4032048bd4",
+      "source": "news",
+      "publisher": "Investing.com",
+      "title": "5 big analyst AI moves: Nvidia hit with downgrades after Huang\u2019s exit",
+      "url": "https://finance.yahoo.com/technology/ai/articles/5-big-analyst-ai-moves-093002830.html",
+      "published_at": "2026-11-15T09:30:02Z",
+      "score": -93,
+      "label": "bearish"
+    },
+    {
+      "id": "08b49f11eee0",
+      "source": "news",
+      "publisher": "TIKR",
+      "title": "Bernstein Says Qualcomm\u2019s \u201cMargin Outlook Is Lousy.\u201d Is the 6% Slide a Buying Chance?",
+      "url": "https://www.tikr.com/blog/bernstein-says-qualcomms-margin-outlook-is-lousy-is-the-6-slide-a-buying-chance?ref=yahoofinance&tlnk=yf-261115-cq572qhj",
+      "published_at": "2026-11-15T04:33:21Z",
+      "score": -50,
+      "label": "bearish"
+    },
+    {
+      "id": "f2870fa7c3d8",
+      "source": "news",
+      "publisher": "Investing.com",
+      "title": "Evercore explains why Apple has the right assets to win the personal agents race",
+      "url": "https://finance.yahoo.com/technology/ai/articles/evercore-explains-why-apple-assets-020804809.html",
+      "published_at": "2026-11-15T02:08:04Z",
+      "score": 19,
+      "label": "neutral"
+    },
+    {
+      "id": "ad5d7345a335",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "Warren Buffett\u2019s Berkshire Just Hit a Record High as Nvidia Sank. A 67-Year-Old Who Bought 1,000 Shares in 2016 Can Sell $106,000 of It This Year and Pay 0% on the Gain",
+      "url": "https://247wallst.com/investing/2026/11/14/warren-buffetts-berkshire-just-hit-a-record-high-as-nvidia-sank-a-67-year-old-who-bought-1000-shares-in-2016-can-sell-106000-of-it-this-year-and-pay-0-on-the-gain/",
+      "published_at": "2026-11-14T23:53:00Z",
+      "score": 4,
+      "label": "neutral"
+    },
+    {
+      "id": "cf16b683a0b4",
+      "source": "news",
+      "publisher": "Benzinga",
+      "title": "Mom Drives A Honda, Flies Economy. When She Asks Her Son To Be Trustee, He Finds Nearly $30M In Assets. He Says, \u2018There Were Zero Signs\u2019",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/mom-drives-honda-flies-economy-200046195.html",
+      "published_at": "2026-11-14T20:00:46Z",
+      "score": 0,
+      "label": "neutral"
+    },
+    {
+      "id": "1a8ce15bebf7",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Apple's Market Value Grew From $350 Billion to $4 Trillion During Tim Cook's 15 Years as CEO. Here's What That Growth Curve Means for Apple's Next Chapter Under John Ternus",
+      "url": "https://www.fool.com/investing/2026/11/14/apples-market-value-grew-from-350-billion-to-4-trillion-during-tim-cooks-15-years-as-ceo-heres-what-that-growth-curve-means-for-apples-next-chapter-under-john-ternus/",
+      "published_at": "2026-11-14T19:31:01Z",
+      "score": 4,
+      "label": "neutral"
+    },
+    {
+      "id": "963e9cbcae40",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Arm vs. ASML: Which Technology Stock Is a Better Buy for 2027?",
+      "url": "https://www.fool.com/coverage/better-buy/2026/11/14/arm-vs-asml-which-technology-stock-is-a-better-buy-for-2027/",
+      "published_at": "2026-11-14T17:22:01Z",
+      "score": 8,
+      "label": "neutral"
+    },
+    {
+      "id": "1a56188f33d4",
+      "source": "news",
+      "publisher": "TheStreet",
+      "title": "Apple users are about to lose something they've had for 28 years",
+      "url": "https://www.thestreet.com/investing/apple-users-are-about-to-lose-something-theyve-had-for-28-years",
+      "published_at": "2026-11-14T16:07:00Z",
+      "score": -76,
+      "label": "bearish"
+    },
+    {
+      "id": "8a813b7963dc",
+      "source": "news",
+      "publisher": "Moneywise",
+      "title": "Nvidia lost $1.6 trillion after Jensen Huang's exit, but Apple's and Uber's CEO transitions offer a blueprint",
+      "url": "https://finance.yahoo.com/technology/articles/nvidia-lost-1-6-trillion-154500086.html",
+      "published_at": "2026-11-14T15:45:00Z",
+      "score": 67,
+      "label": "bullish"
+    },
+    {
+      "id": "442323f4a190",
+      "source": "news",
+      "publisher": "Investor's Business Daily",
+      "title": "Apple Leads Five Stocks Standing Tall Near Buy Points Despite Nvidia, Other Headwinds",
+      "url": "https://www.investors.com/news/apple-five-stocks-buy-points-nvidia-market-headwinds/?src=A00220&yptr=yahoo",
+      "published_at": "2026-11-14T13:00:58Z",
+      "score": 65,
+      "label": "bullish"
+    },
+    {
+      "id": "7fd709261b49",
+      "source": "news",
+      "publisher": "Stocktwits",
+      "title": "Elon Musk, Trump, Kress, Nvidia\u2019s Board On Jensen Huang\u2019s Exit: Mag 7 Voices This Week",
+      "url": "https://stocktwits.com/news-articles/markets/equity/elon-musk-trump-kress-nvidia-board-on-jensen-huang-exit/cNbPJ1xR9Qk",
+      "published_at": "2026-11-14T12:30:00Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "94f6f209329c",
+      "source": "news",
+      "publisher": "The Wall Street Journal",
+      "title": "In Jensen Huang\u2019s Ouster, Tech Billionaires See a Mistake\u2014and a Lesson",
+      "url": "https://www.wsj.com/tech/in-jensen-huangs-ouster-tech-billionaires-see-a-mistakeand-a-lesson-2bea613c?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-14T10:30:00Z",
+      "score": -50,
+      "label": "bearish"
     },
     {
       "id": "fa35f7c69751",
@@ -687,152 +827,12 @@
       "label": "bearish"
     },
     {
-      "id": "c64b14446bc8",
+      "id": "a9fe34ccf2f4",
       "source": "news",
-      "publisher": "GuruFocus.com",
-      "title": "Apple Stocks Rise 1.04% as Siri AI-Powered HomeView and Apple TV Hit Shelves",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/apple-stocks-rise-1-04-173942861.html",
-      "published_at": "2026-11-13T17:39:42Z",
-      "score": 72,
-      "label": "bullish"
-    },
-    {
-      "id": "056dfdf73eb1",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "Microsoft Goes Ex-Dividend Nov 19. Here\u2019s What Backs the $0.98 Payout",
-      "url": "https://247wallst.com/investing/2026/11/13/microsoft-goes-ex-dividend-nov-19-heres-what-backs-the-0-98-payout/",
-      "published_at": "2026-11-13T16:47:07Z",
-      "score": -1,
-      "label": "neutral"
-    },
-    {
-      "id": "f5ab6fd0cece",
-      "source": "news",
-      "publisher": "Trefis",
-      "title": "What Could Still Send Apple Stock Higher?",
-      "url": "https://www.trefis.com/stock/aapl/articles/624982/what-could-still-send-apple-stock-higher/2026-11-13",
-      "published_at": "2026-11-13T16:25:48Z",
-      "score": -62,
-      "label": "bearish"
-    },
-    {
-      "id": "eba8c43ee159",
-      "source": "news",
-      "publisher": "Yahoo Finance Video",
-      "title": "The road ahead without Jensen Huang: Who can run Nvidia?",
-      "url": "https://finance.yahoo.com/video/the-road-ahead-without-jensen-huang-who-can-run-nvidia-160601033.html",
-      "published_at": "2026-11-13T16:06:01Z",
-      "score": 3,
-      "label": "neutral"
-    },
-    {
-      "id": "550fcc19f4b4",
-      "source": "news",
-      "publisher": "Yahoo Finance Video",
-      "title": "What investors should consider before hitting buy on Nvidia",
-      "url": "https://finance.yahoo.com/video/what-investors-should-consider-before-hitting-buy-on-nvidia-172018567.html",
-      "published_at": "2026-11-13T15:59:00Z",
-      "score": 1,
-      "label": "neutral"
-    },
-    {
-      "id": "3d8c64857221",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Forget the \"Magnificent Seven.\" Berkshire Hathaway Could Be the Better Long-Term Bet.",
-      "url": "https://www.fool.com/investing/2026/11/13/forget-the-magnificent-seven-berkshire-hathaway-could-be-the-better-long-term-bet/",
-      "published_at": "2026-11-13T15:43:02Z",
-      "score": 10,
-      "label": "neutral"
-    },
-    {
-      "id": "970f3741793c",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Apple Is the World\u2019s Largest Company, and Nvidia Is Second. Here\u2019s What $10,000 Invested in Each Today Could Be Worth by the End of Next Year.",
-      "url": "https://www.fool.com/investing/2026/11/13/apple-is-the-world-s-largest-company-and-nvidia-is-second-here-s-what-usd10-000-in-each-could-be-worth-by-the-end-of-next-year/",
-      "published_at": "2026-11-13T15:42:01Z",
-      "score": 3,
-      "label": "neutral"
-    },
-    {
-      "id": "0610a5417977",
-      "source": "news",
-      "publisher": "Barchart",
-      "title": "Trump Floated Tim Cook as a Potential Successor to Jensen Huang. Nvidia\u2019s Operating Performance Matters More Than Huang\u2019s Successor.",
-      "url": "https://www.barchart.com/story/news/8823391/trump-floated-tim-cook-as-a-potential-successor-to-jensen-huang-nvidias-operating-performance-matters-more-than-huangs-successor",
-      "published_at": "2026-11-13T15:22:31Z",
-      "score": 4,
-      "label": "neutral"
-    },
-    {
-      "id": "a10643c358cf",
-      "source": "news",
-      "publisher": "Yahoo Finance Video",
-      "title": "Qualcomm CEO Cristiano Amon on fueling the AI boom",
-      "url": "https://finance.yahoo.com/video/qualcomm-ceo-cristiano-amon-on-fueling-the-ai-boom-150849126.html",
-      "published_at": "2026-11-13T15:08:49Z",
-      "score": -8,
-      "label": "neutral"
-    },
-    {
-      "id": "0dfc62d374b4",
-      "source": "news",
-      "publisher": "The Wall Street Journal",
-      "title": "Nvidia Needs Three CEOs in One",
-      "url": "https://www.wsj.com/cio-journal/nvidia-needs-three-ceos-in-one-59038b0c?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-13T15:07:00Z",
-      "score": 0,
-      "label": "neutral"
-    },
-    {
-      "id": "1e080f49d983",
-      "source": "news",
-      "publisher": "Yahoo Finance Video",
-      "title": "Three positive signs for the AI trade, America's inflation problem, and Huang's Nvidia departure",
-      "url": "https://finance.yahoo.com/video/three-positive-signs-for-the-ai-trade-americas-inflation-problem-and-huangs-nvidia-departure-150622803.html",
-      "published_at": "2026-11-13T15:06:22Z",
-      "score": 80,
-      "label": "bullish"
-    },
-    {
-      "id": "c2063af5f015",
-      "source": "news",
-      "publisher": "Trefis",
-      "title": "Nvidia Is 6.1% Of Your S&P 500 Fund. What Is Your Number?",
-      "url": "https://www.trefis.com/stock/nvda/articles/624815/nvidia-is-6-1-of-your-s-p-500-fund-what-is-your-number/2026-11-13",
-      "published_at": "2026-11-13T14:56:12Z",
-      "score": -2,
-      "label": "neutral"
-    },
-    {
-      "id": "a286445bd4cc",
-      "source": "news",
-      "publisher": "Trefis",
-      "title": "What Could Surprise Netflix Stock Investors On The Upside?",
-      "url": "https://www.trefis.com/stock/nflx/articles/624979/what-could-surprise-netflix-stock-investors-on-the-upside/2026-11-13",
-      "published_at": "2026-11-13T14:56:12Z",
-      "score": -30,
-      "label": "bearish"
-    },
-    {
-      "id": "af7c07ba44fb",
-      "source": "news",
-      "publisher": "Yahoo Finance Video",
-      "title": "What to make of Jensen Huang's resignation: AI Investing Panel",
-      "url": "https://finance.yahoo.com/video/what-to-make-of-jensen-huangs-resignation-ai-investing-panel-144935369.html",
-      "published_at": "2026-11-13T14:49:35Z",
-      "score": -25,
-      "label": "bearish"
-    },
-    {
-      "id": "e4304bd1a538",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Not Apple. Not Microsoft. This \"Magnificent Seven\" Stock Is My Top Tech Buy for 2027.",
-      "url": "https://www.fool.com/investing/2026/11/13/not-apple-microsoft-magnificent-7-stock-buy-goog/",
-      "published_at": "2026-11-13T14:25:00Z",
+      "publisher": "TIKR",
+      "title": "Apple vs. Microsoft: Which Dividend Grows Faster Over the Next 10 Years?",
+      "url": "https://www.tikr.com/blog/apple-vs-microsoft-which-dividend-grows-faster-over-the-next-10-years?ref=yahoofinancedividend&tlnk=yf-261115-w5gqr469",
+      "published_at": "2026-11-13T17:40:57Z",
       "score": 6,
       "label": "neutral"
     }
