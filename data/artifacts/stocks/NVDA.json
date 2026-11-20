@@ -2,19 +2,15 @@
   "schema_version": "1.1",
   "symbol": "NVDA",
   "name": "NVIDIA Corporation",
-  "generated_at": "2026-11-19T02:56:48Z",
+  "generated_at": "2026-11-20T02:49:57Z",
   "is_demo_data": false,
   "quote": {
-    "price": 150.96,
-    "change_pct": -2.89,
-    "as_of": "2026-11-18",
+    "price": 145.98,
+    "change_pct": -3.3,
+    "as_of": "2026-11-19",
     "currency": "USD"
   },
   "prices": [
-    {
-      "date": "2026-06-01",
-      "close": 223.85
-    },
     {
       "date": "2026-06-02",
       "close": 222.31
@@ -490,17 +486,21 @@
     {
       "date": "2026-11-18",
       "close": 150.96
+    },
+    {
+      "date": "2026-11-19",
+      "close": 145.98
     }
   ],
   "forecast": {
     "horizon_days": 5,
     "move": "large",
-    "prob_large": 0.8779,
-    "typical_move_pct": 3.5248,
-    "confidence": 0.8779,
-    "made_at": "2026-11-19T02:56:48Z",
-    "as_of_date": "2026-11-18",
-    "target_date": "2026-11-25",
+    "prob_large": 0.8616,
+    "typical_move_pct": 3.5371,
+    "confidence": 0.8616,
+    "made_at": "2026-11-20T02:49:57Z",
+    "as_of_date": "2026-11-19",
+    "target_date": "2026-11-27",
     "model_name": "move-xgb",
     "model_version": "14"
   },
@@ -512,16 +512,16 @@
         "display_name": "Wall Street analysts",
         "score": 44,
         "label": "bullish",
-        "doc_count": 63,
-        "note": "63 analysts, Nov 2026",
+        "doc_count": 62,
+        "note": "62 analysts, Nov 2026",
         "method": "ratings",
         "previous_score": 55
       },
       {
         "source": "news",
         "display_name": "News media",
-        "score": -1,
-        "label": "neutral",
+        "score": -30,
+        "label": "bearish",
         "doc_count": 50,
         "note": "50 articles, last 7 days",
         "method": "finbert",
@@ -529,312 +529,312 @@
       }
     ],
     "gap": {
-      "points": 45,
+      "points": 74,
       "most_bullish": "analysts",
       "most_bearish": "news",
-      "summary": "Wall Street analysts lean bullish while News media are neutral."
+      "summary": "Wall Street analysts lean bullish while News media lean bearish."
     }
   },
   "headlines": [
     {
-      "id": "6746b0ca768f",
+      "id": "8ca2f6fc3841",
       "source": "analysts",
       "publisher": "Yahoo Finance",
-      "title": "Consensus: 46 buy, 15 hold, 2 sell (Nov 2026)",
+      "title": "Consensus: 45 buy, 15 hold, 2 sell (Nov 2026)",
       "url": null,
-      "published_at": "2026-11-19T02:56:48Z",
+      "published_at": "2026-11-20T02:49:57Z",
       "score": 44,
       "label": "bullish"
     },
     {
-      "id": "c6e60e48467b",
+      "id": "4eac1dba1c59",
       "source": "news",
-      "publisher": "Investor's Business Daily",
-      "title": "Dow Jones Futures Rise; Anthropic IPO Prices High, Palo Alto And Everpure Rally On Earnings",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-anthropic-ipo-prices-palo-alto-everpure-nvidia-target-unitedhealth-fed-waller-shock/?src=A00220&yptr=yahoo",
-      "published_at": "2026-11-19T02:41:54Z",
-      "score": 82,
-      "label": "bullish"
-    },
-    {
-      "id": "6d00e2d64f5f",
-      "source": "news",
-      "publisher": "Investing.com",
-      "title": "Japan\u2019s Datasection slumps on big guidance cut amid U.S.-China chip access row",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/japan-datasection-slumps-big-guidance-022320105.html",
-      "published_at": "2026-11-19T02:23:20Z",
+      "publisher": "Stocktwits",
+      "title": "Nasdaq, Dow, S&P 500 Futures Slip As Anthropic\u2019s Record Debut Fails To Lift AI Stocks: SLV, GLD, AMD, NVDA In Focus",
+      "url": "https://stocktwits.com/news-articles/markets/equity/why-nasdaq-dow-futures-fell-anthropic-ipo-ai-trade-amd-nvda/cNbSGu0R9KR",
+      "published_at": "2026-11-20T02:48:14Z",
       "score": -94,
       "label": "bearish"
     },
     {
-      "id": "202afb45e687",
+      "id": "adb7f00f0648",
       "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Is Anthropic\u2019s IPO a Good Reason to Buy Ginkgo Bioworks Right Now?",
-      "url": "https://www.fool.com/investing/2026/11/18/anthropic-ipo-good-reason-buy-ginkgo-bioworks-right-now/",
-      "published_at": "2026-11-19T02:16:27Z",
-      "score": 6,
-      "label": "neutral"
-    },
-    {
-      "id": "e0e7584c4f3e",
-      "source": "news",
-      "publisher": "TIKR",
-      "title": "CEO Scandals Typically Cost About 1%. Here\u2019s Why It\u2019s Different for Nvidia",
-      "url": "https://www.tikr.com/blog/ceo-scandals-typically-cost-about-1-heres-why-its-different-for-nvidia?ref=yahoofinance&tlnk=yf-261118-hwcfj8vh",
-      "published_at": "2026-11-19T02:13:18Z",
-      "score": 1,
-      "label": "neutral"
-    },
-    {
-      "id": "1c71666406ef",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Why BellRing Brands Stock Surged Today",
-      "url": "https://www.fool.com/investing/2026/11/18/why-bellring-brands-stock-surged-today/",
-      "published_at": "2026-11-19T02:12:42Z",
-      "score": 63,
-      "label": "bullish"
-    },
-    {
-      "id": "4ccb5bbf4cc6",
-      "source": "news",
-      "publisher": "Stocktwits",
-      "title": "\u2018Nothing Wrong With NVDA Or AI Trade\u2019: Kenny Polcari Says Fed\u2019s Inflation Concerns Are The Bigger Market Risk",
-      "url": "https://stocktwits.com/news-articles/markets/equity/nothing-wrong-with-nvda-or-ai-trade-kenny-polcari-says-fed-s-inflation-concerns-are-the-bigger-market-risk/cNbLtYVR9ia",
-      "published_at": "2026-11-19T02:10:44Z",
-      "score": -13,
-      "label": "neutral"
-    },
-    {
-      "id": "9bd834888712",
-      "source": "news",
-      "publisher": "Investing.com",
-      "title": "Wall Street futures climb ahead of Anthropic\u2019s $1.5 trillion mega IPO",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-futures-climb-ahead-020729605.html",
-      "published_at": "2026-11-19T02:07:29Z",
-      "score": 10,
-      "label": "neutral"
-    },
-    {
-      "id": "224e4764dde9",
-      "source": "news",
-      "publisher": "The Wall Street Journal",
-      "title": "Wall Street Pledged to Mobilize $500 Billion for Nvidia\u2014But Hasn\u2019t Put Up a Dime",
-      "url": "https://www.wsj.com/finance/wall-street-pledged-to-mobilize-500-billion-for-nvidiabut-hasnt-put-up-a-dime-1e41f276?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-19T02:00:00Z",
-      "score": 16,
-      "label": "neutral"
-    },
-    {
-      "id": "e2b91d23efff",
-      "source": "news",
-      "publisher": "The Wall Street Journal",
-      "title": "The Jensen Huang Saga Has Reinvigorated Washington\u2019s China Hawks",
-      "url": "https://www.wsj.com/politics/national-security/the-jensen-huang-saga-has-reinvigorated-washingtons-china-hawks-0bc1bd4a?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-19T02:00:00Z",
-      "score": 49,
-      "label": "bullish"
-    },
-    {
-      "id": "9302ab0c2659",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Anthropic Priced Its IPO at $83. Here's What I'd Pay for the Stock.",
-      "url": "https://www.fool.com/investing/2026/11/18/anthropic-priced-its-ipo-at-usd83-here-s-what-i-d-pay-for-the-stock/",
-      "published_at": "2026-11-19T01:50:02Z",
-      "score": 3,
-      "label": "neutral"
-    },
-    {
-      "id": "96809001f8d2",
-      "source": "news",
-      "publisher": "Bloomberg",
-      "title": "Trump Hails \u2018Great\u2019 Ties With Xi, Downplays Nvidia Spy Scandal",
-      "url": "https://finance.yahoo.com/economy/policy/articles/trump-hails-great-ties-xi-014442789.html",
-      "published_at": "2026-11-19T01:44:42Z",
-      "score": 0,
-      "label": "neutral"
-    },
-    {
-      "id": "1ab5c5cdf3cd",
-      "source": "news",
-      "publisher": "Benzinga",
-      "title": "Elon Musk Says Nvidia Made a \u2018Mistake\u2019 by Parting Ways With  Jensen Huang: Calls Ex-CEO \u2018Michael Jordan Perhaps at His Peak Level\u2019",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/elon-musk-says-nvidia-made-014213735.html",
-      "published_at": "2026-11-19T01:42:13Z",
-      "score": -41,
+      "publisher": "Investor's Business Daily",
+      "title": "Dow Jones Futures: Techs Slide, Anthropic Retreats After Ugly Market Reversal To New Lows",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-reversal-anthropic-ipo-debuts-amd-dives/?src=A00220&yptr=yahoo",
+      "published_at": "2026-11-20T02:42:22Z",
+      "score": -96,
       "label": "bearish"
     },
     {
-      "id": "574409d7d954",
-      "source": "news",
-      "publisher": "CryptoProwl",
-      "title": "Anthropic Prices IPO at $83 a Share, Raising $81.3 Billion in Largest Listing on Record",
-      "url": "https://www.cryptoprowl.com/releases/anthropic-prices-ipo-at-83-a-share-raising-813-billion-in-largest-listing-on-record-7975",
-      "published_at": "2026-11-19T01:40:00Z",
-      "score": 24,
-      "label": "bullish"
-    },
-    {
-      "id": "0b15cb861323",
-      "source": "news",
-      "publisher": "Bloomberg",
-      "title": "Trump Suggests US Can Sell Blackwell Chips to China in Future",
-      "url": "https://finance.yahoo.com/technology/ai/articles/trump-suggests-us-sell-blackwell-013901504.html",
-      "published_at": "2026-11-19T01:39:01Z",
-      "score": 36,
-      "label": "bullish"
-    },
-    {
-      "id": "26f8cc34ab3a",
+      "id": "4240a6516496",
       "source": "news",
       "publisher": "Motley Fool",
-      "title": "Why Peabody Energy Stock Slumped Today",
-      "url": "https://www.fool.com/investing/2026/11/18/why-peabody-energy-stock-slumped-today/",
-      "published_at": "2026-11-19T01:29:22Z",
-      "score": -93,
+      "title": "IBM Stock Is Down About 23% in 2026. Here's Where I Think It Will Be in 2030.",
+      "url": "https://www.fool.com/investing/2026/11/19/ibm-stock-is-down-about-23-in-2026-here-s-where-i-think-it-will-be-in-2030/",
+      "published_at": "2026-11-20T02:24:01Z",
+      "score": -95,
       "label": "bearish"
     },
     {
-      "id": "9dbdf37e6517",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Warren Buffett Expects Berkshire Hathaway (BRKA, BRKB) Stock to Drop About 50% Again Someday. Here's What He Says to Do Then.",
-      "url": "https://www.fool.com/investing/2026/11/18/warren-buffett-expects-berkshire-hathaway-brka-brk/",
-      "published_at": "2026-11-19T01:25:00Z",
-      "score": -84,
-      "label": "bearish"
-    },
-    {
-      "id": "c207e3477630",
+      "id": "89cc489333d5",
       "source": "news",
       "publisher": "BeInCrypto",
-      "title": "Nvidia Moves Up Raises and Stock Grants After Jensen Huang Exit",
-      "url": "https://beincrypto.com/nvidia-pay-raises-jensen-huang-exit/",
-      "published_at": "2026-11-19T01:11:35Z",
-      "score": 81,
-      "label": "bullish"
-    },
-    {
-      "id": "14c55539c432",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Why Bullish Stock Crushed it on Wednesday",
-      "url": "https://www.fool.com/investing/2026/11/18/why-bullish-stock-crushed-it-on-wednesday/",
-      "published_at": "2026-11-19T01:03:20Z",
-      "score": -16,
-      "label": "neutral"
-    },
-    {
-      "id": "a2566def1fd5",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Stock-Split Watch: Is Micron Next?",
-      "url": "https://www.fool.com/investing/2026/11/18/stock-split-watch-is-micron-next/",
-      "published_at": "2026-11-19T01:03:02Z",
-      "score": 0,
-      "label": "neutral"
-    },
-    {
-      "id": "fada4405d777",
-      "source": "news",
-      "publisher": "AFP",
-      "title": "Hot demand lifts Anthropic IPO price to $83 a share, breaks SpaceX's record raise",
-      "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-set-price-ipo-key-030309911.html",
-      "published_at": "2026-11-19T01:02:05Z",
-      "score": 90,
-      "label": "bullish"
-    },
-    {
-      "id": "e1c161a740d3",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "3 Investments to Give a Child This Holiday Season and Leave Alone Until 2040",
-      "url": "https://www.fool.com/investing/2026/11/18/3-investments-to-give-a-child-this-holiday-season-and-leave-alone-until-2040/",
-      "published_at": "2026-11-19T00:58:02Z",
-      "score": 2,
-      "label": "neutral"
-    },
-    {
-      "id": "3e0e9588b637",
-      "source": "news",
-      "publisher": "Barrons.com",
-      "title": "Review & Preview: Anthropic\u2019s Moment",
-      "url": "https://www.barrons.com/articles/stocks-today-anthropic-ipo-680866ae?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-19T00:55:00Z",
-      "score": 2,
-      "label": "neutral"
-    },
-    {
-      "id": "9e37cbced36c",
-      "source": "news",
-      "publisher": "CNN Business",
-      "title": "Anthropic\u2019s Wall Street debut marks a new chapter for AI",
-      "url": "https://www.cnn.com/2026/11/18/investing/anthropic-ipo-wall-street-ai",
-      "published_at": "2026-11-19T00:52:57Z",
-      "score": 61,
-      "label": "bullish"
-    },
-    {
-      "id": "db4526e00d63",
-      "source": "news",
-      "publisher": "TheStreet",
-      "title": "Why Nvidia and ASML still fit an underweight tech strategy",
-      "url": "https://www.thestreet.com/investing/why-nvidia-and-asml-still-fit-an-underweight-tech-strategy",
-      "published_at": "2026-11-19T00:44:54Z",
-      "score": 10,
-      "label": "neutral"
-    },
-    {
-      "id": "863475d9c785",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Missed the Anthropic IPO Allocation? Here\u2019s How to Buy ANT on Thursday.",
-      "url": "https://www.fool.com/investing/2026/11/18/missed-anthropic-ipo-allocation-how-to-buy-ant-stock-thursday/",
-      "published_at": "2026-11-19T00:41:28Z",
-      "score": 1,
-      "label": "neutral"
-    },
-    {
-      "id": "ec063612eec7",
-      "source": "news",
-      "publisher": "Trefis",
-      "title": "GE Vernova Down 24%: What Would Its CEO Say?",
-      "url": "https://www.trefis.com/stock/gev/articles/625753/ge-vernova-down-24-what-would-its-ceo-say/2026-11-18",
-      "published_at": "2026-11-19T00:36:26Z",
-      "score": -86,
+      "title": "Michael Burry Says He Warned on AI With NVIDIA and CoreWeave: Big Short D\u00e9j\u00e0 Vu?",
+      "url": "https://beincrypto.com/michael-burry-warned-nvidia-coreweave-nebius/",
+      "published_at": "2026-11-20T02:19:22Z",
+      "score": -68,
       "label": "bearish"
     },
     {
-      "id": "7d839fa9fea3",
+      "id": "7995c5688d08",
+      "source": "news",
+      "publisher": "Simply Wall St.",
+      "title": "Nvidia Backed AI Data Center Demand Puts Schneider Electric Stock In Focus",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-backed-ai-data-center-021420909.html",
+      "published_at": "2026-11-20T02:14:20Z",
+      "score": -60,
+      "label": "bearish"
+    },
+    {
+      "id": "dba5b8a9cef1",
       "source": "news",
       "publisher": "Motley Fool",
-      "title": "Here's What a $1,000 Investment in Kraken Robotics Will Be Worth by the End of 2027 if Undersea Drone Orders Keep Doubling",
-      "url": "https://www.fool.com/investing/2026/11/18/heres-what-a-1000-investment-in-kraken-robotics-wi/",
-      "published_at": "2026-11-19T00:35:00Z",
+      "title": "Disney Just Raised Its Dividend 33% and Guided to Double-Digit EPS Growth. Here\u2019s What Its Results Mean for Investors.",
+      "url": "https://www.fool.com/investing/2026/11/19/disney-just-raised-its-dividend-33-and-guided-to-double-digit-eps-growth-here-s-what-its-results-mean-for-investors/",
+      "published_at": "2026-11-20T02:05:18Z",
+      "score": 47,
+      "label": "bullish"
+    },
+    {
+      "id": "4a9e72f7cf59",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Here's Why Anthropic's IPO Was a Historic Success",
+      "url": "https://www.fool.com/investing/2026/11/19/why-anthropic-ipo-was-a-historic-success/",
+      "published_at": "2026-11-20T02:02:05Z",
+      "score": 8,
+      "label": "neutral"
+    },
+    {
+      "id": "c0546b941acd",
+      "source": "news",
+      "publisher": "BeInCrypto",
+      "title": "Nikkei Slides 4% as Anthropic's Debut Triggers AI Sell-Off in Tokyo",
+      "url": "https://beincrypto.com/nikkei-225-falls-anthropic-ipo-softbank/",
+      "published_at": "2026-11-20T01:50:08Z",
+      "score": -91,
+      "label": "bearish"
+    },
+    {
+      "id": "d3f20fda8f6b",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "History Says This Brilliant ETF Could Help You Turn $500 Per Month Into $784,100 While Barely Lifting a Finger.",
+      "url": "https://www.fool.com/investing/2026/11/19/history-says-this-brilliant-etf-could-help-you-turn-usd500-per-month-into-usd784-100-while-barely-lifting-a-finger/",
+      "published_at": "2026-11-20T01:48:02Z",
       "score": 16,
       "label": "neutral"
     },
     {
-      "id": "c52011ecd8c5",
+      "id": "909cb2819443",
       "source": "news",
-      "publisher": "MarketWatch",
-      "title": "\u2018Nvidia\u2019s turmoil has me spooked\u2019: Should I sell my stocks and buy real estate \u2014 or ride out the storm?",
-      "url": "https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6",
-      "published_at": "2026-11-19T00:30:00Z",
-      "score": -38,
+      "publisher": "Associated Press",
+      "title": "California attorney general subpoenas Nvidia over chips, former CEO's affair",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/california-attorney-general-subpoenas-nvidia-013306809.html",
+      "published_at": "2026-11-20T01:33:06Z",
+      "score": -92,
       "label": "bearish"
     },
     {
-      "id": "26b92715a301",
+      "id": "facdf349ff0f",
       "source": "news",
       "publisher": "Motley Fool",
-      "title": "After Nvidia\u2019s Earnings, Here\u2019s My Prediction for the Stock Price by the End of the Year",
-      "url": "https://www.fool.com/investing/2026/11/18/after-nvidia-s-earnings-here-s-my-prediction-for-the-stock-price-by-the-end-of-the-year/",
-      "published_at": "2026-11-19T00:25:02Z",
-      "score": 2,
+      "title": "Why CrowdStrike Holdings Stock Flew While the Market Flopped Today",
+      "url": "https://www.fool.com/investing/2026/11/19/why-crowdstrike-holdings-stock-flew-while-the-market-flopped-today/",
+      "published_at": "2026-11-20T01:27:55Z",
+      "score": -9,
       "label": "neutral"
+    },
+    {
+      "id": "bbd2e1e1610f",
+      "source": "news",
+      "publisher": "TheStreet",
+      "title": "Why Nvidia's sell-off could be a buying opportunity (with a catch)",
+      "url": "https://www.thestreet.com/investing/stocks/why-nvidias-sell-off-could-be-a-buying-opportunity-with-a-catch",
+      "published_at": "2026-11-20T01:25:30Z",
+      "score": 7,
+      "label": "neutral"
+    },
+    {
+      "id": "f593f44842c7",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Should You Avoid MercadoLibre (MELI) Stock, Even Now That It's Near a 52-Week Low?",
+      "url": "https://www.fool.com/investing/2026/11/19/should-you-avoid-mercadolibre-meli-stock-even-now/",
+      "published_at": "2026-11-20T01:25:00Z",
+      "score": -74,
+      "label": "bearish"
+    },
+    {
+      "id": "194fa9631604",
+      "source": "news",
+      "publisher": "MarketBeat",
+      "title": "What Elastic (ESTC) Said on Its Q2 Earnings Call",
+      "url": "https://www.marketbeat.com/instant-alerts/transcript-what-elastic-estc-said-on-its-q2-earnings-call-2026-11-19/?utm_source=yahoofinance&utm_medium=yahoofinance",
+      "published_at": "2026-11-20T01:13:08Z",
+      "score": 1,
+      "label": "neutral"
+    },
+    {
+      "id": "7c2184f1e9b1",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "The S&P 500 Just Fell 4 Straight Weeks From a Record High. Here\u2019s Why I\u2019m Buying the Dip.",
+      "url": "https://www.fool.com/investing/2026/11/19/the-s-and-p-500-just-fell-4-straight-weeks-from-a-record-high-here-s-why-i-m-buying-the-dip/",
+      "published_at": "2026-11-20T01:10:37Z",
+      "score": -79,
+      "label": "bearish"
+    },
+    {
+      "id": "5673336f12da",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Why Universal Technical Institute Stock Tanked on Thursday",
+      "url": "https://www.fool.com/investing/2026/11/19/why-universal-technical-institute-stock-tanked-on-thursday/",
+      "published_at": "2026-11-20T01:06:21Z",
+      "score": -87,
+      "label": "bearish"
+    },
+    {
+      "id": "ef2de1ec3151",
+      "source": "news",
+      "publisher": "Trefis",
+      "title": "Why Is BILL Stock Going Up?",
+      "url": "https://www.trefis.com/stock/bill/articles/626273/why-is-bill-stock-going-up/2026-11-19",
+      "published_at": "2026-11-20T01:04:34Z",
+      "score": -27,
+      "label": "bearish"
+    },
+    {
+      "id": "966348ee7a8f",
+      "source": "news",
+      "publisher": "MT Newswires",
+      "title": "Alibaba Group Holding Accused of Hiding Ties to Suspected Spy in Nvidia Scandal, Lawsuit Says",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/alibaba-group-holding-accused-hiding-010413571.html",
+      "published_at": "2026-11-20T01:04:13Z",
+      "score": -56,
+      "label": "bearish"
+    },
+    {
+      "id": "ba08cd62257c",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Michael Burry Says He Tried to Warn You About Nvidia, CoreWeave and Nebius. Here's What the 'Big Short' Investor Saw",
+      "url": "https://www.fool.com/investing/2026/11/19/michael-burry-says-he-tried-to-warn-you-about-nvidia-coreweave-and-nebius-stocks-here-s-what-the-big-short-investor-saw/",
+      "published_at": "2026-11-20T01:03:36Z",
+      "score": 0,
+      "label": "neutral"
+    },
+    {
+      "id": "724e2bbff707",
+      "source": "news",
+      "publisher": "TheStreet",
+      "title": "The market could fall 10-12% \u2014 stocks to buy and sell now",
+      "url": "https://www.thestreet.com/video/the-market-could-fall-10-12-stock-to-buy-and-sell-now",
+      "published_at": "2026-11-20T01:00:46Z",
+      "score": -96,
+      "label": "bearish"
+    },
+    {
+      "id": "6fce5c2cec99",
+      "source": "news",
+      "publisher": "Trefis",
+      "title": "Is Your VOO Fund Secretly An AI Bet?",
+      "url": "https://www.trefis.com/stock/voo/articles/626646/is-your-voo-fund-secretly-an-ai-bet/2026-11-19",
+      "published_at": "2026-11-20T00:58:20Z",
+      "score": -7,
+      "label": "neutral"
+    },
+    {
+      "id": "bdf591593225",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "1 Unstoppable Stock to Buy Before It Joins NVDA and AAPL in the $1 Trillion Club",
+      "url": "https://www.fool.com/investing/2026/11/19/1-unstoppable-stock-to-buy-before-it-joins-hot-tickers-in-the-1-3-trillion-club/",
+      "published_at": "2026-11-20T00:52:02Z",
+      "score": 9,
+      "label": "neutral"
+    },
+    {
+      "id": "c4f23c5d5e7b",
+      "source": "news",
+      "publisher": "Barrons.com",
+      "title": "Nvidia Faces California Subpoena as Its Regulatory Troubles Grow",
+      "url": "https://www.barrons.com/articles/nvidia-california-attorney-general-subpoena-ce1f4ca6?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-20T00:26:00Z",
+      "score": -91,
+      "label": "bearish"
+    },
+    {
+      "id": "80088bbb2f69",
+      "source": "news",
+      "publisher": "Simply Wall St.",
+      "title": "IBM (IBM) Stock May Be 27% Below Fair Value On Quantum Platform News",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ibm-ibm-stock-may-27-002028644.html",
+      "published_at": "2026-11-20T00:20:28Z",
+      "score": -94,
+      "label": "bearish"
+    },
+    {
+      "id": "a787cb75cba9",
+      "source": "news",
+      "publisher": "IntelliNews",
+      "title": "TSMC halts advanced chip orders from Chinese designers in Taiwan",
+      "url": "http://www.intellinews.com/tsmc-halts-advanced-chip-orders-from-chinese-designers-in-taiwan-486911/",
+      "published_at": "2026-11-20T00:06:31Z",
+      "score": -94,
+      "label": "bearish"
+    },
+    {
+      "id": "03698d1b28b6",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Johnson & Johnson Delivered 'Immaculate' Prostate Cancer Data at ESMO. Here's Why Investors Should Care",
+      "url": "https://www.fool.com/investing/2026/11/19/johnson-johnson-delivered-immaculate-prostate-canc/",
+      "published_at": "2026-11-20T00:05:00Z",
+      "score": 5,
+      "label": "neutral"
+    },
+    {
+      "id": "e92de0512e6b",
+      "source": "news",
+      "publisher": "The Wall Street Journal",
+      "title": "California Attorney General Issues Investigative Subpoena to Nvidia",
+      "url": "https://www.wsj.com/tech/california-attorney-general-issues-investigative-subpoena-to-nvidia-097cea9e?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-20T00:01:00Z",
+      "score": -25,
+      "label": "bearish"
+    },
+    {
+      "id": "12d3abb765e9",
+      "source": "news",
+      "publisher": "The Wall Street Journal",
+      "title": "Anthropic\u2019s Mega IPO Lives Up to Wall Street Hype but Fails to Revive AI Trade",
+      "url": "https://www.wsj.com/finance/stocks/anthropic-ipo-ai-markets-89e2476f?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-20T00:00:00Z",
+      "score": 52,
+      "label": "bullish"
+    },
+    {
+      "id": "6c9fa4328ae1",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "The Semiconductor ETF Is on Track to Beat the S&P 500 for a 4th Straight Year. It Has Never Done That Before.",
+      "url": "https://www.fool.com/investing/2026/11/19/the-semiconductor-etf-is-on-track-to-beat-the-s-and-p-500-for-a-4th-straight-year-it-has-never-done-that-before/",
+      "published_at": "2026-11-19T23:43:02Z",
+      "score": 86,
+      "label": "bullish"
     }
   ]
 }
