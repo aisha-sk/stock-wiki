@@ -2,7 +2,7 @@
   "schema_version": "1.1",
   "symbol": "AAPL",
   "name": "Apple Inc.",
-  "generated_at": "2026-11-21T02:59:03Z",
+  "generated_at": "2026-11-23T03:23:20Z",
   "is_demo_data": false,
   "quote": {
     "price": 342.56,
@@ -495,14 +495,14 @@
   "forecast": {
     "horizon_days": 5,
     "move": "quiet",
-    "prob_large": 0.477,
-    "typical_move_pct": 3.5404,
-    "confidence": 0.523,
-    "made_at": "2026-11-21T02:59:03Z",
+    "prob_large": 0.3981,
+    "typical_move_pct": 3.5348,
+    "confidence": 0.6019,
+    "made_at": "2026-11-23T03:23:20Z",
     "as_of_date": "2026-11-20",
     "target_date": "2026-11-30",
     "model_name": "move-xgb",
-    "model_version": "14"
+    "model_version": "16"
   },
   "sentiment": {
     "window_days": 7,
@@ -520,7 +520,7 @@
       {
         "source": "news",
         "display_name": "News media",
-        "score": -14,
+        "score": -19,
         "label": "neutral",
         "doc_count": 50,
         "note": "50 articles, last 7 days",
@@ -529,7 +529,7 @@
       }
     ],
     "gap": {
-      "points": 40,
+      "points": 45,
       "most_bullish": "analysts",
       "most_bearish": "news",
       "summary": "Wall Street analysts lean bullish while News media are neutral."
@@ -542,18 +542,258 @@
       "publisher": "Yahoo Finance",
       "title": "Consensus: 26 buy, 13 hold, 6 sell (Nov 2026)",
       "url": null,
-      "published_at": "2026-11-21T02:59:03Z",
+      "published_at": "2026-11-23T03:23:20Z",
       "score": 26,
       "label": "bullish"
     },
     {
-      "id": "2a7451f2d9a3",
+      "id": "d586fee78b71",
       "source": "news",
-      "publisher": "Investor's Business Daily",
-      "title": "Dow Jones Futures: Market Has Worst Week Since Covid Amid Nvidia, Anthropic. Does Fear Gauge Offer Hope?",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-worst-week-covid-nvidia-anthropic-vix-fear-gauge/?src=A00220&yptr=yahoo",
-      "published_at": "2026-11-21T02:19:27Z",
-      "score": -81,
+      "publisher": "Trefis",
+      "title": "How Did Dell Grow From $56 Billion To $151 Billion In 20 Years?",
+      "url": "https://www.trefis.com/stock/dell/articles/624827/how-did-dell-grow-from-56-billion-to-151-billion-in-20-years/2026-11-22",
+      "published_at": "2026-11-23T02:44:11Z",
+      "score": 8,
+      "label": "neutral"
+    },
+    {
+      "id": "8cd6dfb82cef",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Apple Is Now 25% of Berkshire Hathaway's Stock Portfolio. Here's What Holding Every Share Tells Investors.",
+      "url": "https://www.fool.com/investing/2026/11/22/apple-is-now-25-of-berkshire-hathaway-s-stock-portfolio-here-s-what-holding-every-share-tells-investors/",
+      "published_at": "2026-11-22T22:55:02Z",
+      "score": 1,
+      "label": "neutral"
+    },
+    {
+      "id": "b75f1d6a4493",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "Charlie Bilello Flags the Nasdaq 100\u2019s First Bear Market Since April 2025",
+      "url": "https://247wallst.com/investing/2026/11/22/charlie-bilello-flags-the-nasdaq-100s-first-bear-market-since-april-2025/",
+      "published_at": "2026-11-22T21:17:16Z",
+      "score": 5,
+      "label": "neutral"
+    },
+    {
+      "id": "0001fb394af8",
+      "source": "news",
+      "publisher": "TIKR",
+      "title": "A $6.4 Billion Fund Just Bought These 3 Stocks",
+      "url": "https://www.tikr.com/blog/a-6-4-billion-fund-just-bought-these-3-stocks?ref=yahoofinance&tlnk=yf-261122-hf28rr6f",
+      "published_at": "2026-11-22T20:20:18Z",
+      "score": 3,
+      "label": "neutral"
+    },
+    {
+      "id": "c8a28206e0c7",
+      "source": "news",
+      "publisher": "Simply Wall St.",
+      "title": "What Is Apple (AAPL) Planning With Its New Autonomous AI Agent?",
+      "url": "https://finance.yahoo.com/technology/ai/articles/apple-aapl-planning-autonomous-ai-200614575.html",
+      "published_at": "2026-11-22T20:06:14Z",
+      "score": 3,
+      "label": "neutral"
+    },
+    {
+      "id": "973278b627d4",
+      "source": "news",
+      "publisher": "TheStreet",
+      "title": "AI debt fears mount: why cash and defensive stocks are back in favor",
+      "url": "https://www.thestreet.com/investing/ai-debt-fears-mount-why-cash-and-defensive-stocks-are-back-in-favor",
+      "published_at": "2026-11-22T18:00:00Z",
+      "score": -53,
+      "label": "bearish"
+    },
+    {
+      "id": "763922e2512e",
+      "source": "news",
+      "publisher": "TIKR",
+      "title": "An $8.3 Billion Fund Just Bought These 3 Stocks",
+      "url": "https://www.tikr.com/blog/an-8-3-billion-fund-just-bought-these-3-stocks?ref=yahoofinance&tlnk=yf-261122-2jg2vpjj",
+      "published_at": "2026-11-22T17:50:34Z",
+      "score": 3,
+      "label": "neutral"
+    },
+    {
+      "id": "8e0527b25922",
+      "source": "news",
+      "publisher": "TIKR",
+      "title": "Apple\u2019s CEO Calls Memory Pricing \u201cUnprecedented.\u201d Its Purchase Obligations Jumped $33 Billion in a Quarter",
+      "url": "https://www.tikr.com/blog/apples-ceo-calls-memory-pricing-unprecedented-its-purchase-obligations-jumped-33-billion-in-a-quarter?ref=yahoofinance&tlnk=yf-261122-5m68j2ch",
+      "published_at": "2026-11-22T14:44:02Z",
+      "score": 57,
+      "label": "bullish"
+    },
+    {
+      "id": "b253ffbf5b51",
+      "source": "news",
+      "publisher": "TIKR",
+      "title": "The App Paradigm Will \u201cSlowly, if Not Quickly, Dissipate,\u201d Says Mark Gurman. That\u2019s a Problem for Apple",
+      "url": "https://www.tikr.com/blog/the-app-paradigm-will-slowly-if-not-quickly-dissipate-says-mark-gurman-thats-a-problem-for-apple?ref=yahoofinance&tlnk=yf-261122-whh6mr3f",
+      "published_at": "2026-11-22T12:35:21Z",
+      "score": -66,
+      "label": "bearish"
+    },
+    {
+      "id": "a343b9f2af04",
+      "source": "news",
+      "publisher": "BeInCrypto",
+      "title": "Why is Apple Stock Holding Strong While the Rest of the Market Falls?",
+      "url": "https://beincrypto.com/apple-stock-market-crash-price-outlook/",
+      "published_at": "2026-11-22T12:25:31Z",
+      "score": -38,
+      "label": "bearish"
+    },
+    {
+      "id": "10d43303b61a",
+      "source": "news",
+      "publisher": "TIKR",
+      "title": "\u201cThe Selloff Does Not End When Fundamentals Improve,\u201d Warns Gene Munster. Nvidia Looks Like 2012 Apple",
+      "url": "https://www.tikr.com/blog/the-selloff-does-not-end-when-fundamentals-improve-warns-gene-munster-nvidia-looks-like-2012-apple?ref=yahoofinance&tlnk=yf-261122-jwx4m5q4",
+      "published_at": "2026-11-22T10:07:16Z",
+      "score": 8,
+      "label": "neutral"
+    },
+    {
+      "id": "85940794fefe",
+      "source": "news",
+      "publisher": "TheStreet",
+      "title": "GTA 6's $3.79 billion debut sends Apple stock investors an unmistakable signal",
+      "url": "https://www.thestreet.com/investing/stocks/gta-6-apple-innovation",
+      "published_at": "2026-11-22T04:17:00Z",
+      "score": 68,
+      "label": "bullish"
+    },
+    {
+      "id": "712a6094564d",
+      "source": "news",
+      "publisher": "Investing.com",
+      "title": "5 big analyst AI moves: Nvidia downgrade, Anthropic seen as \u2019generational company\u2019",
+      "url": "https://finance.yahoo.com/technology/ai/articles/5-big-analyst-ai-moves-004732439.html",
+      "published_at": "2026-11-22T00:47:32Z",
+      "score": -85,
+      "label": "bearish"
+    },
+    {
+      "id": "e6476bedde72",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Intuit vs. Oracle: Which Technology Stock Is a Better Buy for 2027?",
+      "url": "https://www.fool.com/coverage/better-buy/2026/11/21/intuit-vs-oracle-which-technology-stock-is-a-better-buy-for-2027/",
+      "published_at": "2026-11-22T00:00:25Z",
+      "score": 8,
+      "label": "neutral"
+    },
+    {
+      "id": "053361ac40b6",
+      "source": "news",
+      "publisher": "TheStreet",
+      "title": "T-Mobile leak reveals major phone plan change for core customers",
+      "url": "https://www.thestreet.com/retail/t-mobile-t-select-prepaid-wireless-plans-leak",
+      "published_at": "2026-11-21T18:33:00Z",
+      "score": -90,
+      "label": "bearish"
+    },
+    {
+      "id": "d897dc03942c",
+      "source": "news",
+      "publisher": "Trefis",
+      "title": "Dell Up 447% In 5 Years, HPE 220%: What Did Michael Dell Do Differently?",
+      "url": "https://www.trefis.com/stock/dell/articles/624826/dell-up-447-in-5-years-hpe-220-what-did-michael-dell-do-differently/2026-11-21",
+      "published_at": "2026-11-21T18:32:03Z",
+      "score": 7,
+      "label": "neutral"
+    },
+    {
+      "id": "42d5221717b2",
+      "source": "news",
+      "publisher": "Trefis",
+      "title": "Microsoft Was The Only Big AI Buyer Paying Down Debt. How Much More Can It Spend?",
+      "url": "https://www.trefis.com/stock/msft/articles/627454/microsoft-was-the-only-big-ai-buyer-paying-down-debt-how-much-more-can-it-spend/2026-11-21",
+      "published_at": "2026-11-21T18:32:03Z",
+      "score": -6,
+      "label": "neutral"
+    },
+    {
+      "id": "01648cf2ea3d",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "Google Is Paying Elon Musk\u2019s SpaceX $30 Billion. Jim Cramer Just Revealed Why",
+      "url": "https://247wallst.com/investing/2026/11/21/google-is-paying-elon-musks-spacex-30-billion-jim-cramer-just-revealed-why/",
+      "published_at": "2026-11-21T16:48:17Z",
+      "score": 2,
+      "label": "neutral"
+    },
+    {
+      "id": "b55a9b1b918e",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "Mark Gurman Says Apple Is \u201cNot Set Up to Move at the Pace of These AI Companies\u201d",
+      "url": "https://247wallst.com/investing/2026/11/21/mark-gurman-says-apple-is-not-set-up-to-move-at-the-pace-of-these-ai-companies/",
+      "published_at": "2026-11-21T16:07:26Z",
+      "score": -1,
+      "label": "neutral"
+    },
+    {
+      "id": "8c2d218abdbb",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "Fed\u2019s Lisa Cook Warns of Larger Rate Hikes Ahead",
+      "url": "https://247wallst.com/investing/2026/11/21/feds-lisa-cook-warns-of-larger-rate-hikes-ahead/",
+      "published_at": "2026-11-21T16:03:16Z",
+      "score": -78,
+      "label": "bearish"
+    },
+    {
+      "id": "4170b646d013",
+      "source": "news",
+      "publisher": "Insider Monkey",
+      "title": "Warren Buffet\u2019s Stock Portfolio: Top 5 Picks",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/warren-buffet-stock-portfolio-top-160007034.html",
+      "published_at": "2026-11-21T16:00:07Z",
+      "score": 7,
+      "label": "neutral"
+    },
+    {
+      "id": "c8eee755eb79",
+      "source": "news",
+      "publisher": "Barchart",
+      "title": "Apple Is Now Worth Over $5 Trillion Without Betting Big on AI Data Centers. AAPL Stock Now Trades Near Wall Street\u2019s Targets.",
+      "url": "https://www.barchart.com/story/news/8950358/apple-is-now-worth-over-5-trillion-without-betting-big-on-ai-data-centers-aapl-stock-now-trades-near-wall-streets-targets",
+      "published_at": "2026-11-21T15:00:03Z",
+      "score": 41,
+      "label": "bullish"
+    },
+    {
+      "id": "6023f65d2844",
+      "source": "news",
+      "publisher": "Trefis",
+      "title": "Is Dell Stock Really Cheap?",
+      "url": "https://www.trefis.com/stock/dell/articles/626514/is-dell-stock-really-cheap/2026-11-20",
+      "published_at": "2026-11-21T06:32:47Z",
+      "score": 4,
+      "label": "neutral"
+    },
+    {
+      "id": "b76886f85168",
+      "source": "news",
+      "publisher": "Trefis",
+      "title": "$1 Million In Cash: Buy Stocks Now Or Wait?",
+      "url": "https://www.trefis.com/stock/spy/articles/626553/1-million-in-cash-buy-stocks-now-or-wait/2026-11-20",
+      "published_at": "2026-11-21T06:32:47Z",
+      "score": 0,
+      "label": "neutral"
+    },
+    {
+      "id": "9a34ff150cf9",
+      "source": "news",
+      "publisher": "TechCrunch",
+      "title": "Startup sues Apple in India over tap-to-share contacts feature",
+      "url": "https://finance.yahoo.com/technology/articles/startup-sues-apple-india-over-040000799.html",
+      "published_at": "2026-11-21T04:00:00Z",
+      "score": -93,
       "label": "bearish"
     },
     {
@@ -595,246 +835,6 @@
       "published_at": "2026-11-20T23:02:13Z",
       "score": 0,
       "label": "neutral"
-    },
-    {
-      "id": "af730dbf6911",
-      "source": "news",
-      "publisher": "Yahoo Finance Video",
-      "title": "Tech sees huge sell-off as Anthropic IPO fails to lift the market",
-      "url": "https://finance.yahoo.com/video/tech-sees-huge-sell-off-as-anthropic-ipo-fails-to-lift-the-market-221925316.html",
-      "published_at": "2026-11-20T22:19:25Z",
-      "score": -91,
-      "label": "bearish"
-    },
-    {
-      "id": "97fd00047bab",
-      "source": "news",
-      "publisher": "TIKR",
-      "title": "Shots Fired: Meta Will Reportedly Sell a $300 Muse Charm With Free Verizon 5G as Apple Builds Its Agent",
-      "url": "https://www.tikr.com/blog/shots-fired-meta-will-reportedly-sell-a-300-muse-charm-with-free-verizon-5g-as-apple-builds-its-agent?ref=yahoofinance&tlnk=yf-261120-pg825wq7",
-      "published_at": "2026-11-20T22:00:18Z",
-      "score": 66,
-      "label": "bullish"
-    },
-    {
-      "id": "f88144369983",
-      "source": "news",
-      "publisher": "GuruFocus.com",
-      "title": "Apple Stock Has a New AI Catalyst -- It Could Take on OpenAI, Meta and Anthropic",
-      "url": "https://finance.yahoo.com/technology/ai/articles/apple-stock-ai-catalyst-could-214023171.html",
-      "published_at": "2026-11-20T21:40:23Z",
-      "score": 22,
-      "label": "bullish"
-    },
-    {
-      "id": "1e0a423cc5b0",
-      "source": "news",
-      "publisher": "Simply Wall St.",
-      "title": "3 Edge AI Stocks To Watch As Apple Pushes More AI On Device",
-      "url": "https://finance.yahoo.com/technology/ai/articles/3-edge-ai-stocks-watch-211405007.html",
-      "published_at": "2026-11-20T21:14:05Z",
-      "score": 49,
-      "label": "bullish"
-    },
-    {
-      "id": "33c58ce86b6e",
-      "source": "news",
-      "publisher": "Trefis",
-      "title": "Is Apple Stock Increasing Your Market Risk?",
-      "url": "https://www.trefis.com/stock/aapl/articles/627248/is-apple-stock-increasing-your-market-risk/2026-11-20",
-      "published_at": "2026-11-20T20:53:45Z",
-      "score": 4,
-      "label": "neutral"
-    },
-    {
-      "id": "df9a61ab386e",
-      "source": "news",
-      "publisher": "Barchart",
-      "title": "AAPL Stock Alert: What to Know as Apple Develops AI Agent to Compete With Muse",
-      "url": "https://www.barchart.com/story/news/8941997/aapl-stock-alert-what-to-know-as-apple-develops-ai-agent-to-compete-with-muse",
-      "published_at": "2026-11-20T20:32:49Z",
-      "score": 7,
-      "label": "neutral"
-    },
-    {
-      "id": "7227e0390260",
-      "source": "news",
-      "publisher": "TIKR",
-      "title": "Apple \u201cHas No Idea What It\u2019s Doing\u201d in AI. Oh, and It\u2019s Building Its Own AI Agent Too",
-      "url": "https://www.tikr.com/blog/apple-has-no-idea-what-its-doing-in-ai-oh-and-its-building-its-own-ai-agent-too?ref=yahoofinance&tlnk=yf-261120-jcvh6wc4",
-      "published_at": "2026-11-20T18:49:00Z",
-      "score": 3,
-      "label": "neutral"
-    },
-    {
-      "id": "92ddc2b145aa",
-      "source": "news",
-      "publisher": "TIKR",
-      "title": "Micron\u2019s President Says \u201cWe Can\u2019t Support Every Customer.\u201d Apple Just Locked In Samsung\u2019s DRAM",
-      "url": "https://www.tikr.com/blog/microns-president-says-we-cant-support-every-customer-apple-just-locked-in-samsungs-dram?ref=yahoofinance&tlnk=yf-261120-2c7wfx6r",
-      "published_at": "2026-11-20T18:24:01Z",
-      "score": -37,
-      "label": "bearish"
-    },
-    {
-      "id": "ad60099f2faf",
-      "source": "news",
-      "publisher": "Trefis",
-      "title": "Is Dell Stock's Steep Fall A Bargain Or A Warning?",
-      "url": "https://www.trefis.com/stock/dell/articles/627170/is-dell-stocks-steep-fall-a-bargain-or-a-warning/2026-11-20",
-      "published_at": "2026-11-20T18:17:11Z",
-      "score": -87,
-      "label": "bearish"
-    },
-    {
-      "id": "a0ac25774e31",
-      "source": "news",
-      "publisher": "GuruFocus.com",
-      "title": "Apple Plans an AI Agent to Rival Meta's Muse",
-      "url": "https://finance.yahoo.com/technology/ai/articles/apple-plans-ai-agent-rival-181309227.html",
-      "published_at": "2026-11-20T18:13:09Z",
-      "score": 32,
-      "label": "bullish"
-    },
-    {
-      "id": "be11a2531284",
-      "source": "news",
-      "publisher": "Trefis",
-      "title": "What Could Stall Microsoft Stock's Run?",
-      "url": "https://www.trefis.com/stock/msft/articles/627236/what-could-stall-microsoft-stocks-run/2026-11-20",
-      "published_at": "2026-11-20T18:02:13Z",
-      "score": -76,
-      "label": "bearish"
-    },
-    {
-      "id": "c9d7306ce3fd",
-      "source": "news",
-      "publisher": "Bloomberg",
-      "title": "Apple Working on Own AI Agent to Rival OpenAI and Anthropic",
-      "url": "https://finance.yahoo.com/video/apple-working-own-ai-agent-175830738.html",
-      "published_at": "2026-11-20T17:58:30Z",
-      "score": 50,
-      "label": "bullish"
-    },
-    {
-      "id": "1f69a8a9cd07",
-      "source": "news",
-      "publisher": "The Wall Street Journal",
-      "title": "One Potential Factor Weighing on Meta Today: a Job Posting at Apple",
-      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-20-2026/card/one-potential-factor-weighing-on-meta-shares-today-a-job-posting-at-apple-R0uFVdRzJuMw532CGiQe?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-20T17:21:39Z",
-      "score": -92,
-      "label": "bearish"
-    },
-    {
-      "id": "7fa75489698e",
-      "source": "news",
-      "publisher": "Insider Monkey",
-      "title": "Underweighting Apple (AAPL) Detracts from the Fund\u2019s Relative Quarterly Returns",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/underweighting-apple-aapl-detracts-fund-165211632.html",
-      "published_at": "2026-11-20T16:52:11Z",
-      "score": -56,
-      "label": "bearish"
-    },
-    {
-      "id": "015cbb95cae6",
-      "source": "news",
-      "publisher": "Yahoo Finance",
-      "title": "Apple's secret AI agent shows John Ternus is done sitting out the AI race",
-      "url": "https://finance.yahoo.com/markets/article/apples-secret-ai-agent-shows-john-ternus-is-done-sitting-out-the-ai-race-164226953.html",
-      "published_at": "2026-11-20T16:42:26Z",
-      "score": -7,
-      "label": "neutral"
-    },
-    {
-      "id": "054f11b4a71c",
-      "source": "news",
-      "publisher": "The Wall Street Journal",
-      "title": "Nvidia Has Now Slipped to No. 4 in Market Cap",
-      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-20-2026/card/nvidia-has-now-slipped-to-no-4-in-market-cap-w92wQQi42ajTrkQljTcU?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-20T16:16:29Z",
-      "score": -97,
-      "label": "bearish"
-    },
-    {
-      "id": "b6ddfba3dcde",
-      "source": "news",
-      "publisher": "Proactive",
-      "title": "Anthropic shares slide towards IPO price as AI investors reassess valuation",
-      "url": "https://www.proactiveinvestors.com/companies/news/1102201/anthropic-shares-slide-towards-ipo-price-as-ai-investors-reassess-valuation-1102201.html",
-      "published_at": "2026-11-20T16:16:00Z",
-      "score": -91,
-      "label": "bearish"
-    },
-    {
-      "id": "6ccdfaec0c46",
-      "source": "news",
-      "publisher": "Zacks",
-      "title": "Tech Outages Spur Emergency Buying: Costco-Heavy ETFs in Focus",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/tech-outages-spur-emergency-buying-160000511.html",
-      "published_at": "2026-11-20T16:00:00Z",
-      "score": -38,
-      "label": "bearish"
-    },
-    {
-      "id": "01f2b534a739",
-      "source": "news",
-      "publisher": "Banking Dive",
-      "title": "Banks race to patch vulnerabilities amid amplified tech outage risk",
-      "url": "https://www.bankingdive.com/news/banks-patching-vulnerabilities-tech-outage-risk-ai-cybersecurity/875329/",
-      "published_at": "2026-11-20T15:48:43Z",
-      "score": -79,
-      "label": "bearish"
-    },
-    {
-      "id": "6038e63f67cd",
-      "source": "news",
-      "publisher": "Investor's Business Daily",
-      "title": "Apple Stock Polishes Breakout As Nvidia-Led AI Boom Gets Wake-Up Call",
-      "url": "https://www.investors.com/research/ibd-stock-analysis/apple-stock-outshines-ai-peers-nvidia-meta/?src=A00220&yptr=yahoo",
-      "published_at": "2026-11-20T15:35:19Z",
-      "score": -13,
-      "label": "neutral"
-    },
-    {
-      "id": "5a840da041ea",
-      "source": "news",
-      "publisher": "Trefis",
-      "title": "Does Huang's Exit Sink Nvidia Stock? History Is Split",
-      "url": "https://www.trefis.com/stock/nvda/articles/627190/does-huang-s-exit-sink-nvidia-stock-history-is-split/2026-11-20",
-      "published_at": "2026-11-20T15:25:24Z",
-      "score": -4,
-      "label": "neutral"
-    },
-    {
-      "id": "43715b18f3fa",
-      "source": "news",
-      "publisher": "Trefis",
-      "title": "$1 Million In Microsoft 10 Years Ago: Worth It?",
-      "url": "https://www.trefis.com/stock/msft/articles/627168/1-million-in-microsoft-10-years-ago-worth-it/2026-11-20",
-      "published_at": "2026-11-20T15:22:31Z",
-      "score": 5,
-      "label": "neutral"
-    },
-    {
-      "id": "16267e617a85",
-      "source": "news",
-      "publisher": "Yahoo Finance Video",
-      "title": "Apple's AI agent push: Why the pressure is mounting",
-      "url": "https://finance.yahoo.com/video/apples-ai-agent-push-why-the-pressure-is-mounting-151336671.html",
-      "published_at": "2026-11-20T15:13:36Z",
-      "score": -6,
-      "label": "neutral"
-    },
-    {
-      "id": "809bd5826594",
-      "source": "news",
-      "publisher": "Simply Wall St.",
-      "title": "Is Dolby Laboratories (DLB) Still A Bargain After Strong Results?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/dolby-laboratories-dlb-still-bargain-151043926.html",
-      "published_at": "2026-11-20T15:10:43Z",
-      "score": 44,
-      "label": "bullish"
     }
   ]
 }
