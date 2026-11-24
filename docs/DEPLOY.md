@@ -48,7 +48,7 @@ in Vercel and redeploy.
 |---|---|
 | Cold starts | Render's free plan stops the service when idle. The first request afterwards can take up to a minute. Open the site a few minutes before a demo. |
 | Alert sign-ups | Stored in SQLite at `/tmp/alerts.db` inside the container. They are lost on every redeploy and restart. Fine for a demo, not for real users. |
-| New data | Artifacts are baked into the image. New pipeline output goes live when it is merged to `main` and Render redeploys. |
+| New data | Artifacts are baked into the image. New pipeline output goes live when Render redeploys. Render's auto-deploy does not fire for the scheduled workflows' bot pushes, so they call a deploy hook: in Render, `sentifi-api` > **Settings** > **Deploy Hook**, copy the URL into the GitHub repository secret `RENDER_DEPLOY_HOOK_URL`. |
 | Preview URLs | Vercel gives every pull request its own URL. Those are not in `CORS_ORIGINS`, so previews cannot reach the API unless you add them. |
 | Secrets | The base app needs none. The optional explainer needs `ANTHROPIC_API_KEY`, set in Render only. It must never be a `NEXT_PUBLIC_` variable. |
 

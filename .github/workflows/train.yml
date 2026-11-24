@@ -39,10 +39,20 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/artifacts
           git diff --cached --quiet && exit 0
-          outcome=$(python -c "import json; v = json.load(open('data/artifacts/model.json'))['versions'][0]; print(f\"v{v['version']} {'promoted' if v['status'] == 'production' else 'rejected'}\")")
+          outcome=$(python -c "import json; v = json.load(open('data/artifacts/model.json'))['versions'][0]; print(f\"v{v['version']} {'promoted' if v['status'] == 'production' else v['status']}\")")
           git commit -m "data: weekly retrain ($outcome)"
           git pull --rebase origin main
           git push origin HEAD:main
+      # The API image bakes in data/artifacts, and Render's auto-deploy skips these bot pushes.
+      - name: Redeploy the API
+        env:
+          RENDER_DEPLOY_HOOK_URL: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$RENDER_DEPLOY_HOOK_URL" ]; then
+            echo "::warning::RENDER_DEPLOY_HOOK_URL is not set, so the live API keeps its old data."
+            exit 0
+          fi
+          curl -fsS -X POST "$RENDER_DEPLOY_HOOK_URL" > /dev/null
       - uses: actions/upload-artifact@v4
         if: always()
         with:
