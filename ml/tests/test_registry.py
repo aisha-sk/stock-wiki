@@ -116,7 +116,7 @@ def test_a_better_candidate_archives_the_previous_production() -> None:
     assert versions[1]["directional_accuracy"] == 0.53
 
 
-def test_a_passer_that_does_not_beat_production_is_archived() -> None:
+def test_the_newest_passer_replaces_a_more_accurate_production() -> None:
     production = {
         "version": "1",
         "model_name": "direction-xgb",
@@ -138,8 +138,9 @@ def test_a_passer_that_does_not_beat_production_is_archived() -> None:
         mlflow_run_id="new",
     )
 
-    assert versions[0]["status"] == "archived"
-    assert versions[1]["status"] == "production"
+    assert versions[0]["status"] == "production"
+    assert versions[1]["status"] == "archived"
+    assert versions[1]["directional_accuracy"] == 0.6
 
 
 def test_an_identical_rerun_does_not_rewrite_history() -> None:

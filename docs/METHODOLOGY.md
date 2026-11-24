@@ -117,7 +117,9 @@ How the other Model performance figures are computed:
 ## 5. The gate
 
 A version serves forecasts only if every check in `ml/gate.py` passes. Today there is one:
-accuracy is at least **0.52**. Beating the baselines is not required.
+accuracy is at least **0.52**. Beating the baselines is not required. The newest version that
+passes becomes production and the previous one is archived, because each retrain is scored on
+a different test period, so older scores are not directly comparable.
 
 The 0.52 threshold was fixed in `ml/config.yaml` at kickoff, before any model result, and has
 not been changed. On 2026-10-10 a second check (beat `always_quiet`) was added, and version 8
