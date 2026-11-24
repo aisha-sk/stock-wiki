@@ -42,3 +42,13 @@ jobs:
           git commit -m "data: daily forecast"
           git pull --rebase origin main
           git push origin HEAD:main
+      # The API image bakes in data/artifacts, and Render's auto-deploy skips these bot pushes.
+      - name: Redeploy the API
+        env:
+          RENDER_DEPLOY_HOOK_URL: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$RENDER_DEPLOY_HOOK_URL" ]; then
+            echo "::warning::RENDER_DEPLOY_HOOK_URL is not set, so the live API keeps its old data."
+            exit 0
+          fi
+          curl -fsS -X POST "$RENDER_DEPLOY_HOOK_URL" > /dev/null
