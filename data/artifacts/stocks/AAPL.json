@@ -2,19 +2,15 @@
   "schema_version": "1.1",
   "symbol": "AAPL",
   "name": "Apple Inc.",
-  "generated_at": "2026-11-24T05:44:15Z",
+  "generated_at": "2026-11-25T04:47:06Z",
   "is_demo_data": false,
   "quote": {
-    "price": 349.08,
-    "change_pct": 1.9,
-    "as_of": "2026-11-23",
+    "price": 354.07,
+    "change_pct": 1.43,
+    "as_of": "2026-11-24",
     "currency": "USD"
   },
   "prices": [
-    {
-      "date": "2026-06-04",
-      "close": 310.73
-    },
     {
       "date": "2026-06-05",
       "close": 306.84
@@ -490,17 +486,21 @@
     {
       "date": "2026-11-23",
       "close": 349.08
+    },
+    {
+      "date": "2026-11-24",
+      "close": 354.07
     }
   ],
   "forecast": {
     "horizon_days": 5,
     "move": "quiet",
-    "prob_large": 0.2642,
-    "typical_move_pct": 3.5404,
-    "confidence": 0.7358,
-    "made_at": "2026-11-24T05:44:15Z",
-    "as_of_date": "2026-11-23",
-    "target_date": "2026-12-01",
+    "prob_large": 0.2969,
+    "typical_move_pct": 3.5387,
+    "confidence": 0.7031000000000001,
+    "made_at": "2026-11-25T04:47:06Z",
+    "as_of_date": "2026-11-24",
+    "target_date": "2026-12-02",
     "model_name": "move-xgb",
     "model_version": "17"
   },
@@ -520,7 +520,7 @@
       {
         "source": "news",
         "display_name": "News media",
-        "score": -2,
+        "score": 10,
         "label": "neutral",
         "doc_count": 50,
         "note": "50 articles, last 7 days",
@@ -529,10 +529,10 @@
       }
     ],
     "gap": {
-      "points": 28,
+      "points": 16,
       "most_bullish": "analysts",
       "most_bearish": "news",
-      "summary": "Wall Street analysts lean bullish while News media are neutral."
+      "summary": "The available groups are close together."
     }
   },
   "headlines": [
@@ -542,299 +542,299 @@
       "publisher": "Yahoo Finance",
       "title": "Consensus: 26 buy, 13 hold, 6 sell (Nov 2026)",
       "url": null,
-      "published_at": "2026-11-24T05:44:15Z",
+      "published_at": "2026-11-25T04:47:06Z",
       "score": 26,
       "label": "bullish"
     },
     {
-      "id": "9937bcc5827b",
+      "id": "fb68512c1cd9",
       "source": "news",
-      "publisher": "Trefis",
-      "title": "The 10-Year Topped 5% For The First Time Since 2007. What Happened Next?",
-      "url": "https://www.trefis.com/stock/spy/articles/627401/the-10-year-topped-5-for-the-first-time-since-2007-what-happened-next/2026-11-23",
-      "published_at": "2026-11-24T05:06:42Z",
-      "score": -4,
+      "publisher": "Kiplinger",
+      "title": "5 Sleeper Blue-Chip Stock Picks for Steady Long-Term Gains",
+      "url": "https://www.kiplinger.com/investing/blue-chip-stocks/sleeper-blue-chip-stock-picks-for-steady-long-term-gains",
+      "published_at": "2026-11-25T00:52:33Z",
+      "score": 86,
+      "label": "bullish"
+    },
+    {
+      "id": "44d5fe3cd0c0",
+      "source": "news",
+      "publisher": "Investor's Business Daily",
+      "title": "Tech Keeps Eating Hollywood As Netflix Buys Historic Seinfeld Lot",
+      "url": "https://www.investors.com/news/netflix-stock-84-price-target-analysts-buys-radford-seinfeld-lot/?src=A00220&yptr=yahoo",
+      "published_at": "2026-11-24T23:00:28Z",
+      "score": 8,
       "label": "neutral"
     },
     {
-      "id": "179f8ca8bac6",
+      "id": "541fc5ec0ed8",
+      "source": "news",
+      "publisher": "TechCrunch",
+      "title": "Maple raises $5.3M to build AI products that protect your data, even from itself",
+      "url": "https://finance.yahoo.com/technology/ai/articles/maple-raises-5-3m-build-211952973.html",
+      "published_at": "2026-11-24T21:19:52Z",
+      "score": 73,
+      "label": "bullish"
+    },
+    {
+      "id": "7f0910f0ac15",
+      "source": "news",
+      "publisher": "Simply Wall St.",
+      "title": "Is Apple (AAPL) Above Fair Value As ETF Buying Returns?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/apple-aapl-above-fair-value-211324050.html",
+      "published_at": "2026-11-24T21:13:24Z",
+      "score": 50,
+      "label": "bullish"
+    },
+    {
+      "id": "86a10a8bc112",
+      "source": "news",
+      "publisher": "Zacks",
+      "title": "Top Analyst Reports for Apple, Philip Morris & Intel",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/top-analyst-reports-apple-philip-205300421.html",
+      "published_at": "2026-11-24T20:53:00Z",
+      "score": 1,
+      "label": "neutral"
+    },
+    {
+      "id": "37e1d48655b2",
+      "source": "news",
+      "publisher": "TIKR",
+      "title": "Trump Warns of \u201cPaying 200 Percent on Chips\u201d in Two Years. That Pushes TSMC Toward a $22.6 Billion Texas Plant",
+      "url": "https://www.tikr.com/blog/trump-warns-of-paying-200-percent-on-chips-in-two-years-that-pushes-tsmc-toward-a-22-6-billion-texas-plant?ref=yahoofinance&tlnk=yf-261124-hf56p374",
+      "published_at": "2026-11-24T19:59:22Z",
+      "score": 87,
+      "label": "bullish"
+    },
+    {
+      "id": "eff5e7c15f65",
+      "source": "news",
+      "publisher": "Yahoo Finance Video",
+      "title": "Why the Jensen Huang rally faded so quickly",
+      "url": "https://finance.yahoo.com/video/why-the-jensen-huang-rally-faded-so-quickly-194511286.html",
+      "published_at": "2026-11-24T19:45:11Z",
+      "score": -18,
+      "label": "neutral"
+    },
+    {
+      "id": "31e0d27f49ce",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "At 63, a Robo-Adviser Bought You 11 Funds You Can\u2019t Explain. These 3 ETFs Do the Same Job",
+      "url": "https://247wallst.com/investing/etf/2026/11/24/at-63-a-robo-adviser-bought-you-11-funds-you-cant-explain-these-3-etfs-do-the-same-job/",
+      "published_at": "2026-11-24T19:32:13Z",
+      "score": 0,
+      "label": "neutral"
+    },
+    {
+      "id": "082ccadafa70",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Intuit vs. Palo Alto Networks: Which Technology Stock Is a Better Buy for 2027?",
+      "url": "https://www.fool.com/coverage/better-buy/2026/11/24/intuit-vs-palo-alto-networks-which-technology-stock-is-a-better-buy-for-2027/",
+      "published_at": "2026-11-24T19:20:02Z",
+      "score": 7,
+      "label": "neutral"
+    },
+    {
+      "id": "dd938e612455",
+      "source": "news",
+      "publisher": "Zacks",
+      "title": "Why Dividend Growth ETFs Deserve a Place in Tech-Heavy Portfolios",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-dividend-growth-etfs-deserve-183300364.html",
+      "published_at": "2026-11-24T18:33:00Z",
+      "score": 17,
+      "label": "neutral"
+    },
+    {
+      "id": "cba885e984fb",
       "source": "news",
       "publisher": "Trefis",
-      "title": "1966 Or 1995: Which Way Does America's $2.1 Trillion Deficit Go?",
-      "url": "https://www.trefis.com/stock/spy/articles/627413/1966-or-1995-which-way-does-america-s-2-1-trillion-deficit-go/2026-11-23",
-      "published_at": "2026-11-24T05:06:42Z",
+      "title": "Is Netflix Stock Worth More Than Its Competitors?",
+      "url": "https://www.trefis.com/stock/nflx/articles/628356/is-netflix-stock-worth-more-than-its-competitors-2/2026-11-24",
+      "published_at": "2026-11-24T17:58:54Z",
+      "score": 13,
+      "label": "neutral"
+    },
+    {
+      "id": "ec67f9487641",
+      "source": "news",
+      "publisher": "Trefis",
+      "title": "Why Did Alphabet Stock Move?",
+      "url": "https://www.trefis.com/stock/googl/articles/628636/why-did-alphabet-stock-move/2026-11-24",
+      "published_at": "2026-11-24T17:24:40Z",
+      "score": -11,
+      "label": "neutral"
+    },
+    {
+      "id": "c0e0d8c812f5",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "Apple Stock Has 3 Things Going for It in 2027. Here\u2019s My Price Target",
+      "url": "https://247wallst.com/investing/2026/11/24/apple-stock-has-3-things-going-for-it-in-2027-heres-my-price-target/",
+      "published_at": "2026-11-24T17:03:57Z",
+      "score": 1,
+      "label": "neutral"
+    },
+    {
+      "id": "17650c942b16",
+      "source": "news",
+      "publisher": "Insider Monkey",
+      "title": "Apple Inc. (AAPL) Delivered Strong Results: Why Investors Are Watching Its Next Move Closely",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/apple-inc-aapl-delivered-strong-165645219.html",
+      "published_at": "2026-11-24T16:56:45Z",
+      "score": 11,
+      "label": "neutral"
+    },
+    {
+      "id": "e12efe6bde36",
+      "source": "news",
+      "publisher": "GuruFocus.com",
+      "title": "Apple Set to Revive Popular Product Line After Years",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/apple-set-revive-popular-product-164314724.html",
+      "published_at": "2026-11-24T16:43:14Z",
+      "score": 53,
+      "label": "bullish"
+    },
+    {
+      "id": "7072e25c3445",
+      "source": "news",
+      "publisher": "TIKR",
+      "title": "Anduril\u2019s Palmer Luckey Thinks \u201cMost AI Is Going to Run Locally.\u201d That\u2019s a Bet on Apple",
+      "url": "https://www.tikr.com/blog/andurils-palmer-luckey-thinks-most-ai-is-going-to-run-locally-thats-a-bet-on-apple?ref=yahoofinance&tlnk=yf-261124-9x2g364x",
+      "published_at": "2026-11-24T16:27:37Z",
+      "score": 9,
+      "label": "neutral"
+    },
+    {
+      "id": "b6e7c708e7d5",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "Bessent Warns the Fed Could Be Making a \u201cPolicy Mistake\u201d if It Over-Tightens",
+      "url": "https://247wallst.com/investing/2026/11/24/bessent-warns-the-fed-could-be-making-a-policy-mistake-if-it-over-tightens/",
+      "published_at": "2026-11-24T16:07:12Z",
+      "score": -93,
+      "label": "bearish"
+    },
+    {
+      "id": "efad2853a33b",
+      "source": "news",
+      "publisher": "Investopedia",
+      "title": "Think Nvidia\u2019s Surge Didn\u2019t Affect You? It Probably Had a Bigger Impact Than You Realize",
+      "url": "https://www.investopedia.com/think-nvidia-s-surge-didn-t-affect-you-it-probably-had-a-bigger-impact-than-you-realize-nvda-stock-12275417",
+      "published_at": "2026-11-24T15:47:52Z",
+      "score": -2,
+      "label": "neutral"
+    },
+    {
+      "id": "ad43f92aa4c8",
+      "source": "news",
+      "publisher": "Yahoo Finance Video",
+      "title": "Stocks give back gains as Anthropic dips below IPO price",
+      "url": "https://finance.yahoo.com/video/stocks-give-back-gains-as-anthropic-dips-below-ipo-price-154408548.html",
+      "published_at": "2026-11-24T15:44:08Z",
+      "score": -45,
+      "label": "bearish"
+    },
+    {
+      "id": "2579b10a76c6",
+      "source": "news",
+      "publisher": "Yahoo Finance Video",
+      "title": "Who is holding Jensen Huang accountable? It sure looks like nobody",
+      "url": "https://finance.yahoo.com/video/who-is-holding-jensen-huang-accountable-it-sure-looks-like-nobody-154255467.html",
+      "published_at": "2026-11-24T15:42:55Z",
       "score": -7,
       "label": "neutral"
     },
     {
-      "id": "99371ff91a91",
+      "id": "abbf0ae9addd",
       "source": "news",
-      "publisher": "Reuters",
-      "title": "Huang returns as Nvidia CEO after Trump intervention in abrupt board reversal",
-      "url": "https://finance.yahoo.com/news/nvidia-reinstates-jensen-huang-ceo-135916841.html",
-      "published_at": "2026-11-24T04:40:43Z",
-      "score": -12,
-      "label": "neutral"
-    },
-    {
-      "id": "7d0cb63b6fb0",
-      "source": "news",
-      "publisher": "TheStreet",
-      "title": "Apple's five-device plan creates an iPhone buying dilemma",
-      "url": "https://www.thestreet.com/technology/apples-five-device-plan-creates-an-iphone-buying-dilemma",
-      "published_at": "2026-11-24T04:17:00Z",
-      "score": 6,
-      "label": "neutral"
-    },
-    {
-      "id": "01546056c13c",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "QQQ Paid a $300,000 Holder $1,524 in Dividends Over the Past Year While VYM Paid $7,164",
-      "url": "https://247wallst.com/investing/etf/2026/11/23/qqq-paid-a-300000-holder-1524-in-dividends-over-the-past-year-while-vym-paid-7164/",
-      "published_at": "2026-11-24T02:03:39Z",
-      "score": 2,
-      "label": "neutral"
-    },
-    {
-      "id": "d2edae3778aa",
-      "source": "news",
-      "publisher": "Trefis",
-      "title": "Own HP Stock? Memory Costs Are The Risk",
-      "url": "https://www.trefis.com/stock/hpq/articles/627662/own-hp-stock-memory-costs-are-the-risk/2026-11-23",
-      "published_at": "2026-11-23T23:58:29Z",
-      "score": -15,
-      "label": "neutral"
-    },
-    {
-      "id": "1795d45904c8",
-      "source": "news",
-      "publisher": "TIKR",
-      "title": "Chamath Says Microsoft \u201cClearly Is Going to Need to Have a Frontier Model.\u201d Nadella Is Betting It Won\u2019t",
-      "url": "https://www.tikr.com/blog/chamath-says-microsoft-clearly-is-going-to-need-to-have-a-frontier-model-nadella-is-betting-it-wont?ref=yahoofinance&tlnk=yf-261123-rjg9hgh9",
-      "published_at": "2026-11-23T22:50:31Z",
-      "score": 20,
-      "label": "bullish"
-    },
-    {
-      "id": "028bed5031b6",
-      "source": "news",
-      "publisher": "Trefis",
-      "title": "How Risky Is Snap Stock Now?",
-      "url": "https://www.trefis.com/stock/snap/articles/627539/how-risky-is-snap-stock-now/2026-11-23",
-      "published_at": "2026-11-23T21:54:36Z",
-      "score": -13,
-      "label": "neutral"
-    },
-    {
-      "id": "e7e1d0aa78c6",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Apple vs. Broadcom: Comparing Revenue Trends Amid the Artificial Intelligence Boom",
-      "url": "https://www.fool.com/coverage/charts/2026/11/23/apple-vs-broadcom-comparing-revenue-trends-amid-the-artificial-intelligence-boom/",
-      "published_at": "2026-11-23T20:16:30Z",
-      "score": 22,
-      "label": "bullish"
-    },
-    {
-      "id": "b8ab728484bc",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "CrowdStrike Shares Fall 10% After a $44 Billion Zscaler Deal Despite an Earnings Beat and Raised Guidance",
-      "url": "https://247wallst.com/videos/crowdstrike-shares-fall-10-after-a-44-billion-zscaler-deal-despite-an-earnings-beat-and-raised-guidance/",
-      "published_at": "2026-11-23T19:55:23Z",
-      "score": -96,
-      "label": "bearish"
-    },
-    {
-      "id": "3b7b96c4d075",
-      "source": "news",
-      "publisher": "TIKR",
-      "title": "Alphabet Soars 6% as Jensen Huang\u2019s Return to Nvidia Reignites AI Stocks",
-      "url": "https://www.tikr.com/blog/alphabet-soars-6-as-jensen-huangs-return-to-nvidia-reignites-ai-stocks?ref=yahoofinance&tlnk=yf-261123-hwv86p83",
-      "published_at": "2026-11-23T19:00:31Z",
-      "score": -69,
-      "label": "bearish"
-    },
-    {
-      "id": "e092adcc0fbd",
-      "source": "news",
-      "publisher": "Trefis",
-      "title": "Nvidia's Forecast Needs $1.4 Trillion Of AI Spending In 2027. Who Pays?",
-      "url": "https://www.trefis.com/stock/nvda/articles/627446/nvidia-s-forecast-needs-1-4-trillion-of-ai-spending-in-2027-who-pays/2026-11-23",
-      "published_at": "2026-11-23T18:00:56Z",
+      "publisher": "Yahoo Finance Video",
+      "title": "Despite Jensen's return, Nvidia still needs to address several management issues",
+      "url": "https://finance.yahoo.com/video/despite-jensens-return-nvidia-still-153000278.html",
+      "published_at": "2026-11-24T15:30:00Z",
       "score": -3,
       "label": "neutral"
     },
     {
-      "id": "058e52ebe485",
+      "id": "ce3138fff749",
       "source": "news",
-      "publisher": "Stocktwits",
-      "title": "Nvidia Is Now Second To Apple In The World\u2019s Most Valued Companies On Jensen Huang Optimism",
-      "url": "https://stocktwits.com/news-articles/markets/equity/nvidia-is-now-second-to-apple-in-the-world-s-most-valued-companies-on-jensen-huang-optimism/cNbpeYcR9j0",
-      "published_at": "2026-11-23T17:25:30Z",
-      "score": 67,
-      "label": "bullish"
-    },
-    {
-      "id": "1ef22aa246ab",
-      "source": "news",
-      "publisher": "Trefis",
-      "title": "How NVDA Stock Rises To $235?",
-      "url": "https://www.trefis.com/stock/nvda/articles/627995/how-nvda-stock-rises-to-235/2026-11-23",
-      "published_at": "2026-11-23T17:16:38Z",
-      "score": 15,
+      "publisher": "Yahoo Finance Video",
+      "title": "Nvidia stock in focus: Why CEO comebacks are usually good for shares",
+      "url": "https://finance.yahoo.com/video/nvidia-stock-in-focus-why-ceo-comebacks-are-usually-good-for-shares-151307354.html",
+      "published_at": "2026-11-24T15:13:07Z",
+      "score": -9,
       "label": "neutral"
     },
     {
-      "id": "37f0fe489be5",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "The S&P 500 Just Fell Into a Correction. Your $3 Million Retirement Portfolio May Be Less Diversified Than You Think",
-      "url": "https://247wallst.com/investing/2026/11/23/the-sp-500-just-fell-into-a-correction-your-3-million-retirement-portfolio-may-be-less-diversified-than-you-think/",
-      "published_at": "2026-11-23T17:04:31Z",
-      "score": -90,
-      "label": "bearish"
-    },
-    {
-      "id": "97b402712fda",
+      "id": "9d82bb388053",
       "source": "news",
       "publisher": "Motley Fool",
-      "title": "Apple Hit an All-Time High While AI Stocks Sold Off. Here\u2019s the Big Tech Stock I\u2019d Buy.",
-      "url": "https://www.fool.com/investing/2026/11/23/apple-hit-an-all-time-high-while-ai-stocks-sold-off-here-s-the-big-tech-stock-i-d-buy/",
-      "published_at": "2026-11-23T16:32:02Z",
-      "score": 5,
+      "title": "Target vs. Walmart: Which Consumer Goods Stock Is a Better Buy for 2027?",
+      "url": "https://www.fool.com/coverage/better-buy/2026/11/24/target-vs-walmart-which-consumer-goods-stock-is-a-better-buy-for-2027/",
+      "published_at": "2026-11-24T14:29:07Z",
+      "score": 10,
       "label": "neutral"
     },
     {
-      "id": "e18a661f1204",
-      "source": "news",
-      "publisher": "Yahoo Finance Video",
-      "title": "Jensen Huang back at Nvidia, stock soars; Anthropic slides",
-      "url": "https://finance.yahoo.com/video/jensen-huang-back-at-nvidia-stock-soars-anthropic-slides-161339662.html",
-      "published_at": "2026-11-23T16:13:39Z",
-      "score": 27,
-      "label": "bullish"
-    },
-    {
-      "id": "0b321055c700",
-      "source": "news",
-      "publisher": "Yahoo Finance Video",
-      "title": "Jensen Huang back as Nvidia CEO after 12 days: Shares surge 30%",
-      "url": "https://finance.yahoo.com/video/jensen-huang-back-as-nvidia-ceo-after-12-days-shares-surge-30-161302539.html",
-      "published_at": "2026-11-23T16:13:02Z",
-      "score": 65,
-      "label": "bullish"
-    },
-    {
-      "id": "81309b387ff3",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "Jensen Huang Returns to NVIDA. Why Apple, Broadcom, and Anthropic Could Be Under Pressure",
-      "url": "https://247wallst.com/videos/jensen-huang-returns-to-nvida-why-apple-broadcom-and-anthropic-could-be-under-pressure/",
-      "published_at": "2026-11-23T15:52:42Z",
-      "score": -8,
-      "label": "neutral"
-    },
-    {
-      "id": "387fb87e6358",
+      "id": "0f0f32b9f7dc",
       "source": "news",
       "publisher": "Trefis",
-      "title": "Is Microsoft Stock Stronger Than It Looks?",
-      "url": "https://www.trefis.com/stock/msft/articles/627857/is-microsoft-stock-stronger-than-it-looks/2026-11-23",
-      "published_at": "2026-11-23T15:45:39Z",
-      "score": 28,
-      "label": "bullish"
-    },
-    {
-      "id": "aea8e4baae25",
-      "source": "news",
-      "publisher": "International Business Times",
-      "title": "NYSE Parent's Tokenized Stock Venture Set To Open With 113 Assets. Apple, Nvidia And Tesla Stay Out.",
-      "url": "https://www.ibtimes.com/okx-ice-tokenized-securities-market-113-assets-3810086",
-      "published_at": "2026-11-23T15:19:27Z",
-      "score": 2,
+      "title": "America Has Had Indispensable Men Before. Why Is Jensen Huang Different?",
+      "url": "https://www.trefis.com/stock/nvda/articles/628205/america-has-had-indispensable-men-before-why-is-jensen-huang-different/2026-11-24",
+      "published_at": "2026-11-24T13:56:14Z",
+      "score": -7,
       "label": "neutral"
     },
     {
-      "id": "7342b86e2309",
+      "id": "fe8e6ac88a19",
+      "source": "news",
+      "publisher": "Trefis",
+      "title": "What Changed In Apple Stock's Story?",
+      "url": "https://www.trefis.com/stock/aapl/articles/628423/what-changed-in-apple-stock-s-story/2026-11-24",
+      "published_at": "2026-11-24T13:54:02Z",
+      "score": -12,
+      "label": "neutral"
+    },
+    {
+      "id": "e1f11eb17ec1",
       "source": "news",
       "publisher": "Zacks",
-      "title": "DELL Gears Up to Report Q3 Earnings: Should You Buy the Stock?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/dell-gears-report-q3-earnings-151600792.html",
-      "published_at": "2026-11-23T15:16:00Z",
-      "score": 5,
+      "title": "MP vs. USAR: Which Rare-Earth Stock Has an Edge Right Now?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/mp-vs-usar-rare-earth-135200453.html",
+      "published_at": "2026-11-24T13:52:00Z",
+      "score": 10,
       "label": "neutral"
     },
     {
-      "id": "8d3706c0d8e2",
+      "id": "061c406e975d",
       "source": "news",
-      "publisher": "Yahoo Finance Video",
-      "title": "'Eyes in the back of his head': Why Jensen could be sharper after ouster",
-      "url": "https://finance.yahoo.com/video/eyes-in-the-back-of-his-head-why-jensen-could-be-sharper-after-ouster-151351120.html",
-      "published_at": "2026-11-23T15:13:51Z",
-      "score": -66,
-      "label": "bearish"
-    },
-    {
-      "id": "49e80cca1394",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "Jensen Huang Just Got His Nvidia Job Back. When Steve Jobs, Howard Schultz and Bob Iger Came Back, the Stock Rose, and a Year Later 4 of 6 Comebacks Trailed the Market",
-      "url": "https://247wallst.com/investing/2026/11/23/jensen-huang-just-got-his-nvidia-job-back-when-steve-jobs-howard-schultz-and-bob-iger-came-back-the-stock-rose-and-a-year-later-4-of-6-comebacks-trailed-the-market/",
-      "published_at": "2026-11-23T15:13:00Z",
+      "publisher": "Yahoo Finance",
+      "title": "Jensen Huang's return revives an old Wall Street trade: Bet on the comeback CEO",
+      "url": "https://finance.yahoo.com/markets/article/jensen-huangs-return-revives-an-old-wall-street-trade-bet-on-the-comeback-ceo-124308005.html",
+      "published_at": "2026-11-24T12:43:08Z",
       "score": 28,
       "label": "bullish"
     },
     {
-      "id": "ae1c32974c0a",
+      "id": "2f2aa605ee1d",
       "source": "news",
-      "publisher": "Trefis",
-      "title": "Own Dell Stock? Its Profit Isn't All Cash",
-      "url": "https://www.trefis.com/stock/dell/articles/627663/own-dell-stock-its-profit-isn-t-all-cash/2026-11-23",
-      "published_at": "2026-11-23T15:02:21Z",
-      "score": 0,
-      "label": "neutral"
-    },
-    {
-      "id": "542efb27bd29",
-      "source": "news",
-      "publisher": "The Penny Hoarder",
-      "title": "Paying for Subscriptions You Forgot About? How to Find and Cancel Them",
-      "url": "https://finance.yahoo.com/markets/articles/stop-wasting-money-cancel-unused-155722212.html",
-      "published_at": "2026-11-23T14:19:00Z",
-      "score": -13,
-      "label": "neutral"
-    },
-    {
-      "id": "a0be7b91ce97",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "Apple Is Up 29% This Year and Already Above Wall Street\u2019s Target. Our Model Sees $400+",
-      "url": "https://247wallst.com/investing/2026/11/23/apple-is-up-29-this-year-and-already-above-wall-streets-target-our-model-sees-400/",
-      "published_at": "2026-11-23T14:04:33Z",
-      "score": 90,
+      "publisher": "Simply Wall St.",
+      "title": "Cloud AI Update - Audi Integrates Cutting-Edge AI for In-Car Microsoft Access",
+      "url": "https://finance.yahoo.com/technology/ai/articles/cloud-ai-audi-integrates-cutting-123730181.html",
+      "published_at": "2026-11-24T12:37:30Z",
+      "score": 46,
       "label": "bullish"
     },
     {
-      "id": "90596e9964d0",
+      "id": "fc3a97e353c3",
       "source": "news",
-      "publisher": "Investing.com",
-      "title": "Trump admin circle the wagons in push for Nvidia to bring  back Jensen Huang",
-      "url": "https://finance.yahoo.com/technology/articles/trump-admin-circle-wagons-push-140026409.html",
-      "published_at": "2026-11-23T14:00:26Z",
-      "score": 18,
-      "label": "neutral"
-    },
-    {
-      "id": "408aea1d9232",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Apple vs. Microsoft: Here's Where I'd Put $2,000 Right Now",
-      "url": "https://www.fool.com/investing/2026/11/23/apple-vs-microsoft-here-s-where-i-d-put-usd2-000-right-now/",
-      "published_at": "2026-11-23T13:35:02Z",
-      "score": 0,
-      "label": "neutral"
+      "publisher": "Zacks",
+      "title": "Can Wearables & Mac Revenues Add Fresh Momentum to Apple Stock Ahead?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/wearables-mac-revenues-add-fresh-122900624.html",
+      "published_at": "2026-11-24T12:29:00Z",
+      "score": 82,
+      "label": "bullish"
     }
   ]
 }
