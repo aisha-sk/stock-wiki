@@ -2,19 +2,15 @@
   "schema_version": "1.1",
   "symbol": "NVDA",
   "name": "NVIDIA Corporation",
-  "generated_at": "2026-11-25T04:47:06Z",
+  "generated_at": "2026-11-26T03:56:19Z",
   "is_demo_data": false,
   "quote": {
-    "price": 155.38,
-    "change_pct": -5.86,
-    "as_of": "2026-11-24",
+    "price": 149.3,
+    "change_pct": -3.91,
+    "as_of": "2026-11-25",
     "currency": "USD"
   },
   "prices": [
-    {
-      "date": "2026-06-05",
-      "close": 204.87
-    },
     {
       "date": "2026-06-08",
       "close": 208.41
@@ -490,17 +486,21 @@
     {
       "date": "2026-11-24",
       "close": 155.38
+    },
+    {
+      "date": "2026-11-25",
+      "close": 149.3
     }
   ],
   "forecast": {
     "horizon_days": 5,
     "move": "large",
-    "prob_large": 0.8989,
-    "typical_move_pct": 3.5387,
-    "confidence": 0.8989,
-    "made_at": "2026-11-25T04:47:06Z",
-    "as_of_date": "2026-11-24",
-    "target_date": "2026-12-02",
+    "prob_large": 0.8579,
+    "typical_move_pct": 3.5466,
+    "confidence": 0.8579,
+    "made_at": "2026-11-26T03:56:19Z",
+    "as_of_date": "2026-11-25",
+    "target_date": "2026-12-03",
     "model_name": "move-xgb",
     "model_version": "17"
   },
@@ -520,7 +520,7 @@
       {
         "source": "news",
         "display_name": "News media",
-        "score": -36,
+        "score": -22,
         "label": "bearish",
         "doc_count": 50,
         "note": "50 articles, last 7 days",
@@ -529,7 +529,7 @@
       }
     ],
     "gap": {
-      "points": 81,
+      "points": 67,
       "most_bullish": "analysts",
       "most_bearish": "news",
       "summary": "Wall Street analysts lean bullish while News media lean bearish."
@@ -542,299 +542,299 @@
       "publisher": "Yahoo Finance",
       "title": "Consensus: 49 buy, 12 hold, 2 sell (Nov 2026)",
       "url": null,
-      "published_at": "2026-11-25T04:47:06Z",
+      "published_at": "2026-11-26T03:56:19Z",
       "score": 45,
       "label": "bullish"
     },
     {
-      "id": "741f5e2de72c",
-      "source": "news",
-      "publisher": "Stocktwits",
-      "title": "COHR Stock Swings After Nvidia-Led AI Rally: $15M Insider Buy Draws Attention",
-      "url": "https://stocktwits.com/news-articles/markets/equity/cohr-stock-swings-after-nvidia-led-ai-rally-15-m-insider-buy-draws-attention/cNbHcl8R9lg",
-      "published_at": "2026-11-25T04:40:37Z",
-      "score": -28,
-      "label": "bearish"
-    },
-    {
-      "id": "62f3d092f519",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Anthropic vs. SpaceX: Here's the Better IPO Stock to Buy With $1,000 Right Now",
-      "url": "https://www.fool.com/investing/2026/11/24/anthropic-vs-spacex-here-s-the-better-ipo-stock-to-buy-with-usd1-000-right-now/",
-      "published_at": "2026-11-25T04:35:01Z",
-      "score": 8,
-      "label": "neutral"
-    },
-    {
-      "id": "8c1fcaf35fe3",
-      "source": "news",
-      "publisher": "TheStreet",
-      "title": "Jim Cramer resets Nvidia stock target as Jensen Huang returns as CEO",
-      "url": "https://www.thestreet.com/investing/stocks/jim-cramer-nvidia-stock-target-jensen-huang",
-      "published_at": "2026-11-25T04:33:00Z",
-      "score": -20,
-      "label": "bearish"
-    },
-    {
-      "id": "e6fa5312d48a",
-      "source": "news",
-      "publisher": "Investing.com",
-      "title": "Le Monde details suspected Nvidia chip diversion network through Southeast Asia",
-      "url": "https://finance.yahoo.com/technology/ai/articles/le-monde-details-suspected-nvidia-042239633.html",
-      "published_at": "2026-11-25T04:22:39Z",
-      "score": 10,
-      "label": "neutral"
-    },
-    {
-      "id": "d4c201efbe74",
-      "source": "news",
-      "publisher": "Associated Press",
-      "title": "Asian stocks mostly decline as AI shares fall following a retreat on Wall Street",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/asian-stocks-mostly-decline-ai-040526833.html",
-      "published_at": "2026-11-25T04:05:26Z",
-      "score": -95,
-      "label": "bearish"
-    },
-    {
-      "id": "276eacbfdbaa",
-      "source": "news",
-      "publisher": "Investing.com",
-      "title": "Asian stocks slide as AI selloff deepens, U.S. tariff threats weigh on sentiment",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/asian-stocks-slide-ai-selloff-040525614.html",
-      "published_at": "2026-11-25T04:05:25Z",
-      "score": -94,
-      "label": "bearish"
-    },
-    {
-      "id": "68f25263ee26",
+      "id": "7f57ab3255e5",
       "source": "news",
       "publisher": "Investor's Business Daily",
-      "title": "Dow Jones Futures Fall; Trump Says 'Not Too Late' For U.S. To Take Nvidia Stake",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-anthropic-ai-retreat-fed-inflation-data/?src=A00220&yptr=yahoo",
-      "published_at": "2026-11-25T04:04:33Z",
-      "score": -88,
-      "label": "bearish"
-    },
-    {
-      "id": "adc24009c4c8",
-      "source": "news",
-      "publisher": "TheStreet",
-      "title": "Another Wall Street analyst revamps stock market outlook as volatility surges",
-      "url": "https://www.thestreet.com/investing/another-wall-street-analyst-revamps-stock-market-outlook-as-volatility-surges",
-      "published_at": "2026-11-25T03:53:00Z",
-      "score": -73,
-      "label": "bearish"
-    },
-    {
-      "id": "0d783d5494b4",
-      "source": "news",
-      "publisher": "IntelliNews",
-      "title": "South Korea's chipmakers rally on Huang's return",
-      "url": "http://www.intellinews.com/south-korea-s-chipmakers-rally-on-huang-s-return-488025/",
-      "published_at": "2026-11-25T03:21:23Z",
-      "score": 31,
-      "label": "bullish"
-    },
-    {
-      "id": "d7eb7386ca8b",
-      "source": "news",
-      "publisher": "Stocktwits",
-      "title": "Dow, S&P 500, Nasdaq Futures Edge Lower Amid Tech Selloff Ahead Of Key Inflation Data: DELL, AMBA, SOXL, MSTR In Focus",
-      "url": "https://stocktwits.com/news-articles/markets/equity/dow-s-and-p-500-nasdaq-futures-edge-lower-amid-tech-selloff-ahead-of-key-inflation-data-dell-amba-soxl-mstr-in-focus/cNbHbLoR9lJ",
-      "published_at": "2026-11-25T03:20:10Z",
-      "score": -92,
-      "label": "bearish"
-    },
-    {
-      "id": "b93392ad5c0d",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "World's Best Space Company SpaceX Will Soon Be 40% Better",
-      "url": "https://www.fool.com/investing/2026/11/24/world-best-space-company-spacex-soon-40-better/",
-      "published_at": "2026-11-25T03:20:02Z",
-      "score": 77,
-      "label": "bullish"
-    },
-    {
-      "id": "4ef886491f91",
-      "source": "news",
-      "publisher": "Simply Wall St.",
-      "title": "Lattice Semiconductor (LSCC) Could Be 37% Below Fair Value On AI Chip Optimism",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/lattice-semiconductor-lscc-could-37-031232846.html",
-      "published_at": "2026-11-25T03:12:32Z",
-      "score": -87,
-      "label": "bearish"
-    },
-    {
-      "id": "d08dd9c77a7c",
-      "source": "news",
-      "publisher": "Simply Wall St.",
-      "title": "3 Stocks Investors Are Watching For Corporate Governance And Litigation Demand",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/3-stocks-investors-watching-corporate-031221183.html",
-      "published_at": "2026-11-25T03:12:21Z",
-      "score": -2,
+      "title": "Dow Jones Futures Rise; Market Goes On Wild Ride As Nasdaq Slashes Losses",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-wild-ride-nasdaq-nvidia-slash-losses-anthropic-higher/?src=A00220&yptr=yahoo",
+      "published_at": "2026-11-26T03:49:36Z",
+      "score": -3,
       "label": "neutral"
     },
     {
-      "id": "11886d1b38b8",
+      "id": "b4f361856078",
       "source": "news",
-      "publisher": "Bloomberg",
-      "title": "NVidia Still Faces 'Key-Man Risk' in Huang: Professor",
-      "url": "https://finance.yahoo.com/video/nvidia-still-faces-key-man-030814447.html",
-      "published_at": "2026-11-25T03:08:14Z",
+      "publisher": "Stocktwits",
+      "title": "Michael Burry Says He\u2019s Shorting The Market\u2019s \u2018Generals\u2019 As Apple Flashes A Warning Last Seen In 2002",
+      "url": "https://stocktwits.com/news-articles/markets/equity/michael-burry-shorting-market-generals-apple-warning-last-seen-in-2002/cNbx7IxR9Ze",
+      "published_at": "2026-11-26T03:44:40Z",
+      "score": 4,
+      "label": "neutral"
+    },
+    {
+      "id": "6f99c0b9c40d",
+      "source": "news",
+      "publisher": "Investing.com",
+      "title": "Trump admin weighed using Cold War law to reinstate Nvidia CEO Huang, WaPo reports",
+      "url": "https://finance.yahoo.com/technology/articles/trump-admin-weighed-using-cold-032247551.html",
+      "published_at": "2026-11-26T03:22:47Z",
+      "score": -4,
+      "label": "neutral"
+    },
+    {
+      "id": "a7ba75514872",
+      "source": "news",
+      "publisher": "Reuters",
+      "title": "Stocks rally in Asia, unrocked by US tariffs",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/asia-shares-bounce-ai-tariffs-013452194.html",
+      "published_at": "2026-11-26T03:17:28Z",
+      "score": -67,
+      "label": "bearish"
+    },
+    {
+      "id": "de2b1f7b79b6",
+      "source": "news",
+      "publisher": "Investing.com",
+      "title": "Nvidia chips reach Chinese-owned U.S. firms despite export curbs, CBS reports",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-chips-reach-chinese-owned-031146505.html",
+      "published_at": "2026-11-26T03:11:46Z",
+      "score": 89,
+      "label": "bullish"
+    },
+    {
+      "id": "a0364e43f801",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Is Nvidia Stock a Buy After Dell's Record AI Backlog?",
+      "url": "https://www.fool.com/investing/2026/11/25/is-nvidia-stock-a-buy-after-dell-s-record-ai-backlog/",
+      "published_at": "2026-11-26T03:07:02Z",
+      "score": -14,
+      "label": "neutral"
+    },
+    {
+      "id": "fbb4d2da818b",
+      "source": "news",
+      "publisher": "Unchained",
+      "title": "Where Will the Money From Anthropic\u2019s Record IPO Go Next: AI or Crypto?",
+      "url": "https://unchainedcrypto.com/where-will-the-money-from-anthropics-record-ipo-go-next-ai-or-crypto/",
+      "published_at": "2026-11-26T03:00:07Z",
       "score": -1,
       "label": "neutral"
     },
     {
-      "id": "cb1c43f29f93",
+      "id": "16f8b7e27d88",
       "source": "news",
-      "publisher": "Benzinga",
-      "title": "Jensen Huang Reportedly Says Succession Plan Risks \u2018Unnecessary Hierarchy\u2019 At Nvidia \u2014 Crypto Bettors Wager on Another Exit",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/jensen-huang-reportedly-says-succession-030126613.html",
-      "published_at": "2026-11-25T03:01:26Z",
-      "score": -83,
+      "publisher": "Stocktwits",
+      "title": "Nvidia\u2019s Market Cap Falls Below Microsoft\u2019s: Analyst Flags Five Overhangs For NVDA Stock",
+      "url": "https://stocktwits.com/news-articles/markets/equity/nvidia-s-market-cap-falls-below-microsoft-s-analyst-flags-five-overhangs-for-nvda-stock/cNbx4KZR9Z3",
+      "published_at": "2026-11-26T02:39:42Z",
+      "score": -65,
       "label": "bearish"
     },
     {
-      "id": "109c36a288b9",
+      "id": "e4d8b835124f",
       "source": "news",
-      "publisher": "Benzinga Prediction Markets",
-      "title": "Jensen Huang Reportedly Says Succession Plan Risks \u2018Unnecessary Hierarchy\u2019 At Nvidia \u2014 Crypto Bettors Wager on Another Exit",
-      "url": "https://www.benzinga.com/markets/prediction-markets/26/11/63613509/nvidia-ceo-jensen-huang-succession-plan-polymarket-prediction-market?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral",
-      "published_at": "2026-11-25T03:01:26Z",
-      "score": -83,
-      "label": "bearish"
-    },
-    {
-      "id": "0b1b06670815",
-      "source": "news",
-      "publisher": "The Wall Street Journal",
-      "title": "Asian Stocks Mostly Lower on AI Doubts, Tariff Jitters",
-      "url": "https://www.wsj.com/finance/stocks/asian-stocks-mostly-lower-on-ai-doubts-tariff-jitters-a0da3389?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-25T02:53:00Z",
-      "score": -94,
-      "label": "bearish"
-    },
-    {
-      "id": "4f903ad6f386",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Jensen Huang's Return Could Make a Tesla/SpaceX Merger More Likely",
-      "url": "https://www.fool.com/investing/2026/11/24/jensen-huang-s-return-could-make-a-tesla-spacex-merger-more-likely/",
-      "published_at": "2026-11-25T02:50:02Z",
-      "score": 33,
+      "publisher": "AFP",
+      "title": "Asian stocks enjoy another bounce as tech holds court",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-stocks-enjoy-another-bounce-023024729.html",
+      "published_at": "2026-11-26T02:30:24Z",
+      "score": 61,
       "label": "bullish"
     },
     {
-      "id": "1425ab3d0b20",
+      "id": "326aa61836d3",
       "source": "news",
-      "publisher": "CNN Business",
-      "title": "Breaking down Nvidia\u2019s \u2018boardroom blunder\u2019",
-      "url": "https://www.cnn.com/2026/11/24/business/video/kiss-cam-bid-vod-hrzn?cid=external-feeds_iluminar_yahoo",
-      "published_at": "2026-11-25T02:45:48Z",
-      "score": -80,
+      "publisher": "The Wall Street Journal",
+      "title": "The Other Nvidia Romance With an Executive at a Company Linked to China",
+      "url": "https://www.wsj.com/finance/stocks/nvidia-china-executive-affair-jay-puri-cenly-chen-a42d733b?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-26T02:00:00Z",
+      "score": -3,
+      "label": "neutral"
+    },
+    {
+      "id": "1ecc2016b073",
+      "source": "news",
+      "publisher": "Benzinga",
+      "title": "Nvidia Put on Negative Credit Watch by S&P Over \u2018Key Man\u2019 Risk: Moody\u2019s Says Jensen Huang\u2019s Return as CEO \u2018Reduces Near-Term Uncertainty\u2019",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-put-negative-credit-watch-013558626.html",
+      "published_at": "2026-11-26T01:35:58Z",
+      "score": 85,
+      "label": "bullish"
+    },
+    {
+      "id": "5f51c225a0c9",
+      "source": "news",
+      "publisher": "Benzinga",
+      "title": "Pete Hegseth, Trump Officials Reportedly Floated Wartime Law to Force Jensen Huang\u2019s Return as Nvidia CEO, But Pentagon Says It \u2018Never Happened\u2019",
+      "url": "https://finance.yahoo.com/technology/articles/pete-hegseth-trump-officials-reportedly-013224994.html",
+      "published_at": "2026-11-26T01:32:24Z",
+      "score": -7,
+      "label": "neutral"
+    },
+    {
+      "id": "0215d3b6651f",
+      "source": "news",
+      "publisher": "BeInCrypto",
+      "title": "Tech Stocks Stall Into Thanksgiving: Will the AI Rebound Return?",
+      "url": "https://beincrypto.com/tech-stocks-stall-thanksgiving-nvidia-rebound/",
+      "published_at": "2026-11-26T01:19:53Z",
+      "score": -77,
       "label": "bearish"
     },
     {
-      "id": "137304605245",
+      "id": "1b07725aaa60",
       "source": "news",
-      "publisher": "AFP",
-      "title": "Tech firms back in crosshairs as Huang rally reverses",
-      "url": "https://finance.yahoo.com/markets/world-indices/articles/tech-firms-back-crosshairs-huang-024219799.html",
-      "published_at": "2026-11-25T02:42:19Z",
-      "score": -48,
+      "publisher": "The Wall Street Journal",
+      "title": "Aschenbrenner\u2019s Situational Awareness Tells Investors It Lost 65% in Third Quarter",
+      "url": "https://www.wsj.com/finance/investing/aschenbrenners-situational-awareness-tells-investors-it-lost-65-in-third-quarter-de8e9797?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-26T01:04:00Z",
+      "score": -96,
       "label": "bearish"
     },
     {
-      "id": "370dda137568",
+      "id": "f429abfe8ce5",
       "source": "news",
-      "publisher": "CNN Business",
-      "title": "Never say never: how Jensen Huang got his job back at Nvidia\u200b\u200c",
-      "url": "https://www.cnn.com/2026/11/24/business/video/we-were-wrong-bid-vod-hrzn?cid=external-feeds_iluminar_yahoo",
-      "published_at": "2026-11-25T02:39:47Z",
+      "publisher": "Motley Fool",
+      "title": "Broadcom Stock Hasn't Traded This Low Since July 2025. I Think It's a Buy.",
+      "url": "https://www.fool.com/investing/2026/11/25/broadcom-stock-hasn-t-traded-this-low-since-july-2025-i-think-it-s-a-buy/",
+      "published_at": "2026-11-26T01:03:02Z",
+      "score": -29,
+      "label": "bearish"
+    },
+    {
+      "id": "c21e5696b0e8",
+      "source": "news",
+      "publisher": "Moneywise",
+      "title": "'Alarming, if unsurprising': Trump administration cut corners with hasty Nvidia investigation, former CIA officer warns",
+      "url": "https://finance.yahoo.com/technology/articles/alarming-unsurprising-trump-administration-cut-010000318.html",
+      "published_at": "2026-11-26T01:00:00Z",
+      "score": -86,
+      "label": "bearish"
+    },
+    {
+      "id": "82e3845ca66a",
+      "source": "news",
+      "publisher": "BeInCrypto",
+      "title": "Apple Stock Defies AI Selloff: Is It the Market's Safe Haven?",
+      "url": "https://beincrypto.com/apple-stock-ai-selloff-safe-haven/",
+      "published_at": "2026-11-26T01:00:00Z",
+      "score": 4,
+      "label": "neutral"
+    },
+    {
+      "id": "0aa9b623a4d3",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Vertex Pharmaceuticals Has Turned $10,000 Into $61,660 Over 10 Years. Here's What Could Come Next",
+      "url": "https://www.fool.com/investing/2026/11/25/vertex-pharmaceuticals-has-turned-10000-into-x-ove/",
+      "published_at": "2026-11-26T00:32:00Z",
       "score": 3,
       "label": "neutral"
     },
     {
-      "id": "7518f4ffdd1c",
-      "source": "news",
-      "publisher": "Benzinga",
-      "title": "Dan Ives Says \u2018Base Case\u2019 for Nvidia Stock Is $250 After Jensen Huang Returns as CEO: \u2018China Loophole Issues\u2019 Keep Him Short of $300",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/dan-ives-says-case-nvidia-022719368.html",
-      "published_at": "2026-11-25T02:27:19Z",
-      "score": -38,
-      "label": "bearish"
-    },
-    {
-      "id": "1deeda2cb560",
+      "id": "d0163f94d8aa",
       "source": "news",
       "publisher": "Motley Fool",
-      "title": "1 Reason I Haven\u2019t Bought Oklo Stock -- and Probably Never Will",
-      "url": "https://www.fool.com/investing/2026/11/24/1-reason-i-haven-t-bought-oklo-stock-and-probably-never-will/",
-      "published_at": "2026-11-25T02:20:02Z",
-      "score": -2,
-      "label": "neutral"
+      "title": "Why CleanSpark Stock Was a Winner on Wednesday",
+      "url": "https://www.fool.com/investing/2026/11/25/why-cleanspark-stock-was-a-winner-on-wednesday/",
+      "published_at": "2026-11-26T00:30:39Z",
+      "score": 58,
+      "label": "bullish"
     },
     {
-      "id": "490f6efc84b3",
+      "id": "3580c16feb40",
       "source": "news",
       "publisher": "Stocktwits",
-      "title": "Nvidia\u2019s Rebound, Falling Oil And A Strong Dollar: Three Signals Complicating The Fed\u2019s December Decision",
-      "url": "https://stocktwits.com/news-articles/markets/equity/fed-december-rate-hike-oil-prices-nvidia-rally-inflation/cNbuClGR9l5",
-      "published_at": "2026-11-25T02:09:32Z",
-      "score": -62,
-      "label": "bearish"
-    },
-    {
-      "id": "4ef9c336cc7f",
-      "source": "news",
-      "publisher": "The Wall Street Journal",
-      "title": "Worse Than the Dot-Com Crash: What an AI Bust Could Mean for the Economy",
-      "url": "https://www.wsj.com/economy/worse-than-the-dot-com-crash-what-an-ai-bust-could-mean-for-the-economy-2a0e5ab3?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-25T02:00:00Z",
-      "score": -83,
-      "label": "bearish"
-    },
-    {
-      "id": "98a403306eb8",
-      "source": "news",
-      "publisher": "The Wall Street Journal",
-      "title": "Jensen Huang\u2019s Vision for the New Nvidia Is a Lot Like the Old One",
-      "url": "https://www.wsj.com/tech/ai/jensen-huangs-vision-for-the-new-nvidia-is-a-lot-like-the-old-one-d0d4abc3?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-25T02:00:00Z",
-      "score": 13,
-      "label": "neutral"
-    },
-    {
-      "id": "701f59b0c9dc",
-      "source": "news",
-      "publisher": "Investing.com",
-      "title": "Wall St futures fall after S&P 500, Nasdaq end lower; inflation data eyed",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-fall-p-014227385.html",
-      "published_at": "2026-11-25T01:42:27Z",
-      "score": -94,
-      "label": "bearish"
-    },
-    {
-      "id": "4efd366b1ab7",
-      "source": "news",
-      "publisher": "TheStreet",
-      "title": "Why Nvidia's rebound may not mean the S&P 500 has bottomed",
-      "url": "https://www.thestreet.com/investing/why-nvidias-rebound-may-not-mean-the-sp-500-has-bottomed",
-      "published_at": "2026-11-25T01:23:10Z",
+      "title": "S&P 500, Nasdaq End Lower But Dow Rebounds As Traders Rotate Out Of AI \u2014 NVDA, SPCX, PANW  In Focus",
+      "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-nasdaq-end-lower-but-dow-rebounds-as-traders-rotate-out-of-ai-nvda-spcx-panw-in-focus/cNbx21AR9mC",
+      "published_at": "2026-11-26T00:09:50Z",
       "score": -89,
       "label": "bearish"
     },
     {
-      "id": "0ba127d6f803",
+      "id": "15fb53da0c85",
       "source": "news",
       "publisher": "Motley Fool",
-      "title": "Anthropic Has Plunged 30% From Its Peak. Here\u2019s the Price at Which I\u2019d Buy.",
-      "url": "https://www.fool.com/investing/2026/11/24/anthropic-has-plunged-30-from-its-peak-here-s-the-price-at-which-i-d-buy/",
-      "published_at": "2026-11-25T01:20:02Z",
-      "score": -15,
+      "title": "Here\u2019s How Many Coca-Cola Shares It Takes to Earn $1,300 Every Quarter in Dividends",
+      "url": "https://www.fool.com/investing/2026/11/25/heres-how-many-coca-cola-shares-it-takes-to-earn-1300-every-quarter-in-dividends/",
+      "published_at": "2026-11-25T23:48:02Z",
+      "score": 1,
       "label": "neutral"
+    },
+    {
+      "id": "1379d9944537",
+      "source": "news",
+      "publisher": "TIKR",
+      "title": "Altimeter\u2019s Brad Gerstner Says Nvidia Was Priced for \u201cNegative Growth for 2028 and 2029.\u201d Wall Street Expects 29%",
+      "url": "https://www.tikr.com/blog/altimeters-brad-gerstner-says-nvidia-was-priced-for-negative-growth-for-2028-and-2029-wall-street-expects-29?ref=yahoofinance&tlnk=yf-261125-3qj6vf95",
+      "published_at": "2026-11-25T23:39:02Z",
+      "score": -89,
+      "label": "bearish"
+    },
+    {
+      "id": "cc146d6d307d",
+      "source": "news",
+      "publisher": "TIKR",
+      "title": "Applied Digital Dropped 14% in a Week Despite a $5.4 Billion Lease. Lucid Still Sees 227% Upside",
+      "url": "https://www.tikr.com/blog/applied-digital-dropped-14-in-a-week-despite-a-5-4-billion-lease-lucid-still-sees-227-upside?ref=yahoofinance&tlnk=yf-261125-mhcw2483",
+      "published_at": "2026-11-25T23:37:44Z",
+      "score": -96,
+      "label": "bearish"
+    },
+    {
+      "id": "04461c2925de",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "If SpaceX and Tesla Merge Next Year, Here's What a $5,000 Investment in the Combined Company Could Be Worth by the End of 2028",
+      "url": "https://www.fool.com/investing/2026/11/25/if-spacex-and-tesla-merge-next-year-here-s-what-a-usd5-000-investment-in-the-combined-company-could-be-worth-by-the-end-of-2027/",
+      "published_at": "2026-11-25T23:24:02Z",
+      "score": 6,
+      "label": "neutral"
+    },
+    {
+      "id": "bfc76cc5b1b5",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "'Big Short' Investor Michael Burry Just Closed His Bet Against the Nasdaq. Here's What Investors Should Do Now",
+      "url": "https://www.fool.com/investing/2026/11/25/big-short-investor-michael-burry-just-closed-his-bet-against-the-nasdaq-here-s-what-investors-should-do-now/",
+      "published_at": "2026-11-25T23:20:28Z",
+      "score": 0,
+      "label": "neutral"
+    },
+    {
+      "id": "4b053ca25ba2",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "The Nvidia Scandal Set Off a Chip Crackdown in Congress. Which Stocks Are Most at Risk?",
+      "url": "https://www.fool.com/investing/2026/11/25/the-nvidia-scandal-set-off-a-chip-crackdown-in-congress-which-stocks-are-most-at-risk/",
+      "published_at": "2026-11-25T23:18:05Z",
+      "score": -64,
+      "label": "bearish"
+    },
+    {
+      "id": "43ed1867b832",
+      "source": "news",
+      "publisher": "Associated Press",
+      "title": "Trump heads to Arizona next week for a high-stakes expansion of TSMC's computer chip factories",
+      "url": "https://finance.yahoo.com/technology/articles/trump-heads-arizona-next-week-225636899.html",
+      "published_at": "2026-11-25T22:56:36Z",
+      "score": 14,
+      "label": "neutral"
+    },
+    {
+      "id": "bb11dc9a2a9d",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "CoreWeave Stock Could Soar 125%, According to One Wall Street Analyst, Even After a Price Target Cut. Is It a Buy?",
+      "url": "https://www.fool.com/investing/2026/11/25/coreweave-stock-could-soar-130-according-to-one-wall-street-analyst-even-after-a-price-target-cut-is-it-a-buy/",
+      "published_at": "2026-11-25T22:45:09Z",
+      "score": 14,
+      "label": "neutral"
+    },
+    {
+      "id": "0d1a56c0a31c",
+      "source": "news",
+      "publisher": "TechCrunch",
+      "title": "S&P considers Nvidia credit downgrade over governance and \u2018key man\u2019 risks",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/p-considers-nvidia-credit-downgrade-224432360.html",
+      "published_at": "2026-11-25T22:44:32Z",
+      "score": -90,
+      "label": "bearish"
     }
   ]
 }
