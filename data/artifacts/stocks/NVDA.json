@@ -2,19 +2,15 @@
   "schema_version": "1.1",
   "symbol": "NVDA",
   "name": "NVIDIA Corporation",
-  "generated_at": "2026-11-27T03:56:29Z",
+  "generated_at": "2026-11-28T03:43:49Z",
   "is_demo_data": false,
   "quote": {
-    "price": 149.3,
-    "change_pct": -3.91,
-    "as_of": "2026-11-25",
+    "price": 150.49,
+    "change_pct": 0.8,
+    "as_of": "2026-11-27",
     "currency": "USD"
   },
   "prices": [
-    {
-      "date": "2026-06-08",
-      "close": 208.41
-    },
     {
       "date": "2026-06-09",
       "close": 207.96
@@ -490,17 +486,21 @@
     {
       "date": "2026-11-25",
       "close": 149.3
+    },
+    {
+      "date": "2026-11-27",
+      "close": 150.49
     }
   ],
   "forecast": {
     "horizon_days": 5,
     "move": "large",
-    "prob_large": 0.8839,
-    "typical_move_pct": 3.5242,
-    "confidence": 0.8839,
-    "made_at": "2026-11-27T03:56:29Z",
-    "as_of_date": "2026-11-25",
-    "target_date": "2026-12-03",
+    "prob_large": 0.841,
+    "typical_move_pct": 3.5236,
+    "confidence": 0.841,
+    "made_at": "2026-11-28T03:43:49Z",
+    "as_of_date": "2026-11-27",
+    "target_date": "2026-12-04",
     "model_name": "move-xgb",
     "model_version": "17"
   },
@@ -520,7 +520,7 @@
       {
         "source": "news",
         "display_name": "News media",
-        "score": -5,
+        "score": 7,
         "label": "neutral",
         "doc_count": 50,
         "note": "50 articles, last 7 days",
@@ -529,7 +529,7 @@
       }
     ],
     "gap": {
-      "points": 50,
+      "points": 38,
       "most_bullish": "analysts",
       "most_bearish": "news",
       "summary": "Wall Street analysts lean bullish while News media are neutral."
@@ -542,29 +542,129 @@
       "publisher": "Yahoo Finance",
       "title": "Consensus: 49 buy, 12 hold, 2 sell (Nov 2026)",
       "url": null,
-      "published_at": "2026-11-27T03:56:29Z",
+      "published_at": "2026-11-28T03:43:49Z",
       "score": 45,
       "label": "bullish"
     },
     {
-      "id": "112c6a31128c",
+      "id": "d249accba3f8",
       "source": "news",
-      "publisher": "Insider Monkey",
-      "title": "5 Best Quantum Computing Stocks To Buy for 2027",
-      "url": "https://finance.yahoo.com/technology/articles/5-best-quantum-computing-stocks-032149616.html",
-      "published_at": "2026-11-27T03:21:49Z",
-      "score": 11,
+      "publisher": "Motley Fool",
+      "title": "Nvidia Stock Has Swung 5% or More in a Single Day 5 Times in November. Here's How Big a Position I Think Makes Sense.",
+      "url": "https://www.fool.com/investing/2026/11/27/nvidia-stock-has-swung-5-or-more-in-a-single-day-5-times-in-november-here-s-how-big-a-position-i-think-makes-sense/",
+      "published_at": "2026-11-28T03:13:02Z",
+      "score": 10,
       "label": "neutral"
     },
     {
-      "id": "9b0f6d8cddba",
+      "id": "c17da43a1ecc",
       "source": "news",
       "publisher": "Motley Fool",
-      "title": "Nvidia Is Down 35% From Its All-Time High, Tied for Its Biggest Drop Since the AI Boom Began. Is It a Buy?",
-      "url": "https://www.fool.com/investing/2026/11/26/nvidia-is-down-35-from-its-all-time-high-tied-for-its-biggest-drop-since-the-ai-boom-began-is-it-a-buy/",
-      "published_at": "2026-11-27T03:20:02Z",
+      "title": "Here's Why Anthropic Stock Rallied on Friday -- and Why Wall Street Analysts Say It's Still a Buy Right Now",
+      "url": "https://www.fool.com/investing/2026/11/27/why-anthropic-stock-rallied-on-friday-wall-street-analysts-say-buy-right-now/",
+      "published_at": "2026-11-28T02:15:24Z",
+      "score": 12,
+      "label": "neutral"
+    },
+    {
+      "id": "bc6556227349",
+      "source": "news",
+      "publisher": "The Wall Street Journal",
+      "title": "The High Political Cost of Trump\u2019s Loyalty to Jensen Huang",
+      "url": "https://www.wsj.com/politics/policy/the-high-political-cost-of-trumps-loyalty-to-jensen-huang-7f0327db?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-28T02:00:00Z",
+      "score": -11,
+      "label": "neutral"
+    },
+    {
+      "id": "ead03909bb81",
+      "source": "news",
+      "publisher": "The Wall Street Journal",
+      "title": "Americans Are More Exposed to the Stock Market Than Ever Before",
+      "url": "https://www.wsj.com/finance/stocks/us-stock-market-wealth-0caf5bac?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-28T02:00:00Z",
+      "score": -6,
+      "label": "neutral"
+    },
+    {
+      "id": "4f8b29218fd1",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Apple Is Beating the Rest of the \"Magnificent Seven\" in 2026. Can It Do It Again in 2027?",
+      "url": "https://www.fool.com/investing/2026/11/27/apple-is-beating-the-rest-of-the-magnificent-seven-in-2026-can-it-do-it-again-in-2027/",
+      "published_at": "2026-11-28T01:19:10Z",
+      "score": 15,
+      "label": "neutral"
+    },
+    {
+      "id": "8b17f9a2e9b9",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Nvidia Stock Is Still Down 38% From Its Peak Despite Jensen Huang's Return. History Suggests a $10,000 Investment Today Will Be Worth This Much by Year-End 2027.",
+      "url": "https://www.fool.com/investing/2026/11/27/nvidia-stock-is-still-down-38-from-its-peak-despite-jensen-huang-s-return-history-suggests-a-usd10-000-investment-today-will-be-worth-this-much-by-year-end-2027/",
+      "published_at": "2026-11-28T01:11:20Z",
       "score": -96,
       "label": "bearish"
+    },
+    {
+      "id": "a2892dd30ae3",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Vanguard's Growth ETF Has 3 Stocks Making Up More Than a Third of It. Only 1 Has Held Up in the Tech Sell-Off.",
+      "url": "https://www.fool.com/investing/2026/11/27/vanguard-s-growth-etf-has-3-stocks-making-up-more-than-a-third-of-it-only-1-has-held-up-in-the-tech-sell-off/",
+      "published_at": "2026-11-28T01:09:02Z",
+      "score": 17,
+      "label": "neutral"
+    },
+    {
+      "id": "e17995d9a501",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "3 Reasons I Might Buy More Nvidia in December",
+      "url": "https://www.fool.com/investing/2026/11/27/3-reasons-i-might-buy-more-nvidia-in-december/",
+      "published_at": "2026-11-28T00:58:50Z",
+      "score": 9,
+      "label": "neutral"
+    },
+    {
+      "id": "455582e53f25",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Why Monte Rosa Therapeutics Stock Slumped Today",
+      "url": "https://www.fool.com/investing/2026/11/27/why-monte-rosa-therapeutics-stock-slumped-today/",
+      "published_at": "2026-11-28T00:54:55Z",
+      "score": -95,
+      "label": "bearish"
+    },
+    {
+      "id": "8cb84b761958",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Anthropic's Best Customers Spend 20 Times More Than the Rest. That's Why I'm Buying the Stock.",
+      "url": "https://www.fool.com/investing/2026/11/27/anthropic-s-best-customers-spend-20-times-more-than-the-rest-that-s-why-i-m-buying-the-stock/",
+      "published_at": "2026-11-28T00:29:02Z",
+      "score": 7,
+      "label": "neutral"
+    },
+    {
+      "id": "fead2f2e19a7",
+      "source": "news",
+      "publisher": "TIKR",
+      "title": "Plot Twist: Nvidia\u2019s Vera Rubin Gets 2-6.5x GB300\u2019s Tokens per Dollar. Amazon\u2019s Trainium Edge Was Against the Old Chip",
+      "url": "https://www.tikr.com/blog/plot-twist-nvidias-vera-rubin-gets-2-6-5x-gb300s-tokens-per-dollar-amazons-trainium-edge-was-against-the-old-chip?ref=yahoofinance&tlnk=yf-261127-2mxwqf36",
+      "published_at": "2026-11-27T23:23:55Z",
+      "score": 9,
+      "label": "neutral"
+    },
+    {
+      "id": "a6aebf2fa05a",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "Billionaire Chase Coleman\u2019s Tiger Global Raised Its Cerebras Stake 48% to $790 Million",
+      "url": "https://247wallst.com/investing/2026/11/27/billionaire-chase-colemans-tiger-global-raised-its-cerebras-stake-48-to-790-million/",
+      "published_at": "2026-11-27T21:37:57Z",
+      "score": 88,
+      "label": "bullish"
     },
     {
       "id": "d595921d5cea",
@@ -572,269 +672,169 @@
       "publisher": "Insider Monkey",
       "title": "5 Best Tech Stocks to Buy for 2027 According to Hedge Funds",
       "url": "https://finance.yahoo.com/markets/stocks/articles/5-best-tech-stocks-buy-030856400.html",
-      "published_at": "2026-11-27T03:08:56Z",
+      "published_at": "2026-11-27T21:28:56Z",
       "score": 11,
       "label": "neutral"
     },
     {
-      "id": "e83d2d6e4859",
+      "id": "bd61fd412baf",
       "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Stocks Are Plunging Right Now. Here's What History Says Investors Should Do.",
-      "url": "https://www.fool.com/investing/2026/11/26/stocks-are-plunging-right-now-heres-what-history-s/",
-      "published_at": "2026-11-27T02:20:00Z",
-      "score": -17,
-      "label": "neutral"
+      "publisher": "NY Post",
+      "title": "Nvidia chips on sale for $3M in China \u2014 as Jensen Huang scandal and US crackdown chokes supply",
+      "url": "https://nypost.com/2026/11/27/tech/chinese-ads-selling-banned-nvidia-servers-for-3m-as-jensen-huang-scandal-chokes-supply-market-is-crazy/",
+      "published_at": "2026-11-27T21:18:40Z",
+      "score": -78,
+      "label": "bearish"
     },
     {
-      "id": "843cbc4a3ecf",
+      "id": "9ff1826c73ce",
       "source": "news",
       "publisher": "The Wall Street Journal",
-      "title": "Asian Markets Mostly Higher as Sentiment Stabilizes",
-      "url": "https://www.wsj.com/finance/asian-markets-mostly-higher-as-sentiment-stabilizes-8f998c4d?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-27T02:13:00Z",
-      "score": 88,
-      "label": "bullish"
+      "title": "Tech Stocks Jump as Investors Take a Break From AI Jitters",
+      "url": "https://www.wsj.com/finance/stocks/stocks-poised-to-end-week-strong-as-investors-take-break-from-ai-jitters-ce6b2846?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-27T21:16:00Z",
+      "score": -39,
+      "label": "bearish"
     },
     {
-      "id": "6b6e29248b9d",
+      "id": "fbc41246fe4a",
       "source": "news",
-      "publisher": "The Wall Street Journal",
-      "title": "The Savvy Showmanship That Helps Jensen Huang Always Come Out on Top",
-      "url": "https://www.wsj.com/business/jensen-huang-nvidia-ping-pong-rise-and-fall-bfd13000?siteid=yhoof2&yptr=yahoo",
-      "published_at": "2026-11-27T02:00:00Z",
-      "score": 26,
-      "label": "bullish"
-    },
-    {
-      "id": "7f57ab3255e5",
-      "source": "news",
-      "publisher": "Investor's Business Daily",
-      "title": "Dow Jones Futures Rise; Look For This Bullish Market Signal On Black Friday",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-wild-ride-nasdaq-nvidia-slash-losses-anthropic-higher/?src=A00220&yptr=yahoo",
-      "published_at": "2026-11-27T01:34:35Z",
-      "score": 8,
-      "label": "neutral"
-    },
-    {
-      "id": "be774e9cd449",
-      "source": "news",
-      "publisher": "Bloomberg",
-      "title": "Trump Says Huang Is Excited About His \u2018Second Term\u2019 at Nvidia",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/trump-says-huang-excited-second-003925008.html",
-      "published_at": "2026-11-27T00:39:25Z",
-      "score": 47,
-      "label": "bullish"
-    },
-    {
-      "id": "f08c6c35be25",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "1 Incredibly Cheap Artificial Intelligence (AI) Stock to Buy Before It Doubles in 2027",
-      "url": "https://www.fool.com/investing/2026/11/26/1-incredibly-cheap-artificial-intelligence-ai-stock-to-buy-before-it-doubles-in-2027/",
-      "published_at": "2026-11-27T00:28:02Z",
+      "publisher": "TipRanks",
+      "title": "Jensen Huang Is Back. Nvidia\u2019s (NVDA) Bull Case Remains",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/jensen-huang-back-nvidia-nvda-210600721.html",
+      "published_at": "2026-11-27T21:06:00Z",
       "score": 18,
       "label": "neutral"
     },
     {
-      "id": "d82af66a48c0",
+      "id": "c98c7ed8f300",
       "source": "news",
-      "publisher": "Reuters",
-      "title": "Trump says Wednesday's market had him briefly 'concerned' before stocks recovered",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/trump-says-wednesdays-market-had-002533115.html",
-      "published_at": "2026-11-27T00:25:33Z",
-      "score": -45,
-      "label": "bearish"
-    },
-    {
-      "id": "de5b9a577e19",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "These 2 AI Chip Stocks Are Down 36% to 39% From Their Highs. Here\u2019s What History Says Happens Next.",
-      "url": "https://www.fool.com/investing/2026/11/26/these-2-ai-chip-stocks-are-down-36-to-39-from-their-highs-here-s-what-history-says-happens-next/",
-      "published_at": "2026-11-27T00:20:02Z",
-      "score": -93,
-      "label": "bearish"
-    },
-    {
-      "id": "3c07cdd94f18",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "2 Dividend Stocks to Buy in November and 1 to Leave on the Shelf",
-      "url": "https://www.fool.com/investing/2026/11/26/2-dividend-stocks-to-buy-in-november-and-1-to-leave-on-the-shelf/",
-      "published_at": "2026-11-26T23:45:02Z",
-      "score": -2,
+      "publisher": "Barrons.com",
+      "title": "Review & Preview: Gratitude Trade",
+      "url": "https://www.barrons.com/articles/stocks-today-review-preview-560b235d?siteid=yhoof2&yptr=yahoo",
+      "published_at": "2026-11-27T21:00:00Z",
+      "score": 0,
       "label": "neutral"
     },
     {
-      "id": "be53db687e70",
+      "id": "6f2802139a51",
       "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Not Nvidia. Not Micron. If I Could Buy and Hold Only 1 Artificial Intelligence (AI) Semiconductor Stock Through 2030, This Would Be It.",
-      "url": "https://www.fool.com/investing/2026/11/26/not-nvidia-not-micron-if-i-could-buy-and-hold-only-1-artificial-intelligence-ai-semiconductor-stock-through-2030-this-would-be-it/",
-      "published_at": "2026-11-26T23:14:44Z",
-      "score": 2,
-      "label": "neutral"
+      "publisher": "Investing.com",
+      "title": "AI Chip Stocks Swung Wildly\u2014While Warren Buffett\u2019s Apple Climbed 26%",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ai-chip-stocks-swung-wildly-204129003.html",
+      "published_at": "2026-11-27T20:41:29Z",
+      "score": 47,
+      "label": "bullish"
     },
     {
-      "id": "ba0ca3e8ade3",
+      "id": "6793d761ade7",
       "source": "news",
-      "publisher": "Unchained",
-      "title": "Did Jensen Huang\u2019s Alleged Chinese Spy Get Him to Do Anything Nvidia Didn\u2019t Want?",
-      "url": "https://unchainedcrypto.com/did-jensen-huangs-alleged-chinese-spy-get-him-to-do-anything-nvidia-didnt-want/",
-      "published_at": "2026-11-26T23:00:49Z",
-      "score": -19,
-      "label": "neutral"
+      "publisher": "Zacks",
+      "title": "Can Record Black Friday Spending Lift Amazon Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/record-black-friday-spending-lift-203500466.html",
+      "published_at": "2026-11-27T20:35:00Z",
+      "score": 32,
+      "label": "bullish"
     },
     {
-      "id": "7f11e4c62eaa",
+      "id": "e89dbf37df8d",
       "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Nvidia Is the Worst-Performing \"Magnificent Seven\" Stock This Year. Is It a Buy Before 2027?",
-      "url": "https://www.fool.com/investing/2026/11/26/nvidia-is-the-worst-performing-magnificent-seven-stock-this-year-is-it-a-buy-before-2027/",
-      "published_at": "2026-11-26T22:50:49Z",
-      "score": -55,
-      "label": "bearish"
+      "publisher": "Barchart",
+      "title": "Unstoppable NVDA Stock? Jensen Huang is Back, and Nvidia Is Eyeing 75% Revenue Growth in FY 2028.",
+      "url": "https://www.barchart.com/story/news/9037026/unstoppable-nvda-stock-jensen-huang-is-back-and-nvidia-is-eyeing-75-revenue-growth-in-fy-2028",
+      "published_at": "2026-11-27T20:30:03Z",
+      "score": 92,
+      "label": "bullish"
     },
     {
-      "id": "2b499da6b3c2",
+      "id": "95d08a7d9858",
       "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Prediction: These 3 Consumer Stocks Will Beat the S&P 500 Over the Next 10 Years",
-      "url": "https://www.fool.com/investing/2026/11/26/prediction-these-3-consumer-stocks-will-beat-the-sp-500-over-the-next-10-years/",
-      "published_at": "2026-11-26T22:50:02Z",
+      "publisher": "Stocktwits",
+      "title": "TSLA Stock Clocks Best Week In 18 Months: Tesla Reportedly Eyes Buying German Toolmaker Amid Cybercab, Optimus Scaling Plans",
+      "url": "https://stocktwits.com/news-articles/markets/equity/tsla-stock-clocks-best-week-in-18-months-tesla-reportedly-eyes-buying-german-toolmaker-amid-cybercab-optimus-scaling-plans/cNb6PBlR9VL",
+      "published_at": "2026-11-27T19:55:54Z",
       "score": 91,
       "label": "bullish"
     },
     {
-      "id": "3103b72095f7",
+      "id": "a392c36afce5",
+      "source": "news",
+      "publisher": "Investor's Business Daily",
+      "title": "Dow Jones Futures: Stock Market Makes Bullish Move, Tesla Leads 7 New Buys; Nvidia's Jensen Huang Heads To Capitol Hill",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-bullish-move-tesla-new-buys-nvidia-ceo-jensen-huang-congress/?src=A00220&yptr=yahoo",
+      "published_at": "2026-11-27T19:54:29Z",
+      "score": 59,
+      "label": "bullish"
+    },
+    {
+      "id": "0ec569a86ae7",
+      "source": "news",
+      "publisher": "GuruFocus.com",
+      "title": "Nvidia Stocks Slip 1.66% as S&P Weighs Downgrade Over Key-Man Risk",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stocks-slip-1-66-194936975.html",
+      "published_at": "2026-11-27T19:49:36Z",
+      "score": -95,
+      "label": "bearish"
+    },
+    {
+      "id": "a664c57aae10",
       "source": "news",
       "publisher": "Motley Fool",
-      "title": "Should You Buy Tesla Stock Before December?",
-      "url": "https://www.fool.com/investing/2026/11/26/should-you-buy-tesla-stock-before-december/",
-      "published_at": "2026-11-26T22:35:02Z",
+      "title": "Should You Buy Nvidia Stock Before CEO Jensen Huang Testifies in Front of Congress on Dec. 1 and Dec. 3?",
+      "url": "https://www.fool.com/investing/2026/11/27/should-you-buy-nvidia-stock-before-ceo-jensen-huang-testifies-in-front-of-congress-on-dec-1-and-dec-3/",
+      "published_at": "2026-11-27T19:48:09Z",
+      "score": 3,
+      "label": "neutral"
+    },
+    {
+      "id": "097f3fe00b52",
+      "source": "news",
+      "publisher": "Motley Fool",
+      "title": "Sports Betting and the Way We Make Money",
+      "url": "https://www.fool.com/investing/2026/11/27/sports-betting-and-the-way-we-make-money/",
+      "published_at": "2026-11-27T19:44:23Z",
       "score": 2,
       "label": "neutral"
     },
     {
-      "id": "1aac69d323e2",
-      "source": "news",
-      "publisher": "Investing.com",
-      "title": "Loonie weakens amid Thanksgiving holiday lull, Canadian labor market data",
-      "url": "https://finance.yahoo.com/markets/currencies/articles/loonie-weakens-amid-thanksgiving-holiday-222803240.html",
-      "published_at": "2026-11-26T22:28:03Z",
-      "score": -88,
-      "label": "bearish"
-    },
-    {
-      "id": "6398d3cfb053",
+      "id": "c4898d813879",
       "source": "news",
       "publisher": "Motley Fool",
-      "title": "Tech Stock Sell-Off: Down 13%, Is Microsoft a Buy Now?",
-      "url": "https://www.fool.com/investing/2026/11/26/tech-stock-sell-off-down-13-is-microsoft-a-buy-now/",
-      "published_at": "2026-11-26T22:20:02Z",
-      "score": -86,
-      "label": "bearish"
-    },
-    {
-      "id": "cdd4f3e3dd89",
-      "source": "news",
-      "publisher": "TipRanks",
-      "title": "\u2018Room to Spare,\u2019 Says Investor About Oracle Stock",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/room-spare-says-investor-oracle-215243159.html",
-      "published_at": "2026-11-26T21:52:43Z",
-      "score": 1,
-      "label": "neutral"
-    },
-    {
-      "id": "8f29b45ff17e",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "O\u2019Reilly\u2019s Sales to Professional Mechanics Jumped 12.7% Last Quarter. Here\u2019s Why That\u2019s the Clearest Sign of Its Moat.",
-      "url": "https://www.fool.com/investing/2026/11/26/oreilly-sales-professional-mechanics-jumped-last-quarter-why-that-s-the-clearest-sign-of-its-moat/",
-      "published_at": "2026-11-26T21:50:02Z",
-      "score": 63,
+      "title": "RTX Unit Pratt & Whitney Wins $2.5 Billion Navy Contract",
+      "url": "https://www.fool.com/investing/2026/11/27/rtx-unit-pratt-and-whitney-wins-usd2-5-billion-navy-contract/",
+      "published_at": "2026-11-27T19:21:01Z",
+      "score": 83,
       "label": "bullish"
     },
     {
-      "id": "e603a1a01e7d",
+      "id": "689287b6305b",
       "source": "news",
       "publisher": "Motley Fool",
-      "title": "The Nasdaq Composite Is in a Correction, but These 3 Dividend Stocks Are Near 52-Week Highs. Here's Why They're Still Worth Buying Right Now.",
-      "url": "https://www.fool.com/investing/2026/11/26/the-nasdaq-composite-is-in-a-correction-but-these-3-dividend-stocks-are-near-52-week-highs-here-s-why-they-re-still-worth-buying-right-now/",
-      "published_at": "2026-11-26T21:33:02Z",
-      "score": -1,
+      "title": "Anthropic Gets a Blockbuster IPO; Take-Two Gets a Blockbuster GTA VI Release",
+      "url": "https://www.fool.com/investing/2026/11/27/anthropic-gets-a-blockbuster-ipo-take-two-gets-a-blockbuster-gta-vi-release/",
+      "published_at": "2026-11-27T19:19:02Z",
+      "score": 14,
       "label": "neutral"
     },
     {
-      "id": "c0983798c599",
-      "source": "news",
-      "publisher": "TipRanks",
-      "title": "Jensen Huang\u2019s Return Doesn\u2019t Make Nvidia Stock (NVDA) a Buy",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/jensen-huang-return-doesn-t-212200380.html",
-      "published_at": "2026-11-26T21:22:00Z",
-      "score": 8,
-      "label": "neutral"
-    },
-    {
-      "id": "90e4c2c92764",
+      "id": "87aec853fe69",
       "source": "news",
       "publisher": "Motley Fool",
-      "title": "Sandisk\u2019s 8-for-1 Split Is Done. Here\u2019s What Investors Should Do Next.",
-      "url": "https://www.fool.com/investing/2026/11/26/sandisks-8-for-1-split-is-done-heres-what-investors-should-do-next/",
-      "published_at": "2026-11-26T21:20:02Z",
-      "score": 0,
+      "title": "Black Friday Stock Deals: 7 Bargains Our Analysts Are Watching Now",
+      "url": "https://www.fool.com/investing/2026/11/27/black-friday-stock-deals-7-bargains-our-analysts-are-watching-now/",
+      "published_at": "2026-11-27T19:15:01Z",
+      "score": 3,
       "label": "neutral"
     },
     {
-      "id": "a68dc69270a8",
+      "id": "a09e53ffea3d",
       "source": "news",
-      "publisher": "Motley Fool",
-      "title": "SpaceX Is a Great Company. Is It a Great Stock at This Price?",
-      "url": "https://www.fool.com/investing/2026/11/26/spacex-is-a-great-company-is-it-a-great-stock-at-this-price/",
-      "published_at": "2026-11-26T20:56:02Z",
-      "score": 12,
+      "publisher": "Investor's Business Daily",
+      "title": "Stock Market Today: Indexes Log Best Thanksgiving Week In 18 Years",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-nvidia-stock-anthropic-spacex-tesla/?src=A00220&yptr=yahoo",
+      "published_at": "2026-11-27T19:10:43Z",
+      "score": -5,
       "label": "neutral"
-    },
-    {
-      "id": "be6a20838a64",
-      "source": "news",
-      "publisher": "NY Post",
-      "title": "Nvidia halts server shipments to 4 countries just weeks after Jensen Huang\u2019s affair with alleged spy was exposed",
-      "url": "https://nypost.com/2026/11/26/business/nvidia-halts-server-shipments-to-4-southeast-asian-countries-report/",
-      "published_at": "2026-11-26T20:30:14Z",
-      "score": -94,
-      "label": "bearish"
-    },
-    {
-      "id": "b26aaaf04900",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Here\u2019s How Many Shares of Procter & Gamble You\u2019d Need to Own to Collect $1,000 in Annual Dividends",
-      "url": "https://www.fool.com/investing/2026/11/26/here-s-how-many-shares-of-procter-and-gamble-you-d-need-to-own-to-collect-usd1-000-in-annual-dividends/",
-      "published_at": "2026-11-26T20:29:02Z",
-      "score": 0,
-      "label": "neutral"
-    },
-    {
-      "id": "9fc58ac50636",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "If a Market Correction Is Around the Corner, I'm Making This 1 Easy Move",
-      "url": "https://www.fool.com/investing/2026/11/26/if-market-correction-around-corner-making-this-1-easy-move/",
-      "published_at": "2026-11-26T20:20:02Z",
-      "score": 9,
-      "label": "neutral"
-    },
-    {
-      "id": "a8b0f40f5e18",
-      "source": "news",
-      "publisher": "TechCrunch",
-      "title": "Nvidia hits pause on chip shipments to Southeast Asia",
-      "url": "https://finance.yahoo.com/technology/articles/nvidia-hits-pause-chip-shipments-200354308.html",
-      "published_at": "2026-11-26T20:03:54Z",
-      "score": -74,
-      "label": "bearish"
     }
   ]
 }

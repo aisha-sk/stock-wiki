@@ -2,19 +2,15 @@
   "schema_version": "1.1",
   "symbol": "TSLA",
   "name": "Tesla, Inc.",
-  "generated_at": "2026-11-27T03:56:29Z",
+  "generated_at": "2026-11-28T03:43:49Z",
   "is_demo_data": false,
   "quote": {
-    "price": 380.14,
-    "change_pct": -1.18,
-    "as_of": "2026-11-25",
+    "price": 400.0,
+    "change_pct": 5.22,
+    "as_of": "2026-11-27",
     "currency": "USD"
   },
   "prices": [
-    {
-      "date": "2026-06-08",
-      "close": 408.95
-    },
     {
       "date": "2026-06-09",
       "close": 396.68
@@ -490,17 +486,21 @@
     {
       "date": "2026-11-25",
       "close": 380.14
+    },
+    {
+      "date": "2026-11-27",
+      "close": 400.0
     }
   ],
   "forecast": {
     "horizon_days": 5,
-    "move": "large",
-    "prob_large": 0.665,
-    "typical_move_pct": 3.5242,
-    "confidence": 0.665,
-    "made_at": "2026-11-27T03:56:29Z",
-    "as_of_date": "2026-11-25",
-    "target_date": "2026-12-03",
+    "move": "quiet",
+    "prob_large": 0.3323,
+    "typical_move_pct": 3.5236,
+    "confidence": 0.6677,
+    "made_at": "2026-11-28T03:43:49Z",
+    "as_of_date": "2026-11-27",
+    "target_date": "2026-12-04",
     "model_name": "move-xgb",
     "model_version": "17"
   },
@@ -520,7 +520,7 @@
       {
         "source": "news",
         "display_name": "News media",
-        "score": -10,
+        "score": 9,
         "label": "neutral",
         "doc_count": 50,
         "note": "50 articles, last 7 days",
@@ -529,7 +529,7 @@
       }
     ],
     "gap": {
-      "points": 40,
+      "points": 21,
       "most_bullish": "analysts",
       "most_bearish": "news",
       "summary": "Wall Street analysts lean bullish while News media are neutral."
@@ -542,19 +542,279 @@
       "publisher": "Yahoo Finance",
       "title": "Consensus: 22 buy, 22 hold, 1 sell (Nov 2026)",
       "url": null,
-      "published_at": "2026-11-27T03:56:29Z",
+      "published_at": "2026-11-28T03:43:49Z",
       "score": 30,
       "label": "bullish"
     },
     {
-      "id": "0cf044fea2ff",
+      "id": "8cd9f5c56692",
+      "source": "news",
+      "publisher": "Stocktwits",
+      "title": "Zero To Sixty: Tesla Cybercab Fleet Tops 1,000 In Texas, Lucid Starts Fully Driverless Tests And Chinese EV Maker Posts Stronger Margins",
+      "url": "https://stocktwits.com/news-articles/markets/equity/zero-to-sixty-tesla-cybercab-fleet-tops-1-000-in-texas-lucid-starts-fully-driverless-tests-and-chinese-ev-maker-posts-stronger-margins/cNRRKv9R9Vl",
+      "published_at": "2026-11-28T00:12:27Z",
+      "score": 93,
+      "label": "bullish"
+    },
+    {
+      "id": "c03ca139a311",
+      "source": "news",
+      "publisher": "TIKR",
+      "title": "Texas Is Racing to Approve SpaceX\u2019s $24 Billion Starbase Data Center Before Its New Governor Can Halt It",
+      "url": "https://www.tikr.com/blog/texas-is-racing-to-approve-spacexs-24-billion-starbase-data-center-before-its-new-governor-can-halt-it?ref=yahoofinance&tlnk=yf-261127-5cjgmqwx",
+      "published_at": "2026-11-27T23:20:02Z",
+      "score": -9,
+      "label": "neutral"
+    },
+    {
+      "id": "e2e4661f2bb7",
+      "source": "news",
+      "publisher": "Stocktwits",
+      "title": "S&P 500, Nasdaq End Best Week In Over A Year As AI Optimism Makes Comeback \u2014 VZ, ANT, ADBE, TSLA In Focus",
+      "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-nasdaq-end-best-week-in-over-a-year-as-ai-optimism-makes-comeback/cNb6EtcR9VK",
+      "published_at": "2026-11-27T21:29:46Z",
+      "score": 60,
+      "label": "bullish"
+    },
+    {
+      "id": "95d08a7d9858",
+      "source": "news",
+      "publisher": "Stocktwits",
+      "title": "TSLA Stock Clocks Best Week In 18 Months: Tesla Reportedly Eyes Buying German Toolmaker Amid Cybercab, Optimus Scaling Plans",
+      "url": "https://stocktwits.com/news-articles/markets/equity/tsla-stock-clocks-best-week-in-18-months-tesla-reportedly-eyes-buying-german-toolmaker-amid-cybercab-optimus-scaling-plans/cNb6PBlR9VL",
+      "published_at": "2026-11-27T19:55:54Z",
+      "score": 91,
+      "label": "bullish"
+    },
+    {
+      "id": "a392c36afce5",
+      "source": "news",
+      "publisher": "Investor's Business Daily",
+      "title": "Dow Jones Futures: Stock Market Makes Bullish Move, Tesla Leads 7 New Buys; Nvidia's Jensen Huang Heads To Capitol Hill",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-bullish-move-tesla-new-buys-nvidia-ceo-jensen-huang-congress/?src=A00220&yptr=yahoo",
+      "published_at": "2026-11-27T19:54:29Z",
+      "score": 59,
+      "label": "bullish"
+    },
+    {
+      "id": "a09e53ffea3d",
+      "source": "news",
+      "publisher": "Investor's Business Daily",
+      "title": "Stock Market Today: Indexes Log Best Thanksgiving Week In 18 Years",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-nvidia-stock-anthropic-spacex-tesla/?src=A00220&yptr=yahoo",
+      "published_at": "2026-11-27T19:10:43Z",
+      "score": -5,
+      "label": "neutral"
+    },
+    {
+      "id": "9ae4f2605607",
+      "source": "news",
+      "publisher": "Barchart",
+      "title": "\u2018Superfan\u2019 Elon Musk Says \u2018China Is Cool\u2019 as Tesla Boosts Production in Shanghai: \u2018The More the US and China Cooperate, the Better Off Both Will Be\u2019",
+      "url": "https://www.barchart.com/story/news/9036157/superfan-elon-musk-says-china-is-cool-as-tesla-boosts-production-in-shanghai-the-more-the-us-and-china-cooperate-the-better-off-both-will-be",
+      "published_at": "2026-11-27T18:30:03Z",
+      "score": 89,
+      "label": "bullish"
+    },
+    {
+      "id": "a1a12f1f1b24",
+      "source": "news",
+      "publisher": "CRE Daily",
+      "title": "Tesla Takes 1.2M SF at Houston\u2019s Cedar Port Industrial Park",
+      "url": "https://www.credaily.com/briefs/tesla-takes-1-2m-sf-at-houstons-cedar-port-industrial-park/",
+      "published_at": "2026-11-27T18:11:54Z",
+      "score": 6,
+      "label": "neutral"
+    },
+    {
+      "id": "338f5f586ba2",
+      "source": "news",
+      "publisher": "Kiplinger",
+      "title": "Dow Adds 592 Points on Black Friday as AI Fear Fades: Stock Market Today",
+      "url": "https://www.kiplinger.com/investing/stocks/dow-adds-592-points-on-black-friday-as-ai-fear-fades-stock-market-today",
+      "published_at": "2026-11-27T18:11:31Z",
+      "score": -2,
+      "label": "neutral"
+    },
+    {
+      "id": "64c2399ae610",
+      "source": "news",
+      "publisher": "MT Newswires",
+      "title": "Sector Update: Consumer Stocks Advance Friday Afternoon",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sector-consumer-stocks-advance-friday-171212418.html",
+      "published_at": "2026-11-27T17:12:12Z",
+      "score": 24,
+      "label": "bullish"
+    },
+    {
+      "id": "d631188d7a82",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "Tesla Rallies 5% Amid SpaceX Merger Speculation; Rivian and SpaceX Rise 3%: Is Tesla\u2019s 439x P/E a Warning Sign?",
+      "url": "https://247wallst.com/investing/2026/11/27/tesla-rallies-5-amid-spacex-merger-speculation-rivian-and-spacex-rise-3-is-teslas-439x-p-e-a-warning-sign/",
+      "published_at": "2026-11-27T17:04:16Z",
+      "score": -53,
+      "label": "bearish"
+    },
+    {
+      "id": "9eebe2ff8860",
+      "source": "news",
+      "publisher": "MarketBeat",
+      "title": "XPENG Maps Out 2027 Robotaxi Launch and Mass Production of IRON Humanoid Robot",
+      "url": "https://www.marketbeat.com/instant-alerts/event-xpeng-maps-out-2027-robotaxi-launch-and-mass-production-of-iron-humanoid-robot-2026-11-27/?utm_source=yahoofinance&utm_medium=yahoofinance",
+      "published_at": "2026-11-27T15:12:39Z",
+      "score": 7,
+      "label": "neutral"
+    },
+    {
+      "id": "b4c295a891d7",
+      "source": "news",
+      "publisher": "Yahoo Finance Video",
+      "title": "Nvidia halts sales to SE Asia, SpaceX surges on Musk's share promise",
+      "url": "https://finance.yahoo.com/video/nvidia-halts-sales-to-se-asia-spacex-surges-on-musks-share-promise-151001061.html",
+      "published_at": "2026-11-27T15:10:01Z",
+      "score": -86,
+      "label": "bearish"
+    },
+    {
+      "id": "ad54758c6b81",
+      "source": "news",
+      "publisher": "Yahoo Finance Video",
+      "title": "SpaceX, Tesla have had a bumpy 2026 thus far: What to know",
+      "url": "https://finance.yahoo.com/video/spacex-tesla-have-had-a-bumpy-2026-thus-far-what-to-know-145849441.html",
+      "published_at": "2026-11-27T14:58:49Z",
+      "score": -56,
+      "label": "bearish"
+    },
+    {
+      "id": "86853e1c410f",
+      "source": "news",
+      "publisher": "Yahoo Finance",
+      "title": "SpaceX stock rises after Musk pledges annual share giveaway for kids",
+      "url": "https://finance.yahoo.com/technology/article/spacex-stock-rises-after-musk-pledges-annual-share-giveaway-for-kids-140708762.html",
+      "published_at": "2026-11-27T14:04:55Z",
+      "score": 31,
+      "label": "bullish"
+    },
+    {
+      "id": "dc05d8547594",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "AST SpaceMobile Gains 2% Despite Berenberg\u2019s Price Target Cut to $30, Rocket Lab Climbs 5% After Electron Launch; Cathie Wood-Backed SpaceX Rises 3%",
+      "url": "https://247wallst.com/investing/2026/11/27/ast-spacemobile-gains-2-despite-berenbergs-price-target-cut-to-30-rocket-lab-climbs-5-after-electron-launch-cathie-wood-backed-spacex-rises-3/",
+      "published_at": "2026-11-27T14:04:52Z",
+      "score": 91,
+      "label": "bullish"
+    },
+    {
+      "id": "159e20293d1a",
+      "source": "news",
+      "publisher": "24/7 Wall St.",
+      "title": "SpaceX Cratered 13.5% This Month: Near 300% Returns to Materialize at Today\u2019s Price According to this Pro Analyst",
+      "url": "https://247wallst.com/investing/2026/11/27/spacex-cratered-13-5-this-month-near-300-returns-to-materialize-at-todays-price-according-to-this-pro-analyst/",
+      "published_at": "2026-11-27T12:15:02Z",
+      "score": 5,
+      "label": "neutral"
+    },
+    {
+      "id": "e38a7b0b645f",
+      "source": "news",
+      "publisher": "GuruFocus.com",
+      "title": "iShares Paris-Aligned Climate (PABU) Buys $9.4 Million More Apple on Wednesday",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ishares-paris-aligned-climate-pabu-110455750.html",
+      "published_at": "2026-11-27T11:04:55Z",
+      "score": 12,
+      "label": "neutral"
+    },
+    {
+      "id": "857753a4714b",
+      "source": "news",
+      "publisher": "GuruFocus.com",
+      "title": "What ARK Autonomous Technology & Robotics ETF (ARKQ) Sold: Tesla Leads on Nov. 25",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ark-autonomous-technology-robotics-etf-110448164.html",
+      "published_at": "2026-11-27T11:04:48Z",
+      "score": 5,
+      "label": "neutral"
+    },
+    {
+      "id": "c371ce2f7d86",
+      "source": "news",
+      "publisher": "GuruFocus.com",
+      "title": "What Invesco NASDAQ 100 ETF (QQQM) Bought: Apple Leads on Wednesday",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/invesco-nasdaq-100-etf-qqqm-110420784.html",
+      "published_at": "2026-11-27T11:04:20Z",
+      "score": 17,
+      "label": "neutral"
+    },
+    {
+      "id": "cd2c28892014",
+      "source": "news",
+      "publisher": "GuruFocus.com",
+      "title": "Proshares Trust (TQQQ) Adds Apple and Microsoft on Nov. 25",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/proshares-trust-tqqq-adds-apple-110356101.html",
+      "published_at": "2026-11-27T11:03:56Z",
+      "score": 3,
+      "label": "neutral"
+    },
+    {
+      "id": "c2f9f38ca3cb",
+      "source": "news",
+      "publisher": "GuruFocus.com",
+      "title": "What INVESCO QQQ Trust (QQQ) Bought: Apple Leads on Wednesday",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/invesco-qqq-trust-qqq-bought-110329959.html",
+      "published_at": "2026-11-27T11:03:29Z",
+      "score": 10,
+      "label": "neutral"
+    },
+    {
+      "id": "be2ff965329f",
+      "source": "news",
+      "publisher": "GuruFocus.com",
+      "title": "ETFs Are Buying Tesla (TSLA) on Wednesday",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/etfs-buying-tesla-tsla-wednesday-110102240.html",
+      "published_at": "2026-11-27T11:01:02Z",
+      "score": 4,
+      "label": "neutral"
+    },
+    {
+      "id": "66e02b6d1613",
       "source": "news",
       "publisher": "Benzinga",
-      "title": "\u2018How Can TSLA Compete With Waymo?\u2019 Gary Black Questions Tesla\u2019s Robotaxi Strategy, Predicts Waymo Will Lead in Miles and Trips",
-      "url": "https://finance.yahoo.com/technology/articles/tsla-compete-waymo-gary-black-013007370.html",
-      "published_at": "2026-11-27T01:30:07Z",
-      "score": 14,
-      "label": "neutral"
+      "title": "Elon Musk Hopes All Teslas Will Get SpaceX\u2019s Starlink Connectivity\u2014Except in China, Where It\u2019s \u2018Illegal\u2019: Says It Will Be Key for Unsupervised FSD",
+      "url": "https://finance.yahoo.com/technology/articles/elon-musk-hopes-teslas-spacex-104507393.html",
+      "published_at": "2026-11-27T10:45:07Z",
+      "score": 31,
+      "label": "bullish"
+    },
+    {
+      "id": "492ee4d7c3cd",
+      "source": "news",
+      "publisher": "Simply Wall St.",
+      "title": "Electric Vehicles Today - Driving Forward: Innovations in Pedestrian Safety Systems",
+      "url": "https://finance.yahoo.com/technology/articles/electric-vehicles-today-driving-forward-103921382.html",
+      "published_at": "2026-11-27T10:39:21Z",
+      "score": 30,
+      "label": "bullish"
+    },
+    {
+      "id": "fb7af0243de7",
+      "source": "news",
+      "publisher": "TIKR",
+      "title": "Tesla\u2019s Robotaxi Promises \u201cMore Cars, Less $\u201d as Its Dallas Zone Grows 83.5%",
+      "url": "https://www.tikr.com/blog/teslas-robotaxi-promises-more-cars-less-as-its-dallas-zone-grows-83-5?ref=yahoofinance&tlnk=yf-261127-v78qcfqp",
+      "published_at": "2026-11-27T09:35:31Z",
+      "score": 84,
+      "label": "bullish"
+    },
+    {
+      "id": "5f29a24c1681",
+      "source": "news",
+      "publisher": "Benzinga",
+      "title": "Elon Musk Offers Samsung Long-Term Chip Deals and Factory Funding, Gets Brushed Off: 'Everyone Else Was Offering That'",
+      "url": "https://finance.yahoo.com/technology/articles/elon-musk-offers-samsung-long-064455133.html",
+      "published_at": "2026-11-27T06:44:55Z",
+      "score": -70,
+      "label": "bearish"
     },
     {
       "id": "0fdceb75db32",
@@ -567,273 +827,13 @@
       "label": "neutral"
     },
     {
-      "id": "3103b72095f7",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "Should You Buy Tesla Stock Before December?",
-      "url": "https://www.fool.com/investing/2026/11/26/should-you-buy-tesla-stock-before-december/",
-      "published_at": "2026-11-26T22:35:02Z",
-      "score": 2,
-      "label": "neutral"
-    },
-    {
-      "id": "ea47d39220c2",
-      "source": "news",
-      "publisher": "GuruFocus.com",
-      "title": "Tesla Stocks Slip 1.18% as EU Delays Self-Driving Vote to December 15",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-stocks-slip-1-18-190357031.html",
-      "published_at": "2026-11-26T19:03:57Z",
-      "score": -95,
-      "label": "bearish"
-    },
-    {
-      "id": "cc037d06a18d",
-      "source": "news",
-      "publisher": "Barchart",
-      "title": "Charlie Munger Said BYD Was \u2018So Much Ahead Of Tesla, It\u2019s Almost Ridiculous\u2019 in 2023. BYD Then Outsold Tesla, But Berkshire Sold Every Share.",
-      "url": "https://www.barchart.com/story/news/9022591/charlie-munger-said-byd-was-so-much-ahead-of-tesla-its-almost-ridiculous-in-2023-byd-then-outsold-tesla-but-berkshire-sold-every-share",
-      "published_at": "2026-11-26T18:30:03Z",
-      "score": -8,
-      "label": "neutral"
-    },
-    {
-      "id": "6b3ddb8679ec",
-      "source": "news",
-      "publisher": "GuruFocus.com",
-      "title": "Tesla: A SpaceX Merger Could Turn $5,000 Into $10,000",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-spacex-merger-could-turn-174606474.html",
-      "published_at": "2026-11-26T17:46:06Z",
-      "score": 12,
-      "label": "neutral"
-    },
-    {
-      "id": "d3488d725e1c",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "Rivian Is Down 41% This Year. Can RIVN Stock Get Back to $20 in 2027?",
-      "url": "https://247wallst.com/investing/2026/11/26/rivian-is-down-41-this-year-can-rivn-stock-get-back-to-20-in-2027/",
-      "published_at": "2026-11-26T17:06:18Z",
-      "score": -93,
-      "label": "bearish"
-    },
-    {
-      "id": "90dc74dd10b2",
-      "source": "news",
-      "publisher": "Moneywise",
-      "title": "Elon Musk didn\u2019t sell a single share in SpaceX\u2019s record $85.7B IPO. Anthropic\u2019s 7 cofounders cashed out $1.96B in theirs",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/elon-musk-didn-t-sell-170000854.html",
-      "published_at": "2026-11-26T17:00:00Z",
-      "score": -1,
-      "label": "neutral"
-    },
-    {
-      "id": "a1eef75b978d",
-      "source": "news",
-      "publisher": "GuruFocus.com",
-      "title": "XPeng Raises Stakes for Tesla Stock Investors' Big Growth Bet",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/xpeng-raises-stakes-tesla-stock-163240808.html",
-      "published_at": "2026-11-26T16:32:40Z",
-      "score": 64,
-      "label": "bullish"
-    },
-    {
-      "id": "434f73bfac1a",
-      "source": "news",
-      "publisher": "TIKR",
-      "title": "Lucid Sinks 13% in a Week as the Tech Selloff Hits EV Stocks. Seaport Sets a $1 Target",
-      "url": "https://www.tikr.com/blog/lucid-sinks-13-in-a-week-as-the-tech-selloff-hits-ev-stocks-seaport-sets-a-1-target?ref=yahoofinance&tlnk=yf-261126-44rpr8gm",
-      "published_at": "2026-11-26T15:05:24Z",
-      "score": -75,
-      "label": "bearish"
-    },
-    {
-      "id": "0b3a28454edd",
-      "source": "news",
-      "publisher": "TIKR",
-      "title": "General Motors Is Up 11% in a Month as the Nasdaq-100 Fell 10%. Is Its Nasdaq Switch Really That Good?",
-      "url": "https://www.tikr.com/blog/general-motors-is-up-11-in-a-month-as-the-nasdaq-100-fell-10-is-its-nasdaq-switch-really-that-good?ref=yahoofinance&tlnk=yf-261126-7326q54f",
-      "published_at": "2026-11-26T14:50:28Z",
-      "score": 49,
-      "label": "bullish"
-    },
-    {
-      "id": "6a04835a36a5",
-      "source": "news",
-      "publisher": "Zacks",
-      "title": "Tesla's Self-Driving Expansion in Europe Faces a Crucial Test",
-      "url": "https://finance.yahoo.com/technology/ai/articles/teslas-self-driving-expansion-europe-134400727.html",
-      "published_at": "2026-11-26T13:44:00Z",
-      "score": 30,
-      "label": "bullish"
-    },
-    {
-      "id": "593abb753cb2",
-      "source": "news",
-      "publisher": "TIKR",
-      "title": "Jensen Huang Says Grok Bot Consumption Is \u201cReally Skyrocketing.\u201d That\u2019s Good News for SpaceX",
-      "url": "https://www.tikr.com/blog/jensen-huang-says-grok-bot-consumption-is-really-skyrocketing-thats-good-news-for-spacex?ref=yahoofinance&tlnk=yf-261126-q7mrmmjx",
-      "published_at": "2026-11-26T13:16:25Z",
-      "score": 91,
-      "label": "bullish"
-    },
-    {
-      "id": "85a38ce7ea0b",
-      "source": "news",
-      "publisher": "24/7 Wall St.",
-      "title": "SpaceX and Elon Musk Will Each Give a Share to Every Active Trump Account",
-      "url": "https://247wallst.com/investing/2026/11/26/spacex-and-elon-musk-will-each-give-a-share-to-every-active-trump-account/",
-      "published_at": "2026-11-26T12:38:35Z",
-      "score": 6,
-      "label": "neutral"
-    },
-    {
-      "id": "ba848979f11f",
-      "source": "news",
-      "publisher": "Moneywise",
-      "title": "Elon Musk warns AI\u2019s 2027 cash shortage will be \u2018nuts\u2019 as industry could need billions more. Protect your retirement",
-      "url": "https://finance.yahoo.com/technology/ai/articles/elon-musk-warns-ai-2027-121500797.html",
-      "published_at": "2026-11-26T12:15:00Z",
-      "score": -65,
-      "label": "bearish"
-    },
-    {
-      "id": "8ec8f786b9a9",
-      "source": "news",
-      "publisher": "TIKR",
-      "title": "JPMorgan Says S&P Could Waive Its Rules for a Tesla-SpaceX Merger. That\u2019s Good News for SpaceX Holders",
-      "url": "https://www.tikr.com/blog/jpmorgan-says-sp-could-waive-its-rules-for-a-tesla-spacex-merger-thats-good-news-for-spacex-holders?ref=yahoofinance&tlnk=yf-261126-gpc9wr29",
-      "published_at": "2026-11-26T11:45:59Z",
-      "score": 73,
-      "label": "bullish"
-    },
-    {
-      "id": "ddc72ceed45c",
-      "source": "news",
-      "publisher": "Trefis",
-      "title": "Anthropic Broke Its $83 IPO Price. What Did Facebook Do Next?",
-      "url": "https://www.trefis.com/stock/ant/articles/629153/anthropic-broke-its-83-ipo-price-what-did-facebook-do-next/2026-11-26",
-      "published_at": "2026-11-26T11:38:21Z",
-      "score": -5,
-      "label": "neutral"
-    },
-    {
-      "id": "0ba722580933",
-      "source": "news",
-      "publisher": "Simply Wall St.",
-      "title": "Energy Transition Update - Green Rain Energy Expands With Innovative EV Charging Deal",
-      "url": "https://finance.yahoo.com/energy/articles/energy-transition-green-rain-energy-113711470.html",
-      "published_at": "2026-11-26T11:37:11Z",
-      "score": 84,
-      "label": "bullish"
-    },
-    {
-      "id": "db3335eef6b4",
-      "source": "news",
-      "publisher": "GuruFocus.com",
-      "title": "Michael Burry Turns Bullish, Exits Nasdaq Shorts but Eyes Nvidia at $200",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/michael-burry-turns-bullish-exits-113036657.html",
-      "published_at": "2026-11-26T11:30:36Z",
-      "score": -23,
-      "label": "bearish"
-    },
-    {
-      "id": "d782f0bc46e4",
-      "source": "news",
-      "publisher": "GuruFocus.com",
-      "title": "SpaceX's $18.4 Billion Share Pledge Raises Dilution Questions",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/spacexs-18-4-billion-share-112938645.html",
-      "published_at": "2026-11-26T11:29:38Z",
-      "score": -88,
-      "label": "bearish"
-    },
-    {
-      "id": "478f4a45858d",
-      "source": "news",
-      "publisher": "GuruFocus.com",
-      "title": "ProShares Ultra QQQ (QLD) Sells Apple and Nvidia on Tuesday",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/proshares-ultra-qqq-qld-sells-110520288.html",
-      "published_at": "2026-11-26T11:05:20Z",
-      "score": 6,
-      "label": "neutral"
-    },
-    {
-      "id": "41edf5eea492",
-      "source": "news",
-      "publisher": "GuruFocus.com",
-      "title": "Invesco NASDAQ 100 ETF (QQQM) Buys $73.7 Million More Apple on Nov. 24",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/invesco-nasdaq-100-etf-qqqm-110405362.html",
-      "published_at": "2026-11-26T11:04:05Z",
-      "score": 10,
-      "label": "neutral"
-    },
-    {
-      "id": "6ba5b38314b7",
-      "source": "news",
-      "publisher": "GuruFocus.com",
-      "title": "Invesco QQQ Trust (QQQ) Buys $187.4 Million More Apple on Tuesday",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/invesco-qqq-trust-qqq-buys-110402435.html",
-      "published_at": "2026-11-26T11:04:02Z",
-      "score": 10,
-      "label": "neutral"
-    },
-    {
-      "id": "8a23e644e0a9",
-      "source": "news",
-      "publisher": "Simply Wall St.",
-      "title": "General Motors (GM) Bets On Egypt Assembly And Wider EV Charging Access",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/general-motors-gm-bets-egypt-101402167.html",
-      "published_at": "2026-11-26T10:14:02Z",
-      "score": 34,
-      "label": "bullish"
-    },
-    {
-      "id": "fe549c3837cd",
-      "source": "news",
-      "publisher": "Stocktwits",
-      "title": "Cathie Wood Buys More SpaceX Amid Tesla Merger Talks \u2014 Ron Baron Says SpaceX Could Make $50B A Year From One Data Center",
-      "url": "https://stocktwits.com/news-articles/markets/equity/cathie-wood-buys-spacex-tesla-merger-talks-ron-baron-spacex-50b-one-data-center/cNbxeDKR9Z4",
-      "published_at": "2026-11-26T03:32:35Z",
-      "score": 57,
-      "label": "bullish"
-    },
-    {
-      "id": "d62181460eca",
+      "id": "0cf044fea2ff",
       "source": "news",
       "publisher": "Benzinga",
-      "title": "Mark Cuban Says the Most Common Mistake He Saw Founders Make on 'Shark Tank' Was a Job They Kept Handing Off: 'You're Going to Fail'",
-      "url": "https://finance.yahoo.com/small-business/articles/mark-cuban-says-most-common-033007508.html",
-      "published_at": "2026-11-26T03:30:07Z",
-      "score": -83,
-      "label": "bearish"
-    },
-    {
-      "id": "828a8424a90c",
-      "source": "news",
-      "publisher": "TheStreet",
-      "title": "Elon Musk tells Tesla investors there is 'only one way' to eliminate poverty",
-      "url": "https://www.thestreet.com/investing/elon-musk-tells-tesla-investors-optimus-robots-will-eliminate-poverty",
-      "published_at": "2026-11-26T00:37:00Z",
-      "score": -1,
-      "label": "neutral"
-    },
-    {
-      "id": "04461c2925de",
-      "source": "news",
-      "publisher": "Motley Fool",
-      "title": "If SpaceX and Tesla Merge Next Year, Here's What a $5,000 Investment in the Combined Company Could Be Worth by the End of 2028",
-      "url": "https://www.fool.com/investing/2026/11/25/if-spacex-and-tesla-merge-next-year-here-s-what-a-usd5-000-investment-in-the-combined-company-could-be-worth-by-the-end-of-2027/",
-      "published_at": "2026-11-25T23:24:02Z",
-      "score": 6,
-      "label": "neutral"
-    },
-    {
-      "id": "28b677f60094",
-      "source": "news",
-      "publisher": "TIKR",
-      "title": "Could Tesla Actually Climb 25%? Or Is Seaport Totally Wrong?",
-      "url": "https://www.tikr.com/blog/could-tesla-actually-climb-24-or-is-seaport-totally-wrong?ref=yahoofinance&tlnk=yf-261126-qg6337wf",
-      "published_at": "2026-11-25T23:07:25Z",
-      "score": 2,
+      "title": "\u2018How Can TSLA Compete With Waymo?\u2019 Gary Black Questions Tesla\u2019s Robotaxi Strategy, Predicts Waymo Will Lead in Miles and Trips",
+      "url": "https://finance.yahoo.com/technology/articles/tsla-compete-waymo-gary-black-013007370.html",
+      "published_at": "2026-11-27T01:30:07Z",
+      "score": 14,
       "label": "neutral"
     }
   ]
